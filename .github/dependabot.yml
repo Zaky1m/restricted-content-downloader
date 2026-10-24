@@ -4,6 +4,11 @@ updates:
     directory: /
     schedule:
       interval: weekly
+    groups:
+      # The grammers crates are released together and must share one version.
+      grammers:
+        patterns:
+          - "grammers-*"
   - package-ecosystem: github-actions
     directory: /
     schedule:
