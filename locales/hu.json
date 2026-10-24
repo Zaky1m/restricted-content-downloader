@@ -1,0 +1,675 @@
+{
+  "lang_name": "🇭🇺 Magyar",
+  "common": {
+    "not_available": "Nem érhető el",
+    "never": "Soha",
+    "unlimited": "Korlátlan",
+    "none": "Nincs",
+    "yes": "Igen",
+    "no": "Nem",
+    "processing": "⌯ <b>Feldolgozás</b>\n\n✦ Kérjük, várjon, amíg előkészítjük a kért műveletet",
+    "state_expired": "⌯ <b>A munkamenet lejárt</b>\n\n✦ A mentett beviteli munkamenet tíz perc után lejárt. Kérjük, indítsa újra a műveletet",
+    "state_expired_popup": "Indítsd újra a feladatot",
+    "action_cancelled": "⌯ <b>Művelet megszakítva</b>\n\n✦ A kiválasztott műveletet megszakítottuk, és az ideiglenes állapotát eltávolítottuk",
+    "unexpected_error": "⌯ <b>Váratlan hiba történt</b>\n\n✦ A műveletet a következő hiba miatt nem sikerült befejezni: <code>{error}</code>",
+    "something_went_wrong": "Hiba történt a művelet végrehajtása közben, kérjük, próbálja újra"
+  },
+  "buttons": {
+    "start": "Indítás",
+    "confirm": "Megerősítés",
+    "back": "Vissza",
+    "subscribe": "Előfizetés",
+    "earn_points": "Pontok szerzése",
+    "share_and_earn": "Megosztás és pontszerzés",
+    "link_account": "Fiók összekapcsolása",
+    "open_source": "Csatorna megnyitása",
+    "refresh_subscription": "Újraellenőrzés",
+    "channel": "Frissítési csatorna",
+    "help": "Súgó",
+    "profile": "Profil",
+    "contact_admin": "Más fizetési módokért lépjen kapcsolatba az ügyfélszolgálattal",
+    "cancel": "Mégse",
+    "delete": "Törlés",
+    "open": "Megnyitás",
+    "reject": "Elutasítás"
+  },
+  "commands": {
+    "bcjson": {
+      "description": "Többnyelvű közvetítési sablon letöltése"
+    },
+    "start": {
+      "description": "A bot elindítása"
+    },
+    "help": {
+      "description": "A súgóközpont megnyitása"
+    },
+    "profile": {
+      "description": "A fiók és a pontok megtekintése"
+    },
+    "premium": {
+      "description": "Az előfizetés funkcióinak megtekintése"
+    },
+    "language": {
+      "description": "A bot nyelvének módosítása"
+    },
+    "login": {
+      "description": "Telegram-fiók összekapcsolása"
+    },
+    "logout": {
+      "description": "Az összekapcsolt fiók eltávolítása"
+    },
+    "dl": {
+      "description": "Egy Telegram-bejegyzés letöltése"
+    },
+    "bdl": {
+      "description": "Bejegyzéstartomány letöltése"
+    },
+    "clone": {
+      "description": "Teljes csatorna átvitele"
+    },
+    "forcedownload": {
+      "description": "A kényszerített letöltési mód kezelése"
+    },
+    "thumb": {
+      "description": "Az egyéni bélyegkép kezelése"
+    },
+    "caption": {
+      "description": "A képaláírások feldolgozásának kezelése"
+    },
+    "cancel": {
+      "description": "Az aktuális művelet megszakítása"
+    },
+    "stats": {
+      "description": "Rendszerstatisztikák megtekintése"
+    },
+    "monitor": {
+      "description": "Csatorna automatikus figyelése"
+    },
+    "uploadch": {
+      "description": "Feltöltési célcsatorna beállítása"
+    },
+    "rmuploadch": {
+      "description": "A feltöltési cél eltávolítása"
+    },
+    "bc": {
+      "description": "Üzenet közvetítése"
+    },
+    "add": {
+      "description": "Adminisztrációs beállítások hozzáadása"
+    },
+    "rm": {
+      "description": "Adminisztrációs beállítások eltávolítása"
+    },
+    "create": {
+      "description": "Ajándéklink létrehozása"
+    },
+    "logs": {
+      "description": "A bot naplóinak letöltése"
+    },
+    "admin": {
+      "description": "Kezelés"
+    }
+  },
+  "start": {
+    "welcome": "⌯ <b>Üdvözöljük a médialetöltőben</b>\n\n✦ Küldjön egy Telegram-bejegyzésre mutató hivatkozást a médiatartalom letöltéséhez. Ez magában foglalja a nyilvános és privát csatornákból, valamint a továbbítást letiltó csatornákból származó tartalmakat is. Több bejegyzést is letölthet, teljes csatornát vihet át, egyéni bélyegképet alkalmazhat a fájlokra, vagy a letöltött tartalmat közvetlenül egy másik csatornába küldheti\n\n✦ Összekapcsolt fiók: {account_status}"
+  },
+  "accounts": {
+    "status": {
+      "connected": "Csatlakoztatva",
+      "not_connected": "Nincs csatlakoztatva"
+    },
+    "session_expired": "⌯ <b>Az összekapcsolt munkamenet lejárt</b>\n\n✦ Az összekapcsolt Telegram-fiók már nincs engedélyezve. Kapcsolja össze újra a fiókot, mielőtt privát forrásokat próbálna elérni",
+    "access": {
+      "login_required": "⌯ <b>Összekapcsolt fiók szükséges</b>\n\n✦ A megosztott hivatkozás olyan privát vagy korlátozott forráshoz tartozik, amelyet a letöltési fiókok nem érnek el. Kapcsoljon össze egy olyan Telegram-fiókot, amely már tagja a forráscsatornának, majd küldje el újra a hivatkozást",
+      "not_member": "⌯ <b>Az összekapcsolt fiókja nem tag</b>\n\n✦ A bottal összekapcsolt Telegram-fiók nem fér hozzá a megosztott hivatkozásban szereplő csatornához. Először csatlakozzon a csatornához az összekapcsolt fiókkal, majd küldje el újra a hivatkozást"
+    },
+    "login": {
+      "choose_account": "⌯ <b>Válassza ki az összekapcsolni kívánt fiókot</b>\n\n✦ Válassza ki, hogy a jelenlegi Telegram-fiókját vagy egy másik fiókot szeretné összekapcsolni. A kiválasztott fióknak már tagnak kell lennie minden olyan privát csatornában, amelyből letölteni szeretne",
+      "already_running": "⌯ <b>Már folyamatban van egy bejelentkezés</b>\n\n✦ Fejezze be vagy szakítsa meg az aktuális bejelentkezési folyamatot, mielőtt újat indítana",
+      "already_connected": "⌯ <b>Már van összekapcsolt fiók</b>\n\n✦ Jelenleg a(z) <code>{phone_number}</code> telefonszám van csatlakoztatva. Másik fiók összekapcsolása előtt távolítsa el a /logout paranccsal",
+      "share_contact": "⌯ <b>Ossza meg telefonszámát</b>\n\n✦ Az alábbi gombbal biztonságosan megoszthatja jelenlegi Telegram-fiókjának telefonszámát",
+      "enter_phone": "⌯ <b>Adja meg a másik telefonszámot</b>\n\n✦ Küldje el kézzel a telefonszámot nemzetközi formátumban. A számnak <code>+</code> jellel, majd az országkóddal kell kezdődnie, például: <code>+36123456789</code>",
+      "invalid_phone": "⌯ <b>Érvénytelen telefonszám</b>\n\n✦ A számnak <code>+</code> jellel kell kezdődnie, és tartalmaznia kell az országkódot, betűk vagy nem támogatott szimbólumok nélkül. Indítsa újra a bejelentkezést, vagy küldjön megfelelően formázott számot",
+      "contact_mismatch": "⌯ <b>A névjegy nem egyezik</b>\n\n✦ A megosztott névjegy nem ahhoz a Telegram-fiókhoz tartozik, amely a botot használja. A megadott gombbal ossza meg saját számát, vagy válassza a másik fiókra vonatkozó lehetőséget",
+      "contact_received": "⌯ <b>Telefonszám fogadva</b>\n\n✦ A bot előkészíti az engedélyezési kérelmet. Kérjük, várja meg, amíg a Telegram elküldi a bejelentkezési kódot",
+      "code_prompt": "⌯ <b>Telegram</b>\n\n✦ A Telegram kódját csak a számgombokkal add meg\n✦ A Törlés az utolsó számjegyet törli a Megerősítés pedig elküldi a kódot",
+      "code_prompt_with_value": "⌯ <b>Telegram</b>\n\n✦ <code>{code}</code>\n✦ A Telegram kódját csak a számgombokkal add meg\n✦ A Törlés az utolsó számjegyet törli a Megerősítés pedig elküldi a kódot",
+      "processing": "⌯ <b>A fiók ellenőrzése</b>\n\n✦ A rendszer ellenőrzi a kódot, és létrehozza az összekapcsolt munkamenetet",
+      "password_prompt": "⌯ <b>Kétlépcsős azonosítás szükséges</b>\n\n✦ Küldje el szöveges üzenetként a Telegram-fiók kétlépcsős azonosítási jelszavát\n\n✦ Jelszóemlékeztető: <code>{hint}</code>",
+      "completed": "⌯ <b>A fiók összekapcsolása sikeres</b>\n\n✦ A Telegram-fiók most már csatlakoztatva van. A privát csatornákat akkor érheti el, ha ez a fiók már tagja azoknak",
+      "cancelled": "⌯ <b>A fiók összekapcsolása megszakítva</b>\n\n✦ Az ideiglenes bejelentkezési munkamenetet lezártuk, és semmilyen fiókadatot nem mentettünk",
+      "restart_hint": "⌯ <b>Kezdje újra, amikor készen áll</b>\n\n✦ A /login paranccsal bármikor új fiók-összekapcsolási folyamatot indíthat",
+      "failed": "⌯ <b>A fiók összekapcsolása sikertelen</b>\n\n✦ Az engedélyezési folyamatot nem sikerült befejezni. Kezdje újra, és ellenőrizze, hogy a telefonszám, a bejelentkezési kód és a jelszó helyes-e",
+      "flood_wait": "⌯ <b>Túl sok bejelentkezési kísérlet</b>\n\n✦ A Telegram ideiglenesen korlátozta az új engedélyezési kérelmeket. Próbálja újra {seconds} másodperc múlva",
+      "invalid_code": "⌯ <b>Érvénytelen vagy lejárt kód</b>\n\n✦ A rendszer elutasította a kódot, vagy az lejárt. Adja meg a Telegram által küldött legújabb kódot, vagy szakítsa meg és indítsa újra a bejelentkezést",
+      "invalid_password": "⌯ <b>Helytelen ellenőrzési jelszó</b>\n\n✦ A kétlépcsős azonosítás jelszava helytelen. Küldje el a helyes jelszót, vagy szakítsa meg a bejelentkezési folyamatot",
+      "code_empty_popup": "A megerősítés előtt adja meg a Telegram-kódot",
+      "invalid_code_popup": "A kód érvénytelen vagy lejárt",
+      "buttons": {
+        "my_account": "Jelenlegi fiókom",
+        "other_account": "Másik fiók",
+        "share_phone": "Telefonszámom megosztása"
+      },
+      "too_many_attempts": "⌯ <b>Feladat</b>\n\n✦ A Telegram átmenetileg korlátozta a bejelentkezési próbálkozásokat\n✦ Várj a /login ismételt használata előtt",
+      "phone_banned": "⌯ <b>Telegram</b>\n\n✦ Ezt a számot a Telegram letiltotta\n✦ Használj másik fiókot vagy keresd a Telegram ügyfélszolgálatát",
+      "hint_awaiting_contact": "⌯ <b>Ossza meg telefonszámát</b>\n\n✦ Az alábbi gombbal biztonságosan megoszthatja jelenlegi Telegram-fiókjának telefonszámát",
+      "hint_awaiting_account_type": "⌯ <b>Válassza ki az összekapcsolni kívánt fiókot</b>\n\n✦ Válassza ki, hogy a jelenlegi Telegram-fiókját vagy egy másik fiókot szeretné összekapcsolni. A kiválasztott fióknak már tagnak kell lennie minden olyan privát csatornában, amelyből letölteni szeretne",
+      "hint_sending_code": "Várakozik\nA Telegram kódját csak a számgombokkal add meg\nA Törlés az utolsó számjegyet törli a Megerősítés pedig elküldi a kódot",
+      "hint_awaiting_code": "A Telegram kódját csak a számgombokkal add meg\nA Törlés az utolsó számjegyet törli a Megerősítés pedig elküldi a kódot"
+    },
+    "logout": {
+      "not_connected": "⌯ <b>ℹ Nincs összekapcsolt fiók</b>\n\n✦ Jelenleg nincs Telegram-fiók csatlakoztatva a botprofiljához",
+      "confirm": "⌯ <b>Az összekapcsolt fiók eltávolítása</b>\n\n✦ A(z) <code>{phone_number}</code> telefonszám csatlakozását megszüntetjük, és a mentett munkamenetét töröljük. Csak akkor erősítse meg, ha folytatni szeretné",
+      "completed": "⌯ <b>Az összekapcsolt fiók eltávolítva</b>\n\n✦ A mentett Telegram-munkamenetet sikeresen töröltük. Bármikor összekapcsolhat egy másik fiókot"
+    }
+  },
+  "subscription": {
+    "required": "⌯ <b>Feliratkozás szükséges</b>\n\n✦ A bot használata előtt csatlakozzon az alább felsorolt csatornákhoz, majd nyomja meg az ellenőrző gombot\n\n✦ {channels}",
+    "completed": "⌯ <b>Feliratkozás ellenőrizve</b>\n\n✦ A csatornatagság ellenőrzése sikeres volt. Most már folytathatja a bot használatát",
+    "still_missing_popup": "Még mindig csatlakoznia kell minden kötelező csatornához"
+  },
+  "downloads": {
+    "invalid_link": "⌯ <b>Érvénytelen Telegram-hivatkozás</b>\n\n✦ Küldjön olyan hivatkozást, amely közvetlenül egy Telegram-bejegyzésre mutat, például: <code>https://t.me/channel/123</code>",
+    "post_not_found": "⌯ <b>A bejegyzés nem található</b>\n\n✦ A kért bejegyzés nem létezik, törölték, vagy a kiválasztott letöltési fiók nem fér hozzá",
+    "nothing_to_download": "⌯ <b>Nincs mit letölteni</b>\n\n✦ Ebben a bejegyzésben nincs letölthető média vagy szöveg, például értesítés a csatorna nevének vagy képének megváltozásáról",
+    "comment_unavailable": "⌯ <b>A hozzászólást nem sikerült feloldani</b>\n\n✦ A hozzászólás hivatkozása nem egy elérhető beszélgetési üzenetre mutat, vagy a Telegram elutasította a hivatkozott üzenetazonosítót",
+    "client_unavailable": "⌯ <b>A letöltési fiók nem érhető el</b>\n\n✦ Jelenleg egyetlen Telegram-fiók sem érhető el a tartalom lekéréséhez. Próbálja újra később, vagy kapcsolja össze saját fiókját",
+    "preparing": "⌯ <b>A letöltés előkészítése</b>\n\n✦ A rendszer összegyűjti a média adatait az átvitel megkezdése előtt",
+    "splitting": "⌯ <b>A fájl felosztása</b>\n\n✦ A fájl nagyobb a feltöltési részekre vonatkozó korlátnál, ezért támogatott méretű részekre osztjuk",
+    "file_too_large": "⌯ <b>A fájl meghaladja a támogatott méretet</b>\n\n✦ Ez a fájl nem dolgozható fel {action} céljából, mert a mérete nagyobb mint {maximum_size}",
+    "file_too_small": "⌯ <b>A fájl üres vagy sérült</b>\n\n✦ A letöltött média túl kicsi ahhoz, hogy érvényesnek lehessen tekinteni, vagy a Telegram hiányos fájlt adott vissza",
+    "file_missing": "⌯ <b>A letöltött fájl hiányzik</b>\n\n✦ Az ideiglenes médiafájl nem található, vagy a feltöltés előtt üres volt",
+    "download_failed": "⌯ <b>A letöltés sikertelen</b>\n\n✦ A médiát több próbálkozás után sem sikerült lekérni. Ellenőrizze a forrásfiók hozzáférését, és próbálja újra",
+    "upload_failed": "⌯ <b>A feltöltés sikertelen</b>\n\n✦ A média letöltése sikerült, de nem lehetett kézbesíteni. A Telegram válasza: <code>{error}</code>",
+    "flood_wait": "⌯ <b>Telegram sebességkorlátozás</b>\n\n✦ A Telegram {seconds} másodperces várakozást kért a feltöltés folytatása előtt",
+    "actions": {
+      "download": "letöltés",
+      "upload": "feltöltés"
+    },
+    "progress": {
+      "downloading": "Letöltés",
+      "uploading": "Feltöltés",
+      "body": "⌯ <b>{action}</b>\n\n✦ <code>{progress_bar}</code>\n\n✦ Átvitel: {current_size} / {total_size}\n✦ Folyamat: {percentage}%\n✦ Sebesség: {speed}/s\n✦ Hátralévő idő: {eta}"
+    },
+    "parts": {
+      "item": "{current}. rész / {total}"
+    },
+    "album": {
+      "preparing": "⌯ <b>Médiaalbum észlelve</b>\n\n✦ Az album {count} kiválasztott elemet tartalmaz, amelyeket egymás után dolgozunk fel",
+      "processing": "⌯ <b>Médiaalbum feldolgozása</b>\n\n✦ A(z) {current}. elem feldolgozása, összesen: {total}"
+    },
+    "single": {
+      "usage": "/dl\nNyisd meg a bejegyzést a Telegramban és tartsd nyomva\nVálaszd a Hivatkozás másolása lehetőséget és küldd ide\nTöbb bejegyzésnél először az első hivatkozását küldd el"
+    },
+    "batch": {
+      "usage": "/bdl\nNyisd meg a bejegyzést a Telegramban és tartsd nyomva\nVálaszd a Hivatkozás másolása lehetőséget és küldd ide\nTöbb bejegyzésnél először az első hivatkozását küldd el\nKüldd el ugyanannak a csatornának az utolsó bejegyzésére mutató hivatkozást\nAz első az utolsó és a köztük lévő bejegyzések is bekerülnek\nEzután válaszd ki a tartalomtípusokat",
+      "different_sources": "⌯ <b>A hivatkozások különböző csevegésekhez tartoznak</b>\n\n✦ Az első és az utolsó hivatkozásnak ugyanabból a Telegram-csatornából vagy csoportból kell származnia",
+      "invalid_order": "⌯ <b>Helytelen bejegyzéssorrend</b>\n\n✦ Az első hivatkozásnak az utolsó hivatkozásnál korábbi bejegyzésre kell mutatnia",
+      "invalid_links": "⌯ <b>Érvénytelen kötegelt hivatkozások</b>\n\n✦ Mindkét értéknek ugyanabból a forrásból származó, érvényes Telegram-bejegyzéshivatkozásnak kell lennie",
+      "starting": "⌯ <b>A kötegelt letöltés elindult</b>\n\n✦ A bot a(z) {start_id} és {end_id} közötti bejegyzéseket dolgozza fel. A kért bejegyzések száma: {total}",
+      "progress": "⌯ <b>Kötegelt letöltés folyamatban</b>\n\n✦ Jelenlegi elem: {current} / {total}\n✦ Bejegyzésazonosító: {message_id}\n✦ Letöltve: {downloaded}\n✦ Kihagyva: {skipped}\n✦ Sikertelen: {failed}",
+      "completed": "⌯ <b>A kötegelt művelet befejeződött</b>\n\n✦ Letöltve: {downloaded}\n✦ Kihagyva: {skipped}\n✦ Sikertelen: {failed}",
+      "cancelled": "⌯ <b>A kötegelt művelet megszakítva</b>\n\n✦ A hátralévő bejegyzéseket nem dolgozzuk fel. A megszakítás előtt mentett folyamatadatokat töröltük",
+      "failed": "⌯ <b>A kötegelt művelet leállt</b>\n\n✦ Egy váratlan hiba megakadályozta a hátralévő bejegyzések feldolgozását",
+      "retrying": "⌯ <b>Sikertelen elemek újrapróbálása</b>\n\n✦ A fő menet befejeződött. Most {count} sikertelen elem lesz újrapróbálva"
+    },
+    "disk_full": "⌯ <b>Feladat</b>\n\n✦ Most nincs elég tárhely a fájl letöltéséhez\n✦ Próbáld később",
+    "paid": {
+      "not_purchased": "⌯ <b>Ezt a bejegyzést Telegram Stars használatával kell megvenni</b>\n\n✦ Vásárold meg a kapcsolt fiókkal és küldd el újra a hivatkozást"
+    }
+  },
+  "tasks": {
+    "already_running": "⌯ <b>Már fut egy másik feladat</b>\n\n✦ Várja meg az aktív feladat befejezését, vagy szakítsa meg, mielőtt másik műveletet indítana",
+    "resumed": "⌯ <b>Feladat folytatva</b>\n\n✦ A rendszer megszakított feladatot talált, amely a legutóbbi mentett pozíciótól folytatódik",
+    "cancel_requested": "⌯ <b>Megszakítás kérve</b>\n\n✦ Az aktív művelet leáll, és az ideiglenes fájlokat megtisztítjuk",
+    "input_cancelled": "⌯ <b>Beviteli munkamenet megszakítva</b>\n\n✦ A függőben lévő bejelentkezési, szűrési vagy megerősítési állapotot eltávolítottuk",
+    "none_to_cancel": "⌯ <b>ℹ Nincs aktív művelet</b>\n\n✦ Nincs megszakítható futó feladat vagy függőben lévő beviteli munkamenet",
+    "completion": {
+      "single": {
+        "private": "⌯ <b>A letöltés befejeződött</b>\n\n✦ A kért médiát sikeresen letöltöttük, és elküldtük ebbe a csevegésbe",
+        "saved_messages": "⌯ <b>A letöltés befejeződött</b>\n\n✦ A kért médiát letöltöttük, és kézbesítettük az összekapcsolt fiók Mentett üzenetei közé",
+        "channel": "⌯ <b>A feltöltés befejeződött</b>\n\n✦ A kért médiát sikeresen kézbesítettük ide: <b>{channel_title}</b>\n\n✦ {message_link}"
+      },
+      "batch": {
+        "private": "⌯ <b>A kötegelt feladat befejeződött</b>\n\n✦ A bot befejezte a kiválasztott tartomány feldolgozását, és {count} elemet kézbesített ebbe a csevegésbe",
+        "saved_messages": "⌯ <b>A kötegelt feladat befejeződött</b>\n\n✦ A bot befejezte a kiválasztott tartomány feldolgozását, és {count} elemet kézbesített az összekapcsolt fiók Mentett üzenetei közé",
+        "channel": "⌯ <b>A kötegelt feltöltés befejeződött</b>\n\n✦ A bot befejezte a kiválasztott tartomány feldolgozását, és {count} elemet kézbesített a kiválasztott csatornába"
+      },
+      "clone": {
+        "private": "⌯ <b>A csatorna átvitele befejeződött</b>\n\n✦ A csatornafeladat befejeződött, és {count} elemet kézbesítettünk ebbe a csevegésbe",
+        "saved_messages": "⌯ <b>A csatorna átvitele befejeződött</b>\n\n✦ A csatornafeladat befejeződött, és {count} elemet kézbesítettünk az összekapcsolt fiók Mentett üzenetei közé",
+        "channel": "⌯ <b>A csatorna átvitele befejeződött</b>\n\n✦ A csatornafeladat befejeződött, és {count} elemet kézbesítettünk a kiválasztott célcsatornába"
+      },
+      "monitor": {
+        "private": "⌯ <b>A figyelt bejegyzés kézbesítve</b>\n\n✦ A rendszer új bejegyzést észlelt, és kézbesítette ebbe a csevegésbe",
+        "saved_messages": "⌯ <b>A figyelt bejegyzés kézbesítve</b>\n\n✦ A rendszer új bejegyzést észlelt, és kézbesítette az összekapcsolt fiók Mentett üzenetei közé",
+        "channel": "⌯ <b>A figyelt bejegyzés kézbesítve</b>\n\n✦ A rendszer új bejegyzést észlelt, és kézbesítette a kiválasztott célcsatornába"
+      }
+    }
+  },
+  "filters": {
+    "prompt": "⌯ <b>Válassza ki a tartalomszűrőt</b>\n\n✦ Válassza ki, hogy minden tartalmat feldolgozzunk, csak a kiválasztott médiatípusokat mentsük, vagy a kiválasztott médiatípusokat kihagyjuk. A kiválasztási munkamenet tíz percig marad aktív",
+    "modes": {
+      "all": "Minden tartalom",
+      "save": "Csak a kiválasztottak",
+      "skip": "Kiválasztottak kihagyása"
+    },
+    "types": {
+      "videos": "Videók",
+      "photos": "Fényképek",
+      "audio": "Hanganyagok",
+      "files": "Fájlok",
+      "text": "Szöveg",
+      "other": "Egyéb"
+    },
+    "summary": {
+      "all": "Minden támogatott tartalom",
+      "save": "Csak ezek mentése: {types}",
+      "skip": "Ezek kihagyása: {types}",
+      "minimum_duration": "Minimális időtartam: {seconds} másodperc",
+      "maximum_duration": "Maximális időtartam: {seconds} másodperc"
+    }
+  },
+  "clone": {
+    "usage": "/clone\nKüldd el a csatorna hivatkozását vagy felhasználónevét\nPrivát csatornához a /login paranccsal csatolj egy már tagként szereplő fiókot",
+    "channel_not_found": "⌯ <b>A csatorna nem található</b>\n\n✦ A csatorna felhasználóneve vagy hivatkozása érvénytelen, vagy az összekapcsolt fiók nem tudja feloldani",
+    "empty_channel": "⌯ <b>A csatorna üres</b>\n\n✦ A kiválasztott csatornában nem találhatók átvihető bejegyzések",
+    "starting": "⌯ <b>A csatorna átvitele elindult</b>\n\n✦ A bot előkészíti {total} bejegyzésazonosító feldolgozását innen: <b>{channel_title}</b>",
+    "progress": "⌯ <b>Csatornaátvitel folyamatban</b>\n\n✦ Jelenlegi elem: {current} / {total}\n✦ Bejegyzésazonosító: {message_id}\n✦ Letöltve: {downloaded}\n✦ Kihagyva: {skipped}\n✦ Sikertelen: {failed}",
+    "flood_wait": "⌯ <b>Telegram sebességkorlátozás</b>\n\n✦ A csatorna átvitelét {seconds} másodpercre szüneteltettük",
+    "completed": "⌯ <b>A csatorna feldolgozása befejeződött</b>\n\n✦ Letöltve: {downloaded}\n✦ Kihagyva: {skipped}\n✦ Sikertelen: {failed}",
+    "cancelled": "⌯ <b>A csatorna átvitele megszakítva</b>\n\n✦ A csatorna hátralévő bejegyzéseit nem dolgozzuk fel",
+    "failed": "⌯ <b>A csatorna átvitele sikertelen</b>\n\n✦ Egy váratlan hiba megakadályozta az átvitel befejezését"
+  },
+  "uploads": {
+    "channel": {
+      "usage": "/uploadch\nCsatorna kiválasztása\nA bot előfizetése és a Telegram Premium külön előfizetés\nA bot részenként körülbelül 2 GB-ot tölt fel\nA csatolt Telegram Premium fiók akár 4 GB-ot tölthet fel egyetlen fájlban\nCsatold a fiókot a /login paranccsal\nAdd hozzá a botot és a fiókot a célcsatorna adminisztrátoraként majd válaszd ki a /uploadch paranccsal\nCsatorna nélkül a mentett üzeneteket választhatod\nA dokumentumrészeket a számozás sorrendjében kell egyesíteni\nA legegyszerűbb ↣ add hozzá a botot adminként a csatornádhoz vagy csoportodhoz és itt megerősítést kér",
+      "current": "⌯ <b>Csatorna kiválasztása</b>\n\n✦ {channel_id}\n✦ /uploadch\n✦ /rmuploadch",
+      "invalid_id": "⌯ <b>Érvénytelen csatornaazonosító</b>\n\n✦ Küldje el a Telegram-csatorna számszerű azonosítóját, amely általában <code>-100</code> értékkel kezdődik\n✦ A legegyszerűbb ↣ add hozzá a botot adminként a csatornádhoz vagy csoportodhoz és itt megerősítést kér",
+      "bot_not_admin": "⌯ <b>A botnak rendszergazdai hozzáférésre van szüksége</b>\n\n✦ A csatornába történő feltöltések engedélyezése előtt adja hozzá a botot rendszergazdaként a célcsatornához\n✦ A legegyszerűbb ↣ add hozzá a botot adminként a csatornádhoz vagy csoportodhoz és itt megerősítést kér",
+      "user_not_admin": "⌯ <b>Önnek rendszergazdai hozzáférésre van szüksége</b>\n\n✦ A célcsatorna tulajdonosának vagy rendszergazdájának kell lennie",
+      "access_denied": "⌯ <b>A csatorna ellenőrzése sikertelen</b>\n\n✦ A csatorna nem érhető el, vagy hiányoznak a szükséges rendszergazdai jogosultságok",
+      "enabled": "⌯ <b>A feltöltési csatorna csatlakoztatva</b>\n\n✦ A jövőbeli letöltéseket ide kézbesítjük: <b>{channel_title}</b>, amíg el nem távolítja ezt a célt",
+      "disabled": "⌯ <b>A feltöltési csatorna letiltva</b>\n\n✦ A bot elvesztette rendszergazdai hozzáférését a kiválasztott csatornához, ezért a csatornába történő kézbesítést automatikusan letiltottuk",
+      "removed": "⌯ <b>A feltöltési csatorna eltávolítva</b>\n\n✦ A jövőbeli letöltések ismét az alapértelmezett célhelyre kerülnek",
+      "not_set": "⌯ <b>ℹ Nincs beállítva feltöltési csatorna</b>\n\n✦ A profiljában jelenleg nincs megadva célcsatorna"
+    },
+    "auto": {
+      "start_first": "⌯ <b>Fejezd be a csatorna összekapcsolását</b>\n\n✦ Hozzáadtad a botot ide ↣ {channel_title}\n✦ Azonosító ↣ <code>{channel_id}</code>\n✦ Koppints az Indítás gombra hogy regisztrálj a botnál és befejeződjön az összekapcsolás\n✦ Ha 24 órán belül nem koppintasz a bot kilép",
+      "premium_only": "⌯ <b>Csatorna összekapcsolása csak előfizetőknek</b>\n\n✦ Hozzáadtad a botot ide ↣ {channel_title}\n✦ Azonosító ↣ <code>{channel_id}</code>\n✦ A letöltések csatornába vagy csoportba küldése a bot előfizetés része\n✦ A bot kilépett\n✦ Fizess elő az alábbi gombbal majd add hozzá újra a botot",
+      "confirm": "⌯ <b>Feltöltési csatorna megerősítése</b>\n\n✦ Hozzáadtad a botot ide ↣ {channel_title}\n✦ Azonosító ↣ <code>{channel_id}</code>\n✦ Ha megerősíted oda érkeznek az új letöltések és a figyelt bejegyzések\n✦ Ha elutasítod a bot kilép\n✦ Ha 24 órán belül nem válaszolsz a bot magától kilép",
+      "linked": "⌯ <b>Feltöltési csatorna összekapcsolva</b>\n\n✦ Csatorna ↣ {channel_title}\n✦ Azonosító ↣ <code>{channel_id}</code>\n✦ Oda érkeznek az új letöltések és a figyelt bejegyzések\n✦ Küldd el a /rmuploadch parancsot az eltávolításhoz",
+      "no_rights": "⌯ <b>A bot nem tud ott posztolni</b>\n\n✦ Csatorna ↣ {channel_title}\n✦ Azonosító ↣ <code>{channel_id}</code>\n✦ A bot kilépett mert nem admin vagy nem posztolhat\n✦ Add hozzá újra adminként posztolási joggal",
+      "user_not_admin": "⌯ <b>Adminnak kell lenned ott</b>\n\n✦ Csatorna ↣ {channel_title}\n✦ Azonosító ↣ <code>{channel_id}</code>\n✦ A feltöltési csatornának a tiédnek kell lennie vagy adminnak kell lenned benne\n✦ A bot kilépett",
+      "expired": "Ez a kérés lejárt"
+    }
+  },
+  "forcedownload": {
+    "details": "⌯ <b>Kényszerített letöltési mód</b>\n\n✦ Ha engedélyezve van, a bot minden médiaelemet letölt és feltölt ahelyett, hogy közvetlenül lemásolná. Ez egyéni bélyegkép alkalmazásakor, fájlok újbóli létrehozásakor vagy továbbítási korlátozások kezelésénél hasznos\n\n✦ Jelenlegi állapot: {status}",
+    "premium_required": "⌯ <b>Előfizetés szükséges</b>\n\n✦ A kényszerített letöltési mód az előfizetők számára érhető el, mivel további tárhelyet, sávszélességet és feldolgozási erőforrást használ",
+    "flag_removed": "⌯ <b>ℹ A --fdl kapcsolót eltávolítottuk</b>\n\n✦ A kényszerített letöltés mostantól állandó felhasználói mód. Az előfizetők a /forcedownload paranccsal kezelhetik, ahelyett, hogy külön parancsokhoz adnák hozzá",
+    "enabled": "⌯ <b>Kényszerített letöltési mód engedélyezve</b>\n\n✦ A jövőbeli letöltési, kötegelt, klónozási és figyelési feladatok közvetlen másolás helyett lekérik és feltöltik az eredeti fájlokat",
+    "disabled": "⌯ <b>Kényszerített letöltési mód letiltva</b>\n\n✦ A bot ismét közvetlenül másolhatja a korlátozás nélküli bejegyzéseket, miközben szükség esetén továbbra is letölti a védett tartalmakat",
+    "status": {
+      "enabled": "Engedélyezve",
+      "disabled": "Letiltva"
+    },
+    "buttons": {
+      "enable": "Kényszerített letöltés engedélyezése",
+      "disable": "Kényszerített letöltés letiltása"
+    }
+  },
+  "thumbnail": {
+    "not_set": "⌯ <b>Nincs egyéni bélyegkép</b>\n\n✦ Először küldjön egy képet a botnak, majd erősítse meg, hogy borítóként használhassa a támogatott feltöltött fájlokhoz",
+    "current": "⌯ <b>Jelenlegi egyéni bélyegkép</b>\n\n✦ Ez a jövőbeli támogatott feltöltésekhez mentett kép\n\n✦ Állapot: {status}",
+    "confirm": "⌯ <b>A kép használata bélyegképként</b>\n\n✦ Erősítse meg, hogy a képet egyéni borítóként mentse, vagy szakítsa meg az ideiglenes kép törléséhez",
+    "saved": "⌯ <b>Bélyegkép mentve</b>\n\n✦ A képet mentettük, és engedélyeztük a jövőbeli támogatott feltöltésekhez",
+    "download_failed": "⌯ <b>A kép letöltése sikertelen</b>\n\n✦ A képet nem sikerült menteni. Küldje el újra, és győződjön meg arról, hogy a Telegram befejezte a feltöltést",
+    "temp_missing": "⌯ <b>Az ideiglenes kép nem érhető el</b>\n\n✦ A megerősítési munkamenet lejárt, vagy az ideiglenes képet eltávolították. Küldje el újra a képet",
+    "not_set_popup": "Nincs elérhető mentett bélyegkép",
+    "status": {
+      "enabled": "Engedélyezve",
+      "disabled": "Letiltva"
+    },
+    "buttons": {
+      "enable": "Bélyegkép engedélyezése",
+      "disable": "Bélyegkép letiltása"
+    }
+  },
+  "captions": {
+    "settings": "⌯ <b>Képaláírások feldolgozása</b>\n\n✦ Válassza ki, hogyan kezeljük a képaláírásokat a média másolásakor vagy feltöltésekor\n\n✦ Jelenlegi mód: {current}",
+    "modes": {
+      "keep_all": "Eredeti képaláírás megtartása",
+      "remove_all": "Média képaláírásainak eltávolítása",
+      "remove_links_users": "Hivatkozások és felhasználónevek eltávolítása"
+    },
+    "buttons": {
+      "keep_all": "Eredeti képaláírások megtartása",
+      "remove_all": "Minden képaláírás eltávolítása",
+      "remove_links_users": "Hivatkozások és felhasználónevek eltávolítása"
+    },
+    "already_selected_popup": "Ez a képaláírási mód már aktív",
+    "updated_popup": "A képaláírási mód frissítve"
+  },
+  "profile": {
+    "unavailable": "⌯ <b>A profil nem érhető el</b>\n\n✦ A mentett felhasználói rekordot nem sikerült betölteni. Küldje el a /start parancsot, és próbálja újra",
+    "details": "⌯ <b>Az Ön profilja</b>\n\n✦ Felhasználói azonosító: <code>{user_id}</code>\n✦ Csomag: {plan_status}\n✦ Csomag lejárata: {expiry_date}\n✦ Napi pontok: {daily_points}/{daily_limit}\n✦ Napi visszaállítás: {reset_time}\n✦ Ajándékpontok: {gift_points}\n✦ Ajánlási pontok: {referral_points}\n✦ Ajánlások: {referral_count}\n✦ Kényszerített letöltés: {force_download_status}\n\n✦ Ajánlási hivatkozás:\n✦ <code>{referral_link}</code>"
+  },
+  "plans": {
+    "free": "Ingyenes",
+    "premium": "Előfizető",
+    "monthly": "Havi",
+    "yearly": "Éves"
+  },
+  "premium": {
+    "details": "⌯ <b>Előfizetés</b>\n\n✦ Előfizetés\n✦ Legfeljebb 5 nyitott feladatod lehet\n✦ Várd meg az egyik végét vagy töröld a /cancel paranccsal\n✦ Az előfizetéssel kihagyhatod a közös sort\n✦ /clone\n✦ /monitor\n✦ /uploadch\n✦ /caption\n✦ /fdl\n✦ A bot előfizetése és a Telegram Premium külön előfizetés",
+    "feature_required": "⌯ <b>Előfizetés szükséges</b>\n\n✦ Ez a funkció az előfizetők számára érhető el. Nyissa meg az előfizetési menüt az elérhető csomagok áttekintéséhez",
+    "already_active": "⌯ <b>Az előfizetés aktív</b>\n\n✦ Előfizetése eddig marad aktív: {expiry_date}",
+    "already_active_popup": "Előfizetése eddig aktív: {expiry_date}",
+    "required_popup": "Ehhez a funkcióhoz aktív előfizetés szükséges",
+    "granted": "⌯ <b>Előfizetés aktiválva</b>\n\n✦ Fiókját sikeresen frissítettük. A jelenlegi előfizetés lejárati dátuma: {expiry_date}",
+    "removed": "⌯ <b>ℹ Előfizetés eltávolítva</b>\n\n✦ Az előfizetőknek fenntartott módokat és célbeállításokat letiltottuk a fiókjában",
+    "buttons": {
+      "monthly": "Havi csomag",
+      "yearly": "Éves csomag"
+    },
+    "granted_days": "⌯ <b>Előfizetés</b>\n\n✦ Hozzáadott napok: {days}\n✦ Lejárat: {expiry_date}\n✦ A napok a még hátralévő időhöz adódtak"
+  },
+  "language": {
+    "select": "⌯ <b>Válassza ki a nyelvet</b>\n\n✦ Válassza ki a bot üzeneteihez és személyes Telegram-parancsmenüjéhez használt nyelvet",
+    "changed": "⌯ <b>A nyelv módosítva</b>\n\n✦ Az üzenetek és a Telegram-parancsok mostantól ezen a nyelven jelennek meg: {language_name}",
+    "unavailable_popup": "A kiválasztott nyelv nem érhető el"
+  },
+  "limits": {
+    "insufficient_points": "⌯ <b>Nincs elegendő letöltési pont</b>\n\n✦ Nincs elegendő pontja ehhez a letöltéshez. Napi egyenlege {time_left} múlva visszaáll, vagy ajánlásokkal további pontokat szerezhet",
+    "insufficient_points_batch": "⌯ <b>Nincs elegendő pont ehhez a köteghez</b>\n\n✦ Ehhez a művelethez {required_points} pont szükséges, jelenleg azonban csak {available_points} pont áll rendelkezésére",
+    "reset_now": "Visszaállítás folyamatban",
+    "cooldown": "⌯ <b>Kérjük, várjon az újabb letöltés előtt</b>\n\n✦ {remaining_time} múlva indíthat újabb ingyenes letöltést"
+  },
+  "referrals": {
+    "share_text": "Használd ezt a Telegram-letöltőt, és szerezz pontokat az ajánlási hivatkozásommal",
+    "new_referral": "⌯ <b>Új ajánlott felhasználó csatlakozott</b>\n\n✦ {user_name} (<code>{user_id}</code>) az Ön hivatkozásával csatlakozott. {reward} ajánlási pontot kapott",
+    "welcome_bonus": "⌯ <b>Ajánlási bónusz érkezett</b>\n\n✦ {bonus} pontot kapott, amiért egy meglévő felhasználó ajánlási hivatkozásával csatlakozott"
+  },
+  "gifts": {
+    "claim": {
+      "already_claimed": "⌯ <b>ℹ Az ajándékot már beváltotta</b>\n\n✦ Ezt az ajándékot korábban már hozzáadtuk a fiókjához, ezért nem váltható be kétszer",
+      "invalid": "⌯ <b>Az ajándék nem található</b>\n\n✦ Az ajándékhivatkozás érvénytelen, vagy már nem létezik",
+      "inactive": "⌯ <b>Az ajándék inaktív</b>\n\n✦ Az adminisztrátor letiltotta ezt az ajándékot, ezért már nem váltható be",
+      "link_expired": "⌯ <b>Az ajándékhivatkozás lejárt</b>\n\n✦ Lejárt az ajándék beváltására engedélyezett idő",
+      "limit_reached": "⌯ <b>Elérte az ajándék korlátját</b>\n\n✦ A beváltások engedélyezett maximális számát már elérték",
+      "not_allowed": "⌯ <b>Az ajándék nincs hozzárendelve a fiókjához</b>\n\n✦ Ezt az ajándékot csak meghatározott felhasználók válthatják be, és az Ön fiókja nincs közöttük",
+      "excluded": "⌯ <b>Az ajándék nem érhető el a fiókjához</b>\n\n✦ Az Ön fiókja ki van zárva ennek az ajándéknak a beváltásából",
+      "completed": "⌯ <b>Ajándék beváltva</b>\n\n✦ {value} pontot sikeresen hozzáadtunk a fiókjához",
+      "completed_with_expiry": "⌯ <b>Ajándék beváltva</b>\n\n✦ {value} pontot hozzáadtunk a fiókjához, és eddig maradnak elérhetők: {expiry_date}",
+      "failed": "⌯ <b>Az ajándék beváltása sikertelen</b>\n\n✦ Az ajándékot nem sikerült alkalmazni a fiókjára. Próbálja újra később"
+    }
+  },
+  "help": {
+    "menu": {
+      "title": "⌯ <b>Súgóközpont</b>\n\n✦ Válasszon egy funkciót az alábbiak közül az utasítások és az ajánlott használat megtekintéséhez"
+    },
+    "buttons": {
+      "single": "Egyetlen letöltés",
+      "batch": "Kötegelt letöltés",
+      "clone": "Csatornaátvitel",
+      "monitor": "Csatornafigyelő",
+      "channel_upload": "Feltöltési csatorna",
+      "forcedownload": "Kényszerített letöltés",
+      "login": "Összekapcsolt fiók",
+      "points": "Pontok",
+      "premium": "Előfizetés",
+      "other_uses": "Egyéb felhasználások"
+    },
+    "features": {
+      "dl": "⌯ <b>Egy bejegyzés letöltése</b>\n\n✦ /dl\n✦ Nyisd meg a bejegyzést a Telegramban és tartsd nyomva\n✦ Válaszd a Hivatkozás másolása lehetőséget és küldd ide\n✦ Több bejegyzésnél először az első hivatkozását küldd el\n✦ <code>https://t.me/example_channel/15</code>\n✦ Küldd el a csatorna hivatkozását vagy felhasználónevét\n✦ Privát csatornához a /login paranccsal csatolj egy már tagként szereplő fiókot\n✦ Méret:\n✦ A bot részenként körülbelül 2 GB-ot tölt fel\n✦ Válaszd a Letöltés és felosztás vagy a Mégse lehetőséget\n✦ Legfeljebb 4 GB-os teljes fájlhoz csatolj Telegram Premium fiókot a /login paranccsal és válassz csatornát a /uploadch paranccsal",
+      "bdl": "⌯ <b>Több bejegyzés letöltése</b>\n\n✦ /bdl\n✦ Nyisd meg a bejegyzést a Telegramban és tartsd nyomva\n✦ Válaszd a Hivatkozás másolása lehetőséget és küldd ide\n✦ Több bejegyzésnél először az első hivatkozását küldd el\n✦ Küldd el ugyanannak a csatornának az utolsó bejegyzésére mutató hivatkozást\n✦ Az első az utolsó és a köztük lévő bejegyzések is bekerülnek\n✦ Ezután válaszd ki a tartalomtípusokat\n✦ <code>/bdl https://t.me/example_channel/15 https://t.me/example_channel/30</code>\n✦ A /cancel paranccsal válassz feladatot vagy írd utána a feladat számát",
+      "clone": "⌯ <b>Teljes csatorna átvitele</b>\n\n✦ Előfizetés\n✦ /clone\n✦ Küldd el a csatorna hivatkozását vagy felhasználónevét\n✦ Privát csatornához a /login paranccsal csatolj egy már tagként szereplő fiókot\n✦ /uploadch\n✦ A /cancel paranccsal válassz feladatot vagy írd utána a feladat számát",
+      "monitor": "⌯ <b>Új csatornabejegyzések figyelése</b>\n\n✦ Előfizetés\n✦ /monitor\n✦ Küldd el a csatorna hivatkozását vagy felhasználónevét\n✦ Privát csatornához a /login paranccsal csatolj egy már tagként szereplő fiókot\n✦ Csatorna:\n✦ Szűrők:\n✦ A nyilvános csatornák letöltési fiókot használnak\n✦ A privát csatornák ellenőrzése óránként egyszerre egy fiókkal történik amely utána bezárul\n✦ Az új bejegyzések mentett sorba kerülnek és sorrendben érkeznek\n✦ Figyelés leállítása",
+      "channel_upload": "⌯ <b>Tartalom kézbesítése másik csatornába</b>\n\n✦ Előfizetés\n✦ /uploadch\n✦ A bot előfizetése és a Telegram Premium külön előfizetés\n✦ A bot részenként körülbelül 2 GB-ot tölt fel\n✦ A csatolt Telegram Premium fiók akár 4 GB-ot tölthet fel egyetlen fájlban\n✦ Csatold a fiókot a /login paranccsal\n✦ Add hozzá a botot és a fiókot a célcsatorna adminisztrátoraként majd válaszd ki a /uploadch paranccsal\n✦ Csatorna nélkül a mentett üzeneteket választhatod\n✦ A dokumentumrészeket a számozás sorrendjében kell egyesíteni\n✦ /rmuploadch\n✦ A legegyszerűbb ↣ add hozzá a botot adminként a csatornádhoz vagy csoportodhoz és itt megerősítést kér",
+      "forcedownload": "⌯ <b>Kényszerített letöltési mód</b>\n\n✦ A /forcedownload paranccsal beállíthatja, hogy a bot minden fájlt lekérjen és feltöltsön ahelyett, hogy a korlátozás nélküli bejegyzéseket közvetlenül átmásolná. Ez a mód egyéni bélyegképekhez és tartalom-újraépítéshez hasznos",
+      "login": "⌯ <b>Telegram-fiók összekapcsolása</b>\n\n✦ Használja a /login parancsot, és válassza ki jelenlegi fiókját vagy egy másik fiókot. Az összekapcsolt fióknak már tagnak kell lennie az elérni kívánt privát csatornákban. Az engedélyezési kódokat kizárólag a biztonságos billentyűzettel kell megadni\n✦ A Telegram kódját csak a számgombokkal add meg\n✦ A Törlés az utolsó számjegyet törli a Megerősítés pedig elküldi a kódot\n✦ Küldd el a csatorna hivatkozását vagy felhasználónevét\n✦ Privát csatornához a /login paranccsal csatolj egy már tagként szereplő fiókot\n✦ /logout",
+      "points": "⌯ <b>Letöltési pontok</b>\n\n✦ Az ingyenes letöltések napi, ajándék- és ajánlási pontokat használnak. További pontok szerzéséhez ossza meg személyes hivatkozását:\n\n✦ <code>{referral_link}</code>",
+      "premium": "⌯ <b>Előfizetési funkciók</b>\n\n✦ /premium\n✦ Előfizetés\n✦ Legfeljebb 5 nyitott feladatod lehet\n✦ Várd meg az egyik végét vagy töröld a /cancel paranccsal\n✦ Az előfizetéssel kihagyhatod a közös sort\n✦ /clone\n✦ /monitor\n✦ /uploadch\n✦ /caption\n✦ /fdl\n✦ A bot előfizetése és a Telegram Premium külön előfizetés",
+      "other_uses": "⌯ <b>A bot egyéb felhasználási módjai</b>\n\n✦ <b>Egyik csatorna átvitele egy másikba:</b> Állítson be célcsatornát a /uploadch paranccsal, majd futtassa a /clone parancsot a forráscsatornán. A kiválasztott tartalmakat a szűrőknek megfelelően visszük át\n\n✦ <b>Teljes sorozat borítóinak cseréje:</b> Küldje el az új borítóképet a botnak, erősítse meg, engedélyezze a kényszerített letöltési módot, majd futtassa a /bdl parancsot az első és az utolsó epizód hivatkozásával. A fájlokat a bot letölti és feltölti, a támogatott esetekben a kiválasztott borítót használva"
+    }
+  },
+  "monitor": {
+    "login_required": "⌯ <b>Telegram-fiók összekapcsolása</b>\n\n✦ Küldd el a csatorna hivatkozását vagy felhasználónevét\n✦ Privát csatornához a /login paranccsal csatolj egy már tagként szereplő fiókot",
+    "usage": "⌯ <b>Új csatornabejegyzések figyelése</b>\n\n✦ {current_status}\n✦ /monitor\n✦ Küldd el a csatorna hivatkozását vagy felhasználónevét\n✦ Privát csatornához a /login paranccsal csatolj egy már tagként szereplő fiókot\n✦ Csatorna:\n✦ Szűrők:\n✦ A nyilvános csatornák letöltési fiókot használnak\n✦ A privát csatornák ellenőrzése óránként egyszerre egy fiókkal történik amely utána bezárul\n✦ Az új bejegyzések mentett sorba kerülnek és sorrendben érkeznek\n✦ Figyelés leállítása",
+    "invalid_channel_id": "⌯ <b>Érvénytelen csatornaazonosító</b>\n\n✦ Használjon számszerű Telegram-csatornaazonosítót, amely általában <code>-100</code> értékkel kezdődik",
+    "invalid_action": "⌯ <b>Érvénytelen figyelési művelet</b>\n\n✦ A figyelés elindításához használja az <code>on</code>, leállításához pedig az <code>off</code> értéket",
+    "not_active": "⌯ <b>ℹ A figyelő nem aktív</b>\n\n✦ A megadott csatornát jelenleg nem figyeli a fiókja",
+    "already_active": "⌯ <b>ℹ Már aktív egy figyelő</b>\n\n✦ Másik csatorna kiválasztása előtt állítsa le a jelenlegi csatorna figyelését",
+    "access_denied": "⌯ <b>A csatornához való hozzáférés megtagadva</b>\n\n✦ Az összekapcsolt fiók nem tudja megnyitni a megadott csatornát, vagy az azonosító helytelen",
+    "start_failed": "⌯ <b>Indítsd újra a feladatot</b>\n\n✦ Küldd el a csatorna hivatkozását vagy felhasználónevét\n✦ Privát csatornához a /login paranccsal csatolj egy már tagként szereplő fiókot",
+    "started": "⌯ <b>Új csatornabejegyzések figyelése</b>\n\n✦ Csatorna: {channel_title}\n✦ Szűrők: {filter_status}\n✦ A nyilvános csatornák letöltési fiókot használnak\n✦ A privát csatornák ellenőrzése óránként egyszerre egy fiókkal történik amely utána bezárul\n✦ Az új bejegyzések mentett sorba kerülnek és sorrendben érkeznek",
+    "stopped": "⌯ <b>A csatornafigyelő leállt</b>\n\n✦ A kiválasztott csatorna új bejegyzéseit a rendszer már nem dolgozza fel automatikusan",
+    "session_stopped": "⌯ <b>A figyelő leállt</b>\n\n✦ Az összekapcsolt Telegram-munkamenet lejárt vagy visszavonták, ezért az automatikus figyelést letiltottuk",
+    "status": {
+      "active": "Aktív a(z) <code>{channel_id}</code> csatornánál",
+      "inactive": "Inaktív"
+    },
+    "stop_button": "Figyelés leállítása",
+    "source_lost": "⌯ <b>A csatorna figyelése leállt</b>\n\n✦ Csatorna ↣ {channel_title}\n✦ Azonosító ↣ <code>{channel_id}</code>\n✦ Az összekapcsolt fiókod egy teljes napig nem tudta megnyitni\n✦ Lehet hogy törölték vagy priváttá tették vagy a fiók kilépett belőle\n✦ Az újbóli figyeléshez ellenőrizd hogy a fiók tag és küldd el a /monitor parancsot"
+  },
+  "stats": {
+    "system": "⌯ <b>Rendszerstatisztikák</b>\n\n✦ Üzemidő: {uptime}\n✦ Lemez: {disk_usage} / {disk_total} ({disk_percent}%)\n✦ Memória: {ram_percent}%\n✦ Processzor: {cpu_percent}%\n✦ Elküldött hálózati adat: {sent}\n✦ Fogadott hálózati adat: {received}",
+    "admin": "⌯ <b>Felhasználói statisztikák</b>\n\n✦ Összes felhasználó: {total_users}\n✦ Előfizetők: {total_premium}\n✦ Adminisztrátor által hozzáadva: {premium_by_admin}\n✦ Stars használatával fizetve: {premium_by_stars}",
+    "public": "⌯ <b>A bot statisztikái</b>\n\n✦ Üzemidő: {uptime}\n✦ Összes letöltés: {total_downloads}"
+  },
+  "payments": {
+    "monthly": {
+      "title": "Havi előfizetés",
+      "description": "Az előfizetői funkciók aktiválása 30 napra"
+    },
+    "yearly": {
+      "title": "Éves előfizetés",
+      "description": "Az előfizetői funkciók aktiválása 365 napra"
+    },
+    "total_label": "Előfizetés végösszege",
+    "invalid_plan_popup": "A kiválasztott előfizetési csomag érvénytelen",
+    "invoice_failed_popup": "A fizetési számlát nem sikerült létrehozni",
+    "unrecognized": "⌯ <b>Ismeretlen fizetési csomag</b>\n\n✦ A fizetés beérkezett, de az előfizetési csomagot nem sikerült azonosítani. Lépjen kapcsolatba az ügyfélszolgálattal a fizetési adatokkal",
+    "activation_failed": "⌯ <b>Az előfizetés aktiválása sikertelen</b>\n\n✦ A fizetés beérkezett, de az adatbázis nem tudta aktiválni az előfizetést. Kézi segítségért lépjen kapcsolatba az ügyfélszolgálattal",
+    "completed": "⌯ <b>Előfizetés aktiválva</b>\n\n✦ A(z) {plan_name} csomag mostantól aktív, és ekkor jár le: {expiry_date}"
+  },
+  "broadcast": {
+    "json": {
+      "file_required": "⌯ <b>Közvetítési JSON-fájl szükséges</b>\n\n✦ Válaszoljon egy többnyelvű JSON-fájlra, és használja a <code>/bc .</code> parancsot",
+      "invalid_file": "⌯ <b>Érvénytelen közvetítési fájl</b>\n\n✦ A megválaszolt dokumentumnak JSON-fájlnak kell lennie",
+      "validation_failed": "⌯ <b>A közvetítési fájl ellenőrzése sikertelen</b>\n\n✦ A fájlt nem sikerült elfogadni: <code>{error}</code>",
+      "confirm": "⌯ <b>Többnyelvű közvetítés megerősítése</b>\n\n✦ A fájl {language_count} használható nyelvet tartalmaz. A felhasználók először a mentett nyelvükön, majd az alapnyelvükön, végső tartalékként pedig angolul kapják meg az üzenetet\n\n✦ Szűrők: {filters}",
+      "how_to": "⌯ <b>Többnyelvű üzenetszórás</b>\n\n✦ Érintse meg az alábbi gombot egy JSON sablon fogadásához, amely minden elérhető nyelvet tartalmaz. Töltse ki a <code>text</code> értéket minden kívánt nyelvhez, majd töltse fel a fájlt, és válaszoljon rá a <code>/bc .</code> paranccsal — az üresen hagyott nyelvek angolra esnek vissza",
+      "template_sent": "⌯ <b>Üzenetszórási sablon</b>\n\n✦ A fájl {language_count} nyelvet tartalmaz, és a jelenlegi nyelvi fájlokból jött létre"
+    },
+    "usage": "⌯ <b>Üzenet közvetítése</b>\n\n✦ Válaszoljon a küldeni kívánt üzenetre, majd használja a /bc parancsot. A választható szűrők közé tartozik a <code>-only USER_ID</code> és a <code>-rm USER_ID --prem</code>",
+    "invalid_message": "⌯ <b>A közvetítési üzenet nem érhető el</b>\n\n✦ A megválaszolt üzenet nem rendelkezik érvényes Telegram-azonosítóval",
+    "confirm": "⌯ <b>Közvetítés megerősítése</b>\n\n✦ Üzenetazonosító: <code>{message_id}</code>\n✦ Szűrők: {filters}\n\n✦ Válassza ki, hogy normál módon küldi el, vagy elküldi és kitűzi",
+    "starting": "⌯ <b>A közvetítés elindult</b>\n\n✦ Az üzenetet elküldjük a kiválasztott felhasználóknak",
+    "progress": "⌯ <b>Közvetítés folyamatban</b>\n\n✦ Feldolgozva: {processed}/{total}\n✦ Sikeres: {successful}\n✦ Sikertelen: {failed}",
+    "completed": "⌯ <b>A közvetítés befejeződött</b>\n\n✦ Célzott felhasználók: {total}\n✦ Sikeres: {successful}\n✦ Sikertelen: {failed}",
+    "cancelled": "⌯ <b>A közvetítés megszakítva</b>\n\n✦ A művelet {processed} felhasználó feldolgozása után leállt",
+    "buttons": {
+      "normal": "Normál küldés",
+      "pin": "Küldés és kitűzés",
+      "get_template": "JSON sablon lekérése"
+    },
+    "filters": {
+      "none": "Nincsenek szűrők",
+      "summary": "Csak felhasználók: {only_count}, kizárt felhasználók: {excluded_count}, előfizetők kizárása: {exclude_premium}"
+    }
+  },
+  "admin": {
+    "users": {
+      "new_language": "⌯ <b>Nem elérhető nyelv észlelve</b>\n\n✦ Felhasználó: {first_name}\n✦ Felhasználói azonosító: <code>{user_id}</code>\n✦ Észlelt kód: <code>{language_code}</code>",
+      "new_user": "⌯ <b>Új felhasználó csatlakozott</b>\n\n✦ Név: {first_name} {last_name}\n✦ Felhasználói azonosító: <code>{user_id}</code>\n✦ Felhasználónév: {username}\n✦ Összes felhasználó: {total_users}",
+      "exported": "⌯ <b>A felhasználók exportálása befejeződött</b>\n\n✦ A csatolt fájl {count} felhasználói rekordot tartalmaz"
+    },
+    "payments": {
+      "new_subscription": "⌯ <b>Új fizetett előfizetés</b>\n\n✦ Felhasználó: {user_name}\n✦ Felhasználói azonosító: <code>{user_id}</code>\n✦ Csomag: {plan_name}\n✦ Összeg: {amount} Stars"
+    },
+    "pool": {
+      "insufficient": "⌯ <b>A letöltési fiókkészlet hiányos</b>\n\n✦ Jelenleg betöltve: {current}\n✦ További szükséges fiókok: {missing}"
+    },
+    "gifts": {
+      "create_usage": "⌯ <b>Ajándék létrehozása</b>\n\n✦ Használja a <code>/create -gift --value POINTS</code> parancsot. A választható beállítások közé tartozik a <code>--linkexpiry DDHHMM</code>, <code>--giftexpiry DDHHMM</code>, <code>--onlyuser [IDS]</code>, <code>--exceptionuser [IDS]</code> és <code>--limit NUMBER</code>",
+      "value_required": "⌯ <b>Az ajándék értéke szükséges</b>\n\n✦ Adjon meg egy pozitív számot a <code>--value</code> után",
+      "user_filter_conflict": "⌯ <b>Ütköző felhasználói szűrők</b>\n\n✦ Egy ajándék nem használhat egyszerre engedélyezett és kizárt felhasználói szűrőt",
+      "invalid_duration": "⌯ <b>Érvénytelen időtartam</b>\n\n✦ Az ajándék időtartamaihoz használja a hatjegyű <code>DDHHMM</code> formátumot",
+      "invalid_values": "⌯ <b>Érvénytelen ajándékbeállítások</b>\n\n✦ Ellenőrizze a felhasználói azonosítókat, a beváltási korlátot és minden megadott értéket",
+      "created": "⌯ <b>Ajándék létrehozva</b>\n\n✦ Az ajándékhivatkozás elkészült:\n✦ <code>{gift_link}</code>",
+      "empty": "⌯ <b>ℹ Nincsenek aktív ajándékok</b>\n\n✦ Jelenleg nincsenek aktív ajándékhivatkozások",
+      "list_title": "⌯ <b>Aktív ajándékok</b>\n\n✦ Jelenleg a következő ajándékhivatkozások érhetők el",
+      "list_item": "<b>Ajándék:</b> <code>{gift_pid}</code>\nÉrték: {value}\nBeváltások: {usage_count}/{usage_limit}\nHivatkozás lejárata: {expiry}\nLétrehozva: {created_at}\nHivatkozás: <code>{gift_link}</code>",
+      "remove_usage": "⌯ <b>Ajándék eltávolítása</b>\n\n✦ Használja a <code>/rm -gift --pid GIFT_ID</code> parancsot",
+      "not_found": "⌯ <b>Az ajándék nem található</b>\n\n✦ A megadott azonosítóval nem létezik aktív ajándék",
+      "remove_confirm": "⌯ <b>Ajándék inaktiválása</b>\n\n✦ Ajándék: <code>{gift_pid}</code>\n✦ Érték: {value}\n✦ Beváltások: {usage_count}\n\n✦ Erősítse meg, hogy megakadályozza a későbbi beváltásokat",
+      "deactivated": "⌯ <b>Ajándék inaktiválva</b>\n\n✦ A(z) <code>{gift_pid}</code> ajándék már nem váltható be"
+    },
+    "add": {
+      "usage": "⌯ <b>Adminisztrációs beállítások hozzáadása</b>\n\n✦ Használja a /add parancsot a <code>-premium</code>, <code>-lang</code> vagy <code>-frcch</code> kapcsolóval"
+    },
+    "remove": {
+      "usage": "⌯ <b>Adminisztrációs beállítások eltávolítása</b>\n\n✦ Használja a /rm parancsot a <code>-premium</code>, <code>-gift</code> vagy <code>-frcch</code> kapcsolóval"
+    },
+    "premium": {
+      "add_usage": "⌯ <b>Előfizetés</b>\n\n✦ /admin\n✦ Válassz felhasználókat vagy küldd el számazonosítóikat\n✦ Nap\n✦ <code>/add -premium --user [123456789] --days 30</code>",
+      "added": "⌯ <b>Az előfizetés frissítése befejeződött</b>\n\n✦ Frissített felhasználók: {users}\n✦ Hiányzó felhasználók: {missing}",
+      "remove_usage": "⌯ <b>Előfizetés eltávolítása</b>\n\n✦ Használja a <code>/rm -premium --user [USER_IDS]</code> parancsot",
+      "removed": "⌯ <b>Az előfizetés eltávolítása befejeződött</b>\n\n✦ Frissített felhasználók: {users}\n✦ Hiányzó vagy inaktív felhasználók: {missing}"
+    },
+    "languages": {
+      "reply_to_json": "⌯ <b>Nyelvi fájl szükséges</b>\n\n✦ A <code>/add -lang</code> használatakor válaszoljon egy érvényes JSON nyelvi fájlra",
+      "json_required": "⌯ <b>JSON-fájl szükséges</b>\n\n✦ A megválaszolt dokumentumnak <code>.json</code> kiterjesztést kell használnia",
+      "already_exists": "⌯ <b>ℹ A nyelv már létezik</b>\n\n✦ A(z) <code>{language_code}</code> nyelv már telepítve van. A lecseréléséhez adja hozzá a <code>--update</code> kapcsolót",
+      "invalid_json": "⌯ <b>Érvénytelen nyelvi fájl</b>\n\n✦ A JSON-fájlt nem sikerült betölteni: <code>{error}</code>",
+      "added": "⌯ <b>Nyelv hozzáadva</b>\n\n✦ A(z) <code>{language_code}</code> nyelv mostantól elérhető",
+      "updated": "⌯ <b>Nyelv frissítve</b>\n\n✦ A(z) <code>{language_code}</code> nyelvet sikeresen újratöltöttük"
+    },
+    "force_subscription": {
+      "empty": "⌯ <b>ℹ Nincsenek kötelező csatornák</b>\n\n✦ Jelenleg nincs beállítva kötelező feliratkozási csatorna",
+      "list_title": "⌯ <b>Kötelező csatornák</b>\n\n✦ Jelenleg a következő csatornákhoz való csatlakozás kötelező",
+      "list_item": "Hivatkozás: {link}\nCsatornaazonosító: <code>{channel_id}</code>\nCsatlakozott: {joined}\nKorlát: {limit}",
+      "add_usage": "⌯ <b>Kötelező csatorna hozzáadása</b>\n\n✦ Használja a <code>/add -frcch --link CHANNEL_LINK --id CHANNEL_ID --limit NUMBER</code> parancsot",
+      "permission_required": "⌯ <b>Rendszergazdai jogosultság szükséges</b>\n\n✦ A botnak olyan rendszergazdának kell lennie, aki jogosult felhasználókat meghívni",
+      "added": "⌯ <b>Kötelező csatorna hozzáadva</b>\n\n✦ Csatorna: {channel_title}\n✦ Csatlakozási korlát: {limit}",
+      "add_failed": "⌯ <b>A csatornát nem sikerült hozzáadni</b>\n\n✦ Ellenőrizze a csatornaazonosítót, a hivatkozást és a bot rendszergazdai jogosultságait",
+      "remove_usage": "⌯ <b>Kötelező csatorna eltávolítása</b>\n\n✦ Használja a <code>/rm -frcch CHANNEL_ID</code> parancsot, vagy adja meg a mentett hivatkozását",
+      "removed": "⌯ <b>Kötelező csatorna eltávolítva</b>\n\n✦ A csatornához való csatlakozás már nem kötelező",
+      "not_found": "⌯ <b>A kötelező csatorna nem található</b>\n\n✦ Egyetlen mentett csatorna sem egyezik a megadott azonosítóval vagy hivatkozással"
+    },
+    "logs": {
+      "not_found": "⌯ <b>A naplókönyvtár nem érhető el</b>\n\n✦ A bot naplókönyvtára nem létezik",
+      "empty": "⌯ <b>Nincsenek elérhető naplók</b>\n\n✦ Nem találhatók nem üres botnaplófájlok",
+      "file_caption": "⌯ <b>Botnapló</b>\n\n✦ Fájl: <code>{filename}</code>",
+      "upload_failed": "⌯ <b>A napló feltöltése sikertelen</b>\n\n✦ Fájl: <code>{filename}</code>\n✦ Hiba: <code>{error}</code>"
+    }
+  },
+  "queue": {
+    "accepted": "⌯ <b>A feladatod elmentve</b>\n\n✦ Feladat ↣ {task_id}\n✦ A /cancel paranccsal válassz feladatot vagy írd utána a feladat számát\n✦ <code>/cancel {task_id}</code>",
+    "waiting_free": "⌯ <b>Várakozik</b>\n\n✦ Előtted várakozók: {ahead}\n✦ A letöltés szabad hely esetén indul\n✦ Az előfizetéssel kihagyhatod a közös sort",
+    "waiting_premium": "⌯ <b>Várakozik</b>\n\n✦ Korábbi saját feladataid: {ahead}\n✦ A feladatok egymás után futnak",
+    "limit_free": "⌯ <b>Feladat</b>\n\n✦ Már van egy nyitott feladatod\n✦ Várd meg a végét vagy töröld a /cancel paranccsal\n✦ Legfeljebb 5 nyitott feladatod lehet\n✦ Várd meg az egyik végét vagy töröld a /cancel paranccsal",
+    "limit_premium": "⌯ <b>Feladat</b>\n\n✦ Legfeljebb {limit} nyitott feladatod lehet\n✦ Várd meg az egyik végét vagy töröld a /cancel paranccsal",
+    "lost_after_restart": "⌯ <b>Indítsd újra a feladatot</b>\n\n✦ Feladat ↣ {task_id}\n✦ Nyisd meg a bejegyzést a Telegramban és tartsd nyomva\n✦ Válaszd a Hivatkozás másolása lehetőséget és küldd ide\n✦ Több bejegyzésnél először az első hivatkozását küldd el",
+    "cancel_usage": "A /cancel paranccsal válassz feladatot vagy írd utána a feladat számát\n<code>/cancel 123</code>",
+    "cancelled_one": "A(z) {task_id} feladat megszakítva",
+    "not_found": "A(z) {task_id} feladat már véget ért vagy nem a tiéd",
+    "choose_to_cancel": "⌯ <b>Mégse Feladat</b>\n\n✦ A /cancel paranccsal válassz feladatot vagy írd utána a feladat számát",
+    "cancelled_popup": "Mégse",
+    "not_found_popup": "Indítsd újra a feladatot",
+    "buttons": {
+      "cancel": "Mégse Feladat",
+      "upgrade": "Előfizetés",
+      "cancel_task": "Feladat {task_id} {kind} {status}",
+      "cancel_all": "Mégse Feladat /cancel"
+    },
+    "kinds": {
+      "dl": "Egy bejegyzés letöltése",
+      "bdl": "Több bejegyzés letöltése",
+      "clone": "Teljes csatorna átvitele",
+      "task": "Feladat",
+      "monitor": "Új csatornabejegyzések figyelése"
+    },
+    "status": {
+      "queued": "Várakozik",
+      "running": "Fut"
+    },
+    "task_number": "Feladat {task_id}"
+  },
+  "spam": {
+    "per_second": "Másodpercenként legfeljebb egy üzenetet küldj",
+    "per_minute": "Percenként legfeljebb 20 üzenetet küldj\nEz a bot letöltési hivatkozásokat fogad\nVárj a perc végéig",
+    "buttons": "Több mint 20 gombot nyomtál meg egy perc alatt\nVárj a folytatás előtt\nIsmételt szabálysértésnél megduplázódik a várakozási idő"
+  },
+  "flow": {
+    "first_link": "⌯ <b>Egy bejegyzés letöltése</b>\n\n✦ Nyisd meg a bejegyzést a Telegramban és tartsd nyomva\n✦ Válaszd a Hivatkozás másolása lehetőséget és küldd ide\n✦ Több bejegyzésnél először az első hivatkozását küldd el\n✦ <code>https://t.me/example_channel/15</code>",
+    "last_link": "⌯ <b>Több bejegyzés letöltése</b>\n\n✦ Küldd el ugyanannak a csatornának az utolsó bejegyzésére mutató hivatkozást\n✦ Az első az utolsó és a köztük lévő bejegyzések is bekerülnek\n✦ Ezután válaszd ki a tartalomtípusokat",
+    "channel": "⌯ <b>Csatorna kiválasztása</b>\n\n✦ Küldd el a csatorna hivatkozását vagy felhasználónevét\n✦ Privát csatornához a /login paranccsal csatolj egy már tagként szereplő fiókot\n✦ <code>https://t.me/example_channel</code>",
+    "pick_channel": "Csatorna kiválasztása",
+    "invalid_channel": "Küldd el a csatorna hivatkozását vagy felhasználónevét\nPrivát csatornához a /login paranccsal csatolj egy már tagként szereplő fiókot",
+    "upload_channel": "⌯ <b>Válassz feltöltési csatornát</b>\n\n✦ A legegyszerűbb ↣ add hozzá a botot posztolási joggal rendelkező adminként a csatornádhoz vagy csoportodhoz\n✦ A bot ide küld egy megerősítést és megnyomod a Megerősítés gombot\n✦ Vagy koppints lent a csatornaválasztó gombra\n✦ Vagy küldd el a csatorna linkjét, felhasználónevét vagy a <code>-100</code> kezdetű azonosítót\n✦ Ehhez a funkcióhoz bot előfizetés kell"
+  },
+  "panel": {
+    "title": "⌯ <b>Kezelés</b>\n\n✦ Előfizetés / Ajándék / Kötelező csatornák / Körlevél",
+    "premium": "Előfizetés",
+    "gift": "Ajándék",
+    "fsub": "Kötelező csatornák",
+    "broadcast": "Körlevél",
+    "users": "Felhasználók exportálása",
+    "language": "Nyelvi fájlok",
+    "gifts": "Aktív ajándékok",
+    "choose_user": "Válassz felhasználókat vagy küldd el számazonosítóikat",
+    "selected_users": "Minden felhasználó ↣ {users}",
+    "selected_channel": "Csatorna kiválasztása ↣ {channel_id}",
+    "custom": "Másik szám",
+    "remove_premium": "Mégse Előfizetés",
+    "days": "Nap ↣ {days}",
+    "value": "Ajándékpontok",
+    "link_days": "Hivatkozás érvényessége napokban / Az ajándék érvényességénél a nulla korlátlan időt jelent",
+    "point_days": "Pontok érvényessége napokban / Az ajándék érvényességénél a nulla korlátlan időt jelent",
+    "limit": "Beváltások felső határa",
+    "only_users": "Megadott felhasználók engedélyezése",
+    "exclude_users": "Felhasználók kizárása",
+    "send_broadcast": "Küldd ide a körlevél szövegét\nNézd meg a másolatot és válaszd ki a címzetteket\nEzután nyomd meg a Megerősítés gombot",
+    "send_language": "Küldj a nyelvkódról elnevezett JSON fájlt például ar.json\nA meglévő fájl csak az új fájl érvényessége esetén cserélődik le",
+    "enter_value": "Küldj egy számot vagy vesszővel elválasztott felhasználói azonosítókat\nA válasz törlődik és a menü frissül",
+    "invalid_value": "Küldj érvényes számot\nAz ajándék érvényességénél a nulla korlátlan időt jelent",
+    "audience_all": "Minden felhasználó",
+    "audience_premium": "Előfizetők",
+    "audience_free": "Ingyenes felhasználók",
+    "admins": "Adminok",
+    "send_admin": "Küldd el a felhasználó számazonosítóját, vagy továbbítsd az egyik üzenetét\nEltávolításhoz nyomj egy adminra lent",
+    "admin_added": "Admin hozzáadva: {user_id}",
+    "admin_removed": "Admin eltávolítva: {user_id}",
+    "admin_exists": "Ez a felhasználó már admin",
+    "no_admins": "Még nincs admin",
+    "owner_only": "Csak a tulajdonosok kezelhetnek adminokat"
+  },
+  "large": {
+    "saved": "Küldés a mentett üzeneteimbe",
+    "split": "Letöltés és felosztás",
+    "help_button": "Magyarázat",
+    "split_notice": "⌯ <b>Letöltés és felosztás</b>\n\n✦ Méret: {size}\n✦ A bot részenként körülbelül 2 GB-ot tölt fel\n✦ Válaszd a Letöltés és felosztás vagy a Mégse lehetőséget\n✦ Legfeljebb 4 GB-os teljes fájlhoz csatolj Telegram Premium fiókot a /login paranccsal és válassz csatornát a /uploadch paranccsal",
+    "premium_notice": "⌯ <b>Küldés a mentett üzeneteimbe</b>\n\n✦ Méret: {size}\n✦ A csatolt Telegram Premium fiók a teljes fájlt feltöltheti a mentett üzeneteidbe\n✦ A /uploadch paranccsal célcsatornát is választhatsz\n✦ A fájl felosztása is lehetséges",
+    "help": "⌯ <b>Magyarázat</b>\n\n✦ A bot előfizetése és a Telegram Premium külön előfizetés\n✦ A bot részenként körülbelül 2 GB-ot tölt fel\n✦ A csatolt Telegram Premium fiók akár 4 GB-ot tölthet fel egyetlen fájlban\n✦ Csatold a fiókot a /login paranccsal\n✦ Add hozzá a botot és a fiókot a célcsatorna adminisztrátoraként majd válaszd ki a /uploadch paranccsal\n✦ Csatorna nélkül a mentett üzeneteket választhatod\n✦ A dokumentumrészeket a számozás sorrendjében kell egyesíteni"
+  },
+  "referral_check": {
+    "question": "⌯ <b>Gyors ellenőrzés</b>\n\n✦ Oldd meg, hogy megerősítsd, hogy valódi személy vagy, és a meghívásod beszámítson\n\n✦ {a} + {b} = ?",
+    "wrong": "⌯ <b>Rossz válasz</b>\n\n✦ Próbáld újra. Hátralévő kísérletek: {left}",
+    "failed": "⌯ <b>A meghívás nem lett beszámítva</b>\n\n✦ A meghívásod nem lett beszámítva, mert az ellenőrzést nem oldottad meg. A botot ettől még normálisan használhatod"
+  },
+  "units": {
+    "b": "{n} B",
+    "kb": "{n} KB",
+    "mb": "{n} MB",
+    "gb": "{n} GB",
+    "tb": "{n} TB",
+    "pb": "{n} PB",
+    "day": "{n}d",
+    "hour": "{n}h",
+    "minute": "{n}m",
+    "second": "{n}s"
+  }
+}

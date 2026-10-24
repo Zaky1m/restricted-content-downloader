@@ -1,0 +1,675 @@
+{
+  "lang_name": "🇨🇿 Čeština",
+  "common": {
+    "not_available": "Není k dispozici",
+    "never": "Nikdy",
+    "unlimited": "Neomezeně",
+    "none": "Žádné",
+    "yes": "Ano",
+    "no": "Ne",
+    "processing": "⌯ <b>Zpracovávání</b>\n\n✦ Počkejte prosím, než bude požadovaná operace připravena",
+    "state_expired": "⌯ <b>Relace vypršela</b>\n\n✦ Uložená vstupní relace vypršela po deseti minutách. Spusťte operaci znovu",
+    "state_expired_popup": "Začni úlohu znovu",
+    "action_cancelled": "⌯ <b>Operace zrušena</b>\n\n✦ Vybraná operace byla zrušena a její dočasný stav byl odstraněn",
+    "unexpected_error": "⌯ <b>Došlo k neočekávané chybě</b>\n\n✦ Operaci nebylo možné dokončit kvůli následující chybě: <code>{error}</code>",
+    "something_went_wrong": "Při zpracování této akce došlo k chybě, zkuste to prosím znovu"
+  },
+  "buttons": {
+    "start": "Spustit",
+    "confirm": "Potvrdit",
+    "back": "Zpět",
+    "subscribe": "Předplatit",
+    "earn_points": "Získat body",
+    "share_and_earn": "Sdílet a získat body",
+    "link_account": "Propojit účet",
+    "open_source": "Otevřít kanál",
+    "refresh_subscription": "Zkontrolovat znovu",
+    "channel": "Kanál s aktualizacemi",
+    "help": "Nápověda",
+    "profile": "Profil",
+    "contact_admin": "Kontaktovat podporu kvůli jiným způsobům platby",
+    "cancel": "Zrušit",
+    "delete": "Smazat",
+    "open": "Otevřít",
+    "reject": "Odmítnout"
+  },
+  "commands": {
+    "bcjson": {
+      "description": "Stáhnout šablonu vícejazyčného vysílání"
+    },
+    "start": {
+      "description": "Spustit bota"
+    },
+    "help": {
+      "description": "Otevřít centrum nápovědy"
+    },
+    "profile": {
+      "description": "Zobrazit účet a body"
+    },
+    "premium": {
+      "description": "Zobrazit funkce předplatného"
+    },
+    "language": {
+      "description": "Změnit jazyk bota"
+    },
+    "login": {
+      "description": "Propojit účet Telegram"
+    },
+    "logout": {
+      "description": "Odebrat propojený účet"
+    },
+    "dl": {
+      "description": "Stáhnout jeden příspěvek z Telegramu"
+    },
+    "bdl": {
+      "description": "Stáhnout rozsah příspěvků"
+    },
+    "clone": {
+      "description": "Přenést celý kanál"
+    },
+    "forcedownload": {
+      "description": "Spravovat režim vynuceného stahování"
+    },
+    "thumb": {
+      "description": "Spravovat vlastní náhled"
+    },
+    "caption": {
+      "description": "Spravovat zpracování popisků"
+    },
+    "cancel": {
+      "description": "Zrušit aktuální operaci"
+    },
+    "stats": {
+      "description": "Zobrazit systémové statistiky"
+    },
+    "monitor": {
+      "description": "Automaticky sledovat kanál"
+    },
+    "uploadch": {
+      "description": "Nastavit cílový kanál pro nahrávání"
+    },
+    "rmuploadch": {
+      "description": "Odebrat cílový kanál pro nahrávání"
+    },
+    "bc": {
+      "description": "Rozeslat zprávu"
+    },
+    "add": {
+      "description": "Přidat administrátorská nastavení"
+    },
+    "rm": {
+      "description": "Odebrat administrátorská nastavení"
+    },
+    "create": {
+      "description": "Vytvořit dárkový odkaz"
+    },
+    "logs": {
+      "description": "Stáhnout protokoly bota"
+    },
+    "admin": {
+      "description": "Správa"
+    }
+  },
+  "start": {
+    "welcome": "⌯ <b>Vítejte v nástroji pro stahování médií</b>\n\n✦ Pošlete odkaz na příspěvek z Telegramu a stáhněte jeho média, včetně obsahu z veřejných či soukromých kanálů a kanálů, které zakazují přeposílání. Můžete také stáhnout více příspěvků, přenést celý kanál, použít vlastní náhled souborů nebo odeslat stažený obsah přímo do jiného kanálu\n\n✦ Propojený účet: {account_status}"
+  },
+  "accounts": {
+    "status": {
+      "connected": "Propojen",
+      "not_connected": "Není propojen"
+    },
+    "session_expired": "⌯ <b>Relace propojeného účtu vypršela</b>\n\n✦ Propojený účet Telegram již není autorizován. Před přístupem k soukromým zdrojům účet znovu propojte",
+    "access": {
+      "login_required": "⌯ <b>Je vyžadován propojený účet</b>\n\n✦ Sdílený odkaz patří k soukromému nebo omezenému zdroji, ke kterému účty pro stahování nemají přístup. Propojte účet Telegram, který je již členem zdrojového kanálu, a poté odkaz odešlete znovu",
+      "not_member": "⌯ <b>Váš propojený účet není členem</b>\n\n✦ Účet Telegram propojený s botem nemá přístup ke kanálu ze sdíleného odkazu. Nejprve se k tomuto kanálu připojte pomocí propojeného účtu a poté odkaz odešlete znovu"
+    },
+    "login": {
+      "choose_account": "⌯ <b>Vyberte účet, který chcete propojit</b>\n\n✦ Zvolte, zda chcete propojit svůj aktuální účet Telegram, nebo jiný účet. Vybraný účet již musí být členem všech soukromých kanálů, ze kterých chcete stahovat",
+      "already_running": "⌯ <b>Přihlašování již probíhá</b>\n\n✦ Před zahájením dalšího přihlašování dokončete nebo zrušte aktuální proces",
+      "already_connected": "⌯ <b>Účet je již propojen</b>\n\n✦ Telefonní číslo <code>{phone_number}</code> je aktuálně připojeno. Před propojením jiného účtu ho odeberte pomocí příkazu /logout",
+      "share_contact": "⌯ <b>Sdílejte své telefonní číslo</b>\n\n✦ Pomocí tlačítka níže bezpečně sdílejte telefonní číslo svého aktuálního účtu Telegram",
+      "enter_phone": "⌯ <b>Zadejte alternativní telefonní číslo</b>\n\n✦ Odešlete telefonní číslo ručně v mezinárodním formátu. Musí začínat znakem <code>+</code>, po kterém následuje kód země, například <code>+420123456789</code>",
+      "invalid_phone": "⌯ <b>Neplatné telefonní číslo</b>\n\n✦ Číslo musí začínat znakem <code>+</code> a obsahovat kód země bez písmen či nepodporovaných symbolů. Spusťte přihlašování znovu nebo odešlete správně formátované číslo",
+      "contact_mismatch": "⌯ <b>Kontakt se neshoduje</b>\n\n✦ Sdílený kontakt nepatří účtu Telegram, který používá tohoto bota. Pomocí poskytnutého tlačítka sdílejte své vlastní číslo, nebo zvolte možnost jiného účtu",
+      "contact_received": "⌯ <b>Telefonní číslo přijato</b>\n\n✦ Bot připravuje žádost o autorizaci. Počkejte prosím, než Telegram odešle přihlašovací kód",
+      "code_prompt": "⌯ <b>Telegram</b>\n\n✦ Kód Telegramu zadej pouze číselnými tlačítky\n✦ Smazat odstraní poslední číslici a Potvrdit kód odešle",
+      "code_prompt_with_value": "⌯ <b>Telegram</b>\n\n✦ <code>{code}</code>\n✦ Kód Telegramu zadej pouze číselnými tlačítky\n✦ Smazat odstraní poslední číslici a Potvrdit kód odešle",
+      "processing": "⌯ <b>Ověřování účtu</b>\n\n✦ Kód se kontroluje a vytváří se relace propojeného účtu",
+      "password_prompt": "⌯ <b>Je vyžadováno dvoufázové ověření</b>\n\n✦ Odešlete heslo dvoufázového ověření tohoto účtu Telegram jako textovou zprávu\n\n✦ Nápověda k heslu: <code>{hint}</code>",
+      "completed": "⌯ <b>Účet byl úspěšně propojen</b>\n\n✦ Účet Telegram je nyní připojen. K soukromým kanálům můžete přistupovat, pokud je tento účet již jejich členem",
+      "cancelled": "⌯ <b>Propojování účtu bylo zrušeno</b>\n\n✦ Dočasná přihlašovací relace byla ukončena a nebyly uloženy žádné informace o účtu",
+      "restart_hint": "⌯ <b>Až budete připraveni, začněte znovu</b>\n\n✦ Kdykoli budete chtít zahájit nový proces propojování účtu, použijte příkaz /login",
+      "failed": "⌯ <b>Propojení účtu se nezdařilo</b>\n\n✦ Proces autorizace nebylo možné dokončit. Začněte znovu a ověřte, že jsou telefonní číslo, přihlašovací kód a heslo správné",
+      "flood_wait": "⌯ <b>Příliš mnoho pokusů o přihlášení</b>\n\n✦ Telegram dočasně omezil nové žádosti o autorizaci. Zkuste to znovu za {seconds} sekund",
+      "invalid_code": "⌯ <b>Neplatný nebo prošlý kód</b>\n\n✦ Kód byl odmítnut nebo jeho platnost vypršela. Zadejte nejnovější kód odeslaný Telegramem, nebo proces zrušte a začněte znovu",
+      "invalid_password": "⌯ <b>Nesprávné ověřovací heslo</b>\n\n✦ Heslo dvoufázového ověření není správné. Odešlete správné heslo nebo proces přihlašování zrušte",
+      "code_empty_popup": "Před potvrzením zadejte kód z Telegramu",
+      "invalid_code_popup": "Kód je neplatný nebo jeho platnost vypršela",
+      "buttons": {
+        "my_account": "Můj aktuální účet",
+        "other_account": "Jiný účet",
+        "share_phone": "Sdílet mé telefonní číslo"
+      },
+      "too_many_attempts": "⌯ <b>Úloha</b>\n\n✦ Telegram dočasně omezil pokusy o přihlášení\n✦ Počkej před dalším /login",
+      "phone_banned": "⌯ <b>Telegram</b>\n\n✦ Toto číslo je na Telegramu zablokované\n✦ Použij jiný účet nebo kontaktuj podporu Telegramu",
+      "hint_awaiting_contact": "⌯ <b>Sdílejte své telefonní číslo</b>\n\n✦ Pomocí tlačítka níže bezpečně sdílejte telefonní číslo svého aktuálního účtu Telegram",
+      "hint_awaiting_account_type": "⌯ <b>Vyberte účet, který chcete propojit</b>\n\n✦ Zvolte, zda chcete propojit svůj aktuální účet Telegram, nebo jiný účet. Vybraný účet již musí být členem všech soukromých kanálů, ze kterých chcete stahovat",
+      "hint_sending_code": "Čeká\nKód Telegramu zadej pouze číselnými tlačítky\nSmazat odstraní poslední číslici a Potvrdit kód odešle",
+      "hint_awaiting_code": "Kód Telegramu zadej pouze číselnými tlačítky\nSmazat odstraní poslední číslici a Potvrdit kód odešle"
+    },
+    "logout": {
+      "not_connected": "⌯ <b>ℹ Není propojen žádný účet</b>\n\n✦ K vašemu profilu bota není aktuálně připojen žádný účet Telegram",
+      "confirm": "⌯ <b>Odebrat propojený účet</b>\n\n✦ Telefonní číslo <code>{phone_number}</code> bude odpojeno a jeho uložená relace bude odstraněna. Potvrďte pouze v případě, že chcete pokračovat",
+      "completed": "⌯ <b>Propojený účet byl odebrán</b>\n\n✦ Uložená relace Telegram byla úspěšně odstraněna. Kdykoli můžete propojit jiný účet"
+    }
+  },
+  "subscription": {
+    "required": "⌯ <b>Je vyžadován odběr</b>\n\n✦ Před použitím bota se připojte k níže uvedeným kanálům a poté stiskněte tlačítko kontroly\n\n✦ {channels}",
+    "completed": "⌯ <b>Odběr byl ověřen</b>\n\n✦ Vaše členství v kanálech bylo úspěšně ověřeno. Nyní můžete bota dále používat",
+    "still_missing_popup": "Stále se musíte připojit ke všem požadovaným kanálům"
+  },
+  "downloads": {
+    "invalid_link": "⌯ <b>Neplatný odkaz Telegram</b>\n\n✦ Odešlete odkaz, který vede přímo na příspěvek v Telegramu, například <code>https://t.me/channel/123</code>",
+    "post_not_found": "⌯ <b>Příspěvek nebyl nalezen</b>\n\n✦ Požadovaný příspěvek neexistuje, byl odstraněn nebo k němu vybraný účet pro stahování nemá přístup",
+    "nothing_to_download": "⌯ <b>Není co stáhnout</b>\n\n✦ Tento příspěvek neobsahuje média ani text ke stažení, například oznámení o změně názvu nebo fotky kanálu",
+    "comment_unavailable": "⌯ <b>Komentář se nepodařilo načíst</b>\n\n✦ Odkaz na komentář neodkazuje na dostupnou zprávu v diskuzi nebo Telegram odmítl uvedený identifikátor zprávy",
+    "client_unavailable": "⌯ <b>Účet pro stahování není dostupný</b>\n\n✦ Momentálně není k dispozici žádný účet Telegram, který by mohl tento obsah načíst. Zkuste to později nebo propojte svůj vlastní účet",
+    "preparing": "⌯ <b>Příprava stahování</b>\n\n✦ Před zahájením přenosu se shromažďují informace o médiu",
+    "splitting": "⌯ <b>Rozdělování souboru</b>\n\n✦ Soubor je větší než limit jedné nahrávané části a je rozdělován na podporované části",
+    "file_too_large": "⌯ <b>Soubor překračuje podporovanou velikost</b>\n\n✦ Tento soubor nelze zpracovat pro operaci {action}, protože jeho velikost překračuje {maximum_size}",
+    "file_too_small": "⌯ <b>Soubor je prázdný nebo poškozený</b>\n\n✦ Stažené médium je příliš malé na to, aby bylo považováno za platné, nebo Telegram vrátil neúplný soubor",
+    "file_missing": "⌯ <b>Stažený soubor chybí</b>\n\n✦ Dočasný soubor média nebyl před nahráním nalezen nebo byl prázdný",
+    "download_failed": "⌯ <b>Stahování se nezdařilo</b>\n\n✦ Médium se nepodařilo načíst ani po několika pokusech. Zkontrolujte přístup zdrojového účtu a zkuste to znovu",
+    "upload_failed": "⌯ <b>Nahrávání se nezdařilo</b>\n\n✦ Médium bylo staženo, ale nepodařilo se ho doručit. Telegram vrátil: <code>{error}</code>",
+    "flood_wait": "⌯ <b>Omezení rychlosti Telegramu</b>\n\n✦ Telegram požaduje před pokračováním nahrávání prodlevu {seconds} sekund",
+    "actions": {
+      "download": "stahování",
+      "upload": "nahrávání"
+    },
+    "progress": {
+      "downloading": "Stahování",
+      "uploading": "Nahrávání",
+      "body": "⌯ <b>{action}</b>\n\n✦ <code>{progress_bar}</code>\n\n✦ Přeneseno: {current_size} / {total_size}\n✦ Průběh: {percentage}%\n✦ Rychlost: {speed}/s\n✦ Zbývá: {eta}"
+    },
+    "parts": {
+      "item": "Část {current} z {total}"
+    },
+    "album": {
+      "preparing": "⌯ <b>Bylo rozpoznáno album médií</b>\n\n✦ Album obsahuje {count} vybraných položek, které budou postupně zpracovány",
+      "processing": "⌯ <b>Zpracovávání alba médií</b>\n\n✦ Zpracovává se položka {current} z {total}"
+    },
+    "single": {
+      "usage": "/dl\nOtevři příspěvek v Telegramu a podrž jej\nVyber Kopírovat odkaz a pošli jej sem\nU více příspěvků pošli nejprve odkaz na první"
+    },
+    "batch": {
+      "usage": "/bdl\nOtevři příspěvek v Telegramu a podrž jej\nVyber Kopírovat odkaz a pošli jej sem\nU více příspěvků pošli nejprve odkaz na první\nPošli odkaz na poslední příspěvek ze stejného kanálu\nOba příspěvky i všechny mezi nimi budou zahrnuty\nPotom vybereš druhy obsahu",
+      "different_sources": "⌯ <b>Odkazy patří k různým chatům</b>\n\n✦ První a poslední odkaz musí pocházet ze stejného kanálu nebo skupiny Telegram",
+      "invalid_order": "⌯ <b>Nesprávné pořadí příspěvků</b>\n\n✦ První odkaz musí směřovat na starší příspěvek než poslední odkaz",
+      "invalid_links": "⌯ <b>Neplatné odkazy pro dávku</b>\n\n✦ Obě hodnoty musí být platné odkazy na příspěvky z Telegramu ze stejného zdroje",
+      "starting": "⌯ <b>Dávkové stahování bylo spuštěno</b>\n\n✦ Bot zpracuje příspěvky od {start_id} do {end_id}. Celkový počet požadovaných příspěvků: {total}",
+      "progress": "⌯ <b>Probíhá dávkové stahování</b>\n\n✦ Aktuální položka: {current} z {total}\n✦ ID příspěvku: {message_id}\n✦ Staženo: {downloaded}\n✦ Přeskočeno: {skipped}\n✦ Nezdařilo se: {failed}",
+      "completed": "⌯ <b>Dávková operace byla dokončena</b>\n\n✦ Staženo: {downloaded}\n✦ Přeskočeno: {skipped}\n✦ Nezdařilo se: {failed}",
+      "cancelled": "⌯ <b>Dávková operace byla zrušena</b>\n\n✦ Zbývající příspěvky nebudou zpracovány. Průběh uložený před zrušením byl vymazán",
+      "failed": "⌯ <b>Dávková operace byla zastavena</b>\n\n✦ Neočekávaná chyba zabránila zpracování zbývajících příspěvků",
+      "retrying": "⌯ <b>Opakování neúspěšných položek</b>\n\n✦ Hlavní průchod byl dokončen. Nyní bude provedeno opakování {count} položek, které selhaly"
+    },
+    "disk_full": "⌯ <b>Úloha</b>\n\n✦ Na stažení souboru teď není dost místa\n✦ Zkus to později",
+    "paid": {
+      "not_purchased": "⌯ <b>Tento příspěvek je nutné koupit za Telegram Stars</b>\n\n✦ Kup ho propojeným účtem a pošli odkaz znovu"
+    }
+  },
+  "tasks": {
+    "already_running": "⌯ <b>Již probíhá jiná úloha</b>\n\n✦ Počkejte na dokončení aktivní úlohy nebo ji zrušte, než spustíte další operaci",
+    "resumed": "⌯ <b>Úloha byla obnovena</b>\n\n✦ Byla nalezena přerušená úloha, která bude pokračovat od poslední uložené pozice",
+    "cancel_requested": "⌯ <b>Bylo požádáno o zrušení</b>\n\n✦ Aktivní operace se zastavuje a dočasné soubory budou odstraněny",
+    "input_cancelled": "⌯ <b>Vstupní relace byla zrušena</b>\n\n✦ Čekající přihlašovací relace, relace filtru nebo potvrzení byla odstraněna",
+    "none_to_cancel": "⌯ <b>ℹ Žádná aktivní operace</b>\n\n✦ Není spuštěna žádná úloha ani nečeká žádná vstupní relace, kterou by bylo možné zrušit",
+    "completion": {
+      "single": {
+        "private": "⌯ <b>Stahování dokončeno</b>\n\n✦ Požadované médium bylo úspěšně staženo a odesláno do tohoto chatu",
+        "saved_messages": "⌯ <b>Stahování dokončeno</b>\n\n✦ Požadované médium bylo staženo a doručeno do Uložených zpráv vašeho propojeného účtu",
+        "channel": "⌯ <b>Nahrávání dokončeno</b>\n\n✦ Požadované médium bylo úspěšně doručeno do kanálu <b>{channel_title}</b>\n\n✦ {message_link}"
+      },
+      "batch": {
+        "private": "⌯ <b>Dávková úloha dokončena</b>\n\n✦ Bot dokončil zpracování vybraného rozsahu a doručil {count} položek do tohoto chatu",
+        "saved_messages": "⌯ <b>Dávková úloha dokončena</b>\n\n✦ Bot dokončil zpracování vybraného rozsahu a doručil {count} položek do Uložených zpráv vašeho propojeného účtu",
+        "channel": "⌯ <b>Dávkové nahrávání dokončeno</b>\n\n✦ Bot dokončil zpracování vybraného rozsahu a doručil {count} položek do vámi zvoleného kanálu"
+      },
+      "clone": {
+        "private": "⌯ <b>Přenos kanálu dokončen</b>\n\n✦ Úloha kanálu byla dokončena a do tohoto chatu bylo doručeno {count} položek",
+        "saved_messages": "⌯ <b>Přenos kanálu dokončen</b>\n\n✦ Úloha kanálu byla dokončena a do Uložených zpráv vašeho propojeného účtu bylo doručeno {count} položek",
+        "channel": "⌯ <b>Přenos kanálu dokončen</b>\n\n✦ Úloha kanálu byla dokončena a do zvoleného cílového kanálu bylo doručeno {count} položek"
+      },
+      "monitor": {
+        "private": "⌯ <b>Sledovaný příspěvek byl doručen</b>\n\n✦ Byl zjištěn nový příspěvek a doručen do tohoto chatu",
+        "saved_messages": "⌯ <b>Sledovaný příspěvek byl doručen</b>\n\n✦ Byl zjištěn nový příspěvek a doručen do Uložených zpráv vašeho propojeného účtu",
+        "channel": "⌯ <b>Sledovaný příspěvek byl doručen</b>\n\n✦ Byl zjištěn nový příspěvek a doručen do zvoleného cílového kanálu"
+      }
+    }
+  },
+  "filters": {
+    "prompt": "⌯ <b>Vyberte filtr obsahu</b>\n\n✦ Zvolte, zda chcete zpracovat všechen obsah, uložit pouze vybrané typy médií, nebo vybrané typy médií přeskočit. Relace výběru zůstane aktivní deset minut",
+    "modes": {
+      "all": "Veškerý obsah",
+      "save": "Uložit pouze",
+      "skip": "Přeskočit vybrané"
+    },
+    "types": {
+      "videos": "Videa",
+      "photos": "Fotografie",
+      "audio": "Zvuk",
+      "files": "Soubory",
+      "text": "Text",
+      "other": "Ostatní"
+    },
+    "summary": {
+      "all": "Veškerý podporovaný obsah",
+      "save": "Uložit pouze: {types}",
+      "skip": "Přeskočit: {types}",
+      "minimum_duration": "Minimální délka: {seconds} sekund",
+      "maximum_duration": "Maximální délka: {seconds} sekund"
+    }
+  },
+  "clone": {
+    "usage": "/clone\nPošli odkaz na kanál nebo jeho uživatelské jméno\nU soukromého kanálu připoj přes /login účet který je již členem",
+    "channel_not_found": "⌯ <b>Kanál nebyl nalezen</b>\n\n✦ Uživatelské jméno nebo odkaz kanálu je neplatný, případně ho propojený účet nedokáže vyhledat",
+    "empty_channel": "⌯ <b>Kanál je prázdný</b>\n\n✦ Ve vybraném kanálu nebyly nalezeny žádné přenositelné příspěvky",
+    "starting": "⌯ <b>Přenos kanálu byl spuštěn</b>\n\n✦ Bot se připravuje zpracovat {total} identifikátorů příspěvků z kanálu <b>{channel_title}</b>",
+    "progress": "⌯ <b>Probíhá přenos kanálu</b>\n\n✦ Aktuální položka: {current} z {total}\n✦ ID příspěvku: {message_id}\n✦ Staženo: {downloaded}\n✦ Přeskočeno: {skipped}\n✦ Nezdařilo se: {failed}",
+    "flood_wait": "⌯ <b>Omezení rychlosti Telegramu</b>\n\n✦ Přenos kanálu byl pozastaven na {seconds} sekund",
+    "completed": "⌯ <b>Zpracování kanálu bylo dokončeno</b>\n\n✦ Staženo: {downloaded}\n✦ Přeskočeno: {skipped}\n✦ Nezdařilo se: {failed}",
+    "cancelled": "⌯ <b>Přenos kanálu byl zrušen</b>\n\n✦ Zbývající příspěvky kanálu nebudou zpracovány",
+    "failed": "⌯ <b>Přenos kanálu se nezdařil</b>\n\n✦ Neočekávaná chyba zabránila dokončení přenosu"
+  },
+  "uploads": {
+    "channel": {
+      "usage": "/uploadch\nVybrat kanál\nPředplatné bota a Telegram Premium jsou samostatná předplatná\nBot nahrává asi 2 GB na část\nPřipojený účet Telegram Premium může nahrát až 4 GB v jednom souboru\nPřipoj účet přes /login\nPřidej bota i účet jako správce cílového kanálu a vyber ho přes /uploadch\nBez kanálu lze vybrat uložené zprávy\nČásti dokumentů je třeba spojit podle jejich čísel\nNejjednodušší ↣ přidej bota jako správce do svého kanálu nebo skupiny a požádá tě tady o potvrzení",
+      "current": "⌯ <b>Vybrat kanál</b>\n\n✦ {channel_id}\n✦ /uploadch\n✦ /rmuploadch",
+      "invalid_id": "⌯ <b>Neplatný identifikátor kanálu</b>\n\n✦ Odešlete číselné ID kanálu Telegram, které obvykle začíná řetězcem <code>-100</code>\n✦ Nejjednodušší ↣ přidej bota jako správce do svého kanálu nebo skupiny a požádá tě tady o potvrzení",
+      "bot_not_admin": "⌯ <b>Je vyžadován přístup správce pro bota</b>\n\n✦ Před povolením nahrávání do kanálu přidejte bota jako správce cílového kanálu\n✦ Nejjednodušší ↣ přidej bota jako správce do svého kanálu nebo skupiny a požádá tě tady o potvrzení",
+      "user_not_admin": "⌯ <b>Je vyžadován váš přístup správce</b>\n\n✦ Musíte být vlastníkem nebo správcem cílového kanálu",
+      "access_denied": "⌯ <b>Ověření kanálu se nezdařilo</b>\n\n✦ Ke kanálu se nepodařilo získat přístup nebo chybí požadovaná oprávnění správce",
+      "enabled": "⌯ <b>Kanál pro nahrávání byl připojen</b>\n\n✦ Budoucí stahování budou doručována do kanálu <b>{channel_title}</b>, dokud tento cíl neodeberete",
+      "disabled": "⌯ <b>Kanál pro nahrávání byl deaktivován</b>\n\n✦ Bot ztratil přístup správce k vybranému kanálu, proto bylo doručování do kanálu automaticky deaktivováno",
+      "removed": "⌯ <b>Kanál pro nahrávání byl odebrán</b>\n\n✦ Budoucí stahování se budou znovu doručovat do výchozího cíle",
+      "not_set": "⌯ <b>ℹ Není nastaven žádný kanál pro nahrávání</b>\n\n✦ Váš profil momentálně nemá nastaven žádný cílový kanál"
+    },
+    "auto": {
+      "start_first": "⌯ <b>Dokonči propojení kanálu</b>\n\n✦ Přidal jsi bota do ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Klepni na Start a zaregistruj se u bota aby se propojení dokončilo\n✦ Bez reakce do 24 hodin ho bot opustí",
+      "premium_only": "⌯ <b>Propojení kanálu je pro předplatitele</b>\n\n✦ Přidal jsi bota do ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Přijímání stažených souborů v kanálu nebo skupině je součást předplatného bota\n✦ Bot ho už opustil\n✦ Předplať si tlačítkem níže a pak bota přidej znovu",
+      "confirm": "⌯ <b>Potvrď kanál pro nahrávání</b>\n\n✦ Přidal jsi bota do ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Když potvrdíš budou tam chodit nová stahování a sledované příspěvky\n✦ Když odmítneš bot ho opustí\n✦ Bez odpovědi do 24 hodin bot odejde sám",
+      "linked": "⌯ <b>Kanál pro nahrávání propojen</b>\n\n✦ Kanál ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Budou tam chodit nová stahování a sledované příspěvky\n✦ Pošli /rmuploadch pro odebrání",
+      "no_rights": "⌯ <b>Bot tam nemůže publikovat</b>\n\n✦ Kanál ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Bot odešel protože není správce nebo nemůže publikovat\n✦ Přidej ho znovu jako správce s právem publikovat",
+      "user_not_admin": "⌯ <b>Musíš tam být správce</b>\n\n✦ Kanál ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Kanál pro nahrávání musí být tvůj nebo v něm musíš být správce\n✦ Bot ho už opustil",
+      "expired": "Tento požadavek vypršel"
+    }
+  },
+  "forcedownload": {
+    "details": "⌯ <b>Režim vynuceného stahování</b>\n\n✦ Když je tento režim povolen, bot každou mediální položku stáhne a znovu nahraje, místo aby ji přímo zkopíroval. To je užitečné při použití vlastního náhledu, opětovném sestavování souborů nebo zpracování omezení přeposílání\n\n✦ Aktuální stav: {status}",
+    "premium_required": "⌯ <b>Je vyžadováno předplatné</b>\n\n✦ Režim vynuceného stahování je dostupný předplatitelům, protože spotřebovává dodatečné úložiště, přenosovou kapacitu a výpočetní prostředky",
+    "flag_removed": "⌯ <b>ℹ Možnost --fdl byla odstraněna</b>\n\n✦ Vynucené stahování je nyní trvalý uživatelský režim. Předplatitelé ho mohou spravovat pomocí příkazu /forcedownload místo přidávání této možnosti k jednotlivým příkazům",
+    "enabled": "⌯ <b>Režim vynuceného stahování byl povolen</b>\n\n✦ Budoucí stahování, dávkové úlohy, přenosy kanálů a sledování stáhnou a nahrají původní soubory místo přímého kopírování příspěvků",
+    "disabled": "⌯ <b>Režim vynuceného stahování byl zakázán</b>\n\n✦ Bot může opět přímo kopírovat příspěvky bez omezení, přičemž chráněný obsah bude v případě potřeby nadále stahovat",
+    "status": {
+      "enabled": "Povoleno",
+      "disabled": "Zakázáno"
+    },
+    "buttons": {
+      "enable": "Povolit vynucené stahování",
+      "disable": "Zakázat vynucené stahování"
+    }
+  },
+  "thumbnail": {
+    "not_set": "⌯ <b>Žádný vlastní náhled</b>\n\n✦ Nejprve botovi odešlete obrázek a poté potvrďte, že ho chcete používat jako obal podporovaných nahrávaných souborů",
+    "current": "⌯ <b>Aktuální vlastní náhled</b>\n\n✦ Tento obrázek je uložen pro budoucí podporovaná nahrávání\n\n✦ Stav: {status}",
+    "confirm": "⌯ <b>Použít tento obrázek jako náhled</b>\n\n✦ Potvrzením uložíte tento obrázek jako vlastní obal, nebo operaci zrušte a dočasný obrázek bude odstraněn",
+    "saved": "⌯ <b>Náhled byl uložen</b>\n\n✦ Obrázek byl uložen a povolen pro budoucí podporovaná nahrávání",
+    "download_failed": "⌯ <b>Stažení obrázku se nezdařilo</b>\n\n✦ Obrázek se nepodařilo uložit. Odešlete ho znovu a ujistěte se, že Telegram dokončil jeho nahrávání",
+    "temp_missing": "⌯ <b>Dočasný obrázek není dostupný</b>\n\n✦ Relace potvrzení vypršela nebo byl dočasný obrázek odstraněn. Odešlete obrázek znovu",
+    "not_set_popup": "Není k dispozici žádný uložený náhled",
+    "status": {
+      "enabled": "Povoleno",
+      "disabled": "Zakázáno"
+    },
+    "buttons": {
+      "enable": "Povolit náhled",
+      "disable": "Zakázat náhled"
+    }
+  },
+  "captions": {
+    "settings": "⌯ <b>Zpracování popisků</b>\n\n✦ Zvolte, jak mají být zpracovávány popisky při kopírování nebo nahrávání médií\n\n✦ Aktuální režim: {current}",
+    "modes": {
+      "keep_all": "Ponechat původní popisek",
+      "remove_all": "Odstranit popisky médií",
+      "remove_links_users": "Odstranit odkazy a uživatelská jména"
+    },
+    "buttons": {
+      "keep_all": "Ponechat původní popisky",
+      "remove_all": "Odstranit všechny popisky",
+      "remove_links_users": "Odstranit odkazy a uživatelská jména"
+    },
+    "already_selected_popup": "Tento režim popisků je již aktivní",
+    "updated_popup": "Režim popisků byl aktualizován"
+  },
+  "profile": {
+    "unavailable": "⌯ <b>Profil není dostupný</b>\n\n✦ Uložený záznam uživatele se nepodařilo načíst. Odešlete /start a zkuste to znovu",
+    "details": "⌯ <b>Váš profil</b>\n\n✦ ID uživatele: <code>{user_id}</code>\n✦ Tarif: {plan_status}\n✦ Platnost tarifu do: {expiry_date}\n✦ Denní body: {daily_points}/{daily_limit}\n✦ Obnovení denních bodů: {reset_time}\n✦ Dárkové body: {gift_points}\n✦ Body za doporučení: {referral_points}\n✦ Doporučení: {referral_count}\n✦ Vynucené stahování: {force_download_status}\n\n✦ Odkaz pro doporučení:\n✦ <code>{referral_link}</code>"
+  },
+  "plans": {
+    "free": "Bezplatný",
+    "premium": "Předplatitel",
+    "monthly": "Měsíční",
+    "yearly": "Roční"
+  },
+  "premium": {
+    "details": "⌯ <b>Předplatné</b>\n\n✦ Předplatné\n✦ Můžeš mít nejvýše 5 otevřených úloh\n✦ Počkej na dokončení jedné nebo ji zruš přes /cancel\n✦ Předplatné umožňuje přeskočit společnou frontu\n✦ /clone\n✦ /monitor\n✦ /uploadch\n✦ /caption\n✦ /fdl\n✦ Předplatné bota a Telegram Premium jsou samostatná předplatná",
+    "feature_required": "⌯ <b>Je vyžadováno předplatné</b>\n\n✦ Tato funkce je dostupná předplatitelům. Otevřete nabídku předplatného a prohlédněte si dostupné tarify",
+    "already_active": "⌯ <b>Předplatné je aktivní</b>\n\n✦ Vaše předplatné zůstává aktivní do {expiry_date}",
+    "already_active_popup": "Vaše předplatné je aktivní do {expiry_date}",
+    "required_popup": "Tato funkce vyžaduje aktivní předplatné",
+    "granted": "⌯ <b>Předplatné bylo aktivováno</b>\n\n✦ Váš účet byl úspěšně upgradován. Aktuální předplatné vyprší dne {expiry_date}",
+    "removed": "⌯ <b>ℹ Předplatné bylo odebráno</b>\n\n✦ Režimy určené pouze pro předplatitele a nastavení cíle byly pro váš účet deaktivovány",
+    "buttons": {
+      "monthly": "Měsíční tarif",
+      "yearly": "Roční tarif"
+    },
+    "granted_days": "⌯ <b>Předplatné</b>\n\n✦ Přidané dny: {days}\n✦ Platnost do: {expiry_date}\n✦ Dny se přičetly k případnému zbývajícímu času"
+  },
+  "language": {
+    "select": "⌯ <b>Vyberte svůj jazyk</b>\n\n✦ Vyberte jazyk používaný pro zprávy bota a vaši osobní nabídku příkazů Telegramu",
+    "changed": "⌯ <b>Jazyk byl změněn</b>\n\n✦ Zprávy a příkazy Telegramu se nyní budou zobrazovat v jazyce {language_name}",
+    "unavailable_popup": "Vybraný jazyk není dostupný"
+  },
+  "limits": {
+    "insufficient_points": "⌯ <b>Nedostatek bodů pro stahování</b>\n\n✦ Pro toto stažení nemáte dostatek bodů. Váš denní zůstatek bude obnoven za {time_left}, nebo můžete získat další body prostřednictvím doporučení",
+    "insufficient_points_batch": "⌯ <b>Nedostatek bodů pro tuto dávku</b>\n\n✦ Tato operace vyžaduje {required_points} bodů, zatímco váš aktuální dostupný zůstatek je {available_points}",
+    "reset_now": "Právě se obnovuje",
+    "cooldown": "⌯ <b>Před dalším stahováním chvíli počkejte</b>\n\n✦ Další bezplatné stahování můžete zahájit za {remaining_time}"
+  },
+  "referrals": {
+    "share_text": "Použijte tento nástroj pro stahování z Telegramu a získávejte body prostřednictvím mého doporučovacího odkazu",
+    "new_referral": "⌯ <b>Připojil se nový doporučený uživatel</b>\n\n✦ {user_name} (<code>{user_id}</code>) se připojil pomocí vašeho odkazu. Získali jste {reward} bodů za doporučení",
+    "welcome_bonus": "⌯ <b>Získali jste bonus za doporučení</b>\n\n✦ Za připojení prostřednictvím doporučovacího odkazu existujícího uživatele jste získali {bonus} bodů"
+  },
+  "gifts": {
+    "claim": {
+      "already_claimed": "⌯ <b>ℹ Dárek již byl vyzvednut</b>\n\n✦ Tento dárek byl již dříve přidán k vašemu účtu a nelze ho vyzvednout dvakrát",
+      "invalid": "⌯ <b>Dárek nebyl nalezen</b>\n\n✦ Dárkový odkaz je neplatný nebo již neexistuje",
+      "inactive": "⌯ <b>Dárek není aktivní</b>\n\n✦ Tento dárek byl administrátorem deaktivován a již ho nelze vyzvednout",
+      "link_expired": "⌯ <b>Platnost dárkového odkazu vypršela</b>\n\n✦ Doba povolená pro vyzvednutí tohoto dárku již skončila",
+      "limit_reached": "⌯ <b>Limit dárku byl dosažen</b>\n\n✦ Maximální povolený počet vyzvednutí již byl využit",
+      "not_allowed": "⌯ <b>Dárek není přiřazen vašemu účtu</b>\n\n✦ Tento dárek mohou vyzvednout pouze konkrétní uživatelé a váš účet mezi nimi není",
+      "excluded": "⌯ <b>Dárek není pro váš účet dostupný</b>\n\n✦ Váš účet je z vyzvednutí tohoto dárku vyloučen",
+      "completed": "⌯ <b>Dárek byl vyzvednut</b>\n\n✦ K vašemu účtu bylo úspěšně přidáno {value} bodů",
+      "completed_with_expiry": "⌯ <b>Dárek byl vyzvednut</b>\n\n✦ K vašemu účtu bylo přidáno {value} bodů, které zůstanou dostupné do {expiry_date}",
+      "failed": "⌯ <b>Vyzvednutí dárku se nezdařilo</b>\n\n✦ Dárek se nepodařilo přidat k vašemu účtu. Zkuste to znovu později"
+    }
+  },
+  "help": {
+    "menu": {
+      "title": "⌯ <b>Centrum nápovědy</b>\n\n✦ Vyberte níže požadovanou funkci a zobrazte její pokyny a doporučené použití"
+    },
+    "buttons": {
+      "single": "Jedno stažení",
+      "batch": "Dávkové stahování",
+      "clone": "Přenos kanálu",
+      "monitor": "Sledování kanálu",
+      "channel_upload": "Nahrávání do kanálu",
+      "forcedownload": "Vynucené stahování",
+      "login": "Propojený účet",
+      "points": "Body",
+      "premium": "Předplatné",
+      "other_uses": "Další možnosti použití"
+    },
+    "features": {
+      "dl": "⌯ <b>Stáhnout jeden příspěvek</b>\n\n✦ /dl\n✦ Otevři příspěvek v Telegramu a podrž jej\n✦ Vyber Kopírovat odkaz a pošli jej sem\n✦ U více příspěvků pošli nejprve odkaz na první\n✦ <code>https://t.me/example_channel/15</code>\n✦ Pošli odkaz na kanál nebo jeho uživatelské jméno\n✦ U soukromého kanálu připoj přes /login účet který je již členem\n✦ Velikost:\n✦ Bot nahrává asi 2 GB na část\n✦ Vyber Stáhnout a rozdělit nebo Zrušit\n✦ Pro celý soubor do 4 GB připoj účet Telegram Premium přes /login a vyber kanál přes /uploadch",
+      "bdl": "⌯ <b>Stáhnout více příspěvků</b>\n\n✦ /bdl\n✦ Otevři příspěvek v Telegramu a podrž jej\n✦ Vyber Kopírovat odkaz a pošli jej sem\n✦ U více příspěvků pošli nejprve odkaz na první\n✦ Pošli odkaz na poslední příspěvek ze stejného kanálu\n✦ Oba příspěvky i všechny mezi nimi budou zahrnuty\n✦ Potom vybereš druhy obsahu\n✦ <code>/bdl https://t.me/example_channel/15 https://t.me/example_channel/30</code>\n✦ Pošli /cancel pro výběr úlohy nebo /cancel s jejím číslem",
+      "clone": "⌯ <b>Přenést celý kanál</b>\n\n✦ Předplatné\n✦ /clone\n✦ Pošli odkaz na kanál nebo jeho uživatelské jméno\n✦ U soukromého kanálu připoj přes /login účet který je již členem\n✦ /uploadch\n✦ Pošli /cancel pro výběr úlohy nebo /cancel s jejím číslem",
+      "monitor": "⌯ <b>Sledovat nové příspěvky kanálu</b>\n\n✦ Předplatné\n✦ /monitor\n✦ Pošli odkaz na kanál nebo jeho uživatelské jméno\n✦ U soukromého kanálu připoj přes /login účet který je již členem\n✦ Kanál:\n✦ Filtry:\n✦ Veřejné kanály používají stahovací účet\n✦ Soukromé kanály se kontrolují každou hodinu jedním účtem najednou který se potom zavře\n✦ Nové příspěvky se ukládají do fronty a posílají postupně\n✦ Zastavit sledování",
+      "channel_upload": "⌯ <b>Doručovat obsah do jiného kanálu</b>\n\n✦ Předplatné\n✦ /uploadch\n✦ Předplatné bota a Telegram Premium jsou samostatná předplatná\n✦ Bot nahrává asi 2 GB na část\n✦ Připojený účet Telegram Premium může nahrát až 4 GB v jednom souboru\n✦ Připoj účet přes /login\n✦ Přidej bota i účet jako správce cílového kanálu a vyber ho přes /uploadch\n✦ Bez kanálu lze vybrat uložené zprávy\n✦ Části dokumentů je třeba spojit podle jejich čísel\n✦ /rmuploadch\n✦ Nejjednodušší ↣ přidej bota jako správce do svého kanálu nebo skupiny a požádá tě tady o potvrzení",
+      "forcedownload": "⌯ <b>Režim vynuceného stahování</b>\n\n✦ Pomocí /forcedownload můžete nastavit, aby bot každý soubor stáhl a znovu nahrál namísto kopírování příspěvků bez omezení. Tento režim je užitečný pro vlastní náhledy a rekonstrukci obsahu",
+      "login": "⌯ <b>Propojit účet Telegram</b>\n\n✦ Použijte /login a zvolte svůj aktuální nebo jiný účet. Propojený účet již musí být členem soukromých kanálů, ke kterým chcete přistupovat. Autorizační kódy se zadávají pouze prostřednictvím zabezpečené klávesnice\n✦ Kód Telegramu zadej pouze číselnými tlačítky\n✦ Smazat odstraní poslední číslici a Potvrdit kód odešle\n✦ Pošli odkaz na kanál nebo jeho uživatelské jméno\n✦ U soukromého kanálu připoj přes /login účet který je již členem\n✦ /logout",
+      "points": "⌯ <b>Body pro stahování</b>\n\n✦ Bezplatná stahování využívají denní, dárkové a doporučovací body. Sdílejte svůj osobní odkaz a získejte další body:\n\n✦ <code>{referral_link}</code>",
+      "premium": "⌯ <b>Funkce předplatného</b>\n\n✦ /premium\n✦ Předplatné\n✦ Můžeš mít nejvýše 5 otevřených úloh\n✦ Počkej na dokončení jedné nebo ji zruš přes /cancel\n✦ Předplatné umožňuje přeskočit společnou frontu\n✦ /clone\n✦ /monitor\n✦ /uploadch\n✦ /caption\n✦ /fdl\n✦ Předplatné bota a Telegram Premium jsou samostatná předplatná",
+      "other_uses": "⌯ <b>Další způsoby použití bota</b>\n\n✦ <b>Přenos jednoho kanálu do jiného:</b> Nastavte cíl pomocí /uploadch a poté spusťte /clone pro zdrojový kanál. Vybraný obsah bude přenesen podle vašich filtrů\n\n✦ <b>Nahrazení obalů celé série:</b> Odešlete botovi nový obrázek obalu a potvrďte ho, aktivujte režim vynuceného stahování a poté spusťte /bdl s odkazy na první a poslední epizodu. Soubory budou staženy a nahrány s vybraným obalem tam, kde je podporován"
+    }
+  },
+  "monitor": {
+    "login_required": "⌯ <b>Propojit účet Telegram</b>\n\n✦ Pošli odkaz na kanál nebo jeho uživatelské jméno\n✦ U soukromého kanálu připoj přes /login účet který je již členem",
+    "usage": "⌯ <b>Sledovat nové příspěvky kanálu</b>\n\n✦ {current_status}\n✦ /monitor\n✦ Pošli odkaz na kanál nebo jeho uživatelské jméno\n✦ U soukromého kanálu připoj přes /login účet který je již členem\n✦ Kanál:\n✦ Filtry:\n✦ Veřejné kanály používají stahovací účet\n✦ Soukromé kanály se kontrolují každou hodinu jedním účtem najednou který se potom zavře\n✦ Nové příspěvky se ukládají do fronty a posílají postupně\n✦ Zastavit sledování",
+    "invalid_channel_id": "⌯ <b>Neplatný identifikátor kanálu</b>\n\n✦ Použijte číselné ID kanálu Telegram, které obvykle začíná řetězcem <code>-100</code>",
+    "invalid_action": "⌯ <b>Neplatná akce sledování</b>\n\n✦ Pomocí <code>on</code> sledování spusťte nebo pomocí <code>off</code> zastavte",
+    "not_active": "⌯ <b>ℹ Sledování není aktivní</b>\n\n✦ Zadaný kanál není vaším účtem aktuálně sledován",
+    "already_active": "⌯ <b>ℹ Sledování je již aktivní</b>\n\n✦ Před výběrem jiného kanálu zastavte aktuálně sledovaný kanál",
+    "access_denied": "⌯ <b>Přístup ke kanálu byl zamítnut</b>\n\n✦ Propojený účet nemůže otevřít zadaný kanál nebo je identifikátor nesprávný",
+    "start_failed": "⌯ <b>Začni úlohu znovu</b>\n\n✦ Pošli odkaz na kanál nebo jeho uživatelské jméno\n✦ U soukromého kanálu připoj přes /login účet který je již členem",
+    "started": "⌯ <b>Sledovat nové příspěvky kanálu</b>\n\n✦ Kanál: {channel_title}\n✦ Filtry: {filter_status}\n✦ Veřejné kanály používají stahovací účet\n✦ Soukromé kanály se kontrolují každou hodinu jedním účtem najednou který se potom zavře\n✦ Nové příspěvky se ukládají do fronty a posílají postupně",
+    "stopped": "⌯ <b>Sledování kanálu bylo zastaveno</b>\n\n✦ Nové příspěvky z vybraného kanálu již nebudou automaticky zpracovávány",
+    "session_stopped": "⌯ <b>Sledování bylo zastaveno</b>\n\n✦ Platnost propojené relace Telegram vypršela nebo byla odvolána, takže automatické sledování bylo deaktivováno",
+    "status": {
+      "active": "Aktivní pro kanál <code>{channel_id}</code>",
+      "inactive": "Neaktivní"
+    },
+    "stop_button": "Zastavit sledování",
+    "source_lost": "⌯ <b>Sledování kanálu zastaveno</b>\n\n✦ Kanál ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Tvůj propojený účet ho nemohl otevřít celý den\n✦ Možná byl smazán nebo změněn na soukromý nebo ho účet opustil\n✦ Pro znovu sledování ověř že je účet členem a pošli /monitor"
+  },
+  "stats": {
+    "system": "⌯ <b>Systémové statistiky</b>\n\n✦ Doba provozu: {uptime}\n✦ Disk: {disk_usage} / {disk_total} ({disk_percent}%)\n✦ Paměť: {ram_percent}%\n✦ Procesor: {cpu_percent}%\n✦ Odesláno přes síť: {sent}\n✦ Přijato přes síť: {received}",
+    "admin": "⌯ <b>Statistiky uživatelů</b>\n\n✦ Celkem uživatelů: {total_users}\n✦ Předplatitelé: {total_premium}\n✦ Přidáno administrátorem: {premium_by_admin}\n✦ Zaplaceno pomocí Stars: {premium_by_stars}",
+    "public": "⌯ <b>Statistiky bota</b>\n\n✦ Doba provozu: {uptime}\n✦ Celkem stažení: {total_downloads}"
+  },
+  "payments": {
+    "monthly": {
+      "title": "Měsíční předplatné",
+      "description": "Aktivovat funkce pro předplatitele na 30 dní"
+    },
+    "yearly": {
+      "title": "Roční předplatné",
+      "description": "Aktivovat funkce pro předplatitele na 365 dní"
+    },
+    "total_label": "Celková cena předplatného",
+    "invalid_plan_popup": "Vybraný tarif předplatného je neplatný",
+    "invoice_failed_popup": "Platební fakturu se nepodařilo vytvořit",
+    "unrecognized": "⌯ <b>Tarif platby nebyl rozpoznán</b>\n\n✦ Platba byla přijata, ale nepodařilo se určit tarif předplatného. Kontaktujte podporu a poskytněte informace o platbě",
+    "activation_failed": "⌯ <b>Aktivace předplatného se nezdařila</b>\n\n✦ Platba byla přijata, ale databáze nedokázala předplatné aktivovat. Kontaktujte podporu a požádejte o ruční pomoc",
+    "completed": "⌯ <b>Předplatné bylo aktivováno</b>\n\n✦ Tarif {plan_name} je nyní aktivní a jeho platnost vyprší dne {expiry_date}"
+  },
+  "broadcast": {
+    "json": {
+      "file_required": "⌯ <b>Je vyžadován soubor JSON pro vysílání</b>\n\n✦ Odpovězte na vícejazyčný soubor JSON a použijte <code>/bc .</code>",
+      "invalid_file": "⌯ <b>Neplatný soubor vysílání</b>\n\n✦ Dokument, na který odpovídáte, musí být soubor JSON",
+      "validation_failed": "⌯ <b>Ověření souboru vysílání se nezdařilo</b>\n\n✦ Soubor nebylo možné přijmout: <code>{error}</code>",
+      "confirm": "⌯ <b>Potvrdit vícejazyčné vysílání</b>\n\n✦ Soubor obsahuje {language_count} použitelných jazyků. Uživatelé obdrží zprávu ve svém uloženém jazyce, poté ve svém základním jazyce a nakonec v angličtině jako poslední náhradní možnosti\n\n✦ Filtry: {filters}",
+      "how_to": "⌯ <b>Vícejazyčné rozesílání</b>\n\n✦ Klepnutím na tlačítko níže získáte šablonu JSON obsahující všechny dostupné jazyky. Vyplňte hodnotu <code>text</code> pro každý jazyk, který chcete použít, poté nahrajte soubor a odpovězte na něj příkazem <code>/bc .</code> — prázdné jazyky se použijí jako angličtina",
+      "template_sent": "⌯ <b>Šablona rozesílání</b>\n\n✦ Soubor obsahuje {language_count} jazyků a byl vygenerován z aktuálních souborů jazyků"
+    },
+    "usage": "⌯ <b>Rozeslat zprávu</b>\n\n✦ Odpovězte na zprávu, kterou chcete odeslat, a poté použijte /bc. Volitelné filtry zahrnují <code>-only ID_UŽIVATELE</code> a <code>-rm ID_UŽIVATELE --prem</code>",
+    "invalid_message": "⌯ <b>Zpráva vysílání není dostupná</b>\n\n✦ Zpráva, na kterou odpovídáte, nemá platný identifikátor Telegram",
+    "confirm": "⌯ <b>Potvrdit vysílání</b>\n\n✦ ID zprávy: <code>{message_id}</code>\n✦ Filtry: {filters}\n\n✦ Vyberte, zda chcete zprávu odeslat normálně, nebo ji odeslat a připnout",
+    "starting": "⌯ <b>Vysílání bylo spuštěno</b>\n\n✦ Zpráva se odesílá vybraným uživatelům",
+    "progress": "⌯ <b>Probíhá vysílání</b>\n\n✦ Zpracováno: {processed}/{total}\n✦ Úspěšně: {successful}\n✦ Nezdařilo se: {failed}",
+    "completed": "⌯ <b>Vysílání bylo dokončeno</b>\n\n✦ Cíloví uživatelé: {total}\n✦ Úspěšně: {successful}\n✦ Nezdařilo se: {failed}",
+    "cancelled": "⌯ <b>Vysílání bylo zrušeno</b>\n\n✦ Operace byla zastavena po zpracování {processed} uživatelů",
+    "buttons": {
+      "normal": "Odeslat normálně",
+      "pin": "Odeslat a připnout",
+      "get_template": "Získat šablonu JSON"
+    },
+    "filters": {
+      "none": "Žádné filtry",
+      "summary": "Pouze uživatelé: {only_count}, vyloučení uživatelé: {excluded_count}, vyloučit předplatitele: {exclude_premium}"
+    }
+  },
+  "admin": {
+    "users": {
+      "new_language": "⌯ <b>Byl zjištěn nedostupný jazyk</b>\n\n✦ Uživatel: {first_name}\n✦ ID uživatele: <code>{user_id}</code>\n✦ Zjištěný kód: <code>{language_code}</code>",
+      "new_user": "⌯ <b>Připojil se nový uživatel</b>\n\n✦ Jméno: {first_name} {last_name}\n✦ ID uživatele: <code>{user_id}</code>\n✦ Uživatelské jméno: {username}\n✦ Celkem uživatelů: {total_users}",
+      "exported": "⌯ <b>Export uživatelů byl dokončen</b>\n\n✦ Přiložený soubor obsahuje {count} záznamů uživatelů"
+    },
+    "payments": {
+      "new_subscription": "⌯ <b>Nové placené předplatné</b>\n\n✦ Uživatel: {user_name}\n✦ ID uživatele: <code>{user_id}</code>\n✦ Tarif: {plan_name}\n✦ Částka: {amount} Stars"
+    },
+    "pool": {
+      "insufficient": "⌯ <b>Skupina účtů pro stahování není kompletní</b>\n\n✦ Aktuálně načteno: {current}\n✦ Počet dalších požadovaných účtů: {missing}"
+    },
+    "gifts": {
+      "create_usage": "⌯ <b>Vytvořit dárek</b>\n\n✦ Použijte <code>/create -gift --value BODY</code>. Volitelná nastavení zahrnují <code>--linkexpiry DDHHMM</code>, <code>--giftexpiry DDHHMM</code>, <code>--onlyuser [ID]</code>, <code>--exceptionuser [ID]</code> a <code>--limit ČÍSLO</code>",
+      "value_required": "⌯ <b>Je vyžadována hodnota dárku</b>\n\n✦ Za <code>--value</code> zadejte kladné číslo",
+      "user_filter_conflict": "⌯ <b>Konfliktní filtry uživatelů</b>\n\n✦ Dárek nemůže současně používat filtr povolených uživatelů a filtr vyloučených uživatelů",
+      "invalid_duration": "⌯ <b>Neplatná doba trvání</b>\n\n✦ Pro dobu platnosti dárku použijte šestimístný formát <code>DDHHMM</code>",
+      "invalid_values": "⌯ <b>Neplatná nastavení dárku</b>\n\n✦ Zkontrolujte identifikátory uživatelů, limit vyzvednutí a všechny zadané hodnoty",
+      "created": "⌯ <b>Dárek byl vytvořen</b>\n\n✦ Dárkový odkaz je připraven:\n✦ <code>{gift_link}</code>",
+      "empty": "⌯ <b>ℹ Žádné aktivní dárky</b>\n\n✦ Momentálně nejsou k dispozici žádné aktivní dárkové odkazy",
+      "list_title": "⌯ <b>Aktivní dárky</b>\n\n✦ Následující dárkové odkazy jsou aktuálně dostupné",
+      "list_item": "<b>Dárek:</b> <code>{gift_pid}</code>\nHodnota: {value}\nVyzvednutí: {usage_count}/{usage_limit}\nPlatnost odkazu: {expiry}\nVytvořeno: {created_at}\nOdkaz: <code>{gift_link}</code>",
+      "remove_usage": "⌯ <b>Odebrat dárek</b>\n\n✦ Použijte <code>/rm -gift --pid ID_DÁRKU</code>",
+      "not_found": "⌯ <b>Dárek nebyl nalezen</b>\n\n✦ Aktivní dárek se zadaným identifikátorem neexistuje",
+      "remove_confirm": "⌯ <b>Deaktivovat dárek</b>\n\n✦ Dárek: <code>{gift_pid}</code>\n✦ Hodnota: {value}\n✦ Vyzvednutí: {usage_count}\n\n✦ Potvrzením zabráníte jakýmkoli budoucím vyzvednutím",
+      "deactivated": "⌯ <b>Dárek byl deaktivován</b>\n\n✦ Dárek <code>{gift_pid}</code> již nelze vyzvednout"
+    },
+    "add": {
+      "usage": "⌯ <b>Přidat administrátorská nastavení</b>\n\n✦ Použijte /add s možností <code>-premium</code>, <code>-lang</code> nebo <code>-frcch</code>"
+    },
+    "remove": {
+      "usage": "⌯ <b>Odebrat administrátorská nastavení</b>\n\n✦ Použijte /rm s možností <code>-premium</code>, <code>-gift</code> nebo <code>-frcch</code>"
+    },
+    "premium": {
+      "add_usage": "⌯ <b>Předplatné</b>\n\n✦ /admin\n✦ Vyber uživatele nebo pošli jejich číselné identifikátory\n✦ Dny\n✦ <code>/add -premium --user [123456789] --days 30</code>",
+      "added": "⌯ <b>Aktualizace předplatného byla dokončena</b>\n\n✦ Aktualizovaní uživatelé: {users}\n✦ Chybějící uživatelé: {missing}",
+      "remove_usage": "⌯ <b>Odebrat předplatné</b>\n\n✦ Použijte <code>/rm -premium --user [ID_UŽIVATELŮ]</code>",
+      "removed": "⌯ <b>Odebrání předplatného bylo dokončeno</b>\n\n✦ Aktualizovaní uživatelé: {users}\n✦ Chybějící nebo neaktivní uživatelé: {missing}"
+    },
+    "languages": {
+      "reply_to_json": "⌯ <b>Je vyžadován soubor jazyka</b>\n\n✦ Při použití <code>/add -lang</code> odpovězte na platný soubor jazyka ve formátu JSON",
+      "json_required": "⌯ <b>Je vyžadován soubor JSON</b>\n\n✦ Dokument, na který odpovídáte, musí používat příponu <code>.json</code>",
+      "already_exists": "⌯ <b>ℹ Jazyk již existuje</b>\n\n✦ Jazyk <code>{language_code}</code> je již nainstalován. Chcete-li ho nahradit, přidejte možnost <code>--update</code>",
+      "invalid_json": "⌯ <b>Neplatný soubor jazyka</b>\n\n✦ Soubor JSON se nepodařilo načíst: <code>{error}</code>",
+      "added": "⌯ <b>Jazyk byl přidán</b>\n\n✦ Jazyk <code>{language_code}</code> je nyní dostupný",
+      "updated": "⌯ <b>Jazyk byl aktualizován</b>\n\n✦ Jazyk <code>{language_code}</code> byl úspěšně znovu načten"
+    },
+    "force_subscription": {
+      "empty": "⌯ <b>ℹ Žádné povinné kanály</b>\n\n✦ Momentálně nejsou nastaveny žádné kanály s povinným odběrem",
+      "list_title": "⌯ <b>Povinné kanály</b>\n\n✦ Odběr následujících kanálů je aktuálně vynucován",
+      "list_item": "Odkaz: {link}\nID kanálu: <code>{channel_id}</code>\nPřipojeno: {joined}\nLimit: {limit}",
+      "add_usage": "⌯ <b>Přidat povinný kanál</b>\n\n✦ Použijte <code>/add -frcch --link ODKAZ_NA_KANÁL --id ID_KANÁLU --limit ČÍSLO</code>",
+      "permission_required": "⌯ <b>Je vyžadováno oprávnění správce</b>\n\n✦ Bot musí být správcem s oprávněním zvát uživatele",
+      "added": "⌯ <b>Povinný kanál byl přidán</b>\n\n✦ Kanál: {channel_title}\n✦ Limit připojení: {limit}",
+      "add_failed": "⌯ <b>Kanál se nepodařilo přidat</b>\n\n✦ Ověřte identifikátor kanálu, odkaz a administrátorská oprávnění bota",
+      "remove_usage": "⌯ <b>Odebrat povinný kanál</b>\n\n✦ Použijte <code>/rm -frcch ID_KANÁLU</code> nebo zadejte jeho uložený odkaz",
+      "removed": "⌯ <b>Povinný kanál byl odebrán</b>\n\n✦ Odběr tohoto kanálu již není vynucován",
+      "not_found": "⌯ <b>Povinný kanál nebyl nalezen</b>\n\n✦ Zadanému identifikátoru nebo odkazu neodpovídá žádný uložený kanál"
+    },
+    "logs": {
+      "not_found": "⌯ <b>Adresář protokolů není dostupný</b>\n\n✦ Adresář s protokoly bota neexistuje",
+      "empty": "⌯ <b>Nejsou dostupné žádné protokoly</b>\n\n✦ Nebyly nalezeny žádné neprázdné soubory protokolů bota",
+      "file_caption": "⌯ <b>Protokol bota</b>\n\n✦ Soubor: <code>{filename}</code>",
+      "upload_failed": "⌯ <b>Nahrání protokolu se nezdařilo</b>\n\n✦ Soubor: <code>{filename}</code>\n✦ Chyba: <code>{error}</code>"
+    }
+  },
+  "queue": {
+    "accepted": "⌯ <b>Tvoje úloha byla uložena</b>\n\n✦ Úloha ↣ {task_id}\n✦ Pošli /cancel pro výběr úlohy nebo /cancel s jejím číslem\n✦ <code>/cancel {task_id}</code>",
+    "waiting_free": "⌯ <b>Čeká</b>\n\n✦ Lidé před tebou: {ahead}\n✦ Stahování začne až se uvolní místo\n✦ Předplatné umožňuje přeskočit společnou frontu",
+    "waiting_premium": "⌯ <b>Čeká</b>\n\n✦ Tvé předchozí úlohy: {ahead}\n✦ Úlohy se spouštějí jedna po druhé",
+    "limit_free": "⌯ <b>Úloha</b>\n\n✦ Už máš otevřenou úlohu\n✦ Počkej na dokončení nebo ji zruš přes /cancel\n✦ Můžeš mít nejvýše 5 otevřených úloh\n✦ Počkej na dokončení jedné nebo ji zruš přes /cancel",
+    "limit_premium": "⌯ <b>Úloha</b>\n\n✦ Můžeš mít nejvýše {limit} otevřených úloh\n✦ Počkej na dokončení jedné nebo ji zruš přes /cancel",
+    "lost_after_restart": "⌯ <b>Začni úlohu znovu</b>\n\n✦ Úloha ↣ {task_id}\n✦ Otevři příspěvek v Telegramu a podrž jej\n✦ Vyber Kopírovat odkaz a pošli jej sem\n✦ U více příspěvků pošli nejprve odkaz na první",
+    "cancel_usage": "Pošli /cancel pro výběr úlohy nebo /cancel s jejím číslem\n<code>/cancel 123</code>",
+    "cancelled_one": "Úloha {task_id} byla zrušena",
+    "not_found": "Úloha {task_id} už skončila nebo ti nepatří",
+    "choose_to_cancel": "⌯ <b>Zrušit Úloha</b>\n\n✦ Pošli /cancel pro výběr úlohy nebo /cancel s jejím číslem",
+    "cancelled_popup": "Zrušit",
+    "not_found_popup": "Začni úlohu znovu",
+    "buttons": {
+      "cancel": "Zrušit Úloha",
+      "upgrade": "Předplatné",
+      "cancel_task": "Úloha {task_id} {kind} {status}",
+      "cancel_all": "Zrušit Úloha /cancel"
+    },
+    "kinds": {
+      "dl": "Stáhnout jeden příspěvek",
+      "bdl": "Stáhnout více příspěvků",
+      "clone": "Přenést celý kanál",
+      "task": "Úloha",
+      "monitor": "Sledovat nové příspěvky kanálu"
+    },
+    "status": {
+      "queued": "Čeká",
+      "running": "Probíhá"
+    },
+    "task_number": "Úloha {task_id}"
+  },
+  "spam": {
+    "per_second": "Neposílej více než jednu zprávu za sekundu",
+    "per_minute": "Neposílej více než 20 zpráv za minutu\nTento bot přijímá odkazy ke stažení\nPočkej do konce této minuty",
+    "buttons": "Stiskl jsi více než 20 tlačítek za minutu\nPočkej před pokračováním\nOpakované porušení zdvojnásobí dobu čekání"
+  },
+  "flow": {
+    "first_link": "⌯ <b>Stáhnout jeden příspěvek</b>\n\n✦ Otevři příspěvek v Telegramu a podrž jej\n✦ Vyber Kopírovat odkaz a pošli jej sem\n✦ U více příspěvků pošli nejprve odkaz na první\n✦ <code>https://t.me/example_channel/15</code>",
+    "last_link": "⌯ <b>Stáhnout více příspěvků</b>\n\n✦ Pošli odkaz na poslední příspěvek ze stejného kanálu\n✦ Oba příspěvky i všechny mezi nimi budou zahrnuty\n✦ Potom vybereš druhy obsahu",
+    "channel": "⌯ <b>Vybrat kanál</b>\n\n✦ Pošli odkaz na kanál nebo jeho uživatelské jméno\n✦ U soukromého kanálu připoj přes /login účet který je již členem\n✦ <code>https://t.me/example_channel</code>",
+    "pick_channel": "Vybrat kanál",
+    "invalid_channel": "Pošli odkaz na kanál nebo jeho uživatelské jméno\nU soukromého kanálu připoj přes /login účet který je již členem",
+    "upload_channel": "⌯ <b>Vyber kanál pro nahrávání</b>\n\n✦ Nejjednodušší ↣ přidej bota jako správce s právem publikovat do svého kanálu nebo skupiny\n✦ Bot ti sem pošle potvrzení a ty klepneš na Potvrdit\n✦ Nebo klepni níže na tlačítko výběru kanálu\n✦ Nebo pošli odkaz na kanál, jeho uživatelské jméno nebo ID začínající <code>-100</code>\n✦ Tato funkce vyžaduje předplatné bota"
+  },
+  "panel": {
+    "title": "⌯ <b>Správa</b>\n\n✦ Předplatné / Dárek / Povinné kanály / Hromadná zpráva",
+    "premium": "Předplatné",
+    "gift": "Dárek",
+    "fsub": "Povinné kanály",
+    "broadcast": "Hromadná zpráva",
+    "users": "Export uživatelů",
+    "language": "Jazykové soubory",
+    "gifts": "Aktivní dárky",
+    "choose_user": "Vyber uživatele nebo pošli jejich číselné identifikátory",
+    "selected_users": "Všichni uživatelé ↣ {users}",
+    "selected_channel": "Vybrat kanál ↣ {channel_id}",
+    "custom": "Jiné číslo",
+    "remove_premium": "Zrušit Předplatné",
+    "days": "Dny ↣ {days}",
+    "value": "Dárkové body",
+    "link_days": "Platnost odkazu ve dnech / U platnosti dárku znamená nula bez vypršení",
+    "point_days": "Platnost bodů ve dnech / U platnosti dárku znamená nula bez vypršení",
+    "limit": "Maximální počet vyzvednutí",
+    "only_users": "Povolit vybrané uživatele",
+    "exclude_users": "Vyloučit uživatele",
+    "send_broadcast": "Pošli sem hromadnou zprávu\nZkontroluj kopii a vyber příjemce\nPotom stiskni Potvrdit",
+    "send_language": "Pošli jazykový soubor JSON pojmenovaný kódem jazyka například ar.json\nPůvodní soubor se nahradí až když je nový platný",
+    "enter_value": "Pošli číslo nebo identifikátory uživatelů oddělené čárkami\nOdpověď se smaže a nabídka aktualizuje",
+    "invalid_value": "Pošli platné číslo\nU platnosti dárku znamená nula bez vypršení",
+    "audience_all": "Všichni uživatelé",
+    "audience_premium": "Předplatitelé",
+    "audience_free": "Bezplatní uživatelé",
+    "admins": "Správci",
+    "send_admin": "Pošlete číselné ID uživatele, kterého chcete jmenovat, nebo přepošlete jeho zprávu\nStisknutím správce níže ho odeberete",
+    "admin_added": "Správce přidán: {user_id}",
+    "admin_removed": "Správce odebrán: {user_id}",
+    "admin_exists": "Tento uživatel už je správce",
+    "no_admins": "Zatím žádní správci",
+    "owner_only": "Správce mohou spravovat jen vlastníci"
+  },
+  "large": {
+    "saved": "Poslat do mých uložených zpráv",
+    "split": "Stáhnout a rozdělit",
+    "help_button": "Vysvětlit",
+    "split_notice": "⌯ <b>Stáhnout a rozdělit</b>\n\n✦ Velikost: {size}\n✦ Bot nahrává asi 2 GB na část\n✦ Vyber Stáhnout a rozdělit nebo Zrušit\n✦ Pro celý soubor do 4 GB připoj účet Telegram Premium přes /login a vyber kanál přes /uploadch",
+    "premium_notice": "⌯ <b>Poslat do mých uložených zpráv</b>\n\n✦ Velikost: {size}\n✦ Připojený účet Telegram Premium může nahrát celý soubor do uložených zpráv\n✦ Cílový kanál vybereš přes /uploadch\n✦ Soubor lze také rozdělit",
+    "help": "⌯ <b>Vysvětlit</b>\n\n✦ Předplatné bota a Telegram Premium jsou samostatná předplatná\n✦ Bot nahrává asi 2 GB na část\n✦ Připojený účet Telegram Premium může nahrát až 4 GB v jednom souboru\n✦ Připoj účet přes /login\n✦ Přidej bota i účet jako správce cílového kanálu a vyber ho přes /uploadch\n✦ Bez kanálu lze vybrat uložené zprávy\n✦ Části dokumentů je třeba spojit podle jejich čísel"
+  },
+  "referral_check": {
+    "question": "⌯ <b>Rychlá kontrola</b>\n\n✦ Vyřešte příklad, abyste potvrdili, že jste skutečná osoba, a doporučení se započítalo\n\n✦ {a} + {b} = ?",
+    "wrong": "⌯ <b>Špatná odpověď</b>\n\n✦ Zkuste to znovu. Zbývající pokusy: {left}",
+    "failed": "⌯ <b>Doporučení nebylo započítáno</b>\n\n✦ Vaše doporučení se nezapočítalo, protože kontrola nebyla vyřešena. Bota můžete dál normálně používat"
+  },
+  "units": {
+    "b": "{n} B",
+    "kb": "{n} KB",
+    "mb": "{n} MB",
+    "gb": "{n} GB",
+    "tb": "{n} TB",
+    "pb": "{n} PB",
+    "day": "{n}d",
+    "hour": "{n}h",
+    "minute": "{n}m",
+    "second": "{n}s"
+  }
+}

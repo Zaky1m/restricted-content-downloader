@@ -1,0 +1,28 @@
+name: Translation
+description: Add a language or fix a translation
+labels: ["translation"]
+body:
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      description: Its name and code, for example French (fr)
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type
+      options:
+        - New language
+        - Fix an existing translation
+    validations:
+      required: true
+  - type: textarea
+    id: text
+    attributes:
+      label: Text
+      description: Paste the translated files, or the line to fix with the current and the corrected wording
+      render: text
+    validations:
+      required: true

@@ -1,0 +1,675 @@
+{
+  "lang_name": "🇵🇭 Filipino",
+  "common": {
+    "not_available": "Hindi available",
+    "never": "Hindi kailanman",
+    "unlimited": "Walang limitasyon",
+    "none": "Wala",
+    "yes": "Oo",
+    "no": "Hindi",
+    "processing": "⌯ <b>Pinoproseso</b>\n\n✦ Mangyaring maghintay habang inihahanda ang hiniling na operasyon",
+    "state_expired": "⌯ <b>Nag-expire ang session</b>\n\n✦ Nag-expire ang naka-save na input session pagkalipas ng sampung minuto. Pakisimulan muli ang operasyon",
+    "state_expired_popup": "Simulan muli ang gawain",
+    "action_cancelled": "⌯ <b>Kinansela ang operasyon</b>\n\n✦ Kinansela ang napiling operasyon at inalis ang pansamantalang estado nito",
+    "unexpected_error": "⌯ <b>May hindi inaasahang error</b>\n\n✦ Hindi makumpleto ang operasyon dahil sa sumusunod na error: <code>{error}</code>",
+    "something_went_wrong": "May nagkamali habang isinasagawa ang aksyong ito, pakisubukang muli"
+  },
+  "buttons": {
+    "start": "Simulan",
+    "confirm": "Kumpirmahin",
+    "back": "Bumalik",
+    "subscribe": "Mag-subscribe",
+    "earn_points": "Kumita ng points",
+    "share_and_earn": "Ibahagi at kumita",
+    "link_account": "Mag-link ng account",
+    "open_source": "Buksan ang channel",
+    "refresh_subscription": "Suriin muli",
+    "channel": "Updates channel",
+    "help": "Tulong",
+    "profile": "Profile",
+    "contact_admin": "Makipag-ugnayan sa support para sa ibang paraan ng pagbabayad",
+    "cancel": "Kanselahin",
+    "delete": "Burahin",
+    "open": "Buksan",
+    "reject": "Tanggihan"
+  },
+  "commands": {
+    "bcjson": {
+      "description": "I-download ang multilingual broadcast template"
+    },
+    "start": {
+      "description": "Simulan ang bot"
+    },
+    "help": {
+      "description": "Buksan ang help center"
+    },
+    "profile": {
+      "description": "Tingnan ang iyong account at points"
+    },
+    "premium": {
+      "description": "Tingnan ang mga feature ng subscription"
+    },
+    "language": {
+      "description": "Palitan ang wika ng bot"
+    },
+    "login": {
+      "description": "Mag-link ng Telegram account"
+    },
+    "logout": {
+      "description": "Alisin ang naka-link na account"
+    },
+    "dl": {
+      "description": "Mag-download ng isang Telegram post"
+    },
+    "bdl": {
+      "description": "Mag-download ng sunud-sunod na mga post"
+    },
+    "clone": {
+      "description": "Ilipat ang isang buong channel"
+    },
+    "forcedownload": {
+      "description": "Pamahalaan ang forced-download mode"
+    },
+    "thumb": {
+      "description": "Pamahalaan ang custom thumbnail"
+    },
+    "caption": {
+      "description": "Pamahalaan ang pagproseso ng caption"
+    },
+    "cancel": {
+      "description": "Kanselahin ang kasalukuyang operasyon"
+    },
+    "stats": {
+      "description": "Tingnan ang system statistics"
+    },
+    "monitor": {
+      "description": "Awtomatikong subaybayan ang isang channel"
+    },
+    "uploadch": {
+      "description": "Magtakda ng destination channel para sa upload"
+    },
+    "rmuploadch": {
+      "description": "Alisin ang upload destination"
+    },
+    "bc": {
+      "description": "Mag-broadcast ng mensahe"
+    },
+    "add": {
+      "description": "Magdagdag ng administrative settings"
+    },
+    "rm": {
+      "description": "Mag-alis ng administrative settings"
+    },
+    "create": {
+      "description": "Gumawa ng gift link"
+    },
+    "logs": {
+      "description": "I-download ang mga log ng bot"
+    },
+    "admin": {
+      "description": "Pamamahala"
+    }
+  },
+  "start": {
+    "welcome": "⌯ <b>Maligayang pagdating sa media downloader</b>\n\n✦ Magpadala ng link ng Telegram post upang i-download ang media nito, kabilang ang content mula sa mga pampubliko o pribadong channel at mga channel na hindi pinapayagan ang forwarding. Maaari ka ring mag-download ng maraming post, maglipat ng isang buong channel, maglagay ng custom thumbnail sa mga file, o direktang ipadala ang na-download na content sa ibang channel\n\n✦ Naka-link na account: {account_status}"
+  },
+  "accounts": {
+    "status": {
+      "connected": "Nakakonekta",
+      "not_connected": "Hindi nakakonekta"
+    },
+    "session_expired": "⌯ <b>Nag-expire ang naka-link na session</b>\n\n✦ Hindi na awtorisado ang naka-link na Telegram account. I-link muli ang account bago mag-access ng mga pribadong source",
+    "access": {
+      "login_required": "⌯ <b>Kailangan ng naka-link na account</b>\n\n✦ Ang ibinahaging link ay mula sa isang pribado o restricted na source na hindi ma-access ng mga download account. Mag-link ng Telegram account na miyembro na ng source channel, pagkatapos ay ipadala muli ang link",
+      "not_member": "⌯ <b>Hindi miyembro ang iyong naka-link na account</b>\n\n✦ Hindi ma-access ng Telegram account na naka-link sa bot ang channel sa ibinahaging link. Sumali muna sa channel gamit ang naka-link na account, pagkatapos ay ipadala muli ang link"
+    },
+    "login": {
+      "choose_account": "⌯ <b>Piliin ang account na ili-link</b>\n\n✦ Piliin kung gusto mong i-link ang kasalukuyan mong Telegram account o ibang account. Ang napiling account ay dapat miyembro na ng anumang pribadong channel na gusto mong pag-download-an",
+      "already_running": "⌯ <b>May kasalukuyang proseso ng pag-login</b>\n\n✦ Kumpletuhin o kanselahin muna ang kasalukuyang proseso ng pag-login bago magsimula ng panibago",
+      "already_connected": "⌯ <b>May naka-link nang account</b>\n\n✦ Kasalukuyang nakakonekta ang numero ng telepono na <code>{phone_number}</code>. Alisin ito gamit ang /logout bago mag-link ng ibang account",
+      "share_contact": "⌯ <b>Ibahagi ang iyong numero ng telepono</b>\n\n✦ Gamitin ang button sa ibaba upang ligtas na ibahagi ang numero ng telepono ng kasalukuyan mong Telegram account",
+      "enter_phone": "⌯ <b>Ilagay ang alternatibong numero ng telepono</b>\n\n✦ Ipadala nang manu-mano ang numero ng telepono sa international format. Dapat itong magsimula sa <code>+</code> na sinusundan ng country code, halimbawa <code>+12025550123</code>",
+      "invalid_phone": "⌯ <b>Hindi wastong numero ng telepono</b>\n\n✦ Dapat magsimula ang numero sa <code>+</code> at maglaman ng country code nang walang mga letra o hindi suportadong simbolo. Simulan muli ang pag-login o magpadala ng numerong may tamang format",
+      "contact_mismatch": "⌯ <b>Hindi tugma ang contact</b>\n\n✦ Ang ibinahaging contact ay hindi pagmamay-ari ng Telegram account na gumagamit sa bot. Gamitin ang ibinigay na button upang ibahagi ang sarili mong numero, o piliin ang opsyon para sa alternatibong account",
+      "contact_received": "⌯ <b>Natanggap ang numero ng telepono</b>\n\n✦ Inihahanda ng bot ang authorization request. Mangyaring hintayin na ipadala ng Telegram ang login code",
+      "code_prompt": "⌯ <b>Telegram</b>\n\n✦ Ilagay ang Telegram code gamit lang ang mga numerong button\n✦ Tinatanggal ng Burahin ang huling digit at ipinapadala ng Kumpirmahin ang code",
+      "code_prompt_with_value": "⌯ <b>Telegram</b>\n\n✦ <code>{code}</code>\n✦ Ilagay ang Telegram code gamit lang ang mga numerong button\n✦ Tinatanggal ng Burahin ang huling digit at ipinapadala ng Kumpirmahin ang code",
+      "processing": "⌯ <b>Bine-verify ang account</b>\n\n✦ Sinusuri ang code at ginagawa ang naka-link na session",
+      "password_prompt": "⌯ <b>Kailangan ang two-step verification</b>\n\n✦ Ipadala bilang text message ang two-step verification password para sa Telegram account na ito\n\n✦ Password hint: <code>{hint}</code>",
+      "completed": "⌯ <b>Matagumpay na na-link ang account</b>\n\n✦ Nakakonekta na ang Telegram account. Maaari mong ma-access ang mga pribadong channel hangga't miyembro na ng mga ito ang account na ito",
+      "cancelled": "⌯ <b>Kinansela ang pag-link ng account</b>\n\n✦ Isinara ang pansamantalang login session at walang na-save na impormasyon ng account",
+      "restart_hint": "⌯ <b>Magsimula muli kapag handa ka na</b>\n\n✦ Gamitin ang /login kapag gusto mong magsimula ng bagong proseso ng pag-link ng account",
+      "failed": "⌯ <b>Nabigo ang pag-link ng account</b>\n\n✦ Hindi makumpleto ang proseso ng authorization. Magsimula muli at tiyaking tama ang numero ng telepono, login code, at password",
+      "flood_wait": "⌯ <b>Napakaraming pagtatangkang mag-login</b>\n\n✦ Pansamantalang nilimitahan ng Telegram ang mga bagong authorization request. Subukan muli pagkalipas ng {seconds} segundo",
+      "invalid_code": "⌯ <b>Hindi wasto o expired na code</b>\n\n✦ Tinanggihan o nag-expire ang code. Ilagay ang pinakabagong code na ipinadala ng Telegram, o kanselahin at simulan muli ang pag-login",
+      "invalid_password": "⌯ <b>Maling verification password</b>\n\n✦ Mali ang two-step verification password. Ipadala ang tamang password o kanselahin ang proseso ng pag-login",
+      "code_empty_popup": "Ilagay ang Telegram code bago kumpirmahin",
+      "invalid_code_popup": "Hindi wasto o expired ang code",
+      "buttons": {
+        "my_account": "Kasalukuyan kong account",
+        "other_account": "Ibang account",
+        "share_phone": "Ibahagi ang numero ko"
+      },
+      "too_many_attempts": "⌯ <b>Gawain</b>\n\n✦ Pansamantalang nilimitahan ng Telegram ang mga pagtatangkang mag-login\n✦ Maghintay bago muling gamitin ang /login",
+      "phone_banned": "⌯ <b>Telegram</b>\n\n✦ Naka-ban sa Telegram ang numerong ito\n✦ Gumamit ng ibang account o makipag-ugnayan sa Telegram support",
+      "hint_awaiting_contact": "⌯ <b>Ibahagi ang iyong numero ng telepono</b>\n\n✦ Gamitin ang button sa ibaba upang ligtas na ibahagi ang numero ng telepono ng kasalukuyan mong Telegram account",
+      "hint_awaiting_account_type": "⌯ <b>Piliin ang account na ili-link</b>\n\n✦ Piliin kung gusto mong i-link ang kasalukuyan mong Telegram account o ibang account. Ang napiling account ay dapat miyembro na ng anumang pribadong channel na gusto mong pag-download-an",
+      "hint_sending_code": "Naghihintay\nIlagay ang Telegram code gamit lang ang mga numerong button\nTinatanggal ng Burahin ang huling digit at ipinapadala ng Kumpirmahin ang code",
+      "hint_awaiting_code": "Ilagay ang Telegram code gamit lang ang mga numerong button\nTinatanggal ng Burahin ang huling digit at ipinapadala ng Kumpirmahin ang code"
+    },
+    "logout": {
+      "not_connected": "⌯ <b>ℹ Walang naka-link na account</b>\n\n✦ Walang Telegram account na kasalukuyang nakakonekta sa iyong bot profile",
+      "confirm": "⌯ <b>Alisin ang naka-link na account</b>\n\n✦ Ididiskonekta ang numero ng telepono na <code>{phone_number}</code> at buburahin ang naka-save nitong session. Kumpirmahin lamang kung gusto mong magpatuloy",
+      "completed": "⌯ <b>Inalis ang naka-link na account</b>\n\n✦ Matagumpay na nabura ang naka-save na Telegram session. Maaari kang mag-link ng ibang account anumang oras"
+    }
+  },
+  "subscription": {
+    "required": "⌯ <b>Kailangan ang subscription</b>\n\n✦ Sumali sa mga channel na nakalista sa ibaba bago gamitin ang bot, pagkatapos ay pindutin ang button para magsuri\n\n✦ {channels}",
+    "completed": "⌯ <b>Na-verify ang subscription</b>\n\n✦ Matagumpay na na-verify ang membership mo sa channel. Maaari mo nang ipagpatuloy ang paggamit sa bot",
+    "still_missing_popup": "Kailangan mo pa ring sumali sa lahat ng kinakailangang channel"
+  },
+  "downloads": {
+    "invalid_link": "⌯ <b>Hindi wastong Telegram link</b>\n\n✦ Magpadala ng link na direktang tumuturo sa isang Telegram post, gaya ng <code>https://t.me/channel/123</code>",
+    "post_not_found": "⌯ <b>Hindi nakita ang post</b>\n\n✦ Hindi umiiral ang hiniling na post, nabura na ito, o hindi ito ma-access ng napiling download account",
+    "nothing_to_download": "⌯ <b>Walang mada-download</b>\n\n✦ Walang media o text na mada-download sa post na ito, gaya ng abiso na nagbago ang pangalan o larawan ng channel",
+    "comment_unavailable": "⌯ <b>Hindi mahanap ang comment</b>\n\n✦ Ang comment link ay hindi tumuturo sa isang accessible na discussion message, o tinanggihan ng Telegram ang tinukoy na message identifier",
+    "client_unavailable": "⌯ <b>Hindi available ang download account</b>\n\n✦ Walang Telegram account na kasalukuyang available upang kunin ang content na ito. Subukan muli mamaya o i-link ang sarili mong account",
+    "preparing": "⌯ <b>Inihahanda ang download</b>\n\n✦ Kinokolekta ang impormasyon ng media bago magsimula ang transfer",
+    "splitting": "⌯ <b>Hinahati ang file</b>\n\n✦ Mas malaki ang file kaysa sa limitasyon ng bawat upload part at hinahati ito sa mga suportadong bahagi",
+    "file_too_large": "⌯ <b>Lumampas ang file sa suportadong laki</b>\n\n✦ Hindi mapoproseso ang file na ito para sa {action} dahil mas malaki ang laki nito kaysa sa {maximum_size}",
+    "file_too_small": "⌯ <b>Walang laman o sira ang file</b>\n\n✦ Napakaliit ng na-download na media upang maituring na wasto, o hindi kumpletong file ang ibinalik ng Telegram",
+    "file_missing": "⌯ <b>Nawawala ang na-download na file</b>\n\n✦ Hindi makita o walang laman ang pansamantalang media file bago ang upload",
+    "download_failed": "⌯ <b>Nabigo ang download</b>\n\n✦ Hindi makuha ang media pagkatapos ng maraming pagtatangka. Suriin ang access ng source account at subukan muli",
+    "upload_failed": "⌯ <b>Nabigo ang upload</b>\n\n✦ Na-download ang media ngunit hindi ito maihatid. Ibinalik ng Telegram ang: <code>{error}</code>",
+    "flood_wait": "⌯ <b>Rate limit ng Telegram</b>\n\n✦ Humiling ang Telegram ng paghihintay na {seconds} segundo bago maipagpatuloy ang upload",
+    "actions": {
+      "download": "pag-download",
+      "upload": "pag-upload"
+    },
+    "progress": {
+      "downloading": "Nagda-download",
+      "uploading": "Nag-a-upload",
+      "body": "⌯ <b>{action}</b>\n\n✦ <code>{progress_bar}</code>\n\n✦ Nailipat: {current_size} / {total_size}\n✦ Progreso: {percentage}%\n✦ Bilis: {speed}/s\n✦ Natitira: {eta}"
+    },
+    "parts": {
+      "item": "Bahagi {current} ng {total}"
+    },
+    "album": {
+      "preparing": "⌯ <b>May nakitang media album</b>\n\n✦ Naglalaman ang album ng {count} napiling item at ipoproseso ang mga ito nang sunud-sunod",
+      "processing": "⌯ <b>Pinoproseso ang media album</b>\n\n✦ Pinoproseso ang item {current} ng {total}"
+    },
+    "single": {
+      "usage": "/dl\nBuksan ang post sa Telegram at pindutin nang matagal\nPiliin ang Kopyahin ang link at ipadala rito\nPara sa maraming post ipadala muna ang link ng una"
+    },
+    "batch": {
+      "usage": "/bdl\nBuksan ang post sa Telegram at pindutin nang matagal\nPiliin ang Kopyahin ang link at ipadala rito\nPara sa maraming post ipadala muna ang link ng una\nIpadala ang link ng huling post mula sa parehong channel\nKasama ang unang post ang huli at lahat ng nasa pagitan\nPagkatapos pipili ka ng mga uri ng nilalaman",
+      "different_sources": "⌯ <b>Magkaibang chat ang pinagmulan ng mga link</b>\n\n✦ Dapat manggaling sa iisang Telegram channel o group ang una at huling link",
+      "invalid_order": "⌯ <b>Maling pagkakasunod-sunod ng post</b>\n\n✦ Dapat tumukoy ang unang link sa mas naunang post kaysa sa huling link",
+      "invalid_links": "⌯ <b>Hindi wastong mga batch link</b>\n\n✦ Dapat parehong wastong Telegram post link mula sa iisang source ang dalawang value",
+      "starting": "⌯ <b>Nagsimula ang batch download</b>\n\n✦ Ipoproseso ng bot ang mga post mula {start_id} hanggang {end_id}. Kabuuang hiniling na post: {total}",
+      "progress": "⌯ <b>Kasalukuyang isinasagawa ang batch download</b>\n\n✦ Kasalukuyang item: {current} ng {total}\n✦ Post ID: {message_id}\n✦ Na-download: {downloaded}\n✦ Nilaktawan: {skipped}\n✦ Nabigo: {failed}",
+      "completed": "⌯ <b>Natapos ang batch operation</b>\n\n✦ Na-download: {downloaded}\n✦ Nilaktawan: {skipped}\n✦ Nabigo: {failed}",
+      "cancelled": "⌯ <b>Kinansela ang batch operation</b>\n\n✦ Hindi na ipoproseso ang mga natitirang post. Inalis ang progreso na na-save bago ang pagkansela",
+      "failed": "⌯ <b>Huminto ang batch operation</b>\n\n✦ May hindi inaasahang error na pumigil sa pagproseso ng mga natitirang post",
+      "retrying": "⌯ <b>Sinusubukan muli ang mga nabigong item</b>\n\n✦ Natapos na ang pangunahing pass. Susubukan muli ngayon ang {count} item na nabigo"
+    },
+    "disk_full": "⌯ <b>Gawain</b>\n\n✦ Walang sapat na espasyo para i-download ang file ngayon\n✦ Subukan muli mamaya",
+    "paid": {
+      "not_purchased": "⌯ <b>Kailangang bilhin ang post gamit ang Telegram Stars</b>\n\n✦ Bilhin gamit ang naka-link na account at ipadala muli ang link"
+    }
+  },
+  "tasks": {
+    "already_running": "⌯ <b>May iba pang task na kasalukuyang tumatakbo</b>\n\n✦ Hintaying matapos ang aktibong task o kanselahin ito bago magsimula ng ibang operasyon",
+    "resumed": "⌯ <b>Ipinagpatuloy ang task</b>\n\n✦ May nakitang naputol na task at magpapatuloy ito mula sa huling naka-save na posisyon",
+    "cancel_requested": "⌯ <b>Hiniling ang pagkansela</b>\n\n✦ Ihihinto ang aktibong operasyon at lilinisin ang mga pansamantalang file",
+    "input_cancelled": "⌯ <b>Kinansela ang input session</b>\n\n✦ Inalis ang nakabinbing login, filter, o confirmation state",
+    "none_to_cancel": "⌯ <b>ℹ Walang aktibong operasyon</b>\n\n✦ Walang tumatakbong task o nakabinbing input session na maaaring kanselahin",
+    "completion": {
+      "single": {
+        "private": "⌯ <b>Nakumpleto ang download</b>\n\n✦ Matagumpay na na-download at naipadala sa chat na ito ang hiniling na media",
+        "saved_messages": "⌯ <b>Nakumpleto ang download</b>\n\n✦ Na-download at naihatid ang hiniling na media sa Saved Messages ng iyong naka-link na account",
+        "channel": "⌯ <b>Nakumpleto ang upload</b>\n\n✦ Matagumpay na naihatid ang hiniling na media sa <b>{channel_title}</b>\n\n✦ {message_link}"
+      },
+      "batch": {
+        "private": "⌯ <b>Nakumpleto ang batch task</b>\n\n✦ Natapos ng bot ang pagproseso sa napiling range at naihatid ang {count} item sa chat na ito",
+        "saved_messages": "⌯ <b>Nakumpleto ang batch task</b>\n\n✦ Natapos ng bot ang pagproseso sa napiling range at naihatid ang {count} item sa Saved Messages ng iyong naka-link na account",
+        "channel": "⌯ <b>Nakumpleto ang batch upload</b>\n\n✦ Natapos ng bot ang pagproseso sa napiling range at naihatid ang {count} item sa napili mong channel"
+      },
+      "clone": {
+        "private": "⌯ <b>Nakumpleto ang paglilipat ng channel</b>\n\n✦ Natapos ang channel task at naihatid ang {count} item sa chat na ito",
+        "saved_messages": "⌯ <b>Nakumpleto ang paglilipat ng channel</b>\n\n✦ Natapos ang channel task at naihatid ang {count} item sa Saved Messages ng iyong naka-link na account",
+        "channel": "⌯ <b>Nakumpleto ang paglilipat ng channel</b>\n\n✦ Natapos ang channel task at naihatid ang {count} item sa napili mong destination channel"
+      },
+      "monitor": {
+        "private": "⌯ <b>Naihatid ang sinusubaybayang post</b>\n\n✦ May nakitang bagong post at naihatid ito sa chat na ito",
+        "saved_messages": "⌯ <b>Naihatid ang sinusubaybayang post</b>\n\n✦ May nakitang bagong post at naihatid ito sa Saved Messages ng iyong naka-link na account",
+        "channel": "⌯ <b>Naihatid ang sinusubaybayang post</b>\n\n✦ May nakitang bagong post at naihatid ito sa napili mong destination channel"
+      }
+    }
+  },
+  "filters": {
+    "prompt": "⌯ <b>Piliin ang content filter</b>\n\n✦ Piliin kung ipoproseso ang lahat ng content, ise-save lamang ang napiling mga uri ng media, o lalaktawan ang napiling mga uri ng media. Mananatiling aktibo ang selection session sa loob ng sampung minuto",
+    "modes": {
+      "all": "Lahat ng content",
+      "save": "I-save lamang",
+      "skip": "Laktawan ang napili"
+    },
+    "types": {
+      "videos": "Mga video",
+      "photos": "Mga larawan",
+      "audio": "Audio",
+      "files": "Mga file",
+      "text": "Text",
+      "other": "Iba pa"
+    },
+    "summary": {
+      "all": "Lahat ng suportadong content",
+      "save": "I-save lamang: {types}",
+      "skip": "Laktawan: {types}",
+      "minimum_duration": "Pinakamaikling tagal: {seconds} segundo",
+      "maximum_duration": "Pinakamahabang tagal: {seconds} segundo"
+    }
+  },
+  "clone": {
+    "usage": "/clone\nIpadala ang link o username ng channel\nPara sa pribadong channel ikonekta sa /login ang account na kasali na rito",
+    "channel_not_found": "⌯ <b>Hindi nakita ang channel</b>\n\n✦ Hindi wasto ang username o link ng channel, o hindi ito mahanap ng naka-link na account",
+    "empty_channel": "⌯ <b>Walang laman ang channel</b>\n\n✦ Walang nakitang mga post na maaaring ilipat sa napiling channel",
+    "starting": "⌯ <b>Nagsimula ang paglilipat ng channel</b>\n\n✦ Inihahanda ng bot na iproseso ang {total} post identifier mula sa <b>{channel_title}</b>",
+    "progress": "⌯ <b>Kasalukuyang isinasagawa ang paglilipat ng channel</b>\n\n✦ Kasalukuyang item: {current} ng {total}\n✦ Post ID: {message_id}\n✦ Na-download: {downloaded}\n✦ Nilaktawan: {skipped}\n✦ Nabigo: {failed}",
+    "flood_wait": "⌯ <b>Rate limit ng Telegram</b>\n\n✦ Pansamantalang ihihinto ang paglilipat ng channel sa loob ng {seconds} segundo",
+    "completed": "⌯ <b>Natapos ang pagproseso sa channel</b>\n\n✦ Na-download: {downloaded}\n✦ Nilaktawan: {skipped}\n✦ Nabigo: {failed}",
+    "cancelled": "⌯ <b>Kinansela ang paglilipat ng channel</b>\n\n✦ Hindi na ipoproseso ang mga natitirang post sa channel",
+    "failed": "⌯ <b>Nabigo ang paglilipat ng channel</b>\n\n✦ May hindi inaasahang error na pumigil sa pagkumpleto ng paglilipat"
+  },
+  "uploads": {
+    "channel": {
+      "usage": "/uploadch\nPumili ng channel\nMagkaiba ang subscription ng bot at Telegram Premium\nNag-a-upload ang bot ng humigit-kumulang 2 GB bawat bahagi\nKayang mag-upload ng nakakonektang Telegram Premium account ng hanggang 4 GB sa isang file\nIkonekta ang account sa /login\nGawing administrator ang bot at account sa patutunguhang channel at piliin ito sa /uploadch\nKung walang channel maaari mong piliin ang naka-save na mga mensahe\nKailangang pagsamahin ang mga bahagi ng dokumento ayon sa pagkakasunod ng mga numero\nPinakamadali ↣ idagdag ang bot bilang admin sa channel o grupo mo at hihingi ito ng kumpirmasyon dito",
+      "current": "⌯ <b>Pumili ng channel</b>\n\n✦ {channel_id}\n✦ /uploadch\n✦ /rmuploadch",
+      "invalid_id": "⌯ <b>Hindi wastong channel identifier</b>\n\n✦ Ipadala ang numeric Telegram channel ID, na karaniwang nagsisimula sa <code>-100</code>\n✦ Pinakamadali ↣ idagdag ang bot bilang admin sa channel o grupo mo at hihingi ito ng kumpirmasyon dito",
+      "bot_not_admin": "⌯ <b>Kailangan ng administrator access para sa bot</b>\n\n✦ Idagdag ang bot bilang administrator sa destination channel bago paganahin ang mga channel upload\n✦ Pinakamadali ↣ idagdag ang bot bilang admin sa channel o grupo mo at hihingi ito ng kumpirmasyon dito",
+      "user_not_admin": "⌯ <b>Kailangan ang administrator access mo</b>\n\n✦ Dapat owner o administrator ka ng destination channel",
+      "access_denied": "⌯ <b>Nabigo ang pag-verify sa channel</b>\n\n✦ Hindi ma-access ang channel o kulang ang kinakailangang administrator permission",
+      "enabled": "⌯ <b>Nakonekta ang upload channel</b>\n\n✦ Ang mga susunod na download ay ihahatid sa <b>{channel_title}</b> hanggang sa alisin mo ang destination na ito",
+      "disabled": "⌯ <b>Hindi pinagana ang upload channel</b>\n\n✦ Nawala ang administrator access ng bot sa napiling channel, kaya awtomatikong hindi pinagana ang channel delivery",
+      "removed": "⌯ <b>Inalis ang upload channel</b>\n\n✦ Ang mga susunod na download ay babalik sa default na delivery destination",
+      "not_set": "⌯ <b>ℹ Walang naka-configure na upload channel</b>\n\n✦ Kasalukuyang walang destination channel ang iyong profile"
+    },
+    "auto": {
+      "start_first": "⌯ <b>Tapusin ang pag-link ng channel</b>\n\n✦ Idinagdag mo ang bot sa ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Pindutin ang Simulan para magparehistro sa bot at matapos ang pag-link\n✦ Kapag hindi mo pinindot sa loob ng 24 oras aalis ang bot",
+      "premium_only": "⌯ <b>Pang-subscriber lang ang pag-link ng channel</b>\n\n✦ Idinagdag mo ang bot sa ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Ang pagtanggap ng downloads sa channel o grupo ay bahagi ng subscription sa bot\n✦ Umalis na ang bot\n✦ Mag-subscribe sa button sa ibaba at idagdag ulit ang bot",
+      "confirm": "⌯ <b>Kumpirmahin ang upload channel</b>\n\n✦ Idinagdag mo ang bot sa ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Kapag kinumpirma mo doon darating ang mga bagong download at binabantayang post\n✦ Kapag tinanggihan mo aalis ang bot\n✦ Kapag walang sagot sa loob ng 24 oras kusang aalis ang bot",
+      "linked": "⌯ <b>Na-link ang upload channel</b>\n\n✦ Channel ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Doon darating ang mga bagong download at binabantayang post\n✦ Ipadala ang /rmuploadch para alisin ito",
+      "no_rights": "⌯ <b>Hindi makapag-post doon ang bot</b>\n\n✦ Channel ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Umalis ang bot dahil hindi ito admin o bawal mag-post\n✦ Idagdag ulit bilang admin na puwedeng mag-post",
+      "user_not_admin": "⌯ <b>Kailangan admin ka doon</b>\n\n✦ Channel ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Dapat sa iyo ang upload channel o admin ka roon\n✦ Umalis na ang bot",
+      "expired": "Nag-expire na ang kahilingang ito"
+    }
+  },
+  "forcedownload": {
+    "details": "⌯ <b>Forced-download mode</b>\n\n✦ Kapag pinagana, dina-download at ina-upload ng bot ang bawat media item sa halip na direktang kopyahin ito. Kapaki-pakinabang ito kapag naglalagay ng custom thumbnail, muling binubuo ang mga file, o humahawak ng mga forwarding restriction\n\n✦ Kasalukuyang status: {status}",
+    "premium_required": "⌯ <b>Kailangan ang subscription</b>\n\n✦ Available ang forced-download mode sa mga subscriber dahil gumagamit ito ng karagdagang storage, bandwidth, at processing resources",
+    "flag_removed": "⌯ <b>ℹ Inalis na ang --fdl option</b>\n\n✦ Ang forced downloading ay isa nang permanenteng user mode. Maaari itong pamahalaan ng mga subscriber gamit ang /forcedownload sa halip na idagdag ito sa bawat command",
+    "enabled": "⌯ <b>Pinagana ang forced-download mode</b>\n\n✦ Ang mga susunod na download, batch, clone, at monitor task ay kukunin at ia-upload ang mga orihinal na file sa halip na direktang kopyahin ang mga post",
+    "disabled": "⌯ <b>Hindi pinagana ang forced-download mode</b>\n\n✦ Maaari nang direktang kopyahin muli ng bot ang mga unrestricted na post habang patuloy na dina-download ang protected content kapag kinakailangan",
+    "status": {
+      "enabled": "Pinagana",
+      "disabled": "Hindi pinagana"
+    },
+    "buttons": {
+      "enable": "Paganahin ang forced downloading",
+      "disable": "Huwag paganahin ang forced downloading"
+    }
+  },
+  "thumbnail": {
+    "not_set": "⌯ <b>Walang custom thumbnail</b>\n\n✦ Magpadala muna ng larawan sa bot, pagkatapos ay kumpirmahin ito upang gamitin bilang cover para sa mga suportadong uploaded file",
+    "current": "⌯ <b>Kasalukuyang custom thumbnail</b>\n\n✦ Ito ang larawang naka-save para sa mga susunod na suportadong upload\n\n✦ Status: {status}",
+    "confirm": "⌯ <b>Gamitin ang larawang ito bilang thumbnail</b>\n\n✦ Kumpirmahin upang i-save ang larawang ito bilang iyong custom cover, o kanselahin upang burahin ang pansamantalang larawan",
+    "saved": "⌯ <b>Na-save ang thumbnail</b>\n\n✦ Na-save at pinagana ang larawan para sa mga susunod na suportadong upload",
+    "download_failed": "⌯ <b>Nabigo ang pag-download ng larawan</b>\n\n✦ Hindi ma-save ang larawan. Ipadala itong muli at tiyaking nakumpleto ng Telegram ang upload",
+    "temp_missing": "⌯ <b>Hindi available ang pansamantalang larawan</b>\n\n✦ Nag-expire ang confirmation session o inalis ang pansamantalang larawan. Ipadala muli ang larawan",
+    "not_set_popup": "Walang naka-save na thumbnail",
+    "status": {
+      "enabled": "Pinagana",
+      "disabled": "Hindi pinagana"
+    },
+    "buttons": {
+      "enable": "Paganahin ang thumbnail",
+      "disable": "Huwag paganahin ang thumbnail"
+    }
+  },
+  "captions": {
+    "settings": "⌯ <b>Pagproseso ng caption</b>\n\n✦ Piliin kung paano pangangasiwaan ang mga caption kapag kinokopya o ina-upload ang media\n\n✦ Kasalukuyang mode: {current}",
+    "modes": {
+      "keep_all": "Panatilihin ang orihinal na caption",
+      "remove_all": "Alisin ang mga media caption",
+      "remove_links_users": "Alisin ang mga link at username"
+    },
+    "buttons": {
+      "keep_all": "Panatilihin ang orihinal na caption",
+      "remove_all": "Alisin ang lahat ng caption",
+      "remove_links_users": "Alisin ang mga link at username"
+    },
+    "already_selected_popup": "Aktibo na ang caption mode na ito",
+    "updated_popup": "Na-update ang caption mode"
+  },
+  "profile": {
+    "unavailable": "⌯ <b>Hindi available ang profile</b>\n\n✦ Hindi ma-load ang naka-save mong user record. Ipadala ang /start at subukan muli",
+    "details": "⌯ <b>Iyong profile</b>\n\n✦ User ID: <code>{user_id}</code>\n✦ Plan: {plan_status}\n✦ Pag-expire ng plan: {expiry_date}\n✦ Daily points: {daily_points}/{daily_limit}\n✦ Daily reset: {reset_time}\n✦ Gift points: {gift_points}\n✦ Referral points: {referral_points}\n✦ Mga referral: {referral_count}\n✦ Forced download: {force_download_status}\n\n✦ Referral link:\n✦ <code>{referral_link}</code>"
+  },
+  "plans": {
+    "free": "Libre",
+    "premium": "Subscriber",
+    "monthly": "Buwanan",
+    "yearly": "Taunan"
+  },
+  "premium": {
+    "details": "⌯ <b>Subscription</b>\n\n✦ Subscription\n✦ Maaari kang magkaroon ng hanggang 5 bukas na gawain\n✦ Hintaying matapos ang isa o kanselahin gamit ang /cancel\n✦ Sa subscription maaari mong laktawan ang pinagsasaluhang pila\n✦ /clone\n✦ /monitor\n✦ /uploadch\n✦ /caption\n✦ /fdl\n✦ Magkaiba ang subscription ng bot at Telegram Premium",
+    "feature_required": "⌯ <b>Kailangan ang subscription</b>\n\n✦ Available ang feature na ito sa mga subscriber. Buksan ang subscription menu upang tingnan ang mga available na plan",
+    "already_active": "⌯ <b>Aktibo ang subscription</b>\n\n✦ Mananatiling aktibo ang iyong subscription hanggang {expiry_date}",
+    "already_active_popup": "Aktibo ang iyong subscription hanggang {expiry_date}",
+    "required_popup": "Kailangan ng aktibong subscription para sa feature na ito",
+    "granted": "⌯ <b>Na-activate ang subscription</b>\n\n✦ Matagumpay na na-upgrade ang iyong account. Mag-e-expire ang kasalukuyang subscription sa {expiry_date}",
+    "removed": "⌯ <b>ℹ Inalis ang subscription</b>\n\n✦ Hindi pinagana para sa iyong account ang mga subscriber-only mode at destination setting",
+    "buttons": {
+      "monthly": "Buwanang plan",
+      "yearly": "Taunang plan"
+    },
+    "granted_days": "⌯ <b>Subscription</b>\n\n✦ Idinagdag na mga araw: {days}\n✦ Petsa ng pagtatapos: {expiry_date}\n✦ Idinagdag ang mga araw sa natitirang oras kung mayroon"
+  },
+  "language": {
+    "select": "⌯ <b>Piliin ang iyong wika</b>\n\n✦ Piliin ang wikang gagamitin para sa mga mensahe ng bot at sa personal mong Telegram command menu",
+    "changed": "⌯ <b>Napalitan ang wika</b>\n\n✦ Ipapakita na ngayon ang mga mensahe at Telegram command sa {language_name}",
+    "unavailable_popup": "Hindi available ang napiling wika"
+  },
+  "limits": {
+    "insufficient_points": "⌯ <b>Hindi sapat ang download points</b>\n\n✦ Wala kang sapat na points para sa download na ito. Magre-reset ang iyong daily balance pagkalipas ng {time_left}, o maaari kang kumita ng higit pa sa pamamagitan ng referrals",
+    "insufficient_points_batch": "⌯ <b>Hindi sapat ang points para sa batch na ito</b>\n\n✦ Nangangailangan ang operasyong ito ng {required_points} points, samantalang {available_points} lamang ang kasalukuyan mong available na balance",
+    "reset_now": "Nagre-reset na",
+    "cooldown": "⌯ <b>Mangyaring maghintay bago mag-download muli</b>\n\n✦ Maaari kang magsimula ng panibagong libreng download pagkalipas ng {remaining_time}"
+  },
+  "referrals": {
+    "share_text": "Gamitin ang Telegram downloader na ito at kumita ng points sa pamamagitan ng referral link ko",
+    "new_referral": "⌯ <b>May bagong referral na sumali</b>\n\n✦ Sumali si {user_name} (<code>{user_id}</code>) gamit ang iyong link. Nakatanggap ka ng {reward} referral points",
+    "welcome_bonus": "⌯ <b>Natanggap ang referral bonus</b>\n\n✦ Nakatanggap ka ng {bonus} points dahil sumali ka gamit ang referral link ng isang kasalukuyang user"
+  },
+  "gifts": {
+    "claim": {
+      "already_claimed": "⌯ <b>ℹ Na-claim na ang gift</b>\n\n✦ Naidagdag na dati ang gift na ito sa iyong account at hindi ito maaaring i-claim nang dalawang beses",
+      "invalid": "⌯ <b>Hindi nakita ang gift</b>\n\n✦ Hindi wasto o hindi na umiiral ang gift link",
+      "inactive": "⌯ <b>Hindi aktibo ang gift</b>\n\n✦ Hindi pinagana ng administrator ang gift na ito at hindi na ito maaaring i-claim",
+      "link_expired": "⌯ <b>Nag-expire ang gift link</b>\n\n✦ Natapos na ang panahong inilaan para i-claim ang gift na ito",
+      "limit_reached": "⌯ <b>Naabot na ang limitasyon ng gift</b>\n\n✦ Nagamit na ang pinakamataas na bilang ng pinapayagang claim",
+      "not_allowed": "⌯ <b>Hindi nakatalaga sa iyong account ang gift</b>\n\n✦ Maaari lamang i-claim ang gift na ito ng mga partikular na user at hindi kasama ang iyong account",
+      "excluded": "⌯ <b>Hindi available ang gift para sa iyong account</b>\n\n✦ Hindi pinapayagang i-claim ng iyong account ang gift na ito",
+      "completed": "⌯ <b>Na-claim ang gift</b>\n\n✦ Matagumpay na naidagdag ang {value} points sa iyong account",
+      "completed_with_expiry": "⌯ <b>Na-claim ang gift</b>\n\n✦ Naidagdag ang {value} points sa iyong account at mananatiling available hanggang {expiry_date}",
+      "failed": "⌯ <b>Nabigo ang pag-claim ng gift</b>\n\n✦ Hindi mailapat ang gift sa iyong account. Subukan muli mamaya"
+    }
+  },
+  "help": {
+    "menu": {
+      "title": "⌯ <b>Help center</b>\n\n✦ Pumili ng feature sa ibaba upang tingnan ang mga tagubilin at inirerekomendang paggamit nito"
+    },
+    "buttons": {
+      "single": "Isang download",
+      "batch": "Batch download",
+      "clone": "Paglipat ng channel",
+      "monitor": "Channel monitor",
+      "channel_upload": "Upload channel",
+      "forcedownload": "Forced download",
+      "login": "Naka-link na account",
+      "points": "Points",
+      "premium": "Subscription",
+      "other_uses": "Iba pang gamit"
+    },
+    "features": {
+      "dl": "⌯ <b>Mag-download ng isang post</b>\n\n✦ /dl\n✦ Buksan ang post sa Telegram at pindutin nang matagal\n✦ Piliin ang Kopyahin ang link at ipadala rito\n✦ Para sa maraming post ipadala muna ang link ng una\n✦ <code>https://t.me/example_channel/15</code>\n✦ Ipadala ang link o username ng channel\n✦ Para sa pribadong channel ikonekta sa /login ang account na kasali na rito\n✦ Laki:\n✦ Nag-a-upload ang bot ng humigit-kumulang 2 GB bawat bahagi\n✦ Piliin ang I-download at hatiin o Kanselahin\n✦ Para sa buong file na hanggang 4 GB ikonekta ang Telegram Premium account sa /login at pumili ng channel sa /uploadch",
+      "bdl": "⌯ <b>Mag-download ng maraming post</b>\n\n✦ /bdl\n✦ Buksan ang post sa Telegram at pindutin nang matagal\n✦ Piliin ang Kopyahin ang link at ipadala rito\n✦ Para sa maraming post ipadala muna ang link ng una\n✦ Ipadala ang link ng huling post mula sa parehong channel\n✦ Kasama ang unang post ang huli at lahat ng nasa pagitan\n✦ Pagkatapos pipili ka ng mga uri ng nilalaman\n✦ <code>/bdl https://t.me/example_channel/15 https://t.me/example_channel/30</code>\n✦ Ipadala ang /cancel para pumili ng gawain o /cancel na sinusundan ng numero nito",
+      "clone": "⌯ <b>Maglipat ng isang buong channel</b>\n\n✦ Subscription\n✦ /clone\n✦ Ipadala ang link o username ng channel\n✦ Para sa pribadong channel ikonekta sa /login ang account na kasali na rito\n✦ /uploadch\n✦ Ipadala ang /cancel para pumili ng gawain o /cancel na sinusundan ng numero nito",
+      "monitor": "⌯ <b>Subaybayan ang mga bagong post sa channel</b>\n\n✦ Subscription\n✦ /monitor\n✦ Ipadala ang link o username ng channel\n✦ Para sa pribadong channel ikonekta sa /login ang account na kasali na rito\n✦ Channel:\n✦ Mga filter:\n✦ Gumagamit ng download account ang pampublikong channel\n✦ Sinusuri kada oras ang pribadong channel gamit ang isang account sa bawat pagkakataon at isinasara ito pagkatapos\n✦ Naka-save sa pila ang mga bagong post at ipinapadala nang sunod-sunod\n✦ Itigil ang pagsubaybay",
+      "channel_upload": "⌯ <b>Maghatid ng content sa ibang channel</b>\n\n✦ Subscription\n✦ /uploadch\n✦ Magkaiba ang subscription ng bot at Telegram Premium\n✦ Nag-a-upload ang bot ng humigit-kumulang 2 GB bawat bahagi\n✦ Kayang mag-upload ng nakakonektang Telegram Premium account ng hanggang 4 GB sa isang file\n✦ Ikonekta ang account sa /login\n✦ Gawing administrator ang bot at account sa patutunguhang channel at piliin ito sa /uploadch\n✦ Kung walang channel maaari mong piliin ang naka-save na mga mensahe\n✦ Kailangang pagsamahin ang mga bahagi ng dokumento ayon sa pagkakasunod ng mga numero\n✦ /rmuploadch\n✦ Pinakamadali ↣ idagdag ang bot bilang admin sa channel o grupo mo at hihingi ito ng kumpirmasyon dito",
+      "forcedownload": "⌯ <b>Forced-download mode</b>\n\n✦ Gamitin ang /forcedownload upang ipakuha at ipa-upload sa bot ang bawat file sa halip na kopyahin ang mga unrestricted na post. Kapaki-pakinabang ang mode na ito para sa custom thumbnail at muling pagbuo ng content",
+      "login": "⌯ <b>Mag-link ng Telegram account</b>\n\n✦ Gamitin ang /login at piliin ang kasalukuyan mong account o isang alternatibong account. Dapat miyembro na ang naka-link na account ng mga pribadong channel na gusto mong ma-access. Ang mga authorization code ay inilalagay lamang gamit ang secure na keypad\n✦ Ilagay ang Telegram code gamit lang ang mga numerong button\n✦ Tinatanggal ng Burahin ang huling digit at ipinapadala ng Kumpirmahin ang code\n✦ Ipadala ang link o username ng channel\n✦ Para sa pribadong channel ikonekta sa /login ang account na kasali na rito\n✦ /logout",
+      "points": "⌯ <b>Download points</b>\n\n✦ Gumagamit ang mga libreng download ng daily, gift, at referral points. Ibahagi ang personal mong link upang kumita ng higit pang points:\n\n✦ <code>{referral_link}</code>",
+      "premium": "⌯ <b>Mga feature ng subscription</b>\n\n✦ /premium\n✦ Subscription\n✦ Maaari kang magkaroon ng hanggang 5 bukas na gawain\n✦ Hintaying matapos ang isa o kanselahin gamit ang /cancel\n✦ Sa subscription maaari mong laktawan ang pinagsasaluhang pila\n✦ /clone\n✦ /monitor\n✦ /uploadch\n✦ /caption\n✦ /fdl\n✦ Magkaiba ang subscription ng bot at Telegram Premium",
+      "other_uses": "⌯ <b>Iba pang paraan ng paggamit sa bot</b>\n\n✦ <b>Maglipat mula sa isang channel papunta sa iba:</b> Mag-configure ng destination gamit ang /uploadch, pagkatapos ay patakbuhin ang /clone sa source channel. Ililipat ang napiling content ayon sa iyong mga filter\n\n✦ <b>Palitan ang mga cover ng isang buong serye:</b> Ipadala sa bot ang bagong cover image at kumpirmahin ito, paganahin ang forced-download mode, pagkatapos ay patakbuhin ang /bdl gamit ang link ng una at huling episode. Ida-download at ia-upload ang mga file gamit ang napiling cover kung suportado"
+    }
+  },
+  "monitor": {
+    "login_required": "⌯ <b>Mag-link ng Telegram account</b>\n\n✦ Ipadala ang link o username ng channel\n✦ Para sa pribadong channel ikonekta sa /login ang account na kasali na rito",
+    "usage": "⌯ <b>Subaybayan ang mga bagong post sa channel</b>\n\n✦ {current_status}\n✦ /monitor\n✦ Ipadala ang link o username ng channel\n✦ Para sa pribadong channel ikonekta sa /login ang account na kasali na rito\n✦ Channel:\n✦ Mga filter:\n✦ Gumagamit ng download account ang pampublikong channel\n✦ Sinusuri kada oras ang pribadong channel gamit ang isang account sa bawat pagkakataon at isinasara ito pagkatapos\n✦ Naka-save sa pila ang mga bagong post at ipinapadala nang sunod-sunod\n✦ Itigil ang pagsubaybay",
+    "invalid_channel_id": "⌯ <b>Hindi wastong channel identifier</b>\n\n✦ Gumamit ng numeric Telegram channel ID, na karaniwang nagsisimula sa <code>-100</code>",
+    "invalid_action": "⌯ <b>Hindi wastong monitor action</b>\n\n✦ Gamitin ang <code>on</code> upang simulan ang monitoring o <code>off</code> upang ihinto ito",
+    "not_active": "⌯ <b>ℹ Hindi aktibo ang monitor</b>\n\n✦ Hindi kasalukuyang sinusubaybayan ng iyong account ang tinukoy na channel",
+    "already_active": "⌯ <b>ℹ May aktibo nang monitor</b>\n\n✦ Ihinto ang kasalukuyang sinusubaybayang channel bago pumili ng iba",
+    "access_denied": "⌯ <b>Tinanggihan ang access sa channel</b>\n\n✦ Hindi mabuksan ng naka-link na account ang tinukoy na channel o mali ang identifier",
+    "start_failed": "⌯ <b>Simulan muli ang gawain</b>\n\n✦ Ipadala ang link o username ng channel\n✦ Para sa pribadong channel ikonekta sa /login ang account na kasali na rito",
+    "started": "⌯ <b>Subaybayan ang mga bagong post sa channel</b>\n\n✦ Channel: {channel_title}\n✦ Mga filter: {filter_status}\n✦ Gumagamit ng download account ang pampublikong channel\n✦ Sinusuri kada oras ang pribadong channel gamit ang isang account sa bawat pagkakataon at isinasara ito pagkatapos\n✦ Naka-save sa pila ang mga bagong post at ipinapadala nang sunod-sunod",
+    "stopped": "⌯ <b>Huminto ang channel monitor</b>\n\n✦ Hindi na awtomatikong ipoproseso ang mga bagong post mula sa napiling channel",
+    "session_stopped": "⌯ <b>Huminto ang monitor</b>\n\n✦ Nag-expire o binawi ang naka-link na Telegram session, kaya hindi pinagana ang awtomatikong monitoring",
+    "status": {
+      "active": "Aktibo para sa channel na <code>{channel_id}</code>",
+      "inactive": "Hindi aktibo"
+    },
+    "stop_button": "Itigil ang pagsubaybay",
+    "source_lost": "⌯ <b>Huminto ang pagbabantay sa channel</b>\n\n✦ Channel ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Hindi ito mabuksan ng naka-link mong account sa buong araw\n✦ Baka nabura o naging private o umalis na ang account\n✦ Para bantayan ulit siguraduhing miyembro ang account at ipadala ang /monitor"
+  },
+  "stats": {
+    "system": "⌯ <b>System statistics</b>\n\n✦ Uptime: {uptime}\n✦ Disk: {disk_usage} / {disk_total} ({disk_percent}%)\n✦ Memory: {ram_percent}%\n✦ CPU: {cpu_percent}%\n✦ Network sent: {sent}\n✦ Network received: {received}",
+    "admin": "⌯ <b>User statistics</b>\n\n✦ Kabuuang user: {total_users}\n✦ Mga subscriber: {total_premium}\n✦ Idinagdag ng administrator: {premium_by_admin}\n✦ Nagbayad gamit ang Stars: {premium_by_stars}",
+    "public": "⌯ <b>Mga estadistika ng bot</b>\n\n✦ Oras na gumagana: {uptime}\n✦ Kabuuang download: {total_downloads}"
+  },
+  "payments": {
+    "monthly": {
+      "title": "Buwanang subscription",
+      "description": "I-activate ang mga subscriber feature sa loob ng 30 araw"
+    },
+    "yearly": {
+      "title": "Taunang subscription",
+      "description": "I-activate ang mga subscriber feature sa loob ng 365 araw"
+    },
+    "total_label": "Kabuuang subscription",
+    "invalid_plan_popup": "Hindi wasto ang napiling subscription plan",
+    "invoice_failed_popup": "Hindi magawa ang payment invoice",
+    "unrecognized": "⌯ <b>Hindi nakilala ang payment plan</b>\n\n✦ Natanggap ang bayad, ngunit hindi matukoy ang subscription plan nito. Makipag-ugnayan sa support dala ang impormasyon ng pagbabayad",
+    "activation_failed": "⌯ <b>Nabigo ang pag-activate ng subscription</b>\n\n✦ Natanggap ang bayad, ngunit hindi ma-activate ng database ang subscription. Makipag-ugnayan sa support para sa manu-manong tulong",
+    "completed": "⌯ <b>Na-activate ang subscription</b>\n\n✦ Aktibo na ang {plan_name} plan at mag-e-expire ito sa {expiry_date}"
+  },
+  "broadcast": {
+    "json": {
+      "file_required": "⌯ <b>Kailangan ang broadcast JSON file</b>\n\n✦ Mag-reply sa isang multilingual JSON file at gamitin ang <code>/bc .</code>",
+      "invalid_file": "⌯ <b>Hindi wastong broadcast file</b>\n\n✦ Dapat JSON file ang nireplyang document",
+      "validation_failed": "⌯ <b>Nabigo ang validation ng broadcast file</b>\n\n✦ Hindi matanggap ang file: <code>{error}</code>",
+      "confirm": "⌯ <b>Kumpirmahin ang multilingual broadcast</b>\n\n✦ Naglalaman ang file ng {language_count} magagamit na wika. Matatanggap ng mga user ang kanilang naka-save na wika, pagkatapos ang base language nila, at English bilang huling fallback\n\n✦ Mga filter: {filters}",
+      "how_to": "⌯ <b>Multilingual na broadcast</b>\n\n✦ I-tap ang button sa ibaba para makatanggap ng JSON template na naglalaman ng lahat ng available na wika. Punan ang <code>text</code> na halaga para sa bawat wikang gusto mo, pagkatapos i-upload ang file at sagutin ito gamit ang <code>/bc .</code> — ang mga wikang iniwang blangko ay babalik sa Ingles",
+      "template_sent": "⌯ <b>Template ng broadcast</b>\n\n✦ Naglalaman ang file ng {language_count} na wika at nabuo mula sa kasalukuyang mga locale file"
+    },
+    "usage": "⌯ <b>Mag-broadcast ng mensahe</b>\n\n✦ Mag-reply sa mensaheng gusto mong ipadala, pagkatapos ay gamitin ang /bc. Kabilang sa mga opsyonal na filter ang <code>-only USER_ID</code> at <code>-rm USER_ID --prem</code>",
+    "invalid_message": "⌯ <b>Hindi available ang broadcast message</b>\n\n✦ Walang wastong Telegram identifier ang nireplyang mensahe",
+    "confirm": "⌯ <b>Kumpirmahin ang broadcast</b>\n\n✦ Message ID: <code>{message_id}</code>\n✦ Mga filter: {filters}\n\n✦ Piliin kung ipapadala ito nang normal o ipapadala at ipi-pin",
+    "starting": "⌯ <b>Nagsimula ang broadcast</b>\n\n✦ Ipinapadala ang mensahe sa mga napiling user",
+    "progress": "⌯ <b>Kasalukuyang isinasagawa ang broadcast</b>\n\n✦ Naproseso: {processed}/{total}\n✦ Matagumpay: {successful}\n✦ Nabigo: {failed}",
+    "completed": "⌯ <b>Nakumpleto ang broadcast</b>\n\n✦ Mga target na user: {total}\n✦ Matagumpay: {successful}\n✦ Nabigo: {failed}",
+    "cancelled": "⌯ <b>Kinansela ang broadcast</b>\n\n✦ Ihinto ang operasyon pagkatapos maproseso ang {processed} user",
+    "buttons": {
+      "normal": "Ipadala nang normal",
+      "pin": "Ipadala at i-pin",
+      "get_template": "Kumuha ng JSON template"
+    },
+    "filters": {
+      "none": "Walang filter",
+      "summary": "Mga user lamang: {only_count}, mga ibinukod na user: {excluded_count}, ibukod ang mga subscriber: {exclude_premium}"
+    }
+  },
+  "admin": {
+    "users": {
+      "new_language": "⌯ <b>May natukoy na hindi available na wika</b>\n\n✦ User: {first_name}\n✦ User ID: <code>{user_id}</code>\n✦ Natukoy na code: <code>{language_code}</code>",
+      "new_user": "⌯ <b>May bagong user na sumali</b>\n\n✦ Pangalan: {first_name} {last_name}\n✦ User ID: <code>{user_id}</code>\n✦ Username: {username}\n✦ Kabuuang user: {total_users}",
+      "exported": "⌯ <b>Nakumpleto ang user export</b>\n\n✦ Naglalaman ang naka-attach na file ng {count} user record"
+    },
+    "payments": {
+      "new_subscription": "⌯ <b>Bagong bayad na subscription</b>\n\n✦ User: {user_name}\n✦ User ID: <code>{user_id}</code>\n✦ Plan: {plan_name}\n✦ Halaga: {amount} Stars"
+    },
+    "pool": {
+      "insufficient": "⌯ <b>Hindi kumpleto ang download account pool</b>\n\n✦ Kasalukuyang naka-load: {current}\n✦ Karagdagang account na kailangan: {missing}"
+    },
+    "gifts": {
+      "create_usage": "⌯ <b>Gumawa ng gift</b>\n\n✦ Gamitin ang <code>/create -gift --value POINTS</code>. Kabilang sa mga opsyonal na setting ang <code>--linkexpiry DDHHMM</code>, <code>--giftexpiry DDHHMM</code>, <code>--onlyuser [IDS]</code>, <code>--exceptionuser [IDS]</code>, at <code>--limit NUMBER</code>",
+      "value_required": "⌯ <b>Kailangan ang value ng gift</b>\n\n✦ Magbigay ng positibong numero pagkatapos ng <code>--value</code>",
+      "user_filter_conflict": "⌯ <b>Magkasalungat na user filter</b>\n\n✦ Hindi maaaring gumamit ang gift ng allowed-users at excluded-users filter nang sabay",
+      "invalid_duration": "⌯ <b>Hindi wastong duration</b>\n\n✦ Gamitin ang anim na digit na <code>DDHHMM</code> format para sa mga duration ng gift",
+      "invalid_values": "⌯ <b>Hindi wastong gift settings</b>\n\n✦ Suriin ang mga user identifier, claim limit, at lahat ng ibinigay na value",
+      "created": "⌯ <b>Nagawa ang gift</b>\n\n✦ Handa na ang gift link:\n✦ <code>{gift_link}</code>",
+      "empty": "⌯ <b>ℹ Walang aktibong gift</b>\n\n✦ Kasalukuyang walang aktibong gift link",
+      "list_title": "⌯ <b>Mga aktibong gift</b>\n\n✦ Kasalukuyang available ang mga sumusunod na gift link",
+      "list_item": "<b>Gift:</b> <code>{gift_pid}</code>\nValue: {value}\nMga claim: {usage_count}/{usage_limit}\nPag-expire ng link: {expiry}\nGinawa noong: {created_at}\nLink: <code>{gift_link}</code>",
+      "remove_usage": "⌯ <b>Mag-alis ng gift</b>\n\n✦ Gamitin ang <code>/rm -gift --pid GIFT_ID</code>",
+      "not_found": "⌯ <b>Hindi nakita ang gift</b>\n\n✦ Walang aktibong gift na may ibinigay na identifier",
+      "remove_confirm": "⌯ <b>I-deactivate ang gift</b>\n\n✦ Gift: <code>{gift_pid}</code>\n✦ Value: {value}\n✦ Mga claim: {usage_count}\n\n✦ Kumpirmahin upang pigilan ang anumang claim sa hinaharap",
+      "deactivated": "⌯ <b>Na-deactivate ang gift</b>\n\n✦ Hindi na maaaring i-claim ang gift na <code>{gift_pid}</code>"
+    },
+    "add": {
+      "usage": "⌯ <b>Magdagdag ng administrative settings</b>\n\n✦ Gamitin ang /add kasama ang <code>-premium</code>, <code>-lang</code>, o <code>-frcch</code>"
+    },
+    "remove": {
+      "usage": "⌯ <b>Mag-alis ng administrative settings</b>\n\n✦ Gamitin ang /rm kasama ang <code>-premium</code>, <code>-gift</code>, o <code>-frcch</code>"
+    },
+    "premium": {
+      "add_usage": "⌯ <b>Subscription</b>\n\n✦ /admin\n✦ Pumili ng mga user o ipadala ang kanilang mga numerong pagkakakilanlan\n✦ Mga araw\n✦ <code>/add -premium --user [123456789] --days 30</code>",
+      "added": "⌯ <b>Nakumpleto ang pag-update ng subscription</b>\n\n✦ Na-update na mga user: {users}\n✦ Mga nawawalang user: {missing}",
+      "remove_usage": "⌯ <b>Mag-alis ng subscription</b>\n\n✦ Gamitin ang <code>/rm -premium --user [USER_IDS]</code>",
+      "removed": "⌯ <b>Nakumpleto ang pag-alis ng subscription</b>\n\n✦ Na-update na mga user: {users}\n✦ Mga nawawala o hindi aktibong user: {missing}"
+    },
+    "languages": {
+      "reply_to_json": "⌯ <b>Kailangan ang language file</b>\n\n✦ Mag-reply sa isang wastong JSON language file kapag ginagamit ang <code>/add -lang</code>",
+      "json_required": "⌯ <b>Kailangan ang JSON file</b>\n\n✦ Dapat gumamit ang nireplyang document ng <code>.json</code> extension",
+      "already_exists": "⌯ <b>ℹ Umiiral na ang wika</b>\n\n✦ Naka-install na ang wikang <code>{language_code}</code>. Idagdag ang <code>--update</code> upang palitan ito",
+      "invalid_json": "⌯ <b>Hindi wastong language file</b>\n\n✦ Hindi ma-load ang JSON file: <code>{error}</code>",
+      "added": "⌯ <b>Naidagdag ang wika</b>\n\n✦ Available na ngayon ang wikang <code>{language_code}</code>",
+      "updated": "⌯ <b>Na-update ang wika</b>\n\n✦ Matagumpay na na-reload ang wikang <code>{language_code}</code>"
+    },
+    "force_subscription": {
+      "empty": "⌯ <b>ℹ Walang kinakailangang channel</b>\n\n✦ Kasalukuyang walang naka-configure na force-subscription channel",
+      "list_title": "⌯ <b>Mga kinakailangang channel</b>\n\n✦ Kasalukuyang ipinapatupad ang mga sumusunod na channel",
+      "list_item": "Link: {link}\nChannel ID: <code>{channel_id}</code>\nSumali: {joined}\nLimitasyon: {limit}",
+      "add_usage": "⌯ <b>Magdagdag ng kinakailangang channel</b>\n\n✦ Gamitin ang <code>/add -frcch --link CHANNEL_LINK --id CHANNEL_ID --limit NUMBER</code>",
+      "permission_required": "⌯ <b>Kailangan ang administrator permission</b>\n\n✦ Dapat administrator ang bot na may permission na mag-imbita ng mga user",
+      "added": "⌯ <b>Naidagdag ang kinakailangang channel</b>\n\n✦ Channel: {channel_title}\n✦ Join limit: {limit}",
+      "add_failed": "⌯ <b>Hindi maidagdag ang channel</b>\n\n✦ Suriin ang channel identifier, link, at administrator permission ng bot",
+      "remove_usage": "⌯ <b>Mag-alis ng kinakailangang channel</b>\n\n✦ Gamitin ang <code>/rm -frcch CHANNEL_ID</code> o ibigay ang naka-save nitong link",
+      "removed": "⌯ <b>Inalis ang kinakailangang channel</b>\n\n✦ Hindi na ipinapatupad ang channel",
+      "not_found": "⌯ <b>Hindi nakita ang kinakailangang channel</b>\n\n✦ Walang naka-save na channel na tumutugma sa ibinigay na identifier o link"
+    },
+    "logs": {
+      "not_found": "⌯ <b>Hindi available ang log directory</b>\n\n✦ Hindi umiiral ang log directory ng bot",
+      "empty": "⌯ <b>Walang available na log</b>\n\n✦ Walang nakitang bot log file na may laman",
+      "file_caption": "⌯ <b>Bot log</b>\n\n✦ File: <code>{filename}</code>",
+      "upload_failed": "⌯ <b>Nabigo ang pag-upload ng log</b>\n\n✦ File: <code>{filename}</code>\n✦ Error: <code>{error}</code>"
+    }
+  },
+  "queue": {
+    "accepted": "⌯ <b>Na-save ang gawain mo</b>\n\n✦ Gawain ↣ {task_id}\n✦ Ipadala ang /cancel para pumili ng gawain o /cancel na sinusundan ng numero nito\n✦ <code>/cancel {task_id}</code>",
+    "waiting_free": "⌯ <b>Naghihintay</b>\n\n✦ Mga nauna sa iyo: {ahead}\n✦ Magsisimula ang pag-download kapag may bakanteng puwesto\n✦ Sa subscription maaari mong laktawan ang pinagsasaluhang pila",
+    "waiting_premium": "⌯ <b>Naghihintay</b>\n\n✦ Mga naunang gawain mo: {ahead}\n✦ Isa-isang tatakbo ang mga gawain mo",
+    "limit_free": "⌯ <b>Gawain</b>\n\n✦ May bukas ka nang gawain\n✦ Hintaying matapos o kanselahin gamit ang /cancel\n✦ Maaari kang magkaroon ng hanggang 5 bukas na gawain\n✦ Hintaying matapos ang isa o kanselahin gamit ang /cancel",
+    "limit_premium": "⌯ <b>Gawain</b>\n\n✦ Maaari kang magkaroon ng hanggang {limit} bukas na gawain\n✦ Hintaying matapos ang isa o kanselahin gamit ang /cancel",
+    "lost_after_restart": "⌯ <b>Simulan muli ang gawain</b>\n\n✦ Gawain ↣ {task_id}\n✦ Buksan ang post sa Telegram at pindutin nang matagal\n✦ Piliin ang Kopyahin ang link at ipadala rito\n✦ Para sa maraming post ipadala muna ang link ng una",
+    "cancel_usage": "Ipadala ang /cancel para pumili ng gawain o /cancel na sinusundan ng numero nito\n<code>/cancel 123</code>",
+    "cancelled_one": "Nakansela ang gawain {task_id}",
+    "not_found": "Tapos na ang gawain {task_id} o hindi ito sa iyo",
+    "choose_to_cancel": "⌯ <b>Kanselahin Gawain</b>\n\n✦ Ipadala ang /cancel para pumili ng gawain o /cancel na sinusundan ng numero nito",
+    "cancelled_popup": "Kanselahin",
+    "not_found_popup": "Simulan muli ang gawain",
+    "buttons": {
+      "cancel": "Kanselahin Gawain",
+      "upgrade": "Subscription",
+      "cancel_task": "Gawain {task_id} {kind} {status}",
+      "cancel_all": "Kanselahin Gawain /cancel"
+    },
+    "kinds": {
+      "dl": "Mag-download ng isang post",
+      "bdl": "Mag-download ng maraming post",
+      "clone": "Maglipat ng isang buong channel",
+      "task": "Gawain",
+      "monitor": "Subaybayan ang mga bagong post sa channel"
+    },
+    "status": {
+      "queued": "Naghihintay",
+      "running": "Tumatakbo"
+    },
+    "task_number": "Gawain {task_id}"
+  },
+  "spam": {
+    "per_second": "Huwag magpadala ng higit sa isang mensahe bawat segundo",
+    "per_minute": "Huwag magpadala ng higit sa 20 mensahe bawat minuto\nTumatanggap ng mga link sa pag-download ang bot na ito\nHintaying matapos ang minutong ito",
+    "buttons": "Pumindot ka ng higit sa 20 button sa isang minuto\nMaghintay bago magpatuloy\nDoble ang oras ng paghihintay sa paulit-ulit na paglabag"
+  },
+  "flow": {
+    "first_link": "⌯ <b>Mag-download ng isang post</b>\n\n✦ Buksan ang post sa Telegram at pindutin nang matagal\n✦ Piliin ang Kopyahin ang link at ipadala rito\n✦ Para sa maraming post ipadala muna ang link ng una\n✦ <code>https://t.me/example_channel/15</code>",
+    "last_link": "⌯ <b>Mag-download ng maraming post</b>\n\n✦ Ipadala ang link ng huling post mula sa parehong channel\n✦ Kasama ang unang post ang huli at lahat ng nasa pagitan\n✦ Pagkatapos pipili ka ng mga uri ng nilalaman",
+    "channel": "⌯ <b>Pumili ng channel</b>\n\n✦ Ipadala ang link o username ng channel\n✦ Para sa pribadong channel ikonekta sa /login ang account na kasali na rito\n✦ <code>https://t.me/example_channel</code>",
+    "pick_channel": "Pumili ng channel",
+    "invalid_channel": "Ipadala ang link o username ng channel\nPara sa pribadong channel ikonekta sa /login ang account na kasali na rito",
+    "upload_channel": "⌯ <b>Pumili ng upload channel</b>\n\n✦ Pinakamadali ↣ idagdag ang bot bilang admin na puwedeng mag-post sa channel o grupo mo\n✦ Magpapadala ang bot ng kumpirmasyon dito at pindutin ang Kumpirmahin\n✦ O pindutin ang button sa ibaba para pumili ng channel\n✦ O ipadala ang link ng channel, username o ID na nagsisimula sa <code>-100</code>\n✦ Kailangan ng subscription sa bot para dito"
+  },
+  "panel": {
+    "title": "⌯ <b>Pamamahala</b>\n\n✦ Subscription / Regalo / Mga kinakailangang channel / Ipadala sa marami",
+    "premium": "Subscription",
+    "gift": "Regalo",
+    "fsub": "Mga kinakailangang channel",
+    "broadcast": "Ipadala sa marami",
+    "users": "I-export ang mga user",
+    "language": "Mga file ng wika",
+    "gifts": "Mga aktibong gift",
+    "choose_user": "Pumili ng mga user o ipadala ang kanilang mga numerong pagkakakilanlan",
+    "selected_users": "Lahat ng user ↣ {users}",
+    "selected_channel": "Pumili ng channel ↣ {channel_id}",
+    "custom": "Ibang numero",
+    "remove_premium": "Kanselahin Subscription",
+    "days": "Mga araw ↣ {days}",
+    "value": "Puntos ng regalo",
+    "link_days": "Bisa ng link sa araw / Sa bisa ng regalo ang zero ay nangangahulugang walang pagtatapos",
+    "point_days": "Bisa ng puntos sa araw / Sa bisa ng regalo ang zero ay nangangahulugang walang pagtatapos",
+    "limit": "Pinakamaraming pagkuha",
+    "only_users": "Payagan ang partikular na user",
+    "exclude_users": "Ibukod ang mga user",
+    "send_broadcast": "Ipadala rito ang mensahe para sa marami\nTingnan ang kopya at piliin ang tatanggap\nPagkatapos pindutin ang Kumpirmahin",
+    "send_language": "Magpadala ng JSON file na ipinangalan sa code ng wika tulad ng ar.json\nPapalitan lang ang lumang file kapag wasto ang bago",
+    "enter_value": "Magpadala ng numero o mga user ID na pinaghihiwalay ng kuwit\nBuburahin ang sagot mo at ia-update ang menu",
+    "invalid_value": "Magpadala ng wastong numero\nSa bisa ng regalo ang zero ay nangangahulugang walang pagtatapos",
+    "audience_all": "Lahat ng user",
+    "audience_premium": "Mga subscriber",
+    "audience_free": "Mga libreng user",
+    "admins": "Mga admin",
+    "send_admin": "Ipadala ang numerong ID ng user o i-forward ang isa sa mga mensahe niya\nPindutin ang admin sa ibaba para alisin",
+    "admin_added": "Naidagdag ang admin: {user_id}",
+    "admin_removed": "Naalis ang admin: {user_id}",
+    "admin_exists": "Admin na ang user na ito",
+    "no_admins": "Wala pang admin",
+    "owner_only": "Mga may-ari lang ang makapamamahala ng admin"
+  },
+  "large": {
+    "saved": "Ipadala sa aking naka-save na mga mensahe",
+    "split": "I-download at hatiin",
+    "help_button": "Ipaliwanag",
+    "split_notice": "⌯ <b>I-download at hatiin</b>\n\n✦ Laki: {size}\n✦ Nag-a-upload ang bot ng humigit-kumulang 2 GB bawat bahagi\n✦ Piliin ang I-download at hatiin o Kanselahin\n✦ Para sa buong file na hanggang 4 GB ikonekta ang Telegram Premium account sa /login at pumili ng channel sa /uploadch",
+    "premium_notice": "⌯ <b>Ipadala sa aking naka-save na mga mensahe</b>\n\n✦ Laki: {size}\n✦ Kayang i-upload ng nakakonektang Telegram Premium account ang buong file sa iyong naka-save na mga mensahe\n✦ Maaari kang pumili ng patutunguhang channel sa /uploadch\n✦ Maaari ring hatiin ang file",
+    "help": "⌯ <b>Ipaliwanag</b>\n\n✦ Magkaiba ang subscription ng bot at Telegram Premium\n✦ Nag-a-upload ang bot ng humigit-kumulang 2 GB bawat bahagi\n✦ Kayang mag-upload ng nakakonektang Telegram Premium account ng hanggang 4 GB sa isang file\n✦ Ikonekta ang account sa /login\n✦ Gawing administrator ang bot at account sa patutunguhang channel at piliin ito sa /uploadch\n✦ Kung walang channel maaari mong piliin ang naka-save na mga mensahe\n✦ Kailangang pagsamahin ang mga bahagi ng dokumento ayon sa pagkakasunod ng mga numero"
+  },
+  "referral_check": {
+    "question": "⌯ <b>Mabilis na pagsusuri</b>\n\n✦ Lutasin ito para kumpirmahing totoong tao ka at mabilang ang iyong referral\n\n✦ {a} + {b} = ?",
+    "wrong": "⌯ <b>Maling sagot</b>\n\n✦ Subukan muli. Natitirang pagtatangka: {left}",
+    "failed": "⌯ <b>Hindi nabilang ang referral</b>\n\n✦ Hindi nabilang ang referral mo dahil hindi nalutas ang pagsusuri. Magagamit mo pa rin ang bot nang normal"
+  },
+  "units": {
+    "b": "{n} B",
+    "kb": "{n} KB",
+    "mb": "{n} MB",
+    "gb": "{n} GB",
+    "tb": "{n} TB",
+    "pb": "{n} PB",
+    "day": "{n}d",
+    "hour": "{n}h",
+    "minute": "{n}m",
+    "second": "{n}s"
+  }
+}

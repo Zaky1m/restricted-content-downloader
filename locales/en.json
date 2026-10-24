@@ -1,0 +1,675 @@
+{
+  "lang_name": "🇺🇸 English",
+  "common": {
+    "not_available": "Not available",
+    "never": "Never",
+    "unlimited": "Unlimited",
+    "none": "None",
+    "yes": "Yes",
+    "no": "No",
+    "processing": "⌯ <b>Processing</b>\n\n✦ Please wait while the requested operation is being prepared",
+    "state_expired": "⌯ <b>Session expired</b>\n\n✦ The saved input session expired after ten minutes. Please start the operation again",
+    "state_expired_popup": "Start the task again",
+    "action_cancelled": "⌯ <b>Operation cancelled</b>\n\n✦ The selected operation has been cancelled and its temporary state has been removed",
+    "unexpected_error": "⌯ <b>An unexpected error occurred</b>\n\n✦ The operation could not be completed because of the following error: <code>{error}</code>",
+    "something_went_wrong": "Something went wrong while handling this action, please try again"
+  },
+  "buttons": {
+    "start": "Start",
+    "confirm": "Confirm",
+    "back": "Back",
+    "subscribe": "Subscribe",
+    "earn_points": "Earn points",
+    "share_and_earn": "Share and earn",
+    "link_account": "Link an account",
+    "open_source": "Open channel",
+    "refresh_subscription": "Check again",
+    "channel": "Updates channel",
+    "help": "Help",
+    "profile": "Profile",
+    "contact_admin": "Contact support for other payment methods",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "open": "Open",
+    "reject": "Reject"
+  },
+  "commands": {
+    "bcjson": {
+      "description": "Download the multilingual broadcast template"
+    },
+    "start": {
+      "description": "Start the bot"
+    },
+    "help": {
+      "description": "Open the help center"
+    },
+    "profile": {
+      "description": "View your account and points"
+    },
+    "premium": {
+      "description": "View subscription features"
+    },
+    "language": {
+      "description": "Change the bot language"
+    },
+    "login": {
+      "description": "Link a Telegram account"
+    },
+    "logout": {
+      "description": "Remove the linked account"
+    },
+    "dl": {
+      "description": "Download one Telegram post"
+    },
+    "bdl": {
+      "description": "Download a range of posts"
+    },
+    "clone": {
+      "description": "Transfer an entire channel"
+    },
+    "forcedownload": {
+      "description": "Manage forced-download mode"
+    },
+    "thumb": {
+      "description": "Manage the custom thumbnail"
+    },
+    "caption": {
+      "description": "Manage caption processing"
+    },
+    "cancel": {
+      "description": "Cancel the current operation"
+    },
+    "stats": {
+      "description": "View system statistics"
+    },
+    "monitor": {
+      "description": "Monitor a channel automatically"
+    },
+    "uploadch": {
+      "description": "Set an upload destination channel"
+    },
+    "rmuploadch": {
+      "description": "Remove the upload destination"
+    },
+    "bc": {
+      "description": "Broadcast a message"
+    },
+    "add": {
+      "description": "Add administrative settings"
+    },
+    "rm": {
+      "description": "Remove administrative settings"
+    },
+    "create": {
+      "description": "Create a gift link"
+    },
+    "logs": {
+      "description": "Download bot logs"
+    },
+    "admin": {
+      "description": "Open the admin panel"
+    }
+  },
+  "start": {
+    "welcome": "⌯ <b>Welcome to the media downloader</b>\n\n✦ Send a Telegram post link to download its media, including content from public or private channels and channels that disable forwarding. You can also download multiple posts, transfer a complete channel, apply a custom thumbnail to files, or send downloaded content directly to another channel\n\n✦ Linked account: {account_status}"
+  },
+  "accounts": {
+    "status": {
+      "connected": "Connected",
+      "not_connected": "Not connected"
+    },
+    "session_expired": "⌯ <b>Linked session expired</b>\n\n✦ The linked Telegram account is no longer authorized. Link the account again before accessing private sources",
+    "access": {
+      "login_required": "⌯ <b>A linked account is required</b>\n\n✦ The shared link belongs to a private or restricted source that the download accounts cannot access. Link a Telegram account that is already a member of the source channel, then resend the link",
+      "not_member": "⌯ <b>Your linked account is not a member</b>\n\n✦ The Telegram account linked to the bot cannot access the channel in the shared link. Join that channel using the linked account first, then resend the link"
+    },
+    "login": {
+      "choose_account": "⌯ <b>Choose the account to link</b>\n\n✦ Select whether you want to link your current Telegram account or another account. The selected account must already be a member of any private channels you want to download from",
+      "already_running": "⌯ <b>Login is already in progress</b>\n\n✦ Complete or cancel the current login process before starting another one",
+      "already_connected": "⌯ <b>An account is already linked</b>\n\n✦ The phone number <code>{phone_number}</code> is currently connected. Remove it with /logout before linking a different account",
+      "share_contact": "⌯ <b>Share your phone number</b>\n\n✦ Use the button below to securely share the phone number of your current Telegram account",
+      "enter_phone": "⌯ <b>Enter the alternative phone number</b>\n\n✦ Send the phone number manually in international format. It must begin with <code>+</code> followed by the country code, for example <code>+12025550123</code>",
+      "invalid_phone": "⌯ <b>Invalid phone number</b>\n\n✦ The number must begin with <code>+</code> and include the country code without letters or unsupported symbols. Start the login again or send a correctly formatted number",
+      "contact_mismatch": "⌯ <b>Contact does not match</b>\n\n✦ The shared contact does not belong to the Telegram account using the bot. Use the provided button to share your own number, or choose the alternative-account option",
+      "contact_received": "⌯ <b>Phone number received</b>\n\n✦ The bot is preparing the authorization request. Please wait for Telegram to send the login code",
+      "code_prompt": "⌯ <b>Enter your Telegram code</b>\n\n✦ Press the numbered buttons below to enter the code\n✦ Use Delete to remove the last digit and Confirm to submit it\n✦ Cancel ends this login attempt",
+      "code_prompt_with_value": "⌯ <b>Enter your Telegram code</b>\n\n✦ Current code: <code>{code}</code>\n✦ Use the numbered buttons then Confirm\n✦ Delete removes the last digit",
+      "processing": "⌯ <b>Verifying the account</b>\n\n✦ The code is being checked and the linked session is being created",
+      "password_prompt": "⌯ <b>Two-step verification required</b>\n\n✦ Send the two-step verification password for this Telegram account as a text message\n\n✦ Password hint: <code>{hint}</code>",
+      "completed": "⌯ <b>Account linked successfully</b>\n\n✦ The Telegram account is now connected. You can access private channels as long as this account is already a member of them",
+      "cancelled": "⌯ <b>Account linking cancelled</b>\n\n✦ The temporary login session was closed and no account information was saved",
+      "restart_hint": "⌯ <b>Start again when ready</b>\n\n✦ Use /login whenever you want to begin a new account-linking process",
+      "failed": "⌯ <b>Account linking failed</b>\n\n✦ The authorization process could not be completed. Start again and verify that the phone number, login code, and password are correct",
+      "flood_wait": "⌯ <b>Too many login attempts</b>\n\n✦ Telegram temporarily limited new authorization requests. Try again after {seconds} seconds",
+      "invalid_code": "⌯ <b>Invalid or expired code</b>\n\n✦ The code was rejected or has expired. Enter the latest code sent by Telegram, or cancel and start the login again",
+      "invalid_password": "⌯ <b>Incorrect verification password</b>\n\n✦ The two-step verification password is incorrect. Send the correct password or cancel the login process",
+      "code_empty_popup": "Enter the Telegram code before confirming",
+      "invalid_code_popup": "The code is invalid or expired",
+      "buttons": {
+        "my_account": "My current account",
+        "other_account": "Another account",
+        "share_phone": "Share my phone number"
+      },
+      "too_many_attempts": "⌯ <b>Telegram temporarily blocked login attempts</b>\n\n✦ Wait before trying /login again",
+      "phone_banned": "⌯ <b>This phone number is banned on Telegram</b>\n\n✦ Use another account or contact Telegram support",
+      "hint_awaiting_contact": "Use the Share my phone number button below\nYou can also send your number with its country code",
+      "hint_awaiting_account_type": "Choose My current account or Another account from the buttons",
+      "hint_sending_code": "Telegram is preparing your login code\nWait for the keypad to appear",
+      "hint_awaiting_code": "Enter the code with the numbered buttons\nDo not send it as a chat message"
+    },
+    "logout": {
+      "not_connected": "⌯ <b>ℹ No account is linked</b>\n\n✦ There is currently no Telegram account connected to your bot profile",
+      "confirm": "⌯ <b>Remove the linked account</b>\n\n✦ The phone number <code>{phone_number}</code> will be disconnected and its saved session will be deleted. Confirm only if you want to continue",
+      "completed": "⌯ <b>Linked account removed</b>\n\n✦ The saved Telegram session was deleted successfully. You can link another account at any time"
+    }
+  },
+  "subscription": {
+    "required": "⌯ <b>Subscription required</b>\n\n✦ Join the channels listed below before using the bot, then press the check button\n\n✦ {channels}",
+    "completed": "⌯ <b>Subscription verified</b>\n\n✦ Your channel membership was verified successfully. You can now continue using the bot",
+    "still_missing_popup": "You still need to join all required channels"
+  },
+  "downloads": {
+    "invalid_link": "⌯ <b>Invalid Telegram link</b>\n\n✦ Send a link that points directly to a Telegram post, such as <code>https://t.me/channel/123</code>",
+    "post_not_found": "⌯ <b>Post not found</b>\n\n✦ The requested post does not exist, was deleted, or is not accessible to the selected download account",
+    "nothing_to_download": "⌯ <b>Nothing to download</b>\n\n✦ This post has no media or text to download, such as a notice that the channel name or photo changed",
+    "comment_unavailable": "⌯ <b>Comment could not be resolved</b>\n\n✦ The comment link does not point to an accessible discussion message, or Telegram rejected the referenced message identifier",
+    "paid": {
+      "not_purchased": "⌯ <b>Paid media is locked</b>\n\n✦ This post contains media that must be purchased with Telegram Stars, and the linked account has not bought it. Purchase the post using the same account you linked to the bot, then send the link again"
+    },
+    "client_unavailable": "⌯ <b>Download account unavailable</b>\n\n✦ No Telegram account is currently available to retrieve this content. Try again later or link your own account",
+    "preparing": "⌯ <b>Preparing the download</b>\n\n✦ The media information is being collected before the transfer begins",
+    "splitting": "⌯ <b>Splitting the file</b>\n\n✦ The file is larger than the upload-part limit and is being divided into supported parts",
+    "file_too_large": "⌯ <b>File exceeds the supported size</b>\n\n✦ This file cannot be processed for {action} because its size is greater than {maximum_size}",
+    "file_too_small": "⌯ <b>File is empty or damaged</b>\n\n✦ The downloaded media is too small to be considered valid, or Telegram returned an incomplete file",
+    "file_missing": "⌯ <b>Downloaded file is missing</b>\n\n✦ The temporary media file could not be found or was empty before upload",
+    "download_failed": "⌯ <b>Download failed</b>\n\n✦ The media could not be retrieved after multiple attempts. Check the source account access and try again",
+    "upload_failed": "⌯ <b>Upload failed</b>\n\n✦ The media was downloaded but could not be delivered. Telegram returned: <code>{error}</code>",
+    "flood_wait": "⌯ <b>Telegram rate limit</b>\n\n✦ Telegram requested a delay of {seconds} seconds before the upload can continue",
+    "actions": {
+      "download": "download",
+      "upload": "upload"
+    },
+    "progress": {
+      "downloading": "Downloading",
+      "uploading": "Uploading",
+      "body": "⌯ <b>{action}</b>\n\n✦ <code>{progress_bar}</code>\n\n✦ Transferred: {current_size} / {total_size}\n✦ Progress: {percentage}%\n✦ Speed: {speed}/s\n✦ Remaining: {eta}"
+    },
+    "parts": {
+      "item": "Part {current} of {total}"
+    },
+    "album": {
+      "preparing": "⌯ <b>Media album detected</b>\n\n✦ The album contains {count} selected items and will be processed in sequence",
+      "processing": "⌯ <b>Processing media album</b>\n\n✦ Processing item {current} of {total}"
+    },
+    "single": {
+      "usage": "Use /dl and send the post link when asked\nHold the post in Telegram then choose Copy link"
+    },
+    "batch": {
+      "usage": "Use /bdl and send the first then the last post link from the same channel\nOr send both links after /bdl",
+      "different_sources": "⌯ <b>Links belong to different chats</b>\n\n✦ The first and last links must come from the same Telegram channel or group",
+      "invalid_order": "⌯ <b>Incorrect post order</b>\n\n✦ The first link must point to an earlier post than the last link",
+      "invalid_links": "⌯ <b>Invalid batch links</b>\n\n✦ Both values must be valid Telegram post links from the same source",
+      "starting": "⌯ <b>Batch download started</b>\n\n✦ The bot will process posts from {start_id} to {end_id}. Total requested posts: {total}",
+      "progress": "⌯ <b>Batch download in progress</b>\n\n✦ Current item: {current} of {total}\n✦ Post ID: {message_id}\n✦ Downloaded: {downloaded}\n✦ Skipped: {skipped}\n✦ Failed: {failed}",
+      "completed": "⌯ <b>Batch operation finished</b>\n\n✦ Downloaded: {downloaded}\n✦ Skipped: {skipped}\n✦ Failed: {failed}",
+      "cancelled": "⌯ <b>Batch operation cancelled</b>\n\n✦ The remaining posts will not be processed. Progress saved before cancellation has been cleared",
+      "failed": "⌯ <b>Batch operation stopped</b>\n\n✦ An unexpected error prevented the remaining posts from being processed",
+      "retrying": "⌯ <b>Retrying failed items</b>\n\n✦ The main pass finished. {count} items that failed will be retried now"
+    },
+    "disk_full": "⌯ <b>Not enough storage space</b>\n\n✦ The file could not be downloaded now\n✦ Try again later"
+  },
+  "tasks": {
+    "already_running": "⌯ <b>Another task is already running</b>\n\n✦ Wait for the active task to finish or cancel it before starting another operation",
+    "resumed": "⌯ <b>Task resumed</b>\n\n✦ An interrupted task was found and will continue from its last saved position",
+    "cancel_requested": "⌯ <b>Cancellation requested</b>\n\n✦ The active operation is being stopped and temporary files will be cleaned",
+    "input_cancelled": "⌯ <b>Input session cancelled</b>\n\n✦ The pending login, filter, or confirmation state was removed",
+    "none_to_cancel": "⌯ <b>ℹ No active operation</b>\n\n✦ There is no running task or pending input session to cancel",
+    "completion": {
+      "single": {
+        "private": "⌯ <b>Download completed</b>\n\n✦ The requested media was downloaded and sent to this chat successfully",
+        "saved_messages": "⌯ <b>Download completed</b>\n\n✦ The requested media was downloaded and delivered to the Saved Messages of your linked account",
+        "channel": "⌯ <b>Upload completed</b>\n\n✦ The requested media was delivered to <b>{channel_title}</b> successfully\n\n✦ {message_link}"
+      },
+      "batch": {
+        "private": "⌯ <b>Batch task completed</b>\n\n✦ The bot finished processing the selected range and delivered {count} items to this chat",
+        "saved_messages": "⌯ <b>Batch task completed</b>\n\n✦ The bot finished processing the selected range and delivered {count} items to the Saved Messages of your linked account",
+        "channel": "⌯ <b>Batch upload completed</b>\n\n✦ The bot finished processing the selected range and delivered {count} items to your selected channel"
+      },
+      "clone": {
+        "private": "⌯ <b>Channel transfer completed</b>\n\n✦ The channel task finished and {count} items were delivered to this chat",
+        "saved_messages": "⌯ <b>Channel transfer completed</b>\n\n✦ The channel task finished and {count} items were delivered to the Saved Messages of your linked account",
+        "channel": "⌯ <b>Channel transfer completed</b>\n\n✦ The channel task finished and {count} items were delivered to your selected destination channel"
+      },
+      "monitor": {
+        "private": "⌯ <b>Monitored post delivered</b>\n\n✦ A new post was detected and delivered to this chat",
+        "saved_messages": "⌯ <b>Monitored post delivered</b>\n\n✦ A new post was detected and delivered to the Saved Messages of your linked account",
+        "channel": "⌯ <b>Monitored post delivered</b>\n\n✦ A new post was detected and delivered to your selected destination channel"
+      }
+    }
+  },
+  "filters": {
+    "prompt": "⌯ <b>Choose the content filter</b>\n\n✦ Select whether to process all content, save only selected media types, or skip selected media types. The selection session remains active for ten minutes",
+    "modes": {
+      "all": "All content",
+      "save": "Save only",
+      "skip": "Skip selected"
+    },
+    "types": {
+      "videos": "Videos",
+      "photos": "Photos",
+      "audio": "Audio",
+      "files": "Files",
+      "text": "Text",
+      "other": "Other"
+    },
+    "summary": {
+      "all": "All supported content",
+      "save": "Save only: {types}",
+      "skip": "Skip: {types}",
+      "minimum_duration": "Minimum duration: {seconds} seconds",
+      "maximum_duration": "Maximum duration: {seconds} seconds"
+    }
+  },
+  "clone": {
+    "usage": "Send /clone then the source channel link when asked\nLink an account that is a member of private sources using /login",
+    "channel_not_found": "⌯ <b>Channel not found</b>\n\n✦ The channel username or link is invalid, or the linked account cannot resolve it",
+    "empty_channel": "⌯ <b>Channel is empty</b>\n\n✦ No transferable posts were found in the selected channel",
+    "starting": "⌯ <b>Channel transfer started</b>\n\n✦ The bot is preparing to process {total} post identifiers from <b>{channel_title}</b>",
+    "progress": "⌯ <b>Channel transfer in progress</b>\n\n✦ Current item: {current} of {total}\n✦ Post ID: {message_id}\n✦ Downloaded: {downloaded}\n✦ Skipped: {skipped}\n✦ Failed: {failed}",
+    "flood_wait": "⌯ <b>Telegram rate limit</b>\n\n✦ The channel transfer has been paused for {seconds} seconds",
+    "completed": "⌯ <b>Channel processing finished</b>\n\n✦ Downloaded: {downloaded}\n✦ Skipped: {skipped}\n✦ Failed: {failed}",
+    "cancelled": "⌯ <b>Channel transfer cancelled</b>\n\n✦ The remaining channel posts will not be processed",
+    "failed": "⌯ <b>Channel transfer failed</b>\n\n✦ An unexpected error prevented the transfer from being completed"
+  },
+  "uploads": {
+    "channel": {
+      "usage": "Send /uploadch and choose your destination channel\nAdd the bot as an administrator with permission to post first\nEasiest way ↣ add the bot as an admin in your channel or group and it will ask you to confirm here",
+      "current": "⌯ <b>Your upload channel</b>\n\n✦ Current channel: {channel_id}\n✦ Send /uploadch to choose another channel or /rmuploadch to remove this destination",
+      "invalid_id": "⌯ <b>Invalid channel identifier</b>\n\n✦ Send the numeric Telegram channel ID, usually beginning with <code>-100</code>\n✦ Easiest way ↣ add the bot as an admin in your channel or group and it will ask you to confirm here",
+      "bot_not_admin": "⌯ <b>Bot administrator access required</b>\n\n✦ Add the bot as an administrator in the destination channel before enabling channel uploads\n✦ Easiest way ↣ add the bot as an admin in your channel or group and it will ask you to confirm here",
+      "user_not_admin": "⌯ <b>Your administrator access is required</b>\n\n✦ You must be an owner or administrator of the destination channel",
+      "access_denied": "⌯ <b>Channel verification failed</b>\n\n✦ The channel could not be accessed or the required administrator permissions are missing",
+      "enabled": "⌯ <b>Upload channel connected</b>\n\n✦ Future downloads will be delivered to <b>{channel_title}</b> until you remove this destination",
+      "disabled": "⌯ <b>Upload channel disabled</b>\n\n✦ The bot lost administrator access to the selected channel, so channel delivery was disabled automatically",
+      "removed": "⌯ <b>Upload channel removed</b>\n\n✦ Future downloads will return to the default delivery destination",
+      "not_set": "⌯ <b>ℹ No upload channel is configured</b>\n\n✦ Your profile does not currently have a destination channel"
+    },
+    "auto": {
+      "start_first": "⌯ <b>Finish linking the channel</b>\n\n✦ You added the bot to ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Tap Start to register with the bot and finish linking\n✦ If you do not tap it within 24 hours the bot leaves",
+      "premium_only": "⌯ <b>Linking a channel is for subscribers</b>\n\n✦ You added the bot to ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Linking a channel or group to receive downloads is a bot subscription feature\n✦ The bot has left it\n✦ Subscribe with the button below then add the bot again",
+      "confirm": "⌯ <b>Confirm upload channel</b>\n\n✦ You added the bot to ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ If you confirm new downloads and monitored posts will arrive there\n✦ If you reject the bot leaves it\n✦ If you do not answer within 24 hours the bot leaves on its own",
+      "linked": "⌯ <b>Upload channel linked</b>\n\n✦ Channel ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ New downloads and monitored posts will arrive there\n✦ Send /rmuploadch to remove it",
+      "no_rights": "⌯ <b>The bot cannot post there</b>\n\n✦ Channel ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ The bot left because it is not an admin or cannot post\n✦ Add it again as an admin allowed to post messages",
+      "user_not_admin": "⌯ <b>You need to be an admin there</b>\n\n✦ Channel ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ You must own or administer your upload channel\n✦ The bot has left it",
+      "expired": "This request has expired"
+    }
+  },
+  "forcedownload": {
+    "details": "⌯ <b>Forced-download mode</b>\n\n✦ When enabled, the bot downloads and uploads every media item instead of copying it directly. This is useful when applying a custom thumbnail, rebuilding files, or handling forwarding restrictions\n\n✦ Current status: {status}",
+    "premium_required": "⌯ <b>Subscription required</b>\n\n✦ Forced-download mode is available to subscribers because it consumes additional storage, bandwidth, and processing resources",
+    "flag_removed": "⌯ <b>ℹ The --fdl option was removed</b>\n\n✦ Forced downloading is now a permanent user mode. Subscribers can manage it with /forcedownload instead of adding it to individual commands",
+    "enabled": "⌯ <b>Forced-download mode enabled</b>\n\n✦ Future download, batch, clone, and monitor tasks will retrieve and upload the original files instead of copying posts directly",
+    "disabled": "⌯ <b>Forced-download mode disabled</b>\n\n✦ The bot may copy unrestricted posts directly again while continuing to download protected content when necessary",
+    "status": {
+      "enabled": "Enabled",
+      "disabled": "Disabled"
+    },
+    "buttons": {
+      "enable": "Enable forced downloading",
+      "disable": "Disable forced downloading"
+    }
+  },
+  "thumbnail": {
+    "not_set": "⌯ <b>No custom thumbnail</b>\n\n✦ Send an image to the bot first, then confirm it to use it as the cover for supported uploaded files",
+    "current": "⌯ <b>Current custom thumbnail</b>\n\n✦ This is the image saved for future supported uploads\n\n✦ Status: {status}",
+    "confirm": "⌯ <b>Use this image as the thumbnail</b>\n\n✦ Confirm to save this image as your custom cover, or cancel to delete the temporary image",
+    "saved": "⌯ <b>Thumbnail saved</b>\n\n✦ The image was saved and enabled for future supported uploads",
+    "download_failed": "⌯ <b>Image download failed</b>\n\n✦ The image could not be saved. Send it again and make sure Telegram completed the upload",
+    "temp_missing": "⌯ <b>Temporary image is unavailable</b>\n\n✦ The confirmation session expired or the temporary image was removed. Send the image again",
+    "not_set_popup": "No saved thumbnail is available",
+    "status": {
+      "enabled": "Enabled",
+      "disabled": "Disabled"
+    },
+    "buttons": {
+      "enable": "Enable thumbnail",
+      "disable": "Disable thumbnail"
+    }
+  },
+  "captions": {
+    "settings": "⌯ <b>Caption processing</b>\n\n✦ Choose how captions should be handled when media is copied or uploaded\n\n✦ Current mode: {current}",
+    "modes": {
+      "keep_all": "Keep the original caption",
+      "remove_all": "Remove media captions",
+      "remove_links_users": "Remove links and usernames"
+    },
+    "buttons": {
+      "keep_all": "Keep original captions",
+      "remove_all": "Remove all captions",
+      "remove_links_users": "Remove links and usernames"
+    },
+    "already_selected_popup": "This caption mode is already active",
+    "updated_popup": "Caption mode updated"
+  },
+  "profile": {
+    "unavailable": "⌯ <b>Profile unavailable</b>\n\n✦ Your saved user record could not be loaded. Send /start and try again",
+    "details": "⌯ <b>Your profile</b>\n\n✦ User ID: <code>{user_id}</code>\n✦ Plan: {plan_status}\n✦ Plan expiry: {expiry_date}\n✦ Daily points: {daily_points}/{daily_limit}\n✦ Daily reset: {reset_time}\n✦ Gift points: {gift_points}\n✦ Referral points: {referral_points}\n✦ Referrals: {referral_count}\n✦ Forced download: {force_download_status}\n\n✦ Referral link:\n✦ <code>{referral_link}</code>"
+  },
+  "plans": {
+    "free": "Free",
+    "premium": "Subscriber",
+    "monthly": "Monthly",
+    "yearly": "Yearly"
+  },
+  "premium": {
+    "details": "⌯ <b>Bot subscription features</b>\n\n✦ Skip the free-user queue\n✦ Save up to five tasks that run one after another\n✦ Transfer complete channels and monitor new posts\n✦ Send content to your upload channel\n✦ Use caption settings and forced-download mode\n✦ For a file above 2 GB whole-file upload also needs a linked Telegram Premium account",
+    "feature_required": "⌯ <b>Subscription required</b>\n\n✦ This feature is available to subscribers. Open the subscription menu to review the available plans",
+    "already_active": "⌯ <b>Subscription is active</b>\n\n✦ Your subscription remains active until {expiry_date}",
+    "already_active_popup": "Your subscription is active until {expiry_date}",
+    "required_popup": "This feature requires an active subscription",
+    "granted": "⌯ <b>Subscription activated</b>\n\n✦ Your account was upgraded successfully. The current subscription expires on {expiry_date}",
+    "removed": "⌯ <b>ℹ Subscription removed</b>\n\n✦ Subscriber-only modes and destination settings were disabled for your account",
+    "buttons": {
+      "monthly": "Monthly plan",
+      "yearly": "Yearly plan"
+    },
+    "granted_days": "⌯ <b>Subscription activated</b>\n\n✦ Added days: {days}\n✦ Expiry: {expiry_date}\n✦ If you had time remaining these days were added to it"
+  },
+  "language": {
+    "select": "⌯ <b>Choose your language</b>\n\n✦ Select the language used for bot messages and your personal Telegram command menu",
+    "changed": "⌯ <b>Language changed</b>\n\n✦ Messages and Telegram commands will now be displayed in {language_name}",
+    "unavailable_popup": "The selected language is unavailable"
+  },
+  "limits": {
+    "insufficient_points": "⌯ <b>Not enough download points</b>\n\n✦ You do not have enough points for this download. Your daily balance will reset after {time_left}, or you can earn more through referrals",
+    "insufficient_points_batch": "⌯ <b>Not enough points for this batch</b>\n\n✦ This operation requires {required_points} points, while your current available balance is {available_points}",
+    "reset_now": "Resetting now",
+    "cooldown": "⌯ <b>Please wait before downloading again</b>\n\n✦ You can start another free download after {remaining_time}"
+  },
+  "referrals": {
+    "share_text": "Use this Telegram downloader and earn points through my referral link",
+    "new_referral": "⌯ <b>New referral joined</b>\n\n✦ {user_name} (<code>{user_id}</code>) joined using your link. You received {reward} referral points",
+    "welcome_bonus": "⌯ <b>Referral bonus received</b>\n\n✦ You received {bonus} points for joining through an existing user's referral link"
+  },
+  "gifts": {
+    "claim": {
+      "already_claimed": "⌯ <b>ℹ Gift already claimed</b>\n\n✦ This gift was previously added to your account and cannot be claimed twice",
+      "invalid": "⌯ <b>Gift not found</b>\n\n✦ The gift link is invalid or no longer exists",
+      "inactive": "⌯ <b>Gift is inactive</b>\n\n✦ This gift was disabled by the administrator and can no longer be claimed",
+      "link_expired": "⌯ <b>Gift link expired</b>\n\n✦ The time allowed for claiming this gift has ended",
+      "limit_reached": "⌯ <b>Gift limit reached</b>\n\n✦ The maximum number of allowed claims has already been used",
+      "not_allowed": "⌯ <b>Gift not assigned to your account</b>\n\n✦ This gift can only be claimed by specific users and your account is not included",
+      "excluded": "⌯ <b>Gift unavailable for your account</b>\n\n✦ Your account is excluded from claiming this gift",
+      "completed": "⌯ <b>Gift claimed</b>\n\n✦ {value} points were added to your account successfully",
+      "completed_with_expiry": "⌯ <b>Gift claimed</b>\n\n✦ {value} points were added to your account and will remain available until {expiry_date}",
+      "failed": "⌯ <b>Gift claim failed</b>\n\n✦ The gift could not be applied to your account. Try again later"
+    }
+  },
+  "help": {
+    "menu": {
+      "title": "⌯ <b>Help center</b>\n\n✦ Choose a feature below to view its instructions and recommended usage"
+    },
+    "buttons": {
+      "single": "Single download",
+      "batch": "Batch download",
+      "clone": "Channel transfer",
+      "monitor": "Channel monitor",
+      "channel_upload": "Upload channel",
+      "forcedownload": "Forced download",
+      "login": "Linked account",
+      "points": "Points",
+      "premium": "Subscription",
+      "other_uses": "Other uses"
+    },
+    "features": {
+      "dl": "⌯ <b>Download one post</b>\n\n✦ Open the channel and hold the post you want\n✦ Choose Copy link and send it here\n✦ You can also send /dl and follow its steps\n✦ Example: <code>https://t.me/example_channel/15</code>\n✦ For a private source first link an account that is a member using /login\n✦ The bot copies unrestricted posts or downloads protected files and uploads them\n✦ Large files require your choice before splitting",
+      "bdl": "⌯ <b>Download multiple posts</b>\n\n✦ Send /bdl without links to begin\n✦ Copy the first post link from the source channel and send it\n✦ Then send the last post link from the same channel\n✦ Both posts and the posts between them are included\n✦ Choose All or Only selected types or Except selected types then choose Start\n✦ You can send both links at once\n✦ Example: <code>/bdl https://t.me/example_channel/15 https://t.me/example_channel/30</code>\n✦ You receive a task number to cancel using /cancel\n✦ Tasks resume from saved progress after a restart",
+      "clone": "⌯ <b>Transfer a complete channel</b>\n\n✦ This feature needs a bot subscription\n✦ Link an account that is a member using /login\n✦ To send the content to another channel set it with /uploadch first\n✦ Send /clone and then the source channel link\n✦ Choose content filters and press Start\n✦ Without a destination channel content accessed with your linked account goes to your Saved Messages\n✦ Your task number lets you cancel with /cancel",
+      "monitor": "⌯ <b>Monitor new posts</b>\n\n✦ This feature needs a bot subscription\n✦ Send /monitor and choose a channel using the button or send its link\n✦ Only new posts after activation are included\n✦ Public channels use a pool account\n✦ For a private channel link an account that is a member using /login\n✦ Private accounts are checked hourly one at a time and closed after each check\n✦ New posts enter a saved queue and are delivered in order\n✦ Use the Stop monitoring button to disable it",
+      "channel_upload": "⌯ <b>Choose an upload channel</b>\n\n✦ This feature needs a bot subscription\n✦ Open your destination channel and go to its administrators\n✦ Add this bot as an administrator with permission to post\n✦ For uploads using your linked account add that account as an administrator too\n✦ Send /uploadch and choose the destination channel\n✦ New downloads and monitoring deliveries go there\n✦ Use /rmuploadch to remove it\n✦ A linked Telegram Premium account can upload files up to 4 GB whole\n✦ Easiest way ↣ add the bot as an admin in your channel or group and it will ask you to confirm here",
+      "forcedownload": "⌯ <b>Forced-download mode</b>\n\n✦ Use /forcedownload to make the bot retrieve and upload every file instead of copying unrestricted posts. This mode is useful for custom thumbnails and content reconstruction",
+      "login": "⌯ <b>Link your Telegram account</b>\n\n✦ Send /login and choose your current account or another account\n✦ For the current account press Share my phone number\n✦ For another account send its number with its country code\n✦ Telegram sends a login code to that account\n✦ Enter it only with the numbered buttons\n✦ If two-step verification is enabled send its password when asked and the bot deletes that message\n✦ The linked account must be a member of any private source you use\n✦ The login step lasts ten minutes and survives a bot restart\n✦ Remove your linked session with /logout",
+      "points": "⌯ <b>Download points</b>\n\n✦ Free downloads use daily, gift, and referral points. Share your personal link to earn more points:\n\n✦ <code>{referral_link}</code>",
+      "premium": "⌯ <b>Bot subscription</b>\n\n✦ Use /premium to see available plans\n✦ Subscribers skip the shared free-user queue\n✦ You can save up to five tasks that run one after another\n✦ Channel transfer and monitoring and upload channels are included\n✦ Custom captions and forced-download mode are also available\n✦ Telegram Premium is a separate subscription needed for whole-file uploads above 2 GB\n✦ An admin-granted subscription shows its duration in days and its expiry date",
+      "other_uses": "⌯ <b>Other ways to use the bot</b>\n\n✦ <b>Transfer one channel into another:</b> Configure a destination using /uploadch, then run /clone on the source channel. Selected content will be transferred according to your filters\n\n✦ <b>Replace covers for a complete series:</b> Send the new cover image to the bot and confirm it, enable forced-download mode, then run /bdl using the first and last episode links. The files will be downloaded and uploaded using the selected cover where supported"
+    }
+  },
+  "monitor": {
+    "login_required": "⌯ <b>Link an account for this private channel</b>\n\n✦ Use /login with an account that is already a member\n✦ Public channels use a download-pool account",
+    "usage": "⌯ <b>Channel monitoring</b>\n\n✦ Current status: {current_status}\n✦ Use /monitor to choose a channel\n✦ Public sources use a pool account and private sources are checked hourly using your linked account",
+    "invalid_channel_id": "⌯ <b>Invalid channel identifier</b>\n\n✦ Use a numeric Telegram channel ID, usually beginning with <code>-100</code>",
+    "invalid_action": "⌯ <b>Invalid monitor action</b>\n\n✦ Use <code>on</code> to start monitoring or <code>off</code> to stop it",
+    "not_active": "⌯ <b>ℹ Monitor is not active</b>\n\n✦ The specified channel is not currently being monitored by your account",
+    "already_active": "⌯ <b>ℹ A monitor is already active</b>\n\n✦ Stop the current monitored channel before selecting another one",
+    "access_denied": "⌯ <b>Channel access denied</b>\n\n✦ The linked account cannot open the specified channel or the identifier is incorrect",
+    "start_failed": "⌯ <b>Monitoring could not start</b>\n\n✦ Check the source channel and link an account that is a member if it is private",
+    "started": "⌯ <b>Channel monitor started</b>\n\n✦ Channel: {channel_title}\n✦ Filters: {filter_status}\n✦ Public channel updates enter a saved queue\n✦ Private channels are checked hourly with one account open at a time\n✦ Posts are delivered one after another",
+    "stopped": "⌯ <b>Channel monitor stopped</b>\n\n✦ New posts from the selected channel will no longer be processed automatically",
+    "session_stopped": "⌯ <b>Monitor stopped</b>\n\n✦ The linked Telegram session expired or was revoked, so automatic monitoring was disabled",
+    "status": {
+      "active": "Active for channel <code>{channel_id}</code>",
+      "inactive": "Inactive"
+    },
+    "stop_button": "Stop monitoring",
+    "source_lost": "⌯ <b>Channel monitor stopped</b>\n\n✦ Channel ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Your linked account could not open it for a whole day\n✦ It may have been deleted or made private or the account left it\n✦ To monitor it again make sure the account is a member then send /monitor"
+  },
+  "stats": {
+    "system": "⌯ <b>System statistics</b>\n\n✦ Uptime: {uptime}\n✦ Disk: {disk_usage} / {disk_total} ({disk_percent}%)\n✦ Memory: {ram_percent}%\n✦ CPU: {cpu_percent}%\n✦ Network sent: {sent}\n✦ Network received: {received}",
+    "admin": "⌯ <b>User statistics</b>\n\n✦ Total users: {total_users}\n✦ Subscribers: {total_premium}\n✦ Added by administrator: {premium_by_admin}\n✦ Paid with Stars: {premium_by_stars}",
+    "public": "⌯ <b>Bot statistics</b>\n\n✦ Uptime: {uptime}\n✦ Total downloads: {total_downloads}"
+  },
+  "payments": {
+    "monthly": {
+      "title": "Monthly subscription",
+      "description": "Activate subscriber features for 30 days"
+    },
+    "yearly": {
+      "title": "Yearly subscription",
+      "description": "Activate subscriber features for 365 days"
+    },
+    "total_label": "Subscription total",
+    "invalid_plan_popup": "The selected subscription plan is invalid",
+    "invoice_failed_popup": "The payment invoice could not be created",
+    "unrecognized": "⌯ <b>Payment plan not recognized</b>\n\n✦ The payment was received, but its subscription plan could not be identified. Contact support with the payment information",
+    "activation_failed": "⌯ <b>Subscription activation failed</b>\n\n✦ The payment was received, but the database could not activate the subscription. Contact support for manual assistance",
+    "completed": "⌯ <b>Subscription activated</b>\n\n✦ The {plan_name} plan is now active and will expire on {expiry_date}"
+  },
+  "broadcast": {
+    "json": {
+      "file_required": "⌯ <b>Broadcast JSON file required</b>\n\n✦ Reply to a multilingual JSON file and use <code>/bc .</code>",
+      "invalid_file": "⌯ <b>Invalid broadcast file</b>\n\n✦ The replied document must be a JSON file",
+      "validation_failed": "⌯ <b>Broadcast file validation failed</b>\n\n✦ The file could not be accepted: <code>{error}</code>",
+      "confirm": "⌯ <b>Confirm multilingual broadcast</b>\n\n✦ The file contains {language_count} usable languages. Users will receive their saved language, then their base language, then English as the final fallback\n\n✦ Filters: {filters}",
+      "how_to": "⌯ <b>Multilingual broadcast</b>\n\n✦ Tap the button below to receive a JSON template that contains every available language. Fill in the <code>text</code> value for each language you want, then upload the file and reply to it with <code>/bc .</code> — languages left empty fall back to English",
+      "template_sent": "⌯ <b>Broadcast template</b>\n\n✦ The file contains {language_count} languages and was generated from the current locale files"
+    },
+    "usage": "⌯ <b>Broadcast a message</b>\n\n✦ Reply to the message you want to send, then use /bc. Optional filters include <code>-only USER_ID</code> and <code>-rm USER_ID --prem</code>",
+    "invalid_message": "⌯ <b>Broadcast message unavailable</b>\n\n✦ The replied message does not have a valid Telegram identifier",
+    "confirm": "⌯ <b>Confirm the broadcast</b>\n\n✦ Message ID: <code>{message_id}</code>\n✦ Filters: {filters}\n\n✦ Choose whether to send normally or send and pin",
+    "starting": "⌯ <b>Broadcast started</b>\n\n✦ The message is being sent to the selected users",
+    "progress": "⌯ <b>Broadcast in progress</b>\n\n✦ Processed: {processed}/{total}\n✦ Successful: {successful}\n✦ Failed: {failed}",
+    "completed": "⌯ <b>Broadcast completed</b>\n\n✦ Targeted users: {total}\n✦ Successful: {successful}\n✦ Failed: {failed}",
+    "cancelled": "⌯ <b>Broadcast cancelled</b>\n\n✦ The operation was stopped after processing {processed} users",
+    "buttons": {
+      "normal": "Send normally",
+      "pin": "Send and pin",
+      "get_template": "Get JSON template"
+    },
+    "filters": {
+      "none": "No filters",
+      "summary": "Only users: {only_count}, excluded users: {excluded_count}, exclude subscribers: {exclude_premium}"
+    }
+  },
+  "admin": {
+    "users": {
+      "new_language": "⌯ <b>Unavailable language detected</b>\n\n✦ User: {first_name}\n✦ User ID: <code>{user_id}</code>\n✦ Detected code: <code>{language_code}</code>",
+      "new_user": "⌯ <b>New user joined</b>\n\n✦ Name: {first_name} {last_name}\n✦ User ID: <code>{user_id}</code>\n✦ Username: {username}\n✦ Total users: {total_users}",
+      "exported": "⌯ <b>User export completed</b>\n\n✦ The attached file contains {count} user records"
+    },
+    "payments": {
+      "new_subscription": "⌯ <b>New paid subscription</b>\n\n✦ User: {user_name}\n✦ User ID: <code>{user_id}</code>\n✦ Plan: {plan_name}\n✦ Amount: {amount} Stars"
+    },
+    "pool": {
+      "insufficient": "⌯ <b>Download account pool is incomplete</b>\n\n✦ Currently loaded: {current}\n✦ Additional accounts required: {missing}"
+    },
+    "gifts": {
+      "create_usage": "⌯ <b>Create a gift</b>\n\n✦ Use <code>/create -gift --value POINTS</code>. Optional settings include <code>--linkexpiry DDHHMM</code>, <code>--giftexpiry DDHHMM</code>, <code>--onlyuser [IDS]</code>, <code>--exceptionuser [IDS]</code>, and <code>--limit NUMBER</code>",
+      "value_required": "⌯ <b>Gift value required</b>\n\n✦ Provide a positive number after <code>--value</code>",
+      "user_filter_conflict": "⌯ <b>Conflicting user filters</b>\n\n✦ A gift cannot use allowed-users and excluded-users filters at the same time",
+      "invalid_duration": "⌯ <b>Invalid duration</b>\n\n✦ Use the six-digit <code>DDHHMM</code> format for gift durations",
+      "invalid_values": "⌯ <b>Invalid gift settings</b>\n\n✦ Check user identifiers, claim limit, and all provided values",
+      "created": "⌯ <b>Gift created</b>\n\n✦ The gift link is ready:\n✦ <code>{gift_link}</code>",
+      "empty": "⌯ <b>ℹ No active gifts</b>\n\n✦ There are currently no active gift links",
+      "list_title": "⌯ <b>Active gifts</b>\n\n✦ The following gift links are currently available",
+      "list_item": "<b>Gift:</b> <code>{gift_pid}</code>\nValue: {value}\nClaims: {usage_count}/{usage_limit}\nLink expiry: {expiry}\nCreated: {created_at}\nLink: <code>{gift_link}</code>",
+      "remove_usage": "⌯ <b>Remove a gift</b>\n\n✦ Use <code>/rm -gift --pid GIFT_ID</code>",
+      "not_found": "⌯ <b>Gift not found</b>\n\n✦ No active gift exists with the provided identifier",
+      "remove_confirm": "⌯ <b>Deactivate gift</b>\n\n✦ Gift: <code>{gift_pid}</code>\n✦ Value: {value}\n✦ Claims: {usage_count}\n\n✦ Confirm to prevent any future claims",
+      "deactivated": "⌯ <b>Gift deactivated</b>\n\n✦ The gift <code>{gift_pid}</code> can no longer be claimed"
+    },
+    "add": {
+      "usage": "⌯ <b>Add administrative settings</b>\n\n✦ Use /add with <code>-premium</code>, <code>-lang</code>, or <code>-frcch</code>"
+    },
+    "remove": {
+      "usage": "⌯ <b>Remove administrative settings</b>\n\n✦ Use /rm with <code>-premium</code>, <code>-gift</code>, or <code>-frcch</code>"
+    },
+    "premium": {
+      "add_usage": "⌯ <b>Add a subscription</b>\n\n✦ Use /admin to choose users and the duration in days\n✦ Or send <code>/add -premium --user [123456789] --days 30</code>",
+      "added": "⌯ <b>Subscription update completed</b>\n\n✦ Updated users: {users}\n✦ Missing users: {missing}",
+      "remove_usage": "⌯ <b>Remove a subscription</b>\n\n✦ Use <code>/rm -premium --user [USER_IDS]</code>",
+      "removed": "⌯ <b>Subscription removal completed</b>\n\n✦ Updated users: {users}\n✦ Missing or inactive users: {missing}"
+    },
+    "languages": {
+      "reply_to_json": "⌯ <b>Language file required</b>\n\n✦ Reply to a valid JSON language file when using <code>/add -lang</code>",
+      "json_required": "⌯ <b>JSON file required</b>\n\n✦ The replied document must use the <code>.json</code> extension",
+      "already_exists": "⌯ <b>ℹ Language already exists</b>\n\n✦ Language <code>{language_code}</code> is already installed. Add <code>--update</code> to replace it",
+      "invalid_json": "⌯ <b>Invalid language file</b>\n\n✦ The JSON file could not be loaded: <code>{error}</code>",
+      "added": "⌯ <b>Language added</b>\n\n✦ Language <code>{language_code}</code> is now available",
+      "updated": "⌯ <b>Language updated</b>\n\n✦ Language <code>{language_code}</code> was reloaded successfully"
+    },
+    "force_subscription": {
+      "empty": "⌯ <b>ℹ No required channels</b>\n\n✦ No force-subscription channels are currently configured",
+      "list_title": "⌯ <b>Required channels</b>\n\n✦ The following channels are currently enforced",
+      "list_item": "Link: {link}\nChannel ID: <code>{channel_id}</code>\nJoined: {joined}\nLimit: {limit}",
+      "add_usage": "⌯ <b>Add a required channel</b>\n\n✦ Use <code>/add -frcch --link CHANNEL_LINK --id CHANNEL_ID --limit NUMBER</code>",
+      "permission_required": "⌯ <b>Administrator permission required</b>\n\n✦ The bot must be an administrator with permission to invite users",
+      "added": "⌯ <b>Required channel added</b>\n\n✦ Channel: {channel_title}\n✦ Join limit: {limit}",
+      "add_failed": "⌯ <b>Channel could not be added</b>\n\n✦ Verify the channel identifier, link, and bot administrator permissions",
+      "remove_usage": "⌯ <b>Remove a required channel</b>\n\n✦ Use <code>/rm -frcch CHANNEL_ID</code> or provide its saved link",
+      "removed": "⌯ <b>Required channel removed</b>\n\n✦ The channel is no longer enforced",
+      "not_found": "⌯ <b>Required channel not found</b>\n\n✦ No saved channel matches the provided identifier or link"
+    },
+    "logs": {
+      "not_found": "⌯ <b>Log directory unavailable</b>\n\n✦ The bot log directory does not exist",
+      "empty": "⌯ <b>No logs available</b>\n\n✦ No non-empty bot log files were found",
+      "file_caption": "⌯ <b>Bot log</b>\n\n✦ File: <code>{filename}</code>",
+      "upload_failed": "⌯ <b>Log upload failed</b>\n\n✦ File: <code>{filename}</code>\n✦ Error: <code>{error}</code>"
+    }
+  },
+  "queue": {
+    "accepted": "⌯ <b>Task added</b>\n\n✦ Task number: {task_id}\n✦ To cancel this task send <code>/cancel {task_id}</code>",
+    "waiting_free": "⌯ <b>Your task is waiting</b>\n\n✦ People ahead of you: {ahead}\n✦ Your download starts when a slot is available\n✦ Subscribe to skip the shared queue",
+    "waiting_premium": "⌯ <b>Your next task is saved</b>\n\n✦ Your tasks ahead: {ahead}\n✦ This task starts after your earlier tasks finish",
+    "limit_free": "⌯ <b>You already have a task</b>\n\n✦ Finish or cancel it before starting another\n✦ Subscribers can save up to five tasks that run one after another",
+    "limit_premium": "⌯ <b>Your task list is full</b>\n\n✦ You can have up to {limit} open tasks\n✦ Wait for one to finish or cancel it with /cancel",
+    "lost_after_restart": "⌯ <b>Task could not resume</b>\n\n✦ Task number: {task_id}\n✦ The original message is unavailable\n✦ Send its link again to start a new task",
+    "cancel_usage": "Send /cancel to choose a task or <code>/cancel 123</code> with your task number",
+    "cancelled_one": "Task {task_id} was cancelled",
+    "not_found": "Task {task_id} has already finished or does not belong to you",
+    "choose_to_cancel": "⌯ <b>Choose a task to cancel</b>\n\n✦ The buttons show your open tasks",
+    "cancelled_popup": "Task cancelled",
+    "not_found_popup": "This task is already closed",
+    "buttons": {
+      "cancel": "Cancel task",
+      "upgrade": "Subscribe",
+      "cancel_task": "Task {task_id} {kind} {status}",
+      "cancel_all": "Cancel all my tasks"
+    },
+    "kinds": {
+      "dl": "Single post",
+      "bdl": "Multiple posts",
+      "clone": "Channel transfer",
+      "task": "Download",
+      "monitor": "Monitor"
+    },
+    "status": {
+      "queued": "Waiting",
+      "running": "Running"
+    },
+    "task_number": "Task number ↣ {task_id}"
+  },
+  "spam": {
+    "per_second": "Please send no more than one message per second",
+    "per_minute": "Please send no more than 20 messages per minute\nThis bot receives download links and does not need repeated messages\nWait until this minute ends",
+    "buttons": "You pressed more than 20 buttons this minute\nWait before pressing another button\nRepeated violations double your waiting time"
+  },
+  "flow": {
+    "first_link": "⌯ <b>Send a post link</b>\n\n✦ Open the source channel and hold the post you want\n✦ Choose Copy link and send it here\n✦ For multiple posts send the first post link now\n✦ Example: <code>https://t.me/example_channel/15</code>",
+    "last_link": "⌯ <b>Send the last post link</b>\n\n✦ Copy the link of the last post you want from the same channel\n✦ The bot downloads from the first post through the last including both\n✦ You choose content types in the next step",
+    "channel": "⌯ <b>Choose the source channel</b>\n\n✦ Send its public link or username\n✦ For a private channel send a post link and link an account that is already a member using /login\n✦ Example: <code>https://t.me/example_channel</code>",
+    "pick_channel": "Choose a channel",
+    "invalid_channel": "Send a channel link or username or use the Choose a channel button",
+    "upload_channel": "⌯ <b>Choose an upload channel</b>\n\n✦ Easiest way ↣ add the bot as an admin allowed to post in your channel or group\n✦ The bot will send you a confirmation here so tap Confirm\n✦ Or tap the pick channel button below\n✦ Or send the channel link, its username or the ID that starts with <code>-100</code>\n✦ This feature needs a bot subscription"
+  },
+  "panel": {
+    "title": "⌯ <b>Admin panel</b>\n\n✦ Choose what you want to manage",
+    "premium": "Subscription",
+    "gift": "Gift",
+    "fsub": "Required channels",
+    "broadcast": "Broadcast",
+    "users": "Export users",
+    "language": "Language files",
+    "gifts": "Active gifts",
+    "choose_user": "Choose users or send their numeric IDs",
+    "selected_users": "Selected users: {users}",
+    "selected_channel": "Selected channel: {channel_id}",
+    "custom": "Another number",
+    "remove_premium": "Remove subscription",
+    "days": "Duration in days: {days}",
+    "value": "Gift points",
+    "link_days": "Link validity in days with zero for no expiry",
+    "point_days": "Points validity in days with zero for no expiry",
+    "limit": "Maximum claims",
+    "only_users": "Allow specific users",
+    "exclude_users": "Exclude users",
+    "send_broadcast": "Send the broadcast message here\nThe bot shows a copy for you to check\nChoose the audience then confirm",
+    "send_language": "Send a JSON language file named with its language code such as ar.json\nAn existing language is replaced only after the file is valid",
+    "enter_value": "Send your number or comma-separated user IDs\nYour reply is deleted and this menu is updated",
+    "invalid_value": "Send a valid positive number or comma-separated user IDs\nFor gift expiry zero means no expiry",
+    "audience_all": "All users",
+    "audience_premium": "Subscribers",
+    "audience_free": "Free users",
+    "admins": "Admins",
+    "send_admin": "Send the numeric ID of the user to appoint, or forward one of their messages\nPress an admin below to remove them",
+    "admin_added": "Admin added: {user_id}",
+    "admin_removed": "Admin removed: {user_id}",
+    "admin_exists": "This user is already an admin",
+    "no_admins": "No admins yet",
+    "owner_only": "Only owners can manage admins"
+  },
+  "large": {
+    "saved": "Send to my Saved Messages",
+    "split": "Download and split",
+    "help_button": "Explain this",
+    "split_notice": "⌯ <b>This file needs splitting</b>\n\n✦ Size: {size}\n✦ The bot can upload about 2 GB in each part\n✦ Choose Download and split to continue or Cancel to remove this task and your link\n✦ To receive up to 4 GB as one file link a Telegram Premium account using /login and choose an upload channel using /uploadch",
+    "premium_notice": "⌯ <b>Choose where to receive the large file</b>\n\n✦ Size: {size}\n✦ Your linked Telegram Premium account can upload this file whole to your Saved Messages\n✦ For automatic whole-file uploads to a channel choose a destination using /uploadch\n✦ You can also choose Download and split",
+    "help": "⌯ <b>Large files explained</b>\n\n✦ A bot upload is limited to about 2 GB\n✦ Your subscription to this bot is separate from Telegram Premium\n✦ To upload a file up to 4 GB whole link a Telegram Premium account with /login\n✦ For a destination channel add the bot and your linked account as administrators then use /uploadch to choose it\n✦ Without a destination channel choose Send to my Saved Messages\n✦ With an ordinary account choose Download and split to receive numbered file parts\n✦ Use a file joining tool to put document parts back together in their numbered order"
+  },
+  "referral_check": {
+    "question": "⌯ <b>Quick check</b>\n\n✦ Solve this to confirm you are a real person and keep your referral\n\n✦ {a} + {b} = ?",
+    "wrong": "⌯ <b>Wrong answer</b>\n\n✦ Try again. Attempts left: {left}",
+    "failed": "⌯ <b>Referral not counted</b>\n\n✦ Your referral did not count because the check was not solved. You can still use the bot normally"
+  },
+  "units": {
+    "b": "{n} B",
+    "kb": "{n} KB",
+    "mb": "{n} MB",
+    "gb": "{n} GB",
+    "tb": "{n} TB",
+    "pb": "{n} PB",
+    "day": "{n}d",
+    "hour": "{n}h",
+    "minute": "{n}m",
+    "second": "{n}s"
+  }
+}

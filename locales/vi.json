@@ -1,0 +1,675 @@
+{
+  "lang_name": "🇻🇳 Tiếng Việt",
+  "common": {
+    "not_available": "Không khả dụng",
+    "never": "Không bao giờ",
+    "unlimited": "Không giới hạn",
+    "none": "Không có",
+    "yes": "Có",
+    "no": "Không",
+    "processing": "⌯ <b>Đang xử lý</b>\n\n✦ Vui lòng chờ trong khi thao tác được yêu cầu đang được chuẩn bị",
+    "state_expired": "⌯ <b>Phiên đã hết hạn</b>\n\n✦ Phiên nhập liệu đã lưu hết hạn sau mười phút. Vui lòng bắt đầu lại thao tác",
+    "state_expired_popup": "Bắt đầu lại tác vụ",
+    "action_cancelled": "⌯ <b>Đã hủy thao tác</b>\n\n✦ Thao tác đã chọn đã bị hủy và trạng thái tạm thời của thao tác đó đã được xóa",
+    "unexpected_error": "⌯ <b>Đã xảy ra lỗi không mong muốn</b>\n\n✦ Không thể hoàn tất thao tác do lỗi sau: <code>{error}</code>",
+    "something_went_wrong": "Đã xảy ra lỗi khi thực hiện thao tác này, vui lòng thử lại"
+  },
+  "buttons": {
+    "start": "Bắt đầu",
+    "confirm": "Xác nhận",
+    "back": "Quay lại",
+    "subscribe": "Đăng ký",
+    "earn_points": "Kiếm điểm",
+    "share_and_earn": "Chia sẻ và kiếm điểm",
+    "link_account": "Liên kết tài khoản",
+    "open_source": "Mở kênh",
+    "refresh_subscription": "Kiểm tra lại",
+    "channel": "Kênh cập nhật",
+    "help": "Trợ giúp",
+    "profile": "Hồ sơ",
+    "contact_admin": "Liên hệ hỗ trợ để sử dụng phương thức thanh toán khác",
+    "cancel": "Hủy",
+    "delete": "Xóa",
+    "open": "Mở",
+    "reject": "Từ chối"
+  },
+  "commands": {
+    "bcjson": {
+      "description": "Tải mẫu phát sóng đa ngôn ngữ"
+    },
+    "start": {
+      "description": "Khởi động bot"
+    },
+    "help": {
+      "description": "Mở trung tâm trợ giúp"
+    },
+    "profile": {
+      "description": "Xem tài khoản và điểm của bạn"
+    },
+    "premium": {
+      "description": "Xem các tính năng đăng ký"
+    },
+    "language": {
+      "description": "Thay đổi ngôn ngữ của bot"
+    },
+    "login": {
+      "description": "Liên kết một tài khoản Telegram"
+    },
+    "logout": {
+      "description": "Xóa tài khoản đã liên kết"
+    },
+    "dl": {
+      "description": "Tải xuống một bài đăng Telegram"
+    },
+    "bdl": {
+      "description": "Tải xuống một phạm vi bài đăng"
+    },
+    "clone": {
+      "description": "Chuyển toàn bộ một kênh"
+    },
+    "forcedownload": {
+      "description": "Quản lý chế độ buộc tải xuống"
+    },
+    "thumb": {
+      "description": "Quản lý ảnh thu nhỏ tùy chỉnh"
+    },
+    "caption": {
+      "description": "Quản lý xử lý chú thích"
+    },
+    "cancel": {
+      "description": "Hủy thao tác hiện tại"
+    },
+    "stats": {
+      "description": "Xem thống kê hệ thống"
+    },
+    "monitor": {
+      "description": "Tự động theo dõi một kênh"
+    },
+    "uploadch": {
+      "description": "Đặt kênh đích để tải lên"
+    },
+    "rmuploadch": {
+      "description": "Xóa kênh đích tải lên"
+    },
+    "bc": {
+      "description": "Phát sóng một tin nhắn"
+    },
+    "add": {
+      "description": "Thêm cài đặt quản trị"
+    },
+    "rm": {
+      "description": "Xóa cài đặt quản trị"
+    },
+    "create": {
+      "description": "Tạo liên kết quà tặng"
+    },
+    "logs": {
+      "description": "Tải xuống nhật ký bot"
+    },
+    "admin": {
+      "description": "Quản trị"
+    }
+  },
+  "start": {
+    "welcome": "⌯ <b>Chào mừng bạn đến với trình tải xuống phương tiện</b>\n\n✦ Gửi liên kết bài đăng Telegram để tải xuống nội dung phương tiện, bao gồm nội dung từ các kênh công khai, kênh riêng tư và các kênh đã tắt chuyển tiếp. Bạn cũng có thể tải xuống nhiều bài đăng, chuyển toàn bộ một kênh, áp dụng ảnh thu nhỏ tùy chỉnh cho tệp hoặc gửi nội dung đã tải xuống trực tiếp đến một kênh khác\n\n✦ Tài khoản đã liên kết: {account_status}"
+  },
+  "accounts": {
+    "status": {
+      "connected": "Đã kết nối",
+      "not_connected": "Chưa kết nối"
+    },
+    "session_expired": "⌯ <b>Phiên đã liên kết đã hết hạn</b>\n\n✦ Tài khoản Telegram đã liên kết không còn được ủy quyền. Hãy liên kết lại tài khoản trước khi truy cập các nguồn riêng tư",
+    "access": {
+      "login_required": "⌯ <b>Cần có tài khoản đã liên kết</b>\n\n✦ Liên kết được chia sẻ thuộc về một nguồn riêng tư hoặc bị hạn chế mà các tài khoản tải xuống không thể truy cập. Hãy liên kết một tài khoản Telegram đã là thành viên của kênh nguồn, sau đó gửi lại liên kết",
+      "not_member": "⌯ <b>Tài khoản đã liên kết của bạn không phải là thành viên</b>\n\n✦ Tài khoản Telegram được liên kết với bot không thể truy cập kênh trong liên kết được chia sẻ. Trước tiên hãy tham gia kênh đó bằng tài khoản đã liên kết, sau đó gửi lại liên kết"
+    },
+    "login": {
+      "choose_account": "⌯ <b>Chọn tài khoản cần liên kết</b>\n\n✦ Chọn xem bạn muốn liên kết tài khoản Telegram hiện tại hay một tài khoản khác. Tài khoản được chọn phải là thành viên của bất kỳ kênh riêng tư nào mà bạn muốn tải xuống",
+      "already_running": "⌯ <b>Quá trình đăng nhập đang được thực hiện</b>\n\n✦ Hãy hoàn tất hoặc hủy quá trình đăng nhập hiện tại trước khi bắt đầu quá trình khác",
+      "already_connected": "⌯ <b>Một tài khoản đã được liên kết</b>\n\n✦ Số điện thoại <code>{phone_number}</code> hiện đang được kết nối. Hãy xóa tài khoản đó bằng /logout trước khi liên kết một tài khoản khác",
+      "share_contact": "⌯ <b>Chia sẻ số điện thoại của bạn</b>\n\n✦ Sử dụng nút bên dưới để chia sẻ an toàn số điện thoại của tài khoản Telegram hiện tại của bạn",
+      "enter_phone": "⌯ <b>Nhập số điện thoại thay thế</b>\n\n✦ Gửi số điện thoại theo cách thủ công ở định dạng quốc tế. Số phải bắt đầu bằng <code>+</code>, tiếp theo là mã quốc gia, ví dụ <code>+12025550123</code>",
+      "invalid_phone": "⌯ <b>Số điện thoại không hợp lệ</b>\n\n✦ Số điện thoại phải bắt đầu bằng <code>+</code> và bao gồm mã quốc gia, không có chữ cái hoặc ký hiệu không được hỗ trợ. Hãy bắt đầu lại quá trình đăng nhập hoặc gửi một số điện thoại có định dạng chính xác",
+      "contact_mismatch": "⌯ <b>Danh bạ không khớp</b>\n\n✦ Danh bạ được chia sẻ không thuộc về tài khoản Telegram đang sử dụng bot. Hãy sử dụng nút được cung cấp để chia sẻ số của chính bạn hoặc chọn tùy chọn tài khoản khác",
+      "contact_received": "⌯ <b>Đã nhận số điện thoại</b>\n\n✦ Bot đang chuẩn bị yêu cầu ủy quyền. Vui lòng chờ Telegram gửi mã đăng nhập",
+      "code_prompt": "⌯ <b>Telegram</b>\n\n✦ Nhập mã Telegram chỉ bằng các nút số\n✦ Xóa bỏ chữ số cuối và Xác nhận gửi mã",
+      "code_prompt_with_value": "⌯ <b>Telegram</b>\n\n✦ <code>{code}</code>\n✦ Nhập mã Telegram chỉ bằng các nút số\n✦ Xóa bỏ chữ số cuối và Xác nhận gửi mã",
+      "processing": "⌯ <b>Đang xác minh tài khoản</b>\n\n✦ Mã đang được kiểm tra và phiên liên kết đang được tạo",
+      "password_prompt": "⌯ <b>Cần xác minh hai bước</b>\n\n✦ Gửi mật khẩu xác minh hai bước của tài khoản Telegram này dưới dạng tin nhắn văn bản\n\n✦ Gợi ý mật khẩu: <code>{hint}</code>",
+      "completed": "⌯ <b>Liên kết tài khoản thành công</b>\n\n✦ Tài khoản Telegram hiện đã được kết nối. Bạn có thể truy cập các kênh riêng tư miễn là tài khoản này đã là thành viên của các kênh đó",
+      "cancelled": "⌯ <b>Đã hủy liên kết tài khoản</b>\n\n✦ Phiên đăng nhập tạm thời đã được đóng và không có thông tin tài khoản nào được lưu",
+      "restart_hint": "⌯ <b>Bắt đầu lại khi bạn sẵn sàng</b>\n\n✦ Sử dụng /login bất cứ khi nào bạn muốn bắt đầu một quá trình liên kết tài khoản mới",
+      "failed": "⌯ <b>Liên kết tài khoản thất bại</b>\n\n✦ Không thể hoàn tất quá trình ủy quyền. Hãy bắt đầu lại và xác minh rằng số điện thoại, mã đăng nhập và mật khẩu đều chính xác",
+      "flood_wait": "⌯ <b>Có quá nhiều lần đăng nhập</b>\n\n✦ Telegram đã tạm thời giới hạn các yêu cầu ủy quyền mới. Hãy thử lại sau {seconds} giây",
+      "invalid_code": "⌯ <b>Mã không hợp lệ hoặc đã hết hạn</b>\n\n✦ Mã đã bị từ chối hoặc đã hết hạn. Hãy nhập mã mới nhất do Telegram gửi hoặc hủy và bắt đầu lại quá trình đăng nhập",
+      "invalid_password": "⌯ <b>Mật khẩu xác minh không chính xác</b>\n\n✦ Mật khẩu xác minh hai bước không chính xác. Hãy gửi đúng mật khẩu hoặc hủy quá trình đăng nhập",
+      "code_empty_popup": "Hãy nhập mã Telegram trước khi xác nhận",
+      "invalid_code_popup": "Mã không hợp lệ hoặc đã hết hạn",
+      "buttons": {
+        "my_account": "Tài khoản hiện tại của tôi",
+        "other_account": "Tài khoản khác",
+        "share_phone": "Chia sẻ số điện thoại của tôi"
+      },
+      "too_many_attempts": "⌯ <b>Tác vụ</b>\n\n✦ Telegram tạm thời giới hạn số lần đăng nhập\n✦ Hãy chờ trước khi dùng lại /login",
+      "phone_banned": "⌯ <b>Telegram</b>\n\n✦ Số điện thoại này bị Telegram cấm\n✦ Dùng tài khoản khác hoặc liên hệ hỗ trợ Telegram",
+      "hint_awaiting_contact": "⌯ <b>Chia sẻ số điện thoại của bạn</b>\n\n✦ Sử dụng nút bên dưới để chia sẻ an toàn số điện thoại của tài khoản Telegram hiện tại của bạn",
+      "hint_awaiting_account_type": "⌯ <b>Chọn tài khoản cần liên kết</b>\n\n✦ Chọn xem bạn muốn liên kết tài khoản Telegram hiện tại hay một tài khoản khác. Tài khoản được chọn phải là thành viên của bất kỳ kênh riêng tư nào mà bạn muốn tải xuống",
+      "hint_sending_code": "Đang chờ\nNhập mã Telegram chỉ bằng các nút số\nXóa bỏ chữ số cuối và Xác nhận gửi mã",
+      "hint_awaiting_code": "Nhập mã Telegram chỉ bằng các nút số\nXóa bỏ chữ số cuối và Xác nhận gửi mã"
+    },
+    "logout": {
+      "not_connected": "⌯ <b>ℹ Không có tài khoản nào được liên kết</b>\n\n✦ Hiện không có tài khoản Telegram nào được kết nối với hồ sơ bot của bạn",
+      "confirm": "⌯ <b>Xóa tài khoản đã liên kết</b>\n\n✦ Số điện thoại <code>{phone_number}</code> sẽ bị ngắt kết nối và phiên đã lưu của số đó sẽ bị xóa. Chỉ xác nhận nếu bạn muốn tiếp tục",
+      "completed": "⌯ <b>Đã xóa tài khoản được liên kết</b>\n\n✦ Phiên Telegram đã lưu đã được xóa thành công. Bạn có thể liên kết một tài khoản khác bất cứ lúc nào"
+    }
+  },
+  "subscription": {
+    "required": "⌯ <b>Cần đăng ký kênh</b>\n\n✦ Hãy tham gia các kênh được liệt kê bên dưới trước khi sử dụng bot, sau đó nhấn nút kiểm tra\n\n✦ {channels}",
+    "completed": "⌯ <b>Đã xác minh đăng ký</b>\n\n✦ Tư cách thành viên kênh của bạn đã được xác minh thành công. Bây giờ bạn có thể tiếp tục sử dụng bot",
+    "still_missing_popup": "Bạn vẫn cần tham gia tất cả các kênh bắt buộc"
+  },
+  "downloads": {
+    "invalid_link": "⌯ <b>Liên kết Telegram không hợp lệ</b>\n\n✦ Hãy gửi liên kết trỏ trực tiếp đến một bài đăng Telegram, chẳng hạn như <code>https://t.me/channel/123</code>",
+    "post_not_found": "⌯ <b>Không tìm thấy bài đăng</b>\n\n✦ Bài đăng được yêu cầu không tồn tại, đã bị xóa hoặc tài khoản tải xuống được chọn không thể truy cập",
+    "nothing_to_download": "⌯ <b>Không có gì để tải xuống</b>\n\n✦ Bài đăng này không có nội dung đa phương tiện hoặc văn bản để tải xuống, chẳng hạn như thông báo kênh đã đổi tên hoặc ảnh",
+    "comment_unavailable": "⌯ <b>Không thể xác định bình luận</b>\n\n✦ Liên kết bình luận không trỏ đến một tin nhắn thảo luận có thể truy cập hoặc Telegram đã từ chối mã định danh tin nhắn được tham chiếu",
+    "client_unavailable": "⌯ <b>Tài khoản tải xuống không khả dụng</b>\n\n✦ Hiện không có tài khoản Telegram nào khả dụng để truy xuất nội dung này. Hãy thử lại sau hoặc liên kết tài khoản của riêng bạn",
+    "preparing": "⌯ <b>Đang chuẩn bị tải xuống</b>\n\n✦ Thông tin phương tiện đang được thu thập trước khi quá trình truyền bắt đầu",
+    "splitting": "⌯ <b>Đang chia tệp</b>\n\n✦ Tệp lớn hơn giới hạn của một phần tải lên và đang được chia thành các phần được hỗ trợ",
+    "file_too_large": "⌯ <b>Tệp vượt quá kích thước được hỗ trợ</b>\n\n✦ Không thể xử lý tệp này để {action} vì kích thước của tệp lớn hơn {maximum_size}",
+    "file_too_small": "⌯ <b>Tệp trống hoặc bị hỏng</b>\n\n✦ Phương tiện đã tải xuống quá nhỏ để được coi là hợp lệ hoặc Telegram đã trả về một tệp không hoàn chỉnh",
+    "file_missing": "⌯ <b>Tệp đã tải xuống bị thiếu</b>\n\n✦ Không thể tìm thấy tệp phương tiện tạm thời hoặc tệp đã trống trước khi tải lên",
+    "download_failed": "⌯ <b>Tải xuống thất bại</b>\n\n✦ Không thể truy xuất phương tiện sau nhiều lần thử. Hãy kiểm tra quyền truy cập của tài khoản vào nguồn và thử lại",
+    "upload_failed": "⌯ <b>Tải lên thất bại</b>\n\n✦ Phương tiện đã được tải xuống nhưng không thể gửi đến đích. Telegram trả về: <code>{error}</code>",
+    "flood_wait": "⌯ <b>Giới hạn tốc độ của Telegram</b>\n\n✦ Telegram yêu cầu chờ {seconds} giây trước khi có thể tiếp tục tải lên",
+    "actions": {
+      "download": "tải xuống",
+      "upload": "tải lên"
+    },
+    "progress": {
+      "downloading": "Đang tải xuống",
+      "uploading": "Đang tải lên",
+      "body": "⌯ <b>{action}</b>\n\n✦ <code>{progress_bar}</code>\n\n✦ Đã truyền: {current_size} / {total_size}\n✦ Tiến độ: {percentage}%\n✦ Tốc độ: {speed}/giây\n✦ Còn lại: {eta}"
+    },
+    "parts": {
+      "item": "Phần {current} trên {total}"
+    },
+    "album": {
+      "preparing": "⌯ <b>Đã phát hiện album phương tiện</b>\n\n✦ Album chứa {count} mục đã chọn và sẽ được xử lý lần lượt",
+      "processing": "⌯ <b>Đang xử lý album phương tiện</b>\n\n✦ Đang xử lý mục {current} trên {total}"
+    },
+    "single": {
+      "usage": "/dl\nMở bài đăng trong Telegram rồi nhấn giữ\nChọn Sao chép liên kết và gửi liên kết vào đây\nVới nhiều bài đăng hãy gửi liên kết bài đầu tiên trước"
+    },
+    "batch": {
+      "usage": "/bdl\nMở bài đăng trong Telegram rồi nhấn giữ\nChọn Sao chép liên kết và gửi liên kết vào đây\nVới nhiều bài đăng hãy gửi liên kết bài đầu tiên trước\nGửi liên kết bài cuối cùng trong cùng một kênh\nCả hai bài và mọi bài ở giữa đều được tải\nSau đó bạn chọn loại nội dung",
+      "different_sources": "⌯ <b>Các liên kết thuộc những cuộc trò chuyện khác nhau</b>\n\n✦ Liên kết đầu tiên và liên kết cuối cùng phải đến từ cùng một kênh hoặc nhóm Telegram",
+      "invalid_order": "⌯ <b>Thứ tự bài đăng không chính xác</b>\n\n✦ Liên kết đầu tiên phải trỏ đến một bài đăng sớm hơn liên kết cuối cùng",
+      "invalid_links": "⌯ <b>Liên kết tải hàng loạt không hợp lệ</b>\n\n✦ Cả hai giá trị phải là liên kết bài đăng Telegram hợp lệ từ cùng một nguồn",
+      "starting": "⌯ <b>Đã bắt đầu tải xuống hàng loạt</b>\n\n✦ Bot sẽ xử lý các bài đăng từ {start_id} đến {end_id}. Tổng số bài đăng được yêu cầu: {total}",
+      "progress": "⌯ <b>Đang tải xuống hàng loạt</b>\n\n✦ Mục hiện tại: {current} trên {total}\n✦ ID bài đăng: {message_id}\n✦ Đã tải xuống: {downloaded}\n✦ Đã bỏ qua: {skipped}\n✦ Thất bại: {failed}",
+      "completed": "⌯ <b>Thao tác hàng loạt đã hoàn tất</b>\n\n✦ Đã tải xuống: {downloaded}\n✦ Đã bỏ qua: {skipped}\n✦ Thất bại: {failed}",
+      "cancelled": "⌯ <b>Đã hủy thao tác hàng loạt</b>\n\n✦ Các bài đăng còn lại sẽ không được xử lý. Tiến độ đã lưu trước khi hủy đã được xóa",
+      "failed": "⌯ <b>Thao tác hàng loạt đã dừng</b>\n\n✦ Một lỗi không mong muốn đã ngăn các bài đăng còn lại được xử lý",
+      "retrying": "⌯ <b>Đang thử lại các mục thất bại</b>\n\n✦ Lượt chính đã hoàn tất. {count} mục thất bại sẽ được thử lại ngay bây giờ"
+    },
+    "disk_full": "⌯ <b>Tác vụ</b>\n\n✦ Hiện không đủ dung lượng để tải tệp\n✦ Hãy thử lại sau",
+    "paid": {
+      "not_purchased": "⌯ <b>Bài đăng này cần mua bằng Telegram Stars</b>\n\n✦ Mua bằng tài khoản đã liên kết rồi gửi lại liên kết"
+    }
+  },
+  "tasks": {
+    "already_running": "⌯ <b>Một tác vụ khác đang chạy</b>\n\n✦ Hãy chờ tác vụ đang hoạt động hoàn tất hoặc hủy tác vụ đó trước khi bắt đầu một thao tác khác",
+    "resumed": "⌯ <b>Đã tiếp tục tác vụ</b>\n\n✦ Đã tìm thấy một tác vụ bị gián đoạn và tác vụ đó sẽ tiếp tục từ vị trí được lưu gần nhất",
+    "cancel_requested": "⌯ <b>Đã yêu cầu hủy</b>\n\n✦ Thao tác đang hoạt động đang được dừng và các tệp tạm thời sẽ được dọn dẹp",
+    "input_cancelled": "⌯ <b>Đã hủy phiên nhập liệu</b>\n\n✦ Trạng thái đăng nhập, bộ lọc hoặc xác nhận đang chờ đã được xóa",
+    "none_to_cancel": "⌯ <b>ℹ Không có thao tác nào đang hoạt động</b>\n\n✦ Không có tác vụ đang chạy hoặc phiên nhập liệu đang chờ nào để hủy",
+    "completion": {
+      "single": {
+        "private": "⌯ <b>Tải xuống hoàn tất</b>\n\n✦ Phương tiện được yêu cầu đã được tải xuống và gửi thành công đến cuộc trò chuyện này",
+        "saved_messages": "⌯ <b>Tải xuống hoàn tất</b>\n\n✦ Phương tiện được yêu cầu đã được tải xuống và gửi đến Tin nhắn đã lưu của tài khoản được liên kết",
+        "channel": "⌯ <b>Tải lên hoàn tất</b>\n\n✦ Phương tiện được yêu cầu đã được gửi thành công đến <b>{channel_title}</b>\n\n✦ {message_link}"
+      },
+      "batch": {
+        "private": "⌯ <b>Tác vụ hàng loạt hoàn tất</b>\n\n✦ Bot đã xử lý xong phạm vi được chọn và gửi {count} mục đến cuộc trò chuyện này",
+        "saved_messages": "⌯ <b>Tác vụ hàng loạt hoàn tất</b>\n\n✦ Bot đã xử lý xong phạm vi được chọn và gửi {count} mục đến Tin nhắn đã lưu của tài khoản được liên kết",
+        "channel": "⌯ <b>Tải lên hàng loạt hoàn tất</b>\n\n✦ Bot đã xử lý xong phạm vi được chọn và gửi {count} mục đến kênh bạn đã chọn"
+      },
+      "clone": {
+        "private": "⌯ <b>Chuyển kênh hoàn tất</b>\n\n✦ Tác vụ kênh đã hoàn tất và {count} mục đã được gửi đến cuộc trò chuyện này",
+        "saved_messages": "⌯ <b>Chuyển kênh hoàn tất</b>\n\n✦ Tác vụ kênh đã hoàn tất và {count} mục đã được gửi đến Tin nhắn đã lưu của tài khoản được liên kết",
+        "channel": "⌯ <b>Chuyển kênh hoàn tất</b>\n\n✦ Tác vụ kênh đã hoàn tất và {count} mục đã được gửi đến kênh đích bạn đã chọn"
+      },
+      "monitor": {
+        "private": "⌯ <b>Đã gửi bài đăng được theo dõi</b>\n\n✦ Một bài đăng mới đã được phát hiện và gửi đến cuộc trò chuyện này",
+        "saved_messages": "⌯ <b>Đã gửi bài đăng được theo dõi</b>\n\n✦ Một bài đăng mới đã được phát hiện và gửi đến Tin nhắn đã lưu của tài khoản được liên kết",
+        "channel": "⌯ <b>Đã gửi bài đăng được theo dõi</b>\n\n✦ Một bài đăng mới đã được phát hiện và gửi đến kênh đích bạn đã chọn"
+      }
+    }
+  },
+  "filters": {
+    "prompt": "⌯ <b>Chọn bộ lọc nội dung</b>\n\n✦ Chọn xử lý tất cả nội dung, chỉ lưu các loại phương tiện được chọn hoặc bỏ qua các loại phương tiện được chọn. Phiên lựa chọn sẽ tiếp tục hoạt động trong mười phút",
+    "modes": {
+      "all": "Tất cả nội dung",
+      "save": "Chỉ lưu",
+      "skip": "Bỏ qua mục đã chọn"
+    },
+    "types": {
+      "videos": "Video",
+      "photos": "Ảnh",
+      "audio": "Âm thanh",
+      "files": "Tệp",
+      "text": "Văn bản",
+      "other": "Khác"
+    },
+    "summary": {
+      "all": "Tất cả nội dung được hỗ trợ",
+      "save": "Chỉ lưu: {types}",
+      "skip": "Bỏ qua: {types}",
+      "minimum_duration": "Thời lượng tối thiểu: {seconds} giây",
+      "maximum_duration": "Thời lượng tối đa: {seconds} giây"
+    }
+  },
+  "clone": {
+    "usage": "/clone\nGửi liên kết kênh hoặc tên người dùng của kênh\nVới kênh riêng tư hãy dùng /login để kết nối tài khoản đã là thành viên",
+    "channel_not_found": "⌯ <b>Không tìm thấy kênh</b>\n\n✦ Tên người dùng hoặc liên kết của kênh không hợp lệ, hoặc tài khoản đã liên kết không thể xác định kênh",
+    "empty_channel": "⌯ <b>Kênh trống</b>\n\n✦ Không tìm thấy bài đăng nào có thể chuyển trong kênh đã chọn",
+    "starting": "⌯ <b>Đã bắt đầu chuyển kênh</b>\n\n✦ Bot đang chuẩn bị xử lý {total} mã định danh bài đăng từ <b>{channel_title}</b>",
+    "progress": "⌯ <b>Đang chuyển kênh</b>\n\n✦ Mục hiện tại: {current} trên {total}\n✦ ID bài đăng: {message_id}\n✦ Đã tải xuống: {downloaded}\n✦ Đã bỏ qua: {skipped}\n✦ Thất bại: {failed}",
+    "flood_wait": "⌯ <b>Giới hạn tốc độ của Telegram</b>\n\n✦ Quá trình chuyển kênh đã được tạm dừng trong {seconds} giây",
+    "completed": "⌯ <b>Đã xử lý xong kênh</b>\n\n✦ Đã tải xuống: {downloaded}\n✦ Đã bỏ qua: {skipped}\n✦ Thất bại: {failed}",
+    "cancelled": "⌯ <b>Đã hủy chuyển kênh</b>\n\n✦ Các bài đăng còn lại trong kênh sẽ không được xử lý",
+    "failed": "⌯ <b>Chuyển kênh thất bại</b>\n\n✦ Một lỗi không mong muốn đã ngăn quá trình chuyển được hoàn tất"
+  },
+  "uploads": {
+    "channel": {
+      "usage": "/uploadch\nChọn kênh\nGói đăng ký của bot và Telegram Premium là hai gói riêng\nBot tải lên khoảng 2 GB mỗi phần\nTài khoản Telegram Premium đã kết nối có thể tải lên đến 4 GB trong một tệp\nKết nối tài khoản bằng /login\nThêm bot và tài khoản làm quản trị viên kênh đích rồi chọn kênh bằng /uploadch\nNếu không có kênh hãy chọn tin nhắn đã lưu\nCác phần được gửi dạng tài liệu cần ghép lại theo thứ tự số\nDễ nhất ↣ thêm bot làm quản trị viên trong kênh hoặc nhóm của bạn và bot sẽ hỏi xác nhận ở đây",
+      "current": "⌯ <b>Chọn kênh</b>\n\n✦ {channel_id}\n✦ /uploadch\n✦ /rmuploadch",
+      "invalid_id": "⌯ <b>Mã định danh kênh không hợp lệ</b>\n\n✦ Hãy gửi ID kênh Telegram dạng số, thường bắt đầu bằng <code>-100</code>\n✦ Dễ nhất ↣ thêm bot làm quản trị viên trong kênh hoặc nhóm của bạn và bot sẽ hỏi xác nhận ở đây",
+      "bot_not_admin": "⌯ <b>Bot cần quyền quản trị viên</b>\n\n✦ Hãy thêm bot làm quản trị viên trong kênh đích trước khi bật tính năng tải lên kênh\n✦ Dễ nhất ↣ thêm bot làm quản trị viên trong kênh hoặc nhóm của bạn và bot sẽ hỏi xác nhận ở đây",
+      "user_not_admin": "⌯ <b>Bạn cần có quyền quản trị viên</b>\n\n✦ Bạn phải là chủ sở hữu hoặc quản trị viên của kênh đích",
+      "access_denied": "⌯ <b>Xác minh kênh thất bại</b>\n\n✦ Không thể truy cập kênh hoặc thiếu các quyền quản trị viên cần thiết",
+      "enabled": "⌯ <b>Đã kết nối kênh tải lên</b>\n\n✦ Các nội dung tải xuống trong tương lai sẽ được gửi đến <b>{channel_title}</b> cho đến khi bạn xóa đích này",
+      "disabled": "⌯ <b>Kênh tải lên đã bị tắt</b>\n\n✦ Bot đã mất quyền quản trị viên đối với kênh được chọn, vì vậy tính năng gửi đến kênh đã tự động bị tắt",
+      "removed": "⌯ <b>Đã xóa kênh tải lên</b>\n\n✦ Các nội dung tải xuống trong tương lai sẽ quay về đích gửi mặc định",
+      "not_set": "⌯ <b>ℹ Chưa cấu hình kênh tải lên</b>\n\n✦ Hồ sơ của bạn hiện không có kênh đích"
+    },
+    "auto": {
+      "start_first": "⌯ <b>Hoàn tất liên kết kênh</b>\n\n✦ Bạn đã thêm bot vào ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Nhấn Bắt đầu để đăng ký với bot và hoàn tất liên kết\n✦ Nếu không nhấn trong 24 giờ bot sẽ rời đi",
+      "premium_only": "⌯ <b>Liên kết kênh chỉ dành cho người đăng ký</b>\n\n✦ Bạn đã thêm bot vào ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Nhận tệp tải về trong kênh hoặc nhóm là tính năng của gói đăng ký bot\n✦ Bot đã rời đi\n✦ Đăng ký bằng nút bên dưới rồi thêm lại bot",
+      "confirm": "⌯ <b>Xác nhận kênh tải lên</b>\n\n✦ Bạn đã thêm bot vào ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Nếu xác nhận các tệp tải mới và bài đăng được theo dõi sẽ gửi về đó\n✦ Nếu từ chối bot sẽ rời đi\n✦ Nếu không trả lời trong 24 giờ bot tự rời đi",
+      "linked": "⌯ <b>Đã liên kết kênh tải lên</b>\n\n✦ Kênh ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Các tệp tải mới và bài đăng được theo dõi sẽ gửi về đó\n✦ Gửi /rmuploadch để gỡ nó",
+      "no_rights": "⌯ <b>Bot không thể đăng ở đó</b>\n\n✦ Kênh ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Bot đã rời đi vì không phải quản trị viên hoặc không có quyền đăng\n✦ Thêm lại bot làm quản trị viên có quyền đăng tin",
+      "user_not_admin": "⌯ <b>Bạn cần là quản trị viên ở đó</b>\n\n✦ Kênh ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Kênh tải lên phải thuộc về bạn hoặc bạn là quản trị viên\n✦ Bot đã rời đi",
+      "expired": "Yêu cầu này đã hết hạn"
+    }
+  },
+  "forcedownload": {
+    "details": "⌯ <b>Chế độ buộc tải xuống</b>\n\n✦ Khi được bật, bot sẽ tải xuống rồi tải lên mọi mục phương tiện thay vì sao chép trực tiếp. Chế độ này hữu ích khi áp dụng ảnh thu nhỏ tùy chỉnh, xây dựng lại tệp hoặc xử lý các hạn chế chuyển tiếp\n\n✦ Trạng thái hiện tại: {status}",
+    "premium_required": "⌯ <b>Cần đăng ký</b>\n\n✦ Chế độ buộc tải xuống chỉ dành cho người đăng ký vì chế độ này sử dụng thêm dung lượng lưu trữ, băng thông và tài nguyên xử lý",
+    "flag_removed": "⌯ <b>ℹ Tùy chọn --fdl đã bị xóa</b>\n\n✦ Buộc tải xuống hiện là một chế độ người dùng cố định. Người đăng ký có thể quản lý chế độ này bằng /forcedownload thay vì thêm tùy chọn đó vào từng lệnh",
+    "enabled": "⌯ <b>Đã bật chế độ buộc tải xuống</b>\n\n✦ Các tác vụ tải xuống, tải hàng loạt, chuyển kênh và theo dõi trong tương lai sẽ truy xuất và tải lên các tệp gốc thay vì sao chép trực tiếp bài đăng",
+    "disabled": "⌯ <b>Đã tắt chế độ buộc tải xuống</b>\n\n✦ Bot có thể sao chép trực tiếp lại các bài đăng không bị hạn chế, đồng thời vẫn tải xuống nội dung được bảo vệ khi cần",
+    "status": {
+      "enabled": "Đã bật",
+      "disabled": "Đã tắt"
+    },
+    "buttons": {
+      "enable": "Bật buộc tải xuống",
+      "disable": "Tắt buộc tải xuống"
+    }
+  },
+  "thumbnail": {
+    "not_set": "⌯ <b>Chưa có ảnh thu nhỏ tùy chỉnh</b>\n\n✦ Trước tiên hãy gửi một hình ảnh cho bot, sau đó xác nhận để sử dụng hình ảnh đó làm ảnh bìa cho các tệp tải lên được hỗ trợ",
+    "current": "⌯ <b>Ảnh thu nhỏ tùy chỉnh hiện tại</b>\n\n✦ Đây là hình ảnh được lưu để sử dụng cho các lần tải lên được hỗ trợ trong tương lai\n\n✦ Trạng thái: {status}",
+    "confirm": "⌯ <b>Sử dụng hình ảnh này làm ảnh thu nhỏ</b>\n\n✦ Xác nhận để lưu hình ảnh này làm ảnh bìa tùy chỉnh hoặc hủy để xóa hình ảnh tạm thời",
+    "saved": "⌯ <b>Đã lưu ảnh thu nhỏ</b>\n\n✦ Hình ảnh đã được lưu và bật để sử dụng cho các lần tải lên được hỗ trợ trong tương lai",
+    "download_failed": "⌯ <b>Tải hình ảnh thất bại</b>\n\n✦ Không thể lưu hình ảnh. Hãy gửi lại và đảm bảo Telegram đã hoàn tất việc tải lên",
+    "temp_missing": "⌯ <b>Hình ảnh tạm thời không khả dụng</b>\n\n✦ Phiên xác nhận đã hết hạn hoặc hình ảnh tạm thời đã bị xóa. Hãy gửi lại hình ảnh",
+    "not_set_popup": "Không có ảnh thu nhỏ đã lưu",
+    "status": {
+      "enabled": "Đã bật",
+      "disabled": "Đã tắt"
+    },
+    "buttons": {
+      "enable": "Bật ảnh thu nhỏ",
+      "disable": "Tắt ảnh thu nhỏ"
+    }
+  },
+  "captions": {
+    "settings": "⌯ <b>Xử lý chú thích</b>\n\n✦ Chọn cách xử lý chú thích khi phương tiện được sao chép hoặc tải lên\n\n✦ Chế độ hiện tại: {current}",
+    "modes": {
+      "keep_all": "Giữ chú thích gốc",
+      "remove_all": "Xóa chú thích phương tiện",
+      "remove_links_users": "Xóa liên kết và tên người dùng"
+    },
+    "buttons": {
+      "keep_all": "Giữ chú thích gốc",
+      "remove_all": "Xóa tất cả chú thích",
+      "remove_links_users": "Xóa liên kết và tên người dùng"
+    },
+    "already_selected_popup": "Chế độ chú thích này đã được bật",
+    "updated_popup": "Đã cập nhật chế độ chú thích"
+  },
+  "profile": {
+    "unavailable": "⌯ <b>Hồ sơ không khả dụng</b>\n\n✦ Không thể tải bản ghi người dùng đã lưu của bạn. Hãy gửi /start rồi thử lại",
+    "details": "⌯ <b>Hồ sơ của bạn</b>\n\n✦ ID người dùng: <code>{user_id}</code>\n✦ Gói: {plan_status}\n✦ Ngày hết hạn gói: {expiry_date}\n✦ Điểm hằng ngày: {daily_points}/{daily_limit}\n✦ Đặt lại hằng ngày: {reset_time}\n✦ Điểm quà tặng: {gift_points}\n✦ Điểm giới thiệu: {referral_points}\n✦ Số lượt giới thiệu: {referral_count}\n✦ Buộc tải xuống: {force_download_status}\n\n✦ Liên kết giới thiệu:\n✦ <code>{referral_link}</code>"
+  },
+  "plans": {
+    "free": "Miễn phí",
+    "premium": "Người đăng ký",
+    "monthly": "Hằng tháng",
+    "yearly": "Hằng năm"
+  },
+  "premium": {
+    "details": "⌯ <b>Gói đăng ký</b>\n\n✦ Gói đăng ký\n✦ Bạn có thể có tối đa 5 tác vụ chưa hoàn tất\n✦ Chờ một tác vụ xong hoặc hủy bằng /cancel\n✦ Gói đăng ký cho phép bỏ qua hàng chờ chung\n✦ /clone\n✦ /monitor\n✦ /uploadch\n✦ /caption\n✦ /fdl\n✦ Gói đăng ký của bot và Telegram Premium là hai gói riêng",
+    "feature_required": "⌯ <b>Cần đăng ký</b>\n\n✦ Tính năng này chỉ dành cho người đăng ký. Hãy mở menu đăng ký để xem các gói hiện có",
+    "already_active": "⌯ <b>Gói đăng ký đang hoạt động</b>\n\n✦ Gói đăng ký của bạn vẫn hoạt động đến ngày {expiry_date}",
+    "already_active_popup": "Gói đăng ký của bạn đang hoạt động đến ngày {expiry_date}",
+    "required_popup": "Tính năng này yêu cầu một gói đăng ký đang hoạt động",
+    "granted": "⌯ <b>Đã kích hoạt gói đăng ký</b>\n\n✦ Tài khoản của bạn đã được nâng cấp thành công. Gói đăng ký hiện tại hết hạn vào ngày {expiry_date}",
+    "removed": "⌯ <b>ℹ Đã xóa gói đăng ký</b>\n\n✦ Các chế độ và cài đặt đích chỉ dành cho người đăng ký đã bị tắt đối với tài khoản của bạn",
+    "buttons": {
+      "monthly": "Gói hằng tháng",
+      "yearly": "Gói hằng năm"
+    },
+    "granted_days": "⌯ <b>Gói đăng ký</b>\n\n✦ Số ngày thêm: {days}\n✦ Hết hạn: {expiry_date}\n✦ Số ngày này được cộng vào thời gian còn lại nếu có"
+  },
+  "language": {
+    "select": "⌯ <b>Chọn ngôn ngữ của bạn</b>\n\n✦ Chọn ngôn ngữ được sử dụng cho tin nhắn bot và menu lệnh Telegram cá nhân của bạn",
+    "changed": "⌯ <b>Đã thay đổi ngôn ngữ</b>\n\n✦ Tin nhắn và lệnh Telegram giờ sẽ được hiển thị bằng {language_name}",
+    "unavailable_popup": "Ngôn ngữ đã chọn không khả dụng"
+  },
+  "limits": {
+    "insufficient_points": "⌯ <b>Không đủ điểm tải xuống</b>\n\n✦ Bạn không có đủ điểm cho lần tải xuống này. Số dư hằng ngày của bạn sẽ được đặt lại sau {time_left}, hoặc bạn có thể kiếm thêm điểm thông qua giới thiệu",
+    "insufficient_points_batch": "⌯ <b>Không đủ điểm cho tác vụ hàng loạt này</b>\n\n✦ Thao tác này yêu cầu {required_points} điểm, trong khi số dư hiện có của bạn là {available_points}",
+    "reset_now": "Đang đặt lại",
+    "cooldown": "⌯ <b>Vui lòng chờ trước khi tải xuống lần nữa</b>\n\n✦ Bạn có thể bắt đầu một lần tải xuống miễn phí khác sau {remaining_time}"
+  },
+  "referrals": {
+    "share_text": "Sử dụng bot tải xuống Telegram này và kiếm điểm thông qua liên kết giới thiệu của tôi",
+    "new_referral": "⌯ <b>Một người được giới thiệu mới đã tham gia</b>\n\n✦ {user_name} (<code>{user_id}</code>) đã tham gia bằng liên kết của bạn. Bạn nhận được {reward} điểm giới thiệu",
+    "welcome_bonus": "⌯ <b>Đã nhận thưởng giới thiệu</b>\n\n✦ Bạn nhận được {bonus} điểm vì đã tham gia thông qua liên kết giới thiệu của một người dùng hiện có"
+  },
+  "gifts": {
+    "claim": {
+      "already_claimed": "⌯ <b>ℹ Quà tặng đã được nhận</b>\n\n✦ Quà tặng này đã được thêm vào tài khoản của bạn trước đó và không thể nhận hai lần",
+      "invalid": "⌯ <b>Không tìm thấy quà tặng</b>\n\n✦ Liên kết quà tặng không hợp lệ hoặc không còn tồn tại",
+      "inactive": "⌯ <b>Quà tặng không hoạt động</b>\n\n✦ Quà tặng này đã bị quản trị viên vô hiệu hóa và không thể nhận được nữa",
+      "link_expired": "⌯ <b>Liên kết quà tặng đã hết hạn</b>\n\n✦ Thời gian cho phép nhận quà tặng này đã kết thúc",
+      "limit_reached": "⌯ <b>Đã đạt giới hạn quà tặng</b>\n\n✦ Số lượt nhận tối đa được cho phép đã được sử dụng hết",
+      "not_allowed": "⌯ <b>Quà tặng không được chỉ định cho tài khoản của bạn</b>\n\n✦ Quà tặng này chỉ có thể được nhận bởi những người dùng cụ thể và tài khoản của bạn không nằm trong danh sách",
+      "excluded": "⌯ <b>Quà tặng không khả dụng cho tài khoản của bạn</b>\n\n✦ Tài khoản của bạn bị loại trừ khỏi việc nhận quà tặng này",
+      "completed": "⌯ <b>Đã nhận quà tặng</b>\n\n✦ {value} điểm đã được thêm thành công vào tài khoản của bạn",
+      "completed_with_expiry": "⌯ <b>Đã nhận quà tặng</b>\n\n✦ {value} điểm đã được thêm vào tài khoản của bạn và sẽ khả dụng đến {expiry_date}",
+      "failed": "⌯ <b>Nhận quà tặng thất bại</b>\n\n✦ Không thể áp dụng quà tặng vào tài khoản của bạn. Hãy thử lại sau"
+    }
+  },
+  "help": {
+    "menu": {
+      "title": "⌯ <b>Trung tâm trợ giúp</b>\n\n✦ Chọn một tính năng bên dưới để xem hướng dẫn và cách sử dụng được khuyến nghị"
+    },
+    "buttons": {
+      "single": "Tải xuống đơn lẻ",
+      "batch": "Tải xuống hàng loạt",
+      "clone": "Chuyển kênh",
+      "monitor": "Theo dõi kênh",
+      "channel_upload": "Tải lên kênh",
+      "forcedownload": "Buộc tải xuống",
+      "login": "Tài khoản đã liên kết",
+      "points": "Điểm",
+      "premium": "Gói đăng ký",
+      "other_uses": "Cách sử dụng khác"
+    },
+    "features": {
+      "dl": "⌯ <b>Tải xuống một bài đăng</b>\n\n✦ /dl\n✦ Mở bài đăng trong Telegram rồi nhấn giữ\n✦ Chọn Sao chép liên kết và gửi liên kết vào đây\n✦ Với nhiều bài đăng hãy gửi liên kết bài đầu tiên trước\n✦ <code>https://t.me/example_channel/15</code>\n✦ Gửi liên kết kênh hoặc tên người dùng của kênh\n✦ Với kênh riêng tư hãy dùng /login để kết nối tài khoản đã là thành viên\n✦ Kích thước:\n✦ Bot tải lên khoảng 2 GB mỗi phần\n✦ Chọn Tải và chia nhỏ hoặc Hủy\n✦ Để nhận tệp nguyên vẹn đến 4 GB hãy kết nối tài khoản Telegram Premium bằng /login rồi chọn kênh bằng /uploadch",
+      "bdl": "⌯ <b>Tải xuống nhiều bài đăng</b>\n\n✦ /bdl\n✦ Mở bài đăng trong Telegram rồi nhấn giữ\n✦ Chọn Sao chép liên kết và gửi liên kết vào đây\n✦ Với nhiều bài đăng hãy gửi liên kết bài đầu tiên trước\n✦ Gửi liên kết bài cuối cùng trong cùng một kênh\n✦ Cả hai bài và mọi bài ở giữa đều được tải\n✦ Sau đó bạn chọn loại nội dung\n✦ <code>/bdl https://t.me/example_channel/15 https://t.me/example_channel/30</code>\n✦ Gửi /cancel để chọn tác vụ hoặc /cancel kèm số tác vụ",
+      "clone": "⌯ <b>Chuyển toàn bộ một kênh</b>\n\n✦ Gói đăng ký\n✦ /clone\n✦ Gửi liên kết kênh hoặc tên người dùng của kênh\n✦ Với kênh riêng tư hãy dùng /login để kết nối tài khoản đã là thành viên\n✦ /uploadch\n✦ Gửi /cancel để chọn tác vụ hoặc /cancel kèm số tác vụ",
+      "monitor": "⌯ <b>Theo dõi bài đăng mới trong kênh</b>\n\n✦ Gói đăng ký\n✦ /monitor\n✦ Gửi liên kết kênh hoặc tên người dùng của kênh\n✦ Với kênh riêng tư hãy dùng /login để kết nối tài khoản đã là thành viên\n✦ Kênh:\n✦ Bộ lọc:\n✦ Kênh công khai dùng tài khoản tải xuống\n✦ Kênh riêng tư được kiểm tra mỗi giờ với một tài khoản tại một thời điểm rồi đóng tài khoản\n✦ Bài đăng mới được lưu vào hàng chờ và gửi theo thứ tự\n✦ Dừng theo dõi",
+      "channel_upload": "⌯ <b>Gửi nội dung đến một kênh khác</b>\n\n✦ Gói đăng ký\n✦ /uploadch\n✦ Gói đăng ký của bot và Telegram Premium là hai gói riêng\n✦ Bot tải lên khoảng 2 GB mỗi phần\n✦ Tài khoản Telegram Premium đã kết nối có thể tải lên đến 4 GB trong một tệp\n✦ Kết nối tài khoản bằng /login\n✦ Thêm bot và tài khoản làm quản trị viên kênh đích rồi chọn kênh bằng /uploadch\n✦ Nếu không có kênh hãy chọn tin nhắn đã lưu\n✦ Các phần được gửi dạng tài liệu cần ghép lại theo thứ tự số\n✦ /rmuploadch\n✦ Dễ nhất ↣ thêm bot làm quản trị viên trong kênh hoặc nhóm của bạn và bot sẽ hỏi xác nhận ở đây",
+      "forcedownload": "⌯ <b>Chế độ buộc tải xuống</b>\n\n✦ Sử dụng /forcedownload để yêu cầu bot truy xuất và tải lên mọi tệp thay vì sao chép các bài đăng không bị hạn chế. Chế độ này hữu ích cho ảnh thu nhỏ tùy chỉnh và việc xây dựng lại nội dung",
+      "login": "⌯ <b>Liên kết một tài khoản Telegram</b>\n\n✦ Sử dụng /login và chọn tài khoản hiện tại hoặc một tài khoản khác. Tài khoản được liên kết phải là thành viên của các kênh riêng tư mà bạn muốn truy cập. Mã ủy quyền chỉ được nhập thông qua bàn phím an toàn\n✦ Nhập mã Telegram chỉ bằng các nút số\n✦ Xóa bỏ chữ số cuối và Xác nhận gửi mã\n✦ Gửi liên kết kênh hoặc tên người dùng của kênh\n✦ Với kênh riêng tư hãy dùng /login để kết nối tài khoản đã là thành viên\n✦ /logout",
+      "points": "⌯ <b>Điểm tải xuống</b>\n\n✦ Các lượt tải xuống miễn phí sử dụng điểm hằng ngày, điểm quà tặng và điểm giới thiệu. Chia sẻ liên kết cá nhân của bạn để kiếm thêm điểm:\n\n✦ <code>{referral_link}</code>",
+      "premium": "⌯ <b>Các tính năng đăng ký</b>\n\n✦ /premium\n✦ Gói đăng ký\n✦ Bạn có thể có tối đa 5 tác vụ chưa hoàn tất\n✦ Chờ một tác vụ xong hoặc hủy bằng /cancel\n✦ Gói đăng ký cho phép bỏ qua hàng chờ chung\n✦ /clone\n✦ /monitor\n✦ /uploadch\n✦ /caption\n✦ /fdl\n✦ Gói đăng ký của bot và Telegram Premium là hai gói riêng",
+      "other_uses": "⌯ <b>Các cách sử dụng bot khác</b>\n\n✦ <b>Chuyển một kênh sang một kênh khác:</b> Cấu hình đích bằng /uploadch, sau đó chạy /clone trên kênh nguồn. Nội dung đã chọn sẽ được chuyển theo bộ lọc của bạn\n\n✦ <b>Thay ảnh bìa cho toàn bộ một loạt nội dung:</b> Gửi ảnh bìa mới cho bot và xác nhận, bật chế độ buộc tải xuống, sau đó chạy /bdl bằng liên kết tập đầu tiên và tập cuối cùng. Các tệp sẽ được tải xuống và tải lên bằng ảnh bìa đã chọn ở những nơi được hỗ trợ"
+    }
+  },
+  "monitor": {
+    "login_required": "⌯ <b>Liên kết một tài khoản Telegram</b>\n\n✦ Gửi liên kết kênh hoặc tên người dùng của kênh\n✦ Với kênh riêng tư hãy dùng /login để kết nối tài khoản đã là thành viên",
+    "usage": "⌯ <b>Theo dõi bài đăng mới trong kênh</b>\n\n✦ {current_status}\n✦ /monitor\n✦ Gửi liên kết kênh hoặc tên người dùng của kênh\n✦ Với kênh riêng tư hãy dùng /login để kết nối tài khoản đã là thành viên\n✦ Kênh:\n✦ Bộ lọc:\n✦ Kênh công khai dùng tài khoản tải xuống\n✦ Kênh riêng tư được kiểm tra mỗi giờ với một tài khoản tại một thời điểm rồi đóng tài khoản\n✦ Bài đăng mới được lưu vào hàng chờ và gửi theo thứ tự\n✦ Dừng theo dõi",
+    "invalid_channel_id": "⌯ <b>Mã định danh kênh không hợp lệ</b>\n\n✦ Sử dụng ID kênh Telegram dạng số, thường bắt đầu bằng <code>-100</code>",
+    "invalid_action": "⌯ <b>Hành động theo dõi không hợp lệ</b>\n\n✦ Sử dụng <code>on</code> để bắt đầu theo dõi hoặc <code>off</code> để dừng",
+    "not_active": "⌯ <b>ℹ Trình theo dõi không hoạt động</b>\n\n✦ Kênh được chỉ định hiện không được tài khoản của bạn theo dõi",
+    "already_active": "⌯ <b>ℹ Một trình theo dõi đã hoạt động</b>\n\n✦ Hãy dừng theo dõi kênh hiện tại trước khi chọn một kênh khác",
+    "access_denied": "⌯ <b>Quyền truy cập kênh bị từ chối</b>\n\n✦ Tài khoản đã liên kết không thể mở kênh được chỉ định hoặc mã định danh không chính xác",
+    "start_failed": "⌯ <b>Bắt đầu lại tác vụ</b>\n\n✦ Gửi liên kết kênh hoặc tên người dùng của kênh\n✦ Với kênh riêng tư hãy dùng /login để kết nối tài khoản đã là thành viên",
+    "started": "⌯ <b>Theo dõi bài đăng mới trong kênh</b>\n\n✦ Kênh: {channel_title}\n✦ Bộ lọc: {filter_status}\n✦ Kênh công khai dùng tài khoản tải xuống\n✦ Kênh riêng tư được kiểm tra mỗi giờ với một tài khoản tại một thời điểm rồi đóng tài khoản\n✦ Bài đăng mới được lưu vào hàng chờ và gửi theo thứ tự",
+    "stopped": "⌯ <b>Đã dừng theo dõi kênh</b>\n\n✦ Các bài đăng mới từ kênh đã chọn sẽ không còn được xử lý tự động",
+    "session_stopped": "⌯ <b>Đã dừng theo dõi</b>\n\n✦ Phiên Telegram được liên kết đã hết hạn hoặc bị thu hồi, vì vậy tính năng theo dõi tự động đã bị tắt",
+    "status": {
+      "active": "Đang hoạt động cho kênh <code>{channel_id}</code>",
+      "inactive": "Không hoạt động"
+    },
+    "stop_button": "Dừng theo dõi",
+    "source_lost": "⌯ <b>Đã dừng theo dõi kênh</b>\n\n✦ Kênh ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Tài khoản liên kết không mở được nó suốt một ngày\n✦ Có thể nó đã bị xóa hoặc chuyển riêng tư hoặc tài khoản đã rời đi\n✦ Để theo dõi lại hãy chắc tài khoản là thành viên rồi gửi /monitor"
+  },
+  "stats": {
+    "system": "⌯ <b>Thống kê hệ thống</b>\n\n✦ Thời gian hoạt động: {uptime}\n✦ Ổ đĩa: {disk_usage} / {disk_total} ({disk_percent}%)\n✦ Bộ nhớ: {ram_percent}%\n✦ CPU: {cpu_percent}%\n✦ Dữ liệu mạng đã gửi: {sent}\n✦ Dữ liệu mạng đã nhận: {received}",
+    "admin": "⌯ <b>Thống kê người dùng</b>\n\n✦ Tổng số người dùng: {total_users}\n✦ Người đăng ký: {total_premium}\n✦ Được quản trị viên thêm: {premium_by_admin}\n✦ Thanh toán bằng Stars: {premium_by_stars}",
+    "public": "⌯ <b>Thống kê bot</b>\n\n✦ Thời gian hoạt động: {uptime}\n✦ Tổng số lượt tải: {total_downloads}"
+  },
+  "payments": {
+    "monthly": {
+      "title": "Gói đăng ký hằng tháng",
+      "description": "Kích hoạt các tính năng dành cho người đăng ký trong 30 ngày"
+    },
+    "yearly": {
+      "title": "Gói đăng ký hằng năm",
+      "description": "Kích hoạt các tính năng dành cho người đăng ký trong 365 ngày"
+    },
+    "total_label": "Tổng phí đăng ký",
+    "invalid_plan_popup": "Gói đăng ký đã chọn không hợp lệ",
+    "invoice_failed_popup": "Không thể tạo hóa đơn thanh toán",
+    "unrecognized": "⌯ <b>Không nhận dạng được gói thanh toán</b>\n\n✦ Đã nhận được khoản thanh toán nhưng không thể xác định gói đăng ký. Hãy liên hệ hỗ trợ kèm theo thông tin thanh toán",
+    "activation_failed": "⌯ <b>Kích hoạt gói đăng ký thất bại</b>\n\n✦ Đã nhận được khoản thanh toán nhưng cơ sở dữ liệu không thể kích hoạt gói đăng ký. Hãy liên hệ hỗ trợ để được trợ giúp thủ công",
+    "completed": "⌯ <b>Đã kích hoạt gói đăng ký</b>\n\n✦ Gói {plan_name} hiện đang hoạt động và sẽ hết hạn vào ngày {expiry_date}"
+  },
+  "broadcast": {
+    "json": {
+      "file_required": "⌯ <b>Cần có tệp JSON phát sóng</b>\n\n✦ Trả lời một tệp JSON đa ngôn ngữ và sử dụng <code>/bc .</code>",
+      "invalid_file": "⌯ <b>Tệp phát sóng không hợp lệ</b>\n\n✦ Tài liệu được trả lời phải là một tệp JSON",
+      "validation_failed": "⌯ <b>Xác thực tệp phát sóng thất bại</b>\n\n✦ Không thể chấp nhận tệp: <code>{error}</code>",
+      "confirm": "⌯ <b>Xác nhận phát sóng đa ngôn ngữ</b>\n\n✦ Tệp chứa {language_count} ngôn ngữ có thể sử dụng. Người dùng sẽ nhận nội dung bằng ngôn ngữ đã lưu của họ, sau đó là ngôn ngữ cơ sở và cuối cùng là tiếng Anh nếu không có bản phù hợp\n\n✦ Bộ lọc: {filters}",
+      "how_to": "⌯ <b>Phát sóng đa ngôn ngữ</b>\n\n✦ Nhấn nút bên dưới để nhận mẫu JSON chứa tất cả các ngôn ngữ có sẵn. Điền giá trị <code>text</code> cho mỗi ngôn ngữ bạn muốn, sau đó tải tệp lên và trả lời bằng <code>/bc .</code> — các ngôn ngữ để trống sẽ quay về tiếng Anh",
+      "template_sent": "⌯ <b>Mẫu phát sóng</b>\n\n✦ Tệp chứa {language_count} ngôn ngữ và được tạo từ các tệp ngôn ngữ hiện tại"
+    },
+    "usage": "⌯ <b>Phát sóng một tin nhắn</b>\n\n✦ Trả lời tin nhắn bạn muốn gửi, sau đó sử dụng /bc. Các bộ lọc tùy chọn bao gồm <code>-only USER_ID</code> và <code>-rm USER_ID --prem</code>",
+    "invalid_message": "⌯ <b>Tin nhắn phát sóng không khả dụng</b>\n\n✦ Tin nhắn được trả lời không có mã định danh Telegram hợp lệ",
+    "confirm": "⌯ <b>Xác nhận phát sóng</b>\n\n✦ ID tin nhắn: <code>{message_id}</code>\n✦ Bộ lọc: {filters}\n\n✦ Chọn gửi bình thường hoặc gửi và ghim",
+    "starting": "⌯ <b>Đã bắt đầu phát sóng</b>\n\n✦ Tin nhắn đang được gửi đến những người dùng đã chọn",
+    "progress": "⌯ <b>Đang phát sóng</b>\n\n✦ Đã xử lý: {processed}/{total}\n✦ Thành công: {successful}\n✦ Thất bại: {failed}",
+    "completed": "⌯ <b>Phát sóng hoàn tất</b>\n\n✦ Người dùng được nhắm mục tiêu: {total}\n✦ Thành công: {successful}\n✦ Thất bại: {failed}",
+    "cancelled": "⌯ <b>Đã hủy phát sóng</b>\n\n✦ Thao tác đã dừng sau khi xử lý {processed} người dùng",
+    "buttons": {
+      "normal": "Gửi bình thường",
+      "pin": "Gửi và ghim",
+      "get_template": "Lấy mẫu JSON"
+    },
+    "filters": {
+      "none": "Không có bộ lọc",
+      "summary": "Chỉ người dùng: {only_count}, người dùng bị loại trừ: {excluded_count}, loại trừ người đăng ký: {exclude_premium}"
+    }
+  },
+  "admin": {
+    "users": {
+      "new_language": "⌯ <b>Đã phát hiện ngôn ngữ không khả dụng</b>\n\n✦ Người dùng: {first_name}\n✦ ID người dùng: <code>{user_id}</code>\n✦ Mã được phát hiện: <code>{language_code}</code>",
+      "new_user": "⌯ <b>Người dùng mới đã tham gia</b>\n\n✦ Tên: {first_name} {last_name}\n✦ ID người dùng: <code>{user_id}</code>\n✦ Tên người dùng: {username}\n✦ Tổng số người dùng: {total_users}",
+      "exported": "⌯ <b>Xuất dữ liệu người dùng hoàn tất</b>\n\n✦ Tệp đính kèm chứa {count} bản ghi người dùng"
+    },
+    "payments": {
+      "new_subscription": "⌯ <b>Gói đăng ký trả phí mới</b>\n\n✦ Người dùng: {user_name}\n✦ ID người dùng: <code>{user_id}</code>\n✦ Gói: {plan_name}\n✦ Số tiền: {amount} Stars"
+    },
+    "pool": {
+      "insufficient": "⌯ <b>Nhóm tài khoản tải xuống chưa đầy đủ</b>\n\n✦ Hiện đã tải: {current}\n✦ Số tài khoản cần bổ sung: {missing}"
+    },
+    "gifts": {
+      "create_usage": "⌯ <b>Tạo quà tặng</b>\n\n✦ Sử dụng <code>/create -gift --value POINTS</code>. Các cài đặt tùy chọn bao gồm <code>--linkexpiry DDHHMM</code>, <code>--giftexpiry DDHHMM</code>, <code>--onlyuser [IDS]</code>, <code>--exceptionuser [IDS]</code> và <code>--limit NUMBER</code>",
+      "value_required": "⌯ <b>Cần giá trị quà tặng</b>\n\n✦ Cung cấp một số dương sau <code>--value</code>",
+      "user_filter_conflict": "⌯ <b>Bộ lọc người dùng xung đột</b>\n\n✦ Một quà tặng không thể sử dụng đồng thời bộ lọc người dùng được phép và người dùng bị loại trừ",
+      "invalid_duration": "⌯ <b>Thời lượng không hợp lệ</b>\n\n✦ Sử dụng định dạng sáu chữ số <code>DDHHMM</code> cho thời lượng quà tặng",
+      "invalid_values": "⌯ <b>Cài đặt quà tặng không hợp lệ</b>\n\n✦ Hãy kiểm tra mã định danh người dùng, giới hạn lượt nhận và tất cả giá trị được cung cấp",
+      "created": "⌯ <b>Đã tạo quà tặng</b>\n\n✦ Liên kết quà tặng đã sẵn sàng:\n✦ <code>{gift_link}</code>",
+      "empty": "⌯ <b>ℹ Không có quà tặng đang hoạt động</b>\n\n✦ Hiện không có liên kết quà tặng nào đang hoạt động",
+      "list_title": "⌯ <b>Quà tặng đang hoạt động</b>\n\n✦ Các liên kết quà tặng sau hiện đang khả dụng",
+      "list_item": "<b>Quà tặng:</b> <code>{gift_pid}</code>\nGiá trị: {value}\nLượt nhận: {usage_count}/{usage_limit}\nLiên kết hết hạn: {expiry}\nĐược tạo: {created_at}\nLiên kết: <code>{gift_link}</code>",
+      "remove_usage": "⌯ <b>Xóa quà tặng</b>\n\n✦ Sử dụng <code>/rm -gift --pid GIFT_ID</code>",
+      "not_found": "⌯ <b>Không tìm thấy quà tặng</b>\n\n✦ Không có quà tặng đang hoạt động nào với mã định danh được cung cấp",
+      "remove_confirm": "⌯ <b>Vô hiệu hóa quà tặng</b>\n\n✦ Quà tặng: <code>{gift_pid}</code>\n✦ Giá trị: {value}\n✦ Lượt nhận: {usage_count}\n\n✦ Xác nhận để ngăn mọi lượt nhận trong tương lai",
+      "deactivated": "⌯ <b>Đã vô hiệu hóa quà tặng</b>\n\n✦ Quà tặng <code>{gift_pid}</code> không thể được nhận nữa"
+    },
+    "add": {
+      "usage": "⌯ <b>Thêm cài đặt quản trị</b>\n\n✦ Sử dụng /add với <code>-premium</code>, <code>-lang</code> hoặc <code>-frcch</code>"
+    },
+    "remove": {
+      "usage": "⌯ <b>Xóa cài đặt quản trị</b>\n\n✦ Sử dụng /rm với <code>-premium</code>, <code>-gift</code> hoặc <code>-frcch</code>"
+    },
+    "premium": {
+      "add_usage": "⌯ <b>Gói đăng ký</b>\n\n✦ /admin\n✦ Chọn người dùng hoặc gửi mã định danh dạng số của họ\n✦ Ngày\n✦ <code>/add -premium --user [123456789] --days 30</code>",
+      "added": "⌯ <b>Cập nhật gói đăng ký hoàn tất</b>\n\n✦ Người dùng đã cập nhật: {users}\n✦ Người dùng không tồn tại: {missing}",
+      "remove_usage": "⌯ <b>Xóa gói đăng ký</b>\n\n✦ Sử dụng <code>/rm -premium --user [USER_IDS]</code>",
+      "removed": "⌯ <b>Xóa gói đăng ký hoàn tất</b>\n\n✦ Người dùng đã cập nhật: {users}\n✦ Người dùng không tồn tại hoặc không hoạt động: {missing}"
+    },
+    "languages": {
+      "reply_to_json": "⌯ <b>Cần có tệp ngôn ngữ</b>\n\n✦ Hãy trả lời một tệp ngôn ngữ JSON hợp lệ khi sử dụng <code>/add -lang</code>",
+      "json_required": "⌯ <b>Cần có tệp JSON</b>\n\n✦ Tài liệu được trả lời phải sử dụng phần mở rộng <code>.json</code>",
+      "already_exists": "⌯ <b>ℹ Ngôn ngữ đã tồn tại</b>\n\n✦ Ngôn ngữ <code>{language_code}</code> đã được cài đặt. Thêm <code>--update</code> để thay thế",
+      "invalid_json": "⌯ <b>Tệp ngôn ngữ không hợp lệ</b>\n\n✦ Không thể tải tệp JSON: <code>{error}</code>",
+      "added": "⌯ <b>Đã thêm ngôn ngữ</b>\n\n✦ Ngôn ngữ <code>{language_code}</code> hiện đã khả dụng",
+      "updated": "⌯ <b>Đã cập nhật ngôn ngữ</b>\n\n✦ Ngôn ngữ <code>{language_code}</code> đã được tải lại thành công"
+    },
+    "force_subscription": {
+      "empty": "⌯ <b>ℹ Không có kênh bắt buộc</b>\n\n✦ Hiện không có kênh đăng ký bắt buộc nào được cấu hình",
+      "list_title": "⌯ <b>Các kênh bắt buộc</b>\n\n✦ Các kênh sau hiện đang được áp dụng bắt buộc",
+      "list_item": "Liên kết: {link}\nID kênh: <code>{channel_id}</code>\nĐã tham gia: {joined}\nGiới hạn: {limit}",
+      "add_usage": "⌯ <b>Thêm một kênh bắt buộc</b>\n\n✦ Sử dụng <code>/add -frcch --link CHANNEL_LINK --id CHANNEL_ID --limit NUMBER</code>",
+      "permission_required": "⌯ <b>Cần quyền quản trị viên</b>\n\n✦ Bot phải là quản trị viên có quyền mời người dùng",
+      "added": "⌯ <b>Đã thêm kênh bắt buộc</b>\n\n✦ Kênh: {channel_title}\n✦ Giới hạn tham gia: {limit}",
+      "add_failed": "⌯ <b>Không thể thêm kênh</b>\n\n✦ Hãy xác minh mã định danh kênh, liên kết và quyền quản trị viên của bot",
+      "remove_usage": "⌯ <b>Xóa một kênh bắt buộc</b>\n\n✦ Sử dụng <code>/rm -frcch CHANNEL_ID</code> hoặc cung cấp liên kết đã lưu của kênh",
+      "removed": "⌯ <b>Đã xóa kênh bắt buộc</b>\n\n✦ Kênh này không còn bị áp dụng bắt buộc",
+      "not_found": "⌯ <b>Không tìm thấy kênh bắt buộc</b>\n\n✦ Không có kênh đã lưu nào khớp với mã định danh hoặc liên kết được cung cấp"
+    },
+    "logs": {
+      "not_found": "⌯ <b>Thư mục nhật ký không khả dụng</b>\n\n✦ Thư mục nhật ký của bot không tồn tại",
+      "empty": "⌯ <b>Không có nhật ký nào</b>\n\n✦ Không tìm thấy tệp nhật ký bot nào có nội dung",
+      "file_caption": "⌯ <b>Nhật ký bot</b>\n\n✦ Tệp: <code>{filename}</code>",
+      "upload_failed": "⌯ <b>Tải nhật ký lên thất bại</b>\n\n✦ Tệp: <code>{filename}</code>\n✦ Lỗi: <code>{error}</code>"
+    }
+  },
+  "queue": {
+    "accepted": "⌯ <b>Tác vụ của bạn đã được lưu</b>\n\n✦ Tác vụ ↣ {task_id}\n✦ Gửi /cancel để chọn tác vụ hoặc /cancel kèm số tác vụ\n✦ <code>/cancel {task_id}</code>",
+    "waiting_free": "⌯ <b>Đang chờ</b>\n\n✦ Số người trước bạn: {ahead}\n✦ Tải xuống bắt đầu khi có chỗ trống\n✦ Gói đăng ký cho phép bỏ qua hàng chờ chung",
+    "waiting_premium": "⌯ <b>Đang chờ</b>\n\n✦ Các tác vụ trước của bạn: {ahead}\n✦ Tác vụ của bạn chạy lần lượt",
+    "limit_free": "⌯ <b>Tác vụ</b>\n\n✦ Bạn đã có một tác vụ chưa hoàn tất\n✦ Chờ hoàn tất hoặc hủy bằng /cancel\n✦ Bạn có thể có tối đa 5 tác vụ chưa hoàn tất\n✦ Chờ một tác vụ xong hoặc hủy bằng /cancel",
+    "limit_premium": "⌯ <b>Tác vụ</b>\n\n✦ Bạn có thể có tối đa {limit} tác vụ chưa hoàn tất\n✦ Chờ một tác vụ xong hoặc hủy bằng /cancel",
+    "lost_after_restart": "⌯ <b>Bắt đầu lại tác vụ</b>\n\n✦ Tác vụ ↣ {task_id}\n✦ Mở bài đăng trong Telegram rồi nhấn giữ\n✦ Chọn Sao chép liên kết và gửi liên kết vào đây\n✦ Với nhiều bài đăng hãy gửi liên kết bài đầu tiên trước",
+    "cancel_usage": "Gửi /cancel để chọn tác vụ hoặc /cancel kèm số tác vụ\n<code>/cancel 123</code>",
+    "cancelled_one": "Tác vụ {task_id} đã được hủy",
+    "not_found": "Tác vụ {task_id} đã xong hoặc không thuộc về bạn",
+    "choose_to_cancel": "⌯ <b>Hủy Tác vụ</b>\n\n✦ Gửi /cancel để chọn tác vụ hoặc /cancel kèm số tác vụ",
+    "cancelled_popup": "Hủy",
+    "not_found_popup": "Bắt đầu lại tác vụ",
+    "buttons": {
+      "cancel": "Hủy Tác vụ",
+      "upgrade": "Gói đăng ký",
+      "cancel_task": "Tác vụ {task_id} {kind} {status}",
+      "cancel_all": "Hủy Tác vụ /cancel"
+    },
+    "kinds": {
+      "dl": "Tải xuống một bài đăng",
+      "bdl": "Tải xuống nhiều bài đăng",
+      "clone": "Chuyển toàn bộ một kênh",
+      "task": "Tác vụ",
+      "monitor": "Theo dõi bài đăng mới trong kênh"
+    },
+    "status": {
+      "queued": "Đang chờ",
+      "running": "Đang chạy"
+    },
+    "task_number": "Tác vụ {task_id}"
+  },
+  "spam": {
+    "per_second": "Đừng gửi quá một tin nhắn mỗi giây",
+    "per_minute": "Đừng gửi quá 20 tin nhắn mỗi phút\nBot này nhận liên kết tải xuống\nHãy chờ hết phút này",
+    "buttons": "Bạn đã nhấn quá 20 nút trong một phút\nHãy chờ trước khi tiếp tục\nVi phạm lặp lại sẽ tăng gấp đôi thời gian chờ"
+  },
+  "flow": {
+    "first_link": "⌯ <b>Tải xuống một bài đăng</b>\n\n✦ Mở bài đăng trong Telegram rồi nhấn giữ\n✦ Chọn Sao chép liên kết và gửi liên kết vào đây\n✦ Với nhiều bài đăng hãy gửi liên kết bài đầu tiên trước\n✦ <code>https://t.me/example_channel/15</code>",
+    "last_link": "⌯ <b>Tải xuống nhiều bài đăng</b>\n\n✦ Gửi liên kết bài cuối cùng trong cùng một kênh\n✦ Cả hai bài và mọi bài ở giữa đều được tải\n✦ Sau đó bạn chọn loại nội dung",
+    "channel": "⌯ <b>Chọn kênh</b>\n\n✦ Gửi liên kết kênh hoặc tên người dùng của kênh\n✦ Với kênh riêng tư hãy dùng /login để kết nối tài khoản đã là thành viên\n✦ <code>https://t.me/example_channel</code>",
+    "pick_channel": "Chọn kênh",
+    "invalid_channel": "Gửi liên kết kênh hoặc tên người dùng của kênh\nVới kênh riêng tư hãy dùng /login để kết nối tài khoản đã là thành viên",
+    "upload_channel": "⌯ <b>Chọn kênh tải lên</b>\n\n✦ Dễ nhất ↣ thêm bot làm quản trị viên có quyền đăng vào kênh hoặc nhóm của bạn\n✦ Bot sẽ gửi xác nhận ở đây và bạn nhấn Xác nhận\n✦ Hoặc nhấn nút chọn kênh bên dưới\n✦ Hoặc gửi liên kết kênh, tên người dùng hoặc ID bắt đầu bằng <code>-100</code>\n✦ Tính năng này cần gói đăng ký bot"
+  },
+  "panel": {
+    "title": "⌯ <b>Quản trị</b>\n\n✦ Gói đăng ký / Quà tặng / Kênh bắt buộc / Gửi hàng loạt",
+    "premium": "Gói đăng ký",
+    "gift": "Quà tặng",
+    "fsub": "Kênh bắt buộc",
+    "broadcast": "Gửi hàng loạt",
+    "users": "Xuất người dùng",
+    "language": "Tệp ngôn ngữ",
+    "gifts": "Quà tặng đang hoạt động",
+    "choose_user": "Chọn người dùng hoặc gửi mã định danh dạng số của họ",
+    "selected_users": "Tất cả người dùng ↣ {users}",
+    "selected_channel": "Chọn kênh ↣ {channel_id}",
+    "custom": "Số khác",
+    "remove_premium": "Hủy Gói đăng ký",
+    "days": "Ngày ↣ {days}",
+    "value": "Điểm quà tặng",
+    "link_days": "Thời hạn liên kết theo ngày / Với thời hạn quà tặng số không nghĩa là không hết hạn",
+    "point_days": "Thời hạn điểm theo ngày / Với thời hạn quà tặng số không nghĩa là không hết hạn",
+    "limit": "Số lần nhận tối đa",
+    "only_users": "Cho phép người dùng cụ thể",
+    "exclude_users": "Loại trừ người dùng",
+    "send_broadcast": "Gửi tin nhắn hàng loạt vào đây\nXem bản sao và chọn người nhận\nSau đó nhấn Xác nhận",
+    "send_language": "Gửi tệp JSON có tên theo mã ngôn ngữ như ar.json\nTệp hiện có chỉ được thay thế khi tệp mới hợp lệ",
+    "enter_value": "Gửi một số hoặc mã người dùng phân cách bằng dấu phẩy\nTin trả lời của bạn được xóa và menu được cập nhật",
+    "invalid_value": "Gửi một số hợp lệ\nVới thời hạn quà tặng số không nghĩa là không hết hạn",
+    "audience_all": "Tất cả người dùng",
+    "audience_premium": "Người đăng ký",
+    "audience_free": "Người dùng miễn phí",
+    "admins": "Quản trị viên",
+    "send_admin": "Gửi ID số của người dùng cần bổ nhiệm hoặc chuyển tiếp một tin nhắn của họ\nNhấn vào quản trị viên bên dưới để gỡ",
+    "admin_added": "Đã thêm quản trị viên: {user_id}",
+    "admin_removed": "Đã gỡ quản trị viên: {user_id}",
+    "admin_exists": "Người dùng này đã là quản trị viên",
+    "no_admins": "Chưa có quản trị viên",
+    "owner_only": "Chỉ chủ sở hữu mới quản lý quản trị viên"
+  },
+  "large": {
+    "saved": "Gửi vào tin nhắn đã lưu của tôi",
+    "split": "Tải và chia nhỏ",
+    "help_button": "Giải thích",
+    "split_notice": "⌯ <b>Tải và chia nhỏ</b>\n\n✦ Kích thước: {size}\n✦ Bot tải lên khoảng 2 GB mỗi phần\n✦ Chọn Tải và chia nhỏ hoặc Hủy\n✦ Để nhận tệp nguyên vẹn đến 4 GB hãy kết nối tài khoản Telegram Premium bằng /login rồi chọn kênh bằng /uploadch",
+    "premium_notice": "⌯ <b>Gửi vào tin nhắn đã lưu của tôi</b>\n\n✦ Kích thước: {size}\n✦ Tài khoản Telegram Premium đã kết nối có thể tải cả tệp vào tin nhắn đã lưu\n✦ Bạn có thể chọn kênh đích bằng /uploadch\n✦ Bạn cũng có thể chia nhỏ tệp",
+    "help": "⌯ <b>Giải thích</b>\n\n✦ Gói đăng ký của bot và Telegram Premium là hai gói riêng\n✦ Bot tải lên khoảng 2 GB mỗi phần\n✦ Tài khoản Telegram Premium đã kết nối có thể tải lên đến 4 GB trong một tệp\n✦ Kết nối tài khoản bằng /login\n✦ Thêm bot và tài khoản làm quản trị viên kênh đích rồi chọn kênh bằng /uploadch\n✦ Nếu không có kênh hãy chọn tin nhắn đã lưu\n✦ Các phần được gửi dạng tài liệu cần ghép lại theo thứ tự số"
+  },
+  "referral_check": {
+    "question": "⌯ <b>Kiểm tra nhanh</b>\n\n✦ Hãy giải bài này để xác nhận bạn là người thật và được tính lượt giới thiệu\n\n✦ {a} + {b} = ?",
+    "wrong": "⌯ <b>Sai đáp án</b>\n\n✦ Hãy thử lại. Số lần còn lại: {left}",
+    "failed": "⌯ <b>Lượt giới thiệu không được tính</b>\n\n✦ Lượt giới thiệu của bạn không được tính vì chưa giải được bài kiểm tra. Bạn vẫn có thể dùng bot bình thường"
+  },
+  "units": {
+    "b": "{n} B",
+    "kb": "{n} KB",
+    "mb": "{n} MB",
+    "gb": "{n} GB",
+    "tb": "{n} TB",
+    "pb": "{n} PB",
+    "day": "{n}d",
+    "hour": "{n}h",
+    "minute": "{n}m",
+    "second": "{n}s"
+  }
+}

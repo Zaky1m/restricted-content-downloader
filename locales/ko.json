@@ -1,0 +1,675 @@
+{
+  "lang_name": "🇰🇷 한국어",
+  "common": {
+    "not_available": "사용할 수 없음",
+    "never": "없음",
+    "unlimited": "무제한",
+    "none": "없음",
+    "yes": "예",
+    "no": "아니요",
+    "processing": "⌯ <b>처리 중</b>\n\n✦ 요청한 작업을 준비하는 동안 잠시 기다려 주세요",
+    "state_expired": "⌯ <b>세션 만료</b>\n\n✦ 저장된 입력 세션이 10분 후 만료되었습니다. 작업을 다시 시작해 주세요",
+    "state_expired_popup": "작업을 다시 시작하세요",
+    "action_cancelled": "⌯ <b>작업 취소됨</b>\n\n✦ 선택한 작업이 취소되었으며 임시 상태가 삭제되었습니다",
+    "unexpected_error": "⌯ <b>예기치 않은 오류가 발생했습니다</b>\n\n✦ 다음 오류로 인해 작업을 완료할 수 없습니다: <code>{error}</code>",
+    "something_went_wrong": "이 작업을 처리하는 동안 오류가 발생했습니다. 다시 시도해 주세요"
+  },
+  "buttons": {
+    "start": "시작",
+    "confirm": "확인",
+    "back": "뒤로",
+    "subscribe": "구독",
+    "earn_points": "포인트 적립",
+    "share_and_earn": "공유하고 포인트 적립",
+    "link_account": "계정 연동",
+    "open_source": "채널 열기",
+    "refresh_subscription": "다시 확인",
+    "channel": "업데이트 채널",
+    "help": "도움말",
+    "profile": "프로필",
+    "contact_admin": "다른 결제 방법은 고객 지원팀에 문의",
+    "cancel": "취소",
+    "delete": "삭제",
+    "open": "열기",
+    "reject": "거절"
+  },
+  "commands": {
+    "bcjson": {
+      "description": "다국어 방송 템플릿 다운로드"
+    },
+    "start": {
+      "description": "봇 시작"
+    },
+    "help": {
+      "description": "도움말 센터 열기"
+    },
+    "profile": {
+      "description": "계정 및 포인트 보기"
+    },
+    "premium": {
+      "description": "구독 기능 보기"
+    },
+    "language": {
+      "description": "봇 언어 변경"
+    },
+    "login": {
+      "description": "Telegram 계정 연동"
+    },
+    "logout": {
+      "description": "연동된 계정 삭제"
+    },
+    "dl": {
+      "description": "Telegram 게시물 하나 다운로드"
+    },
+    "bdl": {
+      "description": "게시물 범위 다운로드"
+    },
+    "clone": {
+      "description": "전체 채널 전송"
+    },
+    "forcedownload": {
+      "description": "강제 다운로드 모드 관리"
+    },
+    "thumb": {
+      "description": "사용자 지정 썸네일 관리"
+    },
+    "caption": {
+      "description": "캡션 처리 관리"
+    },
+    "cancel": {
+      "description": "현재 작업 취소"
+    },
+    "stats": {
+      "description": "시스템 통계 보기"
+    },
+    "monitor": {
+      "description": "채널 자동 모니터링"
+    },
+    "uploadch": {
+      "description": "업로드 대상 채널 설정"
+    },
+    "rmuploadch": {
+      "description": "업로드 대상 삭제"
+    },
+    "bc": {
+      "description": "메시지 방송"
+    },
+    "add": {
+      "description": "관리 설정 추가"
+    },
+    "rm": {
+      "description": "관리 설정 삭제"
+    },
+    "create": {
+      "description": "선물 링크 생성"
+    },
+    "logs": {
+      "description": "봇 로그 다운로드"
+    },
+    "admin": {
+      "description": "관리"
+    }
+  },
+  "start": {
+    "welcome": "⌯ <b>미디어 다운로더에 오신 것을 환영합니다</b>\n\n✦ Telegram 게시물 링크를 보내면 미디어를 다운로드할 수 있습니다. 공개 또는 비공개 채널의 콘텐츠뿐 아니라 전달이 비활성화된 채널의 콘텐츠도 지원합니다. 여러 게시물을 다운로드하거나, 전체 채널을 전송하거나, 파일에 사용자 지정 썸네일을 적용하거나, 다운로드한 콘텐츠를 다른 채널로 직접 전송할 수도 있습니다\n\n✦ 연동된 계정: {account_status}"
+  },
+  "accounts": {
+    "status": {
+      "connected": "연결됨",
+      "not_connected": "연결되지 않음"
+    },
+    "session_expired": "⌯ <b>연동된 세션이 만료되었습니다</b>\n\n✦ 연동된 Telegram 계정이 더 이상 인증되지 않았습니다. 비공개 소스에 접근하기 전에 계정을 다시 연동해 주세요",
+    "access": {
+      "login_required": "⌯ <b>연동된 계정이 필요합니다</b>\n\n✦ 공유된 링크는 다운로드 계정이 접근할 수 없는 비공개 또는 제한된 소스에 속합니다. 해당 소스 채널에 이미 가입된 Telegram 계정을 연동한 후 링크를 다시 보내 주세요",
+      "not_member": "⌯ <b>연동된 계정이 채널 멤버가 아닙니다</b>\n\n✦ 봇에 연동된 Telegram 계정으로는 공유된 링크의 채널에 접근할 수 없습니다. 먼저 연동된 계정으로 해당 채널에 가입한 후 링크를 다시 보내 주세요"
+    },
+    "login": {
+      "choose_account": "⌯ <b>연동할 계정을 선택하세요</b>\n\n✦ 현재 Telegram 계정을 연동할지 다른 계정을 연동할지 선택하세요. 선택한 계정은 다운로드하려는 모든 비공개 채널에 이미 가입되어 있어야 합니다",
+      "already_running": "⌯ <b>로그인이 이미 진행 중입니다</b>\n\n✦ 다른 로그인 절차를 시작하기 전에 현재 로그인 절차를 완료하거나 취소해 주세요",
+      "already_connected": "⌯ <b>이미 연동된 계정이 있습니다</b>\n\n✦ 전화번호 <code>{phone_number}</code>이(가) 현재 연결되어 있습니다. 다른 계정을 연동하기 전에 /logout으로 삭제해 주세요",
+      "share_contact": "⌯ <b>전화번호를 공유하세요</b>\n\n✦ 아래 버튼을 사용하여 현재 Telegram 계정의 전화번호를 안전하게 공유하세요",
+      "enter_phone": "⌯ <b>다른 전화번호를 입력하세요</b>\n\n✦ 전화번호를 국제 형식으로 직접 보내 주세요. <code>+</code>로 시작하고 국가 번호를 포함해야 합니다. 예: <code>+12025550123</code>",
+      "invalid_phone": "⌯ <b>잘못된 전화번호</b>\n\n✦ 전화번호는 <code>+</code>로 시작하고 국가 번호를 포함해야 하며, 문자나 지원되지 않는 기호를 포함할 수 없습니다. 로그인을 다시 시작하거나 올바른 형식의 번호를 보내 주세요",
+      "contact_mismatch": "⌯ <b>연락처가 일치하지 않습니다</b>\n\n✦ 공유된 연락처가 봇을 사용 중인 Telegram 계정의 연락처가 아닙니다. 제공된 버튼으로 본인의 번호를 공유하거나 다른 계정 옵션을 선택하세요",
+      "contact_received": "⌯ <b>전화번호를 받았습니다</b>\n\n✦ 봇이 인증 요청을 준비하고 있습니다. Telegram에서 로그인 코드를 보낼 때까지 기다려 주세요",
+      "code_prompt": "⌯ <b>Telegram</b>\n\n✦ Telegram 코드는 숫자 버튼으로만 입력하세요\n✦ 삭제는 마지막 숫자를 지우고 확인은 코드를 전송합니다",
+      "code_prompt_with_value": "⌯ <b>Telegram</b>\n\n✦ <code>{code}</code>\n✦ Telegram 코드는 숫자 버튼으로만 입력하세요\n✦ 삭제는 마지막 숫자를 지우고 확인은 코드를 전송합니다",
+      "processing": "⌯ <b>계정 확인 중</b>\n\n✦ 코드를 확인하고 연동된 세션을 생성하고 있습니다",
+      "password_prompt": "⌯ <b>2단계 인증이 필요합니다</b>\n\n✦ 이 Telegram 계정의 2단계 인증 비밀번호를 텍스트 메시지로 보내 주세요\n\n✦ 비밀번호 힌트: <code>{hint}</code>",
+      "completed": "⌯ <b>계정이 성공적으로 연동되었습니다</b>\n\n✦ Telegram 계정이 연결되었습니다. 이 계정이 이미 멤버로 가입된 비공개 채널에 접근할 수 있습니다",
+      "cancelled": "⌯ <b>계정 연동이 취소되었습니다</b>\n\n✦ 임시 로그인 세션이 종료되었으며 계정 정보는 저장되지 않았습니다",
+      "restart_hint": "⌯ <b>준비되면 다시 시작하세요</b>\n\n✦ 새로운 계정 연동 절차를 시작하려면 언제든지 /login을 사용하세요",
+      "failed": "⌯ <b>계정 연동에 실패했습니다</b>\n\n✦ 인증 절차를 완료할 수 없습니다. 다시 시작하고 전화번호, 로그인 코드 및 비밀번호가 올바른지 확인하세요",
+      "flood_wait": "⌯ <b>로그인 시도가 너무 많습니다</b>\n\n✦ Telegram에서 새로운 인증 요청을 일시적으로 제한했습니다. {seconds}초 후 다시 시도하세요",
+      "invalid_code": "⌯ <b>코드가 잘못되었거나 만료되었습니다</b>\n\n✦ 코드가 거부되었거나 만료되었습니다. Telegram에서 가장 최근에 보낸 코드를 입력하거나, 취소한 후 로그인을 다시 시작하세요",
+      "invalid_password": "⌯ <b>인증 비밀번호가 잘못되었습니다</b>\n\n✦ 2단계 인증 비밀번호가 올바르지 않습니다. 올바른 비밀번호를 보내거나 로그인 절차를 취소하세요",
+      "code_empty_popup": "확인하기 전에 Telegram 코드를 입력하세요",
+      "invalid_code_popup": "코드가 잘못되었거나 만료되었습니다",
+      "buttons": {
+        "my_account": "현재 내 계정",
+        "other_account": "다른 계정",
+        "share_phone": "내 전화번호 공유"
+      },
+      "too_many_attempts": "⌯ <b>작업</b>\n\n✦ Telegram이 로그인 시도를 일시적으로 제한했습니다\n✦ 기다린 뒤 /login 을 다시 사용하세요",
+      "phone_banned": "⌯ <b>Telegram</b>\n\n✦ 이 전화번호는 Telegram에서 차단되었습니다\n✦ 다른 계정을 사용하거나 Telegram 지원팀에 문의하세요",
+      "hint_awaiting_contact": "⌯ <b>전화번호를 공유하세요</b>\n\n✦ 아래 버튼을 사용하여 현재 Telegram 계정의 전화번호를 안전하게 공유하세요",
+      "hint_awaiting_account_type": "⌯ <b>연동할 계정을 선택하세요</b>\n\n✦ 현재 Telegram 계정을 연동할지 다른 계정을 연동할지 선택하세요. 선택한 계정은 다운로드하려는 모든 비공개 채널에 이미 가입되어 있어야 합니다",
+      "hint_sending_code": "대기 중\nTelegram 코드는 숫자 버튼으로만 입력하세요\n삭제는 마지막 숫자를 지우고 확인은 코드를 전송합니다",
+      "hint_awaiting_code": "Telegram 코드는 숫자 버튼으로만 입력하세요\n삭제는 마지막 숫자를 지우고 확인은 코드를 전송합니다"
+    },
+    "logout": {
+      "not_connected": "⌯ <b>ℹ 연동된 계정이 없습니다</b>\n\n✦ 현재 봇 프로필에 연결된 Telegram 계정이 없습니다",
+      "confirm": "⌯ <b>연동된 계정 삭제</b>\n\n✦ 전화번호 <code>{phone_number}</code>의 연결이 해제되고 저장된 세션이 삭제됩니다. 계속하려는 경우에만 확인하세요",
+      "completed": "⌯ <b>연동된 계정이 삭제되었습니다</b>\n\n✦ 저장된 Telegram 세션이 성공적으로 삭제되었습니다. 언제든지 다른 계정을 연동할 수 있습니다"
+    }
+  },
+  "subscription": {
+    "required": "⌯ <b>구독이 필요합니다</b>\n\n✦ 봇을 사용하기 전에 아래에 나열된 채널에 가입한 후 확인 버튼을 누르세요\n\n✦ {channels}",
+    "completed": "⌯ <b>구독이 확인되었습니다</b>\n\n✦ 채널 가입 상태가 성공적으로 확인되었습니다. 이제 봇을 계속 사용할 수 있습니다",
+    "still_missing_popup": "필수 채널에 모두 가입해야 합니다"
+  },
+  "downloads": {
+    "invalid_link": "⌯ <b>잘못된 Telegram 링크</b>\n\n✦ <code>https://t.me/channel/123</code>과(와) 같이 Telegram 게시물을 직접 가리키는 링크를 보내 주세요",
+    "post_not_found": "⌯ <b>게시물을 찾을 수 없습니다</b>\n\n✦ 요청한 게시물이 존재하지 않거나, 삭제되었거나, 선택한 다운로드 계정으로 접근할 수 없습니다",
+    "nothing_to_download": "⌯ <b>다운로드할 내용이 없습니다</b>\n\n✦ 이 게시물에는 채널 이름이나 사진 변경 알림처럼 다운로드할 미디어나 텍스트가 없습니다",
+    "comment_unavailable": "⌯ <b>댓글을 확인할 수 없습니다</b>\n\n✦ 댓글 링크가 접근 가능한 토론 메시지를 가리키지 않거나 Telegram에서 참조된 메시지 식별자를 거부했습니다",
+    "client_unavailable": "⌯ <b>다운로드 계정을 사용할 수 없습니다</b>\n\n✦ 현재 이 콘텐츠를 가져올 수 있는 Telegram 계정이 없습니다. 나중에 다시 시도하거나 본인의 계정을 연동하세요",
+    "preparing": "⌯ <b>다운로드 준비 중</b>\n\n✦ 전송을 시작하기 전에 미디어 정보를 수집하고 있습니다",
+    "splitting": "⌯ <b>파일 분할 중</b>\n\n✦ 파일이 업로드 부분 제한보다 커서 지원되는 크기의 여러 부분으로 분할하고 있습니다",
+    "file_too_large": "⌯ <b>파일이 지원되는 크기를 초과합니다</b>\n\n✦ 이 파일의 크기가 {maximum_size}보다 크기 때문에 {action} 작업을 처리할 수 없습니다",
+    "file_too_small": "⌯ <b>파일이 비어 있거나 손상되었습니다</b>\n\n✦ 다운로드한 미디어가 유효한 파일로 간주하기에는 너무 작거나 Telegram에서 불완전한 파일을 반환했습니다",
+    "file_missing": "⌯ <b>다운로드한 파일이 없습니다</b>\n\n✦ 업로드하기 전에 임시 미디어 파일을 찾을 수 없거나 파일이 비어 있습니다",
+    "download_failed": "⌯ <b>다운로드 실패</b>\n\n✦ 여러 번 시도했지만 미디어를 가져올 수 없습니다. 소스 계정의 접근 권한을 확인한 후 다시 시도하세요",
+    "upload_failed": "⌯ <b>업로드 실패</b>\n\n✦ 미디어는 다운로드되었지만 전송할 수 없습니다. Telegram 응답: <code>{error}</code>",
+    "flood_wait": "⌯ <b>Telegram 요청 제한</b>\n\n✦ 업로드를 계속하기 전에 Telegram에서 {seconds}초 동안 기다리도록 요청했습니다",
+    "actions": {
+      "download": "다운로드",
+      "upload": "업로드"
+    },
+    "progress": {
+      "downloading": "다운로드 중",
+      "uploading": "업로드 중",
+      "body": "⌯ <b>{action}</b>\n\n✦ <code>{progress_bar}</code>\n\n✦ 전송됨: {current_size} / {total_size}\n✦ 진행률: {percentage}%\n✦ 속도: {speed}/초\n✦ 남은 시간: {eta}"
+    },
+    "parts": {
+      "item": "{total}개 중 {current}번째 부분"
+    },
+    "album": {
+      "preparing": "⌯ <b>미디어 앨범이 감지되었습니다</b>\n\n✦ 앨범에 선택된 항목이 {count}개 있으며 순서대로 처리됩니다",
+      "processing": "⌯ <b>미디어 앨범 처리 중</b>\n\n✦ {total}개 중 {current}번째 항목을 처리하고 있습니다"
+    },
+    "single": {
+      "usage": "/dl\nTelegram에서 게시물을 열고 길게 누르세요\n링크 복사를 선택하고 여기에 보내세요\n여러 게시물은 첫 게시물 링크부터 보내세요"
+    },
+    "batch": {
+      "usage": "/bdl\nTelegram에서 게시물을 열고 길게 누르세요\n링크 복사를 선택하고 여기에 보내세요\n여러 게시물은 첫 게시물 링크부터 보내세요\n같은 채널의 마지막 게시물 링크를 보내세요\n첫 게시물과 마지막 게시물 그리고 그 사이의 게시물이 모두 포함됩니다\n다음 단계에서 콘텐츠 종류를 선택합니다",
+      "different_sources": "⌯ <b>링크가 서로 다른 채팅에 속합니다</b>\n\n✦ 첫 번째 링크와 마지막 링크는 동일한 Telegram 채널 또는 그룹에서 가져와야 합니다",
+      "invalid_order": "⌯ <b>게시물 순서가 잘못되었습니다</b>\n\n✦ 첫 번째 링크는 마지막 링크보다 이전 게시물을 가리켜야 합니다",
+      "invalid_links": "⌯ <b>잘못된 일괄 다운로드 링크</b>\n\n✦ 두 값 모두 같은 소스의 유효한 Telegram 게시물 링크여야 합니다",
+      "starting": "⌯ <b>일괄 다운로드가 시작되었습니다</b>\n\n✦ 봇이 {start_id}번부터 {end_id}번까지의 게시물을 처리합니다. 요청한 전체 게시물 수: {total}",
+      "progress": "⌯ <b>일괄 다운로드 진행 중</b>\n\n✦ 현재 항목: {current}/{total}\n✦ 게시물 ID: {message_id}\n✦ 다운로드됨: {downloaded}\n✦ 건너뜀: {skipped}\n✦ 실패: {failed}",
+      "completed": "⌯ <b>일괄 작업이 완료되었습니다</b>\n\n✦ 다운로드됨: {downloaded}\n✦ 건너뜀: {skipped}\n✦ 실패: {failed}",
+      "cancelled": "⌯ <b>일괄 작업이 취소되었습니다</b>\n\n✦ 남은 게시물은 처리되지 않습니다. 취소 전에 저장된 진행 상황이 삭제되었습니다",
+      "failed": "⌯ <b>일괄 작업이 중단되었습니다</b>\n\n✦ 예기치 않은 오류로 인해 남은 게시물을 처리하지 못했습니다",
+      "retrying": "⌯ <b>실패한 항목 재시도 중</b>\n\n✦ 기본 처리가 완료되었습니다. 실패한 {count}개 항목을 지금 다시 시도합니다"
+    },
+    "disk_full": "⌯ <b>작업</b>\n\n✦ 지금은 파일을 다운로드할 공간이 부족합니다\n✦ 나중에 다시 시도하세요",
+    "paid": {
+      "not_purchased": "⌯ <b>이 게시물은 Telegram Stars로 구매해야 합니다</b>\n\n✦ 연결한 같은 계정으로 구매한 뒤 링크를 다시 보내세요"
+    }
+  },
+  "tasks": {
+    "already_running": "⌯ <b>다른 작업이 이미 실행 중입니다</b>\n\n✦ 진행 중인 작업이 완료될 때까지 기다리거나 해당 작업을 취소한 후 다른 작업을 시작하세요",
+    "resumed": "⌯ <b>작업이 재개되었습니다</b>\n\n✦ 중단된 작업을 찾았으며 마지막으로 저장된 위치부터 계속 진행합니다",
+    "cancel_requested": "⌯ <b>취소가 요청되었습니다</b>\n\n✦ 진행 중인 작업을 중지하고 임시 파일을 정리하고 있습니다",
+    "input_cancelled": "⌯ <b>입력 세션이 취소되었습니다</b>\n\n✦ 대기 중인 로그인, 필터 또는 확인 상태가 삭제되었습니다",
+    "none_to_cancel": "⌯ <b>ℹ 진행 중인 작업이 없습니다</b>\n\n✦ 취소할 실행 중인 작업이나 대기 중인 입력 세션이 없습니다",
+    "completion": {
+      "single": {
+        "private": "⌯ <b>다운로드 완료</b>\n\n✦ 요청한 미디어를 성공적으로 다운로드하여 이 채팅으로 전송했습니다",
+        "saved_messages": "⌯ <b>다운로드 완료</b>\n\n✦ 요청한 미디어를 다운로드하여 연동된 계정의 저장한 메시지로 전송했습니다",
+        "channel": "⌯ <b>업로드 완료</b>\n\n✦ 요청한 미디어를 <b>{channel_title}</b>에 성공적으로 전송했습니다\n\n✦ {message_link}"
+      },
+      "batch": {
+        "private": "⌯ <b>일괄 작업 완료</b>\n\n✦ 봇이 선택한 범위를 모두 처리하고 {count}개 항목을 이 채팅으로 전송했습니다",
+        "saved_messages": "⌯ <b>일괄 작업 완료</b>\n\n✦ 봇이 선택한 범위를 모두 처리하고 {count}개 항목을 연동된 계정의 저장한 메시지로 전송했습니다",
+        "channel": "⌯ <b>일괄 업로드 완료</b>\n\n✦ 봇이 선택한 범위를 모두 처리하고 {count}개 항목을 선택한 채널로 전송했습니다"
+      },
+      "clone": {
+        "private": "⌯ <b>채널 전송 완료</b>\n\n✦ 채널 작업이 완료되었으며 {count}개 항목이 이 채팅으로 전송되었습니다",
+        "saved_messages": "⌯ <b>채널 전송 완료</b>\n\n✦ 채널 작업이 완료되었으며 {count}개 항목이 연동된 계정의 저장한 메시지로 전송되었습니다",
+        "channel": "⌯ <b>채널 전송 완료</b>\n\n✦ 채널 작업이 완료되었으며 {count}개 항목이 선택한 대상 채널로 전송되었습니다"
+      },
+      "monitor": {
+        "private": "⌯ <b>모니터링된 게시물이 전송되었습니다</b>\n\n✦ 새 게시물이 감지되어 이 채팅으로 전송되었습니다",
+        "saved_messages": "⌯ <b>모니터링된 게시물이 전송되었습니다</b>\n\n✦ 새 게시물이 감지되어 연동된 계정의 저장한 메시지로 전송되었습니다",
+        "channel": "⌯ <b>모니터링된 게시물이 전송되었습니다</b>\n\n✦ 새 게시물이 감지되어 선택한 대상 채널로 전송되었습니다"
+      }
+    }
+  },
+  "filters": {
+    "prompt": "⌯ <b>콘텐츠 필터 선택</b>\n\n✦ 모든 콘텐츠를 처리할지, 선택한 미디어 유형만 저장할지, 또는 선택한 미디어 유형을 건너뛸지 선택하세요. 선택 세션은 10분 동안 유지됩니다",
+    "modes": {
+      "all": "모든 콘텐츠",
+      "save": "선택 항목만 저장",
+      "skip": "선택 항목 건너뛰기"
+    },
+    "types": {
+      "videos": "동영상",
+      "photos": "사진",
+      "audio": "오디오",
+      "files": "파일",
+      "text": "텍스트",
+      "other": "기타"
+    },
+    "summary": {
+      "all": "지원되는 모든 콘텐츠",
+      "save": "선택 항목만 저장: {types}",
+      "skip": "건너뛰기: {types}",
+      "minimum_duration": "최소 재생 시간: {seconds}초",
+      "maximum_duration": "최대 재생 시간: {seconds}초"
+    }
+  },
+  "clone": {
+    "usage": "/clone\n채널 링크나 사용자 이름을 보내세요\n비공개 채널은 이미 가입한 계정을 /login 으로 연결하세요",
+    "channel_not_found": "⌯ <b>채널을 찾을 수 없습니다</b>\n\n✦ 채널 사용자 이름 또는 링크가 잘못되었거나 연동된 계정으로 해당 채널을 확인할 수 없습니다",
+    "empty_channel": "⌯ <b>채널이 비어 있습니다</b>\n\n✦ 선택한 채널에서 전송할 수 있는 게시물을 찾지 못했습니다",
+    "starting": "⌯ <b>채널 전송이 시작되었습니다</b>\n\n✦ 봇이 <b>{channel_title}</b>의 게시물 식별자 {total}개를 처리할 준비를 하고 있습니다",
+    "progress": "⌯ <b>채널 전송 진행 중</b>\n\n✦ 현재 항목: {current}/{total}\n✦ 게시물 ID: {message_id}\n✦ 다운로드됨: {downloaded}\n✦ 건너뜀: {skipped}\n✦ 실패: {failed}",
+    "flood_wait": "⌯ <b>Telegram 요청 제한</b>\n\n✦ 채널 전송이 {seconds}초 동안 일시 중지되었습니다",
+    "completed": "⌯ <b>채널 처리가 완료되었습니다</b>\n\n✦ 다운로드됨: {downloaded}\n✦ 건너뜀: {skipped}\n✦ 실패: {failed}",
+    "cancelled": "⌯ <b>채널 전송이 취소되었습니다</b>\n\n✦ 남은 채널 게시물은 처리되지 않습니다",
+    "failed": "⌯ <b>채널 전송에 실패했습니다</b>\n\n✦ 예기치 않은 오류로 인해 전송을 완료하지 못했습니다"
+  },
+  "uploads": {
+    "channel": {
+      "usage": "/uploadch\n채널 선택\n봇 구독과 Telegram Premium은 별개의 구독입니다\n봇은 부분당 약 2 GB를 업로드합니다\n연결된 Telegram Premium 계정은 최대 4 GB를 하나의 파일로 보낼 수 있습니다\n/login 으로 계정을 연결하세요\n봇과 해당 계정을 목적지 채널의 관리자로 추가하고 /uploadch 로 채널을 선택하세요\n채널이 없으면 저장한 메시지를 선택할 수 있습니다\n문서로 보낸 분할 파일은 번호 순서대로 합쳐야 합니다\n가장 쉬운 방법 ↣ 내 채널이나 그룹에 봇을 관리자로 추가하면 여기서 확인을 요청해요",
+      "current": "⌯ <b>채널 선택</b>\n\n✦ {channel_id}\n✦ /uploadch\n✦ /rmuploadch",
+      "invalid_id": "⌯ <b>잘못된 채널 식별자</b>\n\n✦ 일반적으로 <code>-100</code>으로 시작하는 숫자 형식의 Telegram 채널 ID를 보내 주세요\n✦ 가장 쉬운 방법 ↣ 내 채널이나 그룹에 봇을 관리자로 추가하면 여기서 확인을 요청해요",
+      "bot_not_admin": "⌯ <b>봇 관리자 권한이 필요합니다</b>\n\n✦ 채널 업로드를 활성화하기 전에 봇을 대상 채널의 관리자로 추가하세요\n✦ 가장 쉬운 방법 ↣ 내 채널이나 그룹에 봇을 관리자로 추가하면 여기서 확인을 요청해요",
+      "user_not_admin": "⌯ <b>사용자의 관리자 권한이 필요합니다</b>\n\n✦ 대상 채널의 소유자 또는 관리자여야 합니다",
+      "access_denied": "⌯ <b>채널 확인에 실패했습니다</b>\n\n✦ 채널에 접근할 수 없거나 필요한 관리자 권한이 없습니다",
+      "enabled": "⌯ <b>업로드 채널이 연결되었습니다</b>\n\n✦ 이 대상을 삭제할 때까지 이후 다운로드한 콘텐츠가 <b>{channel_title}</b>에 전송됩니다",
+      "disabled": "⌯ <b>업로드 채널이 비활성화되었습니다</b>\n\n✦ 봇이 선택한 채널의 관리자 권한을 잃어 채널 전송 기능이 자동으로 비활성화되었습니다",
+      "removed": "⌯ <b>업로드 채널이 삭제되었습니다</b>\n\n✦ 이후 다운로드한 콘텐츠는 기본 전송 대상으로 돌아갑니다",
+      "not_set": "⌯ <b>ℹ 설정된 업로드 채널이 없습니다</b>\n\n✦ 현재 프로필에 대상 채널이 설정되어 있지 않습니다"
+    },
+    "auto": {
+      "start_first": "⌯ <b>채널 연결 완료하기</b>\n\n✦ 봇을 추가한 곳 ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ 시작을 눌러 봇에 등록하면 연결이 완료돼요\n✦ 24시간 안에 누르지 않으면 봇이 나가요",
+      "premium_only": "⌯ <b>채널 연결은 구독자 전용이에요</b>\n\n✦ 봇을 추가한 곳 ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ 채널이나 그룹으로 다운로드를 받는 건 봇 구독 기능이에요\n✦ 봇이 나갔어요\n✦ 아래 버튼으로 구독한 뒤 봇을 다시 추가하세요",
+      "confirm": "⌯ <b>업로드 채널 확인</b>\n\n✦ 봇을 추가한 곳 ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ 확인하면 새 다운로드와 모니터링 게시물이 그곳으로 가요\n✦ 거절하면 봇이 나가요\n✦ 24시간 안에 답이 없으면 봇이 스스로 나가요",
+      "linked": "⌯ <b>업로드 채널이 연결됐어요</b>\n\n✦ 채널 ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ 새 다운로드와 모니터링 게시물이 그곳으로 가요\n✦ 해제하려면 /rmuploadch 를 보내세요",
+      "no_rights": "⌯ <b>봇이 그곳에 게시할 수 없어요</b>\n\n✦ 채널 ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ 관리자가 아니거나 게시 권한이 없어서 봇이 나갔어요\n✦ 게시 권한이 있는 관리자로 다시 추가하세요",
+      "user_not_admin": "⌯ <b>그곳의 관리자여야 해요</b>\n\n✦ 채널 ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ 업로드 채널은 본인 소유이거나 관리자로 있어야 해요\n✦ 봇이 나갔어요",
+      "expired": "이 요청은 만료됐어요"
+    }
+  },
+  "forcedownload": {
+    "details": "⌯ <b>강제 다운로드 모드</b>\n\n✦ 활성화하면 봇이 미디어 항목을 직접 복사하는 대신 모두 다운로드하고 업로드합니다. 사용자 지정 썸네일 적용, 파일 재구성 또는 전달 제한 처리 시 유용합니다\n\n✦ 현재 상태: {status}",
+    "premium_required": "⌯ <b>구독이 필요합니다</b>\n\n✦ 강제 다운로드 모드는 추가 저장 공간, 대역폭 및 처리 리소스를 사용하므로 구독자에게만 제공됩니다",
+    "flag_removed": "⌯ <b>ℹ --fdl 옵션이 삭제되었습니다</b>\n\n✦ 강제 다운로드는 이제 영구적인 사용자 모드입니다. 구독자는 개별 명령에 옵션을 추가하는 대신 /forcedownload를 사용하여 관리할 수 있습니다",
+    "enabled": "⌯ <b>강제 다운로드 모드가 활성화되었습니다</b>\n\n✦ 이후 다운로드, 일괄 다운로드, 채널 전송 및 모니터링 작업에서 게시물을 직접 복사하는 대신 원본 파일을 가져와 업로드합니다",
+    "disabled": "⌯ <b>강제 다운로드 모드가 비활성화되었습니다</b>\n\n✦ 봇은 제한이 없는 게시물을 다시 직접 복사할 수 있으며, 필요한 경우에는 보호된 콘텐츠를 계속 다운로드합니다",
+    "status": {
+      "enabled": "활성화됨",
+      "disabled": "비활성화됨"
+    },
+    "buttons": {
+      "enable": "강제 다운로드 활성화",
+      "disable": "강제 다운로드 비활성화"
+    }
+  },
+  "thumbnail": {
+    "not_set": "⌯ <b>사용자 지정 썸네일이 없습니다</b>\n\n✦ 먼저 봇에 이미지를 보낸 후 확인하여 지원되는 업로드 파일의 표지로 사용하세요",
+    "current": "⌯ <b>현재 사용자 지정 썸네일</b>\n\n✦ 지원되는 향후 업로드를 위해 저장된 이미지입니다\n\n✦ 상태: {status}",
+    "confirm": "⌯ <b>이 이미지를 썸네일로 사용</b>\n\n✦ 확인하여 이 이미지를 사용자 지정 표지로 저장하거나, 취소하여 임시 이미지를 삭제하세요",
+    "saved": "⌯ <b>썸네일이 저장되었습니다</b>\n\n✦ 이미지가 저장되었으며 지원되는 향후 업로드에 사용하도록 활성화되었습니다",
+    "download_failed": "⌯ <b>이미지 다운로드 실패</b>\n\n✦ 이미지를 저장할 수 없습니다. 다시 보내고 Telegram에서 업로드가 완료되었는지 확인하세요",
+    "temp_missing": "⌯ <b>임시 이미지를 사용할 수 없습니다</b>\n\n✦ 확인 세션이 만료되었거나 임시 이미지가 삭제되었습니다. 이미지를 다시 보내 주세요",
+    "not_set_popup": "사용할 수 있는 저장된 썸네일이 없습니다",
+    "status": {
+      "enabled": "활성화됨",
+      "disabled": "비활성화됨"
+    },
+    "buttons": {
+      "enable": "썸네일 활성화",
+      "disable": "썸네일 비활성화"
+    }
+  },
+  "captions": {
+    "settings": "⌯ <b>캡션 처리</b>\n\n✦ 미디어를 복사하거나 업로드할 때 캡션을 처리하는 방법을 선택하세요\n\n✦ 현재 모드: {current}",
+    "modes": {
+      "keep_all": "원본 캡션 유지",
+      "remove_all": "미디어 캡션 삭제",
+      "remove_links_users": "링크 및 사용자 이름 삭제"
+    },
+    "buttons": {
+      "keep_all": "원본 캡션 유지",
+      "remove_all": "모든 캡션 삭제",
+      "remove_links_users": "링크 및 사용자 이름 삭제"
+    },
+    "already_selected_popup": "이 캡션 모드는 이미 활성화되어 있습니다",
+    "updated_popup": "캡션 모드가 업데이트되었습니다"
+  },
+  "profile": {
+    "unavailable": "⌯ <b>프로필을 사용할 수 없습니다</b>\n\n✦ 저장된 사용자 기록을 불러올 수 없습니다. /start를 보낸 후 다시 시도하세요",
+    "details": "⌯ <b>내 프로필</b>\n\n✦ 사용자 ID: <code>{user_id}</code>\n✦ 요금제: {plan_status}\n✦ 요금제 만료일: {expiry_date}\n✦ 일일 포인트: {daily_points}/{daily_limit}\n✦ 일일 초기화: {reset_time}\n✦ 선물 포인트: {gift_points}\n✦ 추천 포인트: {referral_points}\n✦ 추천 수: {referral_count}\n✦ 강제 다운로드: {force_download_status}\n\n✦ 추천 링크:\n✦ <code>{referral_link}</code>"
+  },
+  "plans": {
+    "free": "무료",
+    "premium": "구독자",
+    "monthly": "월간",
+    "yearly": "연간"
+  },
+  "premium": {
+    "details": "⌯ <b>구독</b>\n\n✦ 구독\n✦ 최대 5개의 작업을 등록할 수 있습니다\n✦ 하나가 끝날 때까지 기다리거나 /cancel 로 취소하세요\n✦ 구독하면 공용 대기열을 건너뛸 수 있습니다\n✦ /clone\n✦ /monitor\n✦ /uploadch\n✦ /caption\n✦ /fdl\n✦ 봇 구독과 Telegram Premium은 별개의 구독입니다",
+    "feature_required": "⌯ <b>구독이 필요합니다</b>\n\n✦ 이 기능은 구독자만 사용할 수 있습니다. 구독 메뉴를 열어 이용 가능한 요금제를 확인하세요",
+    "already_active": "⌯ <b>구독이 활성화되어 있습니다</b>\n\n✦ 구독은 {expiry_date}까지 유효합니다",
+    "already_active_popup": "구독은 {expiry_date}까지 유효합니다",
+    "required_popup": "이 기능을 사용하려면 활성 구독이 필요합니다",
+    "granted": "⌯ <b>구독이 활성화되었습니다</b>\n\n✦ 계정이 성공적으로 업그레이드되었습니다. 현재 구독은 {expiry_date}에 만료됩니다",
+    "removed": "⌯ <b>ℹ 구독이 삭제되었습니다</b>\n\n✦ 계정의 구독자 전용 모드와 대상 설정이 비활성화되었습니다",
+    "buttons": {
+      "monthly": "월간 요금제",
+      "yearly": "연간 요금제"
+    },
+    "granted_days": "⌯ <b>구독</b>\n\n✦ 추가된 일수: {days}\n✦ 만료: {expiry_date}\n✦ 남은 기간이 있다면 그 뒤에 일수가 추가됩니다"
+  },
+  "language": {
+    "select": "⌯ <b>언어를 선택하세요</b>\n\n✦ 봇 메시지와 개인 Telegram 명령 메뉴에서 사용할 언어를 선택하세요",
+    "changed": "⌯ <b>언어가 변경되었습니다</b>\n\n✦ 이제 메시지와 Telegram 명령이 {language_name}(으)로 표시됩니다",
+    "unavailable_popup": "선택한 언어를 사용할 수 없습니다"
+  },
+  "limits": {
+    "insufficient_points": "⌯ <b>다운로드 포인트가 부족합니다</b>\n\n✦ 이 파일을 다운로드할 포인트가 부족합니다. 일일 잔액은 {time_left} 후 초기화되며, 추천을 통해 포인트를 추가로 적립할 수도 있습니다",
+    "insufficient_points_batch": "⌯ <b>일괄 작업에 필요한 포인트가 부족합니다</b>\n\n✦ 이 작업에는 {required_points}포인트가 필요하지만 현재 사용 가능한 잔액은 {available_points}포인트입니다",
+    "reset_now": "지금 초기화 중",
+    "cooldown": "⌯ <b>다시 다운로드하기 전에 기다려 주세요</b>\n\n✦ {remaining_time} 후에 다음 무료 다운로드를 시작할 수 있습니다"
+  },
+  "referrals": {
+    "share_text": "이 Telegram 다운로더를 사용하고 내 추천 링크를 통해 포인트를 적립하세요",
+    "new_referral": "⌯ <b>새로운 추천 사용자가 가입했습니다</b>\n\n✦ {user_name}님(<code>{user_id}</code>)이 추천 링크로 가입했습니다. 추천 포인트 {reward}점을 받았습니다",
+    "welcome_bonus": "⌯ <b>추천 보너스를 받았습니다</b>\n\n✦ 기존 사용자의 추천 링크를 통해 가입하여 {bonus}포인트를 받았습니다"
+  },
+  "gifts": {
+    "claim": {
+      "already_claimed": "⌯ <b>ℹ 이미 받은 선물입니다</b>\n\n✦ 이 선물은 이전에 계정에 추가되었으며 두 번 받을 수 없습니다",
+      "invalid": "⌯ <b>선물을 찾을 수 없습니다</b>\n\n✦ 선물 링크가 잘못되었거나 더 이상 존재하지 않습니다",
+      "inactive": "⌯ <b>선물이 비활성화되어 있습니다</b>\n\n✦ 관리자가 이 선물을 비활성화하여 더 이상 받을 수 없습니다",
+      "link_expired": "⌯ <b>선물 링크가 만료되었습니다</b>\n\n✦ 이 선물을 받을 수 있는 기간이 종료되었습니다",
+      "limit_reached": "⌯ <b>선물 수령 한도에 도달했습니다</b>\n\n✦ 허용된 최대 수령 횟수가 모두 사용되었습니다",
+      "not_allowed": "⌯ <b>계정에 지정되지 않은 선물입니다</b>\n\n✦ 이 선물은 특정 사용자만 받을 수 있으며 계정이 대상에 포함되지 않습니다",
+      "excluded": "⌯ <b>계정에서 사용할 수 없는 선물입니다</b>\n\n✦ 이 계정은 선물을 받을 수 없는 대상에 포함되어 있습니다",
+      "completed": "⌯ <b>선물을 받았습니다</b>\n\n✦ 계정에 {value}포인트가 성공적으로 추가되었습니다",
+      "completed_with_expiry": "⌯ <b>선물을 받았습니다</b>\n\n✦ 계정에 {value}포인트가 추가되었으며 {expiry_date}까지 사용할 수 있습니다",
+      "failed": "⌯ <b>선물 수령에 실패했습니다</b>\n\n✦ 선물을 계정에 적용할 수 없습니다. 나중에 다시 시도하세요"
+    }
+  },
+  "help": {
+    "menu": {
+      "title": "⌯ <b>도움말 센터</b>\n\n✦ 아래에서 기능을 선택하여 사용 방법과 권장 사용법을 확인하세요"
+    },
+    "buttons": {
+      "single": "단일 다운로드",
+      "batch": "일괄 다운로드",
+      "clone": "채널 전송",
+      "monitor": "채널 모니터링",
+      "channel_upload": "채널 업로드",
+      "forcedownload": "강제 다운로드",
+      "login": "연동된 계정",
+      "points": "포인트",
+      "premium": "구독",
+      "other_uses": "기타 사용법"
+    },
+    "features": {
+      "dl": "⌯ <b>게시물 하나 다운로드</b>\n\n✦ /dl\n✦ Telegram에서 게시물을 열고 길게 누르세요\n✦ 링크 복사를 선택하고 여기에 보내세요\n✦ 여러 게시물은 첫 게시물 링크부터 보내세요\n✦ <code>https://t.me/example_channel/15</code>\n✦ 채널 링크나 사용자 이름을 보내세요\n✦ 비공개 채널은 이미 가입한 계정을 /login 으로 연결하세요\n✦ 크기:\n✦ 봇은 부분당 약 2 GB를 업로드합니다\n✦ 다운로드 후 분할 또는 취소를 선택하세요\n✦ 최대 4 GB 파일을 통째로 보내려면 Telegram Premium 계정을 /login 으로 연결하고 /uploadch 로 채널을 선택하세요",
+      "bdl": "⌯ <b>여러 게시물 다운로드</b>\n\n✦ /bdl\n✦ Telegram에서 게시물을 열고 길게 누르세요\n✦ 링크 복사를 선택하고 여기에 보내세요\n✦ 여러 게시물은 첫 게시물 링크부터 보내세요\n✦ 같은 채널의 마지막 게시물 링크를 보내세요\n✦ 첫 게시물과 마지막 게시물 그리고 그 사이의 게시물이 모두 포함됩니다\n✦ 다음 단계에서 콘텐츠 종류를 선택합니다\n✦ <code>/bdl https://t.me/example_channel/15 https://t.me/example_channel/30</code>\n✦ /cancel 로 작업을 선택하거나 /cancel 뒤에 작업 번호를 붙여 보내세요",
+      "clone": "⌯ <b>전체 채널 전송</b>\n\n✦ 구독\n✦ /clone\n✦ 채널 링크나 사용자 이름을 보내세요\n✦ 비공개 채널은 이미 가입한 계정을 /login 으로 연결하세요\n✦ /uploadch\n✦ /cancel 로 작업을 선택하거나 /cancel 뒤에 작업 번호를 붙여 보내세요",
+      "monitor": "⌯ <b>새로운 채널 게시물 모니터링</b>\n\n✦ 구독\n✦ /monitor\n✦ 채널 링크나 사용자 이름을 보내세요\n✦ 비공개 채널은 이미 가입한 계정을 /login 으로 연결하세요\n✦ 채널:\n✦ 필터:\n✦ 공개 채널은 다운로드 계정을 사용합니다\n✦ 비공개 채널은 한 시간마다 한 계정씩 확인한 뒤 계정을 닫습니다\n✦ 새 게시물은 저장된 대기열에 들어가 순서대로 전송됩니다\n✦ 모니터링 중지",
+      "channel_upload": "⌯ <b>콘텐츠를 다른 채널로 전송</b>\n\n✦ 구독\n✦ /uploadch\n✦ 봇 구독과 Telegram Premium은 별개의 구독입니다\n✦ 봇은 부분당 약 2 GB를 업로드합니다\n✦ 연결된 Telegram Premium 계정은 최대 4 GB를 하나의 파일로 보낼 수 있습니다\n✦ /login 으로 계정을 연결하세요\n✦ 봇과 해당 계정을 목적지 채널의 관리자로 추가하고 /uploadch 로 채널을 선택하세요\n✦ 채널이 없으면 저장한 메시지를 선택할 수 있습니다\n✦ 문서로 보낸 분할 파일은 번호 순서대로 합쳐야 합니다\n✦ /rmuploadch\n✦ 가장 쉬운 방법 ↣ 내 채널이나 그룹에 봇을 관리자로 추가하면 여기서 확인을 요청해요",
+      "forcedownload": "⌯ <b>강제 다운로드 모드</b>\n\n✦ /forcedownload를 사용하면 봇이 제한 없는 게시물을 복사하는 대신 모든 파일을 가져와 업로드합니다. 이 모드는 사용자 지정 썸네일과 콘텐츠 재구성에 유용합니다",
+      "login": "⌯ <b>Telegram 계정 연동</b>\n\n✦ /login을 사용하고 현재 계정 또는 다른 계정을 선택하세요. 연동된 계정은 접근하려는 비공개 채널에 이미 가입되어 있어야 합니다. 인증 코드는 보안 키패드를 통해서만 입력됩니다\n✦ Telegram 코드는 숫자 버튼으로만 입력하세요\n✦ 삭제는 마지막 숫자를 지우고 확인은 코드를 전송합니다\n✦ 채널 링크나 사용자 이름을 보내세요\n✦ 비공개 채널은 이미 가입한 계정을 /login 으로 연결하세요\n✦ /logout",
+      "points": "⌯ <b>다운로드 포인트</b>\n\n✦ 무료 다운로드는 일일 포인트, 선물 포인트 및 추천 포인트를 사용합니다. 개인 링크를 공유하여 포인트를 추가로 적립하세요:\n\n✦ <code>{referral_link}</code>",
+      "premium": "⌯ <b>구독 기능</b>\n\n✦ /premium\n✦ 구독\n✦ 최대 5개의 작업을 등록할 수 있습니다\n✦ 하나가 끝날 때까지 기다리거나 /cancel 로 취소하세요\n✦ 구독하면 공용 대기열을 건너뛸 수 있습니다\n✦ /clone\n✦ /monitor\n✦ /uploadch\n✦ /caption\n✦ /fdl\n✦ 봇 구독과 Telegram Premium은 별개의 구독입니다",
+      "other_uses": "⌯ <b>봇의 다른 사용 방법</b>\n\n✦ <b>한 채널을 다른 채널로 전송:</b> /uploadch를 사용하여 대상을 설정한 후 소스 채널에서 /clone을 실행하세요. 선택한 콘텐츠가 필터에 따라 전송됩니다\n\n✦ <b>전체 시리즈의 표지 교체:</b> 새 표지 이미지를 봇에 보내 확인하고 강제 다운로드 모드를 활성화한 후 첫 번째 에피소드와 마지막 에피소드의 링크를 사용하여 /bdl을 실행하세요. 지원되는 경우 선택한 표지를 사용하여 파일을 다운로드하고 업로드합니다"
+    }
+  },
+  "monitor": {
+    "login_required": "⌯ <b>Telegram 계정 연동</b>\n\n✦ 채널 링크나 사용자 이름을 보내세요\n✦ 비공개 채널은 이미 가입한 계정을 /login 으로 연결하세요",
+    "usage": "⌯ <b>새로운 채널 게시물 모니터링</b>\n\n✦ {current_status}\n✦ /monitor\n✦ 채널 링크나 사용자 이름을 보내세요\n✦ 비공개 채널은 이미 가입한 계정을 /login 으로 연결하세요\n✦ 채널:\n✦ 필터:\n✦ 공개 채널은 다운로드 계정을 사용합니다\n✦ 비공개 채널은 한 시간마다 한 계정씩 확인한 뒤 계정을 닫습니다\n✦ 새 게시물은 저장된 대기열에 들어가 순서대로 전송됩니다\n✦ 모니터링 중지",
+    "invalid_channel_id": "⌯ <b>잘못된 채널 식별자</b>\n\n✦ 일반적으로 <code>-100</code>으로 시작하는 숫자 형식의 Telegram 채널 ID를 사용하세요",
+    "invalid_action": "⌯ <b>잘못된 모니터링 작업</b>\n\n✦ 모니터링을 시작하려면 <code>on</code>, 중지하려면 <code>off</code>를 사용하세요",
+    "not_active": "⌯ <b>ℹ 모니터링이 활성화되어 있지 않습니다</b>\n\n✦ 지정한 채널은 현재 계정에서 모니터링하고 있지 않습니다",
+    "already_active": "⌯ <b>ℹ 모니터링이 이미 활성화되어 있습니다</b>\n\n✦ 다른 채널을 선택하기 전에 현재 모니터링 중인 채널을 중지하세요",
+    "access_denied": "⌯ <b>채널 접근이 거부되었습니다</b>\n\n✦ 연동된 계정으로 지정된 채널을 열 수 없거나 식별자가 잘못되었습니다",
+    "start_failed": "⌯ <b>작업을 다시 시작하세요</b>\n\n✦ 채널 링크나 사용자 이름을 보내세요\n✦ 비공개 채널은 이미 가입한 계정을 /login 으로 연결하세요",
+    "started": "⌯ <b>새로운 채널 게시물 모니터링</b>\n\n✦ 채널: {channel_title}\n✦ 필터: {filter_status}\n✦ 공개 채널은 다운로드 계정을 사용합니다\n✦ 비공개 채널은 한 시간마다 한 계정씩 확인한 뒤 계정을 닫습니다\n✦ 새 게시물은 저장된 대기열에 들어가 순서대로 전송됩니다",
+    "stopped": "⌯ <b>채널 모니터링이 중지되었습니다</b>\n\n✦ 선택한 채널의 새 게시물은 더 이상 자동으로 처리되지 않습니다",
+    "session_stopped": "⌯ <b>모니터링이 중지되었습니다</b>\n\n✦ 연동된 Telegram 세션이 만료되었거나 취소되어 자동 모니터링이 비활성화되었습니다",
+    "status": {
+      "active": "채널 <code>{channel_id}</code>에서 활성화됨",
+      "inactive": "비활성"
+    },
+    "stop_button": "모니터링 중지",
+    "source_lost": "⌯ <b>채널 모니터링이 멈췄어요</b>\n\n✦ 채널 ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ 연결된 계정이 하루 종일 채널을 열지 못했어요\n✦ 삭제됐거나 비공개가 됐거나 계정이 나갔을 수 있어요\n✦ 다시 모니터링하려면 계정이 멤버인지 확인하고 /monitor 를 보내세요"
+  },
+  "stats": {
+    "system": "⌯ <b>시스템 통계</b>\n\n✦ 가동 시간: {uptime}\n✦ 디스크: {disk_usage} / {disk_total} ({disk_percent}%)\n✦ 메모리: {ram_percent}%\n✦ CPU: {cpu_percent}%\n✦ 네트워크 전송량: {sent}\n✦ 네트워크 수신량: {received}",
+    "admin": "⌯ <b>사용자 통계</b>\n\n✦ 전체 사용자: {total_users}\n✦ 구독자: {total_premium}\n✦ 관리자가 추가함: {premium_by_admin}\n✦ Stars로 결제함: {premium_by_stars}",
+    "public": "⌯ <b>봇 통계</b>\n\n✦ 가동 시간: {uptime}\n✦ 전체 다운로드: {total_downloads}"
+  },
+  "payments": {
+    "monthly": {
+      "title": "월간 구독",
+      "description": "구독자 기능을 30일 동안 활성화"
+    },
+    "yearly": {
+      "title": "연간 구독",
+      "description": "구독자 기능을 365일 동안 활성화"
+    },
+    "total_label": "구독 합계",
+    "invalid_plan_popup": "선택한 구독 요금제가 잘못되었습니다",
+    "invoice_failed_popup": "결제 청구서를 생성할 수 없습니다",
+    "unrecognized": "⌯ <b>결제 요금제를 인식할 수 없습니다</b>\n\n✦ 결제는 수신되었지만 구독 요금제를 확인할 수 없습니다. 결제 정보와 함께 고객 지원팀에 문의하세요",
+    "activation_failed": "⌯ <b>구독 활성화에 실패했습니다</b>\n\n✦ 결제는 수신되었지만 데이터베이스에서 구독을 활성화하지 못했습니다. 수동 지원을 받으려면 고객 지원팀에 문의하세요",
+    "completed": "⌯ <b>구독이 활성화되었습니다</b>\n\n✦ {plan_name} 요금제가 활성화되었으며 {expiry_date}에 만료됩니다"
+  },
+  "broadcast": {
+    "json": {
+      "file_required": "⌯ <b>방송 JSON 파일이 필요합니다</b>\n\n✦ 다국어 JSON 파일에 답장한 후 <code>/bc .</code>를 사용하세요",
+      "invalid_file": "⌯ <b>잘못된 방송 파일</b>\n\n✦ 답장한 문서는 JSON 파일이어야 합니다",
+      "validation_failed": "⌯ <b>방송 파일 검증에 실패했습니다</b>\n\n✦ 파일을 사용할 수 없습니다: <code>{error}</code>",
+      "confirm": "⌯ <b>다국어 방송 확인</b>\n\n✦ 파일에 사용 가능한 언어가 {language_count}개 있습니다. 사용자는 먼저 저장된 언어, 다음으로 기본 언어, 마지막으로 최종 대체 언어인 영어로 메시지를 받습니다\n\n✦ 필터: {filters}",
+      "how_to": "⌯ <b>다국어 브로드캐스트</b>\n\n✦ 아래 버튼을 눌러 사용 가능한 모든 언어가 포함된 JSON 템플릿을 받으세요. 원하는 각 언어의 <code>text</code> 값을 입력한 다음 파일을 업로드하고 <code>/bc .</code>로 답장하세요 — 비워둔 언어는 영어로 대체됩니다",
+      "template_sent": "⌯ <b>브로드캐스트 템플릿</b>\n\n✦ 이 파일에는 {language_count}개 언어가 포함되어 있으며 현재 언어 파일로부터 생성되었습니다"
+    },
+    "usage": "⌯ <b>메시지 방송</b>\n\n✦ 전송할 메시지에 답장한 후 /bc를 사용하세요. 선택적 필터에는 <code>-only USER_ID</code> 및 <code>-rm USER_ID --prem</code>이 포함됩니다",
+    "invalid_message": "⌯ <b>방송 메시지를 사용할 수 없습니다</b>\n\n✦ 답장한 메시지에 유효한 Telegram 식별자가 없습니다",
+    "confirm": "⌯ <b>방송 확인</b>\n\n✦ 메시지 ID: <code>{message_id}</code>\n✦ 필터: {filters}\n\n✦ 일반 전송 또는 전송 후 고정을 선택하세요",
+    "starting": "⌯ <b>방송이 시작되었습니다</b>\n\n✦ 선택된 사용자에게 메시지를 전송하고 있습니다",
+    "progress": "⌯ <b>방송 진행 중</b>\n\n✦ 처리됨: {processed}/{total}\n✦ 성공: {successful}\n✦ 실패: {failed}",
+    "completed": "⌯ <b>방송이 완료되었습니다</b>\n\n✦ 대상 사용자: {total}\n✦ 성공: {successful}\n✦ 실패: {failed}",
+    "cancelled": "⌯ <b>방송이 취소되었습니다</b>\n\n✦ 사용자 {processed}명을 처리한 후 작업이 중지되었습니다",
+    "buttons": {
+      "normal": "일반 전송",
+      "pin": "전송 후 고정",
+      "get_template": "JSON 템플릿 받기"
+    },
+    "filters": {
+      "none": "필터 없음",
+      "summary": "대상 사용자만: {only_count}, 제외된 사용자: {excluded_count}, 구독자 제외: {exclude_premium}"
+    }
+  },
+  "admin": {
+    "users": {
+      "new_language": "⌯ <b>사용할 수 없는 언어가 감지되었습니다</b>\n\n✦ 사용자: {first_name}\n✦ 사용자 ID: <code>{user_id}</code>\n✦ 감지된 코드: <code>{language_code}</code>",
+      "new_user": "⌯ <b>새 사용자가 가입했습니다</b>\n\n✦ 이름: {first_name} {last_name}\n✦ 사용자 ID: <code>{user_id}</code>\n✦ 사용자 이름: {username}\n✦ 전체 사용자: {total_users}",
+      "exported": "⌯ <b>사용자 내보내기 완료</b>\n\n✦ 첨부된 파일에 사용자 기록 {count}개가 포함되어 있습니다"
+    },
+    "payments": {
+      "new_subscription": "⌯ <b>새로운 유료 구독</b>\n\n✦ 사용자: {user_name}\n✦ 사용자 ID: <code>{user_id}</code>\n✦ 요금제: {plan_name}\n✦ 금액: {amount} Stars"
+    },
+    "pool": {
+      "insufficient": "⌯ <b>다운로드 계정 풀이 완전하지 않습니다</b>\n\n✦ 현재 불러온 계정: {current}\n✦ 추가로 필요한 계정: {missing}"
+    },
+    "gifts": {
+      "create_usage": "⌯ <b>선물 생성</b>\n\n✦ <code>/create -gift --value POINTS</code>를 사용하세요. 선택적 설정에는 <code>--linkexpiry DDHHMM</code>, <code>--giftexpiry DDHHMM</code>, <code>--onlyuser [IDS]</code>, <code>--exceptionuser [IDS]</code> 및 <code>--limit NUMBER</code>가 포함됩니다",
+      "value_required": "⌯ <b>선물 값이 필요합니다</b>\n\n✦ <code>--value</code> 뒤에 양수를 입력하세요",
+      "user_filter_conflict": "⌯ <b>사용자 필터가 충돌합니다</b>\n\n✦ 하나의 선물에 허용된 사용자 필터와 제외된 사용자 필터를 동시에 사용할 수 없습니다",
+      "invalid_duration": "⌯ <b>잘못된 기간</b>\n\n✦ 선물 기간에는 6자리 <code>DDHHMM</code> 형식을 사용하세요",
+      "invalid_values": "⌯ <b>잘못된 선물 설정</b>\n\n✦ 사용자 식별자, 수령 한도 및 입력한 모든 값을 확인하세요",
+      "created": "⌯ <b>선물이 생성되었습니다</b>\n\n✦ 선물 링크가 준비되었습니다:\n✦ <code>{gift_link}</code>",
+      "empty": "⌯ <b>ℹ 활성화된 선물이 없습니다</b>\n\n✦ 현재 활성화된 선물 링크가 없습니다",
+      "list_title": "⌯ <b>활성 선물</b>\n\n✦ 현재 다음 선물 링크를 사용할 수 있습니다",
+      "list_item": "<b>선물:</b> <code>{gift_pid}</code>\n값: {value}\n수령 횟수: {usage_count}/{usage_limit}\n링크 만료일: {expiry}\n생성일: {created_at}\n링크: <code>{gift_link}</code>",
+      "remove_usage": "⌯ <b>선물 삭제</b>\n\n✦ <code>/rm -gift --pid GIFT_ID</code>를 사용하세요",
+      "not_found": "⌯ <b>선물을 찾을 수 없습니다</b>\n\n✦ 입력한 식별자와 일치하는 활성 선물이 없습니다",
+      "remove_confirm": "⌯ <b>선물 비활성화</b>\n\n✦ 선물: <code>{gift_pid}</code>\n✦ 값: {value}\n✦ 수령 횟수: {usage_count}\n\n✦ 앞으로 선물을 받을 수 없도록 하려면 확인하세요",
+      "deactivated": "⌯ <b>선물이 비활성화되었습니다</b>\n\n✦ 선물 <code>{gift_pid}</code>을(를) 더 이상 받을 수 없습니다"
+    },
+    "add": {
+      "usage": "⌯ <b>관리 설정 추가</b>\n\n✦ /add를 <code>-premium</code>, <code>-lang</code> 또는 <code>-frcch</code>와 함께 사용하세요"
+    },
+    "remove": {
+      "usage": "⌯ <b>관리 설정 삭제</b>\n\n✦ /rm을 <code>-premium</code>, <code>-gift</code> 또는 <code>-frcch</code>와 함께 사용하세요"
+    },
+    "premium": {
+      "add_usage": "⌯ <b>구독</b>\n\n✦ /admin\n✦ 사용자를 선택하거나 숫자 사용자 ID를 보내세요\n✦ 일수\n✦ <code>/add -premium --user [123456789] --days 30</code>",
+      "added": "⌯ <b>구독 업데이트가 완료되었습니다</b>\n\n✦ 업데이트된 사용자: {users}\n✦ 찾을 수 없는 사용자: {missing}",
+      "remove_usage": "⌯ <b>구독 삭제</b>\n\n✦ <code>/rm -premium --user [USER_IDS]</code>를 사용하세요",
+      "removed": "⌯ <b>구독 삭제가 완료되었습니다</b>\n\n✦ 업데이트된 사용자: {users}\n✦ 찾을 수 없거나 비활성인 사용자: {missing}"
+    },
+    "languages": {
+      "reply_to_json": "⌯ <b>언어 파일이 필요합니다</b>\n\n✦ <code>/add -lang</code>을 사용할 때 유효한 JSON 언어 파일에 답장하세요",
+      "json_required": "⌯ <b>JSON 파일이 필요합니다</b>\n\n✦ 답장한 문서는 <code>.json</code> 확장자를 사용해야 합니다",
+      "already_exists": "⌯ <b>ℹ 언어가 이미 존재합니다</b>\n\n✦ <code>{language_code}</code> 언어가 이미 설치되어 있습니다. 교체하려면 <code>--update</code>를 추가하세요",
+      "invalid_json": "⌯ <b>잘못된 언어 파일</b>\n\n✦ JSON 파일을 불러올 수 없습니다: <code>{error}</code>",
+      "added": "⌯ <b>언어가 추가되었습니다</b>\n\n✦ <code>{language_code}</code> 언어를 이제 사용할 수 있습니다",
+      "updated": "⌯ <b>언어가 업데이트되었습니다</b>\n\n✦ <code>{language_code}</code> 언어를 성공적으로 다시 불러왔습니다"
+    },
+    "force_subscription": {
+      "empty": "⌯ <b>ℹ 필수 채널이 없습니다</b>\n\n✦ 현재 설정된 강제 구독 채널이 없습니다",
+      "list_title": "⌯ <b>필수 채널</b>\n\n✦ 현재 다음 채널의 가입이 필수입니다",
+      "list_item": "링크: {link}\n채널 ID: <code>{channel_id}</code>\n가입 수: {joined}\n한도: {limit}",
+      "add_usage": "⌯ <b>필수 채널 추가</b>\n\n✦ <code>/add -frcch --link CHANNEL_LINK --id CHANNEL_ID --limit NUMBER</code>를 사용하세요",
+      "permission_required": "⌯ <b>관리자 권한이 필요합니다</b>\n\n✦ 봇이 사용자 초대 권한을 가진 관리자여야 합니다",
+      "added": "⌯ <b>필수 채널이 추가되었습니다</b>\n\n✦ 채널: {channel_title}\n✦ 가입 한도: {limit}",
+      "add_failed": "⌯ <b>채널을 추가할 수 없습니다</b>\n\n✦ 채널 식별자, 링크 및 봇 관리자 권한을 확인하세요",
+      "remove_usage": "⌯ <b>필수 채널 삭제</b>\n\n✦ <code>/rm -frcch CHANNEL_ID</code>를 사용하거나 저장된 링크를 입력하세요",
+      "removed": "⌯ <b>필수 채널이 삭제되었습니다</b>\n\n✦ 이 채널은 더 이상 필수가 아닙니다",
+      "not_found": "⌯ <b>필수 채널을 찾을 수 없습니다</b>\n\n✦ 입력한 식별자 또는 링크와 일치하는 저장된 채널이 없습니다"
+    },
+    "logs": {
+      "not_found": "⌯ <b>로그 디렉터리를 사용할 수 없습니다</b>\n\n✦ 봇 로그 디렉터리가 존재하지 않습니다",
+      "empty": "⌯ <b>사용할 수 있는 로그가 없습니다</b>\n\n✦ 비어 있지 않은 봇 로그 파일을 찾지 못했습니다",
+      "file_caption": "⌯ <b>봇 로그</b>\n\n✦ 파일: <code>{filename}</code>",
+      "upload_failed": "⌯ <b>로그 업로드 실패</b>\n\n✦ 파일: <code>{filename}</code>\n✦ 오류: <code>{error}</code>"
+    }
+  },
+  "queue": {
+    "accepted": "⌯ <b>작업이 저장되었습니다</b>\n\n✦ 작업 ↣ {task_id}\n✦ /cancel 로 작업을 선택하거나 /cancel 뒤에 작업 번호를 붙여 보내세요\n✦ <code>/cancel {task_id}</code>",
+    "waiting_free": "⌯ <b>대기 중</b>\n\n✦ 앞에 대기 중인 사람: {ahead}\n✦ 자리가 나면 다운로드가 시작됩니다\n✦ 구독하면 공용 대기열을 건너뛸 수 있습니다",
+    "waiting_premium": "⌯ <b>대기 중</b>\n\n✦ 앞에 있는 내 작업: {ahead}\n✦ 작업은 하나씩 순서대로 실행됩니다",
+    "limit_free": "⌯ <b>작업</b>\n\n✦ 이미 진행 중인 작업이 있습니다\n✦ 완료될 때까지 기다리거나 /cancel 로 취소하세요\n✦ 최대 5개의 작업을 등록할 수 있습니다\n✦ 하나가 끝날 때까지 기다리거나 /cancel 로 취소하세요",
+    "limit_premium": "⌯ <b>작업</b>\n\n✦ 최대 {limit}개의 작업을 등록할 수 있습니다\n✦ 하나가 끝날 때까지 기다리거나 /cancel 로 취소하세요",
+    "lost_after_restart": "⌯ <b>작업을 다시 시작하세요</b>\n\n✦ 작업 ↣ {task_id}\n✦ Telegram에서 게시물을 열고 길게 누르세요\n✦ 링크 복사를 선택하고 여기에 보내세요\n✦ 여러 게시물은 첫 게시물 링크부터 보내세요",
+    "cancel_usage": "/cancel 로 작업을 선택하거나 /cancel 뒤에 작업 번호를 붙여 보내세요\n<code>/cancel 123</code>",
+    "cancelled_one": "작업 {task_id}가 취소되었습니다",
+    "not_found": "작업 {task_id}는 이미 끝났거나 본인의 작업이 아닙니다",
+    "choose_to_cancel": "⌯ <b>취소 작업</b>\n\n✦ /cancel 로 작업을 선택하거나 /cancel 뒤에 작업 번호를 붙여 보내세요",
+    "cancelled_popup": "취소",
+    "not_found_popup": "작업을 다시 시작하세요",
+    "buttons": {
+      "cancel": "취소 작업",
+      "upgrade": "구독",
+      "cancel_task": "작업 {task_id} {kind} {status}",
+      "cancel_all": "취소 작업 /cancel"
+    },
+    "kinds": {
+      "dl": "게시물 하나 다운로드",
+      "bdl": "여러 게시물 다운로드",
+      "clone": "전체 채널 전송",
+      "task": "작업",
+      "monitor": "새로운 채널 게시물 모니터링"
+    },
+    "status": {
+      "queued": "대기 중",
+      "running": "실행 중"
+    },
+    "task_number": "작업 {task_id}"
+  },
+  "spam": {
+    "per_second": "1초에 메시지를 하나 넘게 보내지 마세요",
+    "per_minute": "1분에 메시지를 20개 넘게 보내지 마세요\n이 봇은 다운로드 링크를 받습니다\n이번 분이 끝날 때까지 기다리세요",
+    "buttons": "1분 동안 버튼을 20번 넘게 눌렀습니다\n계속하기 전에 기다리세요\n반복하면 대기 시간이 두 배가 됩니다"
+  },
+  "flow": {
+    "first_link": "⌯ <b>게시물 하나 다운로드</b>\n\n✦ Telegram에서 게시물을 열고 길게 누르세요\n✦ 링크 복사를 선택하고 여기에 보내세요\n✦ 여러 게시물은 첫 게시물 링크부터 보내세요\n✦ <code>https://t.me/example_channel/15</code>",
+    "last_link": "⌯ <b>여러 게시물 다운로드</b>\n\n✦ 같은 채널의 마지막 게시물 링크를 보내세요\n✦ 첫 게시물과 마지막 게시물 그리고 그 사이의 게시물이 모두 포함됩니다\n✦ 다음 단계에서 콘텐츠 종류를 선택합니다",
+    "channel": "⌯ <b>채널 선택</b>\n\n✦ 채널 링크나 사용자 이름을 보내세요\n✦ 비공개 채널은 이미 가입한 계정을 /login 으로 연결하세요\n✦ <code>https://t.me/example_channel</code>",
+    "pick_channel": "채널 선택",
+    "invalid_channel": "채널 링크나 사용자 이름을 보내세요\n비공개 채널은 이미 가입한 계정을 /login 으로 연결하세요",
+    "upload_channel": "⌯ <b>업로드 채널 선택</b>\n\n✦ 가장 쉬운 방법 ↣ 내 채널이나 그룹에 게시 권한이 있는 관리자로 봇을 추가하세요\n✦ 봇이 여기로 확인 메시지를 보내면 확인을 누르세요\n✦ 또는 아래 채널 선택 버튼을 누르세요\n✦ 또는 채널 링크, 사용자명, <code>-100</code> 으로 시작하는 ID를 보내세요\n✦ 이 기능은 봇 구독이 필요해요"
+  },
+  "panel": {
+    "title": "⌯ <b>관리</b>\n\n✦ 구독 / 선물 / 필수 채널 / 일괄 전송",
+    "premium": "구독",
+    "gift": "선물",
+    "fsub": "필수 채널",
+    "broadcast": "일괄 전송",
+    "users": "사용자 내보내기",
+    "language": "언어 파일",
+    "gifts": "활성 선물",
+    "choose_user": "사용자를 선택하거나 숫자 사용자 ID를 보내세요",
+    "selected_users": "모든 사용자 ↣ {users}",
+    "selected_channel": "채널 선택 ↣ {channel_id}",
+    "custom": "다른 숫자",
+    "remove_premium": "취소 구독",
+    "days": "일수 ↣ {days}",
+    "value": "선물 포인트",
+    "link_days": "링크 유효 일수 / 선물 유효 기간에서 0은 만료 없음입니다",
+    "point_days": "포인트 유효 일수 / 선물 유효 기간에서 0은 만료 없음입니다",
+    "limit": "최대 수령 횟수",
+    "only_users": "지정 사용자 허용",
+    "exclude_users": "사용자 제외",
+    "send_broadcast": "일괄 전송할 메시지를 여기에 보내세요\n복사본을 확인하고 수신자를 선택하세요\n그런 다음 확인을 누르세요",
+    "send_language": "ar.json 처럼 언어 코드로 이름을 지은 JSON 파일을 보내세요\n새 파일이 유효한 경우에만 기존 파일을 바꿉니다",
+    "enter_value": "숫자 또는 쉼표로 구분한 사용자 ID를 보내세요\n답장을 삭제하고 메뉴를 갱신합니다",
+    "invalid_value": "올바른 숫자를 보내세요\n선물 유효 기간에서 0은 만료 없음입니다",
+    "audience_all": "모든 사용자",
+    "audience_premium": "구독자",
+    "audience_free": "무료 사용자",
+    "admins": "관리자",
+    "send_admin": "임명할 사용자의 숫자 ID를 보내거나 그 사용자의 메시지를 전달하세요\n제거하려면 아래 관리자를 누르세요",
+    "admin_added": "관리자 추가됨: {user_id}",
+    "admin_removed": "관리자 제거됨: {user_id}",
+    "admin_exists": "이미 관리자인 사용자입니다",
+    "no_admins": "아직 관리자가 없습니다",
+    "owner_only": "관리자는 소유자만 관리할 수 있습니다"
+  },
+  "large": {
+    "saved": "내 저장한 메시지로 보내기",
+    "split": "다운로드 후 분할",
+    "help_button": "설명",
+    "split_notice": "⌯ <b>다운로드 후 분할</b>\n\n✦ 크기: {size}\n✦ 봇은 부분당 약 2 GB를 업로드합니다\n✦ 다운로드 후 분할 또는 취소를 선택하세요\n✦ 최대 4 GB 파일을 통째로 보내려면 Telegram Premium 계정을 /login 으로 연결하고 /uploadch 로 채널을 선택하세요",
+    "premium_notice": "⌯ <b>내 저장한 메시지로 보내기</b>\n\n✦ 크기: {size}\n✦ 연결된 Telegram Premium 계정이 파일 전체를 저장한 메시지에 업로드할 수 있습니다\n✦ /uploadch 로 목적지 채널을 선택할 수도 있습니다\n✦ 파일을 분할해도 됩니다",
+    "help": "⌯ <b>설명</b>\n\n✦ 봇 구독과 Telegram Premium은 별개의 구독입니다\n✦ 봇은 부분당 약 2 GB를 업로드합니다\n✦ 연결된 Telegram Premium 계정은 최대 4 GB를 하나의 파일로 보낼 수 있습니다\n✦ /login 으로 계정을 연결하세요\n✦ 봇과 해당 계정을 목적지 채널의 관리자로 추가하고 /uploadch 로 채널을 선택하세요\n✦ 채널이 없으면 저장한 메시지를 선택할 수 있습니다\n✦ 문서로 보낸 분할 파일은 번호 순서대로 합쳐야 합니다"
+  },
+  "referral_check": {
+    "question": "⌯ <b>간단 확인</b>\n\n✦ 실제 사용자임을 확인하고 추천이 인정되도록 아래 문제를 풀어 주세요\n\n✦ {a} + {b} = ?",
+    "wrong": "⌯ <b>오답입니다</b>\n\n✦ 다시 시도해 주세요. 남은 횟수: {left}",
+    "failed": "⌯ <b>추천이 반영되지 않았습니다</b>\n\n✦ 확인 문제를 풀지 않아 추천이 반영되지 않았습니다. 봇은 평소처럼 사용할 수 있습니다"
+  },
+  "units": {
+    "b": "{n} B",
+    "kb": "{n} KB",
+    "mb": "{n} MB",
+    "gb": "{n} GB",
+    "tb": "{n} TB",
+    "pb": "{n} PB",
+    "day": "{n}d",
+    "hour": "{n}h",
+    "minute": "{n}m",
+    "second": "{n}s"
+  }
+}

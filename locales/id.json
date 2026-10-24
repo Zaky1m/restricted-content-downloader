@@ -1,0 +1,675 @@
+{
+  "lang_name": "🇮🇩 Bahasa Indonesia",
+  "common": {
+    "not_available": "Tidak tersedia",
+    "never": "Tidak pernah",
+    "unlimited": "Tanpa batas",
+    "none": "Tidak ada",
+    "yes": "Ya",
+    "no": "Tidak",
+    "processing": "⌯ <b>Sedang diproses</b>\n\n✦ Harap tunggu sementara operasi yang diminta sedang disiapkan",
+    "state_expired": "⌯ <b>Sesi telah kedaluwarsa</b>\n\n✦ Sesi input yang disimpan telah kedaluwarsa setelah sepuluh menit. Silakan mulai kembali operasi tersebut",
+    "state_expired_popup": "Mulai tugas lagi",
+    "action_cancelled": "⌯ <b>Operasi dibatalkan</b>\n\n✦ Operasi yang dipilih telah dibatalkan dan status sementaranya telah dihapus",
+    "unexpected_error": "⌯ <b>Terjadi kesalahan tak terduga</b>\n\n✦ Operasi tidak dapat diselesaikan karena kesalahan berikut: <code>{error}</code>",
+    "something_went_wrong": "Terjadi kesalahan saat memproses tindakan ini, silakan coba lagi"
+  },
+  "buttons": {
+    "start": "Mulai",
+    "confirm": "Konfirmasi",
+    "back": "Kembali",
+    "subscribe": "Berlangganan",
+    "earn_points": "Dapatkan poin",
+    "share_and_earn": "Bagikan dan dapatkan poin",
+    "link_account": "Tautkan akun",
+    "open_source": "Buka kanal",
+    "refresh_subscription": "Periksa lagi",
+    "channel": "Kanal pembaruan",
+    "help": "Bantuan",
+    "profile": "Profil",
+    "contact_admin": "Hubungi dukungan untuk metode pembayaran lainnya",
+    "cancel": "Batal",
+    "delete": "Hapus",
+    "open": "Buka",
+    "reject": "Tolak"
+  },
+  "commands": {
+    "bcjson": {
+      "description": "Unduh templat siaran multibahasa"
+    },
+    "start": {
+      "description": "Mulai bot"
+    },
+    "help": {
+      "description": "Buka pusat bantuan"
+    },
+    "profile": {
+      "description": "Lihat akun dan poin Anda"
+    },
+    "premium": {
+      "description": "Lihat fitur langganan"
+    },
+    "language": {
+      "description": "Ubah bahasa bot"
+    },
+    "login": {
+      "description": "Tautkan akun Telegram"
+    },
+    "logout": {
+      "description": "Hapus akun yang ditautkan"
+    },
+    "dl": {
+      "description": "Unduh satu postingan Telegram"
+    },
+    "bdl": {
+      "description": "Unduh rentang postingan"
+    },
+    "clone": {
+      "description": "Transfer seluruh kanal"
+    },
+    "forcedownload": {
+      "description": "Kelola mode unduh paksa"
+    },
+    "thumb": {
+      "description": "Kelola gambar mini khusus"
+    },
+    "caption": {
+      "description": "Kelola pemrosesan keterangan"
+    },
+    "cancel": {
+      "description": "Batalkan operasi saat ini"
+    },
+    "stats": {
+      "description": "Lihat statistik sistem"
+    },
+    "monitor": {
+      "description": "Pantau kanal secara otomatis"
+    },
+    "uploadch": {
+      "description": "Tetapkan kanal tujuan unggahan"
+    },
+    "rmuploadch": {
+      "description": "Hapus tujuan unggahan"
+    },
+    "bc": {
+      "description": "Siarkan pesan"
+    },
+    "add": {
+      "description": "Tambahkan pengaturan administratif"
+    },
+    "rm": {
+      "description": "Hapus pengaturan administratif"
+    },
+    "create": {
+      "description": "Buat tautan hadiah"
+    },
+    "logs": {
+      "description": "Unduh log bot"
+    },
+    "admin": {
+      "description": "Pengelolaan"
+    }
+  },
+  "start": {
+    "welcome": "⌯ <b>Selamat datang di pengunduh media</b>\n\n✦ Kirim tautan postingan Telegram untuk mengunduh medianya, termasuk konten dari kanal publik atau privat serta kanal yang menonaktifkan penerusan. Anda juga dapat mengunduh beberapa postingan, mentransfer seluruh kanal, menerapkan gambar mini khusus pada berkas, atau mengirim konten yang diunduh langsung ke kanal lain\n\n✦ Akun tertaut: {account_status}"
+  },
+  "accounts": {
+    "status": {
+      "connected": "Terhubung",
+      "not_connected": "Tidak terhubung"
+    },
+    "session_expired": "⌯ <b>Sesi tertaut telah kedaluwarsa</b>\n\n✦ Akun Telegram yang ditautkan tidak lagi memiliki otorisasi. Tautkan kembali akun tersebut sebelum mengakses sumber privat",
+    "access": {
+      "login_required": "⌯ <b>Akun tertaut diperlukan</b>\n\n✦ Tautan yang dibagikan berasal dari sumber privat atau terbatas yang tidak dapat diakses oleh akun pengunduh. Tautkan akun Telegram yang sudah menjadi anggota kanal sumber, lalu kirim ulang tautannya",
+      "not_member": "⌯ <b>Akun tertaut Anda bukan anggota</b>\n\n✦ Akun Telegram yang ditautkan ke bot tidak dapat mengakses kanal dalam tautan yang dibagikan. Bergabunglah terlebih dahulu ke kanal tersebut menggunakan akun tertaut, lalu kirim ulang tautannya"
+    },
+    "login": {
+      "choose_account": "⌯ <b>Pilih akun yang akan ditautkan</b>\n\n✦ Pilih apakah Anda ingin menautkan akun Telegram saat ini atau akun lain. Akun yang dipilih harus sudah menjadi anggota dari setiap kanal privat yang ingin Anda unduh",
+      "already_running": "⌯ <b>Proses masuk sudah berlangsung</b>\n\n✦ Selesaikan atau batalkan proses masuk saat ini sebelum memulai proses lainnya",
+      "already_connected": "⌯ <b>Sebuah akun sudah ditautkan</b>\n\n✦ Nomor telepon <code>{phone_number}</code> saat ini terhubung. Hapus akun tersebut dengan /logout sebelum menautkan akun lain",
+      "share_contact": "⌯ <b>Bagikan nomor telepon Anda</b>\n\n✦ Gunakan tombol di bawah untuk membagikan nomor telepon akun Telegram Anda saat ini dengan aman",
+      "enter_phone": "⌯ <b>Masukkan nomor telepon lain</b>\n\n✦ Kirim nomor telepon secara manual dalam format internasional. Nomor harus diawali dengan <code>+</code> diikuti kode negara, misalnya <code>+12025550123</code>",
+      "invalid_phone": "⌯ <b>Nomor telepon tidak valid</b>\n\n✦ Nomor harus diawali dengan <code>+</code> dan menyertakan kode negara tanpa huruf atau simbol yang tidak didukung. Mulai kembali proses masuk atau kirim nomor dengan format yang benar",
+      "contact_mismatch": "⌯ <b>Kontak tidak cocok</b>\n\n✦ Kontak yang dibagikan bukan milik akun Telegram yang menggunakan bot. Gunakan tombol yang disediakan untuk membagikan nomor Anda sendiri, atau pilih opsi akun lain",
+      "contact_received": "⌯ <b>Nomor telepon diterima</b>\n\n✦ Bot sedang menyiapkan permintaan otorisasi. Harap tunggu hingga Telegram mengirimkan kode masuk",
+      "code_prompt": "⌯ <b>Telegram</b>\n\n✦ Masukkan kode Telegram hanya dengan tombol angka\n✦ Hapus menghilangkan angka terakhir dan Konfirmasi mengirim kode",
+      "code_prompt_with_value": "⌯ <b>Telegram</b>\n\n✦ <code>{code}</code>\n✦ Masukkan kode Telegram hanya dengan tombol angka\n✦ Hapus menghilangkan angka terakhir dan Konfirmasi mengirim kode",
+      "processing": "⌯ <b>Memverifikasi akun</b>\n\n✦ Kode sedang diperiksa dan sesi tertaut sedang dibuat",
+      "password_prompt": "⌯ <b>Verifikasi dua langkah diperlukan</b>\n\n✦ Kirim kata sandi verifikasi dua langkah untuk akun Telegram ini sebagai pesan teks\n\n✦ Petunjuk kata sandi: <code>{hint}</code>",
+      "completed": "⌯ <b>Akun berhasil ditautkan</b>\n\n✦ Akun Telegram sekarang terhubung. Anda dapat mengakses kanal privat selama akun ini sudah menjadi anggotanya",
+      "cancelled": "⌯ <b>Penautan akun dibatalkan</b>\n\n✦ Sesi masuk sementara telah ditutup dan tidak ada informasi akun yang disimpan",
+      "restart_hint": "⌯ <b>Mulai kembali saat Anda siap</b>\n\n✦ Gunakan /login kapan pun Anda ingin memulai proses penautan akun yang baru",
+      "failed": "⌯ <b>Penautan akun gagal</b>\n\n✦ Proses otorisasi tidak dapat diselesaikan. Mulai kembali dan pastikan nomor telepon, kode masuk, serta kata sandi sudah benar",
+      "flood_wait": "⌯ <b>Terlalu banyak percobaan masuk</b>\n\n✦ Telegram sementara membatasi permintaan otorisasi baru. Coba lagi setelah {seconds} detik",
+      "invalid_code": "⌯ <b>Kode tidak valid atau telah kedaluwarsa</b>\n\n✦ Kode ditolak atau telah kedaluwarsa. Masukkan kode terbaru yang dikirim oleh Telegram, atau batalkan dan mulai kembali proses masuk",
+      "invalid_password": "⌯ <b>Kata sandi verifikasi salah</b>\n\n✦ Kata sandi verifikasi dua langkah salah. Kirim kata sandi yang benar atau batalkan proses masuk",
+      "code_empty_popup": "Masukkan kode Telegram sebelum mengonfirmasi",
+      "invalid_code_popup": "Kode tidak valid atau telah kedaluwarsa",
+      "buttons": {
+        "my_account": "Akun saya saat ini",
+        "other_account": "Akun lain",
+        "share_phone": "Bagikan nomor telepon saya"
+      },
+      "too_many_attempts": "⌯ <b>Tugas</b>\n\n✦ Telegram membatasi sementara percobaan masuk\n✦ Tunggu sebelum memakai /login lagi",
+      "phone_banned": "⌯ <b>Telegram</b>\n\n✦ Nomor ini diblokir di Telegram\n✦ Gunakan akun lain atau hubungi dukungan Telegram",
+      "hint_awaiting_contact": "⌯ <b>Bagikan nomor telepon Anda</b>\n\n✦ Gunakan tombol di bawah untuk membagikan nomor telepon akun Telegram Anda saat ini dengan aman",
+      "hint_awaiting_account_type": "⌯ <b>Pilih akun yang akan ditautkan</b>\n\n✦ Pilih apakah Anda ingin menautkan akun Telegram saat ini atau akun lain. Akun yang dipilih harus sudah menjadi anggota dari setiap kanal privat yang ingin Anda unduh",
+      "hint_sending_code": "Menunggu\nMasukkan kode Telegram hanya dengan tombol angka\nHapus menghilangkan angka terakhir dan Konfirmasi mengirim kode",
+      "hint_awaiting_code": "Masukkan kode Telegram hanya dengan tombol angka\nHapus menghilangkan angka terakhir dan Konfirmasi mengirim kode"
+    },
+    "logout": {
+      "not_connected": "⌯ <b>ℹ Tidak ada akun yang ditautkan</b>\n\n✦ Saat ini tidak ada akun Telegram yang terhubung ke profil bot Anda",
+      "confirm": "⌯ <b>Hapus akun tertaut</b>\n\n✦ Nomor telepon <code>{phone_number}</code> akan diputuskan dan sesi yang disimpan akan dihapus. Konfirmasikan hanya jika Anda ingin melanjutkan",
+      "completed": "⌯ <b>Akun tertaut telah dihapus</b>\n\n✦ Sesi Telegram yang disimpan berhasil dihapus. Anda dapat menautkan akun lain kapan saja"
+    }
+  },
+  "subscription": {
+    "required": "⌯ <b>Langganan diperlukan</b>\n\n✦ Bergabunglah ke kanal yang tercantum di bawah sebelum menggunakan bot, lalu tekan tombol periksa\n\n✦ {channels}",
+    "completed": "⌯ <b>Langganan terverifikasi</b>\n\n✦ Keanggotaan kanal Anda berhasil diverifikasi. Sekarang Anda dapat melanjutkan menggunakan bot",
+    "still_missing_popup": "Anda masih harus bergabung ke semua kanal yang diwajibkan"
+  },
+  "downloads": {
+    "invalid_link": "⌯ <b>Tautan Telegram tidak valid</b>\n\n✦ Kirim tautan yang mengarah langsung ke postingan Telegram, seperti <code>https://t.me/channel/123</code>",
+    "post_not_found": "⌯ <b>Postingan tidak ditemukan</b>\n\n✦ Postingan yang diminta tidak ada, telah dihapus, atau tidak dapat diakses oleh akun pengunduh yang dipilih",
+    "nothing_to_download": "⌯ <b>Tidak ada yang bisa diunduh</b>\n\n✦ Postingan ini tidak berisi media atau teks untuk diunduh, seperti pemberitahuan bahwa nama atau foto channel diubah",
+    "comment_unavailable": "⌯ <b>Komentar tidak dapat ditemukan</b>\n\n✦ Tautan komentar tidak mengarah ke pesan diskusi yang dapat diakses, atau Telegram menolak pengenal pesan yang dirujuk",
+    "client_unavailable": "⌯ <b>Akun pengunduh tidak tersedia</b>\n\n✦ Saat ini tidak ada akun Telegram yang tersedia untuk mengambil konten ini. Coba lagi nanti atau tautkan akun Anda sendiri",
+    "preparing": "⌯ <b>Menyiapkan unduhan</b>\n\n✦ Informasi media sedang dikumpulkan sebelum transfer dimulai",
+    "splitting": "⌯ <b>Membagi berkas</b>\n\n✦ Berkas lebih besar daripada batas bagian unggahan dan sedang dibagi menjadi beberapa bagian yang didukung",
+    "file_too_large": "⌯ <b>Berkas melebihi ukuran yang didukung</b>\n\n✦ Berkas ini tidak dapat diproses untuk {action} karena ukurannya lebih besar daripada {maximum_size}",
+    "file_too_small": "⌯ <b>Berkas kosong atau rusak</b>\n\n✦ Media yang diunduh terlalu kecil untuk dianggap valid, atau Telegram mengembalikan berkas yang tidak lengkap",
+    "file_missing": "⌯ <b>Berkas yang diunduh tidak ditemukan</b>\n\n✦ Berkas media sementara tidak dapat ditemukan atau kosong sebelum diunggah",
+    "download_failed": "⌯ <b>Unduhan gagal</b>\n\n✦ Media tidak dapat diambil setelah beberapa kali percobaan. Periksa akses akun sumber dan coba lagi",
+    "upload_failed": "⌯ <b>Unggahan gagal</b>\n\n✦ Media telah diunduh tetapi tidak dapat dikirimkan. Telegram mengembalikan: <code>{error}</code>",
+    "flood_wait": "⌯ <b>Batas laju Telegram</b>\n\n✦ Telegram meminta penundaan selama {seconds} detik sebelum unggahan dapat dilanjutkan",
+    "actions": {
+      "download": "unduhan",
+      "upload": "unggahan"
+    },
+    "progress": {
+      "downloading": "Mengunduh",
+      "uploading": "Mengunggah",
+      "body": "⌯ <b>{action}</b>\n\n✦ <code>{progress_bar}</code>\n\n✦ Ditransfer: {current_size} / {total_size}\n✦ Progres: {percentage}%\n✦ Kecepatan: {speed}/dtk\n✦ Tersisa: {eta}"
+    },
+    "parts": {
+      "item": "Bagian {current} dari {total}"
+    },
+    "album": {
+      "preparing": "⌯ <b>Album media terdeteksi</b>\n\n✦ Album berisi {count} item yang dipilih dan akan diproses secara berurutan",
+      "processing": "⌯ <b>Memproses album media</b>\n\n✦ Memproses item {current} dari {total}"
+    },
+    "single": {
+      "usage": "/dl\nBuka postingan di Telegram lalu tekan dan tahan\nPilih Salin tautan dan kirim tautannya di sini\nUntuk beberapa postingan kirim tautan postingan pertama dulu"
+    },
+    "batch": {
+      "usage": "/bdl\nBuka postingan di Telegram lalu tekan dan tahan\nPilih Salin tautan dan kirim tautannya di sini\nUntuk beberapa postingan kirim tautan postingan pertama dulu\nKirim tautan postingan terakhir dari kanal yang sama\nKedua postingan dan semua yang di antaranya akan diunduh\nSetelah itu pilih jenis konten",
+      "different_sources": "⌯ <b>Tautan berasal dari obrolan yang berbeda</b>\n\n✦ Tautan pertama dan terakhir harus berasal dari kanal atau grup Telegram yang sama",
+      "invalid_order": "⌯ <b>Urutan postingan salah</b>\n\n✦ Tautan pertama harus mengarah ke postingan yang lebih awal daripada tautan terakhir",
+      "invalid_links": "⌯ <b>Tautan batch tidak valid</b>\n\n✦ Kedua nilai harus berupa tautan postingan Telegram yang valid dari sumber yang sama",
+      "starting": "⌯ <b>Unduhan batch dimulai</b>\n\n✦ Bot akan memproses postingan dari {start_id} hingga {end_id}. Jumlah postingan yang diminta: {total}",
+      "progress": "⌯ <b>Unduhan batch sedang berlangsung</b>\n\n✦ Item saat ini: {current} dari {total}\n✦ ID postingan: {message_id}\n✦ Diunduh: {downloaded}\n✦ Dilewati: {skipped}\n✦ Gagal: {failed}",
+      "completed": "⌯ <b>Operasi batch selesai</b>\n\n✦ Diunduh: {downloaded}\n✦ Dilewati: {skipped}\n✦ Gagal: {failed}",
+      "cancelled": "⌯ <b>Operasi batch dibatalkan</b>\n\n✦ Postingan yang tersisa tidak akan diproses. Progres yang disimpan sebelum pembatalan telah dihapus",
+      "failed": "⌯ <b>Operasi batch dihentikan</b>\n\n✦ Kesalahan tak terduga mencegah postingan yang tersisa untuk diproses",
+      "retrying": "⌯ <b>Mencoba ulang item yang gagal</b>\n\n✦ Proses utama telah selesai. {count} item yang gagal akan dicoba ulang sekarang"
+    },
+    "disk_full": "⌯ <b>Tugas</b>\n\n✦ Ruang penyimpanan saat ini tidak cukup untuk mengunduh berkas\n✦ Coba lagi nanti",
+    "paid": {
+      "not_purchased": "⌯ <b>Postingan ini harus dibeli dengan Telegram Stars</b>\n\n✦ Beli memakai akun tertaut lalu kirim ulang tautannya"
+    }
+  },
+  "tasks": {
+    "already_running": "⌯ <b>Tugas lain sudah berjalan</b>\n\n✦ Tunggu hingga tugas aktif selesai atau batalkan tugas tersebut sebelum memulai operasi lain",
+    "resumed": "⌯ <b>Tugas dilanjutkan</b>\n\n✦ Tugas yang terhenti ditemukan dan akan dilanjutkan dari posisi terakhir yang disimpan",
+    "cancel_requested": "⌯ <b>Pembatalan diminta</b>\n\n✦ Operasi aktif sedang dihentikan dan berkas sementara akan dibersihkan",
+    "input_cancelled": "⌯ <b>Sesi input dibatalkan</b>\n\n✦ Status masuk, filter, atau konfirmasi yang tertunda telah dihapus",
+    "none_to_cancel": "⌯ <b>ℹ Tidak ada operasi aktif</b>\n\n✦ Tidak ada tugas yang sedang berjalan atau sesi input tertunda untuk dibatalkan",
+    "completion": {
+      "single": {
+        "private": "⌯ <b>Unduhan selesai</b>\n\n✦ Media yang diminta berhasil diunduh dan dikirim ke obrolan ini",
+        "saved_messages": "⌯ <b>Unduhan selesai</b>\n\n✦ Media yang diminta telah diunduh dan dikirimkan ke Pesan Tersimpan milik akun tertaut Anda",
+        "channel": "⌯ <b>Unggahan selesai</b>\n\n✦ Media yang diminta berhasil dikirimkan ke <b>{channel_title}</b>\n\n✦ {message_link}"
+      },
+      "batch": {
+        "private": "⌯ <b>Tugas batch selesai</b>\n\n✦ Bot selesai memproses rentang yang dipilih dan mengirimkan {count} item ke obrolan ini",
+        "saved_messages": "⌯ <b>Tugas batch selesai</b>\n\n✦ Bot selesai memproses rentang yang dipilih dan mengirimkan {count} item ke Pesan Tersimpan milik akun tertaut Anda",
+        "channel": "⌯ <b>Unggahan batch selesai</b>\n\n✦ Bot selesai memproses rentang yang dipilih dan mengirimkan {count} item ke kanal yang Anda pilih"
+      },
+      "clone": {
+        "private": "⌯ <b>Transfer kanal selesai</b>\n\n✦ Tugas kanal telah selesai dan {count} item dikirimkan ke obrolan ini",
+        "saved_messages": "⌯ <b>Transfer kanal selesai</b>\n\n✦ Tugas kanal telah selesai dan {count} item dikirimkan ke Pesan Tersimpan milik akun tertaut Anda",
+        "channel": "⌯ <b>Transfer kanal selesai</b>\n\n✦ Tugas kanal telah selesai dan {count} item dikirimkan ke kanal tujuan yang Anda pilih"
+      },
+      "monitor": {
+        "private": "⌯ <b>Postingan yang dipantau telah dikirim</b>\n\n✦ Postingan baru terdeteksi dan dikirimkan ke obrolan ini",
+        "saved_messages": "⌯ <b>Postingan yang dipantau telah dikirim</b>\n\n✦ Postingan baru terdeteksi dan dikirimkan ke Pesan Tersimpan milik akun tertaut Anda",
+        "channel": "⌯ <b>Postingan yang dipantau telah dikirim</b>\n\n✦ Postingan baru terdeteksi dan dikirimkan ke kanal tujuan yang Anda pilih"
+      }
+    }
+  },
+  "filters": {
+    "prompt": "⌯ <b>Pilih filter konten</b>\n\n✦ Pilih apakah Anda ingin memproses semua konten, menyimpan hanya jenis media tertentu, atau melewati jenis media tertentu. Sesi pemilihan tetap aktif selama sepuluh menit",
+    "modes": {
+      "all": "Semua konten",
+      "save": "Simpan hanya",
+      "skip": "Lewati yang dipilih"
+    },
+    "types": {
+      "videos": "Video",
+      "photos": "Foto",
+      "audio": "Audio",
+      "files": "Berkas",
+      "text": "Teks",
+      "other": "Lainnya"
+    },
+    "summary": {
+      "all": "Semua konten yang didukung",
+      "save": "Simpan hanya: {types}",
+      "skip": "Lewati: {types}",
+      "minimum_duration": "Durasi minimum: {seconds} detik",
+      "maximum_duration": "Durasi maksimum: {seconds} detik"
+    }
+  },
+  "clone": {
+    "usage": "/clone\nKirim tautan kanal atau nama penggunanya\nUntuk kanal pribadi hubungkan akun yang sudah menjadi anggota dengan /login",
+    "channel_not_found": "⌯ <b>Kanal tidak ditemukan</b>\n\n✦ Nama pengguna atau tautan kanal tidak valid, atau akun tertaut tidak dapat menemukan kanal tersebut",
+    "empty_channel": "⌯ <b>Kanal kosong</b>\n\n✦ Tidak ditemukan postingan yang dapat ditransfer di kanal yang dipilih",
+    "starting": "⌯ <b>Transfer kanal dimulai</b>\n\n✦ Bot sedang bersiap memproses {total} pengenal postingan dari <b>{channel_title}</b>",
+    "progress": "⌯ <b>Transfer kanal sedang berlangsung</b>\n\n✦ Item saat ini: {current} dari {total}\n✦ ID postingan: {message_id}\n✦ Diunduh: {downloaded}\n✦ Dilewati: {skipped}\n✦ Gagal: {failed}",
+    "flood_wait": "⌯ <b>Batas laju Telegram</b>\n\n✦ Transfer kanal telah dijeda selama {seconds} detik",
+    "completed": "⌯ <b>Pemrosesan kanal selesai</b>\n\n✦ Diunduh: {downloaded}\n✦ Dilewati: {skipped}\n✦ Gagal: {failed}",
+    "cancelled": "⌯ <b>Transfer kanal dibatalkan</b>\n\n✦ Postingan kanal yang tersisa tidak akan diproses",
+    "failed": "⌯ <b>Transfer kanal gagal</b>\n\n✦ Kesalahan tak terduga mencegah transfer diselesaikan"
+  },
+  "uploads": {
+    "channel": {
+      "usage": "/uploadch\nPilih kanal\nLangganan bot dan Telegram Premium adalah langganan terpisah\nBot mengunggah sekitar 2 GB per bagian\nAkun Telegram Premium yang terhubung dapat mengunggah hingga 4 GB dalam satu berkas\nHubungkan akun dengan /login\nJadikan bot dan akun itu administrator kanal tujuan lalu pilih kanal dengan /uploadch\nTanpa kanal kamu dapat memilih pesan tersimpan\nBagian dokumen perlu digabung kembali sesuai urutan nomornya\nCara termudah ↣ tambahkan bot sebagai admin di channel atau grupmu dan bot akan meminta konfirmasi di sini",
+      "current": "⌯ <b>Pilih kanal</b>\n\n✦ {channel_id}\n✦ /uploadch\n✦ /rmuploadch",
+      "invalid_id": "⌯ <b>Pengenal kanal tidak valid</b>\n\n✦ Kirim ID numerik kanal Telegram, yang biasanya diawali dengan <code>-100</code>\n✦ Cara termudah ↣ tambahkan bot sebagai admin di channel atau grupmu dan bot akan meminta konfirmasi di sini",
+      "bot_not_admin": "⌯ <b>Akses administrator bot diperlukan</b>\n\n✦ Tambahkan bot sebagai administrator di kanal tujuan sebelum mengaktifkan unggahan kanal\n✦ Cara termudah ↣ tambahkan bot sebagai admin di channel atau grupmu dan bot akan meminta konfirmasi di sini",
+      "user_not_admin": "⌯ <b>Akses administrator Anda diperlukan</b>\n\n✦ Anda harus menjadi pemilik atau administrator kanal tujuan",
+      "access_denied": "⌯ <b>Verifikasi kanal gagal</b>\n\n✦ Kanal tidak dapat diakses atau izin administrator yang diperlukan tidak tersedia",
+      "enabled": "⌯ <b>Kanal unggahan terhubung</b>\n\n✦ Unduhan berikutnya akan dikirimkan ke <b>{channel_title}</b> hingga Anda menghapus tujuan ini",
+      "disabled": "⌯ <b>Kanal unggahan dinonaktifkan</b>\n\n✦ Bot kehilangan akses administrator ke kanal yang dipilih, sehingga pengiriman ke kanal dinonaktifkan secara otomatis",
+      "removed": "⌯ <b>Kanal unggahan dihapus</b>\n\n✦ Unduhan berikutnya akan kembali dikirimkan ke tujuan bawaan",
+      "not_set": "⌯ <b>ℹ Tidak ada kanal unggahan yang dikonfigurasi</b>\n\n✦ Profil Anda saat ini tidak memiliki kanal tujuan"
+    },
+    "auto": {
+      "start_first": "⌯ <b>Selesaikan penautan channel</b>\n\n✦ Kamu menambahkan bot ke ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Ketuk Mulai untuk mendaftar di bot dan menyelesaikan penautan\n✦ Jika tidak diketuk dalam 24 jam bot akan keluar",
+      "premium_only": "⌯ <b>Menautkan channel khusus pelanggan</b>\n\n✦ Kamu menambahkan bot ke ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Menerima unduhan di channel atau grup adalah fitur langganan bot\n✦ Bot sudah keluar\n✦ Berlangganan lewat tombol di bawah lalu tambahkan bot lagi",
+      "confirm": "⌯ <b>Konfirmasi channel unggahan</b>\n\n✦ Kamu menambahkan bot ke ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Jika dikonfirmasi unduhan baru dan postingan yang dipantau akan masuk ke sana\n✦ Jika ditolak bot akan keluar\n✦ Tanpa jawaban dalam 24 jam bot keluar sendiri",
+      "linked": "⌯ <b>Channel unggahan tertaut</b>\n\n✦ Channel ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Unduhan baru dan postingan yang dipantau akan masuk ke sana\n✦ Kirim /rmuploadch untuk melepasnya",
+      "no_rights": "⌯ <b>Bot tidak bisa memposting di sana</b>\n\n✦ Channel ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Bot keluar karena bukan admin atau tidak boleh memposting\n✦ Tambahkan lagi sebagai admin dengan izin memposting",
+      "user_not_admin": "⌯ <b>Kamu harus jadi admin di sana</b>\n\n✦ Channel ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Channel unggahan harus milikmu atau kamu harus jadi admin di sana\n✦ Bot sudah keluar",
+      "expired": "Permintaan ini sudah kedaluwarsa"
+    }
+  },
+  "forcedownload": {
+    "details": "⌯ <b>Mode unduh paksa</b>\n\n✦ Saat diaktifkan, bot akan mengunduh dan mengunggah setiap item media alih-alih menyalinnya secara langsung. Mode ini berguna saat menerapkan gambar mini khusus, membangun ulang berkas, atau menangani pembatasan penerusan\n\n✦ Status saat ini: {status}",
+    "premium_required": "⌯ <b>Langganan diperlukan</b>\n\n✦ Mode unduh paksa tersedia bagi pelanggan karena menggunakan penyimpanan, bandwidth, dan sumber daya pemrosesan tambahan",
+    "flag_removed": "⌯ <b>ℹ Opsi --fdl telah dihapus</b>\n\n✦ Unduh paksa sekarang merupakan mode pengguna permanen. Pelanggan dapat mengelolanya dengan /forcedownload alih-alih menambahkannya ke setiap perintah",
+    "enabled": "⌯ <b>Mode unduh paksa diaktifkan</b>\n\n✦ Tugas unduhan, batch, transfer kanal, dan pemantauan berikutnya akan mengambil serta mengunggah berkas asli alih-alih menyalin postingan secara langsung",
+    "disabled": "⌯ <b>Mode unduh paksa dinonaktifkan</b>\n\n✦ Bot dapat menyalin kembali postingan tanpa pembatasan secara langsung, sambil tetap mengunduh konten yang dilindungi jika diperlukan",
+    "status": {
+      "enabled": "Diaktifkan",
+      "disabled": "Dinonaktifkan"
+    },
+    "buttons": {
+      "enable": "Aktifkan unduh paksa",
+      "disable": "Nonaktifkan unduh paksa"
+    }
+  },
+  "thumbnail": {
+    "not_set": "⌯ <b>Tidak ada gambar mini khusus</b>\n\n✦ Kirim gambar ke bot terlebih dahulu, lalu konfirmasikan untuk menggunakannya sebagai sampul berkas unggahan yang didukung",
+    "current": "⌯ <b>Gambar mini khusus saat ini</b>\n\n✦ Ini adalah gambar yang disimpan untuk unggahan berikutnya yang didukung\n\n✦ Status: {status}",
+    "confirm": "⌯ <b>Gunakan gambar ini sebagai gambar mini</b>\n\n✦ Konfirmasikan untuk menyimpan gambar ini sebagai sampul khusus Anda, atau batalkan untuk menghapus gambar sementara",
+    "saved": "⌯ <b>Gambar mini disimpan</b>\n\n✦ Gambar telah disimpan dan diaktifkan untuk unggahan berikutnya yang didukung",
+    "download_failed": "⌯ <b>Pengunduhan gambar gagal</b>\n\n✦ Gambar tidak dapat disimpan. Kirim kembali gambar tersebut dan pastikan Telegram menyelesaikan unggahannya",
+    "temp_missing": "⌯ <b>Gambar sementara tidak tersedia</b>\n\n✦ Sesi konfirmasi telah kedaluwarsa atau gambar sementara telah dihapus. Kirim kembali gambar tersebut",
+    "not_set_popup": "Tidak ada gambar mini tersimpan yang tersedia",
+    "status": {
+      "enabled": "Diaktifkan",
+      "disabled": "Dinonaktifkan"
+    },
+    "buttons": {
+      "enable": "Aktifkan gambar mini",
+      "disable": "Nonaktifkan gambar mini"
+    }
+  },
+  "captions": {
+    "settings": "⌯ <b>Pemrosesan keterangan</b>\n\n✦ Pilih cara menangani keterangan saat media disalin atau diunggah\n\n✦ Mode saat ini: {current}",
+    "modes": {
+      "keep_all": "Pertahankan keterangan asli",
+      "remove_all": "Hapus keterangan media",
+      "remove_links_users": "Hapus tautan dan nama pengguna"
+    },
+    "buttons": {
+      "keep_all": "Pertahankan keterangan asli",
+      "remove_all": "Hapus semua keterangan",
+      "remove_links_users": "Hapus tautan dan nama pengguna"
+    },
+    "already_selected_popup": "Mode keterangan ini sudah aktif",
+    "updated_popup": "Mode keterangan diperbarui"
+  },
+  "profile": {
+    "unavailable": "⌯ <b>Profil tidak tersedia</b>\n\n✦ Data pengguna Anda yang tersimpan tidak dapat dimuat. Kirim /start dan coba lagi",
+    "details": "⌯ <b>Profil Anda</b>\n\n✦ ID pengguna: <code>{user_id}</code>\n✦ Paket: {plan_status}\n✦ Masa berlaku paket: {expiry_date}\n✦ Poin harian: {daily_points}/{daily_limit}\n✦ Pengaturan ulang harian: {reset_time}\n✦ Poin hadiah: {gift_points}\n✦ Poin referal: {referral_points}\n✦ Jumlah referal: {referral_count}\n✦ Unduh paksa: {force_download_status}\n\n✦ Tautan referal:\n✦ <code>{referral_link}</code>"
+  },
+  "plans": {
+    "free": "Gratis",
+    "premium": "Pelanggan",
+    "monthly": "Bulanan",
+    "yearly": "Tahunan"
+  },
+  "premium": {
+    "details": "⌯ <b>Langganan</b>\n\n✦ Langganan\n✦ Kamu dapat memiliki hingga 5 tugas terbuka\n✦ Tunggu satu selesai atau batalkan dengan /cancel\n✦ Langganan memungkinkan kamu melewati antrean bersama\n✦ /clone\n✦ /monitor\n✦ /uploadch\n✦ /caption\n✦ /fdl\n✦ Langganan bot dan Telegram Premium adalah langganan terpisah",
+    "feature_required": "⌯ <b>Langganan diperlukan</b>\n\n✦ Fitur ini tersedia bagi pelanggan. Buka menu langganan untuk melihat paket yang tersedia",
+    "already_active": "⌯ <b>Langganan aktif</b>\n\n✦ Langganan Anda tetap aktif hingga {expiry_date}",
+    "already_active_popup": "Langganan Anda aktif hingga {expiry_date}",
+    "required_popup": "Fitur ini memerlukan langganan aktif",
+    "granted": "⌯ <b>Langganan diaktifkan</b>\n\n✦ Akun Anda berhasil ditingkatkan. Langganan saat ini akan berakhir pada {expiry_date}",
+    "removed": "⌯ <b>ℹ Langganan dihapus</b>\n\n✦ Mode khusus pelanggan dan pengaturan tujuan telah dinonaktifkan untuk akun Anda",
+    "buttons": {
+      "monthly": "Paket bulanan",
+      "yearly": "Paket tahunan"
+    },
+    "granted_days": "⌯ <b>Langganan</b>\n\n✦ Hari ditambahkan: {days}\n✦ Berakhir: {expiry_date}\n✦ Hari ini ditambahkan ke sisa masa langganan jika ada"
+  },
+  "language": {
+    "select": "⌯ <b>Pilih bahasa Anda</b>\n\n✦ Pilih bahasa yang digunakan untuk pesan bot dan menu perintah Telegram pribadi Anda",
+    "changed": "⌯ <b>Bahasa diubah</b>\n\n✦ Pesan dan perintah Telegram sekarang akan ditampilkan dalam {language_name}",
+    "unavailable_popup": "Bahasa yang dipilih tidak tersedia"
+  },
+  "limits": {
+    "insufficient_points": "⌯ <b>Poin unduhan tidak mencukupi</b>\n\n✦ Anda tidak memiliki cukup poin untuk unduhan ini. Saldo harian Anda akan diatur ulang setelah {time_left}, atau Anda dapat memperoleh lebih banyak poin melalui referal",
+    "insufficient_points_batch": "⌯ <b>Poin tidak mencukupi untuk batch ini</b>\n\n✦ Operasi ini memerlukan {required_points} poin, sedangkan saldo yang tersedia saat ini adalah {available_points}",
+    "reset_now": "Sedang diatur ulang",
+    "cooldown": "⌯ <b>Harap tunggu sebelum mengunduh lagi</b>\n\n✦ Anda dapat memulai unduhan gratis lainnya setelah {remaining_time}"
+  },
+  "referrals": {
+    "share_text": "Gunakan pengunduh Telegram ini dan dapatkan poin melalui tautan referal saya",
+    "new_referral": "⌯ <b>Referal baru telah bergabung</b>\n\n✦ {user_name} (<code>{user_id}</code>) bergabung menggunakan tautan Anda. Anda menerima {reward} poin referal",
+    "welcome_bonus": "⌯ <b>Bonus referal diterima</b>\n\n✦ Anda menerima {bonus} poin karena bergabung melalui tautan referal pengguna yang sudah ada"
+  },
+  "gifts": {
+    "claim": {
+      "already_claimed": "⌯ <b>ℹ Hadiah sudah diklaim</b>\n\n✦ Hadiah ini sebelumnya telah ditambahkan ke akun Anda dan tidak dapat diklaim dua kali",
+      "invalid": "⌯ <b>Hadiah tidak ditemukan</b>\n\n✦ Tautan hadiah tidak valid atau sudah tidak tersedia",
+      "inactive": "⌯ <b>Hadiah tidak aktif</b>\n\n✦ Hadiah ini dinonaktifkan oleh administrator dan tidak dapat diklaim lagi",
+      "link_expired": "⌯ <b>Tautan hadiah telah kedaluwarsa</b>\n\n✦ Batas waktu untuk mengklaim hadiah ini telah berakhir",
+      "limit_reached": "⌯ <b>Batas hadiah tercapai</b>\n\n✦ Jumlah klaim maksimum yang diizinkan telah tercapai",
+      "not_allowed": "⌯ <b>Hadiah tidak ditetapkan untuk akun Anda</b>\n\n✦ Hadiah ini hanya dapat diklaim oleh pengguna tertentu dan akun Anda tidak termasuk di dalamnya",
+      "excluded": "⌯ <b>Hadiah tidak tersedia untuk akun Anda</b>\n\n✦ Akun Anda dikecualikan dari klaim hadiah ini",
+      "completed": "⌯ <b>Hadiah diklaim</b>\n\n✦ {value} poin berhasil ditambahkan ke akun Anda",
+      "completed_with_expiry": "⌯ <b>Hadiah diklaim</b>\n\n✦ {value} poin telah ditambahkan ke akun Anda dan akan tetap tersedia hingga {expiry_date}",
+      "failed": "⌯ <b>Klaim hadiah gagal</b>\n\n✦ Hadiah tidak dapat diterapkan ke akun Anda. Coba lagi nanti"
+    }
+  },
+  "help": {
+    "menu": {
+      "title": "⌯ <b>Pusat bantuan</b>\n\n✦ Pilih fitur di bawah untuk melihat petunjuk dan penggunaan yang disarankan"
+    },
+    "buttons": {
+      "single": "Unduhan tunggal",
+      "batch": "Unduhan batch",
+      "clone": "Transfer kanal",
+      "monitor": "Pemantau kanal",
+      "channel_upload": "Kanal unggahan",
+      "forcedownload": "Unduh paksa",
+      "login": "Akun tertaut",
+      "points": "Poin",
+      "premium": "Langganan",
+      "other_uses": "Penggunaan lainnya"
+    },
+    "features": {
+      "dl": "⌯ <b>Unduh satu postingan</b>\n\n✦ /dl\n✦ Buka postingan di Telegram lalu tekan dan tahan\n✦ Pilih Salin tautan dan kirim tautannya di sini\n✦ Untuk beberapa postingan kirim tautan postingan pertama dulu\n✦ <code>https://t.me/example_channel/15</code>\n✦ Kirim tautan kanal atau nama penggunanya\n✦ Untuk kanal pribadi hubungkan akun yang sudah menjadi anggota dengan /login\n✦ Ukuran:\n✦ Bot mengunggah sekitar 2 GB per bagian\n✦ Pilih Unduh dan bagi atau Batal\n✦ Untuk berkas utuh hingga 4 GB hubungkan akun Telegram Premium dengan /login lalu pilih kanal dengan /uploadch",
+      "bdl": "⌯ <b>Unduh beberapa postingan</b>\n\n✦ /bdl\n✦ Buka postingan di Telegram lalu tekan dan tahan\n✦ Pilih Salin tautan dan kirim tautannya di sini\n✦ Untuk beberapa postingan kirim tautan postingan pertama dulu\n✦ Kirim tautan postingan terakhir dari kanal yang sama\n✦ Kedua postingan dan semua yang di antaranya akan diunduh\n✦ Setelah itu pilih jenis konten\n✦ <code>/bdl https://t.me/example_channel/15 https://t.me/example_channel/30</code>\n✦ Kirim /cancel untuk memilih tugas atau /cancel diikuti nomor tugas",
+      "clone": "⌯ <b>Transfer seluruh kanal</b>\n\n✦ Langganan\n✦ /clone\n✦ Kirim tautan kanal atau nama penggunanya\n✦ Untuk kanal pribadi hubungkan akun yang sudah menjadi anggota dengan /login\n✦ /uploadch\n✦ Kirim /cancel untuk memilih tugas atau /cancel diikuti nomor tugas",
+      "monitor": "⌯ <b>Pantau postingan kanal baru</b>\n\n✦ Langganan\n✦ /monitor\n✦ Kirim tautan kanal atau nama penggunanya\n✦ Untuk kanal pribadi hubungkan akun yang sudah menjadi anggota dengan /login\n✦ Kanal:\n✦ Filter:\n✦ Kanal publik menggunakan akun unduhan\n✦ Kanal pribadi diperiksa setiap jam dengan satu akun pada satu waktu lalu akun ditutup\n✦ Postingan baru disimpan dalam antrean dan dikirim berurutan\n✦ Hentikan pemantauan",
+      "channel_upload": "⌯ <b>Kirimkan konten ke kanal lain</b>\n\n✦ Langganan\n✦ /uploadch\n✦ Langganan bot dan Telegram Premium adalah langganan terpisah\n✦ Bot mengunggah sekitar 2 GB per bagian\n✦ Akun Telegram Premium yang terhubung dapat mengunggah hingga 4 GB dalam satu berkas\n✦ Hubungkan akun dengan /login\n✦ Jadikan bot dan akun itu administrator kanal tujuan lalu pilih kanal dengan /uploadch\n✦ Tanpa kanal kamu dapat memilih pesan tersimpan\n✦ Bagian dokumen perlu digabung kembali sesuai urutan nomornya\n✦ /rmuploadch\n✦ Cara termudah ↣ tambahkan bot sebagai admin di channel atau grupmu dan bot akan meminta konfirmasi di sini",
+      "forcedownload": "⌯ <b>Mode unduh paksa</b>\n\n✦ Gunakan /forcedownload agar bot mengambil dan mengunggah setiap berkas alih-alih menyalin postingan tanpa pembatasan. Mode ini berguna untuk gambar mini khusus dan rekonstruksi konten",
+      "login": "⌯ <b>Tautkan akun Telegram</b>\n\n✦ Gunakan /login dan pilih akun Anda saat ini atau akun lain. Akun tertaut harus sudah menjadi anggota kanal privat yang ingin Anda akses. Kode otorisasi hanya dimasukkan melalui papan tombol aman\n✦ Masukkan kode Telegram hanya dengan tombol angka\n✦ Hapus menghilangkan angka terakhir dan Konfirmasi mengirim kode\n✦ Kirim tautan kanal atau nama penggunanya\n✦ Untuk kanal pribadi hubungkan akun yang sudah menjadi anggota dengan /login\n✦ /logout",
+      "points": "⌯ <b>Poin unduhan</b>\n\n✦ Unduhan gratis menggunakan poin harian, hadiah, dan referal. Bagikan tautan pribadi Anda untuk mendapatkan lebih banyak poin:\n\n✦ <code>{referral_link}</code>",
+      "premium": "⌯ <b>Fitur langganan</b>\n\n✦ /premium\n✦ Langganan\n✦ Kamu dapat memiliki hingga 5 tugas terbuka\n✦ Tunggu satu selesai atau batalkan dengan /cancel\n✦ Langganan memungkinkan kamu melewati antrean bersama\n✦ /clone\n✦ /monitor\n✦ /uploadch\n✦ /caption\n✦ /fdl\n✦ Langganan bot dan Telegram Premium adalah langganan terpisah",
+      "other_uses": "⌯ <b>Cara lain menggunakan bot</b>\n\n✦ <b>Transfer satu kanal ke kanal lain:</b> Konfigurasikan tujuan menggunakan /uploadch, lalu jalankan /clone pada kanal sumber. Konten yang dipilih akan ditransfer sesuai dengan filter Anda\n\n✦ <b>Ganti sampul untuk seluruh seri:</b> Kirim gambar sampul baru ke bot dan konfirmasikan, aktifkan mode unduh paksa, lalu jalankan /bdl menggunakan tautan episode pertama dan terakhir. Berkas akan diunduh dan diunggah menggunakan sampul yang dipilih jika didukung"
+    }
+  },
+  "monitor": {
+    "login_required": "⌯ <b>Tautkan akun Telegram</b>\n\n✦ Kirim tautan kanal atau nama penggunanya\n✦ Untuk kanal pribadi hubungkan akun yang sudah menjadi anggota dengan /login",
+    "usage": "⌯ <b>Pantau postingan kanal baru</b>\n\n✦ {current_status}\n✦ /monitor\n✦ Kirim tautan kanal atau nama penggunanya\n✦ Untuk kanal pribadi hubungkan akun yang sudah menjadi anggota dengan /login\n✦ Kanal:\n✦ Filter:\n✦ Kanal publik menggunakan akun unduhan\n✦ Kanal pribadi diperiksa setiap jam dengan satu akun pada satu waktu lalu akun ditutup\n✦ Postingan baru disimpan dalam antrean dan dikirim berurutan\n✦ Hentikan pemantauan",
+    "invalid_channel_id": "⌯ <b>Pengenal kanal tidak valid</b>\n\n✦ Gunakan ID numerik kanal Telegram, yang biasanya diawali dengan <code>-100</code>",
+    "invalid_action": "⌯ <b>Tindakan pemantauan tidak valid</b>\n\n✦ Gunakan <code>on</code> untuk mulai memantau atau <code>off</code> untuk menghentikannya",
+    "not_active": "⌯ <b>ℹ Pemantau tidak aktif</b>\n\n✦ Kanal yang ditentukan saat ini tidak sedang dipantau oleh akun Anda",
+    "already_active": "⌯ <b>ℹ Pemantau sudah aktif</b>\n\n✦ Hentikan kanal yang sedang dipantau sebelum memilih kanal lain",
+    "access_denied": "⌯ <b>Akses kanal ditolak</b>\n\n✦ Akun tertaut tidak dapat membuka kanal yang ditentukan atau pengenalnya salah",
+    "start_failed": "⌯ <b>Mulai tugas lagi</b>\n\n✦ Kirim tautan kanal atau nama penggunanya\n✦ Untuk kanal pribadi hubungkan akun yang sudah menjadi anggota dengan /login",
+    "started": "⌯ <b>Pantau postingan kanal baru</b>\n\n✦ Kanal: {channel_title}\n✦ Filter: {filter_status}\n✦ Kanal publik menggunakan akun unduhan\n✦ Kanal pribadi diperiksa setiap jam dengan satu akun pada satu waktu lalu akun ditutup\n✦ Postingan baru disimpan dalam antrean dan dikirim berurutan",
+    "stopped": "⌯ <b>Pemantauan kanal dihentikan</b>\n\n✦ Postingan baru dari kanal yang dipilih tidak akan lagi diproses secara otomatis",
+    "session_stopped": "⌯ <b>Pemantauan dihentikan</b>\n\n✦ Sesi Telegram yang ditautkan telah kedaluwarsa atau dicabut, sehingga pemantauan otomatis dinonaktifkan",
+    "status": {
+      "active": "Aktif untuk kanal <code>{channel_id}</code>",
+      "inactive": "Tidak aktif"
+    },
+    "stop_button": "Hentikan pemantauan",
+    "source_lost": "⌯ <b>Pemantauan channel berhenti</b>\n\n✦ Channel ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Akun tertautmu tidak bisa membukanya selama sehari penuh\n✦ Mungkin sudah dihapus atau dijadikan privat atau akunnya sudah keluar\n✦ Untuk memantau lagi pastikan akun itu anggota lalu kirim /monitor"
+  },
+  "stats": {
+    "system": "⌯ <b>Statistik sistem</b>\n\n✦ Waktu aktif: {uptime}\n✦ Disk: {disk_usage} / {disk_total} ({disk_percent}%)\n✦ Memori: {ram_percent}%\n✦ CPU: {cpu_percent}%\n✦ Jaringan terkirim: {sent}\n✦ Jaringan diterima: {received}",
+    "admin": "⌯ <b>Statistik pengguna</b>\n\n✦ Total pengguna: {total_users}\n✦ Pelanggan: {total_premium}\n✦ Ditambahkan oleh administrator: {premium_by_admin}\n✦ Membayar dengan Stars: {premium_by_stars}",
+    "public": "⌯ <b>Statistik bot</b>\n\n✦ Waktu aktif: {uptime}\n✦ Total unduhan: {total_downloads}"
+  },
+  "payments": {
+    "monthly": {
+      "title": "Langganan bulanan",
+      "description": "Aktifkan fitur pelanggan selama 30 hari"
+    },
+    "yearly": {
+      "title": "Langganan tahunan",
+      "description": "Aktifkan fitur pelanggan selama 365 hari"
+    },
+    "total_label": "Total langganan",
+    "invalid_plan_popup": "Paket langganan yang dipilih tidak valid",
+    "invoice_failed_popup": "Faktur pembayaran tidak dapat dibuat",
+    "unrecognized": "⌯ <b>Paket pembayaran tidak dikenali</b>\n\n✦ Pembayaran telah diterima, tetapi paket langganannya tidak dapat dikenali. Hubungi dukungan dengan informasi pembayaran",
+    "activation_failed": "⌯ <b>Aktivasi langganan gagal</b>\n\n✦ Pembayaran telah diterima, tetapi basis data tidak dapat mengaktifkan langganan. Hubungi dukungan untuk bantuan manual",
+    "completed": "⌯ <b>Langganan diaktifkan</b>\n\n✦ Paket {plan_name} sekarang aktif dan akan berakhir pada {expiry_date}"
+  },
+  "broadcast": {
+    "json": {
+      "file_required": "⌯ <b>Berkas JSON siaran diperlukan</b>\n\n✦ Balas berkas JSON multibahasa dan gunakan <code>/bc .</code>",
+      "invalid_file": "⌯ <b>Berkas siaran tidak valid</b>\n\n✦ Dokumen yang dibalas harus berupa berkas JSON",
+      "validation_failed": "⌯ <b>Validasi berkas siaran gagal</b>\n\n✦ Berkas tidak dapat diterima: <code>{error}</code>",
+      "confirm": "⌯ <b>Konfirmasi siaran multibahasa</b>\n\n✦ Berkas berisi {language_count} bahasa yang dapat digunakan. Pengguna akan menerima bahasa tersimpan mereka, kemudian bahasa dasarnya, lalu bahasa Inggris sebagai pilihan terakhir\n\n✦ Filter: {filters}",
+      "how_to": "⌯ <b>Siaran multibahasa</b>\n\n✦ Ketuk tombol di bawah untuk menerima templat JSON yang berisi semua bahasa yang tersedia. Isi nilai <code>text</code> untuk setiap bahasa yang diinginkan, lalu unggah file dan balas dengan <code>/bc .</code> — bahasa yang dibiarkan kosong akan menggunakan bahasa Inggris sebagai cadangan",
+      "template_sent": "⌯ <b>Templat siaran</b>\n\n✦ File ini berisi {language_count} bahasa dan dibuat dari file bahasa saat ini"
+    },
+    "usage": "⌯ <b>Siarkan pesan</b>\n\n✦ Balas pesan yang ingin Anda kirim, lalu gunakan /bc. Filter opsional mencakup <code>-only USER_ID</code> dan <code>-rm USER_ID --prem</code>",
+    "invalid_message": "⌯ <b>Pesan siaran tidak tersedia</b>\n\n✦ Pesan yang dibalas tidak memiliki pengenal Telegram yang valid",
+    "confirm": "⌯ <b>Konfirmasi siaran</b>\n\n✦ ID pesan: <code>{message_id}</code>\n✦ Filter: {filters}\n\n✦ Pilih apakah ingin mengirim secara normal atau mengirim dan menyematkan",
+    "starting": "⌯ <b>Siaran dimulai</b>\n\n✦ Pesan sedang dikirimkan kepada pengguna yang dipilih",
+    "progress": "⌯ <b>Siaran sedang berlangsung</b>\n\n✦ Diproses: {processed}/{total}\n✦ Berhasil: {successful}\n✦ Gagal: {failed}",
+    "completed": "⌯ <b>Siaran selesai</b>\n\n✦ Pengguna yang dituju: {total}\n✦ Berhasil: {successful}\n✦ Gagal: {failed}",
+    "cancelled": "⌯ <b>Siaran dibatalkan</b>\n\n✦ Operasi dihentikan setelah memproses {processed} pengguna",
+    "buttons": {
+      "normal": "Kirim secara normal",
+      "pin": "Kirim dan sematkan",
+      "get_template": "Dapatkan templat JSON"
+    },
+    "filters": {
+      "none": "Tidak ada filter",
+      "summary": "Hanya pengguna: {only_count}, pengguna yang dikecualikan: {excluded_count}, kecualikan pelanggan: {exclude_premium}"
+    }
+  },
+  "admin": {
+    "users": {
+      "new_language": "⌯ <b>Bahasa yang tidak tersedia terdeteksi</b>\n\n✦ Pengguna: {first_name}\n✦ ID pengguna: <code>{user_id}</code>\n✦ Kode yang terdeteksi: <code>{language_code}</code>",
+      "new_user": "⌯ <b>Pengguna baru bergabung</b>\n\n✦ Nama: {first_name} {last_name}\n✦ ID pengguna: <code>{user_id}</code>\n✦ Nama pengguna: {username}\n✦ Total pengguna: {total_users}",
+      "exported": "⌯ <b>Ekspor pengguna selesai</b>\n\n✦ Berkas terlampir berisi {count} data pengguna"
+    },
+    "payments": {
+      "new_subscription": "⌯ <b>Langganan berbayar baru</b>\n\n✦ Pengguna: {user_name}\n✦ ID pengguna: <code>{user_id}</code>\n✦ Paket: {plan_name}\n✦ Jumlah: {amount} Stars"
+    },
+    "pool": {
+      "insufficient": "⌯ <b>Kumpulan akun pengunduh belum lengkap</b>\n\n✦ Saat ini dimuat: {current}\n✦ Akun tambahan yang diperlukan: {missing}"
+    },
+    "gifts": {
+      "create_usage": "⌯ <b>Buat hadiah</b>\n\n✦ Gunakan <code>/create -gift --value POINTS</code>. Pengaturan opsional mencakup <code>--linkexpiry DDHHMM</code>, <code>--giftexpiry DDHHMM</code>, <code>--onlyuser [IDS]</code>, <code>--exceptionuser [IDS]</code>, dan <code>--limit NUMBER</code>",
+      "value_required": "⌯ <b>Nilai hadiah diperlukan</b>\n\n✦ Berikan angka positif setelah <code>--value</code>",
+      "user_filter_conflict": "⌯ <b>Filter pengguna bertentangan</b>\n\n✦ Hadiah tidak dapat menggunakan filter pengguna yang diizinkan dan pengguna yang dikecualikan secara bersamaan",
+      "invalid_duration": "⌯ <b>Durasi tidak valid</b>\n\n✦ Gunakan format enam digit <code>DDHHMM</code> untuk durasi hadiah",
+      "invalid_values": "⌯ <b>Pengaturan hadiah tidak valid</b>\n\n✦ Periksa pengenal pengguna, batas klaim, dan semua nilai yang diberikan",
+      "created": "⌯ <b>Hadiah dibuat</b>\n\n✦ Tautan hadiah sudah siap:\n✦ <code>{gift_link}</code>",
+      "empty": "⌯ <b>ℹ Tidak ada hadiah aktif</b>\n\n✦ Saat ini tidak ada tautan hadiah yang aktif",
+      "list_title": "⌯ <b>Hadiah aktif</b>\n\n✦ Tautan hadiah berikut saat ini tersedia",
+      "list_item": "<b>Hadiah:</b> <code>{gift_pid}</code>\nNilai: {value}\nKlaim: {usage_count}/{usage_limit}\nKedaluwarsa tautan: {expiry}\nDibuat: {created_at}\nTautan: <code>{gift_link}</code>",
+      "remove_usage": "⌯ <b>Hapus hadiah</b>\n\n✦ Gunakan <code>/rm -gift --pid GIFT_ID</code>",
+      "not_found": "⌯ <b>Hadiah tidak ditemukan</b>\n\n✦ Tidak ada hadiah aktif dengan pengenal yang diberikan",
+      "remove_confirm": "⌯ <b>Nonaktifkan hadiah</b>\n\n✦ Hadiah: <code>{gift_pid}</code>\n✦ Nilai: {value}\n✦ Klaim: {usage_count}\n\n✦ Konfirmasikan untuk mencegah klaim apa pun di masa mendatang",
+      "deactivated": "⌯ <b>Hadiah dinonaktifkan</b>\n\n✦ Hadiah <code>{gift_pid}</code> tidak dapat diklaim lagi"
+    },
+    "add": {
+      "usage": "⌯ <b>Tambahkan pengaturan administratif</b>\n\n✦ Gunakan /add dengan <code>-premium</code>, <code>-lang</code>, atau <code>-frcch</code>"
+    },
+    "remove": {
+      "usage": "⌯ <b>Hapus pengaturan administratif</b>\n\n✦ Gunakan /rm dengan <code>-premium</code>, <code>-gift</code>, atau <code>-frcch</code>"
+    },
+    "premium": {
+      "add_usage": "⌯ <b>Langganan</b>\n\n✦ /admin\n✦ Pilih pengguna atau kirim nomor identitas mereka\n✦ Hari\n✦ <code>/add -premium --user [123456789] --days 30</code>",
+      "added": "⌯ <b>Pembaruan langganan selesai</b>\n\n✦ Pengguna yang diperbarui: {users}\n✦ Pengguna yang tidak ditemukan: {missing}",
+      "remove_usage": "⌯ <b>Hapus langganan</b>\n\n✦ Gunakan <code>/rm -premium --user [USER_IDS]</code>",
+      "removed": "⌯ <b>Penghapusan langganan selesai</b>\n\n✦ Pengguna yang diperbarui: {users}\n✦ Pengguna yang tidak ditemukan atau tidak aktif: {missing}"
+    },
+    "languages": {
+      "reply_to_json": "⌯ <b>Berkas bahasa diperlukan</b>\n\n✦ Balas berkas bahasa JSON yang valid saat menggunakan <code>/add -lang</code>",
+      "json_required": "⌯ <b>Berkas JSON diperlukan</b>\n\n✦ Dokumen yang dibalas harus menggunakan ekstensi <code>.json</code>",
+      "already_exists": "⌯ <b>ℹ Bahasa sudah tersedia</b>\n\n✦ Bahasa <code>{language_code}</code> sudah terpasang. Tambahkan <code>--update</code> untuk menggantinya",
+      "invalid_json": "⌯ <b>Berkas bahasa tidak valid</b>\n\n✦ Berkas JSON tidak dapat dimuat: <code>{error}</code>",
+      "added": "⌯ <b>Bahasa ditambahkan</b>\n\n✦ Bahasa <code>{language_code}</code> sekarang tersedia",
+      "updated": "⌯ <b>Bahasa diperbarui</b>\n\n✦ Bahasa <code>{language_code}</code> berhasil dimuat ulang"
+    },
+    "force_subscription": {
+      "empty": "⌯ <b>ℹ Tidak ada kanal wajib</b>\n\n✦ Saat ini tidak ada kanal langganan wajib yang dikonfigurasi",
+      "list_title": "⌯ <b>Kanal wajib</b>\n\n✦ Kanal berikut saat ini diwajibkan",
+      "list_item": "Tautan: {link}\nID kanal: <code>{channel_id}</code>\nBergabung: {joined}\nBatas: {limit}",
+      "add_usage": "⌯ <b>Tambahkan kanal wajib</b>\n\n✦ Gunakan <code>/add -frcch --link CHANNEL_LINK --id CHANNEL_ID --limit NUMBER</code>",
+      "permission_required": "⌯ <b>Izin administrator diperlukan</b>\n\n✦ Bot harus menjadi administrator dengan izin untuk mengundang pengguna",
+      "added": "⌯ <b>Kanal wajib ditambahkan</b>\n\n✦ Kanal: {channel_title}\n✦ Batas bergabung: {limit}",
+      "add_failed": "⌯ <b>Kanal tidak dapat ditambahkan</b>\n\n✦ Periksa pengenal kanal, tautan, dan izin administrator bot",
+      "remove_usage": "⌯ <b>Hapus kanal wajib</b>\n\n✦ Gunakan <code>/rm -frcch CHANNEL_ID</code> atau berikan tautan yang tersimpan",
+      "removed": "⌯ <b>Kanal wajib dihapus</b>\n\n✦ Kanal tersebut tidak lagi diwajibkan",
+      "not_found": "⌯ <b>Kanal wajib tidak ditemukan</b>\n\n✦ Tidak ada kanal tersimpan yang cocok dengan pengenal atau tautan yang diberikan"
+    },
+    "logs": {
+      "not_found": "⌯ <b>Direktori log tidak tersedia</b>\n\n✦ Direktori log bot tidak ada",
+      "empty": "⌯ <b>Tidak ada log yang tersedia</b>\n\n✦ Tidak ditemukan berkas log bot yang berisi data",
+      "file_caption": "⌯ <b>Log bot</b>\n\n✦ Berkas: <code>{filename}</code>",
+      "upload_failed": "⌯ <b>Unggahan log gagal</b>\n\n✦ Berkas: <code>{filename}</code>\n✦ Kesalahan: <code>{error}</code>"
+    }
+  },
+  "queue": {
+    "accepted": "⌯ <b>Tugasmu telah disimpan</b>\n\n✦ Tugas ↣ {task_id}\n✦ Kirim /cancel untuk memilih tugas atau /cancel diikuti nomor tugas\n✦ <code>/cancel {task_id}</code>",
+    "waiting_free": "⌯ <b>Menunggu</b>\n\n✦ Orang di depanmu: {ahead}\n✦ Unduhan dimulai saat ada tempat kosong\n✦ Langganan memungkinkan kamu melewati antrean bersama",
+    "waiting_premium": "⌯ <b>Menunggu</b>\n\n✦ Tugasmu sebelumnya: {ahead}\n✦ Tugasmu dijalankan satu per satu",
+    "limit_free": "⌯ <b>Tugas</b>\n\n✦ Kamu sudah memiliki tugas terbuka\n✦ Tunggu selesai atau batalkan dengan /cancel\n✦ Kamu dapat memiliki hingga 5 tugas terbuka\n✦ Tunggu satu selesai atau batalkan dengan /cancel",
+    "limit_premium": "⌯ <b>Tugas</b>\n\n✦ Kamu dapat memiliki hingga {limit} tugas terbuka\n✦ Tunggu satu selesai atau batalkan dengan /cancel",
+    "lost_after_restart": "⌯ <b>Mulai tugas lagi</b>\n\n✦ Tugas ↣ {task_id}\n✦ Buka postingan di Telegram lalu tekan dan tahan\n✦ Pilih Salin tautan dan kirim tautannya di sini\n✦ Untuk beberapa postingan kirim tautan postingan pertama dulu",
+    "cancel_usage": "Kirim /cancel untuk memilih tugas atau /cancel diikuti nomor tugas\n<code>/cancel 123</code>",
+    "cancelled_one": "Tugas {task_id} dibatalkan",
+    "not_found": "Tugas {task_id} sudah selesai atau bukan milikmu",
+    "choose_to_cancel": "⌯ <b>Batal Tugas</b>\n\n✦ Kirim /cancel untuk memilih tugas atau /cancel diikuti nomor tugas",
+    "cancelled_popup": "Batal",
+    "not_found_popup": "Mulai tugas lagi",
+    "buttons": {
+      "cancel": "Batal Tugas",
+      "upgrade": "Langganan",
+      "cancel_task": "Tugas {task_id} {kind} {status}",
+      "cancel_all": "Batal Tugas /cancel"
+    },
+    "kinds": {
+      "dl": "Unduh satu postingan",
+      "bdl": "Unduh beberapa postingan",
+      "clone": "Transfer seluruh kanal",
+      "task": "Tugas",
+      "monitor": "Pantau postingan kanal baru"
+    },
+    "status": {
+      "queued": "Menunggu",
+      "running": "Berjalan"
+    },
+    "task_number": "Tugas {task_id}"
+  },
+  "spam": {
+    "per_second": "Jangan kirim lebih dari satu pesan per detik",
+    "per_minute": "Jangan kirim lebih dari 20 pesan per menit\nBot ini menerima tautan unduhan\nTunggu hingga menit ini berakhir",
+    "buttons": "Kamu menekan lebih dari 20 tombol dalam satu menit\nTunggu sebelum melanjutkan\nPelanggaran berulang menggandakan waktu tunggu"
+  },
+  "flow": {
+    "first_link": "⌯ <b>Unduh satu postingan</b>\n\n✦ Buka postingan di Telegram lalu tekan dan tahan\n✦ Pilih Salin tautan dan kirim tautannya di sini\n✦ Untuk beberapa postingan kirim tautan postingan pertama dulu\n✦ <code>https://t.me/example_channel/15</code>",
+    "last_link": "⌯ <b>Unduh beberapa postingan</b>\n\n✦ Kirim tautan postingan terakhir dari kanal yang sama\n✦ Kedua postingan dan semua yang di antaranya akan diunduh\n✦ Setelah itu pilih jenis konten",
+    "channel": "⌯ <b>Pilih kanal</b>\n\n✦ Kirim tautan kanal atau nama penggunanya\n✦ Untuk kanal pribadi hubungkan akun yang sudah menjadi anggota dengan /login\n✦ <code>https://t.me/example_channel</code>",
+    "pick_channel": "Pilih kanal",
+    "invalid_channel": "Kirim tautan kanal atau nama penggunanya\nUntuk kanal pribadi hubungkan akun yang sudah menjadi anggota dengan /login",
+    "upload_channel": "⌯ <b>Pilih channel unggahan</b>\n\n✦ Cara termudah ↣ tambahkan bot sebagai admin dengan izin memposting di channel atau grupmu\n✦ Bot akan mengirim konfirmasi di sini lalu ketuk Konfirmasi\n✦ Atau ketuk tombol pilih channel di bawah\n✦ Atau kirim tautan channel, username atau ID yang diawali <code>-100</code>\n✦ Fitur ini butuh langganan bot"
+  },
+  "panel": {
+    "title": "⌯ <b>Pengelolaan</b>\n\n✦ Langganan / Hadiah / Kanal wajib / Siaran",
+    "premium": "Langganan",
+    "gift": "Hadiah",
+    "fsub": "Kanal wajib",
+    "broadcast": "Siaran",
+    "users": "Ekspor pengguna",
+    "language": "Berkas bahasa",
+    "gifts": "Hadiah aktif",
+    "choose_user": "Pilih pengguna atau kirim nomor identitas mereka",
+    "selected_users": "Semua pengguna ↣ {users}",
+    "selected_channel": "Pilih kanal ↣ {channel_id}",
+    "custom": "Angka lain",
+    "remove_premium": "Batal Langganan",
+    "days": "Hari ↣ {days}",
+    "value": "Poin hadiah",
+    "link_days": "Masa berlaku tautan dalam hari / Pada masa berlaku hadiah nol berarti tidak kedaluwarsa",
+    "point_days": "Masa berlaku poin dalam hari / Pada masa berlaku hadiah nol berarti tidak kedaluwarsa",
+    "limit": "Jumlah klaim maksimal",
+    "only_users": "Izinkan pengguna tertentu",
+    "exclude_users": "Kecualikan pengguna",
+    "send_broadcast": "Kirim pesan siaran di sini\nPeriksa salinannya dan pilih penerima\nLalu tekan Konfirmasi",
+    "send_language": "Kirim berkas JSON dengan kode bahasa sebagai nama misalnya ar.json\nBerkas lama hanya diganti setelah berkas baru valid",
+    "enter_value": "Kirim angka atau nomor pengguna yang dipisahkan koma\nBalasanmu dihapus dan menu diperbarui",
+    "invalid_value": "Kirim angka yang valid\nPada masa berlaku hadiah nol berarti tidak kedaluwarsa",
+    "audience_all": "Semua pengguna",
+    "audience_premium": "Pelanggan",
+    "audience_free": "Pengguna gratis",
+    "admins": "Admin",
+    "send_admin": "Kirim ID numerik pengguna atau teruskan salah satu pesannya\nTekan admin di bawah untuk menghapusnya",
+    "admin_added": "Admin ditambahkan: {user_id}",
+    "admin_removed": "Admin dihapus: {user_id}",
+    "admin_exists": "Pengguna ini sudah admin",
+    "no_admins": "Belum ada admin",
+    "owner_only": "Hanya pemilik yang dapat mengelola admin"
+  },
+  "large": {
+    "saved": "Kirim ke pesan tersimpan saya",
+    "split": "Unduh dan bagi",
+    "help_button": "Jelaskan",
+    "split_notice": "⌯ <b>Unduh dan bagi</b>\n\n✦ Ukuran: {size}\n✦ Bot mengunggah sekitar 2 GB per bagian\n✦ Pilih Unduh dan bagi atau Batal\n✦ Untuk berkas utuh hingga 4 GB hubungkan akun Telegram Premium dengan /login lalu pilih kanal dengan /uploadch",
+    "premium_notice": "⌯ <b>Kirim ke pesan tersimpan saya</b>\n\n✦ Ukuran: {size}\n✦ Akun Telegram Premium yang terhubung dapat mengunggah berkas utuh ke pesan tersimpanmu\n✦ Pilih kanal tujuan dengan /uploadch\n✦ Kamu juga dapat membagi berkas",
+    "help": "⌯ <b>Jelaskan</b>\n\n✦ Langganan bot dan Telegram Premium adalah langganan terpisah\n✦ Bot mengunggah sekitar 2 GB per bagian\n✦ Akun Telegram Premium yang terhubung dapat mengunggah hingga 4 GB dalam satu berkas\n✦ Hubungkan akun dengan /login\n✦ Jadikan bot dan akun itu administrator kanal tujuan lalu pilih kanal dengan /uploadch\n✦ Tanpa kanal kamu dapat memilih pesan tersimpan\n✦ Bagian dokumen perlu digabung kembali sesuai urutan nomornya"
+  },
+  "referral_check": {
+    "question": "⌯ <b>Pemeriksaan cepat</b>\n\n✦ Selesaikan soal ini untuk memastikan Anda orang sungguhan dan referral Anda dihitung\n\n✦ {a} + {b} = ?",
+    "wrong": "⌯ <b>Jawaban salah</b>\n\n✦ Coba lagi. Sisa percobaan: {left}",
+    "failed": "⌯ <b>Referral tidak dihitung</b>\n\n✦ Referral Anda tidak dihitung karena pemeriksaan tidak diselesaikan. Anda tetap bisa memakai bot seperti biasa"
+  },
+  "units": {
+    "b": "{n} B",
+    "kb": "{n} KB",
+    "mb": "{n} MB",
+    "gb": "{n} GB",
+    "tb": "{n} TB",
+    "pb": "{n} PB",
+    "day": "{n}d",
+    "hour": "{n}h",
+    "minute": "{n}m",
+    "second": "{n}s"
+  }
+}

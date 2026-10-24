@@ -1,0 +1,25 @@
+# systemd unit example. Adjust the user and the paths, then:
+#   sudo cp rcd.service.example /etc/systemd/system/rcd.service
+#   sudo systemctl daemon-reload && sudo systemctl enable --now rcd
+[Unit]
+Description=Telegram media downloader bot
+After=network-online.target postgresql.service
+Wants=network-online.target
+
+[Service]
+User=rcd
+WorkingDirectory=/opt/rcd
+EnvironmentFile=/opt/rcd/.env
+ExecStart=/opt/rcd/rcd serve
+Restart=always
+RestartSec=3
+# The bot answers SIGTERM by stopping tasks cleanly; queued work resumes on the next start.
+KillSignal=SIGTERM
+TimeoutStopSec=30
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ReadWritePaths=/opt/rcd/data
+
+[Install]
+WantedBy=multi-user.target

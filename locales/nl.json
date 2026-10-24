@@ -1,0 +1,675 @@
+{
+  "lang_name": "🇳🇱 Nederlands",
+  "common": {
+    "not_available": "Niet beschikbaar",
+    "never": "Nooit",
+    "unlimited": "Onbeperkt",
+    "none": "Geen",
+    "yes": "Ja",
+    "no": "Nee",
+    "processing": "⌯ <b>Bezig met verwerken</b>\n\n✦ Wacht terwijl de aangevraagde bewerking wordt voorbereid",
+    "state_expired": "⌯ <b>Sessie verlopen</b>\n\n✦ De opgeslagen invoersessie is na tien minuten verlopen. Start de bewerking opnieuw",
+    "state_expired_popup": "Start de taak opnieuw",
+    "action_cancelled": "⌯ <b>Bewerking geannuleerd</b>\n\n✦ De geselecteerde bewerking is geannuleerd en de tijdelijke status is verwijderd",
+    "unexpected_error": "⌯ <b>Er is een onverwachte fout opgetreden</b>\n\n✦ De bewerking kon niet worden voltooid vanwege de volgende fout: <code>{error}</code>",
+    "something_went_wrong": "Er is iets misgegaan bij het uitvoeren van deze actie, probeer het opnieuw"
+  },
+  "buttons": {
+    "start": "Starten",
+    "confirm": "Bevestigen",
+    "back": "Terug",
+    "subscribe": "Abonneren",
+    "earn_points": "Punten verdienen",
+    "share_and_earn": "Delen en verdienen",
+    "link_account": "Een account koppelen",
+    "open_source": "Kanaal openen",
+    "refresh_subscription": "Opnieuw controleren",
+    "channel": "Updateskanaal",
+    "help": "Help",
+    "profile": "Profiel",
+    "contact_admin": "Neem contact op met ondersteuning voor andere betaalmethoden",
+    "cancel": "Annuleren",
+    "delete": "Wissen",
+    "open": "Openen",
+    "reject": "Weigeren"
+  },
+  "commands": {
+    "bcjson": {
+      "description": "De meertalige uitzendsjabloon downloaden"
+    },
+    "start": {
+      "description": "De bot starten"
+    },
+    "help": {
+      "description": "Het helpcentrum openen"
+    },
+    "profile": {
+      "description": "Je account en punten bekijken"
+    },
+    "premium": {
+      "description": "Abonnementsfuncties bekijken"
+    },
+    "language": {
+      "description": "De taal van de bot wijzigen"
+    },
+    "login": {
+      "description": "Een Telegram-account koppelen"
+    },
+    "logout": {
+      "description": "Het gekoppelde account verwijderen"
+    },
+    "dl": {
+      "description": "Eén Telegram-bericht downloaden"
+    },
+    "bdl": {
+      "description": "Een reeks berichten downloaden"
+    },
+    "clone": {
+      "description": "Een volledig kanaal overzetten"
+    },
+    "forcedownload": {
+      "description": "Geforceerde downloadmodus beheren"
+    },
+    "thumb": {
+      "description": "De aangepaste miniatuur beheren"
+    },
+    "caption": {
+      "description": "Verwerking van bijschriften beheren"
+    },
+    "cancel": {
+      "description": "De huidige bewerking annuleren"
+    },
+    "stats": {
+      "description": "Systeemstatistieken bekijken"
+    },
+    "monitor": {
+      "description": "Een kanaal automatisch bewaken"
+    },
+    "uploadch": {
+      "description": "Een uploadbestemmingskanaal instellen"
+    },
+    "rmuploadch": {
+      "description": "De uploadbestemming verwijderen"
+    },
+    "bc": {
+      "description": "Een bericht uitzenden"
+    },
+    "add": {
+      "description": "Beheerdersinstellingen toevoegen"
+    },
+    "rm": {
+      "description": "Beheerdersinstellingen verwijderen"
+    },
+    "create": {
+      "description": "Een cadeaulink maken"
+    },
+    "logs": {
+      "description": "Botlogboeken downloaden"
+    },
+    "admin": {
+      "description": "Beheer"
+    }
+  },
+  "start": {
+    "welcome": "⌯ <b>Welkom bij de mediadownloader</b>\n\n✦ Stuur een link naar een Telegram-bericht om de media ervan te downloaden, inclusief inhoud van openbare of privékanalen en kanalen die doorsturen hebben uitgeschakeld. Je kunt ook meerdere berichten downloaden, een volledig kanaal overzetten, een aangepaste miniatuur op bestanden toepassen of gedownloade inhoud rechtstreeks naar een ander kanaal sturen\n\n✦ Gekoppeld account: {account_status}"
+  },
+  "accounts": {
+    "status": {
+      "connected": "Verbonden",
+      "not_connected": "Niet verbonden"
+    },
+    "session_expired": "⌯ <b>Gekoppelde sessie verlopen</b>\n\n✦ Het gekoppelde Telegram-account is niet meer geautoriseerd. Koppel het account opnieuw voordat je privésources probeert te openen",
+    "access": {
+      "login_required": "⌯ <b>Een gekoppeld account is vereist</b>\n\n✦ De gedeelde link behoort tot een privé- of beperkte bron waartoe de downloadaccounts geen toegang hebben. Koppel een Telegram-account dat al lid is van het bronkanaal en stuur de link daarna opnieuw",
+      "not_member": "⌯ <b>Je gekoppelde account is geen lid</b>\n\n✦ Het Telegram-account dat aan de bot is gekoppeld, heeft geen toegang tot het kanaal in de gedeelde link. Word eerst met het gekoppelde account lid van dat kanaal en stuur daarna de link opnieuw"
+    },
+    "login": {
+      "choose_account": "⌯ <b>Kies het account dat je wilt koppelen</b>\n\n✦ Selecteer of je je huidige Telegram-account of een ander account wilt koppelen. Het geselecteerde account moet al lid zijn van alle privékanalen waarvan je inhoud wilt downloaden",
+      "already_running": "⌯ <b>Er is al een aanmeldproces actief</b>\n\n✦ Voltooi of annuleer het huidige aanmeldproces voordat je een nieuw proces start",
+      "already_connected": "⌯ <b>Er is al een account gekoppeld</b>\n\n✦ Het telefoonnummer <code>{phone_number}</code> is momenteel verbonden. Verwijder het met /logout voordat je een ander account koppelt",
+      "share_contact": "⌯ <b>Deel je telefoonnummer</b>\n\n✦ Gebruik de knop hieronder om het telefoonnummer van je huidige Telegram-account veilig te delen",
+      "enter_phone": "⌯ <b>Voer het alternatieve telefoonnummer in</b>\n\n✦ Stuur het telefoonnummer handmatig in internationaal formaat. Het moet beginnen met <code>+</code>, gevolgd door de landcode, bijvoorbeeld <code>+31201234567</code>",
+      "invalid_phone": "⌯ <b>Ongeldig telefoonnummer</b>\n\n✦ Het nummer moet beginnen met <code>+</code> en de landcode bevatten, zonder letters of niet-ondersteunde tekens. Start het aanmeldproces opnieuw of stuur een correct opgemaakt nummer",
+      "contact_mismatch": "⌯ <b>Contact komt niet overeen</b>\n\n✦ Het gedeelde contact behoort niet tot het Telegram-account dat de bot gebruikt. Gebruik de beschikbare knop om je eigen nummer te delen of kies de optie voor een alternatief account",
+      "contact_received": "⌯ <b>Telefoonnummer ontvangen</b>\n\n✦ De bot bereidt het autorisatieverzoek voor. Wacht tot Telegram de aanmeldcode stuurt",
+      "code_prompt": "⌯ <b>Telegram</b>\n\n✦ Voer de Telegram code alleen in met de cijferknoppen\n✦ Wissen verwijdert het laatste cijfer en Bevestigen verstuurt de code",
+      "code_prompt_with_value": "⌯ <b>Telegram</b>\n\n✦ <code>{code}</code>\n✦ Voer de Telegram code alleen in met de cijferknoppen\n✦ Wissen verwijdert het laatste cijfer en Bevestigen verstuurt de code",
+      "processing": "⌯ <b>Account wordt geverifieerd</b>\n\n✦ De code wordt gecontroleerd en de gekoppelde sessie wordt aangemaakt",
+      "password_prompt": "⌯ <b>Verificatie in twee stappen vereist</b>\n\n✦ Stuur het wachtwoord voor verificatie in twee stappen van dit Telegram-account als tekstbericht\n\n✦ Wachtwoordhint: <code>{hint}</code>",
+      "completed": "⌯ <b>Account succesvol gekoppeld</b>\n\n✦ Het Telegram-account is nu verbonden. Je hebt toegang tot privékanalen zolang dit account er al lid van is",
+      "cancelled": "⌯ <b>Accountkoppeling geannuleerd</b>\n\n✦ De tijdelijke aanmeldsessie is gesloten en er zijn geen accountgegevens opgeslagen",
+      "restart_hint": "⌯ <b>Begin opnieuw wanneer je klaar bent</b>\n\n✦ Gebruik /login wanneer je een nieuw proces voor het koppelen van een account wilt starten",
+      "failed": "⌯ <b>Accountkoppeling mislukt</b>\n\n✦ Het autorisatieproces kon niet worden voltooid. Begin opnieuw en controleer of het telefoonnummer, de aanmeldcode en het wachtwoord correct zijn",
+      "flood_wait": "⌯ <b>Te veel aanmeldpogingen</b>\n\n✦ Telegram heeft nieuwe autorisatieverzoeken tijdelijk beperkt. Probeer het na {seconds} seconden opnieuw",
+      "invalid_code": "⌯ <b>Ongeldige of verlopen code</b>\n\n✦ De code is geweigerd of verlopen. Voer de nieuwste code in die Telegram heeft gestuurd, of annuleer en start het aanmeldproces opnieuw",
+      "invalid_password": "⌯ <b>Onjuist verificatiewachtwoord</b>\n\n✦ Het wachtwoord voor verificatie in twee stappen is onjuist. Stuur het juiste wachtwoord of annuleer het aanmeldproces",
+      "code_empty_popup": "Voer de Telegram-code in voordat je bevestigt",
+      "invalid_code_popup": "De code is ongeldig of verlopen",
+      "buttons": {
+        "my_account": "Mijn huidige account",
+        "other_account": "Een ander account",
+        "share_phone": "Mijn telefoonnummer delen"
+      },
+      "too_many_attempts": "⌯ <b>Taak</b>\n\n✦ Telegram heeft inlogpogingen tijdelijk beperkt\n✦ Wacht voordat je /login opnieuw gebruikt",
+      "phone_banned": "⌯ <b>Telegram</b>\n\n✦ Dit telefoonnummer is geblokkeerd op Telegram\n✦ Gebruik een ander account of neem contact op met Telegram",
+      "hint_awaiting_contact": "⌯ <b>Deel je telefoonnummer</b>\n\n✦ Gebruik de knop hieronder om het telefoonnummer van je huidige Telegram-account veilig te delen",
+      "hint_awaiting_account_type": "⌯ <b>Kies het account dat je wilt koppelen</b>\n\n✦ Selecteer of je je huidige Telegram-account of een ander account wilt koppelen. Het geselecteerde account moet al lid zijn van alle privékanalen waarvan je inhoud wilt downloaden",
+      "hint_sending_code": "Wachtend\nVoer de Telegram code alleen in met de cijferknoppen\nWissen verwijdert het laatste cijfer en Bevestigen verstuurt de code",
+      "hint_awaiting_code": "Voer de Telegram code alleen in met de cijferknoppen\nWissen verwijdert het laatste cijfer en Bevestigen verstuurt de code"
+    },
+    "logout": {
+      "not_connected": "⌯ <b>ℹ Er is geen account gekoppeld</b>\n\n✦ Er is momenteel geen Telegram-account met je botprofiel verbonden",
+      "confirm": "⌯ <b>Het gekoppelde account verwijderen</b>\n\n✦ Het telefoonnummer <code>{phone_number}</code> wordt losgekoppeld en de opgeslagen sessie wordt verwijderd. Bevestig alleen als je wilt doorgaan",
+      "completed": "⌯ <b>Gekoppeld account verwijderd</b>\n\n✦ De opgeslagen Telegram-sessie is succesvol verwijderd. Je kunt op elk gewenst moment een ander account koppelen"
+    }
+  },
+  "subscription": {
+    "required": "⌯ <b>Abonnement op kanalen vereist</b>\n\n✦ Word lid van de onderstaande kanalen voordat je de bot gebruikt en druk daarna op de controleknop\n\n✦ {channels}",
+    "completed": "⌯ <b>Lidmaatschap geverifieerd</b>\n\n✦ Je kanaallidmaatschap is succesvol geverifieerd. Je kunt de bot nu blijven gebruiken",
+    "still_missing_popup": "Je moet nog steeds lid worden van alle vereiste kanalen"
+  },
+  "downloads": {
+    "invalid_link": "⌯ <b>Ongeldige Telegram-link</b>\n\n✦ Stuur een link die rechtstreeks naar een Telegram-bericht verwijst, zoals <code>https://t.me/channel/123</code>",
+    "post_not_found": "⌯ <b>Bericht niet gevonden</b>\n\n✦ Het aangevraagde bericht bestaat niet, is verwijderd of is niet toegankelijk voor het geselecteerde downloadaccount",
+    "nothing_to_download": "⌯ <b>Niets om te downloaden</b>\n\n✦ Dit bericht bevat geen media of tekst om te downloaden, zoals een melding dat de naam of foto van het kanaal is gewijzigd",
+    "comment_unavailable": "⌯ <b>Reactie kon niet worden gevonden</b>\n\n✦ De reactielink verwijst niet naar een toegankelijk discussiebericht of Telegram heeft de bericht-ID geweigerd",
+    "client_unavailable": "⌯ <b>Downloadaccount niet beschikbaar</b>\n\n✦ Er is momenteel geen Telegram-account beschikbaar om deze inhoud op te halen. Probeer het later opnieuw of koppel je eigen account",
+    "preparing": "⌯ <b>Download wordt voorbereid</b>\n\n✦ De media-informatie wordt verzameld voordat de overdracht begint",
+    "splitting": "⌯ <b>Bestand wordt gesplitst</b>\n\n✦ Het bestand is groter dan de limiet voor uploadonderdelen en wordt verdeeld in ondersteunde delen",
+    "file_too_large": "⌯ <b>Bestand overschrijdt de ondersteunde grootte</b>\n\n✦ Dit bestand kan niet worden verwerkt voor {action}, omdat het groter is dan {maximum_size}",
+    "file_too_small": "⌯ <b>Bestand is leeg of beschadigd</b>\n\n✦ De gedownloade media zijn te klein om als geldig te worden beschouwd, of Telegram heeft een onvolledig bestand teruggestuurd",
+    "file_missing": "⌯ <b>Gedownload bestand ontbreekt</b>\n\n✦ Het tijdelijke mediabestand kon niet worden gevonden of was leeg vóór het uploaden",
+    "download_failed": "⌯ <b>Download mislukt</b>\n\n✦ De media konden na meerdere pogingen niet worden opgehaald. Controleer de toegang van het bronaccount en probeer het opnieuw",
+    "upload_failed": "⌯ <b>Upload mislukt</b>\n\n✦ De media zijn gedownload, maar konden niet worden afgeleverd. Telegram gaf het volgende terug: <code>{error}</code>",
+    "flood_wait": "⌯ <b>Telegram-snelheidslimiet</b>\n\n✦ Telegram heeft om een vertraging van {seconds} seconden gevraagd voordat de upload kan doorgaan",
+    "actions": {
+      "download": "downloaden",
+      "upload": "uploaden"
+    },
+    "progress": {
+      "downloading": "Downloaden",
+      "uploading": "Uploaden",
+      "body": "⌯ <b>{action}</b>\n\n✦ <code>{progress_bar}</code>\n\n✦ Overgedragen: {current_size} / {total_size}\n✦ Voortgang: {percentage}%\n✦ Snelheid: {speed}/s\n✦ Resterend: {eta}"
+    },
+    "parts": {
+      "item": "Deel {current} van {total}"
+    },
+    "album": {
+      "preparing": "⌯ <b>Media-album gedetecteerd</b>\n\n✦ Het album bevat {count} geselecteerde items en wordt achtereenvolgens verwerkt",
+      "processing": "⌯ <b>Media-album wordt verwerkt</b>\n\n✦ Item {current} van {total} wordt verwerkt"
+    },
+    "single": {
+      "usage": "/dl\nOpen het bericht in Telegram en houd het ingedrukt\nKies Link kopiëren en stuur de link hier\nStuur bij meerdere berichten eerst de link van het eerste bericht"
+    },
+    "batch": {
+      "usage": "/bdl\nOpen het bericht in Telegram en houd het ingedrukt\nKies Link kopiëren en stuur de link hier\nStuur bij meerdere berichten eerst de link van het eerste bericht\nStuur de link van het laatste bericht uit hetzelfde kanaal\nBeide berichten en alles ertussen worden meegenomen\nDaarna kies je welke soorten inhoud je wilt",
+      "different_sources": "⌯ <b>Links behoren tot verschillende chats</b>\n\n✦ De eerste en laatste link moeten afkomstig zijn uit hetzelfde Telegram-kanaal of dezelfde groep",
+      "invalid_order": "⌯ <b>Onjuiste volgorde van berichten</b>\n\n✦ De eerste link moet naar een eerder bericht verwijzen dan de laatste link",
+      "invalid_links": "⌯ <b>Ongeldige batchlinks</b>\n\n✦ Beide waarden moeten geldige Telegram-berichtlinks uit dezelfde bron zijn",
+      "starting": "⌯ <b>Batchdownload gestart</b>\n\n✦ De bot verwerkt berichten van {start_id} tot en met {end_id}. Totaal aangevraagde berichten: {total}",
+      "progress": "⌯ <b>Batchdownload wordt uitgevoerd</b>\n\n✦ Huidig item: {current} van {total}\n✦ Bericht-ID: {message_id}\n✦ Gedownload: {downloaded}\n✦ Overgeslagen: {skipped}\n✦ Mislukt: {failed}",
+      "completed": "⌯ <b>Batchbewerking voltooid</b>\n\n✦ Gedownload: {downloaded}\n✦ Overgeslagen: {skipped}\n✦ Mislukt: {failed}",
+      "cancelled": "⌯ <b>Batchbewerking geannuleerd</b>\n\n✦ De resterende berichten worden niet verwerkt. De voortgang die vóór de annulering was opgeslagen, is gewist",
+      "failed": "⌯ <b>Batchbewerking gestopt</b>\n\n✦ Door een onverwachte fout konden de resterende berichten niet worden verwerkt",
+      "retrying": "⌯ <b>Mislukte items opnieuw proberen</b>\n\n✦ De hoofdronde is voltooid. {count} mislukte items worden nu opnieuw geprobeerd"
+    },
+    "disk_full": "⌯ <b>Taak</b>\n\n✦ Er is nu onvoldoende opslagruimte om dit bestand te downloaden\n✦ Probeer het later opnieuw",
+    "paid": {
+      "not_purchased": "⌯ <b>Deze post moet met Telegram Stars worden gekocht</b>\n\n✦ Koop hem met het gekoppelde account en stuur de link opnieuw"
+    }
+  },
+  "tasks": {
+    "already_running": "⌯ <b>Er wordt al een andere taak uitgevoerd</b>\n\n✦ Wacht tot de actieve taak is voltooid of annuleer deze voordat je een andere bewerking start",
+    "resumed": "⌯ <b>Taak hervat</b>\n\n✦ Er is een onderbroken taak gevonden. Deze wordt vanaf de laatst opgeslagen positie voortgezet",
+    "cancel_requested": "⌯ <b>Annulering aangevraagd</b>\n\n✦ De actieve bewerking wordt gestopt en tijdelijke bestanden worden opgeruimd",
+    "input_cancelled": "⌯ <b>Invoersessie geannuleerd</b>\n\n✦ De openstaande aanmeld-, filter- of bevestigingsstatus is verwijderd",
+    "none_to_cancel": "⌯ <b>ℹ Geen actieve bewerking</b>\n\n✦ Er is geen actieve taak of openstaande invoersessie om te annuleren",
+    "completion": {
+      "single": {
+        "private": "⌯ <b>Download voltooid</b>\n\n✦ De aangevraagde media zijn succesvol gedownload en naar deze chat gestuurd",
+        "saved_messages": "⌯ <b>Download voltooid</b>\n\n✦ De aangevraagde media zijn gedownload en afgeleverd bij de Opgeslagen berichten van je gekoppelde account",
+        "channel": "⌯ <b>Upload voltooid</b>\n\n✦ De aangevraagde media zijn succesvol afgeleverd bij <b>{channel_title}</b>\n\n✦ {message_link}"
+      },
+      "batch": {
+        "private": "⌯ <b>Batchtaak voltooid</b>\n\n✦ De bot heeft de geselecteerde reeks verwerkt en {count} items naar deze chat gestuurd",
+        "saved_messages": "⌯ <b>Batchtaak voltooid</b>\n\n✦ De bot heeft de geselecteerde reeks verwerkt en {count} items afgeleverd bij de Opgeslagen berichten van je gekoppelde account",
+        "channel": "⌯ <b>Batchupload voltooid</b>\n\n✦ De bot heeft de geselecteerde reeks verwerkt en {count} items naar je geselecteerde kanaal gestuurd"
+      },
+      "clone": {
+        "private": "⌯ <b>Kanaaloverdracht voltooid</b>\n\n✦ De kanaaltaak is voltooid en {count} items zijn naar deze chat gestuurd",
+        "saved_messages": "⌯ <b>Kanaaloverdracht voltooid</b>\n\n✦ De kanaaltaak is voltooid en {count} items zijn afgeleverd bij de Opgeslagen berichten van je gekoppelde account",
+        "channel": "⌯ <b>Kanaaloverdracht voltooid</b>\n\n✦ De kanaaltaak is voltooid en {count} items zijn naar het geselecteerde bestemmingskanaal gestuurd"
+      },
+      "monitor": {
+        "private": "⌯ <b>Bewaakt bericht afgeleverd</b>\n\n✦ Er is een nieuw bericht gedetecteerd en naar deze chat gestuurd",
+        "saved_messages": "⌯ <b>Bewaakt bericht afgeleverd</b>\n\n✦ Er is een nieuw bericht gedetecteerd en afgeleverd bij de Opgeslagen berichten van je gekoppelde account",
+        "channel": "⌯ <b>Bewaakt bericht afgeleverd</b>\n\n✦ Er is een nieuw bericht gedetecteerd en naar het geselecteerde bestemmingskanaal gestuurd"
+      }
+    }
+  },
+  "filters": {
+    "prompt": "⌯ <b>Kies het inhoudsfilter</b>\n\n✦ Selecteer of je alle inhoud wilt verwerken, alleen geselecteerde mediatypen wilt opslaan of geselecteerde mediatypen wilt overslaan. De selectiesessie blijft tien minuten actief",
+    "modes": {
+      "all": "Alle inhoud",
+      "save": "Alleen opslaan",
+      "skip": "Selectie overslaan"
+    },
+    "types": {
+      "videos": "Video's",
+      "photos": "Foto's",
+      "audio": "Audio",
+      "files": "Bestanden",
+      "text": "Tekst",
+      "other": "Overig"
+    },
+    "summary": {
+      "all": "Alle ondersteunde inhoud",
+      "save": "Alleen opslaan: {types}",
+      "skip": "Overslaan: {types}",
+      "minimum_duration": "Minimale duur: {seconds} seconden",
+      "maximum_duration": "Maximale duur: {seconds} seconden"
+    }
+  },
+  "clone": {
+    "usage": "/clone\nStuur de kanaallink of gebruikersnaam\nKoppel voor een privékanaal via /login een account dat al lid is",
+    "channel_not_found": "⌯ <b>Kanaal niet gevonden</b>\n\n✦ De gebruikersnaam of link van het kanaal is ongeldig, of het gekoppelde account kan het kanaal niet vinden",
+    "empty_channel": "⌯ <b>Kanaal is leeg</b>\n\n✦ Er zijn geen overdraagbare berichten in het geselecteerde kanaal gevonden",
+    "starting": "⌯ <b>Kanaaloverdracht gestart</b>\n\n✦ De bot bereidt zich voor om {total} bericht-ID's van <b>{channel_title}</b> te verwerken",
+    "progress": "⌯ <b>Kanaaloverdracht wordt uitgevoerd</b>\n\n✦ Huidig item: {current} van {total}\n✦ Bericht-ID: {message_id}\n✦ Gedownload: {downloaded}\n✦ Overgeslagen: {skipped}\n✦ Mislukt: {failed}",
+    "flood_wait": "⌯ <b>Telegram-snelheidslimiet</b>\n\n✦ De kanaaloverdracht is gedurende {seconds} seconden gepauzeerd",
+    "completed": "⌯ <b>Kanaalverwerking voltooid</b>\n\n✦ Gedownload: {downloaded}\n✦ Overgeslagen: {skipped}\n✦ Mislukt: {failed}",
+    "cancelled": "⌯ <b>Kanaaloverdracht geannuleerd</b>\n\n✦ De resterende kanaalberichten worden niet verwerkt",
+    "failed": "⌯ <b>Kanaaloverdracht mislukt</b>\n\n✦ Door een onverwachte fout kon de overdracht niet worden voltooid"
+  },
+  "uploads": {
+    "channel": {
+      "usage": "/uploadch\nKanaal kiezen\nEen botabonnement en Telegram Premium zijn verschillende abonnementen\nDe bot uploadt ongeveer 2 GB per deel\nEen gekoppeld Telegram Premium account kan tot 4 GB in één bestand uploaden\nKoppel het account met /login\nVoeg de bot en het account toe als beheerders van het doelkanaal en kies dat met /uploadch\nZonder doelkanaal kun je opgeslagen berichten kiezen\nAls documenten verstuurde delen moet je in hun genummerde volgorde samenvoegen\nHet makkelijkst ↣ voeg de bot toe als beheerder in je kanaal of groep en hij vraagt je hier om te bevestigen",
+      "current": "⌯ <b>Kanaal kiezen</b>\n\n✦ {channel_id}\n✦ /uploadch\n✦ /rmuploadch",
+      "invalid_id": "⌯ <b>Ongeldige kanaal-ID</b>\n\n✦ Stuur de numerieke Telegram-kanaal-ID, die meestal begint met <code>-100</code>\n✦ Het makkelijkst ↣ voeg de bot toe als beheerder in je kanaal of groep en hij vraagt je hier om te bevestigen",
+      "bot_not_admin": "⌯ <b>Beheerderstoegang voor de bot vereist</b>\n\n✦ Voeg de bot als beheerder toe aan het bestemmingskanaal voordat je kanaaluploads inschakelt\n✦ Het makkelijkst ↣ voeg de bot toe als beheerder in je kanaal of groep en hij vraagt je hier om te bevestigen",
+      "user_not_admin": "⌯ <b>Jouw beheerderstoegang is vereist</b>\n\n✦ Je moet eigenaar of beheerder van het bestemmingskanaal zijn",
+      "access_denied": "⌯ <b>Kanaalverificatie mislukt</b>\n\n✦ Het kanaal kon niet worden geopend of de vereiste beheerdersrechten ontbreken",
+      "enabled": "⌯ <b>Uploadkanaal verbonden</b>\n\n✦ Toekomstige downloads worden afgeleverd bij <b>{channel_title}</b> totdat je deze bestemming verwijdert",
+      "disabled": "⌯ <b>Uploadkanaal uitgeschakeld</b>\n\n✦ De bot heeft zijn beheerderstoegang tot het geselecteerde kanaal verloren. Kanaalbezorging is daarom automatisch uitgeschakeld",
+      "removed": "⌯ <b>Uploadkanaal verwijderd</b>\n\n✦ Toekomstige downloads worden weer naar de standaardbestemming gestuurd",
+      "not_set": "⌯ <b>ℹ Er is geen uploadkanaal ingesteld</b>\n\n✦ Je profiel heeft momenteel geen bestemmingskanaal"
+    },
+    "auto": {
+      "start_first": "⌯ <b>Kanaal koppelen afronden</b>\n\n✦ Je hebt de bot toegevoegd aan ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Tik op Start om je bij de bot aan te melden en de koppeling af te ronden\n✦ Zonder reactie binnen 24 uur verlaat de bot het",
+      "premium_only": "⌯ <b>Kanaal koppelen is voor abonnees</b>\n\n✦ Je hebt de bot toegevoegd aan ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Downloads in een kanaal of groep ontvangen hoort bij het bot-abonnement\n✦ De bot is vertrokken\n✦ Neem hieronder een abonnement en voeg de bot daarna opnieuw toe",
+      "confirm": "⌯ <b>Uploadkanaal bevestigen</b>\n\n✦ Je hebt de bot toegevoegd aan ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Als je bevestigt komen nieuwe downloads en gevolgde berichten daar terecht\n✦ Als je weigert verlaat de bot het\n✦ Zonder antwoord binnen 24 uur vertrekt de bot vanzelf",
+      "linked": "⌯ <b>Uploadkanaal gekoppeld</b>\n\n✦ Kanaal ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Nieuwe downloads en gevolgde berichten komen daar terecht\n✦ Stuur /rmuploadch om het te verwijderen",
+      "no_rights": "⌯ <b>De bot kan daar niet posten</b>\n\n✦ Kanaal ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ De bot is vertrokken omdat hij geen beheerder is of niet mag posten\n✦ Voeg hem opnieuw toe als beheerder die mag posten",
+      "user_not_admin": "⌯ <b>Je moet daar beheerder zijn</b>\n\n✦ Kanaal ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Het uploadkanaal moet van jou zijn of je moet er beheerder zijn\n✦ De bot is vertrokken",
+      "expired": "Dit verzoek is verlopen"
+    }
+  },
+  "forcedownload": {
+    "details": "⌯ <b>Geforceerde downloadmodus</b>\n\n✦ Wanneer deze modus is ingeschakeld, downloadt en uploadt de bot elk media-item in plaats van het rechtstreeks te kopiëren. Dit is nuttig bij het toepassen van een aangepaste miniatuur, het opnieuw opbouwen van bestanden of het verwerken van beperkingen voor doorsturen\n\n✦ Huidige status: {status}",
+    "premium_required": "⌯ <b>Abonnement vereist</b>\n\n✦ De geforceerde downloadmodus is beschikbaar voor abonnees, omdat deze extra opslagruimte, bandbreedte en verwerkingscapaciteit gebruikt",
+    "flag_removed": "⌯ <b>ℹ De optie --fdl is verwijderd</b>\n\n✦ Geforceerd downloaden is nu een permanente gebruikersmodus. Abonnees kunnen deze beheren met /forcedownload in plaats van de optie aan afzonderlijke opdrachten toe te voegen",
+    "enabled": "⌯ <b>Geforceerde downloadmodus ingeschakeld</b>\n\n✦ Toekomstige downloads, batches, kanaaloverdrachten en monitortaken halen de originele bestanden op en uploaden deze in plaats van berichten rechtstreeks te kopiëren",
+    "disabled": "⌯ <b>Geforceerde downloadmodus uitgeschakeld</b>\n\n✦ De bot kan onbeperkte berichten weer rechtstreeks kopiëren en blijft beschermde inhoud downloaden wanneer dat nodig is",
+    "status": {
+      "enabled": "Ingeschakeld",
+      "disabled": "Uitgeschakeld"
+    },
+    "buttons": {
+      "enable": "Geforceerd downloaden inschakelen",
+      "disable": "Geforceerd downloaden uitschakelen"
+    }
+  },
+  "thumbnail": {
+    "not_set": "⌯ <b>Geen aangepaste miniatuur</b>\n\n✦ Stuur eerst een afbeelding naar de bot en bevestig deze daarna om de afbeelding als omslag voor ondersteunde uploads te gebruiken",
+    "current": "⌯ <b>Huidige aangepaste miniatuur</b>\n\n✦ Dit is de afbeelding die voor toekomstige ondersteunde uploads is opgeslagen\n\n✦ Status: {status}",
+    "confirm": "⌯ <b>Deze afbeelding als miniatuur gebruiken</b>\n\n✦ Bevestig om deze afbeelding als aangepaste omslag op te slaan, of annuleer om de tijdelijke afbeelding te verwijderen",
+    "saved": "⌯ <b>Miniatuur opgeslagen</b>\n\n✦ De afbeelding is opgeslagen en ingeschakeld voor toekomstige ondersteunde uploads",
+    "download_failed": "⌯ <b>Downloaden van afbeelding mislukt</b>\n\n✦ De afbeelding kon niet worden opgeslagen. Stuur deze opnieuw en controleer of Telegram de upload heeft voltooid",
+    "temp_missing": "⌯ <b>Tijdelijke afbeelding is niet beschikbaar</b>\n\n✦ De bevestigingssessie is verlopen of de tijdelijke afbeelding is verwijderd. Stuur de afbeelding opnieuw",
+    "not_set_popup": "Er is geen opgeslagen miniatuur beschikbaar",
+    "status": {
+      "enabled": "Ingeschakeld",
+      "disabled": "Uitgeschakeld"
+    },
+    "buttons": {
+      "enable": "Miniatuur inschakelen",
+      "disable": "Miniatuur uitschakelen"
+    }
+  },
+  "captions": {
+    "settings": "⌯ <b>Verwerking van bijschriften</b>\n\n✦ Kies hoe bijschriften moeten worden behandeld wanneer media worden gekopieerd of geüpload\n\n✦ Huidige modus: {current}",
+    "modes": {
+      "keep_all": "Het oorspronkelijke bijschrift behouden",
+      "remove_all": "Bijschriften van media verwijderen",
+      "remove_links_users": "Links en gebruikersnamen verwijderen"
+    },
+    "buttons": {
+      "keep_all": "Oorspronkelijke bijschriften behouden",
+      "remove_all": "Alle bijschriften verwijderen",
+      "remove_links_users": "Links en gebruikersnamen verwijderen"
+    },
+    "already_selected_popup": "Deze bijschriftmodus is al actief",
+    "updated_popup": "Bijschriftmodus bijgewerkt"
+  },
+  "profile": {
+    "unavailable": "⌯ <b>Profiel niet beschikbaar</b>\n\n✦ Je opgeslagen gebruikersrecord kon niet worden geladen. Stuur /start en probeer het opnieuw",
+    "details": "⌯ <b>Jouw profiel</b>\n\n✦ Gebruikers-ID: <code>{user_id}</code>\n✦ Abonnement: {plan_status}\n✦ Vervaldatum abonnement: {expiry_date}\n✦ Dagelijkse punten: {daily_points}/{daily_limit}\n✦ Dagelijkse reset: {reset_time}\n✦ Cadeaupunten: {gift_points}\n✦ Verwijzingspunten: {referral_points}\n✦ Verwijzingen: {referral_count}\n✦ Geforceerd downloaden: {force_download_status}\n\n✦ Verwijzingslink:\n✦ <code>{referral_link}</code>"
+  },
+  "plans": {
+    "free": "Gratis",
+    "premium": "Abonnee",
+    "monthly": "Maandelijks",
+    "yearly": "Jaarlijks"
+  },
+  "premium": {
+    "details": "⌯ <b>Abonnement</b>\n\n✦ Abonnement\n✦ Je mag maximaal 5 open taken hebben\n✦ Wacht tot er een klaar is of annuleer met /cancel\n✦ Met een abonnement sla je de gedeelde wachtrij over\n✦ /clone\n✦ /monitor\n✦ /uploadch\n✦ /caption\n✦ /fdl\n✦ Een botabonnement en Telegram Premium zijn verschillende abonnementen",
+    "feature_required": "⌯ <b>Abonnement vereist</b>\n\n✦ Deze functie is beschikbaar voor abonnees. Open het abonnementsmenu om de beschikbare abonnementen te bekijken",
+    "already_active": "⌯ <b>Abonnement is actief</b>\n\n✦ Je abonnement blijft actief tot {expiry_date}",
+    "already_active_popup": "Je abonnement is actief tot {expiry_date}",
+    "required_popup": "Voor deze functie is een actief abonnement vereist",
+    "granted": "⌯ <b>Abonnement geactiveerd</b>\n\n✦ Je account is succesvol geüpgraded. Het huidige abonnement verloopt op {expiry_date}",
+    "removed": "⌯ <b>ℹ Abonnement verwijderd</b>\n\n✦ Modi die alleen voor abonnees beschikbaar zijn en bestemmingsinstellingen zijn voor je account uitgeschakeld",
+    "buttons": {
+      "monthly": "Maandelijks abonnement",
+      "yearly": "Jaarlijks abonnement"
+    },
+    "granted_days": "⌯ <b>Abonnement</b>\n\n✦ Toegevoegde dagen: {days}\n✦ Verloopt op: {expiry_date}\n✦ De dagen zijn toegevoegd aan eventueel resterende tijd"
+  },
+  "language": {
+    "select": "⌯ <b>Kies je taal</b>\n\n✦ Selecteer de taal die wordt gebruikt voor botberichten en je persoonlijke Telegram-opdrachtmenu",
+    "changed": "⌯ <b>Taal gewijzigd</b>\n\n✦ Berichten en Telegram-opdrachten worden nu weergegeven in het {language_name}",
+    "unavailable_popup": "De geselecteerde taal is niet beschikbaar"
+  },
+  "limits": {
+    "insufficient_points": "⌯ <b>Niet genoeg downloadpunten</b>\n\n✦ Je hebt niet genoeg punten voor deze download. Je dagelijkse saldo wordt na {time_left} opnieuw ingesteld, of je kunt meer punten verdienen via verwijzingen",
+    "insufficient_points_batch": "⌯ <b>Niet genoeg punten voor deze batch</b>\n\n✦ Voor deze bewerking zijn {required_points} punten vereist, terwijl je huidige beschikbare saldo {available_points} is",
+    "reset_now": "Wordt nu opnieuw ingesteld",
+    "cooldown": "⌯ <b>Wacht voordat je opnieuw downloadt</b>\n\n✦ Je kunt na {remaining_time} een nieuwe gratis download starten"
+  },
+  "referrals": {
+    "share_text": "Gebruik deze Telegram-downloader en verdien punten via mijn verwijzingslink",
+    "new_referral": "⌯ <b>Nieuwe verwijzing aangemeld</b>\n\n✦ {user_name} (<code>{user_id}</code>) heeft zich via jouw link aangemeld. Je hebt {reward} verwijzingspunten ontvangen",
+    "welcome_bonus": "⌯ <b>Verwijzingsbonus ontvangen</b>\n\n✦ Je hebt {bonus} punten ontvangen omdat je via de verwijzingslink van een bestaande gebruiker bent aangemeld"
+  },
+  "gifts": {
+    "claim": {
+      "already_claimed": "⌯ <b>ℹ Cadeau al geclaimd</b>\n\n✦ Dit cadeau is eerder aan je account toegevoegd en kan niet twee keer worden geclaimd",
+      "invalid": "⌯ <b>Cadeau niet gevonden</b>\n\n✦ De cadeaulink is ongeldig of bestaat niet meer",
+      "inactive": "⌯ <b>Cadeau is niet actief</b>\n\n✦ Dit cadeau is door de beheerder uitgeschakeld en kan niet meer worden geclaimd",
+      "link_expired": "⌯ <b>Cadeaulink verlopen</b>\n\n✦ De toegestane tijd om dit cadeau te claimen is verstreken",
+      "limit_reached": "⌯ <b>Cadeaulimiet bereikt</b>\n\n✦ Het maximale aantal toegestane claims is al gebruikt",
+      "not_allowed": "⌯ <b>Cadeau is niet aan jouw account toegewezen</b>\n\n✦ Dit cadeau kan alleen door specifieke gebruikers worden geclaimd en jouw account staat niet in de lijst",
+      "excluded": "⌯ <b>Cadeau niet beschikbaar voor jouw account</b>\n\n✦ Jouw account is uitgesloten van het claimen van dit cadeau",
+      "completed": "⌯ <b>Cadeau geclaimd</b>\n\n✦ Er zijn succesvol {value} punten aan je account toegevoegd",
+      "completed_with_expiry": "⌯ <b>Cadeau geclaimd</b>\n\n✦ Er zijn {value} punten aan je account toegevoegd. Deze blijven beschikbaar tot {expiry_date}",
+      "failed": "⌯ <b>Claimen van cadeau mislukt</b>\n\n✦ Het cadeau kon niet aan je account worden toegevoegd. Probeer het later opnieuw"
+    }
+  },
+  "help": {
+    "menu": {
+      "title": "⌯ <b>Helpcentrum</b>\n\n✦ Kies hieronder een functie om de instructies en het aanbevolen gebruik ervan te bekijken"
+    },
+    "buttons": {
+      "single": "Enkele download",
+      "batch": "Batchdownload",
+      "clone": "Kanaaloverdracht",
+      "monitor": "Kanaalmonitor",
+      "channel_upload": "Uploadkanaal",
+      "forcedownload": "Geforceerd downloaden",
+      "login": "Gekoppeld account",
+      "points": "Punten",
+      "premium": "Abonnement",
+      "other_uses": "Andere toepassingen"
+    },
+    "features": {
+      "dl": "⌯ <b>Eén bericht downloaden</b>\n\n✦ /dl\n✦ Open het bericht in Telegram en houd het ingedrukt\n✦ Kies Link kopiëren en stuur de link hier\n✦ Stuur bij meerdere berichten eerst de link van het eerste bericht\n✦ <code>https://t.me/example_channel/15</code>\n✦ Stuur de kanaallink of gebruikersnaam\n✦ Koppel voor een privékanaal via /login een account dat al lid is\n✦ Bestandsgrootte:\n✦ De bot uploadt ongeveer 2 GB per deel\n✦ Kies Downloaden en splitsen of Annuleren\n✦ Koppel voor een heel bestand tot 4 GB een Telegram Premium account met /login en kies een kanaal met /uploadch",
+      "bdl": "⌯ <b>Meerdere berichten downloaden</b>\n\n✦ /bdl\n✦ Open het bericht in Telegram en houd het ingedrukt\n✦ Kies Link kopiëren en stuur de link hier\n✦ Stuur bij meerdere berichten eerst de link van het eerste bericht\n✦ Stuur de link van het laatste bericht uit hetzelfde kanaal\n✦ Beide berichten en alles ertussen worden meegenomen\n✦ Daarna kies je welke soorten inhoud je wilt\n✦ <code>/bdl https://t.me/example_channel/15 https://t.me/example_channel/30</code>\n✦ Stuur /cancel om een taak te kiezen of /cancel gevolgd door het taaknummer",
+      "clone": "⌯ <b>Een volledig kanaal overzetten</b>\n\n✦ Abonnement\n✦ /clone\n✦ Stuur de kanaallink of gebruikersnaam\n✦ Koppel voor een privékanaal via /login een account dat al lid is\n✦ /uploadch\n✦ Stuur /cancel om een taak te kiezen of /cancel gevolgd door het taaknummer",
+      "monitor": "⌯ <b>Nieuwe kanaalberichten bewaken</b>\n\n✦ Abonnement\n✦ /monitor\n✦ Stuur de kanaallink of gebruikersnaam\n✦ Koppel voor een privékanaal via /login een account dat al lid is\n✦ Kanaal:\n✦ Filters:\n✦ Openbare kanalen gebruiken een downloadaccount\n✦ Privékanalen worden elk uur gecontroleerd met één account tegelijk dat daarna wordt gesloten\n✦ Nieuwe berichten worden in een opgeslagen wachtrij gezet en op volgorde bezorgd\n✦ Bewaking stoppen",
+      "channel_upload": "⌯ <b>Inhoud naar een ander kanaal sturen</b>\n\n✦ Abonnement\n✦ /uploadch\n✦ Een botabonnement en Telegram Premium zijn verschillende abonnementen\n✦ De bot uploadt ongeveer 2 GB per deel\n✦ Een gekoppeld Telegram Premium account kan tot 4 GB in één bestand uploaden\n✦ Koppel het account met /login\n✦ Voeg de bot en het account toe als beheerders van het doelkanaal en kies dat met /uploadch\n✦ Zonder doelkanaal kun je opgeslagen berichten kiezen\n✦ Als documenten verstuurde delen moet je in hun genummerde volgorde samenvoegen\n✦ /rmuploadch\n✦ Het makkelijkst ↣ voeg de bot toe als beheerder in je kanaal of groep en hij vraagt je hier om te bevestigen",
+      "forcedownload": "⌯ <b>Geforceerde downloadmodus</b>\n\n✦ Gebruik /forcedownload om de bot elk bestand te laten ophalen en uploaden in plaats van onbeperkte berichten te kopiëren. Deze modus is nuttig voor aangepaste miniaturen en het opnieuw opbouwen van inhoud",
+      "login": "⌯ <b>Een Telegram-account koppelen</b>\n\n✦ Gebruik /login en kies je huidige account of een alternatief account. Het gekoppelde account moet al lid zijn van privékanalen waartoe je toegang wilt. Autorisatiecodes worden alleen via het beveiligde toetsenblok ingevoerd\n✦ Voer de Telegram code alleen in met de cijferknoppen\n✦ Wissen verwijdert het laatste cijfer en Bevestigen verstuurt de code\n✦ Stuur de kanaallink of gebruikersnaam\n✦ Koppel voor een privékanaal via /login een account dat al lid is\n✦ /logout",
+      "points": "⌯ <b>Downloadpunten</b>\n\n✦ Gratis downloads gebruiken dagelijkse punten, cadeaupunten en verwijzingspunten. Deel je persoonlijke link om meer punten te verdienen:\n\n✦ <code>{referral_link}</code>",
+      "premium": "⌯ <b>Abonnementsfuncties</b>\n\n✦ /premium\n✦ Abonnement\n✦ Je mag maximaal 5 open taken hebben\n✦ Wacht tot er een klaar is of annuleer met /cancel\n✦ Met een abonnement sla je de gedeelde wachtrij over\n✦ /clone\n✦ /monitor\n✦ /uploadch\n✦ /caption\n✦ /fdl\n✦ Een botabonnement en Telegram Premium zijn verschillende abonnementen",
+      "other_uses": "⌯ <b>Andere manieren om de bot te gebruiken</b>\n\n✦ <b>Het ene kanaal naar het andere overzetten:</b> Stel met /uploadch een bestemming in en voer daarna /clone uit voor het bronkanaal. Geselecteerde inhoud wordt volgens je filters overgezet\n\n✦ <b>Omslagen voor een volledige serie vervangen:</b> Stuur de nieuwe omslagafbeelding naar de bot en bevestig deze, schakel de geforceerde downloadmodus in en voer daarna /bdl uit met de links van de eerste en laatste aflevering. De bestanden worden gedownload en waar ondersteund met de geselecteerde omslag geüpload"
+    }
+  },
+  "monitor": {
+    "login_required": "⌯ <b>Een Telegram-account koppelen</b>\n\n✦ Stuur de kanaallink of gebruikersnaam\n✦ Koppel voor een privékanaal via /login een account dat al lid is",
+    "usage": "⌯ <b>Nieuwe kanaalberichten bewaken</b>\n\n✦ {current_status}\n✦ /monitor\n✦ Stuur de kanaallink of gebruikersnaam\n✦ Koppel voor een privékanaal via /login een account dat al lid is\n✦ Kanaal:\n✦ Filters:\n✦ Openbare kanalen gebruiken een downloadaccount\n✦ Privékanalen worden elk uur gecontroleerd met één account tegelijk dat daarna wordt gesloten\n✦ Nieuwe berichten worden in een opgeslagen wachtrij gezet en op volgorde bezorgd\n✦ Bewaking stoppen",
+    "invalid_channel_id": "⌯ <b>Ongeldige kanaal-ID</b>\n\n✦ Gebruik een numerieke Telegram-kanaal-ID, die meestal begint met <code>-100</code>",
+    "invalid_action": "⌯ <b>Ongeldige monitoractie</b>\n\n✦ Gebruik <code>on</code> om de bewaking te starten of <code>off</code> om deze te stoppen",
+    "not_active": "⌯ <b>ℹ Monitor is niet actief</b>\n\n✦ Het opgegeven kanaal wordt momenteel niet door je account bewaakt",
+    "already_active": "⌯ <b>ℹ Er is al een monitor actief</b>\n\n✦ Stop de bewaking van het huidige kanaal voordat je een ander kanaal selecteert",
+    "access_denied": "⌯ <b>Toegang tot kanaal geweigerd</b>\n\n✦ Het gekoppelde account kan het opgegeven kanaal niet openen of de ID is onjuist",
+    "start_failed": "⌯ <b>Start de taak opnieuw</b>\n\n✦ Stuur de kanaallink of gebruikersnaam\n✦ Koppel voor een privékanaal via /login een account dat al lid is",
+    "started": "⌯ <b>Nieuwe kanaalberichten bewaken</b>\n\n✦ Kanaal: {channel_title}\n✦ Filters: {filter_status}\n✦ Openbare kanalen gebruiken een downloadaccount\n✦ Privékanalen worden elk uur gecontroleerd met één account tegelijk dat daarna wordt gesloten\n✦ Nieuwe berichten worden in een opgeslagen wachtrij gezet en op volgorde bezorgd",
+    "stopped": "⌯ <b>Kanaalmonitor gestopt</b>\n\n✦ Nieuwe berichten van het geselecteerde kanaal worden niet meer automatisch verwerkt",
+    "session_stopped": "⌯ <b>Monitor gestopt</b>\n\n✦ De gekoppelde Telegram-sessie is verlopen of ingetrokken. Automatische bewaking is daarom uitgeschakeld",
+    "status": {
+      "active": "Actief voor kanaal <code>{channel_id}</code>",
+      "inactive": "Niet actief"
+    },
+    "stop_button": "Bewaking stoppen",
+    "source_lost": "⌯ <b>Kanaal volgen gestopt</b>\n\n✦ Kanaal ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Je gekoppelde account kon het een hele dag niet openen\n✦ Misschien is het verwijderd of privé gemaakt of heeft het account het verlaten\n✦ Om het weer te volgen zorg dat het account lid is en stuur /monitor"
+  },
+  "stats": {
+    "system": "⌯ <b>Systeemstatistieken</b>\n\n✦ Actieve tijd: {uptime}\n✦ Schijf: {disk_usage} / {disk_total} ({disk_percent}%)\n✦ Geheugen: {ram_percent}%\n✦ CPU: {cpu_percent}%\n✦ Netwerk verzonden: {sent}\n✦ Netwerk ontvangen: {received}",
+    "admin": "⌯ <b>Gebruikersstatistieken</b>\n\n✦ Totaal aantal gebruikers: {total_users}\n✦ Abonnees: {total_premium}\n✦ Toegevoegd door beheerder: {premium_by_admin}\n✦ Betaald met Stars: {premium_by_stars}",
+    "public": "⌯ <b>Botstatistieken</b>\n\n✦ Looptijd: {uptime}\n✦ Totaal aantal downloads: {total_downloads}"
+  },
+  "payments": {
+    "monthly": {
+      "title": "Maandelijks abonnement",
+      "description": "Activeer abonnementsfuncties voor 30 dagen"
+    },
+    "yearly": {
+      "title": "Jaarlijks abonnement",
+      "description": "Activeer abonnementsfuncties voor 365 dagen"
+    },
+    "total_label": "Totaal abonnement",
+    "invalid_plan_popup": "Het geselecteerde abonnement is ongeldig",
+    "invoice_failed_popup": "De betalingsfactuur kon niet worden aangemaakt",
+    "unrecognized": "⌯ <b>Betalingsabonnement niet herkend</b>\n\n✦ De betaling is ontvangen, maar het bijbehorende abonnement kon niet worden vastgesteld. Neem met de betalingsgegevens contact op met ondersteuning",
+    "activation_failed": "⌯ <b>Activering van abonnement mislukt</b>\n\n✦ De betaling is ontvangen, maar de database kon het abonnement niet activeren. Neem contact op met ondersteuning voor handmatige hulp",
+    "completed": "⌯ <b>Abonnement geactiveerd</b>\n\n✦ Het {plan_name} abonnement is nu actief en verloopt op {expiry_date}"
+  },
+  "broadcast": {
+    "json": {
+      "file_required": "⌯ <b>JSON-bestand voor uitzending vereist</b>\n\n✦ Beantwoord een meertalig JSON-bestand en gebruik <code>/bc .</code>",
+      "invalid_file": "⌯ <b>Ongeldig uitzendbestand</b>\n\n✦ Het beantwoorde document moet een JSON-bestand zijn",
+      "validation_failed": "⌯ <b>Validatie van uitzendbestand mislukt</b>\n\n✦ Het bestand kon niet worden geaccepteerd: <code>{error}</code>",
+      "confirm": "⌯ <b>Meertalige uitzending bevestigen</b>\n\n✦ Het bestand bevat {language_count} bruikbare talen. Gebruikers ontvangen eerst hun opgeslagen taal, daarna hun basistaal en uiteindelijk Engels als laatste terugvaloptie\n\n✦ Filters: {filters}",
+      "how_to": "⌯ <b>Meertalige uitzending</b>\n\n✦ Tik op de knop hieronder om een JSON-sjabloon te ontvangen met alle beschikbare talen. Vul de <code>text</code>-waarde in voor elke gewenste taal, upload het bestand en beantwoord het met <code>/bc .</code> — leeg gelaten talen vallen terug op Engels",
+      "template_sent": "⌯ <b>Uitzendingssjabloon</b>\n\n✦ Het bestand bevat {language_count} talen en is gegenereerd op basis van de huidige taalbestanden"
+    },
+    "usage": "⌯ <b>Een bericht uitzenden</b>\n\n✦ Beantwoord het bericht dat je wilt verzenden en gebruik daarna /bc. Optionele filters zijn onder andere <code>-only GEBRUIKERS_ID</code> en <code>-rm GEBRUIKERS_ID --prem</code>",
+    "invalid_message": "⌯ <b>Uitzendbericht niet beschikbaar</b>\n\n✦ Het beantwoorde bericht heeft geen geldige Telegram-ID",
+    "confirm": "⌯ <b>Uitzending bevestigen</b>\n\n✦ Bericht-ID: <code>{message_id}</code>\n✦ Filters: {filters}\n\n✦ Kies of je het bericht normaal wilt verzenden of wilt verzenden en vastzetten",
+    "starting": "⌯ <b>Uitzending gestart</b>\n\n✦ Het bericht wordt naar de geselecteerde gebruikers verzonden",
+    "progress": "⌯ <b>Uitzending wordt uitgevoerd</b>\n\n✦ Verwerkt: {processed}/{total}\n✦ Succesvol: {successful}\n✦ Mislukt: {failed}",
+    "completed": "⌯ <b>Uitzending voltooid</b>\n\n✦ Doelgebruikers: {total}\n✦ Succesvol: {successful}\n✦ Mislukt: {failed}",
+    "cancelled": "⌯ <b>Uitzending geannuleerd</b>\n\n✦ De bewerking is gestopt nadat {processed} gebruikers waren verwerkt",
+    "buttons": {
+      "normal": "Normaal verzenden",
+      "pin": "Verzenden en vastzetten",
+      "get_template": "JSON-sjabloon ophalen"
+    },
+    "filters": {
+      "none": "Geen filters",
+      "summary": "Alleen gebruikers: {only_count}, uitgesloten gebruikers: {excluded_count}, abonnees uitsluiten: {exclude_premium}"
+    }
+  },
+  "admin": {
+    "users": {
+      "new_language": "⌯ <b>Niet-beschikbare taal gedetecteerd</b>\n\n✦ Gebruiker: {first_name}\n✦ Gebruikers-ID: <code>{user_id}</code>\n✦ Gedetecteerde code: <code>{language_code}</code>",
+      "new_user": "⌯ <b>Nieuwe gebruiker aangemeld</b>\n\n✦ Naam: {first_name} {last_name}\n✦ Gebruikers-ID: <code>{user_id}</code>\n✦ Gebruikersnaam: {username}\n✦ Totaal aantal gebruikers: {total_users}",
+      "exported": "⌯ <b>Gebruikersexport voltooid</b>\n\n✦ Het bijgevoegde bestand bevat {count} gebruikersrecords"
+    },
+    "payments": {
+      "new_subscription": "⌯ <b>Nieuw betaald abonnement</b>\n\n✦ Gebruiker: {user_name}\n✦ Gebruikers-ID: <code>{user_id}</code>\n✦ Abonnement: {plan_name}\n✦ Bedrag: {amount} Stars"
+    },
+    "pool": {
+      "insufficient": "⌯ <b>Downloadaccountpool is niet compleet</b>\n\n✦ Momenteel geladen: {current}\n✦ Extra vereiste accounts: {missing}"
+    },
+    "gifts": {
+      "create_usage": "⌯ <b>Een cadeau maken</b>\n\n✦ Gebruik <code>/create -gift --value PUNTEN</code>. Optionele instellingen zijn onder andere <code>--linkexpiry DDHHMM</code>, <code>--giftexpiry DDHHMM</code>, <code>--onlyuser [IDS]</code>, <code>--exceptionuser [IDS]</code> en <code>--limit GETAL</code>",
+      "value_required": "⌯ <b>Cadeauwaarde vereist</b>\n\n✦ Geef na <code>--value</code> een positief getal op",
+      "user_filter_conflict": "⌯ <b>Conflicterende gebruikersfilters</b>\n\n✦ Een cadeau kan niet tegelijkertijd filters voor toegestane en uitgesloten gebruikers gebruiken",
+      "invalid_duration": "⌯ <b>Ongeldige duur</b>\n\n✦ Gebruik voor cadeauduren het zescijferige formaat <code>DDHHMM</code>",
+      "invalid_values": "⌯ <b>Ongeldige cadeau-instellingen</b>\n\n✦ Controleer de gebruikers-ID's, claimlimiet en alle opgegeven waarden",
+      "created": "⌯ <b>Cadeau aangemaakt</b>\n\n✦ De cadeaulink is klaar:\n✦ <code>{gift_link}</code>",
+      "empty": "⌯ <b>ℹ Geen actieve cadeaus</b>\n\n✦ Er zijn momenteel geen actieve cadeaulinks",
+      "list_title": "⌯ <b>Actieve cadeaus</b>\n\n✦ De volgende cadeaulinks zijn momenteel beschikbaar",
+      "list_item": "<b>Cadeau:</b> <code>{gift_pid}</code>\nWaarde: {value}\nClaims: {usage_count}/{usage_limit}\nVervaldatum link: {expiry}\nAangemaakt: {created_at}\nLink: <code>{gift_link}</code>",
+      "remove_usage": "⌯ <b>Een cadeau verwijderen</b>\n\n✦ Gebruik <code>/rm -gift --pid CADEAU_ID</code>",
+      "not_found": "⌯ <b>Cadeau niet gevonden</b>\n\n✦ Er bestaat geen actief cadeau met de opgegeven ID",
+      "remove_confirm": "⌯ <b>Cadeau deactiveren</b>\n\n✦ Cadeau: <code>{gift_pid}</code>\n✦ Waarde: {value}\n✦ Claims: {usage_count}\n\n✦ Bevestig om toekomstige claims te voorkomen",
+      "deactivated": "⌯ <b>Cadeau gedeactiveerd</b>\n\n✦ Het cadeau <code>{gift_pid}</code> kan niet meer worden geclaimd"
+    },
+    "add": {
+      "usage": "⌯ <b>Beheerdersinstellingen toevoegen</b>\n\n✦ Gebruik /add met <code>-premium</code>, <code>-lang</code> of <code>-frcch</code>"
+    },
+    "remove": {
+      "usage": "⌯ <b>Beheerdersinstellingen verwijderen</b>\n\n✦ Gebruik /rm met <code>-premium</code>, <code>-gift</code> of <code>-frcch</code>"
+    },
+    "premium": {
+      "add_usage": "⌯ <b>Abonnement</b>\n\n✦ /admin\n✦ Kies gebruikers of stuur hun numerieke identificatienummers\n✦ Dagen\n✦ <code>/add -premium --user [123456789] --days 30</code>",
+      "added": "⌯ <b>Abonnementsupdate voltooid</b>\n\n✦ Bijgewerkte gebruikers: {users}\n✦ Ontbrekende gebruikers: {missing}",
+      "remove_usage": "⌯ <b>Een abonnement verwijderen</b>\n\n✦ Gebruik <code>/rm -premium --user [GEBRUIKERS_IDS]</code>",
+      "removed": "⌯ <b>Verwijdering van abonnement voltooid</b>\n\n✦ Bijgewerkte gebruikers: {users}\n✦ Ontbrekende of niet-actieve gebruikers: {missing}"
+    },
+    "languages": {
+      "reply_to_json": "⌯ <b>Taalbestand vereist</b>\n\n✦ Beantwoord een geldig JSON-taalbestand wanneer je <code>/add -lang</code> gebruikt",
+      "json_required": "⌯ <b>JSON-bestand vereist</b>\n\n✦ Het beantwoorde document moet de extensie <code>.json</code> gebruiken",
+      "already_exists": "⌯ <b>ℹ Taal bestaat al</b>\n\n✦ Taal <code>{language_code}</code> is al geïnstalleerd. Voeg <code>--update</code> toe om deze te vervangen",
+      "invalid_json": "⌯ <b>Ongeldig taalbestand</b>\n\n✦ Het JSON-bestand kon niet worden geladen: <code>{error}</code>",
+      "added": "⌯ <b>Taal toegevoegd</b>\n\n✦ Taal <code>{language_code}</code> is nu beschikbaar",
+      "updated": "⌯ <b>Taal bijgewerkt</b>\n\n✦ Taal <code>{language_code}</code> is succesvol opnieuw geladen"
+    },
+    "force_subscription": {
+      "empty": "⌯ <b>ℹ Geen verplichte kanalen</b>\n\n✦ Er zijn momenteel geen kanalen ingesteld waarvoor een lidmaatschap verplicht is",
+      "list_title": "⌯ <b>Verplichte kanalen</b>\n\n✦ Lidmaatschap van de volgende kanalen wordt momenteel verplicht gesteld",
+      "list_item": "Link: {link}\nKanaal-ID: <code>{channel_id}</code>\nAangesloten: {joined}\nLimiet: {limit}",
+      "add_usage": "⌯ <b>Een verplicht kanaal toevoegen</b>\n\n✦ Gebruik <code>/add -frcch --link KANAAL_LINK --id KANAAL_ID --limit GETAL</code>",
+      "permission_required": "⌯ <b>Beheerdersrechten vereist</b>\n\n✦ De bot moet beheerder zijn en toestemming hebben om gebruikers uit te nodigen",
+      "added": "⌯ <b>Verplicht kanaal toegevoegd</b>\n\n✦ Kanaal: {channel_title}\n✦ Lidmaatschapslimiet: {limit}",
+      "add_failed": "⌯ <b>Kanaal kon niet worden toegevoegd</b>\n\n✦ Controleer de kanaal-ID, link en beheerdersrechten van de bot",
+      "remove_usage": "⌯ <b>Een verplicht kanaal verwijderen</b>\n\n✦ Gebruik <code>/rm -frcch KANAAL_ID</code> of geef de opgeslagen link op",
+      "removed": "⌯ <b>Verplicht kanaal verwijderd</b>\n\n✦ Lidmaatschap van het kanaal is niet langer verplicht",
+      "not_found": "⌯ <b>Verplicht kanaal niet gevonden</b>\n\n✦ Geen opgeslagen kanaal komt overeen met de opgegeven ID of link"
+    },
+    "logs": {
+      "not_found": "⌯ <b>Logboekmap niet beschikbaar</b>\n\n✦ De logboekmap van de bot bestaat niet",
+      "empty": "⌯ <b>Geen logboeken beschikbaar</b>\n\n✦ Er zijn geen niet-lege botlogboekbestanden gevonden",
+      "file_caption": "⌯ <b>Botlogboek</b>\n\n✦ Bestand: <code>{filename}</code>",
+      "upload_failed": "⌯ <b>Uploaden van logboek mislukt</b>\n\n✦ Bestand: <code>{filename}</code>\n✦ Fout: <code>{error}</code>"
+    }
+  },
+  "queue": {
+    "accepted": "⌯ <b>Je taak is opgeslagen</b>\n\n✦ Taak ↣ {task_id}\n✦ Stuur /cancel om een taak te kiezen of /cancel gevolgd door het taaknummer\n✦ <code>/cancel {task_id}</code>",
+    "waiting_free": "⌯ <b>Wachtend</b>\n\n✦ Mensen voor je: {ahead}\n✦ Je download begint zodra er een plek vrij is\n✦ Met een abonnement sla je de gedeelde wachtrij over",
+    "waiting_premium": "⌯ <b>Wachtend</b>\n\n✦ Je eerdere taken: {ahead}\n✦ Je taken worden na elkaar uitgevoerd",
+    "limit_free": "⌯ <b>Taak</b>\n\n✦ Je hebt al een open taak\n✦ Wacht tot die klaar is of annuleer met /cancel\n✦ Je mag maximaal 5 open taken hebben\n✦ Wacht tot er een klaar is of annuleer met /cancel",
+    "limit_premium": "⌯ <b>Taak</b>\n\n✦ Je mag maximaal {limit} open taken hebben\n✦ Wacht tot er een klaar is of annuleer met /cancel",
+    "lost_after_restart": "⌯ <b>Start de taak opnieuw</b>\n\n✦ Taak ↣ {task_id}\n✦ Open het bericht in Telegram en houd het ingedrukt\n✦ Kies Link kopiëren en stuur de link hier\n✦ Stuur bij meerdere berichten eerst de link van het eerste bericht",
+    "cancel_usage": "Stuur /cancel om een taak te kiezen of /cancel gevolgd door het taaknummer\n<code>/cancel 123</code>",
+    "cancelled_one": "Taak {task_id} is geannuleerd",
+    "not_found": "Taak {task_id} is al klaar of is niet van jou",
+    "choose_to_cancel": "⌯ <b>Annuleren Taak</b>\n\n✦ Stuur /cancel om een taak te kiezen of /cancel gevolgd door het taaknummer",
+    "cancelled_popup": "Annuleren",
+    "not_found_popup": "Start de taak opnieuw",
+    "buttons": {
+      "cancel": "Annuleren Taak",
+      "upgrade": "Abonnement",
+      "cancel_task": "Taak {task_id} {kind} {status}",
+      "cancel_all": "Annuleren Taak /cancel"
+    },
+    "kinds": {
+      "dl": "Eén bericht downloaden",
+      "bdl": "Meerdere berichten downloaden",
+      "clone": "Een volledig kanaal overzetten",
+      "task": "Taak",
+      "monitor": "Nieuwe kanaalberichten bewaken"
+    },
+    "status": {
+      "queued": "Wachtend",
+      "running": "Bezig"
+    },
+    "task_number": "Taak {task_id}"
+  },
+  "spam": {
+    "per_second": "Stuur niet meer dan één bericht per seconde",
+    "per_minute": "Stuur niet meer dan 20 berichten per minuut\nDeze bot ontvangt downloadlinks\nWacht tot deze minuut voorbij is",
+    "buttons": "Je hebt meer dan 20 knoppen ingedrukt in een minuut\nWacht voor je doorgaat\nBij herhaling verdubbelt de wachttijd"
+  },
+  "flow": {
+    "first_link": "⌯ <b>Eén bericht downloaden</b>\n\n✦ Open het bericht in Telegram en houd het ingedrukt\n✦ Kies Link kopiëren en stuur de link hier\n✦ Stuur bij meerdere berichten eerst de link van het eerste bericht\n✦ <code>https://t.me/example_channel/15</code>",
+    "last_link": "⌯ <b>Meerdere berichten downloaden</b>\n\n✦ Stuur de link van het laatste bericht uit hetzelfde kanaal\n✦ Beide berichten en alles ertussen worden meegenomen\n✦ Daarna kies je welke soorten inhoud je wilt",
+    "channel": "⌯ <b>Kanaal kiezen</b>\n\n✦ Stuur de kanaallink of gebruikersnaam\n✦ Koppel voor een privékanaal via /login een account dat al lid is\n✦ <code>https://t.me/example_channel</code>",
+    "pick_channel": "Kanaal kiezen",
+    "invalid_channel": "Stuur de kanaallink of gebruikersnaam\nKoppel voor een privékanaal via /login een account dat al lid is",
+    "upload_channel": "⌯ <b>Kies een uploadkanaal</b>\n\n✦ Het makkelijkst ↣ voeg de bot toe als beheerder die mag posten in je kanaal of groep\n✦ De bot stuurt je hier een bevestiging en je tikt op Bevestigen\n✦ Of tik hieronder op de knop om een kanaal te kiezen\n✦ Of stuur de kanaallink, de gebruikersnaam of de ID die begint met <code>-100</code>\n✦ Deze functie vraagt een bot-abonnement"
+  },
+  "panel": {
+    "title": "⌯ <b>Beheer</b>\n\n✦ Abonnement / Cadeau / Verplichte kanalen / Groepsbericht",
+    "premium": "Abonnement",
+    "gift": "Cadeau",
+    "fsub": "Verplichte kanalen",
+    "broadcast": "Groepsbericht",
+    "users": "Gebruikers exporteren",
+    "language": "Taalbestanden",
+    "gifts": "Actieve cadeaus",
+    "choose_user": "Kies gebruikers of stuur hun numerieke identificatienummers",
+    "selected_users": "Alle gebruikers ↣ {users}",
+    "selected_channel": "Kanaal kiezen ↣ {channel_id}",
+    "custom": "Ander getal",
+    "remove_premium": "Annuleren Abonnement",
+    "days": "Dagen ↣ {days}",
+    "value": "Cadeaupunten",
+    "link_days": "Geldigheid van link in dagen / Bij de geldigheid van een cadeau betekent nul geen vervaldatum",
+    "point_days": "Geldigheid van punten in dagen / Bij de geldigheid van een cadeau betekent nul geen vervaldatum",
+    "limit": "Maximale inwisselingen",
+    "only_users": "Specifieke gebruikers toestaan",
+    "exclude_users": "Gebruikers uitsluiten",
+    "send_broadcast": "Stuur het groepsbericht hier\nControleer de kopie en kies de ontvangers\nDruk daarna op Bevestigen",
+    "send_language": "Stuur een JSON taalbestand met de taalcode als naam zoals ar.json\nEen bestaand bestand wordt pas vervangen wanneer het nieuwe geldig is",
+    "enter_value": "Stuur een getal of door komma’s gescheiden gebruikersnummers\nJe antwoord wordt gewist en het menu bijgewerkt",
+    "invalid_value": "Stuur een geldig getal\nBij de geldigheid van een cadeau betekent nul geen vervaldatum",
+    "audience_all": "Alle gebruikers",
+    "audience_premium": "Abonnees",
+    "audience_free": "Gratis gebruikers",
+    "admins": "Beheerders",
+    "send_admin": "Stuur het numerieke ID van de gebruiker of stuur een bericht van hem door\nTik hieronder op een beheerder om hem te verwijderen",
+    "admin_added": "Beheerder toegevoegd: {user_id}",
+    "admin_removed": "Beheerder verwijderd: {user_id}",
+    "admin_exists": "Deze gebruiker is al beheerder",
+    "no_admins": "Nog geen beheerders",
+    "owner_only": "Alleen eigenaren beheren beheerders"
+  },
+  "large": {
+    "saved": "Naar mijn opgeslagen berichten sturen",
+    "split": "Downloaden en splitsen",
+    "help_button": "Uitleg",
+    "split_notice": "⌯ <b>Downloaden en splitsen</b>\n\n✦ Bestandsgrootte: {size}\n✦ De bot uploadt ongeveer 2 GB per deel\n✦ Kies Downloaden en splitsen of Annuleren\n✦ Koppel voor een heel bestand tot 4 GB een Telegram Premium account met /login en kies een kanaal met /uploadch",
+    "premium_notice": "⌯ <b>Naar mijn opgeslagen berichten sturen</b>\n\n✦ Bestandsgrootte: {size}\n✦ Je gekoppelde Telegram Premium account kan het hele bestand naar je opgeslagen berichten uploaden\n✦ Met /uploadch kun je een doelkanaal kiezen\n✦ Je kunt het bestand ook splitsen",
+    "help": "⌯ <b>Uitleg</b>\n\n✦ Een botabonnement en Telegram Premium zijn verschillende abonnementen\n✦ De bot uploadt ongeveer 2 GB per deel\n✦ Een gekoppeld Telegram Premium account kan tot 4 GB in één bestand uploaden\n✦ Koppel het account met /login\n✦ Voeg de bot en het account toe als beheerders van het doelkanaal en kies dat met /uploadch\n✦ Zonder doelkanaal kun je opgeslagen berichten kiezen\n✦ Als documenten verstuurde delen moet je in hun genummerde volgorde samenvoegen"
+  },
+  "referral_check": {
+    "question": "⌯ <b>Snelle controle</b>\n\n✦ Los dit op om te bevestigen dat je een echt persoon bent en je verwijzing te behouden\n\n✦ {a} + {b} = ?",
+    "wrong": "⌯ <b>Fout antwoord</b>\n\n✦ Probeer het opnieuw. Resterende pogingen: {left}",
+    "failed": "⌯ <b>Verwijzing niet geteld</b>\n\n✦ Je verwijzing is niet geteld omdat de controle niet is opgelost. Je kunt de bot gewoon blijven gebruiken"
+  },
+  "units": {
+    "b": "{n} B",
+    "kb": "{n} KB",
+    "mb": "{n} MB",
+    "gb": "{n} GB",
+    "tb": "{n} TB",
+    "pb": "{n} PB",
+    "day": "{n}d",
+    "hour": "{n}h",
+    "minute": "{n}m",
+    "second": "{n}s"
+  }
+}

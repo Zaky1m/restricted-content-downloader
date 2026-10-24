@@ -1,0 +1,675 @@
+{
+  "lang_name": "🇹🇼 繁體中文",
+  "common": {
+    "not_available": "無法使用",
+    "never": "永不",
+    "unlimited": "無限制",
+    "none": "無",
+    "yes": "是",
+    "no": "否",
+    "processing": "⌯ <b>處理中</b>\n\n✦ 請稍候，正在準備您要求的操作。",
+    "state_expired": "⌯ <b>工作階段已過期</b>\n\n✦ 已儲存的輸入工作階段已在十分鐘後過期。請重新開始此操作。",
+    "state_expired_popup": "請重新開始任務",
+    "action_cancelled": "⌯ <b>操作已取消</b>\n\n✦ 所選操作已取消，其暫存狀態也已移除。",
+    "unexpected_error": "⌯ <b>發生未預期的錯誤</b>\n\n✦ 由於以下錯誤，無法完成此操作：<code>{error}</code>",
+    "something_went_wrong": "處理此操作時發生錯誤，請重試"
+  },
+  "buttons": {
+    "start": "開始",
+    "confirm": "確認",
+    "back": "返回",
+    "subscribe": "訂閱",
+    "earn_points": "賺取點數",
+    "share_and_earn": "分享並賺取點數",
+    "link_account": "連結帳號",
+    "open_source": "開啟頻道",
+    "refresh_subscription": "再次檢查",
+    "channel": "更新頻道",
+    "help": "說明",
+    "profile": "個人資料",
+    "contact_admin": "聯絡客服以了解其他付款方式",
+    "cancel": "取消",
+    "delete": "刪除",
+    "open": "開啟",
+    "reject": "拒絕"
+  },
+  "commands": {
+    "bcjson": {
+      "description": "下載多語言廣播範本"
+    },
+    "start": {
+      "description": "啟動機器人"
+    },
+    "help": {
+      "description": "開啟說明中心"
+    },
+    "profile": {
+      "description": "查看您的帳號與點數"
+    },
+    "premium": {
+      "description": "查看訂閱功能"
+    },
+    "language": {
+      "description": "變更機器人語言"
+    },
+    "login": {
+      "description": "連結 Telegram 帳號"
+    },
+    "logout": {
+      "description": "移除已連結的帳號"
+    },
+    "dl": {
+      "description": "下載一則 Telegram 貼文"
+    },
+    "bdl": {
+      "description": "下載一個貼文範圍"
+    },
+    "clone": {
+      "description": "轉移整個頻道"
+    },
+    "forcedownload": {
+      "description": "管理強制下載模式"
+    },
+    "thumb": {
+      "description": "管理自訂縮圖"
+    },
+    "caption": {
+      "description": "管理說明文字處理方式"
+    },
+    "cancel": {
+      "description": "取消目前操作"
+    },
+    "stats": {
+      "description": "查看系統統計資料"
+    },
+    "monitor": {
+      "description": "自動監視頻道"
+    },
+    "uploadch": {
+      "description": "設定上傳目的地頻道"
+    },
+    "rmuploadch": {
+      "description": "移除上傳目的地"
+    },
+    "bc": {
+      "description": "廣播訊息"
+    },
+    "add": {
+      "description": "新增管理設定"
+    },
+    "rm": {
+      "description": "移除管理設定"
+    },
+    "create": {
+      "description": "建立禮物連結"
+    },
+    "logs": {
+      "description": "下載機器人日誌"
+    },
+    "admin": {
+      "description": "管理"
+    }
+  },
+  "start": {
+    "welcome": "⌯ <b>歡迎使用媒體下載器</b>\n\n✦ 傳送 Telegram 貼文連結即可下載其中的媒體，包括來自公開或私人頻道，以及已停用轉傳功能之頻道的內容。您也可以下載多則貼文、轉移完整頻道、為檔案套用自訂縮圖，或將下載的內容直接傳送到另一個頻道。\n\n✦ 已連結帳號：{account_status}"
+  },
+  "accounts": {
+    "status": {
+      "connected": "已連結",
+      "not_connected": "未連結"
+    },
+    "session_expired": "⌯ <b>已連結的工作階段已過期</b>\n\n✦ 已連結的 Telegram 帳號不再獲得授權。存取私人來源前，請重新連結該帳號。",
+    "access": {
+      "login_required": "⌯ <b>需要連結帳號</b>\n\n✦ 分享的連結屬於下載帳號無法存取的私人或受限制來源。請連結一個已經加入來源頻道的 Telegram 帳號，然後重新傳送連結。",
+      "not_member": "⌯ <b>您連結的帳號並非該頻道成員</b>\n\n✦ 連結到機器人的 Telegram 帳號無法存取分享連結中的頻道。請先使用已連結的帳號加入該頻道，然後重新傳送連結。"
+    },
+    "login": {
+      "choose_account": "⌯ <b>選擇要連結的帳號</b>\n\n✦ 請選擇要連結目前使用的 Telegram 帳號，或是另一個帳號。所選帳號必須已經加入您想要下載內容的任何私人頻道。",
+      "already_running": "⌯ <b>登入程序已在進行中</b>\n\n✦ 開始另一個登入程序前，請先完成或取消目前的登入程序。",
+      "already_connected": "⌯ <b>已連結一個帳號</b>\n\n✦ 電話號碼 <code>{phone_number}</code> 目前已連結。若要連結其他帳號，請先使用 /logout 移除目前帳號。",
+      "share_contact": "⌯ <b>分享您的電話號碼</b>\n\n✦ 請使用下方按鈕安全地分享您目前 Telegram 帳號的電話號碼。",
+      "enter_phone": "⌯ <b>輸入其他帳號的電話號碼</b>\n\n✦ 請以國際格式手動傳送電話號碼。號碼必須以 <code>+</code> 開頭，後接國家或地區代碼，例如 <code>+12025550123</code>。",
+      "invalid_phone": "⌯ <b>無效的電話號碼</b>\n\n✦ 號碼必須以 <code>+</code> 開頭並包含國家或地區代碼，且不得包含字母或不支援的符號。請重新開始登入，或傳送格式正確的號碼。",
+      "contact_mismatch": "⌯ <b>聯絡人不相符</b>\n\n✦ 分享的聯絡人不屬於目前正在使用機器人的 Telegram 帳號。請使用提供的按鈕分享您自己的號碼，或選擇其他帳號選項。",
+      "contact_received": "⌯ <b>已收到電話號碼</b>\n\n✦ 機器人正在準備授權要求。請等待 Telegram 傳送登入驗證碼。",
+      "code_prompt": "⌯ <b>Telegram</b>\n\n✦ 只用數字按鈕輸入 Telegram 驗證碼\n✦ 刪除會移除最後一位確認會提交驗證碼",
+      "code_prompt_with_value": "⌯ <b>Telegram</b>\n\n✦ <code>{code}</code>\n✦ 只用數字按鈕輸入 Telegram 驗證碼\n✦ 刪除會移除最後一位確認會提交驗證碼",
+      "processing": "⌯ <b>正在驗證帳號</b>\n\n✦ 正在檢查驗證碼並建立已連結的工作階段。",
+      "password_prompt": "⌯ <b>需要兩步驟驗證</b>\n\n✦ 請以文字訊息傳送此 Telegram 帳號的兩步驟驗證密碼。\n\n✦ 密碼提示：<code>{hint}</code>",
+      "completed": "⌯ <b>帳號連結成功</b>\n\n✦ Telegram 帳號現已連結。只要此帳號已經加入私人頻道，您就可以存取這些頻道。",
+      "cancelled": "⌯ <b>帳號連結已取消</b>\n\n✦ 暫時登入工作階段已關閉，且未儲存任何帳號資訊。",
+      "restart_hint": "⌯ <b>準備好後可重新開始</b>\n\n✦ 您可以隨時使用 /login 開始新的帳號連結程序。",
+      "failed": "⌯ <b>帳號連結失敗</b>\n\n✦ 無法完成授權程序。請重新開始，並確認電話號碼、登入驗證碼和密碼均正確。",
+      "flood_wait": "⌯ <b>登入嘗試次數過多</b>\n\n✦ Telegram 暫時限制了新的授權要求。請在 {seconds} 秒後重試。",
+      "invalid_code": "⌯ <b>驗證碼無效或已過期</b>\n\n✦ 驗證碼遭拒絕或已過期。請輸入 Telegram 最新傳送的驗證碼，或取消並重新開始登入。",
+      "invalid_password": "⌯ <b>驗證密碼不正確</b>\n\n✦ 兩步驟驗證密碼不正確。請傳送正確的密碼，或取消登入程序。",
+      "code_empty_popup": "請先輸入 Telegram 驗證碼再確認",
+      "invalid_code_popup": "驗證碼無效或已過期",
+      "buttons": {
+        "my_account": "我目前的帳號",
+        "other_account": "另一個帳號",
+        "share_phone": "分享我的電話號碼"
+      },
+      "too_many_attempts": "⌯ <b>任務</b>\n\n✦ Telegram 暫時限制了登入嘗試\n✦ 請等待後再使用 /login",
+      "phone_banned": "⌯ <b>Telegram</b>\n\n✦ 此號碼已被 Telegram 封禁\n✦ 請使用其他帳號或聯絡 Telegram 支援",
+      "hint_awaiting_contact": "⌯ <b>分享您的電話號碼</b>\n\n✦ 請使用下方按鈕安全地分享您目前 Telegram 帳號的電話號碼。",
+      "hint_awaiting_account_type": "⌯ <b>選擇要連結的帳號</b>\n\n✦ 請選擇要連結目前使用的 Telegram 帳號，或是另一個帳號。所選帳號必須已經加入您想要下載內容的任何私人頻道。",
+      "hint_sending_code": "等待中\n只用數字按鈕輸入 Telegram 驗證碼\n刪除會移除最後一位確認會提交驗證碼",
+      "hint_awaiting_code": "只用數字按鈕輸入 Telegram 驗證碼\n刪除會移除最後一位確認會提交驗證碼"
+    },
+    "logout": {
+      "not_connected": "⌯ <b>ℹ 尚未連結帳號</b>\n\n✦ 您的機器人個人資料目前沒有連結任何 Telegram 帳號。",
+      "confirm": "⌯ <b>移除已連結的帳號</b>\n\n✦ 電話號碼 <code>{phone_number}</code> 將中斷連結，且其已儲存的工作階段將被刪除。僅在確定要繼續時才進行確認。",
+      "completed": "⌯ <b>已移除連結帳號</b>\n\n✦ 已成功刪除儲存的 Telegram 工作階段。您可以隨時連結另一個帳號。"
+    }
+  },
+  "subscription": {
+    "required": "⌯ <b>需要訂閱頻道</b>\n\n✦ 請先加入下方列出的頻道，然後按下檢查按鈕，才能使用機器人。\n\n✦ {channels}",
+    "completed": "⌯ <b>訂閱驗證成功</b>\n\n✦ 已成功驗證您的頻道成員資格。您現在可以繼續使用機器人。",
+    "still_missing_popup": "您仍需要加入所有必要頻道"
+  },
+  "downloads": {
+    "invalid_link": "⌯ <b>無效的 Telegram 連結</b>\n\n✦ 請傳送直接指向 Telegram 貼文的連結，例如 <code>https://t.me/channel/123</code>。",
+    "post_not_found": "⌯ <b>找不到貼文</b>\n\n✦ 要求的貼文不存在、已被刪除，或所選下載帳號無法存取。",
+    "nothing_to_download": "⌯ <b>沒有可下載的內容</b>\n\n✦ 這則貼文沒有可下載的媒體或文字，例如頻道名稱或頭像變更的通知",
+    "comment_unavailable": "⌯ <b>無法解析留言</b>\n\n✦ 留言連結未指向可存取的討論訊息，或 Telegram 拒絕了參照的訊息識別碼。",
+    "client_unavailable": "⌯ <b>下載帳號無法使用</b>\n\n✦ 目前沒有可用於擷取此內容的 Telegram 帳號。請稍後重試，或連結您自己的帳號。",
+    "preparing": "⌯ <b>正在準備下載</b>\n\n✦ 開始傳輸前，正在收集媒體資訊。",
+    "splitting": "⌯ <b>正在分割檔案</b>\n\n✦ 此檔案超過單一上傳部分的大小限制，正在將其分割成支援的部分。",
+    "file_too_large": "⌯ <b>檔案超過支援的大小</b>\n\n✦ 此檔案無法進行{action}，因為其大小超過 {maximum_size}。",
+    "file_too_small": "⌯ <b>檔案為空或已損壞</b>\n\n✦ 下載的媒體過小，無法視為有效檔案，或 Telegram 傳回了不完整的檔案。",
+    "file_missing": "⌯ <b>找不到下載的檔案</b>\n\n✦ 上傳前找不到暫存媒體檔案，或該檔案為空。",
+    "download_failed": "⌯ <b>下載失敗</b>\n\n✦ 多次嘗試後仍無法擷取媒體。請檢查來源帳號的存取權限，然後重試。",
+    "upload_failed": "⌯ <b>上傳失敗</b>\n\n✦ 媒體已下載，但無法傳送。Telegram 傳回：<code>{error}</code>",
+    "flood_wait": "⌯ <b>Telegram 速率限制</b>\n\n✦ Telegram 要求等待 {seconds} 秒後才能繼續上傳。",
+    "actions": {
+      "download": "下載",
+      "upload": "上傳"
+    },
+    "progress": {
+      "downloading": "下載中",
+      "uploading": "上傳中",
+      "body": "⌯ <b>{action}</b>\n\n✦ <code>{progress_bar}</code>\n\n✦ 已傳輸：{current_size} / {total_size}\n✦ 進度：{percentage}%\n✦ 速度：{speed}/秒\n✦ 剩餘時間：{eta}"
+    },
+    "parts": {
+      "item": "第 {current} 部分，共 {total} 部分"
+    },
+    "album": {
+      "preparing": "⌯ <b>偵測到媒體相簿</b>\n\n✦ 此相簿包含 {count} 個已選項目，將依序進行處理。",
+      "processing": "⌯ <b>正在處理媒體相簿</b>\n\n✦ 正在處理第 {current} 個項目，共 {total} 個。"
+    },
+    "single": {
+      "usage": "/dl\n在 Telegram 中開啟貼文並長按\n選擇複製連結並把連結傳到這裡\n要下載多篇貼文時先傳送第一篇的連結"
+    },
+    "batch": {
+      "usage": "/bdl\n在 Telegram 中開啟貼文並長按\n選擇複製連結並把連結傳到這裡\n要下載多篇貼文時先傳送第一篇的連結\n傳送同一個頻道中最後一篇貼文的連結\n首尾兩篇及中間所有貼文都會下載\n下一步選擇內容類型",
+      "different_sources": "⌯ <b>連結屬於不同聊天室</b>\n\n✦ 第一個和最後一個連結必須來自同一個 Telegram 頻道或群組。",
+      "invalid_order": "⌯ <b>貼文順序不正確</b>\n\n✦ 第一個連結必須指向比最後一個連結更早的貼文。",
+      "invalid_links": "⌯ <b>無效的批次連結</b>\n\n✦ 兩個值都必須是來自同一來源的有效 Telegram 貼文連結。",
+      "starting": "⌯ <b>批次下載已開始</b>\n\n✦ 機器人將處理從 {start_id} 到 {end_id} 的貼文。要求的貼文總數：{total}。",
+      "progress": "⌯ <b>批次下載進行中</b>\n\n✦ 目前項目：{current}/{total}\n✦ 貼文 ID：{message_id}\n✦ 已下載：{downloaded}\n✦ 已略過：{skipped}\n✦ 失敗：{failed}",
+      "completed": "⌯ <b>批次操作已完成</b>\n\n✦ 已下載：{downloaded}\n✦ 已略過：{skipped}\n✦ 失敗：{failed}",
+      "cancelled": "⌯ <b>批次操作已取消</b>\n\n✦ 不會再處理剩餘貼文。取消前儲存的進度已清除。",
+      "failed": "⌯ <b>批次操作已停止</b>\n\n✦ 發生未預期的錯誤，導致無法處理剩餘貼文。",
+      "retrying": "⌯ <b>正在重試失敗的項目</b>\n\n✦ 主流程已完成。現在將重試 {count} 個失敗的項目。"
+    },
+    "disk_full": "⌯ <b>任務</b>\n\n✦ 目前沒有足夠空間下載檔案\n✦ 請稍後再試",
+    "paid": {
+      "not_purchased": "⌯ <b>此貼文需要用 Telegram Stars 購買</b>\n\n✦ 請使用綁定的同一個帳號購買後重新傳送連結"
+    }
+  },
+  "tasks": {
+    "already_running": "⌯ <b>另一項工作已在執行中</b>\n\n✦ 請等待目前工作完成，或將其取消後再開始其他操作。",
+    "resumed": "⌯ <b>工作已繼續</b>\n\n✦ 已找到先前中斷的工作，將從最後儲存的位置繼續執行。",
+    "cancel_requested": "⌯ <b>已要求取消</b>\n\n✦ 正在停止目前操作並清理暫存檔案。",
+    "input_cancelled": "⌯ <b>輸入工作階段已取消</b>\n\n✦ 待處理的登入、篩選或確認狀態已移除。",
+    "none_to_cancel": "⌯ <b>ℹ 沒有進行中的操作</b>\n\n✦ 目前沒有執行中的工作或待處理的輸入工作階段可以取消。",
+    "completion": {
+      "single": {
+        "private": "⌯ <b>下載完成</b>\n\n✦ 要求的媒體已成功下載並傳送到此聊天室。",
+        "saved_messages": "⌯ <b>下載完成</b>\n\n✦ 要求的媒體已下載並傳送到您已連結帳號的「我的收藏」。",
+        "channel": "⌯ <b>上傳完成</b>\n\n✦ 要求的媒體已成功傳送到 <b>{channel_title}</b>。\n\n✦ {message_link}"
+      },
+      "batch": {
+        "private": "⌯ <b>批次工作完成</b>\n\n✦ 機器人已完成所選範圍的處理，並將 {count} 個項目傳送到此聊天室。",
+        "saved_messages": "⌯ <b>批次工作完成</b>\n\n✦ 機器人已完成所選範圍的處理，並將 {count} 個項目傳送到您已連結帳號的「我的收藏」。",
+        "channel": "⌯ <b>批次上傳完成</b>\n\n✦ 機器人已完成所選範圍的處理，並將 {count} 個項目傳送到您選擇的頻道。"
+      },
+      "clone": {
+        "private": "⌯ <b>頻道轉移完成</b>\n\n✦ 頻道工作已完成，並將 {count} 個項目傳送到此聊天室。",
+        "saved_messages": "⌯ <b>頻道轉移完成</b>\n\n✦ 頻道工作已完成，並將 {count} 個項目傳送到您已連結帳號的「我的收藏」。",
+        "channel": "⌯ <b>頻道轉移完成</b>\n\n✦ 頻道工作已完成，並將 {count} 個項目傳送到您選擇的目的地頻道。"
+      },
+      "monitor": {
+        "private": "⌯ <b>已傳送監視到的貼文</b>\n\n✦ 偵測到一則新貼文，並已傳送到此聊天室。",
+        "saved_messages": "⌯ <b>已傳送監視到的貼文</b>\n\n✦ 偵測到一則新貼文，並已傳送到您已連結帳號的「我的收藏」。",
+        "channel": "⌯ <b>已傳送監視到的貼文</b>\n\n✦ 偵測到一則新貼文，並已傳送到您選擇的目的地頻道。"
+      }
+    }
+  },
+  "filters": {
+    "prompt": "⌯ <b>選擇內容篩選條件</b>\n\n✦ 請選擇處理所有內容、只儲存所選媒體類型，或略過所選媒體類型。此選擇工作階段將維持有效十分鐘。",
+    "modes": {
+      "all": "所有內容",
+      "save": "只儲存",
+      "skip": "略過所選項目"
+    },
+    "types": {
+      "videos": "影片",
+      "photos": "相片",
+      "audio": "音訊",
+      "files": "檔案",
+      "text": "文字",
+      "other": "其他"
+    },
+    "summary": {
+      "all": "所有支援的內容",
+      "save": "只儲存：{types}",
+      "skip": "略過：{types}",
+      "minimum_duration": "最短時長：{seconds} 秒",
+      "maximum_duration": "最長時長：{seconds} 秒"
+    }
+  },
+  "clone": {
+    "usage": "/clone\n傳送頻道連結或使用者名稱\n私人頻道請用 /login 連結一個已經加入該頻道的帳號",
+    "channel_not_found": "⌯ <b>找不到頻道</b>\n\n✦ 頻道使用者名稱或連結無效，或已連結的帳號無法解析該頻道。",
+    "empty_channel": "⌯ <b>頻道是空的</b>\n\n✦ 在所選頻道中找不到可轉移的貼文。",
+    "starting": "⌯ <b>頻道轉移已開始</b>\n\n✦ 機器人正準備處理來自 <b>{channel_title}</b> 的 {total} 個貼文識別碼。",
+    "progress": "⌯ <b>頻道轉移進行中</b>\n\n✦ 目前項目：{current}/{total}\n✦ 貼文 ID：{message_id}\n✦ 已下載：{downloaded}\n✦ 已略過：{skipped}\n✦ 失敗：{failed}",
+    "flood_wait": "⌯ <b>Telegram 速率限制</b>\n\n✦ 頻道轉移已暫停 {seconds} 秒。",
+    "completed": "⌯ <b>頻道處理完成</b>\n\n✦ 已下載：{downloaded}\n✦ 已略過：{skipped}\n✦ 失敗：{failed}",
+    "cancelled": "⌯ <b>頻道轉移已取消</b>\n\n✦ 不會再處理剩餘的頻道貼文。",
+    "failed": "⌯ <b>頻道轉移失敗</b>\n\n✦ 發生未預期的錯誤，導致無法完成轉移。"
+  },
+  "uploads": {
+    "channel": {
+      "usage": "/uploadch\n選擇頻道\n機器人訂閱和 Telegram Premium 是兩個獨立的訂閱\n機器人每個分段可上傳約 2 GB\n已連結的 Telegram Premium 帳號可以一次上傳最大 4 GB 的檔案\n使用 /login 連結帳號\n將機器人和該帳號設為目標頻道管理員然後使用 /uploadch 選擇頻道\n沒有目標頻道時可以選擇收藏夾\n以文件傳送的分段需要按照編號順序重新合併\n最簡單 ↣ 把機器人加為你頻道或群組的管理員它會在這裡請你確認",
+      "current": "⌯ <b>選擇頻道</b>\n\n✦ {channel_id}\n✦ /uploadch\n✦ /rmuploadch",
+      "invalid_id": "⌯ <b>無效的頻道識別碼</b>\n\n✦ 請傳送 Telegram 頻道的數字 ID，通常以 <code>-100</code> 開頭。\n✦ 最簡單 ↣ 把機器人加為你頻道或群組的管理員它會在這裡請你確認",
+      "bot_not_admin": "⌯ <b>機器人需要管理員權限</b>\n\n✦ 啟用頻道上傳前，請將機器人新增為目的地頻道的管理員。\n✦ 最簡單 ↣ 把機器人加為你頻道或群組的管理員它會在這裡請你確認",
+      "user_not_admin": "⌯ <b>您需要管理員權限</b>\n\n✦ 您必須是目的地頻道的擁有者或管理員。",
+      "access_denied": "⌯ <b>頻道驗證失敗</b>\n\n✦ 無法存取此頻道，或缺少必要的管理員權限。",
+      "enabled": "⌯ <b>上傳頻道已連結</b>\n\n✦ 在您移除此目的地之前，未來的下載內容都會傳送到 <b>{channel_title}</b>。",
+      "disabled": "⌯ <b>上傳頻道已停用</b>\n\n✦ 機器人失去了所選頻道的管理員權限，因此已自動停用頻道傳送功能。",
+      "removed": "⌯ <b>上傳頻道已移除</b>\n\n✦ 未來的下載內容將恢復傳送到預設目的地。",
+      "not_set": "⌯ <b>ℹ 尚未設定上傳頻道</b>\n\n✦ 您的個人資料目前沒有設定目的地頻道。"
+    },
+    "auto": {
+      "start_first": "⌯ <b>完成頻道綁定</b>\n\n✦ 你把機器人加入了 ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ 點開始在機器人裡註冊即可完成綁定\n✦ 24小時內不點的話機器人會退出",
+      "premium_only": "⌯ <b>綁定頻道僅限訂閱用戶</b>\n\n✦ 你把機器人加入了 ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ 在頻道或群組接收下載內容是機器人訂閱功能\n✦ 機器人已經退出\n✦ 用下方按鈕訂閱後再把機器人加進去",
+      "confirm": "⌯ <b>確認上傳頻道</b>\n\n✦ 你把機器人加入了 ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ 確認後新的下載和監控的貼文都會發到那裡\n✦ 拒絕的話機器人會退出\n✦ 24小時內沒有回覆機器人會自動退出",
+      "linked": "⌯ <b>上傳頻道已綁定</b>\n\n✦ 頻道 ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ 新的下載和監控的貼文會發到那裡\n✦ 傳送 /rmuploadch 可以解除",
+      "no_rights": "⌯ <b>機器人無法在那裡發布</b>\n\n✦ 頻道 ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ 機器人不是管理員或沒有發布權限所以已退出\n✦ 請重新以有發布權限的管理員身分新增它",
+      "user_not_admin": "⌯ <b>你需要是那裡的管理員</b>\n\n✦ 頻道 ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ 上傳頻道必須屬於你或你是那裡的管理員\n✦ 機器人已經退出",
+      "expired": "這個請求已過期"
+    }
+  },
+  "forcedownload": {
+    "details": "⌯ <b>強制下載模式</b>\n\n✦ 啟用後，機器人會下載並重新上傳每個媒體項目，而不是直接複製。此模式適合用於套用自訂縮圖、重建檔案，或處理轉傳限制。\n\n✦ 目前狀態：{status}",
+    "premium_required": "⌯ <b>需要訂閱</b>\n\n✦ 強制下載模式僅提供給訂閱者，因為它會消耗額外的儲存空間、頻寬和處理資源。",
+    "flag_removed": "⌯ <b>ℹ --fdl 選項已移除</b>\n\n✦ 強制下載現在是永久的使用者模式。訂閱者可以使用 /forcedownload 管理此模式，不再需要將選項加入個別指令。",
+    "enabled": "⌯ <b>強制下載模式已啟用</b>\n\n✦ 未來的單一下載、批次下載、頻道轉移和監視工作都會擷取並上傳原始檔案，而不是直接複製貼文。",
+    "disabled": "⌯ <b>強制下載模式已停用</b>\n\n✦ 機器人可以再次直接複製不受限制的貼文，同時仍會在必要時下載受保護的內容。",
+    "status": {
+      "enabled": "已啟用",
+      "disabled": "已停用"
+    },
+    "buttons": {
+      "enable": "啟用強制下載",
+      "disable": "停用強制下載"
+    }
+  },
+  "thumbnail": {
+    "not_set": "⌯ <b>尚未設定自訂縮圖</b>\n\n✦ 請先傳送圖片給機器人，然後確認將其用作支援之上傳檔案的封面。",
+    "current": "⌯ <b>目前的自訂縮圖</b>\n\n✦ 這是為未來支援的上傳內容所儲存的圖片。\n\n✦ 狀態：{status}",
+    "confirm": "⌯ <b>使用此圖片作為縮圖</b>\n\n✦ 確認以將此圖片儲存為您的自訂封面，或取消以刪除暫存圖片。",
+    "saved": "⌯ <b>縮圖已儲存</b>\n\n✦ 此圖片已儲存並啟用，將套用於未來支援的上傳內容。",
+    "download_failed": "⌯ <b>圖片下載失敗</b>\n\n✦ 無法儲存此圖片。請重新傳送，並確認 Telegram 已完成上傳。",
+    "temp_missing": "⌯ <b>暫存圖片無法使用</b>\n\n✦ 確認工作階段已過期，或暫存圖片已被移除。請重新傳送圖片。",
+    "not_set_popup": "沒有可用的已儲存縮圖",
+    "status": {
+      "enabled": "已啟用",
+      "disabled": "已停用"
+    },
+    "buttons": {
+      "enable": "啟用縮圖",
+      "disable": "停用縮圖"
+    }
+  },
+  "captions": {
+    "settings": "⌯ <b>說明文字處理</b>\n\n✦ 請選擇複製或上傳媒體時要如何處理說明文字。\n\n✦ 目前模式：{current}",
+    "modes": {
+      "keep_all": "保留原始說明文字",
+      "remove_all": "移除媒體說明文字",
+      "remove_links_users": "移除連結和使用者名稱"
+    },
+    "buttons": {
+      "keep_all": "保留原始說明文字",
+      "remove_all": "移除所有說明文字",
+      "remove_links_users": "移除連結和使用者名稱"
+    },
+    "already_selected_popup": "此說明文字模式已啟用",
+    "updated_popup": "說明文字模式已更新"
+  },
+  "profile": {
+    "unavailable": "⌯ <b>無法使用個人資料</b>\n\n✦ 無法載入您儲存的使用者記錄。請傳送 /start 後重試。",
+    "details": "⌯ <b>您的個人資料</b>\n\n✦ 使用者 ID：<code>{user_id}</code>\n✦ 方案：{plan_status}\n✦ 方案到期日：{expiry_date}\n✦ 每日點數：{daily_points}/{daily_limit}\n✦ 每日重設：{reset_time}\n✦ 禮物點數：{gift_points}\n✦ 推薦點數：{referral_points}\n✦ 推薦人數：{referral_count}\n✦ 強制下載：{force_download_status}\n\n✦ 推薦連結：\n✦ <code>{referral_link}</code>"
+  },
+  "plans": {
+    "free": "免費",
+    "premium": "訂閱者",
+    "monthly": "月度",
+    "yearly": "年度"
+  },
+  "premium": {
+    "details": "⌯ <b>訂閱</b>\n\n✦ 訂閱\n✦ 最多可以有 5 個未完成的任務\n✦ 請等其中一個完成或使用 /cancel 取消\n✦ 訂閱後可以跳過共用佇列\n✦ /clone\n✦ /monitor\n✦ /uploadch\n✦ /caption\n✦ /fdl\n✦ 機器人訂閱和 Telegram Premium 是兩個獨立的訂閱",
+    "feature_required": "⌯ <b>需要訂閱</b>\n\n✦ 此功能僅提供給訂閱者。請開啟訂閱選單查看可用方案。",
+    "already_active": "⌯ <b>訂閱已啟用</b>\n\n✦ 您的訂閱將持續有效至 {expiry_date}。",
+    "already_active_popup": "您的訂閱有效至 {expiry_date}",
+    "required_popup": "此功能需要有效的訂閱",
+    "granted": "⌯ <b>訂閱已啟用</b>\n\n✦ 您的帳號已成功升級。目前訂閱將於 {expiry_date} 到期。",
+    "removed": "⌯ <b>ℹ 訂閱已移除</b>\n\n✦ 您帳號的訂閱者專屬模式和目的地設定已停用。",
+    "buttons": {
+      "monthly": "月度方案",
+      "yearly": "年度方案"
+    },
+    "granted_days": "⌯ <b>訂閱</b>\n\n✦ 增加天數：{days}\n✦ 到期時間：{expiry_date}\n✦ 如果訂閱尚未到期這些天數會加到剩餘時間上"
+  },
+  "language": {
+    "select": "⌯ <b>選擇您的語言</b>\n\n✦ 請選擇機器人訊息和您個人 Telegram 指令選單所使用的語言。",
+    "changed": "⌯ <b>語言已變更</b>\n\n✦ 訊息和 Telegram 指令現在將以 {language_name} 顯示。",
+    "unavailable_popup": "所選語言無法使用"
+  },
+  "limits": {
+    "insufficient_points": "⌯ <b>下載點數不足</b>\n\n✦ 您的點數不足以進行此次下載。您的每日餘額將在 {time_left} 後重設，或可透過推薦其他使用者賺取更多點數。",
+    "insufficient_points_batch": "⌯ <b>此批次操作的點數不足</b>\n\n✦ 此操作需要 {required_points} 點，而您目前可用的餘額為 {available_points} 點。",
+    "reset_now": "正在重設",
+    "cooldown": "⌯ <b>請稍候再進行下一次下載</b>\n\n✦ 您可以在 {remaining_time} 後開始另一個免費下載。"
+  },
+  "referrals": {
+    "share_text": "使用這個 Telegram 下載器，並透過我的推薦連結賺取點數",
+    "new_referral": "⌯ <b>新推薦使用者已加入</b>\n\n✦ {user_name}（<code>{user_id}</code>）使用您的連結加入。您獲得了 {reward} 點推薦點數。",
+    "welcome_bonus": "⌯ <b>已收到推薦獎勵</b>\n\n✦ 您透過現有使用者的推薦連結加入，因此獲得了 {bonus} 點。"
+  },
+  "gifts": {
+    "claim": {
+      "already_claimed": "⌯ <b>ℹ 已領取此禮物</b>\n\n✦ 此禮物先前已加入您的帳號，無法重複領取。",
+      "invalid": "⌯ <b>找不到禮物</b>\n\n✦ 禮物連結無效或已不存在。",
+      "inactive": "⌯ <b>禮物已停用</b>\n\n✦ 此禮物已被管理員停用，無法再領取。",
+      "link_expired": "⌯ <b>禮物連結已過期</b>\n\n✦ 允許領取此禮物的時間已結束。",
+      "limit_reached": "⌯ <b>已達禮物領取上限</b>\n\n✦ 允許的最大領取次數已全部使用。",
+      "not_allowed": "⌯ <b>此禮物未指派給您的帳號</b>\n\n✦ 此禮物僅限特定使用者領取，您的帳號不在允許名單中。",
+      "excluded": "⌯ <b>您的帳號無法領取此禮物</b>\n\n✦ 您的帳號已被排除，無法領取此禮物。",
+      "completed": "⌯ <b>禮物已領取</b>\n\n✦ 已成功將 {value} 點加入您的帳號。",
+      "completed_with_expiry": "⌯ <b>禮物已領取</b>\n\n✦ 已將 {value} 點加入您的帳號，可使用至 {expiry_date}。",
+      "failed": "⌯ <b>禮物領取失敗</b>\n\n✦ 無法將禮物加入您的帳號。請稍後重試。"
+    }
+  },
+  "help": {
+    "menu": {
+      "title": "⌯ <b>說明中心</b>\n\n✦ 請選擇下方功能，以查看其使用說明和建議用法。"
+    },
+    "buttons": {
+      "single": "單一下載",
+      "batch": "批次下載",
+      "clone": "頻道轉移",
+      "monitor": "頻道監視",
+      "channel_upload": "上傳頻道",
+      "forcedownload": "強制下載",
+      "login": "連結帳號",
+      "points": "點數",
+      "premium": "訂閱",
+      "other_uses": "其他用途"
+    },
+    "features": {
+      "dl": "⌯ <b>下載一則貼文</b>\n\n✦ /dl\n✦ 在 Telegram 中開啟貼文並長按\n✦ 選擇複製連結並把連結傳到這裡\n✦ 要下載多篇貼文時先傳送第一篇的連結\n✦ <code>https://t.me/example_channel/15</code>\n✦ 傳送頻道連結或使用者名稱\n✦ 私人頻道請用 /login 連結一個已經加入該頻道的帳號\n✦ 機器人每個分段可上傳約 2 GB\n✦ 請選擇下載並分割或取消\n✦ 要傳送最大 4 GB 的完整檔案請用 /login 連結 Telegram Premium 帳號並用 /uploadch 選擇目標頻道",
+      "bdl": "⌯ <b>下載多則貼文</b>\n\n✦ /bdl\n✦ 在 Telegram 中開啟貼文並長按\n✦ 選擇複製連結並把連結傳到這裡\n✦ 要下載多篇貼文時先傳送第一篇的連結\n✦ 傳送同一個頻道中最後一篇貼文的連結\n✦ 首尾兩篇及中間所有貼文都會下載\n✦ 下一步選擇內容類型\n✦ <code>/bdl https://t.me/example_channel/15 https://t.me/example_channel/30</code>\n✦ 傳送 /cancel 選擇任務或在 /cancel 後面寫上任務編號",
+      "clone": "⌯ <b>轉移完整頻道</b>\n\n✦ 訂閱\n✦ /clone\n✦ 傳送頻道連結或使用者名稱\n✦ 私人頻道請用 /login 連結一個已經加入該頻道的帳號\n✦ /uploadch\n✦ 傳送 /cancel 選擇任務或在 /cancel 後面寫上任務編號",
+      "monitor": "⌯ <b>監視新的頻道貼文</b>\n\n✦ 訂閱\n✦ /monitor\n✦ 傳送頻道連結或使用者名稱\n✦ 私人頻道請用 /login 連結一個已經加入該頻道的帳號\n✦ 公開頻道使用下載帳號\n✦ 私人頻道每小時檢查一次且每次只開啟一個帳號檢查後關閉\n✦ 新貼文會進入已儲存的佇列並按順序傳送\n✦ 停止監控",
+      "channel_upload": "⌯ <b>將內容傳送到另一個頻道</b>\n\n✦ 訂閱\n✦ /uploadch\n✦ 機器人訂閱和 Telegram Premium 是兩個獨立的訂閱\n✦ 機器人每個分段可上傳約 2 GB\n✦ 已連結的 Telegram Premium 帳號可以一次上傳最大 4 GB 的檔案\n✦ 使用 /login 連結帳號\n✦ 將機器人和該帳號設為目標頻道管理員然後使用 /uploadch 選擇頻道\n✦ 沒有目標頻道時可以選擇收藏夾\n✦ 以文件傳送的分段需要按照編號順序重新合併\n✦ /rmuploadch\n✦ 最簡單 ↣ 把機器人加為你頻道或群組的管理員它會在這裡請你確認",
+      "forcedownload": "⌯ <b>強制下載模式</b>\n\n✦ 使用 /forcedownload，讓機器人擷取並上傳每個檔案，而不是複製不受限制的貼文。此模式適合用於自訂縮圖和內容重建。",
+      "login": "⌯ <b>連結 Telegram 帳號</b>\n\n✦ 使用 /login，然後選擇您目前的帳號或其他帳號。已連結的帳號必須已經加入您想要存取的私人頻道。授權驗證碼只會透過安全數字鍵盤輸入。\n✦ 只用數字按鈕輸入 Telegram 驗證碼\n✦ 刪除會移除最後一位確認會提交驗證碼\n✦ 傳送頻道連結或使用者名稱\n✦ 私人頻道請用 /login 連結一個已經加入該頻道的帳號\n✦ /logout",
+      "points": "⌯ <b>下載點數</b>\n\n✦ 免費下載會使用每日點數、禮物點數和推薦點數。分享您的個人連結以賺取更多點數：\n\n✦ <code>{referral_link}</code>",
+      "premium": "⌯ <b>訂閱功能</b>\n\n✦ /premium\n✦ 訂閱\n✦ 最多可以有 5 個未完成的任務\n✦ 請等其中一個完成或使用 /cancel 取消\n✦ 訂閱後可以跳過共用佇列\n✦ /clone\n✦ /monitor\n✦ /uploadch\n✦ /caption\n✦ /fdl\n✦ 機器人訂閱和 Telegram Premium 是兩個獨立的訂閱",
+      "other_uses": "⌯ <b>機器人的其他使用方式</b>\n\n✦ <b>將一個頻道轉移到另一個頻道：</b>使用 /uploadch 設定目的地，然後對來源頻道執行 /clone。所選內容將依照您的篩選條件進行轉移。\n\n✦ <b>替完整系列更換封面：</b>將新封面圖片傳送給機器人並確認，啟用強制下載模式，然後使用第一集和最後一集的連結執行 /bdl。支援的檔案會在下載並重新上傳時套用所選封面。"
+    }
+  },
+  "monitor": {
+    "login_required": "⌯ <b>連結 Telegram 帳號</b>\n\n✦ 傳送頻道連結或使用者名稱\n✦ 私人頻道請用 /login 連結一個已經加入該頻道的帳號",
+    "usage": "⌯ <b>監視新的頻道貼文</b>\n\n✦ {current_status}\n✦ /monitor\n✦ 傳送頻道連結或使用者名稱\n✦ 私人頻道請用 /login 連結一個已經加入該頻道的帳號\n✦ 公開頻道使用下載帳號\n✦ 私人頻道每小時檢查一次且每次只開啟一個帳號檢查後關閉\n✦ 新貼文會進入已儲存的佇列並按順序傳送\n✦ 停止監控",
+    "invalid_channel_id": "⌯ <b>無效的頻道識別碼</b>\n\n✦ 請使用 Telegram 頻道的數字 ID，通常以 <code>-100</code> 開頭。",
+    "invalid_action": "⌯ <b>無效的監視操作</b>\n\n✦ 使用 <code>on</code> 開始監視，或使用 <code>off</code> 停止監視。",
+    "not_active": "⌯ <b>ℹ 監視功能未啟用</b>\n\n✦ 您的帳號目前並未監視指定的頻道。",
+    "already_active": "⌯ <b>ℹ 已有一個監視工作啟用</b>\n\n✦ 選擇另一個頻道前，請先停止目前監視的頻道。",
+    "access_denied": "⌯ <b>頻道存取遭拒</b>\n\n✦ 已連結的帳號無法開啟指定頻道，或頻道識別碼不正確。",
+    "start_failed": "⌯ <b>請重新開始任務</b>\n\n✦ 傳送頻道連結或使用者名稱\n✦ 私人頻道請用 /login 連結一個已經加入該頻道的帳號",
+    "started": "⌯ <b>監視新的頻道貼文</b>\n\n✦ 頻道：{channel_title}\n✦ 篩選：{filter_status}\n✦ 公開頻道使用下載帳號\n✦ 私人頻道每小時檢查一次且每次只開啟一個帳號檢查後關閉\n✦ 新貼文會進入已儲存的佇列並按順序傳送",
+    "stopped": "⌯ <b>頻道監視已停止</b>\n\n✦ 不會再自動處理所選頻道的新貼文。",
+    "session_stopped": "⌯ <b>監視已停止</b>\n\n✦ 已連結的 Telegram 工作階段已過期或被撤銷，因此自動監視功能已停用。",
+    "status": {
+      "active": "正在監視頻道 <code>{channel_id}</code>",
+      "inactive": "未啟用"
+    },
+    "stop_button": "停止監控",
+    "source_lost": "⌯ <b>頻道監控已停止</b>\n\n✦ 頻道 ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ 綁定的帳號一整天都打不開它\n✦ 可能已被刪除或改為私密或帳號已退出\n✦ 想重新監控請確認帳號還在裡面然後傳送 /monitor"
+  },
+  "stats": {
+    "system": "⌯ <b>系統統計資料</b>\n\n✦ 運作時間：{uptime}\n✦ 磁碟：{disk_usage} / {disk_total}（{disk_percent}%）\n✦ 記憶體：{ram_percent}%\n✦ CPU：{cpu_percent}%\n✦ 網路已傳送：{sent}\n✦ 網路已接收：{received}",
+    "admin": "⌯ <b>使用者統計資料</b>\n\n✦ 使用者總數：{total_users}\n✦ 訂閱者：{total_premium}\n✦ 由管理員新增：{premium_by_admin}\n✦ 使用 Stars 付款：{premium_by_stars}",
+    "public": "⌯ <b>機器人統計</b>\n\n✦ 運行時間: {uptime}\n✦ 總下載量: {total_downloads}"
+  },
+  "payments": {
+    "monthly": {
+      "title": "月度訂閱",
+      "description": "啟用訂閱者功能 30 天"
+    },
+    "yearly": {
+      "title": "年度訂閱",
+      "description": "啟用訂閱者功能 365 天"
+    },
+    "total_label": "訂閱總額",
+    "invalid_plan_popup": "所選訂閱方案無效",
+    "invoice_failed_popup": "無法建立付款發票",
+    "unrecognized": "⌯ <b>無法識別付款方案</b>\n\n✦ 已收到付款，但無法識別其訂閱方案。請攜帶付款資訊聯絡客服。",
+    "activation_failed": "⌯ <b>訂閱啟用失敗</b>\n\n✦ 已收到付款，但資料庫無法啟用訂閱。請聯絡客服以取得人工協助。",
+    "completed": "⌯ <b>訂閱已啟用</b>\n\n✦ {plan_name}方案現已啟用，並將於 {expiry_date} 到期。"
+  },
+  "broadcast": {
+    "json": {
+      "file_required": "⌯ <b>需要廣播 JSON 檔案</b>\n\n✦ 請回覆一個多語言 JSON 檔案，然後使用 <code>/bc .</code>。",
+      "invalid_file": "⌯ <b>無效的廣播檔案</b>\n\n✦ 回覆的文件必須是 JSON 檔案。",
+      "validation_failed": "⌯ <b>廣播檔案驗證失敗</b>\n\n✦ 無法接受此檔案：<code>{error}</code>",
+      "confirm": "⌯ <b>確認多語言廣播</b>\n\n✦ 此檔案包含 {language_count} 種可用語言。使用者會優先收到其已儲存語言的內容，接著使用基礎語言，最後以英文作為備用語言。\n\n✦ 篩選條件：{filters}",
+      "how_to": "⌯ <b>多語言廣播</b>\n\n✦ 點擊下方按鈕以取得包含所有可用語言的 JSON 範本。請為每種需要的語言填寫 <code>text</code> 值，然後上傳檔案並使用 <code>/bc .</code> 回覆該檔案——留空的語言將回退為英文。",
+      "template_sent": "⌯ <b>廣播範本</b>\n\n✦ 此檔案包含 {language_count} 種語言，是根據目前的語言檔案產生的。"
+    },
+    "usage": "⌯ <b>廣播訊息</b>\n\n✦ 回覆您想要傳送的訊息，然後使用 /bc。可選篩選條件包括 <code>-only USER_ID</code> 和 <code>-rm USER_ID --prem</code>。",
+    "invalid_message": "⌯ <b>廣播訊息無法使用</b>\n\n✦ 回覆的訊息沒有有效的 Telegram 識別碼。",
+    "confirm": "⌯ <b>確認廣播</b>\n\n✦ 訊息 ID：<code>{message_id}</code>\n✦ 篩選條件：{filters}\n\n✦ 請選擇正常傳送，或傳送後置頂。",
+    "starting": "⌯ <b>廣播已開始</b>\n\n✦ 正在將訊息傳送給所選使用者。",
+    "progress": "⌯ <b>廣播進行中</b>\n\n✦ 已處理：{processed}/{total}\n✦ 成功：{successful}\n✦ 失敗：{failed}",
+    "completed": "⌯ <b>廣播完成</b>\n\n✦ 目標使用者：{total}\n✦ 成功：{successful}\n✦ 失敗：{failed}",
+    "cancelled": "⌯ <b>廣播已取消</b>\n\n✦ 此操作在處理 {processed} 位使用者後停止。",
+    "buttons": {
+      "normal": "正常傳送",
+      "pin": "傳送並置頂",
+      "get_template": "取得 JSON 範本"
+    },
+    "filters": {
+      "none": "沒有篩選條件",
+      "summary": "僅限使用者：{only_count}，排除的使用者：{excluded_count}，排除訂閱者：{exclude_premium}"
+    }
+  },
+  "admin": {
+    "users": {
+      "new_language": "⌯ <b>偵測到無法使用的語言</b>\n\n✦ 使用者：{first_name}\n✦ 使用者 ID：<code>{user_id}</code>\n✦ 偵測到的代碼：<code>{language_code}</code>",
+      "new_user": "⌯ <b>新使用者已加入</b>\n\n✦ 姓名：{first_name} {last_name}\n✦ 使用者 ID：<code>{user_id}</code>\n✦ 使用者名稱：{username}\n✦ 使用者總數：{total_users}",
+      "exported": "⌯ <b>使用者資料匯出完成</b>\n\n✦ 附件包含 {count} 筆使用者記錄。"
+    },
+    "payments": {
+      "new_subscription": "⌯ <b>新的付費訂閱</b>\n\n✦ 使用者：{user_name}\n✦ 使用者 ID：<code>{user_id}</code>\n✦ 方案：{plan_name}\n✦ 金額：{amount} Stars"
+    },
+    "pool": {
+      "insufficient": "⌯ <b>下載帳號集區不完整</b>\n\n✦ 目前已載入：{current}\n✦ 還需要的帳號數量：{missing}"
+    },
+    "gifts": {
+      "create_usage": "⌯ <b>建立禮物</b>\n\n✦ 使用 <code>/create -gift --value POINTS</code>。可選設定包括 <code>--linkexpiry DDHHMM</code>、<code>--giftexpiry DDHHMM</code>、<code>--onlyuser [IDS]</code>、<code>--exceptionuser [IDS]</code> 和 <code>--limit NUMBER</code>。",
+      "value_required": "⌯ <b>需要提供禮物點數</b>\n\n✦ 請在 <code>--value</code> 後提供正數。",
+      "user_filter_conflict": "⌯ <b>使用者篩選條件衝突</b>\n\n✦ 禮物不能同時使用允許使用者和排除使用者篩選條件。",
+      "invalid_duration": "⌯ <b>無效的持續時間</b>\n\n✦ 請使用六位數的 <code>DDHHMM</code> 格式設定禮物持續時間。",
+      "invalid_values": "⌯ <b>無效的禮物設定</b>\n\n✦ 請檢查使用者識別碼、領取上限和所有提供的值。",
+      "created": "⌯ <b>禮物已建立</b>\n\n✦ 禮物連結已準備完成：\n✦ <code>{gift_link}</code>",
+      "empty": "⌯ <b>ℹ 沒有啟用中的禮物</b>\n\n✦ 目前沒有啟用中的禮物連結。",
+      "list_title": "⌯ <b>啟用中的禮物</b>\n\n✦ 以下禮物連結目前可以使用。",
+      "list_item": "<b>禮物：</b> <code>{gift_pid}</code>\n點數：{value}\n領取次數：{usage_count}/{usage_limit}\n連結到期時間：{expiry}\n建立時間：{created_at}\n連結：<code>{gift_link}</code>",
+      "remove_usage": "⌯ <b>移除禮物</b>\n\n✦ 使用 <code>/rm -gift --pid GIFT_ID</code>。",
+      "not_found": "⌯ <b>找不到禮物</b>\n\n✦ 沒有任何啟用中的禮物符合提供的識別碼。",
+      "remove_confirm": "⌯ <b>停用禮物</b>\n\n✦ 禮物：<code>{gift_pid}</code>\n✦ 點數：{value}\n✦ 領取次數：{usage_count}\n\n✦ 確認後將阻止任何未來的領取。",
+      "deactivated": "⌯ <b>禮物已停用</b>\n\n✦ 禮物 <code>{gift_pid}</code> 已無法再被領取。"
+    },
+    "add": {
+      "usage": "⌯ <b>新增管理設定</b>\n\n✦ 使用 /add 搭配 <code>-premium</code>、<code>-lang</code> 或 <code>-frcch</code>。"
+    },
+    "remove": {
+      "usage": "⌯ <b>移除管理設定</b>\n\n✦ 使用 /rm 搭配 <code>-premium</code>、<code>-gift</code> 或 <code>-frcch</code>。"
+    },
+    "premium": {
+      "add_usage": "⌯ <b>訂閱</b>\n\n✦ /admin\n✦ 選擇使用者或傳送他們的數字使用者編號\n✦ 天數\n✦ <code>/add -premium --user [123456789] --days 30</code>",
+      "added": "⌯ <b>訂閱更新完成</b>\n\n✦ 已更新的使用者：{users}\n✦ 不存在的使用者：{missing}",
+      "remove_usage": "⌯ <b>移除訂閱</b>\n\n✦ 使用 <code>/rm -premium --user [USER_IDS]</code>。",
+      "removed": "⌯ <b>訂閱移除完成</b>\n\n✦ 已更新的使用者：{users}\n✦ 不存在或未啟用訂閱的使用者：{missing}"
+    },
+    "languages": {
+      "reply_to_json": "⌯ <b>需要語言檔案</b>\n\n✦ 使用 <code>/add -lang</code> 時，請回覆一個有效的 JSON 語言檔案。",
+      "json_required": "⌯ <b>需要 JSON 檔案</b>\n\n✦ 回覆的文件必須使用 <code>.json</code> 副檔名。",
+      "already_exists": "⌯ <b>ℹ 語言已存在</b>\n\n✦ 語言 <code>{language_code}</code> 已安裝。請加入 <code>--update</code> 以取代現有檔案。",
+      "invalid_json": "⌯ <b>無效的語言檔案</b>\n\n✦ 無法載入 JSON 檔案：<code>{error}</code>",
+      "added": "⌯ <b>語言已新增</b>\n\n✦ 語言 <code>{language_code}</code> 現已可以使用。",
+      "updated": "⌯ <b>語言已更新</b>\n\n✦ 語言 <code>{language_code}</code> 已成功重新載入。"
+    },
+    "force_subscription": {
+      "empty": "⌯ <b>ℹ 沒有必要加入的頻道</b>\n\n✦ 目前沒有設定強制訂閱頻道。",
+      "list_title": "⌯ <b>必須加入的頻道</b>\n\n✦ 目前正在強制要求加入以下頻道。",
+      "list_item": "連結：{link}\n頻道 ID：<code>{channel_id}</code>\n已加入：{joined}\n上限：{limit}",
+      "add_usage": "⌯ <b>新增必要頻道</b>\n\n✦ 使用 <code>/add -frcch --link CHANNEL_LINK --id CHANNEL_ID --limit NUMBER</code>。",
+      "permission_required": "⌯ <b>需要管理員權限</b>\n\n✦ 機器人必須是具有邀請使用者權限的管理員。",
+      "added": "⌯ <b>已新增必要頻道</b>\n\n✦ 頻道：{channel_title}\n✦ 加入上限：{limit}",
+      "add_failed": "⌯ <b>無法新增頻道</b>\n\n✦ 請確認頻道識別碼、連結和機器人的管理員權限。",
+      "remove_usage": "⌯ <b>移除必要頻道</b>\n\n✦ 使用 <code>/rm -frcch CHANNEL_ID</code>，或提供已儲存的連結。",
+      "removed": "⌯ <b>已移除必要頻道</b>\n\n✦ 不再強制要求加入此頻道。",
+      "not_found": "⌯ <b>找不到必要頻道</b>\n\n✦ 沒有任何已儲存的頻道符合提供的識別碼或連結。"
+    },
+    "logs": {
+      "not_found": "⌯ <b>日誌目錄無法使用</b>\n\n✦ 機器人日誌目錄不存在。",
+      "empty": "⌯ <b>沒有可用的日誌</b>\n\n✦ 找不到任何非空的機器人日誌檔案。",
+      "file_caption": "⌯ <b>機器人日誌</b>\n\n✦ 檔案：<code>{filename}</code>",
+      "upload_failed": "⌯ <b>日誌上傳失敗</b>\n\n✦ 檔案：<code>{filename}</code>\n✦ 錯誤：<code>{error}</code>"
+    }
+  },
+  "queue": {
+    "accepted": "⌯ <b>你的任務已儲存</b>\n\n✦ 任務 ↣ {task_id}\n✦ 傳送 /cancel 選擇任務或在 /cancel 後面寫上任務編號\n✦ <code>/cancel {task_id}</code>",
+    "waiting_free": "⌯ <b>等待中</b>\n\n✦ 前面還有 {ahead} 人\n✦ 有空位時開始下載\n✦ 訂閱後可以跳過共用佇列",
+    "waiting_premium": "⌯ <b>等待中</b>\n\n✦ 你之前的任務有 {ahead} 個\n✦ 你的任務會依序執行",
+    "limit_free": "⌯ <b>任務</b>\n\n✦ 你已經有一個未完成的任務\n✦ 請等它完成或使用 /cancel 取消\n✦ 最多可以有 5 個未完成的任務\n✦ 請等其中一個完成或使用 /cancel 取消",
+    "limit_premium": "⌯ <b>任務</b>\n\n✦ 最多可以有 {limit} 個未完成的任務\n✦ 請等其中一個完成或使用 /cancel 取消",
+    "lost_after_restart": "⌯ <b>請重新開始任務</b>\n\n✦ 任務 ↣ {task_id}\n✦ 在 Telegram 中開啟貼文並長按\n✦ 選擇複製連結並把連結傳到這裡\n✦ 要下載多篇貼文時先傳送第一篇的連結",
+    "cancel_usage": "傳送 /cancel 選擇任務或在 /cancel 後面寫上任務編號\n<code>/cancel 123</code>",
+    "cancelled_one": "任務 {task_id} 已取消",
+    "not_found": "任務 {task_id} 已結束或不屬於你",
+    "choose_to_cancel": "⌯ <b>取消 任務</b>\n\n✦ 傳送 /cancel 選擇任務或在 /cancel 後面寫上任務編號",
+    "cancelled_popup": "取消",
+    "not_found_popup": "請重新開始任務",
+    "buttons": {
+      "cancel": "取消 任務",
+      "upgrade": "訂閱",
+      "cancel_task": "任務 {task_id} {kind} {status}",
+      "cancel_all": "取消 任務 /cancel"
+    },
+    "kinds": {
+      "dl": "下載一則貼文",
+      "bdl": "下載多則貼文",
+      "clone": "轉移完整頻道",
+      "task": "任務",
+      "monitor": "監視新的頻道貼文"
+    },
+    "status": {
+      "queued": "等待中",
+      "running": "執行中"
+    },
+    "task_number": "任務 {task_id}"
+  },
+  "spam": {
+    "per_second": "每秒請勿傳送超過一則訊息",
+    "per_minute": "每分鐘請勿傳送超過 20 則訊息\n這個機器人只接收下載連結\n請等待這一分鐘結束",
+    "buttons": "你在一分鐘內點擊了超過 20 次按鈕\n請稍等再繼續\n重複違規會讓等待時間加倍"
+  },
+  "flow": {
+    "first_link": "⌯ <b>下載一則貼文</b>\n\n✦ 在 Telegram 中開啟貼文並長按\n✦ 選擇複製連結並把連結傳到這裡\n✦ 要下載多篇貼文時先傳送第一篇的連結\n✦ <code>https://t.me/example_channel/15</code>",
+    "last_link": "⌯ <b>下載多則貼文</b>\n\n✦ 傳送同一個頻道中最後一篇貼文的連結\n✦ 首尾兩篇及中間所有貼文都會下載\n✦ 下一步選擇內容類型",
+    "channel": "⌯ <b>選擇頻道</b>\n\n✦ 傳送頻道連結或使用者名稱\n✦ 私人頻道請用 /login 連結一個已經加入該頻道的帳號\n✦ <code>https://t.me/example_channel</code>",
+    "pick_channel": "選擇頻道",
+    "invalid_channel": "傳送頻道連結或使用者名稱\n私人頻道請用 /login 連結一個已經加入該頻道的帳號",
+    "upload_channel": "⌯ <b>選擇上傳頻道</b>\n\n✦ 最簡單 ↣ 把機器人加為你頻道或群組裡有發布權限的管理員\n✦ 機器人會在這裡傳確認訊息你點確認就好\n✦ 或者點下方的選擇頻道按鈕\n✦ 或者傳送頻道連結、使用者名稱或以 <code>-100</code> 開頭的ID\n✦ 這個功能需要機器人訂閱"
+  },
+  "panel": {
+    "title": "⌯ <b>管理</b>\n\n✦ 訂閱 / 禮物 / 必須加入的頻道 / 群發",
+    "premium": "訂閱",
+    "gift": "禮物",
+    "fsub": "必須加入的頻道",
+    "broadcast": "群發",
+    "users": "匯出使用者",
+    "language": "語言檔案",
+    "gifts": "啟用中的禮物",
+    "choose_user": "選擇使用者或傳送他們的數字使用者編號",
+    "selected_users": "全部使用者 ↣ {users}",
+    "selected_channel": "選擇頻道 ↣ {channel_id}",
+    "custom": "其他數字",
+    "remove_premium": "取消 訂閱",
+    "days": "天數 ↣ {days}",
+    "value": "禮物點數",
+    "link_days": "連結有效天數 / 禮物有效期為零表示永不過期",
+    "point_days": "點數有效天數 / 禮物有效期為零表示永不過期",
+    "limit": "最多領取次數",
+    "only_users": "允許指定使用者",
+    "exclude_users": "排除使用者",
+    "send_broadcast": "把群發訊息傳送到這裡\n查看副本並選擇接收使用者\n然後點擊確認",
+    "send_language": "傳送以語言代碼命名的 JSON 檔案例如 ar.json\n只有新檔案有效時才會取代舊檔案",
+    "enter_value": "傳送一個數字或用逗號分隔的使用者編號\n你的回覆會被刪除並更新此選單",
+    "invalid_value": "請傳送有效數字\n禮物有效期為零表示永不過期",
+    "audience_all": "全部使用者",
+    "audience_premium": "訂閱使用者",
+    "audience_free": "免費使用者",
+    "admins": "管理員",
+    "send_admin": "傳送要任命的使用者的數字 ID，或轉發其一則訊息\n點擊下方的管理員即可移除",
+    "admin_added": "已新增管理員：{user_id}",
+    "admin_removed": "已移除管理員：{user_id}",
+    "admin_exists": "該使用者已經是管理員",
+    "no_admins": "尚無管理員",
+    "owner_only": "只有擁有者可以管理管理員"
+  },
+  "large": {
+    "saved": "傳送到我的收藏夾",
+    "split": "下載並分割",
+    "help_button": "說明",
+    "split_notice": "⌯ <b>下載並分割</b>\n\n✦ 大小：{size}\n✦ 機器人每個分段可上傳約 2 GB\n✦ 請選擇下載並分割或取消\n✦ 要傳送最大 4 GB 的完整檔案請用 /login 連結 Telegram Premium 帳號並用 /uploadch 選擇目標頻道",
+    "premium_notice": "⌯ <b>傳送到我的收藏夾</b>\n\n✦ 大小：{size}\n✦ 已連結的 Telegram Premium 帳號可將完整檔案上傳到你的收藏夾\n✦ 也可以用 /uploadch 選擇目標頻道\n✦ 你還可以選擇分割檔案",
+    "help": "⌯ <b>說明</b>\n\n✦ 機器人訂閱和 Telegram Premium 是兩個獨立的訂閱\n✦ 機器人每個分段可上傳約 2 GB\n✦ 已連結的 Telegram Premium 帳號可以一次上傳最大 4 GB 的檔案\n✦ 使用 /login 連結帳號\n✦ 將機器人和該帳號設為目標頻道管理員然後使用 /uploadch 選擇頻道\n✦ 沒有目標頻道時可以選擇收藏夾\n✦ 以文件傳送的分段需要按照編號順序重新合併"
+  },
+  "referral_check": {
+    "question": "⌯ <b>快速驗證</b>\n\n✦ 請完成此題，以確認您是真人並計入您的邀請\n\n✦ {a} + {b} = ?",
+    "wrong": "⌯ <b>答案錯誤</b>\n\n✦ 請重試。剩餘次數：{left}",
+    "failed": "⌯ <b>邀請未計入</b>\n\n✦ 由於未通過驗證，您的邀請未被計入。您仍可正常使用機器人"
+  },
+  "units": {
+    "b": "{n} B",
+    "kb": "{n} KB",
+    "mb": "{n} MB",
+    "gb": "{n} GB",
+    "tb": "{n} TB",
+    "pb": "{n} PB",
+    "day": "{n}d",
+    "hour": "{n}h",
+    "minute": "{n}m",
+    "second": "{n}s"
+  }
+}

@@ -1,0 +1,675 @@
+{
+  "lang_name": "🇹🇷 Türkçe",
+  "common": {
+    "not_available": "Mevcut değil",
+    "never": "Asla",
+    "unlimited": "Sınırsız",
+    "none": "Yok",
+    "yes": "Evet",
+    "no": "Hayır",
+    "processing": "⌯ <b>İşleniyor</b>\n\n✦ İstenen işlem hazırlanırken lütfen bekleyin",
+    "state_expired": "⌯ <b>Oturumun süresi doldu</b>\n\n✦ Kaydedilen giriş oturumu on dakika sonra sona erdi. Lütfen işlemi yeniden başlatın",
+    "state_expired_popup": "Görevi yeniden başlat",
+    "action_cancelled": "⌯ <b>İşlem iptal edildi</b>\n\n✦ Seçilen işlem iptal edildi ve geçici durumu kaldırıldı",
+    "unexpected_error": "⌯ <b>Beklenmeyen bir hata oluştu</b>\n\n✦ İşlem şu hata nedeniyle tamamlanamadı: <code>{error}</code>",
+    "something_went_wrong": "Bu işlem gerçekleştirilirken bir hata oluştu, lütfen tekrar deneyin"
+  },
+  "buttons": {
+    "start": "Başlat",
+    "confirm": "Onayla",
+    "back": "Geri",
+    "subscribe": "Abone ol",
+    "earn_points": "Puan kazan",
+    "share_and_earn": "Paylaş ve kazan",
+    "link_account": "Hesap bağla",
+    "open_source": "Kanalı aç",
+    "refresh_subscription": "Tekrar kontrol et",
+    "channel": "Güncellemeler kanalı",
+    "help": "Yardım",
+    "profile": "Profil",
+    "contact_admin": "Diğer ödeme yöntemleri için destekle iletişime geç",
+    "cancel": "İptal",
+    "delete": "Sil",
+    "open": "Aç",
+    "reject": "Reddet"
+  },
+  "commands": {
+    "bcjson": {
+      "description": "Çok dilli yayın şablonunu indir"
+    },
+    "start": {
+      "description": "Botu başlat"
+    },
+    "help": {
+      "description": "Yardım merkezini aç"
+    },
+    "profile": {
+      "description": "Hesabını ve puanlarını görüntüle"
+    },
+    "premium": {
+      "description": "Abonelik özelliklerini görüntüle"
+    },
+    "language": {
+      "description": "Bot dilini değiştir"
+    },
+    "login": {
+      "description": "Bir Telegram hesabı bağla"
+    },
+    "logout": {
+      "description": "Bağlı hesabı kaldır"
+    },
+    "dl": {
+      "description": "Bir Telegram gönderisini indir"
+    },
+    "bdl": {
+      "description": "Bir gönderi aralığını indir"
+    },
+    "clone": {
+      "description": "Bir kanalın tamamını aktar"
+    },
+    "forcedownload": {
+      "description": "Zorunlu indirme modunu yönet"
+    },
+    "thumb": {
+      "description": "Özel küçük resmi yönet"
+    },
+    "caption": {
+      "description": "Açıklama işleme ayarlarını yönet"
+    },
+    "cancel": {
+      "description": "Geçerli işlemi iptal et"
+    },
+    "stats": {
+      "description": "Sistem istatistiklerini görüntüle"
+    },
+    "monitor": {
+      "description": "Bir kanalı otomatik olarak izle"
+    },
+    "uploadch": {
+      "description": "Yükleme hedefi olarak bir kanal ayarla"
+    },
+    "rmuploadch": {
+      "description": "Yükleme hedefini kaldır"
+    },
+    "bc": {
+      "description": "Bir mesajı toplu olarak gönder"
+    },
+    "add": {
+      "description": "Yönetim ayarları ekle"
+    },
+    "rm": {
+      "description": "Yönetim ayarlarını kaldır"
+    },
+    "create": {
+      "description": "Bir hediye bağlantısı oluştur"
+    },
+    "logs": {
+      "description": "Bot günlüklerini indir"
+    },
+    "admin": {
+      "description": "Yönetim"
+    }
+  },
+  "start": {
+    "welcome": "⌯ <b>Medya indiriciye hoş geldiniz</b>\n\n✦ Herkese açık veya özel kanallardaki ve iletmeyi devre dışı bırakan kanallardaki içerikler dâhil olmak üzere medyasını indirmek için bir Telegram gönderi bağlantısı gönderin. Ayrıca birden fazla gönderiyi indirebilir, bir kanalın tamamını aktarabilir, dosyalara özel bir küçük resim uygulayabilir veya indirilen içeriği doğrudan başka bir kanala gönderebilirsiniz\n\n✦ Bağlı hesap: {account_status}"
+  },
+  "accounts": {
+    "status": {
+      "connected": "Bağlı",
+      "not_connected": "Bağlı değil"
+    },
+    "session_expired": "⌯ <b>Bağlı oturumun süresi doldu</b>\n\n✦ Bağlı Telegram hesabı artık yetkili değil. Özel kaynaklara erişmeden önce hesabı yeniden bağlayın",
+    "access": {
+      "login_required": "⌯ <b>Bağlı bir hesap gereklidir</b>\n\n✦ Paylaşılan bağlantı, indirme hesaplarının erişemediği özel veya kısıtlı bir kaynağa aittir. Kaynak kanala zaten üye olan bir Telegram hesabını bağlayın ve ardından bağlantıyı yeniden gönderin",
+      "not_member": "⌯ <b>Bağlı hesabınız üye değil</b>\n\n✦ Bota bağlı Telegram hesabı, paylaşılan bağlantıdaki kanala erişemiyor. Önce bağlı hesabı kullanarak bu kanala katılın, ardından bağlantıyı yeniden gönderin"
+    },
+    "login": {
+      "choose_account": "⌯ <b>Bağlanacak hesabı seçin</b>\n\n✦ Mevcut Telegram hesabınızı mı yoksa başka bir hesabı mı bağlamak istediğinizi seçin. Seçilen hesap, indirmek istediğiniz özel kanallara zaten üye olmalıdır",
+      "already_running": "⌯ <b>Giriş işlemi zaten devam ediyor</b>\n\n✦ Yeni bir işlem başlatmadan önce mevcut giriş işlemini tamamlayın veya iptal edin",
+      "already_connected": "⌯ <b>Bir hesap zaten bağlı</b>\n\n✦ <code>{phone_number}</code> telefon numarası şu anda bağlı. Farklı bir hesap bağlamadan önce /logout komutuyla bu hesabı kaldırın",
+      "share_contact": "⌯ <b>Telefon numaranızı paylaşın</b>\n\n✦ Mevcut Telegram hesabınızın telefon numarasını güvenli bir şekilde paylaşmak için aşağıdaki düğmeyi kullanın",
+      "enter_phone": "⌯ <b>Alternatif telefon numarasını girin</b>\n\n✦ Telefon numarasını uluslararası biçimde elle gönderin. Numara <code>+</code> işaretiyle başlamalı ve ardından ülke kodu gelmelidir; örneğin <code>+12025550123</code>",
+      "invalid_phone": "⌯ <b>Geçersiz telefon numarası</b>\n\n✦ Numara <code>+</code> işaretiyle başlamalı ve harf veya desteklenmeyen sembol içermeden ülke kodunu kapsamalıdır. Girişi yeniden başlatın veya doğru biçimlendirilmiş bir numara gönderin",
+      "contact_mismatch": "⌯ <b>Kişi eşleşmiyor</b>\n\n✦ Paylaşılan kişi, botu kullanan Telegram hesabına ait değil. Kendi numaranızı paylaşmak için sunulan düğmeyi kullanın veya alternatif hesap seçeneğini seçin",
+      "contact_received": "⌯ <b>Telefon numarası alındı</b>\n\n✦ Bot yetkilendirme isteğini hazırlıyor. Telegram'ın giriş kodunu göndermesini bekleyin",
+      "code_prompt": "⌯ <b>Telegram</b>\n\n✦ Telegram kodunu yalnızca rakam düğmeleriyle gir\n✦ Sil son rakamı kaldırır ve Onayla kodu gönderir",
+      "code_prompt_with_value": "⌯ <b>Telegram</b>\n\n✦ <code>{code}</code>\n✦ Telegram kodunu yalnızca rakam düğmeleriyle gir\n✦ Sil son rakamı kaldırır ve Onayla kodu gönderir",
+      "processing": "⌯ <b>Hesap doğrulanıyor</b>\n\n✦ Kod kontrol ediliyor ve bağlı oturum oluşturuluyor",
+      "password_prompt": "⌯ <b>İki adımlı doğrulama gerekli</b>\n\n✦ Bu Telegram hesabının iki adımlı doğrulama parolasını metin mesajı olarak gönderin\n\n✦ Parola ipucu: <code>{hint}</code>",
+      "completed": "⌯ <b>Hesap başarıyla bağlandı</b>\n\n✦ Telegram hesabı artık bağlı. Bu hesap özel kanallara zaten üye olduğu sürece bu kanallara erişebilirsiniz",
+      "cancelled": "⌯ <b>Hesap bağlama iptal edildi</b>\n\n✦ Geçici giriş oturumu kapatıldı ve hiçbir hesap bilgisi kaydedilmedi",
+      "restart_hint": "⌯ <b>Hazır olduğunuzda yeniden başlayın</b>\n\n✦ Yeni bir hesap bağlama işlemi başlatmak istediğinizde /login komutunu kullanın",
+      "failed": "⌯ <b>Hesap bağlama başarısız oldu</b>\n\n✦ Yetkilendirme işlemi tamamlanamadı. Yeniden başlayın ve telefon numarasının, giriş kodunun ve parolanın doğru olduğunu kontrol edin",
+      "flood_wait": "⌯ <b>Çok fazla giriş denemesi</b>\n\n✦ Telegram yeni yetkilendirme isteklerini geçici olarak sınırlandırdı. {seconds} saniye sonra tekrar deneyin",
+      "invalid_code": "⌯ <b>Geçersiz veya süresi dolmuş kod</b>\n\n✦ Kod reddedildi veya süresi doldu. Telegram tarafından gönderilen en son kodu girin ya da işlemi iptal edip girişi yeniden başlatın",
+      "invalid_password": "⌯ <b>Yanlış doğrulama parolası</b>\n\n✦ İki adımlı doğrulama parolası yanlış. Doğru parolayı gönderin veya giriş işlemini iptal edin",
+      "code_empty_popup": "Onaylamadan önce Telegram kodunu girin",
+      "invalid_code_popup": "Kod geçersiz veya süresi dolmuş",
+      "buttons": {
+        "my_account": "Mevcut hesabım",
+        "other_account": "Başka bir hesap",
+        "share_phone": "Telefon numaramı paylaş"
+      },
+      "too_many_attempts": "⌯ <b>Görev</b>\n\n✦ Telegram giriş denemelerini geçici olarak sınırladı\n✦ /login komutunu tekrar kullanmadan önce bekle",
+      "phone_banned": "⌯ <b>Telegram</b>\n\n✦ Bu numara Telegram tarafından engellenmiş\n✦ Başka bir hesap kullan veya Telegram desteğine başvur",
+      "hint_awaiting_contact": "⌯ <b>Telefon numaranızı paylaşın</b>\n\n✦ Mevcut Telegram hesabınızın telefon numarasını güvenli bir şekilde paylaşmak için aşağıdaki düğmeyi kullanın",
+      "hint_awaiting_account_type": "⌯ <b>Bağlanacak hesabı seçin</b>\n\n✦ Mevcut Telegram hesabınızı mı yoksa başka bir hesabı mı bağlamak istediğinizi seçin. Seçilen hesap, indirmek istediğiniz özel kanallara zaten üye olmalıdır",
+      "hint_sending_code": "Bekliyor\nTelegram kodunu yalnızca rakam düğmeleriyle gir\nSil son rakamı kaldırır ve Onayla kodu gönderir",
+      "hint_awaiting_code": "Telegram kodunu yalnızca rakam düğmeleriyle gir\nSil son rakamı kaldırır ve Onayla kodu gönderir"
+    },
+    "logout": {
+      "not_connected": "⌯ <b>ℹ Bağlı hesap yok</b>\n\n✦ Şu anda bot profilinize bağlı bir Telegram hesabı bulunmuyor",
+      "confirm": "⌯ <b>Bağlı hesabı kaldır</b>\n\n✦ <code>{phone_number}</code> telefon numarasının bağlantısı kesilecek ve kaydedilmiş oturumu silinecek. Yalnızca devam etmek istiyorsanız onaylayın",
+      "completed": "⌯ <b>Bağlı hesap kaldırıldı</b>\n\n✦ Kaydedilen Telegram oturumu başarıyla silindi. İstediğiniz zaman başka bir hesap bağlayabilirsiniz"
+    }
+  },
+  "subscription": {
+    "required": "⌯ <b>Abonelik gerekli</b>\n\n✦ Botu kullanmadan önce aşağıda listelenen kanallara katılın, ardından kontrol düğmesine basın\n\n✦ {channels}",
+    "completed": "⌯ <b>Abonelik doğrulandı</b>\n\n✦ Kanal üyeliğiniz başarıyla doğrulandı. Artık botu kullanmaya devam edebilirsiniz",
+    "still_missing_popup": "Gerekli tüm kanallara hâlâ katılmanız gerekiyor"
+  },
+  "downloads": {
+    "invalid_link": "⌯ <b>Geçersiz Telegram bağlantısı</b>\n\n✦ Doğrudan bir Telegram gönderisine yönlendiren bir bağlantı gönderin; örneğin <code>https://t.me/channel/123</code>",
+    "post_not_found": "⌯ <b>Gönderi bulunamadı</b>\n\n✦ İstenen gönderi mevcut değil, silinmiş veya seçilen indirme hesabı tarafından erişilebilir değil",
+    "nothing_to_download": "⌯ <b>İndirilecek bir şey yok</b>\n\n✦ Bu gönderide indirilecek medya veya metin yok, örneğin kanal adının ya da fotoğrafının değiştiğine dair bir bildirim",
+    "comment_unavailable": "⌯ <b>Yorum çözümlenemedi</b>\n\n✦ Yorum bağlantısı erişilebilir bir tartışma mesajına yönlendirmiyor veya Telegram belirtilen mesaj kimliğini reddetti",
+    "client_unavailable": "⌯ <b>İndirme hesabı kullanılamıyor</b>\n\n✦ Şu anda bu içeriği almak için kullanılabilecek bir Telegram hesabı yok. Daha sonra tekrar deneyin veya kendi hesabınızı bağlayın",
+    "preparing": "⌯ <b>İndirme hazırlanıyor</b>\n\n✦ Aktarım başlamadan önce medya bilgileri toplanıyor",
+    "splitting": "⌯ <b>Dosya bölünüyor</b>\n\n✦ Dosya, yükleme parçası sınırından büyük olduğu için desteklenen parçalara ayrılıyor",
+    "file_too_large": "⌯ <b>Dosya desteklenen boyutu aşıyor</b>\n\n✦ Bu dosyanın boyutu {maximum_size} değerinden büyük olduğu için {action} işlemi gerçekleştirilemiyor",
+    "file_too_small": "⌯ <b>Dosya boş veya bozuk</b>\n\n✦ İndirilen medya geçerli kabul edilemeyecek kadar küçük ya da Telegram eksik bir dosya döndürdü",
+    "file_missing": "⌯ <b>İndirilen dosya bulunamıyor</b>\n\n✦ Geçici medya dosyası yüklemeden önce bulunamadı veya boştu",
+    "download_failed": "⌯ <b>İndirme başarısız oldu</b>\n\n✦ Medya birden fazla denemeden sonra alınamadı. Kaynak hesabın erişimini kontrol edin ve tekrar deneyin",
+    "upload_failed": "⌯ <b>Yükleme başarısız oldu</b>\n\n✦ Medya indirildi ancak teslim edilemedi. Telegram şu hatayı döndürdü: <code>{error}</code>",
+    "flood_wait": "⌯ <b>Telegram hız sınırı</b>\n\n✦ Telegram, yüklemenin devam edebilmesi için {seconds} saniyelik bir bekleme istedi",
+    "actions": {
+      "download": "indirme",
+      "upload": "yükleme"
+    },
+    "progress": {
+      "downloading": "İndiriliyor",
+      "uploading": "Yükleniyor",
+      "body": "⌯ <b>{action}</b>\n\n✦ <code>{progress_bar}</code>\n\n✦ Aktarılan: {current_size} / {total_size}\n✦ İlerleme: %{percentage}\n✦ Hız: {speed}/sn\n✦ Kalan süre: {eta}"
+    },
+    "parts": {
+      "item": "{total} parçanın {current}. parçası"
+    },
+    "album": {
+      "preparing": "⌯ <b>Medya albümü algılandı</b>\n\n✦ Albüm seçilen {count} öğe içeriyor ve öğeler sırayla işlenecek",
+      "processing": "⌯ <b>Medya albümü işleniyor</b>\n\n✦ {total} öğeden {current}. öğe işleniyor"
+    },
+    "single": {
+      "usage": "/dl\nTelegram’da gönderiyi aç ve basılı tut\nBağlantıyı kopyala seçeneğini seçip buraya gönder\nBirden çok gönderi için önce ilk gönderinin bağlantısını gönder"
+    },
+    "batch": {
+      "usage": "/bdl\nTelegram’da gönderiyi aç ve basılı tut\nBağlantıyı kopyala seçeneğini seçip buraya gönder\nBirden çok gönderi için önce ilk gönderinin bağlantısını gönder\nAynı kanaldaki son gönderinin bağlantısını gönder\nİki gönderi ve aralarındaki tüm gönderiler dahil edilir\nArdından içerik türlerini seçersin",
+      "different_sources": "⌯ <b>Bağlantılar farklı sohbetlere ait</b>\n\n✦ İlk ve son bağlantı aynı Telegram kanalından veya grubundan gelmelidir",
+      "invalid_order": "⌯ <b>Gönderi sırası yanlış</b>\n\n✦ İlk bağlantı, son bağlantıdan daha eski bir gönderiye yönlendirmelidir",
+      "invalid_links": "⌯ <b>Geçersiz toplu indirme bağlantıları</b>\n\n✦ Her iki değer de aynı kaynağa ait geçerli Telegram gönderi bağlantıları olmalıdır",
+      "starting": "⌯ <b>Toplu indirme başlatıldı</b>\n\n✦ Bot, {start_id} ile {end_id} arasındaki gönderileri işleyecek. İstenen toplam gönderi: {total}",
+      "progress": "⌯ <b>Toplu indirme devam ediyor</b>\n\n✦ Geçerli öğe: {current}/{total}\n✦ Gönderi kimliği: {message_id}\n✦ İndirilen: {downloaded}\n✦ Atlanan: {skipped}\n✦ Başarısız: {failed}",
+      "completed": "⌯ <b>Toplu işlem tamamlandı</b>\n\n✦ İndirilen: {downloaded}\n✦ Atlanan: {skipped}\n✦ Başarısız: {failed}",
+      "cancelled": "⌯ <b>Toplu işlem iptal edildi</b>\n\n✦ Kalan gönderiler işlenmeyecek. İptalden önce kaydedilen ilerleme temizlendi",
+      "failed": "⌯ <b>Toplu işlem durduruldu</b>\n\n✦ Beklenmeyen bir hata, kalan gönderilerin işlenmesini engelledi",
+      "retrying": "⌯ <b>Başarısız öğeler yeniden deneniyor</b>\n\n✦ Ana geçiş tamamlandı. Başarısız olan {count} öğe şimdi yeniden denenecek"
+    },
+    "disk_full": "⌯ <b>Görev</b>\n\n✦ Dosyayı şimdi indirmek için yeterli alan yok\n✦ Daha sonra tekrar dene",
+    "paid": {
+      "not_purchased": "⌯ <b>Bu gönderi Telegram Stars ile satın alınmalı</b>\n\n✦ Bağlı hesapla satın alıp bağlantıyı yeniden gönder"
+    }
+  },
+  "tasks": {
+    "already_running": "⌯ <b>Başka bir görev zaten çalışıyor</b>\n\n✦ Başka bir işlem başlatmadan önce etkin görevin tamamlanmasını bekleyin veya görevi iptal edin",
+    "resumed": "⌯ <b>Görev devam ettirildi</b>\n\n✦ Yarıda kesilmiş bir görev bulundu ve son kaydedilen konumdan devam edecek",
+    "cancel_requested": "⌯ <b>İptal istendi</b>\n\n✦ Etkin işlem durduruluyor ve geçici dosyalar temizlenecek",
+    "input_cancelled": "⌯ <b>Giriş oturumu iptal edildi</b>\n\n✦ Bekleyen giriş, filtre veya onay durumu kaldırıldı",
+    "none_to_cancel": "⌯ <b>ℹ Etkin işlem yok</b>\n\n✦ İptal edilecek çalışan bir görev veya bekleyen giriş oturumu bulunmuyor",
+    "completion": {
+      "single": {
+        "private": "⌯ <b>İndirme tamamlandı</b>\n\n✦ İstenen medya başarıyla indirildi ve bu sohbete gönderildi",
+        "saved_messages": "⌯ <b>İndirme tamamlandı</b>\n\n✦ İstenen medya indirildi ve bağlı hesabınızın Kayıtlı Mesajlar bölümüne teslim edildi",
+        "channel": "⌯ <b>Yükleme tamamlandı</b>\n\n✦ İstenen medya <b>{channel_title}</b> kanalına başarıyla teslim edildi\n\n✦ {message_link}"
+      },
+      "batch": {
+        "private": "⌯ <b>Toplu görev tamamlandı</b>\n\n✦ Bot seçilen aralığı işlemeyi tamamladı ve {count} öğeyi bu sohbete teslim etti",
+        "saved_messages": "⌯ <b>Toplu görev tamamlandı</b>\n\n✦ Bot seçilen aralığı işlemeyi tamamladı ve {count} öğeyi bağlı hesabınızın Kayıtlı Mesajlar bölümüne teslim etti",
+        "channel": "⌯ <b>Toplu yükleme tamamlandı</b>\n\n✦ Bot seçilen aralığı işlemeyi tamamladı ve {count} öğeyi seçtiğiniz kanala teslim etti"
+      },
+      "clone": {
+        "private": "⌯ <b>Kanal aktarımı tamamlandı</b>\n\n✦ Kanal görevi tamamlandı ve {count} öğe bu sohbete teslim edildi",
+        "saved_messages": "⌯ <b>Kanal aktarımı tamamlandı</b>\n\n✦ Kanal görevi tamamlandı ve {count} öğe bağlı hesabınızın Kayıtlı Mesajlar bölümüne teslim edildi",
+        "channel": "⌯ <b>Kanal aktarımı tamamlandı</b>\n\n✦ Kanal görevi tamamlandı ve {count} öğe seçtiğiniz hedef kanala teslim edildi"
+      },
+      "monitor": {
+        "private": "⌯ <b>İzlenen gönderi teslim edildi</b>\n\n✦ Yeni bir gönderi algılandı ve bu sohbete teslim edildi",
+        "saved_messages": "⌯ <b>İzlenen gönderi teslim edildi</b>\n\n✦ Yeni bir gönderi algılandı ve bağlı hesabınızın Kayıtlı Mesajlar bölümüne teslim edildi",
+        "channel": "⌯ <b>İzlenen gönderi teslim edildi</b>\n\n✦ Yeni bir gönderi algılandı ve seçtiğiniz hedef kanala teslim edildi"
+      }
+    }
+  },
+  "filters": {
+    "prompt": "⌯ <b>İçerik filtresini seçin</b>\n\n✦ Tüm içeriği işlemeyi, yalnızca seçilen medya türlerini kaydetmeyi veya seçilen medya türlerini atlamayı seçin. Seçim oturumu on dakika boyunca etkin kalır",
+    "modes": {
+      "all": "Tüm içerik",
+      "save": "Yalnızca seçilenleri kaydet",
+      "skip": "Seçilenleri atla"
+    },
+    "types": {
+      "videos": "Videolar",
+      "photos": "Fotoğraflar",
+      "audio": "Ses",
+      "files": "Dosyalar",
+      "text": "Metin",
+      "other": "Diğer"
+    },
+    "summary": {
+      "all": "Desteklenen tüm içerik",
+      "save": "Yalnızca şunları kaydet: {types}",
+      "skip": "Şunları atla: {types}",
+      "minimum_duration": "Minimum süre: {seconds} saniye",
+      "maximum_duration": "Maksimum süre: {seconds} saniye"
+    }
+  },
+  "clone": {
+    "usage": "/clone\nKanal bağlantısını veya kullanıcı adını gönder\nÖzel kanal için zaten üye olan bir hesabı /login ile bağla",
+    "channel_not_found": "⌯ <b>Kanal bulunamadı</b>\n\n✦ Kanal kullanıcı adı veya bağlantısı geçersiz ya da bağlı hesap bu kanalı çözümleyemiyor",
+    "empty_channel": "⌯ <b>Kanal boş</b>\n\n✦ Seçilen kanalda aktarılabilecek gönderi bulunamadı",
+    "starting": "⌯ <b>Kanal aktarımı başlatıldı</b>\n\n✦ Bot, <b>{channel_title}</b> kanalındaki {total} gönderi kimliğini işlemeye hazırlanıyor",
+    "progress": "⌯ <b>Kanal aktarımı devam ediyor</b>\n\n✦ Geçerli öğe: {current}/{total}\n✦ Gönderi kimliği: {message_id}\n✦ İndirilen: {downloaded}\n✦ Atlanan: {skipped}\n✦ Başarısız: {failed}",
+    "flood_wait": "⌯ <b>Telegram hız sınırı</b>\n\n✦ Kanal aktarımı {seconds} saniye boyunca duraklatıldı",
+    "completed": "⌯ <b>Kanal işleme tamamlandı</b>\n\n✦ İndirilen: {downloaded}\n✦ Atlanan: {skipped}\n✦ Başarısız: {failed}",
+    "cancelled": "⌯ <b>Kanal aktarımı iptal edildi</b>\n\n✦ Kalan kanal gönderileri işlenmeyecek",
+    "failed": "⌯ <b>Kanal aktarımı başarısız oldu</b>\n\n✦ Beklenmeyen bir hata aktarımın tamamlanmasını engelledi"
+  },
+  "uploads": {
+    "channel": {
+      "usage": "/uploadch\nKanal seç\nBot aboneliği ve Telegram Premium ayrı aboneliklerdir\nBot her parçada yaklaşık 2 GB yükler\nBağlı Telegram Premium hesabı tek dosyada 4 GB’a kadar yükleyebilir\nHesabı /login ile bağla\nBotu ve hesabı hedef kanala yönetici olarak ekle ve kanalı /uploadch ile seç\nKanal yoksa kayıtlı mesajları seçebilirsin\nBelge parçalarını numara sırasına göre birleştirmen gerekir\nEn kolay yol ↣ botu kanalına veya grubuna yönetici olarak ekle ve sana burada onay sorsun",
+      "current": "⌯ <b>Kanal seç</b>\n\n✦ {channel_id}\n✦ /uploadch\n✦ /rmuploadch",
+      "invalid_id": "⌯ <b>Geçersiz kanal kimliği</b>\n\n✦ Genellikle <code>-100</code> ile başlayan sayısal Telegram kanal kimliğini gönderin\n✦ En kolay yol ↣ botu kanalına veya grubuna yönetici olarak ekle ve sana burada onay sorsun",
+      "bot_not_admin": "⌯ <b>Botun yönetici erişimine sahip olması gerekiyor</b>\n\n✦ Kanal yüklemelerini etkinleştirmeden önce botu hedef kanala yönetici olarak ekleyin\n✦ En kolay yol ↣ botu kanalına veya grubuna yönetici olarak ekle ve sana burada onay sorsun",
+      "user_not_admin": "⌯ <b>Yönetici erişiminiz gerekiyor</b>\n\n✦ Hedef kanalın sahibi veya yöneticisi olmalısınız",
+      "access_denied": "⌯ <b>Kanal doğrulaması başarısız oldu</b>\n\n✦ Kanala erişilemedi veya gerekli yönetici izinleri eksik",
+      "enabled": "⌯ <b>Yükleme kanalı bağlandı</b>\n\n✦ Bu hedefi kaldırana kadar gelecekteki indirmeler <b>{channel_title}</b> kanalına teslim edilecek",
+      "disabled": "⌯ <b>Yükleme kanalı devre dışı bırakıldı</b>\n\n✦ Bot seçilen kanaldaki yönetici erişimini kaybettiği için kanal teslimatı otomatik olarak devre dışı bırakıldı",
+      "removed": "⌯ <b>Yükleme kanalı kaldırıldı</b>\n\n✦ Gelecekteki indirmeler varsayılan teslimat hedefine dönecek",
+      "not_set": "⌯ <b>ℹ Yapılandırılmış bir yükleme kanalı yok</b>\n\n✦ Profilinizde şu anda bir hedef kanal bulunmuyor"
+    },
+    "auto": {
+      "start_first": "⌯ <b>Kanal bağlamayı tamamla</b>\n\n✦ Botu şuraya ekledin ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Bota kaydolup bağlamayı tamamlamak için Başlat'a dokun\n✦ 24 saat içinde dokunmazsan bot oradan çıkar",
+      "premium_only": "⌯ <b>Kanal bağlamak abonelere özel</b>\n\n✦ Botu şuraya ekledin ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ İndirmeleri bir kanala veya gruba almak bot aboneliğinin özelliği\n✦ Bot oradan çıktı\n✦ Aşağıdaki butonla abone ol sonra botu tekrar ekle",
+      "confirm": "⌯ <b>Yükleme kanalını onayla</b>\n\n✦ Botu şuraya ekledin ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Onaylarsan yeni indirmeler ve takip edilen gönderiler oraya gelir\n✦ Reddedersen bot oradan çıkar\n✦ 24 saat içinde cevap vermezsen bot kendisi çıkar",
+      "linked": "⌯ <b>Yükleme kanalı bağlandı</b>\n\n✦ Kanal ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Yeni indirmeler ve takip edilen gönderiler oraya gelecek\n✦ Kaldırmak için /rmuploadch gönder",
+      "no_rights": "⌯ <b>Bot orada paylaşım yapamıyor</b>\n\n✦ Kanal ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Bot yönetici olmadığı veya paylaşım izni olmadığı için çıktı\n✦ Onu paylaşım izni olan yönetici olarak tekrar ekle",
+      "user_not_admin": "⌯ <b>Orada yönetici olmalısın</b>\n\n✦ Kanal ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Yükleme kanalı senin olmalı ya da orada yönetici olmalısın\n✦ Bot oradan çıktı",
+      "expired": "Bu isteğin süresi doldu"
+    }
+  },
+  "forcedownload": {
+    "details": "⌯ <b>Zorunlu indirme modu</b>\n\n✦ Etkinleştirildiğinde bot, doğrudan kopyalamak yerine her medya öğesini indirip yeniden yükler. Bu özellik özel küçük resim uygularken, dosyaları yeniden oluştururken veya iletme kısıtlamalarını aşarken kullanışlıdır\n\n✦ Geçerli durum: {status}",
+    "premium_required": "⌯ <b>Abonelik gerekli</b>\n\n✦ Zorunlu indirme modu ek depolama alanı, bant genişliği ve işlem kaynağı tükettiği için yalnızca aboneler tarafından kullanılabilir",
+    "flag_removed": "⌯ <b>ℹ --fdl seçeneği kaldırıldı</b>\n\n✦ Zorunlu indirme artık kalıcı bir kullanıcı modudur. Aboneler bu modu ayrı komutlara eklemek yerine /forcedownload komutuyla yönetebilir",
+    "enabled": "⌯ <b>Zorunlu indirme modu etkinleştirildi</b>\n\n✦ Gelecekteki indirme, toplu indirme, kanal aktarımı ve izleme görevleri gönderileri doğrudan kopyalamak yerine orijinal dosyaları indirip yükleyecek",
+    "disabled": "⌯ <b>Zorunlu indirme modu devre dışı bırakıldı</b>\n\n✦ Bot kısıtlanmamış gönderileri tekrar doğrudan kopyalayabilir ve gerektiğinde korumalı içeriği indirmeye devam eder",
+    "status": {
+      "enabled": "Etkin",
+      "disabled": "Devre dışı"
+    },
+    "buttons": {
+      "enable": "Zorunlu indirmeyi etkinleştir",
+      "disable": "Zorunlu indirmeyi devre dışı bırak"
+    }
+  },
+  "thumbnail": {
+    "not_set": "⌯ <b>Özel küçük resim yok</b>\n\n✦ Önce bota bir resim gönderin, ardından desteklenen yüklenmiş dosyalarda kapak olarak kullanmak için resmi onaylayın",
+    "current": "⌯ <b>Geçerli özel küçük resim</b>\n\n✦ Bu, gelecekte desteklenen yüklemeler için kaydedilmiş resimdir\n\n✦ Durum: {status}",
+    "confirm": "⌯ <b>Bu resmi küçük resim olarak kullan</b>\n\n✦ Bu resmi özel kapağınız olarak kaydetmek için onaylayın veya geçici resmi silmek için iptal edin",
+    "saved": "⌯ <b>Küçük resim kaydedildi</b>\n\n✦ Resim kaydedildi ve gelecekte desteklenen yüklemeler için etkinleştirildi",
+    "download_failed": "⌯ <b>Resim indirilemedi</b>\n\n✦ Resim kaydedilemedi. Tekrar gönderin ve Telegram'ın yüklemeyi tamamladığından emin olun",
+    "temp_missing": "⌯ <b>Geçici resim kullanılamıyor</b>\n\n✦ Onay oturumunun süresi doldu veya geçici resim kaldırıldı. Resmi yeniden gönderin",
+    "not_set_popup": "Kaydedilmiş bir küçük resim bulunmuyor",
+    "status": {
+      "enabled": "Etkin",
+      "disabled": "Devre dışı"
+    },
+    "buttons": {
+      "enable": "Küçük resmi etkinleştir",
+      "disable": "Küçük resmi devre dışı bırak"
+    }
+  },
+  "captions": {
+    "settings": "⌯ <b>Açıklama işleme</b>\n\n✦ Medya kopyalanırken veya yüklenirken açıklamaların nasıl işleneceğini seçin\n\n✦ Geçerli mod: {current}",
+    "modes": {
+      "keep_all": "Orijinal açıklamayı koru",
+      "remove_all": "Medya açıklamalarını kaldır",
+      "remove_links_users": "Bağlantıları ve kullanıcı adlarını kaldır"
+    },
+    "buttons": {
+      "keep_all": "Orijinal açıklamaları koru",
+      "remove_all": "Tüm açıklamaları kaldır",
+      "remove_links_users": "Bağlantıları ve kullanıcı adlarını kaldır"
+    },
+    "already_selected_popup": "Bu açıklama modu zaten etkin",
+    "updated_popup": "Açıklama modu güncellendi"
+  },
+  "profile": {
+    "unavailable": "⌯ <b>Profil kullanılamıyor</b>\n\n✦ Kaydedilmiş kullanıcı kaydınız yüklenemedi. /start komutunu gönderip tekrar deneyin",
+    "details": "⌯ <b>Profiliniz</b>\n\n✦ Kullanıcı kimliği: <code>{user_id}</code>\n✦ Plan: {plan_status}\n✦ Plan bitiş tarihi: {expiry_date}\n✦ Günlük puanlar: {daily_points}/{daily_limit}\n✦ Günlük sıfırlanma: {reset_time}\n✦ Hediye puanları: {gift_points}\n✦ Referans puanları: {referral_points}\n✦ Referanslar: {referral_count}\n✦ Zorunlu indirme: {force_download_status}\n\n✦ Referans bağlantısı:\n✦ <code>{referral_link}</code>"
+  },
+  "plans": {
+    "free": "Ücretsiz",
+    "premium": "Abone",
+    "monthly": "Aylık",
+    "yearly": "Yıllık"
+  },
+  "premium": {
+    "details": "⌯ <b>Abonelik</b>\n\n✦ Abonelik\n✦ En fazla 5 açık görevin olabilir\n✦ Birinin bitmesini bekle veya /cancel ile iptal et\n✦ Abonelik ortak sırayı atlamanı sağlar\n✦ /clone\n✦ /monitor\n✦ /uploadch\n✦ /caption\n✦ /fdl\n✦ Bot aboneliği ve Telegram Premium ayrı aboneliklerdir",
+    "feature_required": "⌯ <b>Abonelik gerekli</b>\n\n✦ Bu özellik aboneler tarafından kullanılabilir. Mevcut planları incelemek için abonelik menüsünü açın",
+    "already_active": "⌯ <b>Abonelik etkin</b>\n\n✦ Aboneliğiniz {expiry_date} tarihine kadar etkin kalacak",
+    "already_active_popup": "Aboneliğiniz {expiry_date} tarihine kadar etkin",
+    "required_popup": "Bu özellik etkin bir abonelik gerektiriyor",
+    "granted": "⌯ <b>Abonelik etkinleştirildi</b>\n\n✦ Hesabınız başarıyla yükseltildi. Geçerli abonelik {expiry_date} tarihinde sona erecek",
+    "removed": "⌯ <b>ℹ Abonelik kaldırıldı</b>\n\n✦ Yalnızca abonelere özel modlar ve hedef ayarları hesabınız için devre dışı bırakıldı",
+    "buttons": {
+      "monthly": "Aylık plan",
+      "yearly": "Yıllık plan"
+    },
+    "granted_days": "⌯ <b>Abonelik</b>\n\n✦ Eklenen günler: {days}\n✦ Bitiş: {expiry_date}\n✦ Günler varsa kalan sürenin üzerine eklendi"
+  },
+  "language": {
+    "select": "⌯ <b>Dilinizi seçin</b>\n\n✦ Bot mesajları ve kişisel Telegram komut menünüz için kullanılacak dili seçin",
+    "changed": "⌯ <b>Dil değiştirildi</b>\n\n✦ Mesajlar ve Telegram komutları artık {language_name} dilinde görüntülenecek",
+    "unavailable_popup": "Seçilen dil kullanılamıyor"
+  },
+  "limits": {
+    "insufficient_points": "⌯ <b>Yeterli indirme puanı yok</b>\n\n✦ Bu indirme için yeterli puanınız yok. Günlük bakiyeniz {time_left} sonra sıfırlanacak veya referanslar aracılığıyla daha fazla puan kazanabilirsiniz",
+    "insufficient_points_batch": "⌯ <b>Bu toplu işlem için yeterli puan yok</b>\n\n✦ Bu işlem {required_points} puan gerektiriyor, ancak mevcut kullanılabilir bakiyeniz {available_points}",
+    "reset_now": "Şimdi sıfırlanıyor",
+    "cooldown": "⌯ <b>Tekrar indirmeden önce lütfen bekleyin</b>\n\n✦ {remaining_time} sonra başka bir ücretsiz indirme başlatabilirsiniz"
+  },
+  "referrals": {
+    "share_text": "Bu Telegram indiriciyi kullanın ve referans bağlantım aracılığıyla puan kazanın",
+    "new_referral": "⌯ <b>Yeni bir referans katıldı</b>\n\n✦ {user_name} (<code>{user_id}</code>) bağlantınızı kullanarak katıldı. {reward} referans puanı kazandınız",
+    "welcome_bonus": "⌯ <b>Referans bonusu alındı</b>\n\n✦ Mevcut bir kullanıcının referans bağlantısı üzerinden katıldığınız için {bonus} puan kazandınız"
+  },
+  "gifts": {
+    "claim": {
+      "already_claimed": "⌯ <b>ℹ Hediye zaten alındı</b>\n\n✦ Bu hediye daha önce hesabınıza eklendi ve ikinci kez alınamaz",
+      "invalid": "⌯ <b>Hediye bulunamadı</b>\n\n✦ Hediye bağlantısı geçersiz veya artık mevcut değil",
+      "inactive": "⌯ <b>Hediye etkin değil</b>\n\n✦ Bu hediye yönetici tarafından devre dışı bırakıldı ve artık alınamaz",
+      "link_expired": "⌯ <b>Hediye bağlantısının süresi doldu</b>\n\n✦ Bu hediyeyi almak için izin verilen süre sona erdi",
+      "limit_reached": "⌯ <b>Hediye sınırına ulaşıldı</b>\n\n✦ İzin verilen maksimum talep sayısına zaten ulaşıldı",
+      "not_allowed": "⌯ <b>Hediye hesabınıza atanmadı</b>\n\n✦ Bu hediye yalnızca belirli kullanıcılar tarafından alınabilir ve hesabınız bu kullanıcılar arasında değil",
+      "excluded": "⌯ <b>Hediye hesabınız için kullanılamıyor</b>\n\n✦ Hesabınız bu hediyeyi alabilecek kullanıcılar arasından hariç tutuldu",
+      "completed": "⌯ <b>Hediye alındı</b>\n\n✦ Hesabınıza başarıyla {value} puan eklendi",
+      "completed_with_expiry": "⌯ <b>Hediye alındı</b>\n\n✦ Hesabınıza {value} puan eklendi ve bu puanlar {expiry_date} tarihine kadar kullanılabilir olacak",
+      "failed": "⌯ <b>Hediye alınamadı</b>\n\n✦ Hediye hesabınıza uygulanamadı. Daha sonra tekrar deneyin"
+    }
+  },
+  "help": {
+    "menu": {
+      "title": "⌯ <b>Yardım merkezi</b>\n\n✦ Talimatlarını ve önerilen kullanım şeklini görüntülemek için aşağıdan bir özellik seçin"
+    },
+    "buttons": {
+      "single": "Tekli indirme",
+      "batch": "Toplu indirme",
+      "clone": "Kanal aktarımı",
+      "monitor": "Kanal izleme",
+      "channel_upload": "Kanala yükleme",
+      "forcedownload": "Zorunlu indirme",
+      "login": "Bağlı hesap",
+      "points": "Puanlar",
+      "premium": "Abonelik",
+      "other_uses": "Diğer kullanımlar"
+    },
+    "features": {
+      "dl": "⌯ <b>Bir gönderi indir</b>\n\n✦ /dl\n✦ Telegram’da gönderiyi aç ve basılı tut\n✦ Bağlantıyı kopyala seçeneğini seçip buraya gönder\n✦ Birden çok gönderi için önce ilk gönderinin bağlantısını gönder\n✦ <code>https://t.me/example_channel/15</code>\n✦ Kanal bağlantısını veya kullanıcı adını gönder\n✦ Özel kanal için zaten üye olan bir hesabı /login ile bağla\n✦ Boyut:\n✦ Bot her parçada yaklaşık 2 GB yükler\n✦ İndir ve böl veya İptal seçeneğini seç\n✦ 4 GB’a kadar tek dosya için Telegram Premium hesabını /login ile bağla ve /uploadch ile kanal seç",
+      "bdl": "⌯ <b>Birden fazla gönderi indir</b>\n\n✦ /bdl\n✦ Telegram’da gönderiyi aç ve basılı tut\n✦ Bağlantıyı kopyala seçeneğini seçip buraya gönder\n✦ Birden çok gönderi için önce ilk gönderinin bağlantısını gönder\n✦ Aynı kanaldaki son gönderinin bağlantısını gönder\n✦ İki gönderi ve aralarındaki tüm gönderiler dahil edilir\n✦ Ardından içerik türlerini seçersin\n✦ <code>/bdl https://t.me/example_channel/15 https://t.me/example_channel/30</code>\n✦ Görev seçmek için /cancel gönder veya /cancel sonrasına görev numarasını yaz",
+      "clone": "⌯ <b>Bir kanalın tamamını aktar</b>\n\n✦ Abonelik\n✦ /clone\n✦ Kanal bağlantısını veya kullanıcı adını gönder\n✦ Özel kanal için zaten üye olan bir hesabı /login ile bağla\n✦ /uploadch\n✦ Görev seçmek için /cancel gönder veya /cancel sonrasına görev numarasını yaz",
+      "monitor": "⌯ <b>Yeni kanal gönderilerini izle</b>\n\n✦ Abonelik\n✦ /monitor\n✦ Kanal bağlantısını veya kullanıcı adını gönder\n✦ Özel kanal için zaten üye olan bir hesabı /login ile bağla\n✦ Kanal:\n✦ Filtreler:\n✦ Herkese açık kanallar indirme hesabını kullanır\n✦ Özel kanallar saatte bir tek hesapla sırayla kontrol edilir ve hesap sonra kapatılır\n✦ Yeni gönderiler kayıtlı sıraya alınır ve sırayla gönderilir\n✦ İzlemeyi durdur",
+      "channel_upload": "⌯ <b>İçeriği başka bir kanala teslim et</b>\n\n✦ Abonelik\n✦ /uploadch\n✦ Bot aboneliği ve Telegram Premium ayrı aboneliklerdir\n✦ Bot her parçada yaklaşık 2 GB yükler\n✦ Bağlı Telegram Premium hesabı tek dosyada 4 GB’a kadar yükleyebilir\n✦ Hesabı /login ile bağla\n✦ Botu ve hesabı hedef kanala yönetici olarak ekle ve kanalı /uploadch ile seç\n✦ Kanal yoksa kayıtlı mesajları seçebilirsin\n✦ Belge parçalarını numara sırasına göre birleştirmen gerekir\n✦ /rmuploadch\n✦ En kolay yol ↣ botu kanalına veya grubuna yönetici olarak ekle ve sana burada onay sorsun",
+      "forcedownload": "⌯ <b>Zorunlu indirme modu</b>\n\n✦ Botun kısıtlanmamış gönderileri kopyalamak yerine her dosyayı indirip yeniden yüklemesini sağlamak için /forcedownload komutunu kullanın. Bu mod özel küçük resimler ve içeriklerin yeniden oluşturulması için kullanışlıdır",
+      "login": "⌯ <b>Bir Telegram hesabı bağla</b>\n\n✦ /login komutunu kullanın ve mevcut hesabınızı veya alternatif bir hesabı seçin. Bağlı hesabın, erişmek istediğiniz özel kanallara zaten üye olması gerekir. Yetkilendirme kodları yalnızca güvenli tuş takımı kullanılarak girilir\n✦ Telegram kodunu yalnızca rakam düğmeleriyle gir\n✦ Sil son rakamı kaldırır ve Onayla kodu gönderir\n✦ Kanal bağlantısını veya kullanıcı adını gönder\n✦ Özel kanal için zaten üye olan bir hesabı /login ile bağla\n✦ /logout",
+      "points": "⌯ <b>İndirme puanları</b>\n\n✦ Ücretsiz indirmelerde günlük, hediye ve referans puanları kullanılır. Daha fazla puan kazanmak için kişisel bağlantınızı paylaşın:\n\n✦ <code>{referral_link}</code>",
+      "premium": "⌯ <b>Abonelik özellikleri</b>\n\n✦ /premium\n✦ Abonelik\n✦ En fazla 5 açık görevin olabilir\n✦ Birinin bitmesini bekle veya /cancel ile iptal et\n✦ Abonelik ortak sırayı atlamanı sağlar\n✦ /clone\n✦ /monitor\n✦ /uploadch\n✦ /caption\n✦ /fdl\n✦ Bot aboneliği ve Telegram Premium ayrı aboneliklerdir",
+      "other_uses": "⌯ <b>Botu kullanmanın diğer yolları</b>\n\n✦ <b>Bir kanalı başka bir kanala aktarın:</b> /uploadch komutunu kullanarak bir hedef yapılandırın, ardından kaynak kanalda /clone komutunu çalıştırın. Seçilen içerik filtrelerinize göre aktarılacak\n\n✦ <b>Tam bir seri için kapakları değiştirin:</b> Yeni kapak resmini bota gönderip onaylayın, zorunlu indirme modunu etkinleştirin ve ardından ilk ve son bölüm bağlantılarıyla /bdl komutunu çalıştırın. Dosyalar indirilip desteklendiği yerlerde seçilen kapak kullanılarak yeniden yüklenecek"
+    }
+  },
+  "monitor": {
+    "login_required": "⌯ <b>Bir Telegram hesabı bağla</b>\n\n✦ Kanal bağlantısını veya kullanıcı adını gönder\n✦ Özel kanal için zaten üye olan bir hesabı /login ile bağla",
+    "usage": "⌯ <b>Yeni kanal gönderilerini izle</b>\n\n✦ {current_status}\n✦ /monitor\n✦ Kanal bağlantısını veya kullanıcı adını gönder\n✦ Özel kanal için zaten üye olan bir hesabı /login ile bağla\n✦ Kanal:\n✦ Filtreler:\n✦ Herkese açık kanallar indirme hesabını kullanır\n✦ Özel kanallar saatte bir tek hesapla sırayla kontrol edilir ve hesap sonra kapatılır\n✦ Yeni gönderiler kayıtlı sıraya alınır ve sırayla gönderilir\n✦ İzlemeyi durdur",
+    "invalid_channel_id": "⌯ <b>Geçersiz kanal kimliği</b>\n\n✦ Genellikle <code>-100</code> ile başlayan sayısal bir Telegram kanal kimliği kullanın",
+    "invalid_action": "⌯ <b>Geçersiz izleme eylemi</b>\n\n✦ İzlemeyi başlatmak için <code>on</code>, durdurmak için <code>off</code> kullanın",
+    "not_active": "⌯ <b>ℹ İzleme etkin değil</b>\n\n✦ Belirtilen kanal şu anda hesabınız tarafından izlenmiyor",
+    "already_active": "⌯ <b>ℹ Bir izleme zaten etkin</b>\n\n✦ Başka bir kanal seçmeden önce şu anda izlenen kanalı durdurun",
+    "access_denied": "⌯ <b>Kanal erişimi reddedildi</b>\n\n✦ Bağlı hesap belirtilen kanalı açamıyor veya kanal kimliği yanlış",
+    "start_failed": "⌯ <b>Görevi yeniden başlat</b>\n\n✦ Kanal bağlantısını veya kullanıcı adını gönder\n✦ Özel kanal için zaten üye olan bir hesabı /login ile bağla",
+    "started": "⌯ <b>Yeni kanal gönderilerini izle</b>\n\n✦ Kanal: {channel_title}\n✦ Filtreler: {filter_status}\n✦ Herkese açık kanallar indirme hesabını kullanır\n✦ Özel kanallar saatte bir tek hesapla sırayla kontrol edilir ve hesap sonra kapatılır\n✦ Yeni gönderiler kayıtlı sıraya alınır ve sırayla gönderilir",
+    "stopped": "⌯ <b>Kanal izleme durduruldu</b>\n\n✦ Seçilen kanaldaki yeni gönderiler artık otomatik olarak işlenmeyecek",
+    "session_stopped": "⌯ <b>İzleme durduruldu</b>\n\n✦ Bağlı Telegram oturumunun süresi doldu veya oturum iptal edildi, bu nedenle otomatik izleme devre dışı bırakıldı",
+    "status": {
+      "active": "<code>{channel_id}</code> kimlikli kanal için etkin",
+      "inactive": "Etkin değil"
+    },
+    "stop_button": "İzlemeyi durdur",
+    "source_lost": "⌯ <b>Kanal takibi durdu</b>\n\n✦ Kanal ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Bağlı hesabın onu bütün gün açamadı\n✦ Silinmiş veya gizli yapılmış ya da hesap ondan çıkmış olabilir\n✦ Tekrar takip etmek için hesabın üye olduğundan emin ol ve /monitor gönder"
+  },
+  "stats": {
+    "system": "⌯ <b>Sistem istatistikleri</b>\n\n✦ Çalışma süresi: {uptime}\n✦ Disk: {disk_usage} / {disk_total} (%{disk_percent})\n✦ Bellek: %{ram_percent}\n✦ CPU: %{cpu_percent}\n✦ Gönderilen ağ verisi: {sent}\n✦ Alınan ağ verisi: {received}",
+    "admin": "⌯ <b>Kullanıcı istatistikleri</b>\n\n✦ Toplam kullanıcı: {total_users}\n✦ Aboneler: {total_premium}\n✦ Yönetici tarafından eklenen: {premium_by_admin}\n✦ Stars ile ödeme yapan: {premium_by_stars}",
+    "public": "⌯ <b>Bot istatistikleri</b>\n\n✦ Çalışma süresi: {uptime}\n✦ Toplam indirme: {total_downloads}"
+  },
+  "payments": {
+    "monthly": {
+      "title": "Aylık abonelik",
+      "description": "Abonelik özelliklerini 30 gün boyunca etkinleştirin"
+    },
+    "yearly": {
+      "title": "Yıllık abonelik",
+      "description": "Abonelik özelliklerini 365 gün boyunca etkinleştirin"
+    },
+    "total_label": "Abonelik toplamı",
+    "invalid_plan_popup": "Seçilen abonelik planı geçersiz",
+    "invoice_failed_popup": "Ödeme faturası oluşturulamadı",
+    "unrecognized": "⌯ <b>Ödeme planı tanınmadı</b>\n\n✦ Ödeme alındı ancak abonelik planı belirlenemedi. Ödeme bilgileriyle birlikte destekle iletişime geçin",
+    "activation_failed": "⌯ <b>Abonelik etkinleştirilemedi</b>\n\n✦ Ödeme alındı ancak veritabanı aboneliği etkinleştiremedi. Manuel yardım için destekle iletişime geçin",
+    "completed": "⌯ <b>Abonelik etkinleştirildi</b>\n\n✦ {plan_name} planı artık etkin ve {expiry_date} tarihinde sona erecek"
+  },
+  "broadcast": {
+    "json": {
+      "file_required": "⌯ <b>Yayın JSON dosyası gerekli</b>\n\n✦ Çok dilli bir JSON dosyasını yanıtlayın ve <code>/bc .</code> komutunu kullanın",
+      "invalid_file": "⌯ <b>Geçersiz yayın dosyası</b>\n\n✦ Yanıtlanan belge bir JSON dosyası olmalıdır",
+      "validation_failed": "⌯ <b>Yayın dosyası doğrulanamadı</b>\n\n✦ Dosya kabul edilemedi: <code>{error}</code>",
+      "confirm": "⌯ <b>Çok dilli yayını onayla</b>\n\n✦ Dosya kullanılabilir {language_count} dil içeriyor. Kullanıcılar önce kayıtlı dillerindeki, sonra temel dillerindeki ve son seçenek olarak İngilizce mesajı alacak\n\n✦ Filtreler: {filters}",
+      "how_to": "⌯ <b>Çok dilli yayın</b>\n\n✦ Mevcut tüm dilleri içeren bir JSON şablonu almak için aşağıdaki düğmeye dokunun. İstediğiniz her dil için <code>text</code> değerini doldurun, ardından dosyayı yükleyin ve <code>/bc .</code> ile yanıtlayın — boş bırakılan diller İngilizceye geri döner",
+      "template_sent": "⌯ <b>Yayın şablonu</b>\n\n✦ Dosya {language_count} dil içeriyor ve mevcut dil dosyalarından oluşturuldu"
+    },
+    "usage": "⌯ <b>Bir mesajı toplu olarak gönder</b>\n\n✦ Göndermek istediğiniz mesajı yanıtlayın ve ardından /bc komutunu kullanın. İsteğe bağlı filtreler arasında <code>-only KULLANICI_KİMLİĞİ</code> ve <code>-rm KULLANICI_KİMLİĞİ --prem</code> bulunur",
+    "invalid_message": "⌯ <b>Yayın mesajı kullanılamıyor</b>\n\n✦ Yanıtlanan mesaj geçerli bir Telegram kimliğine sahip değil",
+    "confirm": "⌯ <b>Yayını onayla</b>\n\n✦ Mesaj kimliği: <code>{message_id}</code>\n✦ Filtreler: {filters}\n\n✦ Normal şekilde göndermeyi veya gönderip sabitlemeyi seçin",
+    "starting": "⌯ <b>Yayın başlatıldı</b>\n\n✦ Mesaj seçilen kullanıcılara gönderiliyor",
+    "progress": "⌯ <b>Yayın devam ediyor</b>\n\n✦ İşlenen: {processed}/{total}\n✦ Başarılı: {successful}\n✦ Başarısız: {failed}",
+    "completed": "⌯ <b>Yayın tamamlandı</b>\n\n✦ Hedeflenen kullanıcılar: {total}\n✦ Başarılı: {successful}\n✦ Başarısız: {failed}",
+    "cancelled": "⌯ <b>Yayın iptal edildi</b>\n\n✦ İşlem {processed} kullanıcı işlendikten sonra durduruldu",
+    "buttons": {
+      "normal": "Normal şekilde gönder",
+      "pin": "Gönder ve sabitle",
+      "get_template": "JSON şablonu al"
+    },
+    "filters": {
+      "none": "Filtre yok",
+      "summary": "Yalnızca kullanıcılar: {only_count}, hariç tutulan kullanıcılar: {excluded_count}, aboneleri hariç tut: {exclude_premium}"
+    }
+  },
+  "admin": {
+    "users": {
+      "new_language": "⌯ <b>Kullanılamayan dil algılandı</b>\n\n✦ Kullanıcı: {first_name}\n✦ Kullanıcı kimliği: <code>{user_id}</code>\n✦ Algılanan kod: <code>{language_code}</code>",
+      "new_user": "⌯ <b>Yeni kullanıcı katıldı</b>\n\n✦ Ad: {first_name} {last_name}\n✦ Kullanıcı kimliği: <code>{user_id}</code>\n✦ Kullanıcı adı: {username}\n✦ Toplam kullanıcı: {total_users}",
+      "exported": "⌯ <b>Kullanıcı dışa aktarma tamamlandı</b>\n\n✦ Ekli dosya {count} kullanıcı kaydı içeriyor"
+    },
+    "payments": {
+      "new_subscription": "⌯ <b>Yeni ücretli abonelik</b>\n\n✦ Kullanıcı: {user_name}\n✦ Kullanıcı kimliği: <code>{user_id}</code>\n✦ Plan: {plan_name}\n✦ Tutar: {amount} Stars"
+    },
+    "pool": {
+      "insufficient": "⌯ <b>İndirme hesabı havuzu eksik</b>\n\n✦ Şu anda yüklenen: {current}\n✦ Gerekli ek hesap: {missing}"
+    },
+    "gifts": {
+      "create_usage": "⌯ <b>Bir hediye oluştur</b>\n\n✦ <code>/create -gift --value PUAN</code> komutunu kullanın. İsteğe bağlı ayarlar arasında <code>--linkexpiry GGSSDD</code>, <code>--giftexpiry GGSSDD</code>, <code>--onlyuser [KİMLİKLER]</code>, <code>--exceptionuser [KİMLİKLER]</code> ve <code>--limit SAYI</code> bulunur",
+      "value_required": "⌯ <b>Hediye değeri gerekli</b>\n\n✦ <code>--value</code> seçeneğinden sonra pozitif bir sayı girin",
+      "user_filter_conflict": "⌯ <b>Çakışan kullanıcı filtreleri</b>\n\n✦ Bir hediye, izin verilen kullanıcılar ve hariç tutulan kullanıcılar filtrelerini aynı anda kullanamaz",
+      "invalid_duration": "⌯ <b>Geçersiz süre</b>\n\n✦ Hediye süreleri için altı haneli <code>GGSSDD</code> biçimini kullanın",
+      "invalid_values": "⌯ <b>Geçersiz hediye ayarları</b>\n\n✦ Kullanıcı kimliklerini, talep sınırını ve sağlanan tüm değerleri kontrol edin",
+      "created": "⌯ <b>Hediye oluşturuldu</b>\n\n✦ Hediye bağlantısı hazır:\n✦ <code>{gift_link}</code>",
+      "empty": "⌯ <b>ℹ Etkin hediye yok</b>\n\n✦ Şu anda etkin hediye bağlantısı bulunmuyor",
+      "list_title": "⌯ <b>Etkin hediyeler</b>\n\n✦ Aşağıdaki hediye bağlantıları şu anda kullanılabilir",
+      "list_item": "<b>Hediye:</b> <code>{gift_pid}</code>\nDeğer: {value}\nTalepler: {usage_count}/{usage_limit}\nBağlantı bitişi: {expiry}\nOluşturulma: {created_at}\nBağlantı: <code>{gift_link}</code>",
+      "remove_usage": "⌯ <b>Bir hediyeyi kaldır</b>\n\n✦ <code>/rm -gift --pid HEDİYE_KİMLİĞİ</code> komutunu kullanın",
+      "not_found": "⌯ <b>Hediye bulunamadı</b>\n\n✦ Sağlanan kimliğe sahip etkin bir hediye bulunmuyor",
+      "remove_confirm": "⌯ <b>Hediyeyi devre dışı bırak</b>\n\n✦ Hediye: <code>{gift_pid}</code>\n✦ Değer: {value}\n✦ Talepler: {usage_count}\n\n✦ Gelecekteki tüm talepleri engellemek için onaylayın",
+      "deactivated": "⌯ <b>Hediye devre dışı bırakıldı</b>\n\n✦ <code>{gift_pid}</code> hediyesi artık alınamaz"
+    },
+    "add": {
+      "usage": "⌯ <b>Yönetim ayarları ekle</b>\n\n✦ <code>-premium</code>, <code>-lang</code> veya <code>-frcch</code> seçenekleriyle /add komutunu kullanın"
+    },
+    "remove": {
+      "usage": "⌯ <b>Yönetim ayarlarını kaldır</b>\n\n✦ <code>-premium</code>, <code>-gift</code> veya <code>-frcch</code> seçenekleriyle /rm komutunu kullanın"
+    },
+    "premium": {
+      "add_usage": "⌯ <b>Abonelik</b>\n\n✦ /admin\n✦ Kullanıcıları seç veya sayısal kimliklerini gönder\n✦ Gün\n✦ <code>/add -premium --user [123456789] --days 30</code>",
+      "added": "⌯ <b>Abonelik güncellemesi tamamlandı</b>\n\n✦ Güncellenen kullanıcılar: {users}\n✦ Bulunamayan kullanıcılar: {missing}",
+      "remove_usage": "⌯ <b>Bir aboneliği kaldır</b>\n\n✦ <code>/rm -premium --user [KULLANICI_KİMLİKLERİ]</code> komutunu kullanın",
+      "removed": "⌯ <b>Abonelik kaldırma tamamlandı</b>\n\n✦ Güncellenen kullanıcılar: {users}\n✦ Bulunamayan veya etkin olmayan kullanıcılar: {missing}"
+    },
+    "languages": {
+      "reply_to_json": "⌯ <b>Dil dosyası gerekli</b>\n\n✦ <code>/add -lang</code> komutunu kullanırken geçerli bir JSON dil dosyasını yanıtlayın",
+      "json_required": "⌯ <b>JSON dosyası gerekli</b>\n\n✦ Yanıtlanan belge <code>.json</code> uzantısını kullanmalıdır",
+      "already_exists": "⌯ <b>ℹ Dil zaten mevcut</b>\n\n✦ <code>{language_code}</code> dili zaten yüklü. Dosyayı değiştirmek için <code>--update</code> seçeneğini ekleyin",
+      "invalid_json": "⌯ <b>Geçersiz dil dosyası</b>\n\n✦ JSON dosyası yüklenemedi: <code>{error}</code>",
+      "added": "⌯ <b>Dil eklendi</b>\n\n✦ <code>{language_code}</code> dili artık kullanılabilir",
+      "updated": "⌯ <b>Dil güncellendi</b>\n\n✦ <code>{language_code}</code> dili başarıyla yeniden yüklendi"
+    },
+    "force_subscription": {
+      "empty": "⌯ <b>ℹ Gerekli kanal yok</b>\n\n✦ Şu anda yapılandırılmış zorunlu abonelik kanalı bulunmuyor",
+      "list_title": "⌯ <b>Gerekli kanallar</b>\n\n✦ Aşağıdaki kanallara katılım şu anda zorunludur",
+      "list_item": "Bağlantı: {link}\nKanal kimliği: <code>{channel_id}</code>\nKatılan: {joined}\nSınır: {limit}",
+      "add_usage": "⌯ <b>Gerekli bir kanal ekle</b>\n\n✦ <code>/add -frcch --link KANAL_BAĞLANTISI --id KANAL_KİMLİĞİ --limit SAYI</code> komutunu kullanın",
+      "permission_required": "⌯ <b>Yönetici izni gerekli</b>\n\n✦ Bot, kullanıcıları davet etme iznine sahip bir yönetici olmalıdır",
+      "added": "⌯ <b>Gerekli kanal eklendi</b>\n\n✦ Kanal: {channel_title}\n✦ Katılım sınırı: {limit}",
+      "add_failed": "⌯ <b>Kanal eklenemedi</b>\n\n✦ Kanal kimliğini, bağlantıyı ve botun yönetici izinlerini doğrulayın",
+      "remove_usage": "⌯ <b>Gerekli bir kanalı kaldır</b>\n\n✦ <code>/rm -frcch KANAL_KİMLİĞİ</code> komutunu kullanın veya kaydedilmiş bağlantıyı belirtin",
+      "removed": "⌯ <b>Gerekli kanal kaldırıldı</b>\n\n✦ Bu kanala katılım artık zorunlu değil",
+      "not_found": "⌯ <b>Gerekli kanal bulunamadı</b>\n\n✦ Sağlanan kimlik veya bağlantıyla eşleşen kayıtlı bir kanal yok"
+    },
+    "logs": {
+      "not_found": "⌯ <b>Günlük dizini kullanılamıyor</b>\n\n✦ Bot günlük dizini mevcut değil",
+      "empty": "⌯ <b>Kullanılabilir günlük yok</b>\n\n✦ Boş olmayan bot günlük dosyası bulunamadı",
+      "file_caption": "⌯ <b>Bot günlüğü</b>\n\n✦ Dosya: <code>{filename}</code>",
+      "upload_failed": "⌯ <b>Günlük yüklenemedi</b>\n\n✦ Dosya: <code>{filename}</code>\n✦ Hata: <code>{error}</code>"
+    }
+  },
+  "queue": {
+    "accepted": "⌯ <b>Görevin kaydedildi</b>\n\n✦ Görev ↣ {task_id}\n✦ Görev seçmek için /cancel gönder veya /cancel sonrasına görev numarasını yaz\n✦ <code>/cancel {task_id}</code>",
+    "waiting_free": "⌯ <b>Bekliyor</b>\n\n✦ Önündeki kişi sayısı: {ahead}\n✦ Yer açılınca indirme başlar\n✦ Abonelik ortak sırayı atlamanı sağlar",
+    "waiting_premium": "⌯ <b>Bekliyor</b>\n\n✦ Önceki görevlerin: {ahead}\n✦ Görevlerin birbiri ardına çalışır",
+    "limit_free": "⌯ <b>Görev</b>\n\n✦ Zaten açık bir görevin var\n✦ Bitmesini bekle veya /cancel ile iptal et\n✦ En fazla 5 açık görevin olabilir\n✦ Birinin bitmesini bekle veya /cancel ile iptal et",
+    "limit_premium": "⌯ <b>Görev</b>\n\n✦ En fazla {limit} açık görevin olabilir\n✦ Birinin bitmesini bekle veya /cancel ile iptal et",
+    "lost_after_restart": "⌯ <b>Görevi yeniden başlat</b>\n\n✦ Görev ↣ {task_id}\n✦ Telegram’da gönderiyi aç ve basılı tut\n✦ Bağlantıyı kopyala seçeneğini seçip buraya gönder\n✦ Birden çok gönderi için önce ilk gönderinin bağlantısını gönder",
+    "cancel_usage": "Görev seçmek için /cancel gönder veya /cancel sonrasına görev numarasını yaz\n<code>/cancel 123</code>",
+    "cancelled_one": "{task_id} numaralı görev iptal edildi",
+    "not_found": "{task_id} numaralı görev bitmiş veya sana ait değil",
+    "choose_to_cancel": "⌯ <b>İptal Görev</b>\n\n✦ Görev seçmek için /cancel gönder veya /cancel sonrasına görev numarasını yaz",
+    "cancelled_popup": "İptal",
+    "not_found_popup": "Görevi yeniden başlat",
+    "buttons": {
+      "cancel": "İptal Görev",
+      "upgrade": "Abonelik",
+      "cancel_task": "Görev {task_id} {kind} {status}",
+      "cancel_all": "İptal Görev /cancel"
+    },
+    "kinds": {
+      "dl": "Bir gönderi indir",
+      "bdl": "Birden fazla gönderi indir",
+      "clone": "Bir kanalın tamamını aktar",
+      "task": "Görev",
+      "monitor": "Yeni kanal gönderilerini izle"
+    },
+    "status": {
+      "queued": "Bekliyor",
+      "running": "Çalışıyor"
+    },
+    "task_number": "Görev {task_id}"
+  },
+  "spam": {
+    "per_second": "Saniyede birden fazla mesaj gönderme",
+    "per_minute": "Dakikada 20’den fazla mesaj gönderme\nBu bot indirme bağlantıları alır\nBu dakikanın bitmesini bekle",
+    "buttons": "Bir dakikada 20’den fazla düğmeye bastın\nDevam etmeden önce bekle\nTekrarlanan ihlaller bekleme süresini iki katına çıkarır"
+  },
+  "flow": {
+    "first_link": "⌯ <b>Bir gönderi indir</b>\n\n✦ Telegram’da gönderiyi aç ve basılı tut\n✦ Bağlantıyı kopyala seçeneğini seçip buraya gönder\n✦ Birden çok gönderi için önce ilk gönderinin bağlantısını gönder\n✦ <code>https://t.me/example_channel/15</code>",
+    "last_link": "⌯ <b>Birden fazla gönderi indir</b>\n\n✦ Aynı kanaldaki son gönderinin bağlantısını gönder\n✦ İki gönderi ve aralarındaki tüm gönderiler dahil edilir\n✦ Ardından içerik türlerini seçersin",
+    "channel": "⌯ <b>Kanal seç</b>\n\n✦ Kanal bağlantısını veya kullanıcı adını gönder\n✦ Özel kanal için zaten üye olan bir hesabı /login ile bağla\n✦ <code>https://t.me/example_channel</code>",
+    "pick_channel": "Kanal seç",
+    "invalid_channel": "Kanal bağlantısını veya kullanıcı adını gönder\nÖzel kanal için zaten üye olan bir hesabı /login ile bağla",
+    "upload_channel": "⌯ <b>Yükleme kanalı seç</b>\n\n✦ En kolay yol ↣ botu kanalına veya grubuna paylaşım izni olan yönetici olarak ekle\n✦ Bot buraya bir onay gönderir ve Onayla'ya dokunursun\n✦ Ya da aşağıdaki kanal seç butonuna dokun\n✦ Ya da kanal bağlantısını, kullanıcı adını veya <code>-100</code> ile başlayan ID'yi gönder\n✦ Bu özellik bot aboneliği ister"
+  },
+  "panel": {
+    "title": "⌯ <b>Yönetim</b>\n\n✦ Abonelik / Hediye / Zorunlu kanallar / Toplu mesaj",
+    "premium": "Abonelik",
+    "gift": "Hediye",
+    "fsub": "Zorunlu kanallar",
+    "broadcast": "Toplu mesaj",
+    "users": "Kullanıcıları dışa aktar",
+    "language": "Dil dosyaları",
+    "gifts": "Etkin hediyeler",
+    "choose_user": "Kullanıcıları seç veya sayısal kimliklerini gönder",
+    "selected_users": "Tüm kullanıcılar ↣ {users}",
+    "selected_channel": "Kanal seç ↣ {channel_id}",
+    "custom": "Başka sayı",
+    "remove_premium": "İptal Abonelik",
+    "days": "Gün ↣ {days}",
+    "value": "Hediye puanları",
+    "link_days": "Bağlantı geçerliliği gün olarak / Hediye süresinde sıfır süresiz anlamına gelir",
+    "point_days": "Puan geçerliliği gün olarak / Hediye süresinde sıfır süresiz anlamına gelir",
+    "limit": "En fazla kullanım",
+    "only_users": "Belirli kullanıcılara izin ver",
+    "exclude_users": "Kullanıcıları hariç tut",
+    "send_broadcast": "Toplu mesajı buraya gönder\nKopyayı kontrol et ve alıcıları seç\nSonra Onayla düğmesine bas",
+    "send_language": "Dil koduyla adlandırılmış JSON dosyası gönder örneğin ar.json\nMevcut dosya yalnızca yeni dosya geçerliyse değiştirilir",
+    "enter_value": "Bir sayı veya virgülle ayrılmış kullanıcı kimlikleri gönder\nYanıtın silinir ve menü güncellenir",
+    "invalid_value": "Geçerli bir sayı gönder\nHediye süresinde sıfır süresiz anlamına gelir",
+    "audience_all": "Tüm kullanıcılar",
+    "audience_premium": "Aboneler",
+    "audience_free": "Ücretsiz kullanıcılar",
+    "admins": "Yöneticiler",
+    "send_admin": "Atanacak kullanıcının sayısal kimliğini gönderin veya mesajlarından birini iletin\nKaldırmak için aşağıdaki yöneticiye basın",
+    "admin_added": "Yönetici eklendi: {user_id}",
+    "admin_removed": "Yönetici kaldırıldı: {user_id}",
+    "admin_exists": "Bu kullanıcı zaten yönetici",
+    "no_admins": "Henüz yönetici yok",
+    "owner_only": "Yöneticileri yalnızca sahipler yönetir"
+  },
+  "large": {
+    "saved": "Kayıtlı mesajlarıma gönder",
+    "split": "İndir ve böl",
+    "help_button": "Açıkla",
+    "split_notice": "⌯ <b>İndir ve böl</b>\n\n✦ Boyut: {size}\n✦ Bot her parçada yaklaşık 2 GB yükler\n✦ İndir ve böl veya İptal seçeneğini seç\n✦ 4 GB’a kadar tek dosya için Telegram Premium hesabını /login ile bağla ve /uploadch ile kanal seç",
+    "premium_notice": "⌯ <b>Kayıtlı mesajlarıma gönder</b>\n\n✦ Boyut: {size}\n✦ Bağlı Telegram Premium hesabın dosyayı bütün olarak kayıtlı mesajlarına yükleyebilir\n✦ /uploadch ile hedef kanal seçebilirsin\n✦ Dosyayı bölmek de mümkündür",
+    "help": "⌯ <b>Açıkla</b>\n\n✦ Bot aboneliği ve Telegram Premium ayrı aboneliklerdir\n✦ Bot her parçada yaklaşık 2 GB yükler\n✦ Bağlı Telegram Premium hesabı tek dosyada 4 GB’a kadar yükleyebilir\n✦ Hesabı /login ile bağla\n✦ Botu ve hesabı hedef kanala yönetici olarak ekle ve kanalı /uploadch ile seç\n✦ Kanal yoksa kayıtlı mesajları seçebilirsin\n✦ Belge parçalarını numara sırasına göre birleştirmen gerekir"
+  },
+  "referral_check": {
+    "question": "⌯ <b>Hızlı doğrulama</b>\n\n✦ Gerçek bir kişi olduğunuzu doğrulamak ve davetinizin sayılması için bunu çözün\n\n✦ {a} + {b} = ?",
+    "wrong": "⌯ <b>Yanlış cevap</b>\n\n✦ Tekrar deneyin. Kalan deneme: {left}",
+    "failed": "⌯ <b>Davet sayılmadı</b>\n\n✦ Doğrulama çözülmediği için davetiniz sayılmadı. Botu normal şekilde kullanmaya devam edebilirsiniz"
+  },
+  "units": {
+    "b": "{n} B",
+    "kb": "{n} KB",
+    "mb": "{n} MB",
+    "gb": "{n} GB",
+    "tb": "{n} TB",
+    "pb": "{n} PB",
+    "day": "{n}d",
+    "hour": "{n}h",
+    "minute": "{n}m",
+    "second": "{n}s"
+  }
+}

@@ -1,0 +1,675 @@
+{
+  "lang_name": "🇸🇪 Svenska",
+  "common": {
+    "not_available": "Inte tillgängligt",
+    "never": "Aldrig",
+    "unlimited": "Obegränsat",
+    "none": "Inga",
+    "yes": "Ja",
+    "no": "Nej",
+    "processing": "⌯ <b>Bearbetar</b>\n\n✦ Vänta medan den begärda åtgärden förbereds",
+    "state_expired": "⌯ <b>Sessionen har löpt ut</b>\n\n✦ Den sparade inmatningssessionen löpte ut efter tio minuter. Starta åtgärden igen",
+    "state_expired_popup": "Starta uppgiften igen",
+    "action_cancelled": "⌯ <b>Åtgärden avbröts</b>\n\n✦ Den valda åtgärden har avbrutits och dess tillfälliga tillstånd har tagits bort",
+    "unexpected_error": "⌯ <b>Ett oväntat fel inträffade</b>\n\n✦ Åtgärden kunde inte slutföras på grund av följande fel: <code>{error}</code>",
+    "something_went_wrong": "Något gick fel när denna åtgärd utfördes, försök igen"
+  },
+  "buttons": {
+    "start": "Starta",
+    "confirm": "Bekräfta",
+    "back": "Tillbaka",
+    "subscribe": "Prenumerera",
+    "earn_points": "Tjäna poäng",
+    "share_and_earn": "Dela och tjäna",
+    "link_account": "Länka ett konto",
+    "open_source": "Öppna kanalen",
+    "refresh_subscription": "Kontrollera igen",
+    "channel": "Uppdateringskanal",
+    "help": "Hjälp",
+    "profile": "Profil",
+    "contact_admin": "Kontakta supporten för andra betalningsmetoder",
+    "cancel": "Avbryt",
+    "delete": "Radera",
+    "open": "Öppna",
+    "reject": "Avböj"
+  },
+  "commands": {
+    "bcjson": {
+      "description": "Hämta mallen för flerspråkiga utskick"
+    },
+    "start": {
+      "description": "Starta boten"
+    },
+    "help": {
+      "description": "Öppna hjälpcentret"
+    },
+    "profile": {
+      "description": "Visa ditt konto och dina poäng"
+    },
+    "premium": {
+      "description": "Visa prenumerationsfunktioner"
+    },
+    "language": {
+      "description": "Ändra botens språk"
+    },
+    "login": {
+      "description": "Länka ett Telegram-konto"
+    },
+    "logout": {
+      "description": "Ta bort det länkade kontot"
+    },
+    "dl": {
+      "description": "Hämta ett Telegram-inlägg"
+    },
+    "bdl": {
+      "description": "Hämta ett intervall av inlägg"
+    },
+    "clone": {
+      "description": "Överför en hel kanal"
+    },
+    "forcedownload": {
+      "description": "Hantera läget för tvingad hämtning"
+    },
+    "thumb": {
+      "description": "Hantera den anpassade miniatyrbilden"
+    },
+    "caption": {
+      "description": "Hantera bildtextbearbetning"
+    },
+    "cancel": {
+      "description": "Avbryt den aktuella åtgärden"
+    },
+    "stats": {
+      "description": "Visa systemstatistik"
+    },
+    "monitor": {
+      "description": "Övervaka en kanal automatiskt"
+    },
+    "uploadch": {
+      "description": "Ange en målkanal för uppladdningar"
+    },
+    "rmuploadch": {
+      "description": "Ta bort uppladdningsmålet"
+    },
+    "bc": {
+      "description": "Skicka ett massutskick"
+    },
+    "add": {
+      "description": "Lägg till administrativa inställningar"
+    },
+    "rm": {
+      "description": "Ta bort administrativa inställningar"
+    },
+    "create": {
+      "description": "Skapa en presentlänk"
+    },
+    "logs": {
+      "description": "Hämta botens loggar"
+    },
+    "admin": {
+      "description": "Administration"
+    }
+  },
+  "start": {
+    "welcome": "⌯ <b>Välkommen till mediehämtaren</b>\n\n✦ Skicka en länk till ett Telegram-inlägg för att hämta dess medier, inklusive innehåll från offentliga eller privata kanaler och kanaler som har inaktiverat vidarebefordran. Du kan även hämta flera inlägg, överföra en hel kanal, använda en anpassad miniatyrbild för filer eller skicka hämtat innehåll direkt till en annan kanal\n\n✦ Länkat konto: {account_status}"
+  },
+  "accounts": {
+    "status": {
+      "connected": "Anslutet",
+      "not_connected": "Inte anslutet"
+    },
+    "session_expired": "⌯ <b>Den länkade sessionen har löpt ut</b>\n\n✦ Det länkade Telegram-kontot är inte längre auktoriserat. Länka kontot igen innan du försöker komma åt privata källor",
+    "access": {
+      "login_required": "⌯ <b>Ett länkat konto krävs</b>\n\n✦ Den delade länken tillhör en privat eller begränsad källa som hämtningskontona inte kan komma åt. Länka ett Telegram-konto som redan är medlem i källkanalen och skicka sedan länken igen",
+      "not_member": "⌯ <b>Ditt länkade konto är inte medlem</b>\n\n✦ Telegram-kontot som är länkat till boten kan inte komma åt kanalen i den delade länken. Gå först med i kanalen med det länkade kontot och skicka sedan länken igen"
+    },
+    "login": {
+      "choose_account": "⌯ <b>Välj kontot som ska länkas</b>\n\n✦ Välj om du vill länka ditt nuvarande Telegram-konto eller ett annat konto. Det valda kontot måste redan vara medlem i alla privata kanaler som du vill hämta innehåll från",
+      "already_running": "⌯ <b>En inloggning pågår redan</b>\n\n✦ Slutför eller avbryt den aktuella inloggningsprocessen innan du startar en ny",
+      "already_connected": "⌯ <b>Ett konto är redan länkat</b>\n\n✦ Telefonnumret <code>{phone_number}</code> är för närvarande anslutet. Ta bort det med /logout innan du länkar ett annat konto",
+      "share_contact": "⌯ <b>Dela ditt telefonnummer</b>\n\n✦ Använd knappen nedan för att på ett säkert sätt dela telefonnumret till ditt nuvarande Telegram-konto",
+      "enter_phone": "⌯ <b>Ange det alternativa telefonnumret</b>\n\n✦ Skicka telefonnumret manuellt i internationellt format. Det måste börja med <code>+</code> följt av landskoden, till exempel <code>+12025550123</code>",
+      "invalid_phone": "⌯ <b>Ogiltigt telefonnummer</b>\n\n✦ Numret måste börja med <code>+</code> och innehålla landskoden utan bokstäver eller symboler som inte stöds. Starta inloggningen igen eller skicka ett korrekt formaterat nummer",
+      "contact_mismatch": "⌯ <b>Kontakten stämmer inte överens</b>\n\n✦ Den delade kontakten tillhör inte Telegram-kontot som använder boten. Använd den angivna knappen för att dela ditt eget nummer eller välj alternativet för ett annat konto",
+      "contact_received": "⌯ <b>Telefonnumret har tagits emot</b>\n\n✦ Boten förbereder auktoriseringsbegäran. Vänta tills Telegram skickar inloggningskoden",
+      "code_prompt": "⌯ <b>Telegram</b>\n\n✦ Ange Telegram koden enbart med sifferknapparna\n✦ Radera tar bort sista siffran och Bekräfta skickar koden",
+      "code_prompt_with_value": "⌯ <b>Telegram</b>\n\n✦ <code>{code}</code>\n✦ Ange Telegram koden enbart med sifferknapparna\n✦ Radera tar bort sista siffran och Bekräfta skickar koden",
+      "processing": "⌯ <b>Verifierar kontot</b>\n\n✦ Koden kontrolleras och den länkade sessionen skapas",
+      "password_prompt": "⌯ <b>Tvåstegsverifiering krävs</b>\n\n✦ Skicka lösenordet för tvåstegsverifiering för detta Telegram-konto som ett textmeddelande\n\n✦ Lösenordsledtråd: <code>{hint}</code>",
+      "completed": "⌯ <b>Kontot har länkats</b>\n\n✦ Telegram-kontot är nu anslutet. Du kan komma åt privata kanaler så länge kontot redan är medlem i dem",
+      "cancelled": "⌯ <b>Kontolänkningen avbröts</b>\n\n✦ Den tillfälliga inloggningssessionen stängdes och ingen kontoinformation sparades",
+      "restart_hint": "⌯ <b>Börja om när du är redo</b>\n\n✦ Använd /login när du vill starta en ny kontolänkningsprocess",
+      "failed": "⌯ <b>Kontolänkningen misslyckades</b>\n\n✦ Auktoriseringsprocessen kunde inte slutföras. Börja om och kontrollera att telefonnumret, inloggningskoden och lösenordet är korrekta",
+      "flood_wait": "⌯ <b>För många inloggningsförsök</b>\n\n✦ Telegram har tillfälligt begränsat nya auktoriseringsbegäranden. Försök igen efter {seconds} sekunder",
+      "invalid_code": "⌯ <b>Ogiltig eller utgången kod</b>\n\n✦ Koden avvisades eller har löpt ut. Ange den senaste koden som Telegram skickade, eller avbryt och starta inloggningen igen",
+      "invalid_password": "⌯ <b>Felaktigt verifieringslösenord</b>\n\n✦ Lösenordet för tvåstegsverifiering är felaktigt. Skicka rätt lösenord eller avbryt inloggningsprocessen",
+      "code_empty_popup": "Ange Telegram-koden innan du bekräftar",
+      "invalid_code_popup": "Koden är ogiltig eller har löpt ut",
+      "buttons": {
+        "my_account": "Mitt nuvarande konto",
+        "other_account": "Ett annat konto",
+        "share_phone": "Dela mitt telefonnummer"
+      },
+      "too_many_attempts": "⌯ <b>Uppgift</b>\n\n✦ Telegram har tillfälligt begränsat inloggningsförsöken\n✦ Vänta innan du använder /login igen",
+      "phone_banned": "⌯ <b>Telegram</b>\n\n✦ Det här numret är spärrat på Telegram\n✦ Använd ett annat konto eller kontakta Telegrams support",
+      "hint_awaiting_contact": "⌯ <b>Dela ditt telefonnummer</b>\n\n✦ Använd knappen nedan för att på ett säkert sätt dela telefonnumret till ditt nuvarande Telegram-konto",
+      "hint_awaiting_account_type": "⌯ <b>Välj kontot som ska länkas</b>\n\n✦ Välj om du vill länka ditt nuvarande Telegram-konto eller ett annat konto. Det valda kontot måste redan vara medlem i alla privata kanaler som du vill hämta innehåll från",
+      "hint_sending_code": "Väntar\nAnge Telegram koden enbart med sifferknapparna\nRadera tar bort sista siffran och Bekräfta skickar koden",
+      "hint_awaiting_code": "Ange Telegram koden enbart med sifferknapparna\nRadera tar bort sista siffran och Bekräfta skickar koden"
+    },
+    "logout": {
+      "not_connected": "⌯ <b>ℹ Inget konto är länkat</b>\n\n✦ Det finns för närvarande inget Telegram-konto anslutet till din botprofil",
+      "confirm": "⌯ <b>Ta bort det länkade kontot</b>\n\n✦ Telefonnumret <code>{phone_number}</code> kommer att kopplas bort och den sparade sessionen kommer att raderas. Bekräfta endast om du vill fortsätta",
+      "completed": "⌯ <b>Det länkade kontot har tagits bort</b>\n\n✦ Den sparade Telegram-sessionen raderades. Du kan länka ett annat konto när som helst"
+    }
+  },
+  "subscription": {
+    "required": "⌯ <b>Prenumeration krävs</b>\n\n✦ Gå med i kanalerna nedan innan du använder boten och tryck sedan på kontrollknappen\n\n✦ {channels}",
+    "completed": "⌯ <b>Prenumerationen har verifierats</b>\n\n✦ Ditt kanalmedlemskap verifierades. Du kan nu fortsätta använda boten",
+    "still_missing_popup": "Du måste fortfarande gå med i alla obligatoriska kanaler"
+  },
+  "downloads": {
+    "invalid_link": "⌯ <b>Ogiltig Telegram-länk</b>\n\n✦ Skicka en länk som pekar direkt på ett Telegram-inlägg, till exempel <code>https://t.me/channel/123</code>",
+    "post_not_found": "⌯ <b>Inlägget hittades inte</b>\n\n✦ Det begärda inlägget finns inte, har raderats eller är inte åtkomligt för det valda hämtningskontot",
+    "nothing_to_download": "⌯ <b>Inget att hämta</b>\n\n✦ Det här inlägget har ingen media eller text att hämta, till exempel ett meddelande om att kanalens namn eller bild har ändrats",
+    "comment_unavailable": "⌯ <b>Kommentaren kunde inte hittas</b>\n\n✦ Kommentarslänken pekar inte på ett åtkomligt diskussionsmeddelande, eller så avvisade Telegram den angivna meddelandeidentifieraren",
+    "client_unavailable": "⌯ <b>Hämtningskontot är inte tillgängligt</b>\n\n✦ Inget Telegram-konto är för närvarande tillgängligt för att hämta detta innehåll. Försök igen senare eller länka ditt eget konto",
+    "preparing": "⌯ <b>Förbereder hämtningen</b>\n\n✦ Medieinformationen samlas in innan överföringen börjar",
+    "splitting": "⌯ <b>Delar upp filen</b>\n\n✦ Filen är större än gränsen för uppladdningsdelar och delas upp i delar som stöds",
+    "file_too_large": "⌯ <b>Filen överskrider den storlek som stöds</b>\n\n✦ Den här filen kan inte bearbetas för {action} eftersom dess storlek överstiger {maximum_size}",
+    "file_too_small": "⌯ <b>Filen är tom eller skadad</b>\n\n✦ Det hämtade mediet är för litet för att anses vara giltigt, eller så returnerade Telegram en ofullständig fil",
+    "file_missing": "⌯ <b>Den hämtade filen saknas</b>\n\n✦ Den tillfälliga mediefilen kunde inte hittas eller var tom före uppladdningen",
+    "download_failed": "⌯ <b>Hämtningen misslyckades</b>\n\n✦ Mediet kunde inte hämtas efter flera försök. Kontrollera källkontots åtkomst och försök igen",
+    "upload_failed": "⌯ <b>Uppladdningen misslyckades</b>\n\n✦ Mediet hämtades men kunde inte levereras. Telegram returnerade: <code>{error}</code>",
+    "flood_wait": "⌯ <b>Telegrams hastighetsbegränsning</b>\n\n✦ Telegram begärde en väntetid på {seconds} sekunder innan uppladdningen kan fortsätta",
+    "actions": {
+      "download": "hämtning",
+      "upload": "uppladdning"
+    },
+    "progress": {
+      "downloading": "Hämtar",
+      "uploading": "Laddar upp",
+      "body": "⌯ <b>{action}</b>\n\n✦ <code>{progress_bar}</code>\n\n✦ Överfört: {current_size} / {total_size}\n✦ Förlopp: {percentage}%\n✦ Hastighet: {speed}/s\n✦ Återstående tid: {eta}"
+    },
+    "parts": {
+      "item": "Del {current} av {total}"
+    },
+    "album": {
+      "preparing": "⌯ <b>Mediealbum upptäckt</b>\n\n✦ Albumet innehåller {count} valda objekt och kommer att bearbetas i följd",
+      "processing": "⌯ <b>Bearbetar mediealbum</b>\n\n✦ Bearbetar objekt {current} av {total}"
+    },
+    "single": {
+      "usage": "/dl\nÖppna inlägget i Telegram och håll det nedtryckt\nVälj Kopiera länk och skicka länken hit\nFör flera inlägg skickar du först länken till det första"
+    },
+    "batch": {
+      "usage": "/bdl\nÖppna inlägget i Telegram och håll det nedtryckt\nVälj Kopiera länk och skicka länken hit\nFör flera inlägg skickar du först länken till det första\nSkicka länken till det sista inlägget i samma kanal\nBåda inläggen och alla däremellan tas med\nSedan väljer du innehållstyper",
+      "different_sources": "⌯ <b>Länkarna tillhör olika chattar</b>\n\n✦ Den första och sista länken måste komma från samma Telegram-kanal eller grupp",
+      "invalid_order": "⌯ <b>Felaktig ordning på inläggen</b>\n\n✦ Den första länken måste peka på ett tidigare inlägg än den sista länken",
+      "invalid_links": "⌯ <b>Ogiltiga länkar för masshämtning</b>\n\n✦ Båda värdena måste vara giltiga länkar till Telegram-inlägg från samma källa",
+      "starting": "⌯ <b>Masshämtningen har startat</b>\n\n✦ Boten kommer att bearbeta inlägg från {start_id} till {end_id}. Totalt antal begärda inlägg: {total}",
+      "progress": "⌯ <b>Masshämtning pågår</b>\n\n✦ Aktuellt objekt: {current} av {total}\n✦ Inläggs-ID: {message_id}\n✦ Hämtade: {downloaded}\n✦ Överhoppade: {skipped}\n✦ Misslyckade: {failed}",
+      "completed": "⌯ <b>Massåtgärden är klar</b>\n\n✦ Hämtade: {downloaded}\n✦ Överhoppade: {skipped}\n✦ Misslyckade: {failed}",
+      "cancelled": "⌯ <b>Massåtgärden avbröts</b>\n\n✦ De återstående inläggen kommer inte att bearbetas. Förloppet som sparades före avbrottet har rensats",
+      "failed": "⌯ <b>Massåtgärden stoppades</b>\n\n✦ Ett oväntat fel förhindrade att de återstående inläggen bearbetades",
+      "retrying": "⌯ <b>Försöker igen med misslyckade objekt</b>\n\n✦ Huvudomgången är klar. {count} objekt som misslyckades kommer nu att försökas igen"
+    },
+    "disk_full": "⌯ <b>Uppgift</b>\n\n✦ Det finns inte tillräckligt med lagringsutrymme för filen nu\n✦ Försök igen senare",
+    "paid": {
+      "not_purchased": "⌯ <b>Inlägget måste köpas med Telegram Stars</b>\n\n✦ Köp det med det länkade kontot och skicka länken igen"
+    }
+  },
+  "tasks": {
+    "already_running": "⌯ <b>En annan uppgift körs redan</b>\n\n✦ Vänta tills den aktiva uppgiften är klar eller avbryt den innan du startar en annan åtgärd",
+    "resumed": "⌯ <b>Uppgiften har återupptagits</b>\n\n✦ En avbruten uppgift hittades och kommer att fortsätta från den senast sparade positionen",
+    "cancel_requested": "⌯ <b>Avbrott har begärts</b>\n\n✦ Den aktiva åtgärden stoppas och tillfälliga filer kommer att rensas",
+    "input_cancelled": "⌯ <b>Inmatningssessionen avbröts</b>\n\n✦ Det väntande inloggnings-, filter- eller bekräftelsetillståndet har tagits bort",
+    "none_to_cancel": "⌯ <b>ℹ Ingen aktiv åtgärd</b>\n\n✦ Det finns ingen pågående uppgift eller väntande inmatningssession att avbryta",
+    "completion": {
+      "single": {
+        "private": "⌯ <b>Hämtningen är klar</b>\n\n✦ Det begärda mediet hämtades och skickades till den här chatten",
+        "saved_messages": "⌯ <b>Hämtningen är klar</b>\n\n✦ Det begärda mediet hämtades och levererades till Sparade meddelanden för ditt länkade konto",
+        "channel": "⌯ <b>Uppladdningen är klar</b>\n\n✦ Det begärda mediet levererades till <b>{channel_title}</b>\n\n✦ {message_link}"
+      },
+      "batch": {
+        "private": "⌯ <b>Massuppgiften är klar</b>\n\n✦ Boten har bearbetat det valda intervallet och levererat {count} objekt till den här chatten",
+        "saved_messages": "⌯ <b>Massuppgiften är klar</b>\n\n✦ Boten har bearbetat det valda intervallet och levererat {count} objekt till Sparade meddelanden för ditt länkade konto",
+        "channel": "⌯ <b>Massuppladdningen är klar</b>\n\n✦ Boten har bearbetat det valda intervallet och levererat {count} objekt till din valda kanal"
+      },
+      "clone": {
+        "private": "⌯ <b>Kanalöverföringen är klar</b>\n\n✦ Kanaluppgiften är klar och {count} objekt levererades till den här chatten",
+        "saved_messages": "⌯ <b>Kanalöverföringen är klar</b>\n\n✦ Kanaluppgiften är klar och {count} objekt levererades till Sparade meddelanden för ditt länkade konto",
+        "channel": "⌯ <b>Kanalöverföringen är klar</b>\n\n✦ Kanaluppgiften är klar och {count} objekt levererades till din valda målkanal"
+      },
+      "monitor": {
+        "private": "⌯ <b>Övervakat inlägg levererat</b>\n\n✦ Ett nytt inlägg upptäcktes och levererades till den här chatten",
+        "saved_messages": "⌯ <b>Övervakat inlägg levererat</b>\n\n✦ Ett nytt inlägg upptäcktes och levererades till Sparade meddelanden för ditt länkade konto",
+        "channel": "⌯ <b>Övervakat inlägg levererat</b>\n\n✦ Ett nytt inlägg upptäcktes och levererades till din valda målkanal"
+      }
+    }
+  },
+  "filters": {
+    "prompt": "⌯ <b>Välj innehållsfilter</b>\n\n✦ Välj om allt innehåll ska bearbetas, om endast valda medietyper ska sparas eller om valda medietyper ska hoppas över. Urvalssessionen förblir aktiv i tio minuter",
+    "modes": {
+      "all": "Allt innehåll",
+      "save": "Spara endast",
+      "skip": "Hoppa över valda"
+    },
+    "types": {
+      "videos": "Videor",
+      "photos": "Bilder",
+      "audio": "Ljud",
+      "files": "Filer",
+      "text": "Text",
+      "other": "Annat"
+    },
+    "summary": {
+      "all": "Allt innehåll som stöds",
+      "save": "Spara endast: {types}",
+      "skip": "Hoppa över: {types}",
+      "minimum_duration": "Minsta längd: {seconds} sekunder",
+      "maximum_duration": "Största längd: {seconds} sekunder"
+    }
+  },
+  "clone": {
+    "usage": "/clone\nSkicka kanallänken eller användarnamnet\nFör en privat kanal kopplar du med /login ett konto som redan är medlem",
+    "channel_not_found": "⌯ <b>Kanalen hittades inte</b>\n\n✦ Kanalens användarnamn eller länk är ogiltig, eller så kan det länkade kontot inte hitta den",
+    "empty_channel": "⌯ <b>Kanalen är tom</b>\n\n✦ Inga överförbara inlägg hittades i den valda kanalen",
+    "starting": "⌯ <b>Kanalöverföringen har startat</b>\n\n✦ Boten förbereder bearbetning av {total} inläggsidentifierare från <b>{channel_title}</b>",
+    "progress": "⌯ <b>Kanalöverföring pågår</b>\n\n✦ Aktuellt objekt: {current} av {total}\n✦ Inläggs-ID: {message_id}\n✦ Hämtade: {downloaded}\n✦ Överhoppade: {skipped}\n✦ Misslyckade: {failed}",
+    "flood_wait": "⌯ <b>Telegrams hastighetsbegränsning</b>\n\n✦ Kanalöverföringen har pausats i {seconds} sekunder",
+    "completed": "⌯ <b>Kanalbearbetningen är klar</b>\n\n✦ Hämtade: {downloaded}\n✦ Överhoppade: {skipped}\n✦ Misslyckade: {failed}",
+    "cancelled": "⌯ <b>Kanalöverföringen avbröts</b>\n\n✦ De återstående kanalinläggen kommer inte att bearbetas",
+    "failed": "⌯ <b>Kanalöverföringen misslyckades</b>\n\n✦ Ett oväntat fel förhindrade att överföringen slutfördes"
+  },
+  "uploads": {
+    "channel": {
+      "usage": "/uploadch\nVälj kanal\nBotens prenumeration och Telegram Premium är separata\nBoten laddar upp ungefär 2 GB per del\nEtt kopplat Telegram Premium konto kan ladda upp upp till 4 GB som en fil\nKoppla kontot med /login\nLägg till boten och kontot som administratörer i målkanalen och välj den med /uploadch\nUtan målkanal kan du välja sparade meddelanden\nDokumentdelar behöver fogas ihop i nummerordning\nEnklast ↣ lägg till boten som admin i din kanal eller grupp så ber den dig bekräfta här",
+      "current": "⌯ <b>Välj kanal</b>\n\n✦ {channel_id}\n✦ /uploadch\n✦ /rmuploadch",
+      "invalid_id": "⌯ <b>Ogiltig kanalidentifierare</b>\n\n✦ Skicka kanalens numeriska Telegram-ID, som vanligtvis börjar med <code>-100</code>\n✦ Enklast ↣ lägg till boten som admin i din kanal eller grupp så ber den dig bekräfta här",
+      "bot_not_admin": "⌯ <b>Boten behöver administratörsåtkomst</b>\n\n✦ Lägg till boten som administratör i målkanalen innan du aktiverar kanaluppladdningar\n✦ Enklast ↣ lägg till boten som admin i din kanal eller grupp så ber den dig bekräfta här",
+      "user_not_admin": "⌯ <b>Du behöver administratörsåtkomst</b>\n\n✦ Du måste vara ägare eller administratör för målkanalen",
+      "access_denied": "⌯ <b>Kanalverifieringen misslyckades</b>\n\n✦ Kanalen kunde inte öppnas eller så saknas de nödvändiga administratörsbehörigheterna",
+      "enabled": "⌯ <b>Uppladdningskanalen är ansluten</b>\n\n✦ Framtida hämtningar kommer att levereras till <b>{channel_title}</b> tills du tar bort målet",
+      "disabled": "⌯ <b>Uppladdningskanalen har inaktiverats</b>\n\n✦ Boten förlorade administratörsåtkomsten till den valda kanalen, så kanalleveransen inaktiverades automatiskt",
+      "removed": "⌯ <b>Uppladdningskanalen har tagits bort</b>\n\n✦ Framtida hämtningar kommer att återgå till standardmålet",
+      "not_set": "⌯ <b>ℹ Ingen uppladdningskanal är konfigurerad</b>\n\n✦ Din profil har för närvarande ingen målkanal"
+    },
+    "auto": {
+      "start_first": "⌯ <b>Slutför kopplingen av kanalen</b>\n\n✦ Du lade till boten i ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Tryck på Starta för att registrera dig hos boten och slutföra kopplingen\n✦ Utan svar inom 24 timmar lämnar boten den",
+      "premium_only": "⌯ <b>Koppla kanal är för prenumeranter</b>\n\n✦ Du lade till boten i ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Att få nedladdningar i en kanal eller grupp ingår i botprenumerationen\n✦ Boten har lämnat den\n✦ Prenumerera med knappen nedan och lägg sedan till boten igen",
+      "confirm": "⌯ <b>Bekräfta uppladdningskanal</b>\n\n✦ Du lade till boten i ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Om du bekräftar hamnar nya nedladdningar och bevakade inlägg där\n✦ Om du avböjer lämnar boten den\n✦ Utan svar inom 24 timmar lämnar boten den själv",
+      "linked": "⌯ <b>Uppladdningskanal kopplad</b>\n\n✦ Kanal ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Nya nedladdningar och bevakade inlägg hamnar där\n✦ Skicka /rmuploadch för att ta bort den",
+      "no_rights": "⌯ <b>Boten kan inte posta där</b>\n\n✦ Kanal ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Boten lämnade eftersom den inte är admin eller inte får posta\n✦ Lägg till den igen som admin med rätt att posta",
+      "user_not_admin": "⌯ <b>Du måste vara admin där</b>\n\n✦ Kanal ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Uppladdningskanalen måste vara din eller så måste du vara admin där\n✦ Boten har lämnat den",
+      "expired": "Den här begäran har gått ut"
+    }
+  },
+  "forcedownload": {
+    "details": "⌯ <b>Läge för tvingad hämtning</b>\n\n✦ När det är aktiverat hämtar och laddar boten upp varje medieobjekt i stället för att kopiera det direkt. Detta är användbart när du använder en anpassad miniatyrbild, återskapar filer eller hanterar begränsningar för vidarebefordran\n\n✦ Aktuell status: {status}",
+    "premium_required": "⌯ <b>Prenumeration krävs</b>\n\n✦ Läget för tvingad hämtning är tillgängligt för prenumeranter eftersom det använder ytterligare lagring, bandbredd och processorkapacitet",
+    "flag_removed": "⌯ <b>ℹ Alternativet --fdl har tagits bort</b>\n\n✦ Tvingad hämtning är nu ett permanent användarläge. Prenumeranter kan hantera det med /forcedownload i stället för att lägga till det i enskilda kommandon",
+    "enabled": "⌯ <b>Tvingad hämtning har aktiverats</b>\n\n✦ Framtida hämtnings-, mass-, klonings- och övervakningsuppgifter kommer att hämta och ladda upp originalfilerna i stället för att kopiera inlägg direkt",
+    "disabled": "⌯ <b>Tvingad hämtning har inaktiverats</b>\n\n✦ Boten kan återigen kopiera obegränsade inlägg direkt, samtidigt som skyddat innehåll fortfarande hämtas när det behövs",
+    "status": {
+      "enabled": "Aktiverad",
+      "disabled": "Inaktiverad"
+    },
+    "buttons": {
+      "enable": "Aktivera tvingad hämtning",
+      "disable": "Inaktivera tvingad hämtning"
+    }
+  },
+  "thumbnail": {
+    "not_set": "⌯ <b>Ingen anpassad miniatyrbild</b>\n\n✦ Skicka först en bild till boten och bekräfta den sedan för att använda den som omslag för uppladdade filer som stöds",
+    "current": "⌯ <b>Aktuell anpassad miniatyrbild</b>\n\n✦ Detta är bilden som har sparats för framtida uppladdningar som stöds\n\n✦ Status: {status}",
+    "confirm": "⌯ <b>Använd den här bilden som miniatyrbild</b>\n\n✦ Bekräfta för att spara bilden som ditt anpassade omslag, eller avbryt för att radera den tillfälliga bilden",
+    "saved": "⌯ <b>Miniatyrbilden har sparats</b>\n\n✦ Bilden sparades och aktiverades för framtida uppladdningar som stöds",
+    "download_failed": "⌯ <b>Bildhämtningen misslyckades</b>\n\n✦ Bilden kunde inte sparas. Skicka den igen och kontrollera att Telegram har slutfört uppladdningen",
+    "temp_missing": "⌯ <b>Den tillfälliga bilden är inte tillgänglig</b>\n\n✦ Bekräftelsesessionen löpte ut eller så togs den tillfälliga bilden bort. Skicka bilden igen",
+    "not_set_popup": "Ingen sparad miniatyrbild är tillgänglig",
+    "status": {
+      "enabled": "Aktiverad",
+      "disabled": "Inaktiverad"
+    },
+    "buttons": {
+      "enable": "Aktivera miniatyrbild",
+      "disable": "Inaktivera miniatyrbild"
+    }
+  },
+  "captions": {
+    "settings": "⌯ <b>Bildtextbearbetning</b>\n\n✦ Välj hur bildtexter ska hanteras när medier kopieras eller laddas upp\n\n✦ Aktuellt läge: {current}",
+    "modes": {
+      "keep_all": "Behåll den ursprungliga bildtexten",
+      "remove_all": "Ta bort bildtexter från medier",
+      "remove_links_users": "Ta bort länkar och användarnamn"
+    },
+    "buttons": {
+      "keep_all": "Behåll ursprungliga bildtexter",
+      "remove_all": "Ta bort alla bildtexter",
+      "remove_links_users": "Ta bort länkar och användarnamn"
+    },
+    "already_selected_popup": "Detta bildtextläge är redan aktivt",
+    "updated_popup": "Bildtextläget har uppdaterats"
+  },
+  "profile": {
+    "unavailable": "⌯ <b>Profilen är inte tillgänglig</b>\n\n✦ Din sparade användarpost kunde inte läsas in. Skicka /start och försök igen",
+    "details": "⌯ <b>Din profil</b>\n\n✦ Användar-ID: <code>{user_id}</code>\n✦ Plan: {plan_status}\n✦ Planens utgångsdatum: {expiry_date}\n✦ Dagliga poäng: {daily_points}/{daily_limit}\n✦ Daglig återställning: {reset_time}\n✦ Presentpoäng: {gift_points}\n✦ Värvningspoäng: {referral_points}\n✦ Värvningar: {referral_count}\n✦ Tvingad hämtning: {force_download_status}\n\n✦ Värvningslänk:\n✦ <code>{referral_link}</code>"
+  },
+  "plans": {
+    "free": "Gratis",
+    "premium": "Prenumerant",
+    "monthly": "Månadsvis",
+    "yearly": "Årsvis"
+  },
+  "premium": {
+    "details": "⌯ <b>Prenumeration</b>\n\n✦ Prenumeration\n✦ Du kan ha högst 5 öppna uppgifter\n✦ Vänta tills en är klar eller avbryt med /cancel\n✦ Prenumerationen låter dig hoppa över den gemensamma kön\n✦ /clone\n✦ /monitor\n✦ /uploadch\n✦ /caption\n✦ /fdl\n✦ Botens prenumeration och Telegram Premium är separata",
+    "feature_required": "⌯ <b>Prenumeration krävs</b>\n\n✦ Den här funktionen är tillgänglig för prenumeranter. Öppna prenumerationsmenyn för att se de tillgängliga planerna",
+    "already_active": "⌯ <b>Prenumerationen är aktiv</b>\n\n✦ Din prenumeration förblir aktiv till {expiry_date}",
+    "already_active_popup": "Din prenumeration är aktiv till {expiry_date}",
+    "required_popup": "Den här funktionen kräver en aktiv prenumeration",
+    "granted": "⌯ <b>Prenumerationen har aktiverats</b>\n\n✦ Ditt konto uppgraderades. Den aktuella prenumerationen löper ut den {expiry_date}",
+    "removed": "⌯ <b>ℹ Prenumerationen har tagits bort</b>\n\n✦ Lägen och målinställningar som endast är tillgängliga för prenumeranter har inaktiverats för ditt konto",
+    "buttons": {
+      "monthly": "Månadsplan",
+      "yearly": "Årsplan"
+    },
+    "granted_days": "⌯ <b>Prenumeration</b>\n\n✦ Tillagda dagar: {days}\n✦ Gäller till: {expiry_date}\n✦ Dagarna har lagts till eventuell återstående tid"
+  },
+  "language": {
+    "select": "⌯ <b>Välj ditt språk</b>\n\n✦ Välj språket som ska användas för botmeddelanden och din personliga Telegram-kommandomeny",
+    "changed": "⌯ <b>Språket har ändrats</b>\n\n✦ Meddelanden och Telegram-kommandon kommer nu att visas på {language_name}",
+    "unavailable_popup": "Det valda språket är inte tillgängligt"
+  },
+  "limits": {
+    "insufficient_points": "⌯ <b>Inte tillräckligt med hämtningspoäng</b>\n\n✦ Du har inte tillräckligt med poäng för den här hämtningen. Ditt dagliga saldo återställs efter {time_left}, eller så kan du tjäna fler poäng genom värvningar",
+    "insufficient_points_batch": "⌯ <b>Inte tillräckligt med poäng för denna massåtgärd</b>\n\n✦ Den här åtgärden kräver {required_points} poäng, medan ditt nuvarande tillgängliga saldo är {available_points}",
+    "reset_now": "Återställs nu",
+    "cooldown": "⌯ <b>Vänta innan du hämtar igen</b>\n\n✦ Du kan starta en ny kostnadsfri hämtning efter {remaining_time}"
+  },
+  "referrals": {
+    "share_text": "Använd den här Telegram-hämtaren och tjäna poäng via min värvningslänk",
+    "new_referral": "⌯ <b>En ny värvad användare har gått med</b>\n\n✦ {user_name} (<code>{user_id}</code>) gick med via din länk. Du fick {reward} värvningspoäng",
+    "welcome_bonus": "⌯ <b>Värvningsbonus mottagen</b>\n\n✦ Du fick {bonus} poäng för att du gick med via en befintlig användares värvningslänk"
+  },
+  "gifts": {
+    "claim": {
+      "already_claimed": "⌯ <b>ℹ Presenten har redan hämtats ut</b>\n\n✦ Den här presenten har tidigare lagts till på ditt konto och kan inte hämtas ut två gånger",
+      "invalid": "⌯ <b>Presenten hittades inte</b>\n\n✦ Presentlänken är ogiltig eller finns inte längre",
+      "inactive": "⌯ <b>Presenten är inaktiv</b>\n\n✦ Den här presenten har inaktiverats av administratören och kan inte längre hämtas ut",
+      "link_expired": "⌯ <b>Presentlänken har löpt ut</b>\n\n✦ Tiden för att hämta ut den här presenten har gått ut",
+      "limit_reached": "⌯ <b>Presentgränsen har uppnåtts</b>\n\n✦ Det högsta tillåtna antalet uttag har redan använts",
+      "not_allowed": "⌯ <b>Presenten är inte tilldelad ditt konto</b>\n\n✦ Den här presenten kan endast hämtas ut av särskilda användare och ditt konto ingår inte",
+      "excluded": "⌯ <b>Presenten är inte tillgänglig för ditt konto</b>\n\n✦ Ditt konto är undantaget från att hämta ut den här presenten",
+      "completed": "⌯ <b>Presenten har hämtats ut</b>\n\n✦ {value} poäng lades till på ditt konto",
+      "completed_with_expiry": "⌯ <b>Presenten har hämtats ut</b>\n\n✦ {value} poäng lades till på ditt konto och kommer att vara tillgängliga till {expiry_date}",
+      "failed": "⌯ <b>Presentuttaget misslyckades</b>\n\n✦ Presenten kunde inte läggas till på ditt konto. Försök igen senare"
+    }
+  },
+  "help": {
+    "menu": {
+      "title": "⌯ <b>Hjälpcenter</b>\n\n✦ Välj en funktion nedan för att se instruktioner och rekommenderad användning"
+    },
+    "buttons": {
+      "single": "Enskild hämtning",
+      "batch": "Masshämtning",
+      "clone": "Kanalöverföring",
+      "monitor": "Kanalövervakning",
+      "channel_upload": "Uppladdningskanal",
+      "forcedownload": "Tvingad hämtning",
+      "login": "Länkat konto",
+      "points": "Poäng",
+      "premium": "Prenumeration",
+      "other_uses": "Andra användningsområden"
+    },
+    "features": {
+      "dl": "⌯ <b>Hämta ett inlägg</b>\n\n✦ /dl\n✦ Öppna inlägget i Telegram och håll det nedtryckt\n✦ Välj Kopiera länk och skicka länken hit\n✦ För flera inlägg skickar du först länken till det första\n✦ <code>https://t.me/example_channel/15</code>\n✦ Skicka kanallänken eller användarnamnet\n✦ För en privat kanal kopplar du med /login ett konto som redan är medlem\n✦ Storlek:\n✦ Boten laddar upp ungefär 2 GB per del\n✦ Välj Ladda ner och dela eller Avbryt\n✦ För en hel fil upp till 4 GB kopplar du Telegram Premium med /login och väljer en kanal med /uploadch",
+      "bdl": "⌯ <b>Hämta flera inlägg</b>\n\n✦ /bdl\n✦ Öppna inlägget i Telegram och håll det nedtryckt\n✦ Välj Kopiera länk och skicka länken hit\n✦ För flera inlägg skickar du först länken till det första\n✦ Skicka länken till det sista inlägget i samma kanal\n✦ Båda inläggen och alla däremellan tas med\n✦ Sedan väljer du innehållstyper\n✦ <code>/bdl https://t.me/example_channel/15 https://t.me/example_channel/30</code>\n✦ Skicka /cancel för att välja en uppgift eller /cancel följt av dess nummer",
+      "clone": "⌯ <b>Överför en hel kanal</b>\n\n✦ Prenumeration\n✦ /clone\n✦ Skicka kanallänken eller användarnamnet\n✦ För en privat kanal kopplar du med /login ett konto som redan är medlem\n✦ /uploadch\n✦ Skicka /cancel för att välja en uppgift eller /cancel följt av dess nummer",
+      "monitor": "⌯ <b>Övervaka nya kanalinlägg</b>\n\n✦ Prenumeration\n✦ /monitor\n✦ Skicka kanallänken eller användarnamnet\n✦ För en privat kanal kopplar du med /login ett konto som redan är medlem\n✦ Kanal:\n✦ Filter:\n✦ Offentliga kanaler använder ett nedladdningskonto\n✦ Privata kanaler kontrolleras varje timme med ett konto i taget som sedan stängs\n✦ Nya inlägg sparas i en kö och levereras i ordning\n✦ Stoppa bevakning",
+      "channel_upload": "⌯ <b>Leverera innehåll till en annan kanal</b>\n\n✦ Prenumeration\n✦ /uploadch\n✦ Botens prenumeration och Telegram Premium är separata\n✦ Boten laddar upp ungefär 2 GB per del\n✦ Ett kopplat Telegram Premium konto kan ladda upp upp till 4 GB som en fil\n✦ Koppla kontot med /login\n✦ Lägg till boten och kontot som administratörer i målkanalen och välj den med /uploadch\n✦ Utan målkanal kan du välja sparade meddelanden\n✦ Dokumentdelar behöver fogas ihop i nummerordning\n✦ /rmuploadch\n✦ Enklast ↣ lägg till boten som admin i din kanal eller grupp så ber den dig bekräfta här",
+      "forcedownload": "⌯ <b>Läge för tvingad hämtning</b>\n\n✦ Använd /forcedownload för att låta boten hämta och ladda upp varje fil i stället för att kopiera obegränsade inlägg. Läget är användbart för anpassade miniatyrbilder och återskapande av innehåll",
+      "login": "⌯ <b>Länka ett Telegram-konto</b>\n\n✦ Använd /login och välj ditt nuvarande konto eller ett annat konto. Det länkade kontot måste redan vara medlem i de privata kanaler som du vill komma åt. Auktoriseringskoder anges endast via den säkra knappsatsen\n✦ Ange Telegram koden enbart med sifferknapparna\n✦ Radera tar bort sista siffran och Bekräfta skickar koden\n✦ Skicka kanallänken eller användarnamnet\n✦ För en privat kanal kopplar du med /login ett konto som redan är medlem\n✦ /logout",
+      "points": "⌯ <b>Hämtningspoäng</b>\n\n✦ Kostnadsfria hämtningar använder dagliga poäng, presentpoäng och värvningspoäng. Dela din personliga länk för att tjäna fler poäng:\n\n✦ <code>{referral_link}</code>",
+      "premium": "⌯ <b>Prenumerationsfunktioner</b>\n\n✦ /premium\n✦ Prenumeration\n✦ Du kan ha högst 5 öppna uppgifter\n✦ Vänta tills en är klar eller avbryt med /cancel\n✦ Prenumerationen låter dig hoppa över den gemensamma kön\n✦ /clone\n✦ /monitor\n✦ /uploadch\n✦ /caption\n✦ /fdl\n✦ Botens prenumeration och Telegram Premium är separata",
+      "other_uses": "⌯ <b>Andra sätt att använda boten</b>\n\n✦ <b>Överför en kanal till en annan:</b> Konfigurera ett mål med /uploadch och kör sedan /clone på källkanalen. Det valda innehållet överförs enligt dina filter\n\n✦ <b>Byt omslag för en hel serie:</b> Skicka den nya omslagsbilden till boten och bekräfta den, aktivera läget för tvingad hämtning och kör sedan /bdl med länkarna till det första och sista avsnittet. Filerna hämtas och laddas upp med det valda omslaget där det stöds"
+    }
+  },
+  "monitor": {
+    "login_required": "⌯ <b>Länka ett Telegram-konto</b>\n\n✦ Skicka kanallänken eller användarnamnet\n✦ För en privat kanal kopplar du med /login ett konto som redan är medlem",
+    "usage": "⌯ <b>Övervaka nya kanalinlägg</b>\n\n✦ {current_status}\n✦ /monitor\n✦ Skicka kanallänken eller användarnamnet\n✦ För en privat kanal kopplar du med /login ett konto som redan är medlem\n✦ Kanal:\n✦ Filter:\n✦ Offentliga kanaler använder ett nedladdningskonto\n✦ Privata kanaler kontrolleras varje timme med ett konto i taget som sedan stängs\n✦ Nya inlägg sparas i en kö och levereras i ordning\n✦ Stoppa bevakning",
+    "invalid_channel_id": "⌯ <b>Ogiltig kanalidentifierare</b>\n\n✦ Använd ett numeriskt Telegram-kanal-ID, som vanligtvis börjar med <code>-100</code>",
+    "invalid_action": "⌯ <b>Ogiltig övervakningsåtgärd</b>\n\n✦ Använd <code>on</code> för att starta övervakningen eller <code>off</code> för att stoppa den",
+    "not_active": "⌯ <b>ℹ Övervakningen är inte aktiv</b>\n\n✦ Den angivna kanalen övervakas för närvarande inte av ditt konto",
+    "already_active": "⌯ <b>ℹ En övervakning är redan aktiv</b>\n\n✦ Stoppa den kanal som övervakas för närvarande innan du väljer en annan",
+    "access_denied": "⌯ <b>Åtkomst till kanalen nekades</b>\n\n✦ Det länkade kontot kan inte öppna den angivna kanalen eller så är identifieraren felaktig",
+    "start_failed": "⌯ <b>Starta uppgiften igen</b>\n\n✦ Skicka kanallänken eller användarnamnet\n✦ För en privat kanal kopplar du med /login ett konto som redan är medlem",
+    "started": "⌯ <b>Övervaka nya kanalinlägg</b>\n\n✦ Kanal: {channel_title}\n✦ Filter: {filter_status}\n✦ Offentliga kanaler använder ett nedladdningskonto\n✦ Privata kanaler kontrolleras varje timme med ett konto i taget som sedan stängs\n✦ Nya inlägg sparas i en kö och levereras i ordning",
+    "stopped": "⌯ <b>Kanalövervakningen har stoppats</b>\n\n✦ Nya inlägg från den valda kanalen kommer inte längre att bearbetas automatiskt",
+    "session_stopped": "⌯ <b>Övervakningen har stoppats</b>\n\n✦ Den länkade Telegram-sessionen har löpt ut eller återkallats, så den automatiska övervakningen har inaktiverats",
+    "status": {
+      "active": "Aktiv för kanal <code>{channel_id}</code>",
+      "inactive": "Inaktiv"
+    },
+    "stop_button": "Stoppa bevakning",
+    "source_lost": "⌯ <b>Kanalbevakning stoppad</b>\n\n✦ Kanal ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Ditt kopplade konto kunde inte öppna den på en hel dag\n✦ Den kan ha raderats eller gjorts privat eller så har kontot lämnat den\n✦ För att bevaka den igen se till att kontot är medlem och skicka /monitor"
+  },
+  "stats": {
+    "system": "⌯ <b>Systemstatistik</b>\n\n✦ Drifttid: {uptime}\n✦ Disk: {disk_usage} / {disk_total} ({disk_percent}%)\n✦ Minne: {ram_percent}%\n✦ Processor: {cpu_percent}%\n✦ Nätverk skickat: {sent}\n✦ Nätverk mottaget: {received}",
+    "admin": "⌯ <b>Användarstatistik</b>\n\n✦ Totalt antal användare: {total_users}\n✦ Prenumeranter: {total_premium}\n✦ Tillagda av administratören: {premium_by_admin}\n✦ Betalade med Stars: {premium_by_stars}",
+    "public": "⌯ <b>Botstatistik</b>\n\n✦ Drifttid: {uptime}\n✦ Totalt antal nedladdningar: {total_downloads}"
+  },
+  "payments": {
+    "monthly": {
+      "title": "Månadsprenumeration",
+      "description": "Aktivera prenumerationsfunktioner i 30 dagar"
+    },
+    "yearly": {
+      "title": "Årsprenumeration",
+      "description": "Aktivera prenumerationsfunktioner i 365 dagar"
+    },
+    "total_label": "Totalt för prenumerationen",
+    "invalid_plan_popup": "Den valda prenumerationsplanen är ogiltig",
+    "invoice_failed_popup": "Betalningsfakturan kunde inte skapas",
+    "unrecognized": "⌯ <b>Betalningsplanen kändes inte igen</b>\n\n✦ Betalningen togs emot, men dess prenumerationsplan kunde inte identifieras. Kontakta supporten med betalningsinformationen",
+    "activation_failed": "⌯ <b>Aktiveringen av prenumerationen misslyckades</b>\n\n✦ Betalningen togs emot, men databasen kunde inte aktivera prenumerationen. Kontakta supporten för manuell hjälp",
+    "completed": "⌯ <b>Prenumerationen har aktiverats</b>\n\n✦ Planen {plan_name} är nu aktiv och löper ut den {expiry_date}"
+  },
+  "broadcast": {
+    "json": {
+      "file_required": "⌯ <b>En JSON-fil för utskicket krävs</b>\n\n✦ Svara på en flerspråkig JSON-fil och använd <code>/bc .</code>",
+      "invalid_file": "⌯ <b>Ogiltig utskicksfil</b>\n\n✦ Dokumentet som du svarar på måste vara en JSON-fil",
+      "validation_failed": "⌯ <b>Verifieringen av utskicksfilen misslyckades</b>\n\n✦ Filen kunde inte godkännas: <code>{error}</code>",
+      "confirm": "⌯ <b>Bekräfta det flerspråkiga utskicket</b>\n\n✦ Filen innehåller {language_count} användbara språk. Användarna får sitt sparade språk, därefter sitt grundspråk och slutligen engelska som sista reservspråk\n\n✦ Filter: {filters}",
+      "how_to": "⌯ <b>Flerspråkig utskick</b>\n\n✦ Tryck på knappen nedan för att få en JSON-mall som innehåller alla tillgängliga språk. Fyll i värdet <code>text</code> för varje språk du vill ha, ladda sedan upp filen och svara på den med <code>/bc .</code> — tomma språk faller tillbaka på engelska",
+      "template_sent": "⌯ <b>Utskicksmall</b>\n\n✦ Filen innehåller {language_count} språk och skapades från de aktuella språkfilerna"
+    },
+    "usage": "⌯ <b>Skicka ett massutskick</b>\n\n✦ Svara på meddelandet som du vill skicka och använd sedan /bc. Valfria filter inkluderar <code>-only USER_ID</code> och <code>-rm USER_ID --prem</code>",
+    "invalid_message": "⌯ <b>Utskicksmeddelandet är inte tillgängligt</b>\n\n✦ Meddelandet som du svarade på har ingen giltig Telegram-identifierare",
+    "confirm": "⌯ <b>Bekräfta utskicket</b>\n\n✦ Meddelande-ID: <code>{message_id}</code>\n✦ Filter: {filters}\n\n✦ Välj om meddelandet ska skickas normalt eller skickas och fästas",
+    "starting": "⌯ <b>Utskicket har startat</b>\n\n✦ Meddelandet skickas till de valda användarna",
+    "progress": "⌯ <b>Utskicket pågår</b>\n\n✦ Bearbetade: {processed}/{total}\n✦ Lyckade: {successful}\n✦ Misslyckade: {failed}",
+    "completed": "⌯ <b>Utskicket är klart</b>\n\n✦ Valda användare: {total}\n✦ Lyckade: {successful}\n✦ Misslyckade: {failed}",
+    "cancelled": "⌯ <b>Utskicket avbröts</b>\n\n✦ Åtgärden stoppades efter att {processed} användare hade bearbetats",
+    "buttons": {
+      "normal": "Skicka normalt",
+      "pin": "Skicka och fäst",
+      "get_template": "Hämta JSON-mall"
+    },
+    "filters": {
+      "none": "Inga filter",
+      "summary": "Endast användare: {only_count}, uteslutna användare: {excluded_count}, uteslut prenumeranter: {exclude_premium}"
+    }
+  },
+  "admin": {
+    "users": {
+      "new_language": "⌯ <b>Ett otillgängligt språk upptäcktes</b>\n\n✦ Användare: {first_name}\n✦ Användar-ID: <code>{user_id}</code>\n✦ Upptäckt kod: <code>{language_code}</code>",
+      "new_user": "⌯ <b>En ny användare har gått med</b>\n\n✦ Namn: {first_name} {last_name}\n✦ Användar-ID: <code>{user_id}</code>\n✦ Användarnamn: {username}\n✦ Totalt antal användare: {total_users}",
+      "exported": "⌯ <b>Användarexporten är klar</b>\n\n✦ Den bifogade filen innehåller {count} användarposter"
+    },
+    "payments": {
+      "new_subscription": "⌯ <b>Ny betald prenumeration</b>\n\n✦ Användare: {user_name}\n✦ Användar-ID: <code>{user_id}</code>\n✦ Plan: {plan_name}\n✦ Belopp: {amount} Stars"
+    },
+    "pool": {
+      "insufficient": "⌯ <b>Poolen med hämtningskonton är ofullständig</b>\n\n✦ För närvarande inlästa: {current}\n✦ Ytterligare konton som krävs: {missing}"
+    },
+    "gifts": {
+      "create_usage": "⌯ <b>Skapa en present</b>\n\n✦ Använd <code>/create -gift --value POÄNG</code>. Valfria inställningar inkluderar <code>--linkexpiry DDHHMM</code>, <code>--giftexpiry DDHHMM</code>, <code>--onlyuser [ID:N]</code>, <code>--exceptionuser [ID:N]</code> och <code>--limit ANTAL</code>",
+      "value_required": "⌯ <b>Presentvärde krävs</b>\n\n✦ Ange ett positivt tal efter <code>--value</code>",
+      "user_filter_conflict": "⌯ <b>Motstridiga användarfilter</b>\n\n✦ En present kan inte använda filter för tillåtna användare och uteslutna användare samtidigt",
+      "invalid_duration": "⌯ <b>Ogiltig tidsperiod</b>\n\n✦ Använd det sexsiffriga formatet <code>DDHHMM</code> för presentperioder",
+      "invalid_values": "⌯ <b>Ogiltiga presentinställningar</b>\n\n✦ Kontrollera användaridentifierare, uttagsgräns och alla angivna värden",
+      "created": "⌯ <b>Presenten har skapats</b>\n\n✦ Presentlänken är klar:\n✦ <code>{gift_link}</code>",
+      "empty": "⌯ <b>ℹ Inga aktiva presenter</b>\n\n✦ Det finns för närvarande inga aktiva presentlänkar",
+      "list_title": "⌯ <b>Aktiva presenter</b>\n\n✦ Följande presentlänkar är för närvarande tillgängliga",
+      "list_item": "<b>Present:</b> <code>{gift_pid}</code>\nVärde: {value}\nUttag: {usage_count}/{usage_limit}\nLänkens utgångstid: {expiry}\nSkapad: {created_at}\nLänk: <code>{gift_link}</code>",
+      "remove_usage": "⌯ <b>Ta bort en present</b>\n\n✦ Använd <code>/rm -gift --pid PRESENT_ID</code>",
+      "not_found": "⌯ <b>Presenten hittades inte</b>\n\n✦ Det finns ingen aktiv present med den angivna identifieraren",
+      "remove_confirm": "⌯ <b>Inaktivera presenten</b>\n\n✦ Present: <code>{gift_pid}</code>\n✦ Värde: {value}\n✦ Uttag: {usage_count}\n\n✦ Bekräfta för att förhindra framtida uttag",
+      "deactivated": "⌯ <b>Presenten har inaktiverats</b>\n\n✦ Presenten <code>{gift_pid}</code> kan inte längre hämtas ut"
+    },
+    "add": {
+      "usage": "⌯ <b>Lägg till administrativa inställningar</b>\n\n✦ Använd /add med <code>-premium</code>, <code>-lang</code> eller <code>-frcch</code>"
+    },
+    "remove": {
+      "usage": "⌯ <b>Ta bort administrativa inställningar</b>\n\n✦ Använd /rm med <code>-premium</code>, <code>-gift</code> eller <code>-frcch</code>"
+    },
+    "premium": {
+      "add_usage": "⌯ <b>Prenumeration</b>\n\n✦ /admin\n✦ Välj användare eller skicka deras numeriska identifierare\n✦ Dagar\n✦ <code>/add -premium --user [123456789] --days 30</code>",
+      "added": "⌯ <b>Prenumerationsuppdateringen är klar</b>\n\n✦ Uppdaterade användare: {users}\n✦ Saknade användare: {missing}",
+      "remove_usage": "⌯ <b>Ta bort en prenumeration</b>\n\n✦ Använd <code>/rm -premium --user [ANVÄNDAR_ID:N]</code>",
+      "removed": "⌯ <b>Prenumerationsborttagningen är klar</b>\n\n✦ Uppdaterade användare: {users}\n✦ Saknade eller inaktiva användare: {missing}"
+    },
+    "languages": {
+      "reply_to_json": "⌯ <b>En språkfil krävs</b>\n\n✦ Svara på en giltig JSON-språkfil när du använder <code>/add -lang</code>",
+      "json_required": "⌯ <b>En JSON-fil krävs</b>\n\n✦ Dokumentet som du svarar på måste använda filändelsen <code>.json</code>",
+      "already_exists": "⌯ <b>ℹ Språket finns redan</b>\n\n✦ Språket <code>{language_code}</code> är redan installerat. Lägg till <code>--update</code> för att ersätta det",
+      "invalid_json": "⌯ <b>Ogiltig språkfil</b>\n\n✦ JSON-filen kunde inte läsas in: <code>{error}</code>",
+      "added": "⌯ <b>Språket har lagts till</b>\n\n✦ Språket <code>{language_code}</code> är nu tillgängligt",
+      "updated": "⌯ <b>Språket har uppdaterats</b>\n\n✦ Språket <code>{language_code}</code> lästes in på nytt"
+    },
+    "force_subscription": {
+      "empty": "⌯ <b>ℹ Inga obligatoriska kanaler</b>\n\n✦ Inga kanaler för obligatorisk prenumeration är för närvarande konfigurerade",
+      "list_title": "⌯ <b>Obligatoriska kanaler</b>\n\n✦ Följande kanaler är obligatoriska för närvarande",
+      "list_item": "Länk: {link}\nKanal-ID: <code>{channel_id}</code>\nAnslutna: {joined}\nGräns: {limit}",
+      "add_usage": "⌯ <b>Lägg till en obligatorisk kanal</b>\n\n✦ Använd <code>/add -frcch --link KANALLÄNK --id KANAL_ID --limit ANTAL</code>",
+      "permission_required": "⌯ <b>Administratörsbehörighet krävs</b>\n\n✦ Boten måste vara administratör med behörighet att bjuda in användare",
+      "added": "⌯ <b>Den obligatoriska kanalen har lagts till</b>\n\n✦ Kanal: {channel_title}\n✦ Anslutningsgräns: {limit}",
+      "add_failed": "⌯ <b>Kanalen kunde inte läggas till</b>\n\n✦ Kontrollera kanalidentifieraren, länken och botens administratörsbehörigheter",
+      "remove_usage": "⌯ <b>Ta bort en obligatorisk kanal</b>\n\n✦ Använd <code>/rm -frcch KANAL_ID</code> eller ange dess sparade länk",
+      "removed": "⌯ <b>Den obligatoriska kanalen har tagits bort</b>\n\n✦ Kanalen är inte längre obligatorisk",
+      "not_found": "⌯ <b>Den obligatoriska kanalen hittades inte</b>\n\n✦ Ingen sparad kanal matchar den angivna identifieraren eller länken"
+    },
+    "logs": {
+      "not_found": "⌯ <b>Loggkatalogen är inte tillgänglig</b>\n\n✦ Botens loggkatalog finns inte",
+      "empty": "⌯ <b>Inga loggar är tillgängliga</b>\n\n✦ Inga icke-tomma loggfiler för boten hittades",
+      "file_caption": "⌯ <b>Botlogg</b>\n\n✦ Fil: <code>{filename}</code>",
+      "upload_failed": "⌯ <b>Uppladdningen av loggen misslyckades</b>\n\n✦ Fil: <code>{filename}</code>\n✦ Fel: <code>{error}</code>"
+    }
+  },
+  "queue": {
+    "accepted": "⌯ <b>Din uppgift har sparats</b>\n\n✦ Uppgift ↣ {task_id}\n✦ Skicka /cancel för att välja en uppgift eller /cancel följt av dess nummer\n✦ <code>/cancel {task_id}</code>",
+    "waiting_free": "⌯ <b>Väntar</b>\n\n✦ Personer före dig: {ahead}\n✦ Nedladdningen börjar när en plats blir ledig\n✦ Prenumerationen låter dig hoppa över den gemensamma kön",
+    "waiting_premium": "⌯ <b>Väntar</b>\n\n✦ Dina tidigare uppgifter: {ahead}\n✦ Uppgifterna körs en efter en",
+    "limit_free": "⌯ <b>Uppgift</b>\n\n✦ Du har redan en öppen uppgift\n✦ Vänta tills den är klar eller avbryt med /cancel\n✦ Du kan ha högst 5 öppna uppgifter\n✦ Vänta tills en är klar eller avbryt med /cancel",
+    "limit_premium": "⌯ <b>Uppgift</b>\n\n✦ Du kan ha högst {limit} öppna uppgifter\n✦ Vänta tills en är klar eller avbryt med /cancel",
+    "lost_after_restart": "⌯ <b>Starta uppgiften igen</b>\n\n✦ Uppgift ↣ {task_id}\n✦ Öppna inlägget i Telegram och håll det nedtryckt\n✦ Välj Kopiera länk och skicka länken hit\n✦ För flera inlägg skickar du först länken till det första",
+    "cancel_usage": "Skicka /cancel för att välja en uppgift eller /cancel följt av dess nummer\n<code>/cancel 123</code>",
+    "cancelled_one": "Uppgift {task_id} har avbrutits",
+    "not_found": "Uppgift {task_id} är redan klar eller tillhör någon annan",
+    "choose_to_cancel": "⌯ <b>Avbryt Uppgift</b>\n\n✦ Skicka /cancel för att välja en uppgift eller /cancel följt av dess nummer",
+    "cancelled_popup": "Avbryt",
+    "not_found_popup": "Starta uppgiften igen",
+    "buttons": {
+      "cancel": "Avbryt Uppgift",
+      "upgrade": "Prenumeration",
+      "cancel_task": "Uppgift {task_id} {kind} {status}",
+      "cancel_all": "Avbryt Uppgift /cancel"
+    },
+    "kinds": {
+      "dl": "Hämta ett inlägg",
+      "bdl": "Hämta flera inlägg",
+      "clone": "Överför en hel kanal",
+      "task": "Uppgift",
+      "monitor": "Övervaka nya kanalinlägg"
+    },
+    "status": {
+      "queued": "Väntar",
+      "running": "Pågår"
+    },
+    "task_number": "Uppgift {task_id}"
+  },
+  "spam": {
+    "per_second": "Skicka inte mer än ett meddelande per sekund",
+    "per_minute": "Skicka inte mer än 20 meddelanden per minut\nDen här boten tar emot nedladdningslänkar\nVänta tills minuten är slut",
+    "buttons": "Du har tryckt på fler än 20 knappar på en minut\nVänta innan du fortsätter\nUpprepade överträdelser fördubblar väntetiden"
+  },
+  "flow": {
+    "first_link": "⌯ <b>Hämta ett inlägg</b>\n\n✦ Öppna inlägget i Telegram och håll det nedtryckt\n✦ Välj Kopiera länk och skicka länken hit\n✦ För flera inlägg skickar du först länken till det första\n✦ <code>https://t.me/example_channel/15</code>",
+    "last_link": "⌯ <b>Hämta flera inlägg</b>\n\n✦ Skicka länken till det sista inlägget i samma kanal\n✦ Båda inläggen och alla däremellan tas med\n✦ Sedan väljer du innehållstyper",
+    "channel": "⌯ <b>Välj kanal</b>\n\n✦ Skicka kanallänken eller användarnamnet\n✦ För en privat kanal kopplar du med /login ett konto som redan är medlem\n✦ <code>https://t.me/example_channel</code>",
+    "pick_channel": "Välj kanal",
+    "invalid_channel": "Skicka kanallänken eller användarnamnet\nFör en privat kanal kopplar du med /login ett konto som redan är medlem",
+    "upload_channel": "⌯ <b>Välj en uppladdningskanal</b>\n\n✦ Enklast ↣ lägg till boten som admin med rätt att posta i din kanal eller grupp\n✦ Boten skickar en bekräftelse hit och du trycker på Bekräfta\n✦ Eller tryck på knappen för att välja kanal nedan\n✦ Eller skicka kanallänken, användarnamnet eller ID som börjar med <code>-100</code>\n✦ Den här funktionen kräver en botprenumeration"
+  },
+  "panel": {
+    "title": "⌯ <b>Administration</b>\n\n✦ Prenumeration / Gåva / Obligatoriska kanaler / Massutskick",
+    "premium": "Prenumeration",
+    "gift": "Gåva",
+    "fsub": "Obligatoriska kanaler",
+    "broadcast": "Massutskick",
+    "users": "Exportera användare",
+    "language": "Språkfiler",
+    "gifts": "Aktiva presenter",
+    "choose_user": "Välj användare eller skicka deras numeriska identifierare",
+    "selected_users": "Alla användare ↣ {users}",
+    "selected_channel": "Välj kanal ↣ {channel_id}",
+    "custom": "Annat tal",
+    "remove_premium": "Avbryt Prenumeration",
+    "days": "Dagar ↣ {days}",
+    "value": "Gåvopoäng",
+    "link_days": "Länkens giltighet i dagar / För gåvans giltighet betyder noll inget slutdatum",
+    "point_days": "Poängens giltighet i dagar / För gåvans giltighet betyder noll inget slutdatum",
+    "limit": "Maximalt antal hämtningar",
+    "only_users": "Tillåt vissa användare",
+    "exclude_users": "Uteslut användare",
+    "send_broadcast": "Skicka massutskicket hit\nKontrollera kopian och välj mottagarna\nTryck sedan på Bekräfta",
+    "send_language": "Skicka en JSON språkfil med språkkoden som namn till exempel ar.json\nEn befintlig fil ersätts först när den nya är giltig",
+    "enter_value": "Skicka ett tal eller användaridentifierare åtskilda med kommatecken\nDitt svar raderas och menyn uppdateras",
+    "invalid_value": "Skicka ett giltigt tal\nFör gåvans giltighet betyder noll inget slutdatum",
+    "audience_all": "Alla användare",
+    "audience_premium": "Prenumeranter",
+    "audience_free": "Gratisanvändare",
+    "admins": "Administratörer",
+    "send_admin": "Skicka användarens numeriska ID eller vidarebefordra ett av hens meddelanden\nTryck på en administratör nedan för att ta bort",
+    "admin_added": "Administratör tillagd: {user_id}",
+    "admin_removed": "Administratör borttagen: {user_id}",
+    "admin_exists": "Användaren är redan administratör",
+    "no_admins": "Inga administratörer ännu",
+    "owner_only": "Bara ägare hanterar administratörer"
+  },
+  "large": {
+    "saved": "Skicka till mina sparade meddelanden",
+    "split": "Ladda ner och dela",
+    "help_button": "Förklara",
+    "split_notice": "⌯ <b>Ladda ner och dela</b>\n\n✦ Storlek: {size}\n✦ Boten laddar upp ungefär 2 GB per del\n✦ Välj Ladda ner och dela eller Avbryt\n✦ För en hel fil upp till 4 GB kopplar du Telegram Premium med /login och väljer en kanal med /uploadch",
+    "premium_notice": "⌯ <b>Skicka till mina sparade meddelanden</b>\n\n✦ Storlek: {size}\n✦ Ditt kopplade Telegram Premium konto kan ladda upp hela filen till sparade meddelanden\n✦ Du kan välja en målkanal med /uploadch\n✦ Du kan också dela filen",
+    "help": "⌯ <b>Förklara</b>\n\n✦ Botens prenumeration och Telegram Premium är separata\n✦ Boten laddar upp ungefär 2 GB per del\n✦ Ett kopplat Telegram Premium konto kan ladda upp upp till 4 GB som en fil\n✦ Koppla kontot med /login\n✦ Lägg till boten och kontot som administratörer i målkanalen och välj den med /uploadch\n✦ Utan målkanal kan du välja sparade meddelanden\n✦ Dokumentdelar behöver fogas ihop i nummerordning"
+  },
+  "referral_check": {
+    "question": "⌯ <b>Snabbkontroll</b>\n\n✦ Lös detta för att bekräfta att du är en riktig person och behålla din inbjudan\n\n✦ {a} + {b} = ?",
+    "wrong": "⌯ <b>Fel svar</b>\n\n✦ Försök igen. Återstående försök: {left}",
+    "failed": "⌯ <b>Inbjudan räknades inte</b>\n\n✦ Din inbjudan räknades inte eftersom kontrollen inte löstes. Du kan fortfarande använda boten som vanligt"
+  },
+  "units": {
+    "b": "{n} B",
+    "kb": "{n} KB",
+    "mb": "{n} MB",
+    "gb": "{n} GB",
+    "tb": "{n} TB",
+    "pb": "{n} PB",
+    "day": "{n}d",
+    "hour": "{n}h",
+    "minute": "{n}m",
+    "second": "{n}s"
+  }
+}

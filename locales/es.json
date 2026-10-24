@@ -1,0 +1,675 @@
+{
+  "lang_name": "🇪🇸 Español",
+  "common": {
+    "not_available": "No disponible",
+    "never": "Nunca",
+    "unlimited": "Ilimitado",
+    "none": "Ninguno",
+    "yes": "Sí",
+    "no": "No",
+    "processing": "⌯ <b>Procesando</b>\n\n✦ Espera mientras se prepara la operación solicitada",
+    "state_expired": "⌯ <b>Sesión caducada</b>\n\n✦ La sesión de entrada guardada caducó después de diez minutos. Inicia la operación de nuevo",
+    "state_expired_popup": "Inicia la tarea de nuevo",
+    "action_cancelled": "⌯ <b>Operación cancelada</b>\n\n✦ La operación seleccionada se ha cancelado y su estado temporal se ha eliminado",
+    "unexpected_error": "⌯ <b>Se produjo un error inesperado</b>\n\n✦ La operación no pudo completarse debido al siguiente error: <code>{error}</code>",
+    "something_went_wrong": "Ocurrió un error al procesar esta acción, inténtalo de nuevo"
+  },
+  "buttons": {
+    "start": "Iniciar",
+    "confirm": "Confirmar",
+    "back": "Volver",
+    "subscribe": "Suscribirse",
+    "earn_points": "Ganar puntos",
+    "share_and_earn": "Compartir y ganar",
+    "link_account": "Vincular una cuenta",
+    "open_source": "Abrir canal",
+    "refresh_subscription": "Comprobar de nuevo",
+    "channel": "Canal de actualizaciones",
+    "help": "Ayuda",
+    "profile": "Perfil",
+    "contact_admin": "Contactar con soporte para otros métodos de pago",
+    "cancel": "Cancelar",
+    "delete": "Borrar",
+    "open": "Abrir",
+    "reject": "Rechazar"
+  },
+  "commands": {
+    "bcjson": {
+      "description": "Descargar la plantilla de difusión multilingüe"
+    },
+    "start": {
+      "description": "Iniciar el bot"
+    },
+    "help": {
+      "description": "Abrir el centro de ayuda"
+    },
+    "profile": {
+      "description": "Ver tu cuenta y tus puntos"
+    },
+    "premium": {
+      "description": "Ver las funciones de la suscripción"
+    },
+    "language": {
+      "description": "Cambiar el idioma del bot"
+    },
+    "login": {
+      "description": "Vincular una cuenta de Telegram"
+    },
+    "logout": {
+      "description": "Eliminar la cuenta vinculada"
+    },
+    "dl": {
+      "description": "Descargar una publicación de Telegram"
+    },
+    "bdl": {
+      "description": "Descargar un intervalo de publicaciones"
+    },
+    "clone": {
+      "description": "Transferir un canal completo"
+    },
+    "forcedownload": {
+      "description": "Administrar el modo de descarga forzada"
+    },
+    "thumb": {
+      "description": "Administrar la miniatura personalizada"
+    },
+    "caption": {
+      "description": "Administrar el procesamiento de descripciones"
+    },
+    "cancel": {
+      "description": "Cancelar la operación actual"
+    },
+    "stats": {
+      "description": "Ver las estadísticas del sistema"
+    },
+    "monitor": {
+      "description": "Supervisar un canal automáticamente"
+    },
+    "uploadch": {
+      "description": "Establecer un canal de destino para las subidas"
+    },
+    "rmuploadch": {
+      "description": "Eliminar el destino de subida"
+    },
+    "bc": {
+      "description": "Difundir un mensaje"
+    },
+    "add": {
+      "description": "Añadir ajustes administrativos"
+    },
+    "rm": {
+      "description": "Eliminar ajustes administrativos"
+    },
+    "create": {
+      "description": "Crear un enlace de regalo"
+    },
+    "logs": {
+      "description": "Descargar los registros del bot"
+    },
+    "admin": {
+      "description": "Administración"
+    }
+  },
+  "start": {
+    "welcome": "⌯ <b>Te damos la bienvenida al descargador multimedia</b>\n\n✦ Envía un enlace de una publicación de Telegram para descargar su contenido multimedia, incluido contenido de canales públicos o privados y canales que desactivan el reenvío. También puedes descargar varias publicaciones, transferir un canal completo, aplicar una miniatura personalizada a los archivos o enviar el contenido descargado directamente a otro canal\n\n✦ Cuenta vinculada: {account_status}"
+  },
+  "accounts": {
+    "status": {
+      "connected": "Conectada",
+      "not_connected": "No conectada"
+    },
+    "session_expired": "⌯ <b>La sesión vinculada ha caducado</b>\n\n✦ La cuenta de Telegram vinculada ya no está autorizada. Vuelve a vincular la cuenta antes de acceder a fuentes privadas",
+    "access": {
+      "login_required": "⌯ <b>Se requiere una cuenta vinculada</b>\n\n✦ El enlace compartido pertenece a una fuente privada o restringida a la que las cuentas de descarga no pueden acceder. Vincula una cuenta de Telegram que ya sea miembro del canal de origen y vuelve a enviar el enlace",
+      "not_member": "⌯ <b>Tu cuenta vinculada no es miembro</b>\n\n✦ La cuenta de Telegram vinculada al bot no puede acceder al canal del enlace compartido. Primero únete a ese canal usando la cuenta vinculada y después vuelve a enviar el enlace"
+    },
+    "login": {
+      "choose_account": "⌯ <b>Elige la cuenta que deseas vincular</b>\n\n✦ Selecciona si quieres vincular tu cuenta actual de Telegram u otra cuenta. La cuenta seleccionada debe ser ya miembro de cualquier canal privado desde el que quieras descargar",
+      "already_running": "⌯ <b>Ya hay un inicio de sesión en curso</b>\n\n✦ Completa o cancela el proceso de inicio de sesión actual antes de iniciar otro",
+      "already_connected": "⌯ <b>Ya hay una cuenta vinculada</b>\n\n✦ El número de teléfono <code>{phone_number}</code> está conectado actualmente. Elimínalo con /logout antes de vincular otra cuenta",
+      "share_contact": "⌯ <b>Comparte tu número de teléfono</b>\n\n✦ Usa el botón de abajo para compartir de forma segura el número de teléfono de tu cuenta actual de Telegram",
+      "enter_phone": "⌯ <b>Introduce el número de teléfono alternativo</b>\n\n✦ Envía manualmente el número de teléfono en formato internacional. Debe comenzar por <code>+</code> seguido del código de país, por ejemplo, <code>+12025550123</code>",
+      "invalid_phone": "⌯ <b>Número de teléfono no válido</b>\n\n✦ El número debe comenzar por <code>+</code> e incluir el código de país sin letras ni símbolos no admitidos. Inicia de nuevo el acceso o envía un número con el formato correcto",
+      "contact_mismatch": "⌯ <b>El contacto no coincide</b>\n\n✦ El contacto compartido no pertenece a la cuenta de Telegram que está utilizando el bot. Usa el botón proporcionado para compartir tu propio número o elige la opción de otra cuenta",
+      "contact_received": "⌯ <b>Número de teléfono recibido</b>\n\n✦ El bot está preparando la solicitud de autorización. Espera a que Telegram envíe el código de acceso",
+      "code_prompt": "⌯ <b>Telegram</b>\n\n✦ Introduce el código de Telegram solo con los botones numéricos\n✦ Borrar quita el último dígito y Confirmar envía el código",
+      "code_prompt_with_value": "⌯ <b>Telegram</b>\n\n✦ <code>{code}</code>\n✦ Introduce el código de Telegram solo con los botones numéricos\n✦ Borrar quita el último dígito y Confirmar envía el código",
+      "processing": "⌯ <b>Verificando la cuenta</b>\n\n✦ Se está comprobando el código y creando la sesión vinculada",
+      "password_prompt": "⌯ <b>Se requiere la verificación en dos pasos</b>\n\n✦ Envía como mensaje de texto la contraseña de verificación en dos pasos de esta cuenta de Telegram\n\n✦ Pista de la contraseña: <code>{hint}</code>",
+      "completed": "⌯ <b>Cuenta vinculada correctamente</b>\n\n✦ La cuenta de Telegram ya está conectada. Puedes acceder a canales privados siempre que esta cuenta ya sea miembro de ellos",
+      "cancelled": "⌯ <b>Vinculación de cuenta cancelada</b>\n\n✦ La sesión temporal de acceso se cerró y no se guardó ninguna información de la cuenta",
+      "restart_hint": "⌯ <b>Vuelve a empezar cuando quieras</b>\n\n✦ Usa /login cuando quieras iniciar un nuevo proceso de vinculación de cuenta",
+      "failed": "⌯ <b>No se pudo vincular la cuenta</b>\n\n✦ No se pudo completar el proceso de autorización. Vuelve a empezar y comprueba que el número de teléfono, el código de acceso y la contraseña sean correctos",
+      "flood_wait": "⌯ <b>Demasiados intentos de acceso</b>\n\n✦ Telegram ha limitado temporalmente las nuevas solicitudes de autorización. Inténtalo de nuevo después de {seconds} segundos",
+      "invalid_code": "⌯ <b>Código no válido o caducado</b>\n\n✦ El código fue rechazado o ha caducado. Introduce el código más reciente enviado por Telegram o cancela y vuelve a iniciar el acceso",
+      "invalid_password": "⌯ <b>Contraseña de verificación incorrecta</b>\n\n✦ La contraseña de verificación en dos pasos es incorrecta. Envía la contraseña correcta o cancela el proceso de acceso",
+      "code_empty_popup": "Introduce el código de Telegram antes de confirmar",
+      "invalid_code_popup": "El código no es válido o ha caducado",
+      "buttons": {
+        "my_account": "Mi cuenta actual",
+        "other_account": "Otra cuenta",
+        "share_phone": "Compartir mi número de teléfono"
+      },
+      "too_many_attempts": "⌯ <b>Tarea</b>\n\n✦ Telegram ha limitado temporalmente los intentos de inicio de sesión\n✦ Espera antes de usar /login otra vez",
+      "phone_banned": "⌯ <b>Telegram</b>\n\n✦ Este número está bloqueado en Telegram\n✦ Usa otra cuenta o contacta con el soporte de Telegram",
+      "hint_awaiting_contact": "⌯ <b>Comparte tu número de teléfono</b>\n\n✦ Usa el botón de abajo para compartir de forma segura el número de teléfono de tu cuenta actual de Telegram",
+      "hint_awaiting_account_type": "⌯ <b>Elige la cuenta que deseas vincular</b>\n\n✦ Selecciona si quieres vincular tu cuenta actual de Telegram u otra cuenta. La cuenta seleccionada debe ser ya miembro de cualquier canal privado desde el que quieras descargar",
+      "hint_sending_code": "En espera\nIntroduce el código de Telegram solo con los botones numéricos\nBorrar quita el último dígito y Confirmar envía el código",
+      "hint_awaiting_code": "Introduce el código de Telegram solo con los botones numéricos\nBorrar quita el último dígito y Confirmar envía el código"
+    },
+    "logout": {
+      "not_connected": "⌯ <b>ℹ No hay ninguna cuenta vinculada</b>\n\n✦ Actualmente no hay ninguna cuenta de Telegram conectada a tu perfil del bot",
+      "confirm": "⌯ <b>Eliminar la cuenta vinculada</b>\n\n✦ El número de teléfono <code>{phone_number}</code> se desconectará y se eliminará su sesión guardada. Confirma únicamente si deseas continuar",
+      "completed": "⌯ <b>Cuenta vinculada eliminada</b>\n\n✦ La sesión guardada de Telegram se eliminó correctamente. Puedes vincular otra cuenta en cualquier momento"
+    }
+  },
+  "subscription": {
+    "required": "⌯ <b>Suscripción obligatoria</b>\n\n✦ Únete a los canales indicados abajo antes de utilizar el bot y después pulsa el botón de comprobación\n\n✦ {channels}",
+    "completed": "⌯ <b>Suscripción verificada</b>\n\n✦ Tu membresía en los canales se verificó correctamente. Ya puedes continuar utilizando el bot",
+    "still_missing_popup": "Todavía debes unirte a todos los canales obligatorios"
+  },
+  "downloads": {
+    "invalid_link": "⌯ <b>Enlace de Telegram no válido</b>\n\n✦ Envía un enlace que apunte directamente a una publicación de Telegram, como <code>https://t.me/channel/123</code>",
+    "post_not_found": "⌯ <b>Publicación no encontrada</b>\n\n✦ La publicación solicitada no existe, fue eliminada o no es accesible para la cuenta de descarga seleccionada",
+    "nothing_to_download": "⌯ <b>Nada que descargar</b>\n\n✦ Esta publicación no tiene contenido multimedia ni texto para descargar, como un aviso de que cambió el nombre o la foto del canal",
+    "comment_unavailable": "⌯ <b>No se pudo resolver el comentario</b>\n\n✦ El enlace del comentario no apunta a un mensaje de debate accesible o Telegram rechazó el identificador del mensaje referenciado",
+    "client_unavailable": "⌯ <b>Cuenta de descarga no disponible</b>\n\n✦ Actualmente no hay ninguna cuenta de Telegram disponible para obtener este contenido. Inténtalo de nuevo más tarde o vincula tu propia cuenta",
+    "preparing": "⌯ <b>Preparando la descarga</b>\n\n✦ Se está recopilando la información del contenido multimedia antes de comenzar la transferencia",
+    "splitting": "⌯ <b>Dividiendo el archivo</b>\n\n✦ El archivo supera el límite de tamaño por parte y se está dividiendo en partes compatibles",
+    "file_too_large": "⌯ <b>El archivo supera el tamaño admitido</b>\n\n✦ Este archivo no puede procesarse para la acción de {action} porque su tamaño es superior a {maximum_size}",
+    "file_too_small": "⌯ <b>El archivo está vacío o dañado</b>\n\n✦ El contenido multimedia descargado es demasiado pequeño para considerarse válido o Telegram devolvió un archivo incompleto",
+    "file_missing": "⌯ <b>Falta el archivo descargado</b>\n\n✦ El archivo multimedia temporal no se encontró o estaba vacío antes de la subida",
+    "download_failed": "⌯ <b>La descarga ha fallado</b>\n\n✦ No se pudo obtener el contenido multimedia después de varios intentos. Comprueba el acceso de la cuenta a la fuente e inténtalo de nuevo",
+    "upload_failed": "⌯ <b>La subida ha fallado</b>\n\n✦ El contenido multimedia se descargó, pero no pudo entregarse. Telegram devolvió: <code>{error}</code>",
+    "flood_wait": "⌯ <b>Límite de frecuencia de Telegram</b>\n\n✦ Telegram ha solicitado una espera de {seconds} segundos antes de poder continuar con la subida",
+    "actions": {
+      "download": "descarga",
+      "upload": "subida"
+    },
+    "progress": {
+      "downloading": "Descargando",
+      "uploading": "Subiendo",
+      "body": "⌯ <b>{action}</b>\n\n✦ <code>{progress_bar}</code>\n\n✦ Transferido: {current_size} / {total_size}\n✦ Progreso: {percentage}%\n✦ Velocidad: {speed}/s\n✦ Tiempo restante: {eta}"
+    },
+    "parts": {
+      "item": "Parte {current} de {total}"
+    },
+    "album": {
+      "preparing": "⌯ <b>Álbum multimedia detectado</b>\n\n✦ El álbum contiene {count} elementos seleccionados que se procesarán en secuencia",
+      "processing": "⌯ <b>Procesando álbum multimedia</b>\n\n✦ Procesando el elemento {current} de {total}"
+    },
+    "single": {
+      "usage": "/dl\nAbre la publicación en Telegram y mantenla pulsada\nElige Copiar enlace y envíalo aquí\nPara varias publicaciones envía primero el enlace de la primera"
+    },
+    "batch": {
+      "usage": "/bdl\nAbre la publicación en Telegram y mantenla pulsada\nElige Copiar enlace y envíalo aquí\nPara varias publicaciones envía primero el enlace de la primera\nEnvía el enlace de la última publicación del mismo canal\nSe incluyen ambas publicaciones y todas las que hay entre ellas\nDespués elegirás los tipos de contenido",
+      "different_sources": "⌯ <b>Los enlaces pertenecen a chats diferentes</b>\n\n✦ El primer y el último enlace deben proceder del mismo canal o grupo de Telegram",
+      "invalid_order": "⌯ <b>Orden de publicaciones incorrecto</b>\n\n✦ El primer enlace debe apuntar a una publicación anterior a la del último enlace",
+      "invalid_links": "⌯ <b>Enlaces de lote no válidos</b>\n\n✦ Ambos valores deben ser enlaces válidos de publicaciones de Telegram procedentes de la misma fuente",
+      "starting": "⌯ <b>Descarga por lotes iniciada</b>\n\n✦ El bot procesará las publicaciones desde {start_id} hasta {end_id}. Total de publicaciones solicitadas: {total}",
+      "progress": "⌯ <b>Descarga por lotes en curso</b>\n\n✦ Elemento actual: {current} de {total}\n✦ ID de publicación: {message_id}\n✦ Descargados: {downloaded}\n✦ Omitidos: {skipped}\n✦ Fallidos: {failed}",
+      "completed": "⌯ <b>Operación por lotes finalizada</b>\n\n✦ Descargados: {downloaded}\n✦ Omitidos: {skipped}\n✦ Fallidos: {failed}",
+      "cancelled": "⌯ <b>Operación por lotes cancelada</b>\n\n✦ Las publicaciones restantes no se procesarán. El progreso guardado antes de la cancelación se ha eliminado",
+      "failed": "⌯ <b>Operación por lotes detenida</b>\n\n✦ Un error inesperado impidió procesar las publicaciones restantes",
+      "retrying": "⌯ <b>Reintentando elementos fallidos</b>\n\n✦ La pasada principal ha finalizado. Ahora se reintentarán {count} elementos que fallaron"
+    },
+    "disk_full": "⌯ <b>Tarea</b>\n\n✦ No hay suficiente espacio para descargar el archivo ahora\n✦ Inténtalo más tarde",
+    "paid": {
+      "not_purchased": "⌯ <b>Esta publicación requiere una compra con Telegram Stars</b>\n\n✦ Cómprala con la cuenta vinculada y envía el enlace de nuevo"
+    }
+  },
+  "tasks": {
+    "already_running": "⌯ <b>Ya hay otra tarea en ejecución</b>\n\n✦ Espera a que finalice la tarea activa o cancélala antes de iniciar otra operación",
+    "resumed": "⌯ <b>Tarea reanudada</b>\n\n✦ Se encontró una tarea interrumpida y continuará desde la última posición guardada",
+    "cancel_requested": "⌯ <b>Cancelación solicitada</b>\n\n✦ La operación activa se está deteniendo y los archivos temporales se eliminarán",
+    "input_cancelled": "⌯ <b>Sesión de entrada cancelada</b>\n\n✦ Se eliminó el estado pendiente de acceso, filtro o confirmación",
+    "none_to_cancel": "⌯ <b>ℹ No hay ninguna operación activa</b>\n\n✦ No hay ninguna tarea en ejecución ni una sesión de entrada pendiente que cancelar",
+    "completion": {
+      "single": {
+        "private": "⌯ <b>Descarga completada</b>\n\n✦ El contenido multimedia solicitado se descargó y se envió correctamente a este chat",
+        "saved_messages": "⌯ <b>Descarga completada</b>\n\n✦ El contenido multimedia solicitado se descargó y se entregó en los Mensajes guardados de tu cuenta vinculada",
+        "channel": "⌯ <b>Subida completada</b>\n\n✦ El contenido multimedia solicitado se entregó correctamente en <b>{channel_title}</b>\n\n✦ {message_link}"
+      },
+      "batch": {
+        "private": "⌯ <b>Tarea por lotes completada</b>\n\n✦ El bot terminó de procesar el intervalo seleccionado y entregó {count} elementos a este chat",
+        "saved_messages": "⌯ <b>Tarea por lotes completada</b>\n\n✦ El bot terminó de procesar el intervalo seleccionado y entregó {count} elementos a los Mensajes guardados de tu cuenta vinculada",
+        "channel": "⌯ <b>Subida por lotes completada</b>\n\n✦ El bot terminó de procesar el intervalo seleccionado y entregó {count} elementos al canal que seleccionaste"
+      },
+      "clone": {
+        "private": "⌯ <b>Transferencia del canal completada</b>\n\n✦ La tarea del canal finalizó y se entregaron {count} elementos a este chat",
+        "saved_messages": "⌯ <b>Transferencia del canal completada</b>\n\n✦ La tarea del canal finalizó y se entregaron {count} elementos a los Mensajes guardados de tu cuenta vinculada",
+        "channel": "⌯ <b>Transferencia del canal completada</b>\n\n✦ La tarea del canal finalizó y se entregaron {count} elementos al canal de destino que seleccionaste"
+      },
+      "monitor": {
+        "private": "⌯ <b>Publicación supervisada entregada</b>\n\n✦ Se detectó una nueva publicación y se entregó a este chat",
+        "saved_messages": "⌯ <b>Publicación supervisada entregada</b>\n\n✦ Se detectó una nueva publicación y se entregó a los Mensajes guardados de tu cuenta vinculada",
+        "channel": "⌯ <b>Publicación supervisada entregada</b>\n\n✦ Se detectó una nueva publicación y se entregó al canal de destino que seleccionaste"
+      }
+    }
+  },
+  "filters": {
+    "prompt": "⌯ <b>Elige el filtro de contenido</b>\n\n✦ Selecciona si deseas procesar todo el contenido, guardar únicamente los tipos de contenido seleccionados u omitir los tipos seleccionados. La sesión de selección permanecerá activa durante diez minutos",
+    "modes": {
+      "all": "Todo el contenido",
+      "save": "Guardar únicamente",
+      "skip": "Omitir seleccionados"
+    },
+    "types": {
+      "videos": "Vídeos",
+      "photos": "Fotos",
+      "audio": "Audio",
+      "files": "Archivos",
+      "text": "Texto",
+      "other": "Otros"
+    },
+    "summary": {
+      "all": "Todo el contenido compatible",
+      "save": "Guardar únicamente: {types}",
+      "skip": "Omitir: {types}",
+      "minimum_duration": "Duración mínima: {seconds} segundos",
+      "maximum_duration": "Duración máxima: {seconds} segundos"
+    }
+  },
+  "clone": {
+    "usage": "/clone\nEnvía el enlace del canal o su nombre de usuario\nPara un canal privado vincula con /login una cuenta que ya sea miembro",
+    "channel_not_found": "⌯ <b>Canal no encontrado</b>\n\n✦ El nombre de usuario o enlace del canal no es válido, o la cuenta vinculada no puede resolverlo",
+    "empty_channel": "⌯ <b>El canal está vacío</b>\n\n✦ No se encontraron publicaciones transferibles en el canal seleccionado",
+    "starting": "⌯ <b>Transferencia del canal iniciada</b>\n\n✦ El bot se está preparando para procesar {total} identificadores de publicaciones de <b>{channel_title}</b>",
+    "progress": "⌯ <b>Transferencia del canal en curso</b>\n\n✦ Elemento actual: {current} de {total}\n✦ ID de publicación: {message_id}\n✦ Descargados: {downloaded}\n✦ Omitidos: {skipped}\n✦ Fallidos: {failed}",
+    "flood_wait": "⌯ <b>Límite de frecuencia de Telegram</b>\n\n✦ La transferencia del canal se ha pausado durante {seconds} segundos",
+    "completed": "⌯ <b>Procesamiento del canal finalizado</b>\n\n✦ Descargados: {downloaded}\n✦ Omitidos: {skipped}\n✦ Fallidos: {failed}",
+    "cancelled": "⌯ <b>Transferencia del canal cancelada</b>\n\n✦ Las publicaciones restantes del canal no se procesarán",
+    "failed": "⌯ <b>La transferencia del canal ha fallado</b>\n\n✦ Un error inesperado impidió completar la transferencia"
+  },
+  "uploads": {
+    "channel": {
+      "usage": "/uploadch\nElegir canal\nLa suscripción al bot y Telegram Premium son diferentes\nEl bot sube unos 2 GB por parte\nUna cuenta Telegram Premium vinculada puede subir hasta 4 GB de una vez\nVincula la cuenta con /login\nAñade el bot y esa cuenta como administradores del canal de destino y elígelo con /uploadch\nSin canal de destino puedes elegir mensajes guardados\nLas partes enviadas como documentos deben unirse en su orden numérico\nLo más fácil ↣ agrega el bot como admin en tu canal o grupo y te pedirá confirmar aquí",
+      "current": "⌯ <b>Elegir canal</b>\n\n✦ {channel_id}\n✦ /uploadch\n✦ /rmuploadch",
+      "invalid_id": "⌯ <b>Identificador de canal no válido</b>\n\n✦ Envía el ID numérico del canal de Telegram, que normalmente comienza por <code>-100</code>\n✦ Lo más fácil ↣ agrega el bot como admin en tu canal o grupo y te pedirá confirmar aquí",
+      "bot_not_admin": "⌯ <b>Se requiere acceso de administrador para el bot</b>\n\n✦ Añade el bot como administrador del canal de destino antes de habilitar las subidas al canal\n✦ Lo más fácil ↣ agrega el bot como admin en tu canal o grupo y te pedirá confirmar aquí",
+      "user_not_admin": "⌯ <b>Se requiere tu acceso de administrador</b>\n\n✦ Debes ser propietario o administrador del canal de destino",
+      "access_denied": "⌯ <b>La verificación del canal ha fallado</b>\n\n✦ No se pudo acceder al canal o faltan los permisos de administrador necesarios",
+      "enabled": "⌯ <b>Canal de subida conectado</b>\n\n✦ Las futuras descargas se entregarán en <b>{channel_title}</b> hasta que elimines este destino",
+      "disabled": "⌯ <b>Canal de subida desactivado</b>\n\n✦ El bot perdió el acceso de administrador al canal seleccionado, por lo que la entrega al canal se desactivó automáticamente",
+      "removed": "⌯ <b>Canal de subida eliminado</b>\n\n✦ Las futuras descargas volverán al destino de entrega predeterminado",
+      "not_set": "⌯ <b>ℹ No hay ningún canal de subida configurado</b>\n\n✦ Actualmente tu perfil no tiene un canal de destino"
+    },
+    "auto": {
+      "start_first": "⌯ <b>Termina de vincular el canal</b>\n\n✦ Agregaste el bot a ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Toca Iniciar para registrarte en el bot y terminar la vinculación\n✦ Si no lo tocas en 24 horas el bot sale del canal",
+      "premium_only": "⌯ <b>Vincular un canal es para suscriptores</b>\n\n✦ Agregaste el bot a ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Recibir descargas en un canal o grupo es una función de la suscripción al bot\n✦ El bot ya salió\n✦ Suscríbete con el botón de abajo y luego agrega el bot otra vez",
+      "confirm": "⌯ <b>Confirmar canal de subida</b>\n\n✦ Agregaste el bot a ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Si confirmas las nuevas descargas y las publicaciones monitoreadas llegarán ahí\n✦ Si rechazas el bot sale\n✦ Si no respondes en 24 horas el bot sale solo",
+      "linked": "⌯ <b>Canal de subida vinculado</b>\n\n✦ Canal ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Las nuevas descargas y las publicaciones monitoreadas llegarán ahí\n✦ Envía /rmuploadch para quitarlo",
+      "no_rights": "⌯ <b>El bot no puede publicar ahí</b>\n\n✦ Canal ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ El bot salió porque no es admin o no puede publicar\n✦ Agrégalo otra vez como admin con permiso para publicar",
+      "user_not_admin": "⌯ <b>Tienes que ser admin ahí</b>\n\n✦ Canal ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ El canal de subida debe ser tuyo o debes ser admin\n✦ El bot ya salió",
+      "expired": "Esta solicitud ya caducó"
+    }
+  },
+  "forcedownload": {
+    "details": "⌯ <b>Modo de descarga forzada</b>\n\n✦ Cuando está habilitado, el bot descarga y sube cada elemento multimedia en lugar de copiarlo directamente. Esto resulta útil para aplicar una miniatura personalizada, reconstruir archivos o gestionar restricciones de reenvío\n\n✦ Estado actual: {status}",
+    "premium_required": "⌯ <b>Se requiere una suscripción</b>\n\n✦ El modo de descarga forzada está disponible para los suscriptores porque consume almacenamiento, ancho de banda y recursos de procesamiento adicionales",
+    "flag_removed": "⌯ <b>ℹ Se eliminó la opción --fdl</b>\n\n✦ La descarga forzada es ahora un modo permanente del usuario. Los suscriptores pueden administrarlo con /forcedownload en lugar de añadirlo a comandos individuales",
+    "enabled": "⌯ <b>Modo de descarga forzada habilitado</b>\n\n✦ Las futuras tareas de descarga, descarga por lotes, transferencia y supervisión obtendrán y subirán los archivos originales en lugar de copiar directamente las publicaciones",
+    "disabled": "⌯ <b>Modo de descarga forzada deshabilitado</b>\n\n✦ El bot podrá volver a copiar directamente las publicaciones sin restricciones y continuará descargando el contenido protegido cuando sea necesario",
+    "status": {
+      "enabled": "Habilitado",
+      "disabled": "Deshabilitado"
+    },
+    "buttons": {
+      "enable": "Habilitar descarga forzada",
+      "disable": "Deshabilitar descarga forzada"
+    }
+  },
+  "thumbnail": {
+    "not_set": "⌯ <b>No hay ninguna miniatura personalizada</b>\n\n✦ Primero envía una imagen al bot y después confírmala para utilizarla como portada de los archivos subidos compatibles",
+    "current": "⌯ <b>Miniatura personalizada actual</b>\n\n✦ Esta es la imagen guardada para las futuras subidas compatibles\n\n✦ Estado: {status}",
+    "confirm": "⌯ <b>Usar esta imagen como miniatura</b>\n\n✦ Confirma para guardar esta imagen como portada personalizada o cancela para eliminar la imagen temporal",
+    "saved": "⌯ <b>Miniatura guardada</b>\n\n✦ La imagen se guardó y habilitó para futuras subidas compatibles",
+    "download_failed": "⌯ <b>La descarga de la imagen ha fallado</b>\n\n✦ No se pudo guardar la imagen. Envíala de nuevo y asegúrate de que Telegram haya completado la subida",
+    "temp_missing": "⌯ <b>La imagen temporal no está disponible</b>\n\n✦ La sesión de confirmación caducó o la imagen temporal fue eliminada. Envía la imagen de nuevo",
+    "not_set_popup": "No hay ninguna miniatura guardada disponible",
+    "status": {
+      "enabled": "Habilitada",
+      "disabled": "Deshabilitada"
+    },
+    "buttons": {
+      "enable": "Habilitar miniatura",
+      "disable": "Deshabilitar miniatura"
+    }
+  },
+  "captions": {
+    "settings": "⌯ <b>Procesamiento de descripciones</b>\n\n✦ Elige cómo se deben gestionar las descripciones cuando el contenido multimedia sea copiado o subido\n\n✦ Modo actual: {current}",
+    "modes": {
+      "keep_all": "Conservar la descripción original",
+      "remove_all": "Eliminar las descripciones multimedia",
+      "remove_links_users": "Eliminar enlaces y nombres de usuario"
+    },
+    "buttons": {
+      "keep_all": "Conservar descripciones originales",
+      "remove_all": "Eliminar todas las descripciones",
+      "remove_links_users": "Eliminar enlaces y nombres de usuario"
+    },
+    "already_selected_popup": "Este modo de descripción ya está activo",
+    "updated_popup": "Modo de descripción actualizado"
+  },
+  "profile": {
+    "unavailable": "⌯ <b>Perfil no disponible</b>\n\n✦ No se pudo cargar tu registro de usuario guardado. Envía /start e inténtalo de nuevo",
+    "details": "⌯ <b>Tu perfil</b>\n\n✦ ID de usuario: <code>{user_id}</code>\n✦ Plan: {plan_status}\n✦ Caducidad del plan: {expiry_date}\n✦ Puntos diarios: {daily_points}/{daily_limit}\n✦ Restablecimiento diario: {reset_time}\n✦ Puntos de regalo: {gift_points}\n✦ Puntos de referidos: {referral_points}\n✦ Referidos: {referral_count}\n✦ Descarga forzada: {force_download_status}\n\n✦ Enlace de referido:\n✦ <code>{referral_link}</code>"
+  },
+  "plans": {
+    "free": "Gratuito",
+    "premium": "Suscriptor",
+    "monthly": "Mensual",
+    "yearly": "Anual"
+  },
+  "premium": {
+    "details": "⌯ <b>Suscripción</b>\n\n✦ Suscripción\n✦ Puedes tener hasta 5 tareas abiertas\n✦ Espera a que termine una o cancélala con /cancel\n✦ La suscripción permite saltarse la cola compartida\n✦ /clone\n✦ /monitor\n✦ /uploadch\n✦ /caption\n✦ /fdl\n✦ La suscripción al bot y Telegram Premium son diferentes",
+    "feature_required": "⌯ <b>Se requiere una suscripción</b>\n\n✦ Esta función está disponible para los suscriptores. Abre el menú de suscripción para consultar los planes disponibles",
+    "already_active": "⌯ <b>La suscripción está activa</b>\n\n✦ Tu suscripción permanecerá activa hasta el {expiry_date}",
+    "already_active_popup": "Tu suscripción está activa hasta el {expiry_date}",
+    "required_popup": "Esta función requiere una suscripción activa",
+    "granted": "⌯ <b>Suscripción activada</b>\n\n✦ Tu cuenta se actualizó correctamente. La suscripción actual caduca el {expiry_date}",
+    "removed": "⌯ <b>ℹ Suscripción eliminada</b>\n\n✦ Los modos exclusivos para suscriptores y los ajustes de destino se deshabilitaron para tu cuenta",
+    "buttons": {
+      "monthly": "Plan mensual",
+      "yearly": "Plan anual"
+    },
+    "granted_days": "⌯ <b>Suscripción</b>\n\n✦ Días añadidos: {days}\n✦ Vencimiento: {expiry_date}\n✦ Si quedaba tiempo estos días se han sumado a él"
+  },
+  "language": {
+    "select": "⌯ <b>Elige tu idioma</b>\n\n✦ Selecciona el idioma utilizado para los mensajes del bot y tu menú personal de comandos de Telegram",
+    "changed": "⌯ <b>Idioma cambiado</b>\n\n✦ Los mensajes y comandos de Telegram se mostrarán ahora en {language_name}",
+    "unavailable_popup": "El idioma seleccionado no está disponible"
+  },
+  "limits": {
+    "insufficient_points": "⌯ <b>No tienes suficientes puntos de descarga</b>\n\n✦ No tienes suficientes puntos para esta descarga. Tu saldo diario se restablecerá después de {time_left}, o puedes ganar más mediante referidos",
+    "insufficient_points_batch": "⌯ <b>No tienes suficientes puntos para este lote</b>\n\n✦ Esta operación requiere {required_points} puntos y tu saldo disponible actual es de {available_points}",
+    "reset_now": "Restableciendo ahora",
+    "cooldown": "⌯ <b>Espera antes de volver a descargar</b>\n\n✦ Puedes iniciar otra descarga gratuita después de {remaining_time}"
+  },
+  "referrals": {
+    "share_text": "Utiliza este descargador de Telegram y gana puntos mediante mi enlace de referido",
+    "new_referral": "⌯ <b>Se ha unido un nuevo referido</b>\n\n✦ {user_name} (<code>{user_id}</code>) se unió usando tu enlace. Has recibido {reward} puntos de referido",
+    "welcome_bonus": "⌯ <b>Bonificación de referido recibida</b>\n\n✦ Has recibido {bonus} puntos por unirte mediante el enlace de referido de otro usuario"
+  },
+  "gifts": {
+    "claim": {
+      "already_claimed": "⌯ <b>ℹ Regalo ya reclamado</b>\n\n✦ Este regalo se añadió anteriormente a tu cuenta y no puede reclamarse dos veces",
+      "invalid": "⌯ <b>Regalo no encontrado</b>\n\n✦ El enlace del regalo no es válido o ya no existe",
+      "inactive": "⌯ <b>El regalo está inactivo</b>\n\n✦ El administrador deshabilitó este regalo y ya no puede reclamarse",
+      "link_expired": "⌯ <b>El enlace del regalo ha caducado</b>\n\n✦ Ha finalizado el tiempo permitido para reclamar este regalo",
+      "limit_reached": "⌯ <b>Se alcanzó el límite del regalo</b>\n\n✦ Ya se utilizó el número máximo de reclamaciones permitidas",
+      "not_allowed": "⌯ <b>El regalo no está asignado a tu cuenta</b>\n\n✦ Este regalo solo puede ser reclamado por usuarios específicos y tu cuenta no está incluida",
+      "excluded": "⌯ <b>El regalo no está disponible para tu cuenta</b>\n\n✦ Tu cuenta está excluida de la reclamación de este regalo",
+      "completed": "⌯ <b>Regalo reclamado</b>\n\n✦ Se añadieron correctamente {value} puntos a tu cuenta",
+      "completed_with_expiry": "⌯ <b>Regalo reclamado</b>\n\n✦ Se añadieron {value} puntos a tu cuenta y permanecerán disponibles hasta el {expiry_date}",
+      "failed": "⌯ <b>No se pudo reclamar el regalo</b>\n\n✦ No se pudo aplicar el regalo a tu cuenta. Inténtalo de nuevo más tarde"
+    }
+  },
+  "help": {
+    "menu": {
+      "title": "⌯ <b>Centro de ayuda</b>\n\n✦ Elige una función de abajo para ver sus instrucciones y el uso recomendado"
+    },
+    "buttons": {
+      "single": "Descarga individual",
+      "batch": "Descarga por lotes",
+      "clone": "Transferencia de canal",
+      "monitor": "Supervisor de canal",
+      "channel_upload": "Canal de subida",
+      "forcedownload": "Descarga forzada",
+      "login": "Cuenta vinculada",
+      "points": "Puntos",
+      "premium": "Suscripción",
+      "other_uses": "Otros usos"
+    },
+    "features": {
+      "dl": "⌯ <b>Descargar una publicación</b>\n\n✦ /dl\n✦ Abre la publicación en Telegram y mantenla pulsada\n✦ Elige Copiar enlace y envíalo aquí\n✦ Para varias publicaciones envía primero el enlace de la primera\n✦ <code>https://t.me/example_channel/15</code>\n✦ Envía el enlace del canal o su nombre de usuario\n✦ Para un canal privado vincula con /login una cuenta que ya sea miembro\n✦ Tamaño:\n✦ El bot sube unos 2 GB por parte\n✦ Elige Descargar y dividir o Cancelar\n✦ Para recibir un archivo entero de hasta 4 GB vincula una cuenta Telegram Premium con /login y elige un canal con /uploadch",
+      "bdl": "⌯ <b>Descargar varias publicaciones</b>\n\n✦ /bdl\n✦ Abre la publicación en Telegram y mantenla pulsada\n✦ Elige Copiar enlace y envíalo aquí\n✦ Para varias publicaciones envía primero el enlace de la primera\n✦ Envía el enlace de la última publicación del mismo canal\n✦ Se incluyen ambas publicaciones y todas las que hay entre ellas\n✦ Después elegirás los tipos de contenido\n✦ <code>/bdl https://t.me/example_channel/15 https://t.me/example_channel/30</code>\n✦ Envía /cancel para elegir una tarea o /cancel seguido de su número",
+      "clone": "⌯ <b>Transferir un canal completo</b>\n\n✦ Suscripción\n✦ /clone\n✦ Envía el enlace del canal o su nombre de usuario\n✦ Para un canal privado vincula con /login una cuenta que ya sea miembro\n✦ /uploadch\n✦ Envía /cancel para elegir una tarea o /cancel seguido de su número",
+      "monitor": "⌯ <b>Supervisar nuevas publicaciones del canal</b>\n\n✦ Suscripción\n✦ /monitor\n✦ Envía el enlace del canal o su nombre de usuario\n✦ Para un canal privado vincula con /login una cuenta que ya sea miembro\n✦ Canal:\n✦ Filtros:\n✦ Los canales públicos usan una cuenta de descarga\n✦ Los privados se revisan cada hora con una sola cuenta a la vez y se cierra después\n✦ Las nuevas publicaciones se guardan en una cola y se entregan en orden\n✦ Detener seguimiento",
+      "channel_upload": "⌯ <b>Entregar contenido a otro canal</b>\n\n✦ Suscripción\n✦ /uploadch\n✦ La suscripción al bot y Telegram Premium son diferentes\n✦ El bot sube unos 2 GB por parte\n✦ Una cuenta Telegram Premium vinculada puede subir hasta 4 GB de una vez\n✦ Vincula la cuenta con /login\n✦ Añade el bot y esa cuenta como administradores del canal de destino y elígelo con /uploadch\n✦ Sin canal de destino puedes elegir mensajes guardados\n✦ Las partes enviadas como documentos deben unirse en su orden numérico\n✦ /rmuploadch\n✦ Lo más fácil ↣ agrega el bot como admin en tu canal o grupo y te pedirá confirmar aquí",
+      "forcedownload": "⌯ <b>Modo de descarga forzada</b>\n\n✦ Usa /forcedownload para hacer que el bot obtenga y suba cada archivo en lugar de copiar las publicaciones sin restricciones. Este modo resulta útil para miniaturas personalizadas y la reconstrucción de contenido",
+      "login": "⌯ <b>Vincular una cuenta de Telegram</b>\n\n✦ Usa /login y elige tu cuenta actual u otra cuenta. La cuenta vinculada debe ser ya miembro de los canales privados a los que quieras acceder. Los códigos de autorización se introducen únicamente mediante el teclado seguro\n✦ Introduce el código de Telegram solo con los botones numéricos\n✦ Borrar quita el último dígito y Confirmar envía el código\n✦ Envía el enlace del canal o su nombre de usuario\n✦ Para un canal privado vincula con /login una cuenta que ya sea miembro\n✦ /logout",
+      "points": "⌯ <b>Puntos de descarga</b>\n\n✦ Las descargas gratuitas utilizan puntos diarios, de regalo y de referidos. Comparte tu enlace personal para ganar más puntos:\n\n✦ <code>{referral_link}</code>",
+      "premium": "⌯ <b>Funciones de la suscripción</b>\n\n✦ /premium\n✦ Suscripción\n✦ Puedes tener hasta 5 tareas abiertas\n✦ Espera a que termine una o cancélala con /cancel\n✦ La suscripción permite saltarse la cola compartida\n✦ /clone\n✦ /monitor\n✦ /uploadch\n✦ /caption\n✦ /fdl\n✦ La suscripción al bot y Telegram Premium son diferentes",
+      "other_uses": "⌯ <b>Otras formas de utilizar el bot</b>\n\n✦ <b>Transferir un canal a otro:</b> Configura un destino usando /uploadch y después ejecuta /clone en el canal de origen. El contenido seleccionado se transferirá según tus filtros\n\n✦ <b>Sustituir las portadas de una serie completa:</b> Envía la nueva imagen de portada al bot y confírmala, habilita el modo de descarga forzada y después ejecuta /bdl usando los enlaces del primer y último episodio. Los archivos se descargarán y subirán usando la portada seleccionada cuando sea compatible"
+    }
+  },
+  "monitor": {
+    "login_required": "⌯ <b>Vincular una cuenta de Telegram</b>\n\n✦ Envía el enlace del canal o su nombre de usuario\n✦ Para un canal privado vincula con /login una cuenta que ya sea miembro",
+    "usage": "⌯ <b>Supervisar nuevas publicaciones del canal</b>\n\n✦ {current_status}\n✦ /monitor\n✦ Envía el enlace del canal o su nombre de usuario\n✦ Para un canal privado vincula con /login una cuenta que ya sea miembro\n✦ Canal:\n✦ Filtros:\n✦ Los canales públicos usan una cuenta de descarga\n✦ Los privados se revisan cada hora con una sola cuenta a la vez y se cierra después\n✦ Las nuevas publicaciones se guardan en una cola y se entregan en orden\n✦ Detener seguimiento",
+    "invalid_channel_id": "⌯ <b>Identificador de canal no válido</b>\n\n✦ Utiliza un ID numérico de canal de Telegram, que normalmente comienza por <code>-100</code>",
+    "invalid_action": "⌯ <b>Acción de supervisión no válida</b>\n\n✦ Usa <code>on</code> para iniciar la supervisión o <code>off</code> para detenerla",
+    "not_active": "⌯ <b>ℹ El supervisor no está activo</b>\n\n✦ Tu cuenta no está supervisando actualmente el canal especificado",
+    "already_active": "⌯ <b>ℹ Ya hay un supervisor activo</b>\n\n✦ Detén el canal supervisado actualmente antes de seleccionar otro",
+    "access_denied": "⌯ <b>Acceso al canal denegado</b>\n\n✦ La cuenta vinculada no puede abrir el canal especificado o el identificador es incorrecto",
+    "start_failed": "⌯ <b>Inicia la tarea de nuevo</b>\n\n✦ Envía el enlace del canal o su nombre de usuario\n✦ Para un canal privado vincula con /login una cuenta que ya sea miembro",
+    "started": "⌯ <b>Supervisar nuevas publicaciones del canal</b>\n\n✦ Canal: {channel_title}\n✦ Filtros: {filter_status}\n✦ Los canales públicos usan una cuenta de descarga\n✦ Los privados se revisan cada hora con una sola cuenta a la vez y se cierra después\n✦ Las nuevas publicaciones se guardan en una cola y se entregan en orden",
+    "stopped": "⌯ <b>Supervisor del canal detenido</b>\n\n✦ Las nuevas publicaciones del canal seleccionado ya no se procesarán automáticamente",
+    "session_stopped": "⌯ <b>Supervisor detenido</b>\n\n✦ La sesión vinculada de Telegram caducó o fue revocada, por lo que la supervisión automática se deshabilitó",
+    "status": {
+      "active": "Activo para el canal <code>{channel_id}</code>",
+      "inactive": "Inactivo"
+    },
+    "stop_button": "Detener seguimiento",
+    "source_lost": "⌯ <b>Monitoreo del canal detenido</b>\n\n✦ Canal ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Tu cuenta vinculada no pudo abrirlo durante un día entero\n✦ Puede que lo borraran o lo hicieran privado o que la cuenta saliera\n✦ Para monitorearlo otra vez asegúrate de que la cuenta sea miembro y envía /monitor"
+  },
+  "stats": {
+    "system": "⌯ <b>Estadísticas del sistema</b>\n\n✦ Tiempo de actividad: {uptime}\n✦ Disco: {disk_usage} / {disk_total} ({disk_percent}%)\n✦ Memoria: {ram_percent}%\n✦ CPU: {cpu_percent}%\n✦ Red enviada: {sent}\n✦ Red recibida: {received}",
+    "admin": "⌯ <b>Estadísticas de usuarios</b>\n\n✦ Usuarios totales: {total_users}\n✦ Suscriptores: {total_premium}\n✦ Añadidos por el administrador: {premium_by_admin}\n✦ Pagados con Stars: {premium_by_stars}",
+    "public": "⌯ <b>Estadísticas del bot</b>\n\n✦ Tiempo activo: {uptime}\n✦ Descargas totales: {total_downloads}"
+  },
+  "payments": {
+    "monthly": {
+      "title": "Suscripción mensual",
+      "description": "Activar las funciones de suscriptor durante 30 días"
+    },
+    "yearly": {
+      "title": "Suscripción anual",
+      "description": "Activar las funciones de suscriptor durante 365 días"
+    },
+    "total_label": "Total de la suscripción",
+    "invalid_plan_popup": "El plan de suscripción seleccionado no es válido",
+    "invoice_failed_popup": "No se pudo crear la factura de pago",
+    "unrecognized": "⌯ <b>Plan de pago no reconocido</b>\n\n✦ Se recibió el pago, pero no se pudo identificar su plan de suscripción. Contacta con soporte y proporciona la información del pago",
+    "activation_failed": "⌯ <b>La activación de la suscripción ha fallado</b>\n\n✦ Se recibió el pago, pero la base de datos no pudo activar la suscripción. Contacta con soporte para obtener ayuda manual",
+    "completed": "⌯ <b>Suscripción activada</b>\n\n✦ El plan {plan_name} está ahora activo y caducará el {expiry_date}"
+  },
+  "broadcast": {
+    "json": {
+      "file_required": "⌯ <b>Se requiere el archivo JSON de difusión</b>\n\n✦ Responde a un archivo JSON multilingüe y usa <code>/bc .</code>",
+      "invalid_file": "⌯ <b>Archivo de difusión no válido</b>\n\n✦ El documento respondido debe ser un archivo JSON",
+      "validation_failed": "⌯ <b>La validación del archivo de difusión ha fallado</b>\n\n✦ No se pudo aceptar el archivo: <code>{error}</code>",
+      "confirm": "⌯ <b>Confirmar difusión multilingüe</b>\n\n✦ El archivo contiene {language_count} idiomas utilizables. Los usuarios recibirán el idioma que tengan guardado, después su idioma base y finalmente el inglés como última alternativa\n\n✦ Filtros: {filters}",
+      "how_to": "⌯ <b>Difusión multilingüe</b>\n\n✦ Toca el botón de abajo para recibir una plantilla JSON que contiene todos los idiomas disponibles. Completa el valor <code>text</code> para cada idioma que desees, luego sube el archivo y respóndelo con <code>/bc .</code> — los idiomas vacíos usarán el inglés como respaldo",
+      "template_sent": "⌯ <b>Plantilla de difusión</b>\n\n✦ El archivo contiene {language_count} idiomas y fue generado a partir de los archivos de idioma actuales"
+    },
+    "usage": "⌯ <b>Difundir un mensaje</b>\n\n✦ Responde al mensaje que quieras enviar y después usa /bc. Los filtros opcionales incluyen <code>-only ID_DE_USUARIO</code> y <code>-rm ID_DE_USUARIO --prem</code>",
+    "invalid_message": "⌯ <b>Mensaje de difusión no disponible</b>\n\n✦ El mensaje respondido no tiene un identificador válido de Telegram",
+    "confirm": "⌯ <b>Confirmar la difusión</b>\n\n✦ ID del mensaje: <code>{message_id}</code>\n✦ Filtros: {filters}\n\n✦ Elige si deseas enviarlo normalmente o enviarlo y fijarlo",
+    "starting": "⌯ <b>Difusión iniciada</b>\n\n✦ El mensaje se está enviando a los usuarios seleccionados",
+    "progress": "⌯ <b>Difusión en curso</b>\n\n✦ Procesados: {processed}/{total}\n✦ Correctos: {successful}\n✦ Fallidos: {failed}",
+    "completed": "⌯ <b>Difusión completada</b>\n\n✦ Usuarios de destino: {total}\n✦ Correctos: {successful}\n✦ Fallidos: {failed}",
+    "cancelled": "⌯ <b>Difusión cancelada</b>\n\n✦ La operación se detuvo después de procesar {processed} usuarios",
+    "buttons": {
+      "normal": "Enviar normalmente",
+      "pin": "Enviar y fijar",
+      "get_template": "Obtener plantilla JSON"
+    },
+    "filters": {
+      "none": "Sin filtros",
+      "summary": "Solo usuarios: {only_count}, usuarios excluidos: {excluded_count}, excluir suscriptores: {exclude_premium}"
+    }
+  },
+  "admin": {
+    "users": {
+      "new_language": "⌯ <b>Idioma no disponible detectado</b>\n\n✦ Usuario: {first_name}\n✦ ID de usuario: <code>{user_id}</code>\n✦ Código detectado: <code>{language_code}</code>",
+      "new_user": "⌯ <b>Se ha unido un nuevo usuario</b>\n\n✦ Nombre: {first_name} {last_name}\n✦ ID de usuario: <code>{user_id}</code>\n✦ Nombre de usuario: {username}\n✦ Usuarios totales: {total_users}",
+      "exported": "⌯ <b>Exportación de usuarios completada</b>\n\n✦ El archivo adjunto contiene {count} registros de usuarios"
+    },
+    "payments": {
+      "new_subscription": "⌯ <b>Nueva suscripción pagada</b>\n\n✦ Usuario: {user_name}\n✦ ID de usuario: <code>{user_id}</code>\n✦ Plan: {plan_name}\n✦ Importe: {amount} Stars"
+    },
+    "pool": {
+      "insufficient": "⌯ <b>El grupo de cuentas de descarga está incompleto</b>\n\n✦ Cuentas cargadas actualmente: {current}\n✦ Cuentas adicionales necesarias: {missing}"
+    },
+    "gifts": {
+      "create_usage": "⌯ <b>Crear un regalo</b>\n\n✦ Usa <code>/create -gift --value PUNTOS</code>. Los ajustes opcionales incluyen <code>--linkexpiry DDHHMM</code>, <code>--giftexpiry DDHHMM</code>, <code>--onlyuser [IDS]</code>, <code>--exceptionuser [IDS]</code> y <code>--limit NÚMERO</code>",
+      "value_required": "⌯ <b>Se requiere el valor del regalo</b>\n\n✦ Proporciona un número positivo después de <code>--value</code>",
+      "user_filter_conflict": "⌯ <b>Filtros de usuarios en conflicto</b>\n\n✦ Un regalo no puede utilizar al mismo tiempo los filtros de usuarios permitidos y usuarios excluidos",
+      "invalid_duration": "⌯ <b>Duración no válida</b>\n\n✦ Utiliza el formato de seis dígitos <code>DDHHMM</code> para las duraciones del regalo",
+      "invalid_values": "⌯ <b>Ajustes del regalo no válidos</b>\n\n✦ Comprueba los identificadores de usuario, el límite de reclamaciones y todos los valores proporcionados",
+      "created": "⌯ <b>Regalo creado</b>\n\n✦ El enlace del regalo está listo:\n✦ <code>{gift_link}</code>",
+      "empty": "⌯ <b>ℹ No hay regalos activos</b>\n\n✦ Actualmente no hay ningún enlace de regalo activo",
+      "list_title": "⌯ <b>Regalos activos</b>\n\n✦ Los siguientes enlaces de regalo están disponibles actualmente",
+      "list_item": "<b>Regalo:</b> <code>{gift_pid}</code>\nValor: {value}\nReclamaciones: {usage_count}/{usage_limit}\nCaducidad del enlace: {expiry}\nCreado: {created_at}\nEnlace: <code>{gift_link}</code>",
+      "remove_usage": "⌯ <b>Eliminar un regalo</b>\n\n✦ Usa <code>/rm -gift --pid ID_DEL_REGALO</code>",
+      "not_found": "⌯ <b>Regalo no encontrado</b>\n\n✦ No existe ningún regalo activo con el identificador proporcionado",
+      "remove_confirm": "⌯ <b>Desactivar regalo</b>\n\n✦ Regalo: <code>{gift_pid}</code>\n✦ Valor: {value}\n✦ Reclamaciones: {usage_count}\n\n✦ Confirma para impedir cualquier reclamación futura",
+      "deactivated": "⌯ <b>Regalo desactivado</b>\n\n✦ El regalo <code>{gift_pid}</code> ya no puede reclamarse"
+    },
+    "add": {
+      "usage": "⌯ <b>Añadir ajustes administrativos</b>\n\n✦ Usa /add con <code>-premium</code>, <code>-lang</code> o <code>-frcch</code>"
+    },
+    "remove": {
+      "usage": "⌯ <b>Eliminar ajustes administrativos</b>\n\n✦ Usa /rm con <code>-premium</code>, <code>-gift</code> o <code>-frcch</code>"
+    },
+    "premium": {
+      "add_usage": "⌯ <b>Suscripción</b>\n\n✦ /admin\n✦ Elige usuarios o envía sus identificadores numéricos\n✦ Días\n✦ <code>/add -premium --user [123456789] --days 30</code>",
+      "added": "⌯ <b>Actualización de suscripciones completada</b>\n\n✦ Usuarios actualizados: {users}\n✦ Usuarios no encontrados: {missing}",
+      "remove_usage": "⌯ <b>Eliminar una suscripción</b>\n\n✦ Usa <code>/rm -premium --user [IDS_DE_USUARIO]</code>",
+      "removed": "⌯ <b>Eliminación de suscripciones completada</b>\n\n✦ Usuarios actualizados: {users}\n✦ Usuarios no encontrados o inactivos: {missing}"
+    },
+    "languages": {
+      "reply_to_json": "⌯ <b>Se requiere un archivo de idioma</b>\n\n✦ Responde a un archivo JSON de idioma válido cuando utilices <code>/add -lang</code>",
+      "json_required": "⌯ <b>Se requiere un archivo JSON</b>\n\n✦ El documento respondido debe utilizar la extensión <code>.json</code>",
+      "already_exists": "⌯ <b>ℹ El idioma ya existe</b>\n\n✦ El idioma <code>{language_code}</code> ya está instalado. Añade <code>--update</code> para sustituirlo",
+      "invalid_json": "⌯ <b>Archivo de idioma no válido</b>\n\n✦ No se pudo cargar el archivo JSON: <code>{error}</code>",
+      "added": "⌯ <b>Idioma añadido</b>\n\n✦ El idioma <code>{language_code}</code> ya está disponible",
+      "updated": "⌯ <b>Idioma actualizado</b>\n\n✦ El idioma <code>{language_code}</code> se volvió a cargar correctamente"
+    },
+    "force_subscription": {
+      "empty": "⌯ <b>ℹ No hay canales obligatorios</b>\n\n✦ Actualmente no hay ningún canal de suscripción obligatoria configurado",
+      "list_title": "⌯ <b>Canales obligatorios</b>\n\n✦ Actualmente se exige la suscripción a los siguientes canales",
+      "list_item": "Enlace: {link}\nID del canal: <code>{channel_id}</code>\nUsuarios unidos: {joined}\nLímite: {limit}",
+      "add_usage": "⌯ <b>Añadir un canal obligatorio</b>\n\n✦ Usa <code>/add -frcch --link ENLACE_DEL_CANAL --id ID_DEL_CANAL --limit NÚMERO</code>",
+      "permission_required": "⌯ <b>Se requiere permiso de administrador</b>\n\n✦ El bot debe ser administrador y tener permiso para invitar usuarios",
+      "added": "⌯ <b>Canal obligatorio añadido</b>\n\n✦ Canal: {channel_title}\n✦ Límite de usuarios unidos: {limit}",
+      "add_failed": "⌯ <b>No se pudo añadir el canal</b>\n\n✦ Comprueba el identificador y el enlace del canal, además de los permisos de administrador del bot",
+      "remove_usage": "⌯ <b>Eliminar un canal obligatorio</b>\n\n✦ Usa <code>/rm -frcch ID_DEL_CANAL</code> o proporciona el enlace guardado",
+      "removed": "⌯ <b>Canal obligatorio eliminado</b>\n\n✦ La suscripción al canal ya no es obligatoria",
+      "not_found": "⌯ <b>Canal obligatorio no encontrado</b>\n\n✦ Ningún canal guardado coincide con el identificador o enlace proporcionado"
+    },
+    "logs": {
+      "not_found": "⌯ <b>Directorio de registros no disponible</b>\n\n✦ El directorio de registros del bot no existe",
+      "empty": "⌯ <b>No hay registros disponibles</b>\n\n✦ No se encontraron archivos de registro del bot que no estén vacíos",
+      "file_caption": "⌯ <b>Registro del bot</b>\n\n✦ Archivo: <code>{filename}</code>",
+      "upload_failed": "⌯ <b>No se pudo subir el registro</b>\n\n✦ Archivo: <code>{filename}</code>\n✦ Error: <code>{error}</code>"
+    }
+  },
+  "queue": {
+    "accepted": "⌯ <b>Tu tarea se ha guardado</b>\n\n✦ Tarea ↣ {task_id}\n✦ Envía /cancel para elegir una tarea o /cancel seguido de su número\n✦ <code>/cancel {task_id}</code>",
+    "waiting_free": "⌯ <b>En espera</b>\n\n✦ Personas delante de ti: {ahead}\n✦ La descarga empieza cuando haya un espacio libre\n✦ La suscripción permite saltarse la cola compartida",
+    "waiting_premium": "⌯ <b>En espera</b>\n\n✦ Tus tareas anteriores: {ahead}\n✦ Tus tareas se ejecutan una tras otra",
+    "limit_free": "⌯ <b>Tarea</b>\n\n✦ Ya tienes una tarea abierta\n✦ Espera a que termine o cancélala con /cancel\n✦ Puedes tener hasta 5 tareas abiertas\n✦ Espera a que termine una o cancélala con /cancel",
+    "limit_premium": "⌯ <b>Tarea</b>\n\n✦ Puedes tener hasta {limit} tareas abiertas\n✦ Espera a que termine una o cancélala con /cancel",
+    "lost_after_restart": "⌯ <b>Inicia la tarea de nuevo</b>\n\n✦ Tarea ↣ {task_id}\n✦ Abre la publicación en Telegram y mantenla pulsada\n✦ Elige Copiar enlace y envíalo aquí\n✦ Para varias publicaciones envía primero el enlace de la primera",
+    "cancel_usage": "Envía /cancel para elegir una tarea o /cancel seguido de su número\n<code>/cancel 123</code>",
+    "cancelled_one": "La tarea {task_id} se ha cancelado",
+    "not_found": "La tarea {task_id} ya terminó o no te pertenece",
+    "choose_to_cancel": "⌯ <b>Cancelar Tarea</b>\n\n✦ Envía /cancel para elegir una tarea o /cancel seguido de su número",
+    "cancelled_popup": "Cancelar",
+    "not_found_popup": "Inicia la tarea de nuevo",
+    "buttons": {
+      "cancel": "Cancelar Tarea",
+      "upgrade": "Suscripción",
+      "cancel_task": "Tarea {task_id} {kind} {status}",
+      "cancel_all": "Cancelar Tarea /cancel"
+    },
+    "kinds": {
+      "dl": "Descargar una publicación",
+      "bdl": "Descargar varias publicaciones",
+      "clone": "Transferir un canal completo",
+      "task": "Tarea",
+      "monitor": "Supervisar nuevas publicaciones del canal"
+    },
+    "status": {
+      "queued": "En espera",
+      "running": "En curso"
+    },
+    "task_number": "Tarea {task_id}"
+  },
+  "spam": {
+    "per_second": "No envíes más de un mensaje por segundo",
+    "per_minute": "No envíes más de 20 mensajes por minuto\nEste bot recibe enlaces de descarga\nEspera a que termine este minuto",
+    "buttons": "Has pulsado más de 20 botones en un minuto\nEspera antes de continuar\nSi se repite la infracción el tiempo de espera se duplica"
+  },
+  "flow": {
+    "first_link": "⌯ <b>Descargar una publicación</b>\n\n✦ Abre la publicación en Telegram y mantenla pulsada\n✦ Elige Copiar enlace y envíalo aquí\n✦ Para varias publicaciones envía primero el enlace de la primera\n✦ <code>https://t.me/example_channel/15</code>",
+    "last_link": "⌯ <b>Descargar varias publicaciones</b>\n\n✦ Envía el enlace de la última publicación del mismo canal\n✦ Se incluyen ambas publicaciones y todas las que hay entre ellas\n✦ Después elegirás los tipos de contenido",
+    "channel": "⌯ <b>Elegir canal</b>\n\n✦ Envía el enlace del canal o su nombre de usuario\n✦ Para un canal privado vincula con /login una cuenta que ya sea miembro\n✦ <code>https://t.me/example_channel</code>",
+    "pick_channel": "Elegir canal",
+    "invalid_channel": "Envía el enlace del canal o su nombre de usuario\nPara un canal privado vincula con /login una cuenta que ya sea miembro",
+    "upload_channel": "⌯ <b>Elige un canal de subida</b>\n\n✦ Lo más fácil ↣ agrega el bot como admin con permiso para publicar en tu canal o grupo\n✦ El bot te enviará aquí una confirmación y tocas Confirmar\n✦ O toca abajo el botón para elegir el canal\n✦ O envía el enlace del canal, su usuario o el ID que empieza con <code>-100</code>\n✦ Esta función necesita suscripción al bot"
+  },
+  "panel": {
+    "title": "⌯ <b>Administración</b>\n\n✦ Suscripción / Regalo / Canales obligatorios / Difusión",
+    "premium": "Suscripción",
+    "gift": "Regalo",
+    "fsub": "Canales obligatorios",
+    "broadcast": "Difusión",
+    "users": "Exportar usuarios",
+    "language": "Archivos de idioma",
+    "gifts": "Regalos activos",
+    "choose_user": "Elige usuarios o envía sus identificadores numéricos",
+    "selected_users": "Todos los usuarios ↣ {users}",
+    "selected_channel": "Elegir canal ↣ {channel_id}",
+    "custom": "Otro número",
+    "remove_premium": "Cancelar Suscripción",
+    "days": "Días ↣ {days}",
+    "value": "Puntos del regalo",
+    "link_days": "Validez del enlace en días / En la validez del regalo cero significa que no caduca",
+    "point_days": "Validez de los puntos en días / En la validez del regalo cero significa que no caduca",
+    "limit": "Máximo de canjes",
+    "only_users": "Permitir usuarios concretos",
+    "exclude_users": "Excluir usuarios",
+    "send_broadcast": "Envía aquí el mensaje de difusión\nRevisa la copia y elige los destinatarios\nDespués pulsa Confirmar",
+    "send_language": "Envía un archivo JSON con el código del idioma como nombre por ejemplo ar.json\nEl archivo existente solo se sustituye cuando el nuevo es válido",
+    "enter_value": "Envía un número o identificadores de usuario separados por comas\nTu respuesta se borra y se actualiza el menú",
+    "invalid_value": "Envía un número válido\nEn la validez del regalo cero significa que no caduca",
+    "audience_all": "Todos los usuarios",
+    "audience_premium": "Suscriptores",
+    "audience_free": "Usuarios gratuitos",
+    "admins": "Administradores",
+    "send_admin": "Envía el ID numérico del usuario o reenvía uno de sus mensajes\nPulsa un administrador abajo para quitarlo",
+    "admin_added": "Administrador añadido: {user_id}",
+    "admin_removed": "Administrador eliminado: {user_id}",
+    "admin_exists": "Este usuario ya es administrador",
+    "no_admins": "Aún no hay administradores",
+    "owner_only": "Solo los propietarios gestionan administradores"
+  },
+  "large": {
+    "saved": "Enviar a mis mensajes guardados",
+    "split": "Descargar y dividir",
+    "help_button": "Explicar",
+    "split_notice": "⌯ <b>Descargar y dividir</b>\n\n✦ Tamaño: {size}\n✦ El bot sube unos 2 GB por parte\n✦ Elige Descargar y dividir o Cancelar\n✦ Para recibir un archivo entero de hasta 4 GB vincula una cuenta Telegram Premium con /login y elige un canal con /uploadch",
+    "premium_notice": "⌯ <b>Enviar a mis mensajes guardados</b>\n\n✦ Tamaño: {size}\n✦ Tu cuenta Telegram Premium vinculada puede subir el archivo entero a tus mensajes guardados\n✦ Con /uploadch puedes elegir un canal de destino\n✦ También puedes dividirlo",
+    "help": "⌯ <b>Explicar</b>\n\n✦ La suscripción al bot y Telegram Premium son diferentes\n✦ El bot sube unos 2 GB por parte\n✦ Una cuenta Telegram Premium vinculada puede subir hasta 4 GB de una vez\n✦ Vincula la cuenta con /login\n✦ Añade el bot y esa cuenta como administradores del canal de destino y elígelo con /uploadch\n✦ Sin canal de destino puedes elegir mensajes guardados\n✦ Las partes enviadas como documentos deben unirse en su orden numérico"
+  },
+  "referral_check": {
+    "question": "⌯ <b>Verificación rápida</b>\n\n✦ Resuelve esto para confirmar que eres una persona real y conservar tu referido\n\n✦ {a} + {b} = ?",
+    "wrong": "⌯ <b>Respuesta incorrecta</b>\n\n✦ Inténtalo de nuevo. Intentos restantes: {left}",
+    "failed": "⌯ <b>Referido no contado</b>\n\n✦ Tu referido no se contó porque no se resolvió la verificación. Aún puedes usar el bot con normalidad"
+  },
+  "units": {
+    "b": "{n} B",
+    "kb": "{n} KB",
+    "mb": "{n} MB",
+    "gb": "{n} GB",
+    "tb": "{n} TB",
+    "pb": "{n} PB",
+    "day": "{n}d",
+    "hour": "{n}h",
+    "minute": "{n}m",
+    "second": "{n}s"
+  }
+}

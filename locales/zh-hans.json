@@ -1,0 +1,675 @@
+{
+  "lang_name": "🇨🇳 简体中文",
+  "common": {
+    "not_available": "不可用",
+    "never": "永不",
+    "unlimited": "无限制",
+    "none": "无",
+    "yes": "是",
+    "no": "否",
+    "processing": "⌯ <b>正在处理</b>\n\n✦ 请稍候，正在准备您请求的操作。",
+    "state_expired": "⌯ <b>会话已过期</b>\n\n✦ 保存的输入会话已在十分钟后过期。请重新开始此操作。",
+    "state_expired_popup": "请重新开始任务",
+    "action_cancelled": "⌯ <b>操作已取消</b>\n\n✦ 所选操作已取消，其临时状态也已删除。",
+    "unexpected_error": "⌯ <b>发生意外错误</b>\n\n✦ 由于以下错误，操作无法完成：<code>{error}</code>",
+    "something_went_wrong": "处理此操作时出错，请重试"
+  },
+  "buttons": {
+    "start": "开始",
+    "confirm": "确认",
+    "back": "返回",
+    "subscribe": "订阅",
+    "earn_points": "获取积分",
+    "share_and_earn": "分享并获取积分",
+    "link_account": "关联账户",
+    "open_source": "打开频道",
+    "refresh_subscription": "再次检查",
+    "channel": "更新频道",
+    "help": "帮助",
+    "profile": "个人资料",
+    "contact_admin": "联系支持获取其他支付方式",
+    "cancel": "取消",
+    "delete": "删除",
+    "open": "打开",
+    "reject": "拒绝"
+  },
+  "commands": {
+    "bcjson": {
+      "description": "下载多语言广播模板"
+    },
+    "start": {
+      "description": "启动机器人"
+    },
+    "help": {
+      "description": "打开帮助中心"
+    },
+    "profile": {
+      "description": "查看账户和积分"
+    },
+    "premium": {
+      "description": "查看订阅功能"
+    },
+    "language": {
+      "description": "更改机器人语言"
+    },
+    "login": {
+      "description": "关联 Telegram 账户"
+    },
+    "logout": {
+      "description": "移除已关联账户"
+    },
+    "dl": {
+      "description": "下载一条 Telegram 帖子"
+    },
+    "bdl": {
+      "description": "下载一定范围内的帖子"
+    },
+    "clone": {
+      "description": "转移整个频道"
+    },
+    "forcedownload": {
+      "description": "管理强制下载模式"
+    },
+    "thumb": {
+      "description": "管理自定义缩略图"
+    },
+    "caption": {
+      "description": "管理说明文字处理"
+    },
+    "cancel": {
+      "description": "取消当前操作"
+    },
+    "stats": {
+      "description": "查看系统统计信息"
+    },
+    "monitor": {
+      "description": "自动监控频道"
+    },
+    "uploadch": {
+      "description": "设置上传目标频道"
+    },
+    "rmuploadch": {
+      "description": "移除上传目标频道"
+    },
+    "bc": {
+      "description": "广播消息"
+    },
+    "add": {
+      "description": "添加管理设置"
+    },
+    "rm": {
+      "description": "移除管理设置"
+    },
+    "create": {
+      "description": "创建礼物链接"
+    },
+    "logs": {
+      "description": "下载机器人日志"
+    },
+    "admin": {
+      "description": "管理"
+    }
+  },
+  "start": {
+    "welcome": "⌯ <b>欢迎使用媒体下载器</b>\n\n✦ 发送 Telegram 帖子链接即可下载其中的媒体，包括来自公开频道、私密频道以及禁止转发频道的内容。您还可以批量下载帖子、转移整个频道、为文件应用自定义缩略图，或将下载的内容直接发送到另一个频道。\n\n✦ 已关联账户：{account_status}"
+  },
+  "accounts": {
+    "status": {
+      "connected": "已连接",
+      "not_connected": "未连接"
+    },
+    "session_expired": "⌯ <b>已关联会话已过期</b>\n\n✦ 关联的 Telegram 账户已不再获得授权。请重新关联该账户后再访问私密来源。",
+    "access": {
+      "login_required": "⌯ <b>需要关联账户</b>\n\n✦ 分享的链接属于下载账户无法访问的私密或受限来源。请关联一个已经加入来源频道的 Telegram 账户，然后重新发送链接。",
+      "not_member": "⌯ <b>您关联的账户不是频道成员</b>\n\n✦ 关联到机器人的 Telegram 账户无法访问分享链接中的频道。请先使用该关联账户加入频道，然后重新发送链接。"
+    },
+    "login": {
+      "choose_account": "⌯ <b>选择要关联的账户</b>\n\n✦ 请选择关联您当前的 Telegram 账户还是其他账户。所选账户必须已经加入您希望下载内容的所有私密频道。",
+      "already_running": "⌯ <b>登录正在进行中</b>\n\n✦ 请先完成或取消当前登录流程，然后再开始新的登录流程。",
+      "already_connected": "⌯ <b>已有账户关联</b>\n\n✦ 电话号码 <code>{phone_number}</code> 当前已连接。请先使用 /logout 移除它，然后再关联其他账户。",
+      "share_contact": "⌯ <b>分享您的电话号码</b>\n\n✦ 请使用下面的按钮安全地分享您当前 Telegram 账户的电话号码。",
+      "enter_phone": "⌯ <b>输入其他账户的电话号码</b>\n\n✦ 请手动发送国际格式的电话号码。号码必须以 <code>+</code> 开头并包含国家代码，例如 <code>+12025550123</code>。",
+      "invalid_phone": "⌯ <b>电话号码无效</b>\n\n✦ 号码必须以 <code>+</code> 开头并包含国家代码，且不能包含字母或不支持的符号。请重新开始登录或发送格式正确的号码。",
+      "contact_mismatch": "⌯ <b>联系人不匹配</b>\n\n✦ 分享的联系人不属于正在使用机器人的 Telegram 账户。请使用提供的按钮分享您自己的号码，或选择关联其他账户。",
+      "contact_received": "⌯ <b>已收到电话号码</b>\n\n✦ 机器人正在准备授权请求。请等待 Telegram 发送登录验证码。",
+      "code_prompt": "⌯ <b>Telegram</b>\n\n✦ 只用数字按钮输入 Telegram 验证码\n✦ 删除会移除最后一位确认会提交验证码",
+      "code_prompt_with_value": "⌯ <b>Telegram</b>\n\n✦ <code>{code}</code>\n✦ 只用数字按钮输入 Telegram 验证码\n✦ 删除会移除最后一位确认会提交验证码",
+      "processing": "⌯ <b>正在验证账户</b>\n\n✦ 正在检查验证码并创建关联会话。",
+      "password_prompt": "⌯ <b>需要两步验证</b>\n\n✦ 请以文本消息形式发送此 Telegram 账户的两步验证密码。\n\n✦ 密码提示：<code>{hint}</code>",
+      "completed": "⌯ <b>账户关联成功</b>\n\n✦ Telegram 账户现已连接。只要此账户已经加入私密频道，您就可以访问这些频道。",
+      "cancelled": "⌯ <b>账户关联已取消</b>\n\n✦ 临时登录会话已关闭，未保存任何账户信息。",
+      "restart_hint": "⌯ <b>准备好后重新开始</b>\n\n✦ 需要开始新的账户关联流程时，请使用 /login。",
+      "failed": "⌯ <b>账户关联失败</b>\n\n✦ 授权流程无法完成。请重新开始，并确认电话号码、登录验证码和密码均正确。",
+      "flood_wait": "⌯ <b>登录尝试次数过多</b>\n\n✦ Telegram 暂时限制了新的授权请求。请在 {seconds} 秒后重试。",
+      "invalid_code": "⌯ <b>验证码无效或已过期</b>\n\n✦ 验证码被拒绝或已经过期。请输入 Telegram 最新发送的验证码，或取消后重新开始登录。",
+      "invalid_password": "⌯ <b>验证密码不正确</b>\n\n✦ 两步验证密码不正确。请发送正确的密码或取消登录流程。",
+      "code_empty_popup": "请先输入 Telegram 验证码再确认",
+      "invalid_code_popup": "验证码无效或已过期",
+      "buttons": {
+        "my_account": "我当前的账户",
+        "other_account": "其他账户",
+        "share_phone": "分享我的电话号码"
+      },
+      "too_many_attempts": "⌯ <b>任务</b>\n\n✦ Telegram 暂时限制了登录尝试\n✦ 请等待后再使用 /login",
+      "phone_banned": "⌯ <b>Telegram</b>\n\n✦ 此号码已被 Telegram 封禁\n✦ 请使用其他账号或联系 Telegram 支持",
+      "hint_awaiting_contact": "⌯ <b>分享您的电话号码</b>\n\n✦ 请使用下面的按钮安全地分享您当前 Telegram 账户的电话号码。",
+      "hint_awaiting_account_type": "⌯ <b>选择要关联的账户</b>\n\n✦ 请选择关联您当前的 Telegram 账户还是其他账户。所选账户必须已经加入您希望下载内容的所有私密频道。",
+      "hint_sending_code": "等待中\n只用数字按钮输入 Telegram 验证码\n删除会移除最后一位确认会提交验证码",
+      "hint_awaiting_code": "只用数字按钮输入 Telegram 验证码\n删除会移除最后一位确认会提交验证码"
+    },
+    "logout": {
+      "not_connected": "⌯ <b>ℹ 未关联任何账户</b>\n\n✦ 您的机器人个人资料目前没有连接任何 Telegram 账户。",
+      "confirm": "⌯ <b>移除关联账户</b>\n\n✦ 电话号码 <code>{phone_number}</code> 将断开连接，其保存的会话也会被删除。仅在确定继续时进行确认。",
+      "completed": "⌯ <b>已移除关联账户</b>\n\n✦ 保存的 Telegram 会话已成功删除。您可以随时关联其他账户。"
+    }
+  },
+  "subscription": {
+    "required": "⌯ <b>需要订阅频道</b>\n\n✦ 请先加入下面列出的频道，然后点击检查按钮。\n\n✦ {channels}",
+    "completed": "⌯ <b>订阅验证成功</b>\n\n✦ 您的频道成员身份已成功验证。现在可以继续使用机器人。",
+    "still_missing_popup": "您仍需要加入所有必需频道"
+  },
+  "downloads": {
+    "invalid_link": "⌯ <b>Telegram 链接无效</b>\n\n✦ 请发送直接指向 Telegram 帖子的链接，例如 <code>https://t.me/channel/123</code>。",
+    "post_not_found": "⌯ <b>找不到帖子</b>\n\n✦ 请求的帖子不存在、已被删除，或所选下载账户无法访问。",
+    "nothing_to_download": "⌯ <b>没有可下载的内容</b>\n\n✦ 此帖子没有可下载的媒体或文字，例如频道名称或头像变更的通知",
+    "comment_unavailable": "⌯ <b>无法解析评论</b>\n\n✦ 该评论链接没有指向可访问的讨论消息，或 Telegram 拒绝了引用的消息标识符。",
+    "client_unavailable": "⌯ <b>下载账户不可用</b>\n\n✦ 当前没有可用于获取此内容的 Telegram 账户。请稍后重试或关联您自己的账户。",
+    "preparing": "⌯ <b>正在准备下载</b>\n\n✦ 正在收集媒体信息，随后将开始传输。",
+    "splitting": "⌯ <b>正在拆分文件</b>\n\n✦ 文件大于上传分段限制，正在将其拆分成受支持的部分。",
+    "file_too_large": "⌯ <b>文件超过支持的大小</b>\n\n✦ 此文件无法用于{action}，因为其大小超过 {maximum_size}。",
+    "file_too_small": "⌯ <b>文件为空或已损坏</b>\n\n✦ 下载的媒体文件太小，无法视为有效文件，或者 Telegram 返回了不完整的文件。",
+    "file_missing": "⌯ <b>下载的文件丢失</b>\n\n✦ 上传前无法找到临时媒体文件，或文件为空。",
+    "download_failed": "⌯ <b>下载失败</b>\n\n✦ 多次尝试后仍无法获取媒体。请检查来源账户的访问权限并重试。",
+    "upload_failed": "⌯ <b>上传失败</b>\n\n✦ 媒体已下载，但无法发送。Telegram 返回：<code>{error}</code>",
+    "flood_wait": "⌯ <b>Telegram 速率限制</b>\n\n✦ Telegram 要求等待 {seconds} 秒后才能继续上传。",
+    "actions": {
+      "download": "下载",
+      "upload": "上传"
+    },
+    "progress": {
+      "downloading": "正在下载",
+      "uploading": "正在上传",
+      "body": "⌯ <b>{action}</b>\n\n✦ <code>{progress_bar}</code>\n\n✦ 已传输：{current_size} / {total_size}\n✦ 进度：{percentage}%\n✦ 速度：{speed}/秒\n✦ 剩余时间：{eta}"
+    },
+    "parts": {
+      "item": "第 {current} 部分，共 {total} 部分"
+    },
+    "album": {
+      "preparing": "⌯ <b>检测到媒体相册</b>\n\n✦ 相册包含 {count} 个已选项目，将按顺序进行处理。",
+      "processing": "⌯ <b>正在处理媒体相册</b>\n\n✦ 正在处理第 {current} 个项目，共 {total} 个。"
+    },
+    "single": {
+      "usage": "/dl\n在 Telegram 中打开帖子并长按\n选择复制链接并把链接发到这里\n要下载多个帖子时先发送第一个帖子的链接"
+    },
+    "batch": {
+      "usage": "/bdl\n在 Telegram 中打开帖子并长按\n选择复制链接并把链接发到这里\n要下载多个帖子时先发送第一个帖子的链接\n发送同一个频道中最后一个帖子的链接\n首尾两个帖子及中间所有帖子都会下载\n下一步选择内容类型",
+      "different_sources": "⌯ <b>链接属于不同聊天</b>\n\n✦ 第一个和最后一个链接必须来自同一个 Telegram 频道或群组。",
+      "invalid_order": "⌯ <b>帖子顺序不正确</b>\n\n✦ 第一个链接必须指向比最后一个链接更早的帖子。",
+      "invalid_links": "⌯ <b>批量下载链接无效</b>\n\n✦ 两个值都必须是来自同一来源的有效 Telegram 帖子链接。",
+      "starting": "⌯ <b>批量下载已开始</b>\n\n✦ 机器人将处理从 {start_id} 到 {end_id} 的帖子。请求的帖子总数：{total}。",
+      "progress": "⌯ <b>批量下载正在进行</b>\n\n✦ 当前项目：{current}/{total}\n✦ 帖子 ID：{message_id}\n✦ 已下载：{downloaded}\n✦ 已跳过：{skipped}\n✦ 失败：{failed}",
+      "completed": "⌯ <b>批量操作已完成</b>\n\n✦ 已下载：{downloaded}\n✦ 已跳过：{skipped}\n✦ 失败：{failed}",
+      "cancelled": "⌯ <b>批量操作已取消</b>\n\n✦ 剩余帖子将不再处理。取消前保存的进度已清除。",
+      "failed": "⌯ <b>批量操作已停止</b>\n\n✦ 发生意外错误，导致剩余帖子无法继续处理。",
+      "retrying": "⌯ <b>正在重试失败的项目</b>\n\n✦ 主流程已完成。现在将重试 {count} 个失败的项目。"
+    },
+    "disk_full": "⌯ <b>任务</b>\n\n✦ 当前没有足够的空间下载文件\n✦ 请稍后再试",
+    "paid": {
+      "not_purchased": "⌯ <b>此帖子需要用 Telegram Stars 购买</b>\n\n✦ 请使用绑定的同一个账号购买后重新发送链接"
+    }
+  },
+  "tasks": {
+    "already_running": "⌯ <b>另一个任务正在运行</b>\n\n✦ 请等待当前任务完成，或取消它后再开始其他操作。",
+    "resumed": "⌯ <b>任务已恢复</b>\n\n✦ 发现一个中断的任务，将从上次保存的位置继续。",
+    "cancel_requested": "⌯ <b>已请求取消</b>\n\n✦ 正在停止当前操作并清理临时文件。",
+    "input_cancelled": "⌯ <b>输入会话已取消</b>\n\n✦ 待处理的登录、筛选或确认状态已删除。",
+    "none_to_cancel": "⌯ <b>ℹ 没有活动操作</b>\n\n✦ 当前没有正在运行的任务或待处理的输入会话可供取消。",
+    "completion": {
+      "single": {
+        "private": "⌯ <b>下载完成</b>\n\n✦ 请求的媒体已成功下载并发送到此聊天。",
+        "saved_messages": "⌯ <b>下载完成</b>\n\n✦ 请求的媒体已下载并发送到您关联账户的“收藏消息”。",
+        "channel": "⌯ <b>上传完成</b>\n\n✦ 请求的媒体已成功发送到 <b>{channel_title}</b>。\n\n✦ {message_link}"
+      },
+      "batch": {
+        "private": "⌯ <b>批量任务已完成</b>\n\n✦ 机器人已完成所选范围的处理，并将 {count} 个项目发送到此聊天。",
+        "saved_messages": "⌯ <b>批量任务已完成</b>\n\n✦ 机器人已完成所选范围的处理，并将 {count} 个项目发送到您关联账户的“收藏消息”。",
+        "channel": "⌯ <b>批量上传已完成</b>\n\n✦ 机器人已完成所选范围的处理，并将 {count} 个项目发送到您选择的频道。"
+      },
+      "clone": {
+        "private": "⌯ <b>频道转移已完成</b>\n\n✦ 频道任务已完成，{count} 个项目已发送到此聊天。",
+        "saved_messages": "⌯ <b>频道转移已完成</b>\n\n✦ 频道任务已完成，{count} 个项目已发送到您关联账户的“收藏消息”。",
+        "channel": "⌯ <b>频道转移已完成</b>\n\n✦ 频道任务已完成，{count} 个项目已发送到您选择的目标频道。"
+      },
+      "monitor": {
+        "private": "⌯ <b>已发送监控到的帖子</b>\n\n✦ 检测到一条新帖子，并已发送到此聊天。",
+        "saved_messages": "⌯ <b>已发送监控到的帖子</b>\n\n✦ 检测到一条新帖子，并已发送到您关联账户的“收藏消息”。",
+        "channel": "⌯ <b>已发送监控到的帖子</b>\n\n✦ 检测到一条新帖子，并已发送到您选择的目标频道。"
+      }
+    }
+  },
+  "filters": {
+    "prompt": "⌯ <b>选择内容筛选方式</b>\n\n✦ 请选择处理所有内容、仅保存选定媒体类型，或跳过选定媒体类型。选择会话在十分钟内有效。",
+    "modes": {
+      "all": "所有内容",
+      "save": "仅保存",
+      "skip": "跳过所选类型"
+    },
+    "types": {
+      "videos": "视频",
+      "photos": "照片",
+      "audio": "音频",
+      "files": "文件",
+      "text": "文本",
+      "other": "其他"
+    },
+    "summary": {
+      "all": "所有支持的内容",
+      "save": "仅保存：{types}",
+      "skip": "跳过：{types}",
+      "minimum_duration": "最短时长：{seconds} 秒",
+      "maximum_duration": "最长时长：{seconds} 秒"
+    }
+  },
+  "clone": {
+    "usage": "/clone\n发送频道链接或用户名\n对于私密频道请用 /login 连接一个已经加入该频道的账号",
+    "channel_not_found": "⌯ <b>找不到频道</b>\n\n✦ 频道用户名或链接无效，或者关联账户无法解析该频道。",
+    "empty_channel": "⌯ <b>频道为空</b>\n\n✦ 在所选频道中没有找到可转移的帖子。",
+    "starting": "⌯ <b>频道转移已开始</b>\n\n✦ 机器人正准备处理来自 <b>{channel_title}</b> 的 {total} 个帖子标识符。",
+    "progress": "⌯ <b>频道转移正在进行</b>\n\n✦ 当前项目：{current}/{total}\n✦ 帖子 ID：{message_id}\n✦ 已下载：{downloaded}\n✦ 已跳过：{skipped}\n✦ 失败：{failed}",
+    "flood_wait": "⌯ <b>Telegram 速率限制</b>\n\n✦ 频道转移已暂停 {seconds} 秒。",
+    "completed": "⌯ <b>频道处理已完成</b>\n\n✦ 已下载：{downloaded}\n✦ 已跳过：{skipped}\n✦ 失败：{failed}",
+    "cancelled": "⌯ <b>频道转移已取消</b>\n\n✦ 剩余频道帖子将不再处理。",
+    "failed": "⌯ <b>频道转移失败</b>\n\n✦ 发生意外错误，导致转移无法完成。"
+  },
+  "uploads": {
+    "channel": {
+      "usage": "/uploadch\n选择频道\n机器人订阅和 Telegram Premium 是两个独立的订阅\n机器人每个分段可上传约 2 GB\n已连接的 Telegram Premium 账号可以一次上传最大 4 GB 的文件\n使用 /login 连接账号\n将机器人和该账号设为目标频道管理员然后使用 /uploadch 选择频道\n没有目标频道时可以选择收藏夹\n作为文档发送的分段需要按照编号顺序重新合并\n最简单 ↣ 把机器人加为你频道或群组的管理员它会在这里请你确认",
+      "current": "⌯ <b>选择频道</b>\n\n✦ {channel_id}\n✦ /uploadch\n✦ /rmuploadch",
+      "invalid_id": "⌯ <b>频道标识符无效</b>\n\n✦ 请发送 Telegram 频道的数字 ID，通常以 <code>-100</code> 开头。\n✦ 最简单 ↣ 把机器人加为你频道或群组的管理员它会在这里请你确认",
+      "bot_not_admin": "⌯ <b>机器人需要管理员权限</b>\n\n✦ 启用频道上传前，请将机器人添加为目标频道的管理员。\n✦ 最简单 ↣ 把机器人加为你频道或群组的管理员它会在这里请你确认",
+      "user_not_admin": "⌯ <b>您需要管理员权限</b>\n\n✦ 您必须是目标频道的所有者或管理员。",
+      "access_denied": "⌯ <b>频道验证失败</b>\n\n✦ 无法访问该频道，或缺少所需的管理员权限。",
+      "enabled": "⌯ <b>上传频道已连接</b>\n\n✦ 在您移除此目标之前，未来的下载内容都会发送到 <b>{channel_title}</b>。",
+      "disabled": "⌯ <b>上传频道已禁用</b>\n\n✦ 机器人失去了所选频道的管理员权限，因此频道发送功能已被自动禁用。",
+      "removed": "⌯ <b>上传频道已移除</b>\n\n✦ 未来的下载内容将恢复到默认发送目标。",
+      "not_set": "⌯ <b>ℹ 未配置上传频道</b>\n\n✦ 您的个人资料目前没有设置目标频道。"
+    },
+    "auto": {
+      "start_first": "⌯ <b>完成频道绑定</b>\n\n✦ 你把机器人加入了 ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ 点开始在机器人里注册即可完成绑定\n✦ 24小时内不点的话机器人会退出",
+      "premium_only": "⌯ <b>绑定频道仅限订阅用户</b>\n\n✦ 你把机器人加入了 ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ 在频道或群组接收下载内容是机器人订阅功能\n✦ 机器人已经退出\n✦ 用下方按钮订阅后再把机器人加进去",
+      "confirm": "⌯ <b>确认上传频道</b>\n\n✦ 你把机器人加入了 ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ 确认后新的下载和监控的帖子都会发到那里\n✦ 拒绝的话机器人会退出\n✦ 24小时内没有回复机器人会自动退出",
+      "linked": "⌯ <b>上传频道已绑定</b>\n\n✦ 频道 ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ 新的下载和监控的帖子会发到那里\n✦ 发送 /rmuploadch 可以解除",
+      "no_rights": "⌯ <b>机器人无法在那里发布</b>\n\n✦ 频道 ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ 机器人不是管理员或没有发布权限所以已退出\n✦ 请重新以有发布权限的管理员身份添加它",
+      "user_not_admin": "⌯ <b>你需要是那里的管理员</b>\n\n✦ 频道 ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ 上传频道必须属于你或你是那里的管理员\n✦ 机器人已经退出",
+      "expired": "这个请求已过期"
+    }
+  },
+  "forcedownload": {
+    "details": "⌯ <b>强制下载模式</b>\n\n✦ 启用后，机器人会下载并重新上传每个媒体项目，而不是直接复制。此功能适用于应用自定义缩略图、重新构建文件或处理禁止转发的内容。\n\n✦ 当前状态：{status}",
+    "premium_required": "⌯ <b>需要订阅</b>\n\n✦ 强制下载模式仅向订阅用户开放，因为它会消耗额外的存储空间、带宽和处理资源。",
+    "flag_removed": "⌯ <b>ℹ --fdl 选项已移除</b>\n\n✦ 强制下载现在是永久用户模式。订阅用户可以使用 /forcedownload 管理此模式，无需将其添加到各个命令中。",
+    "enabled": "⌯ <b>强制下载模式已启用</b>\n\n✦ 未来的下载、批量下载、频道转移和监控任务将获取并上传原始文件，而不是直接复制帖子。",
+    "disabled": "⌯ <b>强制下载模式已禁用</b>\n\n✦ 机器人现在可以再次直接复制未受限制的帖子，同时仍会在必要时下载受保护内容。",
+    "status": {
+      "enabled": "已启用",
+      "disabled": "已禁用"
+    },
+    "buttons": {
+      "enable": "启用强制下载",
+      "disable": "禁用强制下载"
+    }
+  },
+  "thumbnail": {
+    "not_set": "⌯ <b>没有自定义缩略图</b>\n\n✦ 请先向机器人发送一张图片并确认，将其用作受支持上传文件的封面。",
+    "current": "⌯ <b>当前自定义缩略图</b>\n\n✦ 这是为未来受支持上传保存的图片。\n\n✦ 状态：{status}",
+    "confirm": "⌯ <b>将此图片用作缩略图</b>\n\n✦ 确认可将此图片保存为自定义封面，取消则删除临时图片。",
+    "saved": "⌯ <b>缩略图已保存</b>\n\n✦ 该图片已保存并启用，将用于未来受支持的上传。",
+    "download_failed": "⌯ <b>图片下载失败</b>\n\n✦ 无法保存图片。请重新发送，并确认 Telegram 已完成上传。",
+    "temp_missing": "⌯ <b>临时图片不可用</b>\n\n✦ 确认会话已过期或临时图片已被删除。请重新发送图片。",
+    "not_set_popup": "没有可用的已保存缩略图",
+    "status": {
+      "enabled": "已启用",
+      "disabled": "已禁用"
+    },
+    "buttons": {
+      "enable": "启用缩略图",
+      "disable": "禁用缩略图"
+    }
+  },
+  "captions": {
+    "settings": "⌯ <b>说明文字处理</b>\n\n✦ 请选择复制或上传媒体时如何处理说明文字。\n\n✦ 当前模式：{current}",
+    "modes": {
+      "keep_all": "保留原始说明文字",
+      "remove_all": "移除媒体说明文字",
+      "remove_links_users": "移除链接和用户名"
+    },
+    "buttons": {
+      "keep_all": "保留原始说明文字",
+      "remove_all": "移除所有说明文字",
+      "remove_links_users": "移除链接和用户名"
+    },
+    "already_selected_popup": "此说明文字模式已经启用",
+    "updated_popup": "说明文字模式已更新"
+  },
+  "profile": {
+    "unavailable": "⌯ <b>个人资料不可用</b>\n\n✦ 无法加载您保存的用户记录。请发送 /start 后重试。",
+    "details": "⌯ <b>您的个人资料</b>\n\n✦ 用户 ID：<code>{user_id}</code>\n✦ 套餐：{plan_status}\n✦ 套餐到期时间：{expiry_date}\n✦ 每日积分：{daily_points}/{daily_limit}\n✦ 每日重置：{reset_time}\n✦ 礼物积分：{gift_points}\n✦ 推荐积分：{referral_points}\n✦ 推荐人数：{referral_count}\n✦ 强制下载：{force_download_status}\n\n✦ 推荐链接：\n✦ <code>{referral_link}</code>"
+  },
+  "plans": {
+    "free": "免费",
+    "premium": "订阅用户",
+    "monthly": "月度",
+    "yearly": "年度"
+  },
+  "premium": {
+    "details": "⌯ <b>订阅</b>\n\n✦ 订阅\n✦ 最多可以有 5 个未完成的任务\n✦ 请等其中一个完成或使用 /cancel 取消\n✦ 订阅后可以跳过公共队列\n✦ /clone\n✦ /monitor\n✦ /uploadch\n✦ /caption\n✦ /fdl\n✦ 机器人订阅和 Telegram Premium 是两个独立的订阅",
+    "feature_required": "⌯ <b>需要订阅</b>\n\n✦ 此功能仅向订阅用户开放。请打开订阅菜单查看可用套餐。",
+    "already_active": "⌯ <b>订阅已生效</b>\n\n✦ 您的订阅在 {expiry_date} 前保持有效。",
+    "already_active_popup": "您的订阅有效期至 {expiry_date}",
+    "required_popup": "此功能需要有效订阅",
+    "granted": "⌯ <b>订阅已激活</b>\n\n✦ 您的账户已成功升级。当前订阅将于 {expiry_date} 到期。",
+    "removed": "⌯ <b>ℹ 订阅已移除</b>\n\n✦ 您账户上的订阅专属模式和目标设置已被禁用。",
+    "buttons": {
+      "monthly": "月度套餐",
+      "yearly": "年度套餐"
+    },
+    "granted_days": "⌯ <b>订阅</b>\n\n✦ 增加天数：{days}\n✦ 到期时间：{expiry_date}\n✦ 如果订阅尚未到期这些天数会加到剩余时间上"
+  },
+  "language": {
+    "select": "⌯ <b>选择语言</b>\n\n✦ 请选择机器人消息和您个人 Telegram 命令菜单所使用的语言。",
+    "changed": "⌯ <b>语言已更改</b>\n\n✦ 消息和 Telegram 命令现在将以 {language_name} 显示。",
+    "unavailable_popup": "所选语言不可用"
+  },
+  "limits": {
+    "insufficient_points": "⌯ <b>下载积分不足</b>\n\n✦ 您的积分不足以完成此次下载。每日余额将在 {time_left} 后重置，您也可以通过推荐获得更多积分。",
+    "insufficient_points_batch": "⌯ <b>此批量操作积分不足</b>\n\n✦ 此操作需要 {required_points} 积分，而您当前可用余额为 {available_points}。",
+    "reset_now": "正在重置",
+    "cooldown": "⌯ <b>请稍候再下载</b>\n\n✦ 您可以在 {remaining_time} 后开始另一次免费下载。"
+  },
+  "referrals": {
+    "share_text": "使用此 Telegram 下载器，并通过我的推荐链接获取积分",
+    "new_referral": "⌯ <b>新推荐用户已加入</b>\n\n✦ {user_name}（<code>{user_id}</code>）通过您的链接加入。您获得了 {reward} 推荐积分。",
+    "welcome_bonus": "⌯ <b>已收到推荐奖励</b>\n\n✦ 您通过现有用户的推荐链接加入，因此获得了 {bonus} 积分。"
+  },
+  "gifts": {
+    "claim": {
+      "already_claimed": "⌯ <b>ℹ 礼物已领取</b>\n\n✦ 此礼物之前已经添加到您的账户，不能重复领取。",
+      "invalid": "⌯ <b>找不到礼物</b>\n\n✦ 礼物链接无效或已经不存在。",
+      "inactive": "⌯ <b>礼物已停用</b>\n\n✦ 此礼物已被管理员禁用，无法继续领取。",
+      "link_expired": "⌯ <b>礼物链接已过期</b>\n\n✦ 允许领取此礼物的时间已经结束。",
+      "limit_reached": "⌯ <b>礼物领取次数已达上限</b>\n\n✦ 允许的最大领取次数已经用完。",
+      "not_allowed": "⌯ <b>此礼物未分配给您的账户</b>\n\n✦ 此礼物仅限指定用户领取，您的账户不在允许名单中。",
+      "excluded": "⌯ <b>您的账户无法领取此礼物</b>\n\n✦ 您的账户已被排除，无法领取此礼物。",
+      "completed": "⌯ <b>礼物领取成功</b>\n\n✦ {value} 积分已成功添加到您的账户。",
+      "completed_with_expiry": "⌯ <b>礼物领取成功</b>\n\n✦ {value} 积分已添加到您的账户，可使用至 {expiry_date}。",
+      "failed": "⌯ <b>礼物领取失败</b>\n\n✦ 无法将此礼物添加到您的账户。请稍后重试。"
+    }
+  },
+  "help": {
+    "menu": {
+      "title": "⌯ <b>帮助中心</b>\n\n✦ 请选择下面的功能，以查看使用说明和建议用法。"
+    },
+    "buttons": {
+      "single": "单条下载",
+      "batch": "批量下载",
+      "clone": "频道转移",
+      "monitor": "频道监控",
+      "channel_upload": "上传频道",
+      "forcedownload": "强制下载",
+      "login": "关联账户",
+      "points": "积分",
+      "premium": "订阅",
+      "other_uses": "其他用途"
+    },
+    "features": {
+      "dl": "⌯ <b>下载一条帖子</b>\n\n✦ /dl\n✦ 在 Telegram 中打开帖子并长按\n✦ 选择复制链接并把链接发到这里\n✦ 要下载多个帖子时先发送第一个帖子的链接\n✦ <code>https://t.me/example_channel/15</code>\n✦ 发送频道链接或用户名\n✦ 对于私密频道请用 /login 连接一个已经加入该频道的账号\n✦ 机器人每个分段可上传约 2 GB\n✦ 请选择下载并分割或取消\n✦ 要发送最大 4 GB 的完整文件请用 /login 连接 Telegram Premium 账号并用 /uploadch 选择目标频道",
+      "bdl": "⌯ <b>下载多条帖子</b>\n\n✦ /bdl\n✦ 在 Telegram 中打开帖子并长按\n✦ 选择复制链接并把链接发到这里\n✦ 要下载多个帖子时先发送第一个帖子的链接\n✦ 发送同一个频道中最后一个帖子的链接\n✦ 首尾两个帖子及中间所有帖子都会下载\n✦ 下一步选择内容类型\n✦ <code>/bdl https://t.me/example_channel/15 https://t.me/example_channel/30</code>\n✦ 发送 /cancel 选择任务或者在 /cancel 后面写上任务编号",
+      "clone": "⌯ <b>转移整个频道</b>\n\n✦ 订阅\n✦ /clone\n✦ 发送频道链接或用户名\n✦ 对于私密频道请用 /login 连接一个已经加入该频道的账号\n✦ /uploadch\n✦ 发送 /cancel 选择任务或者在 /cancel 后面写上任务编号",
+      "monitor": "⌯ <b>监控新的频道帖子</b>\n\n✦ 订阅\n✦ /monitor\n✦ 发送频道链接或用户名\n✦ 对于私密频道请用 /login 连接一个已经加入该频道的账号\n✦ 公开频道使用下载账号\n✦ 私密频道每小时检查一次且每次只打开一个账号检查后关闭\n✦ 新帖子会进入已保存的队列并按顺序发送\n✦ 停止监控",
+      "channel_upload": "⌯ <b>将内容发送到其他频道</b>\n\n✦ 订阅\n✦ /uploadch\n✦ 机器人订阅和 Telegram Premium 是两个独立的订阅\n✦ 机器人每个分段可上传约 2 GB\n✦ 已连接的 Telegram Premium 账号可以一次上传最大 4 GB 的文件\n✦ 使用 /login 连接账号\n✦ 将机器人和该账号设为目标频道管理员然后使用 /uploadch 选择频道\n✦ 没有目标频道时可以选择收藏夹\n✦ 作为文档发送的分段需要按照编号顺序重新合并\n✦ /rmuploadch\n✦ 最简单 ↣ 把机器人加为你频道或群组的管理员它会在这里请你确认",
+      "forcedownload": "⌯ <b>强制下载模式</b>\n\n✦ 使用 /forcedownload，使机器人获取并重新上传每个文件，而不是复制未受限制的帖子。此模式适用于自定义缩略图和内容重建。",
+      "login": "⌯ <b>关联 Telegram 账户</b>\n\n✦ 使用 /login 并选择当前账户或其他账户。关联账户必须已经加入您想访问的私密频道。授权验证码仅通过安全键盘输入。\n✦ 只用数字按钮输入 Telegram 验证码\n✦ 删除会移除最后一位确认会提交验证码\n✦ 发送频道链接或用户名\n✦ 对于私密频道请用 /login 连接一个已经加入该频道的账号\n✦ /logout",
+      "points": "⌯ <b>下载积分</b>\n\n✦ 免费下载会使用每日积分、礼物积分和推荐积分。分享您的个人链接以获得更多积分：\n\n✦ <code>{referral_link}</code>",
+      "premium": "⌯ <b>订阅功能</b>\n\n✦ /premium\n✦ 订阅\n✦ 最多可以有 5 个未完成的任务\n✦ 请等其中一个完成或使用 /cancel 取消\n✦ 订阅后可以跳过公共队列\n✦ /clone\n✦ /monitor\n✦ /uploadch\n✦ /caption\n✦ /fdl\n✦ 机器人订阅和 Telegram Premium 是两个独立的订阅",
+      "other_uses": "⌯ <b>机器人的其他使用方式</b>\n\n✦ <b>将一个频道转移到另一个频道：</b>使用 /uploadch 配置目标频道，然后对来源频道运行 /clone。所选内容将根据您的筛选条件进行转移。\n\n✦ <b>替换整个系列的封面：</b>向机器人发送新封面图片并确认，启用强制下载模式，然后使用第一集和最后一集的链接运行 /bdl。在支持的情况下，文件会使用所选封面进行下载和上传。"
+    }
+  },
+  "monitor": {
+    "login_required": "⌯ <b>关联 Telegram 账户</b>\n\n✦ 发送频道链接或用户名\n✦ 对于私密频道请用 /login 连接一个已经加入该频道的账号",
+    "usage": "⌯ <b>监控新的频道帖子</b>\n\n✦ {current_status}\n✦ /monitor\n✦ 发送频道链接或用户名\n✦ 对于私密频道请用 /login 连接一个已经加入该频道的账号\n✦ 公开频道使用下载账号\n✦ 私密频道每小时检查一次且每次只打开一个账号检查后关闭\n✦ 新帖子会进入已保存的队列并按顺序发送\n✦ 停止监控",
+    "invalid_channel_id": "⌯ <b>频道标识符无效</b>\n\n✦ 请使用数字 Telegram 频道 ID，通常以 <code>-100</code> 开头。",
+    "invalid_action": "⌯ <b>监控操作无效</b>\n\n✦ 使用 <code>on</code> 开始监控，或使用 <code>off</code> 停止监控。",
+    "not_active": "⌯ <b>ℹ 监控未启用</b>\n\n✦ 您的账户当前没有监控指定频道。",
+    "already_active": "⌯ <b>ℹ 已有监控任务启用</b>\n\n✦ 请先停止当前监控的频道，然后再选择其他频道。",
+    "access_denied": "⌯ <b>频道访问被拒绝</b>\n\n✦ 关联账户无法打开指定频道，或频道标识符不正确。",
+    "start_failed": "⌯ <b>请重新开始任务</b>\n\n✦ 发送频道链接或用户名\n✦ 对于私密频道请用 /login 连接一个已经加入该频道的账号",
+    "started": "⌯ <b>监控新的频道帖子</b>\n\n✦ 频道：{channel_title}\n✦ 筛选：{filter_status}\n✦ 公开频道使用下载账号\n✦ 私密频道每小时检查一次且每次只打开一个账号检查后关闭\n✦ 新帖子会进入已保存的队列并按顺序发送",
+    "stopped": "⌯ <b>频道监控已停止</b>\n\n✦ 所选频道的新帖子将不再被自动处理。",
+    "session_stopped": "⌯ <b>监控已停止</b>\n\n✦ 关联的 Telegram 会话已过期或被撤销，因此自动监控已被禁用。",
+    "status": {
+      "active": "正在监控频道 <code>{channel_id}</code>",
+      "inactive": "未启用"
+    },
+    "stop_button": "停止监控",
+    "source_lost": "⌯ <b>频道监控已停止</b>\n\n✦ 频道 ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ 绑定的账号一整天都打不开它\n✦ 可能已被删除或改为私密或账号已退出\n✦ 想重新监控请确认账号还在里面然后发送 /monitor"
+  },
+  "stats": {
+    "system": "⌯ <b>系统统计信息</b>\n\n✦ 运行时间：{uptime}\n✦ 磁盘：{disk_usage} / {disk_total}（{disk_percent}%）\n✦ 内存：{ram_percent}%\n✦ CPU：{cpu_percent}%\n✦ 网络已发送：{sent}\n✦ 网络已接收：{received}",
+    "admin": "⌯ <b>用户统计信息</b>\n\n✦ 用户总数：{total_users}\n✦ 订阅用户：{total_premium}\n✦ 管理员添加：{premium_by_admin}\n✦ 通过 Stars 付款：{premium_by_stars}",
+    "public": "⌯ <b>机器人统计</b>\n\n✦ 运行时间: {uptime}\n✦ 总下载量: {total_downloads}"
+  },
+  "payments": {
+    "monthly": {
+      "title": "月度订阅",
+      "description": "激活订阅功能 30 天"
+    },
+    "yearly": {
+      "title": "年度订阅",
+      "description": "激活订阅功能 365 天"
+    },
+    "total_label": "订阅总额",
+    "invalid_plan_popup": "所选订阅套餐无效",
+    "invoice_failed_popup": "无法创建付款账单",
+    "unrecognized": "⌯ <b>无法识别付款套餐</b>\n\n✦ 已收到付款，但无法识别对应的订阅套餐。请携带付款信息联系客服。",
+    "activation_failed": "⌯ <b>订阅激活失败</b>\n\n✦ 已收到付款，但数据库无法激活订阅。请联系客服进行人工处理。",
+    "completed": "⌯ <b>订阅已激活</b>\n\n✦ {plan_name}套餐现已生效，将于 {expiry_date} 到期。"
+  },
+  "broadcast": {
+    "json": {
+      "file_required": "⌯ <b>需要广播 JSON 文件</b>\n\n✦ 请回复一个多语言 JSON 文件并使用 <code>/bc .</code>。",
+      "invalid_file": "⌯ <b>广播文件无效</b>\n\n✦ 回复的文档必须是 JSON 文件。",
+      "validation_failed": "⌯ <b>广播文件验证失败</b>\n\n✦ 无法接受此文件：<code>{error}</code>",
+      "confirm": "⌯ <b>确认多语言广播</b>\n\n✦ 文件包含 {language_count} 种可用语言。用户将首先收到其保存语言的内容，其次是基础语言，最后以英语作为最终后备语言。\n\n✦ 筛选条件：{filters}",
+      "how_to": "⌯ <b>多语言广播</b>\n\n✦ 点击下方按钮获取包含所有可用语言的 JSON 模板。为每种需要的语言填写 <code>text</code> 值，然后上传文件并使用 <code>/bc .</code> 回复该文件——留空的语言将回退为英语。",
+      "template_sent": "⌯ <b>广播模板</b>\n\n✦ 该文件包含 {language_count} 种语言，是根据当前的语言文件生成的。"
+    },
+    "usage": "⌯ <b>广播消息</b>\n\n✦ 回复您要发送的消息，然后使用 /bc。可选筛选参数包括 <code>-only 用户ID</code> 和 <code>-rm 用户ID --prem</code>。",
+    "invalid_message": "⌯ <b>广播消息不可用</b>\n\n✦ 回复的消息没有有效的 Telegram 标识符。",
+    "confirm": "⌯ <b>确认广播</b>\n\n✦ 消息 ID：<code>{message_id}</code>\n✦ 筛选条件：{filters}\n\n✦ 请选择普通发送，或发送后置顶。",
+    "starting": "⌯ <b>广播已开始</b>\n\n✦ 正在向所选用户发送消息。",
+    "progress": "⌯ <b>广播正在进行</b>\n\n✦ 已处理：{processed}/{total}\n✦ 成功：{successful}\n✦ 失败：{failed}",
+    "completed": "⌯ <b>广播已完成</b>\n\n✦ 目标用户：{total}\n✦ 成功：{successful}\n✦ 失败：{failed}",
+    "cancelled": "⌯ <b>广播已取消</b>\n\n✦ 操作在处理 {processed} 个用户后停止。",
+    "buttons": {
+      "normal": "普通发送",
+      "pin": "发送并置顶",
+      "get_template": "获取 JSON 模板"
+    },
+    "filters": {
+      "none": "无筛选条件",
+      "summary": "仅指定用户：{only_count}，排除用户：{excluded_count}，排除订阅用户：{exclude_premium}"
+    }
+  },
+  "admin": {
+    "users": {
+      "new_language": "⌯ <b>检测到不可用语言</b>\n\n✦ 用户：{first_name}\n✦ 用户 ID：<code>{user_id}</code>\n✦ 检测到的代码：<code>{language_code}</code>",
+      "new_user": "⌯ <b>新用户已加入</b>\n\n✦ 姓名：{first_name} {last_name}\n✦ 用户 ID：<code>{user_id}</code>\n✦ 用户名：{username}\n✦ 用户总数：{total_users}",
+      "exported": "⌯ <b>用户导出完成</b>\n\n✦ 附件包含 {count} 条用户记录。"
+    },
+    "payments": {
+      "new_subscription": "⌯ <b>新的付费订阅</b>\n\n✦ 用户：{user_name}\n✦ 用户 ID：<code>{user_id}</code>\n✦ 套餐：{plan_name}\n✦ 金额：{amount} Stars"
+    },
+    "pool": {
+      "insufficient": "⌯ <b>下载账户池不完整</b>\n\n✦ 当前已加载：{current}\n✦ 还需要的账户数：{missing}"
+    },
+    "gifts": {
+      "create_usage": "⌯ <b>创建礼物</b>\n\n✦ 使用 <code>/create -gift --value 积分</code>。可选设置包括 <code>--linkexpiry DDHHMM</code>、<code>--giftexpiry DDHHMM</code>、<code>--onlyuser [用户ID]</code>、<code>--exceptionuser [用户ID]</code> 和 <code>--limit 数量</code>。",
+      "value_required": "⌯ <b>需要礼物数值</b>\n\n✦ 请在 <code>--value</code> 后提供一个正数。",
+      "user_filter_conflict": "⌯ <b>用户筛选条件冲突</b>\n\n✦ 礼物不能同时使用允许用户和排除用户筛选条件。",
+      "invalid_duration": "⌯ <b>时长无效</b>\n\n✦ 请使用六位数的 <code>DDHHMM</code> 格式设置礼物时长。",
+      "invalid_values": "⌯ <b>礼物设置无效</b>\n\n✦ 请检查用户标识符、领取限制以及所有提供的值。",
+      "created": "⌯ <b>礼物已创建</b>\n\n✦ 礼物链接已准备好：\n✦ <code>{gift_link}</code>",
+      "empty": "⌯ <b>ℹ 没有有效礼物</b>\n\n✦ 当前没有有效的礼物链接。",
+      "list_title": "⌯ <b>有效礼物</b>\n\n✦ 以下礼物链接当前可用。",
+      "list_item": "<b>礼物：</b> <code>{gift_pid}</code>\n数值：{value}\n领取次数：{usage_count}/{usage_limit}\n链接到期时间：{expiry}\n创建时间：{created_at}\n链接：<code>{gift_link}</code>",
+      "remove_usage": "⌯ <b>移除礼物</b>\n\n✦ 使用 <code>/rm -gift --pid 礼物ID</code>。",
+      "not_found": "⌯ <b>找不到礼物</b>\n\n✦ 没有与所提供标识符匹配的有效礼物。",
+      "remove_confirm": "⌯ <b>停用礼物</b>\n\n✦ 礼物：<code>{gift_pid}</code>\n✦ 数值：{value}\n✦ 领取次数：{usage_count}\n\n✦ 确认后将阻止任何未来领取。",
+      "deactivated": "⌯ <b>礼物已停用</b>\n\n✦ 礼物 <code>{gift_pid}</code> 无法再被领取。"
+    },
+    "add": {
+      "usage": "⌯ <b>添加管理设置</b>\n\n✦ 使用 /add，并搭配 <code>-premium</code>、<code>-lang</code> 或 <code>-frcch</code>。"
+    },
+    "remove": {
+      "usage": "⌯ <b>移除管理设置</b>\n\n✦ 使用 /rm，并搭配 <code>-premium</code>、<code>-gift</code> 或 <code>-frcch</code>。"
+    },
+    "premium": {
+      "add_usage": "⌯ <b>订阅</b>\n\n✦ /admin\n✦ 选择用户或发送他们的数字用户编号\n✦ 天数\n✦ <code>/add -premium --user [123456789] --days 30</code>",
+      "added": "⌯ <b>订阅更新完成</b>\n\n✦ 已更新用户：{users}\n✦ 不存在的用户：{missing}",
+      "remove_usage": "⌯ <b>移除订阅</b>\n\n✦ 使用 <code>/rm -premium --user [用户ID]</code>。",
+      "removed": "⌯ <b>订阅移除完成</b>\n\n✦ 已更新用户：{users}\n✦ 不存在或未订阅的用户：{missing}"
+    },
+    "languages": {
+      "reply_to_json": "⌯ <b>需要语言文件</b>\n\n✦ 使用 <code>/add -lang</code> 时，请回复一个有效的 JSON 语言文件。",
+      "json_required": "⌯ <b>需要 JSON 文件</b>\n\n✦ 回复的文档必须使用 <code>.json</code> 扩展名。",
+      "already_exists": "⌯ <b>ℹ 语言已经存在</b>\n\n✦ 语言 <code>{language_code}</code> 已经安装。添加 <code>--update</code> 可将其替换。",
+      "invalid_json": "⌯ <b>语言文件无效</b>\n\n✦ 无法加载 JSON 文件：<code>{error}</code>",
+      "added": "⌯ <b>语言已添加</b>\n\n✦ 语言 <code>{language_code}</code> 现在可以使用。",
+      "updated": "⌯ <b>语言已更新</b>\n\n✦ 语言 <code>{language_code}</code> 已成功重新加载。"
+    },
+    "force_subscription": {
+      "empty": "⌯ <b>ℹ 没有必需频道</b>\n\n✦ 当前未配置任何强制订阅频道。",
+      "list_title": "⌯ <b>必需频道</b>\n\n✦ 当前正在强制要求以下频道。",
+      "list_item": "链接：{link}\n频道 ID：<code>{channel_id}</code>\n已加入：{joined}\n限制：{limit}",
+      "add_usage": "⌯ <b>添加必需频道</b>\n\n✦ 使用 <code>/add -frcch --link 频道链接 --id 频道ID --limit 数量</code>。",
+      "permission_required": "⌯ <b>需要管理员权限</b>\n\n✦ 机器人必须是管理员，并拥有邀请用户的权限。",
+      "added": "⌯ <b>必需频道已添加</b>\n\n✦ 频道：{channel_title}\n✦ 加入限制：{limit}",
+      "add_failed": "⌯ <b>无法添加频道</b>\n\n✦ 请检查频道标识符、链接以及机器人的管理员权限。",
+      "remove_usage": "⌯ <b>移除必需频道</b>\n\n✦ 使用 <code>/rm -frcch 频道ID</code>，或提供已保存的链接。",
+      "removed": "⌯ <b>必需频道已移除</b>\n\n✦ 不再强制要求加入该频道。",
+      "not_found": "⌯ <b>找不到必需频道</b>\n\n✦ 没有已保存频道与所提供的标识符或链接匹配。"
+    },
+    "logs": {
+      "not_found": "⌯ <b>日志目录不可用</b>\n\n✦ 机器人日志目录不存在。",
+      "empty": "⌯ <b>没有可用日志</b>\n\n✦ 未找到任何非空的机器人日志文件。",
+      "file_caption": "⌯ <b>机器人日志</b>\n\n✦ 文件：<code>{filename}</code>",
+      "upload_failed": "⌯ <b>日志上传失败</b>\n\n✦ 文件：<code>{filename}</code>\n✦ 错误：<code>{error}</code>"
+    }
+  },
+  "queue": {
+    "accepted": "⌯ <b>你的任务已保存</b>\n\n✦ 任务 ↣ {task_id}\n✦ 发送 /cancel 选择任务或者在 /cancel 后面写上任务编号\n✦ <code>/cancel {task_id}</code>",
+    "waiting_free": "⌯ <b>等待中</b>\n\n✦ 前面还有 {ahead} 人\n✦ 有空位时开始下载\n✦ 订阅后可以跳过公共队列",
+    "waiting_premium": "⌯ <b>等待中</b>\n\n✦ 你之前的任务有 {ahead} 个\n✦ 你的任务会依次执行",
+    "limit_free": "⌯ <b>任务</b>\n\n✦ 你已经有一个未完成的任务\n✦ 请等它完成或使用 /cancel 取消\n✦ 最多可以有 5 个未完成的任务\n✦ 请等其中一个完成或使用 /cancel 取消",
+    "limit_premium": "⌯ <b>任务</b>\n\n✦ 最多可以有 {limit} 个未完成的任务\n✦ 请等其中一个完成或使用 /cancel 取消",
+    "lost_after_restart": "⌯ <b>请重新开始任务</b>\n\n✦ 任务 ↣ {task_id}\n✦ 在 Telegram 中打开帖子并长按\n✦ 选择复制链接并把链接发到这里\n✦ 要下载多个帖子时先发送第一个帖子的链接",
+    "cancel_usage": "发送 /cancel 选择任务或者在 /cancel 后面写上任务编号\n<code>/cancel 123</code>",
+    "cancelled_one": "任务 {task_id} 已取消",
+    "not_found": "任务 {task_id} 已结束或不属于你",
+    "choose_to_cancel": "⌯ <b>取消 任务</b>\n\n✦ 发送 /cancel 选择任务或者在 /cancel 后面写上任务编号",
+    "cancelled_popup": "取消",
+    "not_found_popup": "请重新开始任务",
+    "buttons": {
+      "cancel": "取消 任务",
+      "upgrade": "订阅",
+      "cancel_task": "任务 {task_id} {kind} {status}",
+      "cancel_all": "取消 任务 /cancel"
+    },
+    "kinds": {
+      "dl": "下载一条帖子",
+      "bdl": "下载多条帖子",
+      "clone": "转移整个频道",
+      "task": "任务",
+      "monitor": "监控新的频道帖子"
+    },
+    "status": {
+      "queued": "等待中",
+      "running": "运行中"
+    },
+    "task_number": "任务 {task_id}"
+  },
+  "spam": {
+    "per_second": "每秒请勿发送超过一条消息",
+    "per_minute": "每分钟请勿发送超过 20 条消息\n这个机器人只接收下载链接\n请等待这一分钟结束",
+    "buttons": "你在一分钟内点击了超过 20 次按钮\n请稍等再继续\n重复违规会让等待时间加倍"
+  },
+  "flow": {
+    "first_link": "⌯ <b>下载一条帖子</b>\n\n✦ 在 Telegram 中打开帖子并长按\n✦ 选择复制链接并把链接发到这里\n✦ 要下载多个帖子时先发送第一个帖子的链接\n✦ <code>https://t.me/example_channel/15</code>",
+    "last_link": "⌯ <b>下载多条帖子</b>\n\n✦ 发送同一个频道中最后一个帖子的链接\n✦ 首尾两个帖子及中间所有帖子都会下载\n✦ 下一步选择内容类型",
+    "channel": "⌯ <b>选择频道</b>\n\n✦ 发送频道链接或用户名\n✦ 对于私密频道请用 /login 连接一个已经加入该频道的账号\n✦ <code>https://t.me/example_channel</code>",
+    "pick_channel": "选择频道",
+    "invalid_channel": "发送频道链接或用户名\n对于私密频道请用 /login 连接一个已经加入该频道的账号",
+    "upload_channel": "⌯ <b>选择上传频道</b>\n\n✦ 最简单 ↣ 把机器人加为你频道或群组里有发布权限的管理员\n✦ 机器人会在这里发确认消息你点确认就好\n✦ 或者点下方的选择频道按钮\n✦ 或者发送频道链接、用户名或以 <code>-100</code> 开头的ID\n✦ 这个功能需要机器人订阅"
+  },
+  "panel": {
+    "title": "⌯ <b>管理</b>\n\n✦ 订阅 / 礼物 / 必需加入的频道 / 群发",
+    "premium": "订阅",
+    "gift": "礼物",
+    "fsub": "必需加入的频道",
+    "broadcast": "群发",
+    "users": "导出用户",
+    "language": "语言文件",
+    "gifts": "有效礼物",
+    "choose_user": "选择用户或发送他们的数字用户编号",
+    "selected_users": "全部用户 ↣ {users}",
+    "selected_channel": "选择频道 ↣ {channel_id}",
+    "custom": "其他数字",
+    "remove_premium": "取消 订阅",
+    "days": "天数 ↣ {days}",
+    "value": "礼物积分",
+    "link_days": "链接有效天数 / 礼物有效期为零表示永不过期",
+    "point_days": "积分有效天数 / 礼物有效期为零表示永不过期",
+    "limit": "最多领取次数",
+    "only_users": "允许指定用户",
+    "exclude_users": "排除用户",
+    "send_broadcast": "把群发消息发送到这里\n查看副本并选择接收用户\n然后点击确认",
+    "send_language": "发送以语言代码命名的 JSON 文件例如 ar.json\n只有新文件有效时才会替换旧文件",
+    "enter_value": "发送一个数字或用逗号分隔的用户编号\n你的回复会被删除并更新此菜单",
+    "invalid_value": "请发送有效数字\n礼物有效期为零表示永不过期",
+    "audience_all": "全部用户",
+    "audience_premium": "订阅用户",
+    "audience_free": "免费用户",
+    "admins": "管理员",
+    "send_admin": "发送要任命的用户的数字 ID，或转发其一条消息\n点击下方的管理员即可移除",
+    "admin_added": "已添加管理员：{user_id}",
+    "admin_removed": "已移除管理员：{user_id}",
+    "admin_exists": "该用户已经是管理员",
+    "no_admins": "暂无管理员",
+    "owner_only": "只有所有者可以管理管理员"
+  },
+  "large": {
+    "saved": "发送到我的收藏夹",
+    "split": "下载并分割",
+    "help_button": "说明",
+    "split_notice": "⌯ <b>下载并分割</b>\n\n✦ 大小：{size}\n✦ 机器人每个分段可上传约 2 GB\n✦ 请选择下载并分割或取消\n✦ 要发送最大 4 GB 的完整文件请用 /login 连接 Telegram Premium 账号并用 /uploadch 选择目标频道",
+    "premium_notice": "⌯ <b>发送到我的收藏夹</b>\n\n✦ 大小：{size}\n✦ 已连接的 Telegram Premium 账号可以将完整文件上传到你的收藏夹\n✦ 也可以用 /uploadch 选择目标频道\n✦ 你还可以选择分割文件",
+    "help": "⌯ <b>说明</b>\n\n✦ 机器人订阅和 Telegram Premium 是两个独立的订阅\n✦ 机器人每个分段可上传约 2 GB\n✦ 已连接的 Telegram Premium 账号可以一次上传最大 4 GB 的文件\n✦ 使用 /login 连接账号\n✦ 将机器人和该账号设为目标频道管理员然后使用 /uploadch 选择频道\n✦ 没有目标频道时可以选择收藏夹\n✦ 作为文档发送的分段需要按照编号顺序重新合并"
+  },
+  "referral_check": {
+    "question": "⌯ <b>快速验证</b>\n\n✦ 请完成此题，以确认您是真人并计入您的邀请\n\n✦ {a} + {b} = ?",
+    "wrong": "⌯ <b>答案错误</b>\n\n✦ 请重试。剩余次数：{left}",
+    "failed": "⌯ <b>邀请未计入</b>\n\n✦ 由于未通过验证，您的邀请未被计入。您仍可正常使用机器人"
+  },
+  "units": {
+    "b": "{n} B",
+    "kb": "{n} KB",
+    "mb": "{n} MB",
+    "gb": "{n} GB",
+    "tb": "{n} TB",
+    "pb": "{n} PB",
+    "day": "{n}d",
+    "hour": "{n}h",
+    "minute": "{n}m",
+    "second": "{n}s"
+  }
+}

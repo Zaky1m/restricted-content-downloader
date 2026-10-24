@@ -1,0 +1,10 @@
+target
+data
+.git
+.env
+.env.*
+!.env.example
+CLAUDE.local.md
+*.local.md
+docs
+deploy

@@ -1,0 +1,675 @@
+{
+  "lang_name": "🇷🇴 Română",
+  "common": {
+    "not_available": "Indisponibil",
+    "never": "Niciodată",
+    "unlimited": "Nelimitat",
+    "none": "Nimic",
+    "yes": "Da",
+    "no": "Nu",
+    "processing": "⌯ <b>Se procesează</b>\n\n✦ Vă rugăm să așteptați cât timp operațiunea solicitată este pregătită",
+    "state_expired": "⌯ <b>Sesiune expirată</b>\n\n✦ Sesiunea de introducere salvată a expirat după zece minute. Vă rugăm să începeți din nou operațiunea",
+    "state_expired_popup": "Pornește sarcina din nou",
+    "action_cancelled": "⌯ <b>Operațiune anulată</b>\n\n✦ Operațiunea selectată a fost anulată, iar starea sa temporară a fost eliminată",
+    "unexpected_error": "⌯ <b>A apărut o eroare neașteptată</b>\n\n✦ Operațiunea nu a putut fi finalizată din cauza următoarei erori: <code>{error}</code>",
+    "something_went_wrong": "A apărut o eroare la procesarea acestei acțiuni, încercați din nou"
+  },
+  "buttons": {
+    "start": "Pornește",
+    "confirm": "Confirmă",
+    "back": "Înapoi",
+    "subscribe": "Abonează-te",
+    "earn_points": "Câștigă puncte",
+    "share_and_earn": "Distribuie și câștigă",
+    "link_account": "Conectează un cont",
+    "open_source": "Deschide canalul",
+    "refresh_subscription": "Verifică din nou",
+    "channel": "Canal de actualizări",
+    "help": "Ajutor",
+    "profile": "Profil",
+    "contact_admin": "Contactează asistența pentru alte metode de plată",
+    "cancel": "Anulează",
+    "delete": "Șterge",
+    "open": "Deschide",
+    "reject": "Refuză"
+  },
+  "commands": {
+    "bcjson": {
+      "description": "Descarcă șablonul multilingv pentru difuzare"
+    },
+    "start": {
+      "description": "Pornește botul"
+    },
+    "help": {
+      "description": "Deschide centrul de ajutor"
+    },
+    "profile": {
+      "description": "Vezi contul și punctele tale"
+    },
+    "premium": {
+      "description": "Vezi beneficiile abonamentului"
+    },
+    "language": {
+      "description": "Schimbă limba botului"
+    },
+    "login": {
+      "description": "Conectează un cont Telegram"
+    },
+    "logout": {
+      "description": "Elimină contul conectat"
+    },
+    "dl": {
+      "description": "Descarcă o postare Telegram"
+    },
+    "bdl": {
+      "description": "Descarcă un interval de postări"
+    },
+    "clone": {
+      "description": "Transferă un canal întreg"
+    },
+    "forcedownload": {
+      "description": "Gestionează modul de descărcare forțată"
+    },
+    "thumb": {
+      "description": "Gestionează miniatura personalizată"
+    },
+    "caption": {
+      "description": "Gestionează procesarea descrierilor"
+    },
+    "cancel": {
+      "description": "Anulează operațiunea curentă"
+    },
+    "stats": {
+      "description": "Vezi statisticile sistemului"
+    },
+    "monitor": {
+      "description": "Monitorizează automat un canal"
+    },
+    "uploadch": {
+      "description": "Setează un canal de destinație pentru încărcări"
+    },
+    "rmuploadch": {
+      "description": "Elimină destinația de încărcare"
+    },
+    "bc": {
+      "description": "Difuzează un mesaj"
+    },
+    "add": {
+      "description": "Adaugă setări administrative"
+    },
+    "rm": {
+      "description": "Elimină setări administrative"
+    },
+    "create": {
+      "description": "Creează un link cadou"
+    },
+    "logs": {
+      "description": "Descarcă jurnalele botului"
+    },
+    "admin": {
+      "description": "Administrare"
+    }
+  },
+  "start": {
+    "welcome": "⌯ <b>Bun venit la programul de descărcare media</b>\n\n✦ Trimiteți un link către o postare Telegram pentru a-i descărca conținutul media, inclusiv conținut din canale publice sau private și din canale care dezactivează redirecționarea. De asemenea, puteți descărca mai multe postări, transfera un canal complet, aplica o miniatură personalizată fișierelor sau trimite conținutul descărcat direct către alt canal\n\n✦ Cont conectat: {account_status}"
+  },
+  "accounts": {
+    "status": {
+      "connected": "Conectat",
+      "not_connected": "Neconectat"
+    },
+    "session_expired": "⌯ <b>Sesiunea conectată a expirat</b>\n\n✦ Contul Telegram conectat nu mai este autorizat. Conectați din nou contul înainte de a accesa surse private",
+    "access": {
+      "login_required": "⌯ <b>Este necesar un cont conectat</b>\n\n✦ Linkul trimis aparține unei surse private sau restricționate pe care conturile de descărcare nu o pot accesa. Conectați un cont Telegram care este deja membru al canalului sursă, apoi trimiteți din nou linkul",
+      "not_member": "⌯ <b>Contul conectat nu este membru</b>\n\n✦ Contul Telegram conectat la bot nu poate accesa canalul din linkul trimis. Alăturați-vă mai întâi canalului folosind contul conectat, apoi trimiteți din nou linkul"
+    },
+    "login": {
+      "choose_account": "⌯ <b>Alegeți contul de conectat</b>\n\n✦ Selectați dacă doriți să conectați contul Telegram curent sau alt cont. Contul selectat trebuie să fie deja membru al canalelor private din care doriți să descărcați",
+      "already_running": "⌯ <b>Conectarea este deja în desfășurare</b>\n\n✦ Finalizați sau anulați procesul curent de conectare înainte de a începe altul",
+      "already_connected": "⌯ <b>Un cont este deja conectat</b>\n\n✦ Numărul de telefon <code>{phone_number}</code> este conectat în prezent. Eliminați-l folosind /logout înainte de a conecta alt cont",
+      "share_contact": "⌯ <b>Distribuiți numărul de telefon</b>\n\n✦ Folosiți butonul de mai jos pentru a distribui în siguranță numărul de telefon al contului Telegram curent",
+      "enter_phone": "⌯ <b>Introduceți numărul de telefon alternativ</b>\n\n✦ Trimiteți manual numărul de telefon în format internațional. Acesta trebuie să înceapă cu <code>+</code>, urmat de codul țării, de exemplu <code>+12025550123</code>",
+      "invalid_phone": "⌯ <b>Număr de telefon nevalid</b>\n\n✦ Numărul trebuie să înceapă cu <code>+</code> și să includă codul țării, fără litere sau simboluri neacceptate. Începeți din nou conectarea sau trimiteți un număr formatat corect",
+      "contact_mismatch": "⌯ <b>Contactul nu corespunde</b>\n\n✦ Contactul distribuit nu aparține contului Telegram care folosește botul. Folosiți butonul furnizat pentru a distribui propriul număr sau alegeți opțiunea pentru alt cont",
+      "contact_received": "⌯ <b>Număr de telefon primit</b>\n\n✦ Botul pregătește solicitarea de autorizare. Așteptați ca Telegram să trimită codul de conectare",
+      "code_prompt": "⌯ <b>Telegram</b>\n\n✦ Introdu codul Telegram numai cu butoanele numerice\n✦ Șterge elimină ultima cifră iar Confirmă trimite codul",
+      "code_prompt_with_value": "⌯ <b>Telegram</b>\n\n✦ <code>{code}</code>\n✦ Introdu codul Telegram numai cu butoanele numerice\n✦ Șterge elimină ultima cifră iar Confirmă trimite codul",
+      "processing": "⌯ <b>Se verifică contul</b>\n\n✦ Codul este verificat, iar sesiunea conectată este creată",
+      "password_prompt": "⌯ <b>Este necesară verificarea în doi pași</b>\n\n✦ Trimiteți parola de verificare în doi pași pentru acest cont Telegram sub forma unui mesaj text\n\n✦ Indiciu pentru parolă: <code>{hint}</code>",
+      "completed": "⌯ <b>Cont conectat cu succes</b>\n\n✦ Contul Telegram este acum conectat. Puteți accesa canale private atât timp cât acest cont este deja membru al acestora",
+      "cancelled": "⌯ <b>Conectarea contului a fost anulată</b>\n\n✦ Sesiunea temporară de conectare a fost închisă și nu au fost salvate informații despre cont",
+      "restart_hint": "⌯ <b>Începeți din nou când sunteți pregătit</b>\n\n✦ Folosiți /login oricând doriți să începeți un nou proces de conectare a contului",
+      "failed": "⌯ <b>Conectarea contului a eșuat</b>\n\n✦ Procesul de autorizare nu a putut fi finalizat. Începeți din nou și verificați dacă numărul de telefon, codul de conectare și parola sunt corecte",
+      "flood_wait": "⌯ <b>Prea multe încercări de conectare</b>\n\n✦ Telegram a limitat temporar solicitările noi de autorizare. Încercați din nou după {seconds} secunde",
+      "invalid_code": "⌯ <b>Cod nevalid sau expirat</b>\n\n✦ Codul a fost respins sau a expirat. Introduceți cel mai recent cod trimis de Telegram sau anulați și începeți din nou conectarea",
+      "invalid_password": "⌯ <b>Parolă de verificare incorectă</b>\n\n✦ Parola de verificare în doi pași este incorectă. Trimiteți parola corectă sau anulați procesul de conectare",
+      "code_empty_popup": "Introduceți codul Telegram înainte de confirmare",
+      "invalid_code_popup": "Codul este nevalid sau a expirat",
+      "buttons": {
+        "my_account": "Contul meu curent",
+        "other_account": "Alt cont",
+        "share_phone": "Distribuie numărul meu de telefon"
+      },
+      "too_many_attempts": "⌯ <b>Sarcină</b>\n\n✦ Telegram a limitat temporar încercările de autentificare\n✦ Așteaptă înainte să folosești din nou /login",
+      "phone_banned": "⌯ <b>Telegram</b>\n\n✦ Acest număr este blocat pe Telegram\n✦ Folosește alt cont sau contactează asistența Telegram",
+      "hint_awaiting_contact": "⌯ <b>Distribuiți numărul de telefon</b>\n\n✦ Folosiți butonul de mai jos pentru a distribui în siguranță numărul de telefon al contului Telegram curent",
+      "hint_awaiting_account_type": "⌯ <b>Alegeți contul de conectat</b>\n\n✦ Selectați dacă doriți să conectați contul Telegram curent sau alt cont. Contul selectat trebuie să fie deja membru al canalelor private din care doriți să descărcați",
+      "hint_sending_code": "În așteptare\nIntrodu codul Telegram numai cu butoanele numerice\nȘterge elimină ultima cifră iar Confirmă trimite codul",
+      "hint_awaiting_code": "Introdu codul Telegram numai cu butoanele numerice\nȘterge elimină ultima cifră iar Confirmă trimite codul"
+    },
+    "logout": {
+      "not_connected": "⌯ <b>ℹ Nu este conectat niciun cont</b>\n\n✦ În prezent, profilul dumneavoastră din bot nu are niciun cont Telegram conectat",
+      "confirm": "⌯ <b>Eliminați contul conectat</b>\n\n✦ Numărul de telefon <code>{phone_number}</code> va fi deconectat, iar sesiunea sa salvată va fi ștearsă. Confirmați numai dacă doriți să continuați",
+      "completed": "⌯ <b>Cont conectat eliminat</b>\n\n✦ Sesiunea Telegram salvată a fost ștearsă cu succes. Puteți conecta alt cont în orice moment"
+    }
+  },
+  "subscription": {
+    "required": "⌯ <b>Este necesară abonarea</b>\n\n✦ Alăturați-vă canalelor enumerate mai jos înainte de a folosi botul, apoi apăsați butonul de verificare\n\n✦ {channels}",
+    "completed": "⌯ <b>Abonare verificată</b>\n\n✦ Apartenența dumneavoastră la canale a fost verificată cu succes. Acum puteți continua să folosiți botul",
+    "still_missing_popup": "Trebuie să vă alăturați în continuare tuturor canalelor obligatorii"
+  },
+  "downloads": {
+    "invalid_link": "⌯ <b>Link Telegram nevalid</b>\n\n✦ Trimiteți un link care indică direct către o postare Telegram, precum <code>https://t.me/channel/123</code>",
+    "post_not_found": "⌯ <b>Postarea nu a fost găsită</b>\n\n✦ Postarea solicitată nu există, a fost ștearsă sau nu este accesibilă contului de descărcare selectat",
+    "nothing_to_download": "⌯ <b>Nimic de descărcat</b>\n\n✦ Această postare nu conține media sau text de descărcat, de exemplu o notificare despre schimbarea numelui sau a pozei canalului",
+    "comment_unavailable": "⌯ <b>Comentariul nu a putut fi identificat</b>\n\n✦ Linkul comentariului nu indică spre un mesaj de discuție accesibil sau Telegram a respins identificatorul mesajului menționat",
+    "client_unavailable": "⌯ <b>Cont de descărcare indisponibil</b>\n\n✦ În prezent, nu este disponibil niciun cont Telegram pentru preluarea acestui conținut. Încercați din nou mai târziu sau conectați-vă propriul cont",
+    "preparing": "⌯ <b>Se pregătește descărcarea</b>\n\n✦ Informațiile conținutului media sunt colectate înainte de începerea transferului",
+    "splitting": "⌯ <b>Se împarte fișierul</b>\n\n✦ Fișierul este mai mare decât limita unei părți încărcate și este împărțit în părți acceptate",
+    "file_too_large": "⌯ <b>Fișierul depășește dimensiunea acceptată</b>\n\n✦ Acest fișier nu poate fi procesat pentru {action}, deoarece dimensiunea sa este mai mare de {maximum_size}",
+    "file_too_small": "⌯ <b>Fișierul este gol sau deteriorat</b>\n\n✦ Conținutul media descărcat este prea mic pentru a fi considerat valid sau Telegram a returnat un fișier incomplet",
+    "file_missing": "⌯ <b>Fișierul descărcat lipsește</b>\n\n✦ Fișierul media temporar nu a putut fi găsit sau era gol înainte de încărcare",
+    "download_failed": "⌯ <b>Descărcarea a eșuat</b>\n\n✦ Conținutul media nu a putut fi preluat după mai multe încercări. Verificați accesul contului la sursă și încercați din nou",
+    "upload_failed": "⌯ <b>Încărcarea a eșuat</b>\n\n✦ Conținutul media a fost descărcat, dar nu a putut fi livrat. Telegram a returnat: <code>{error}</code>",
+    "flood_wait": "⌯ <b>Limită de frecvență Telegram</b>\n\n✦ Telegram a solicitat o întârziere de {seconds} secunde înainte ca încărcarea să poată continua",
+    "actions": {
+      "download": "descărcare",
+      "upload": "încărcare"
+    },
+    "progress": {
+      "downloading": "Se descarcă",
+      "uploading": "Se încarcă",
+      "body": "⌯ <b>{action}</b>\n\n✦ <code>{progress_bar}</code>\n\n✦ Transferat: {current_size} / {total_size}\n✦ Progres: {percentage}%\n✦ Viteză: {speed}/s\n✦ Timp rămas: {eta}"
+    },
+    "parts": {
+      "item": "Partea {current} din {total}"
+    },
+    "album": {
+      "preparing": "⌯ <b>Album media detectat</b>\n\n✦ Albumul conține {count} elemente selectate și va fi procesat în ordine",
+      "processing": "⌯ <b>Se procesează albumul media</b>\n\n✦ Se procesează elementul {current} din {total}"
+    },
+    "single": {
+      "usage": "/dl\nDeschide postarea în Telegram și ține apăsat\nAlege Copiază linkul și trimite-l aici\nPentru mai multe postări trimite întâi linkul primei"
+    },
+    "batch": {
+      "usage": "/bdl\nDeschide postarea în Telegram și ține apăsat\nAlege Copiază linkul și trimite-l aici\nPentru mai multe postări trimite întâi linkul primei\nTrimite linkul ultimei postări din același canal\nSe includ ambele postări și toate cele dintre ele\nApoi alegi tipurile de conținut",
+      "different_sources": "⌯ <b>Linkurile aparțin unor chat-uri diferite</b>\n\n✦ Primul și ultimul link trebuie să provină din același canal sau grup Telegram",
+      "invalid_order": "⌯ <b>Ordinea postărilor este incorectă</b>\n\n✦ Primul link trebuie să indice spre o postare mai veche decât cea indicată de ultimul link",
+      "invalid_links": "⌯ <b>Linkuri de lot nevalide</b>\n\n✦ Ambele valori trebuie să fie linkuri valide către postări Telegram din aceeași sursă",
+      "starting": "⌯ <b>Descărcarea în lot a început</b>\n\n✦ Botul va procesa postările de la {start_id} la {end_id}. Numărul total de postări solicitate: {total}",
+      "progress": "⌯ <b>Descărcarea în lot este în desfășurare</b>\n\n✦ Element curent: {current} din {total}\n✦ ID postare: {message_id}\n✦ Descărcate: {downloaded}\n✦ Omise: {skipped}\n✦ Eșuate: {failed}",
+      "completed": "⌯ <b>Operațiunea în lot s-a încheiat</b>\n\n✦ Descărcate: {downloaded}\n✦ Omise: {skipped}\n✦ Eșuate: {failed}",
+      "cancelled": "⌯ <b>Operațiunea în lot a fost anulată</b>\n\n✦ Postările rămase nu vor fi procesate. Progresul salvat înainte de anulare a fost șters",
+      "failed": "⌯ <b>Operațiunea în lot s-a oprit</b>\n\n✦ O eroare neașteptată a împiedicat procesarea postărilor rămase",
+      "retrying": "⌯ <b>Se reîncearcă elementele eșuate</b>\n\n✦ Etapa principală s-a încheiat. Cele {count} elemente eșuate vor fi reîncercate acum"
+    },
+    "disk_full": "⌯ <b>Sarcină</b>\n\n✦ Nu este destul spațiu pentru a descărca fișierul acum\n✦ Încearcă mai târziu",
+    "paid": {
+      "not_purchased": "⌯ <b>Această postare trebuie cumpărată cu Telegram Stars</b>\n\n✦ Cumpără cu contul conectat și trimite din nou linkul"
+    }
+  },
+  "tasks": {
+    "already_running": "⌯ <b>O altă sarcină este deja în desfășurare</b>\n\n✦ Așteptați finalizarea sarcinii active sau anulați-o înainte de a începe altă operațiune",
+    "resumed": "⌯ <b>Sarcină reluată</b>\n\n✦ A fost găsită o sarcină întreruptă, care va continua de la ultima poziție salvată",
+    "cancel_requested": "⌯ <b>Anulare solicitată</b>\n\n✦ Operațiunea activă este oprită, iar fișierele temporare vor fi șterse",
+    "input_cancelled": "⌯ <b>Sesiunea de introducere a fost anulată</b>\n\n✦ Starea de conectare, filtrare sau confirmare în așteptare a fost eliminată",
+    "none_to_cancel": "⌯ <b>ℹ Nicio operațiune activă</b>\n\n✦ Nu există nicio sarcină în desfășurare sau sesiune de introducere în așteptare care să poată fi anulată",
+    "completion": {
+      "single": {
+        "private": "⌯ <b>Descărcare finalizată</b>\n\n✦ Conținutul media solicitat a fost descărcat și trimis cu succes în acest chat",
+        "saved_messages": "⌯ <b>Descărcare finalizată</b>\n\n✦ Conținutul media solicitat a fost descărcat și livrat în Mesajele salvate ale contului conectat",
+        "channel": "⌯ <b>Încărcare finalizată</b>\n\n✦ Conținutul media solicitat a fost livrat cu succes către <b>{channel_title}</b>\n\n✦ {message_link}"
+      },
+      "batch": {
+        "private": "⌯ <b>Sarcina în lot a fost finalizată</b>\n\n✦ Botul a terminat de procesat intervalul selectat și a livrat {count} elemente în acest chat",
+        "saved_messages": "⌯ <b>Sarcina în lot a fost finalizată</b>\n\n✦ Botul a terminat de procesat intervalul selectat și a livrat {count} elemente în Mesajele salvate ale contului conectat",
+        "channel": "⌯ <b>Încărcarea în lot a fost finalizată</b>\n\n✦ Botul a terminat de procesat intervalul selectat și a livrat {count} elemente către canalul selectat"
+      },
+      "clone": {
+        "private": "⌯ <b>Transferul canalului a fost finalizat</b>\n\n✦ Sarcina canalului s-a încheiat, iar {count} elemente au fost livrate în acest chat",
+        "saved_messages": "⌯ <b>Transferul canalului a fost finalizat</b>\n\n✦ Sarcina canalului s-a încheiat, iar {count} elemente au fost livrate în Mesajele salvate ale contului conectat",
+        "channel": "⌯ <b>Transferul canalului a fost finalizat</b>\n\n✦ Sarcina canalului s-a încheiat, iar {count} elemente au fost livrate către canalul de destinație selectat"
+      },
+      "monitor": {
+        "private": "⌯ <b>Postare monitorizată livrată</b>\n\n✦ A fost detectată o postare nouă, care a fost livrată în acest chat",
+        "saved_messages": "⌯ <b>Postare monitorizată livrată</b>\n\n✦ A fost detectată o postare nouă, care a fost livrată în Mesajele salvate ale contului conectat",
+        "channel": "⌯ <b>Postare monitorizată livrată</b>\n\n✦ A fost detectată o postare nouă, care a fost livrată către canalul de destinație selectat"
+      }
+    }
+  },
+  "filters": {
+    "prompt": "⌯ <b>Alegeți filtrul de conținut</b>\n\n✦ Selectați dacă doriți să procesați tot conținutul, să salvați numai tipurile media selectate sau să omiteți tipurile media selectate. Sesiunea de selectare rămâne activă timp de zece minute",
+    "modes": {
+      "all": "Tot conținutul",
+      "save": "Salvează numai",
+      "skip": "Omite selecția"
+    },
+    "types": {
+      "videos": "Videoclipuri",
+      "photos": "Fotografii",
+      "audio": "Audio",
+      "files": "Fișiere",
+      "text": "Text",
+      "other": "Altele"
+    },
+    "summary": {
+      "all": "Tot conținutul acceptat",
+      "save": "Salvează numai: {types}",
+      "skip": "Omite: {types}",
+      "minimum_duration": "Durată minimă: {seconds} secunde",
+      "maximum_duration": "Durată maximă: {seconds} secunde"
+    }
+  },
+  "clone": {
+    "usage": "/clone\nTrimite linkul canalului sau numele de utilizator\nPentru un canal privat conectează prin /login un cont care este deja membru",
+    "channel_not_found": "⌯ <b>Canalul nu a fost găsit</b>\n\n✦ Numele de utilizator sau linkul canalului este nevalid ori contul conectat nu îl poate identifica",
+    "empty_channel": "⌯ <b>Canalul este gol</b>\n\n✦ Nu au fost găsite postări transferabile în canalul selectat",
+    "starting": "⌯ <b>Transferul canalului a început</b>\n\n✦ Botul se pregătește să proceseze {total} identificatori de postări din <b>{channel_title}</b>",
+    "progress": "⌯ <b>Transferul canalului este în desfășurare</b>\n\n✦ Element curent: {current} din {total}\n✦ ID postare: {message_id}\n✦ Descărcate: {downloaded}\n✦ Omise: {skipped}\n✦ Eșuate: {failed}",
+    "flood_wait": "⌯ <b>Limită de frecvență Telegram</b>\n\n✦ Transferul canalului a fost suspendat timp de {seconds} secunde",
+    "completed": "⌯ <b>Procesarea canalului s-a încheiat</b>\n\n✦ Descărcate: {downloaded}\n✦ Omise: {skipped}\n✦ Eșuate: {failed}",
+    "cancelled": "⌯ <b>Transferul canalului a fost anulat</b>\n\n✦ Postările rămase din canal nu vor fi procesate",
+    "failed": "⌯ <b>Transferul canalului a eșuat</b>\n\n✦ O eroare neașteptată a împiedicat finalizarea transferului"
+  },
+  "uploads": {
+    "channel": {
+      "usage": "/uploadch\nAlege canalul\nAbonamentul botului și Telegram Premium sunt separate\nBotul încarcă aproximativ 2 GB pe parte\nUn cont Telegram Premium conectat poate încărca până la 4 GB într-un singur fișier\nConectează contul cu /login\nAdaugă botul și contul ca administratori în canalul destinație și alege-l cu /uploadch\nFără canal poți alege mesajele salvate\nPărțile trimise ca documente trebuie reunite în ordinea numerelor\nCel mai simplu ↣ adaugă botul ca admin în canalul sau grupul tău și îți cere aici confirmarea",
+      "current": "⌯ <b>Alege canalul</b>\n\n✦ {channel_id}\n✦ /uploadch\n✦ /rmuploadch",
+      "invalid_id": "⌯ <b>Identificator de canal nevalid</b>\n\n✦ Trimiteți ID-ul numeric al canalului Telegram, care începe de obicei cu <code>-100</code>\n✦ Cel mai simplu ↣ adaugă botul ca admin în canalul sau grupul tău și îți cere aici confirmarea",
+      "bot_not_admin": "⌯ <b>Este necesar accesul de administrator pentru bot</b>\n\n✦ Adăugați botul ca administrator în canalul de destinație înainte de a activa încărcările în canal\n✦ Cel mai simplu ↣ adaugă botul ca admin în canalul sau grupul tău și îți cere aici confirmarea",
+      "user_not_admin": "⌯ <b>Este necesar accesul dumneavoastră de administrator</b>\n\n✦ Trebuie să fiți proprietar sau administrator al canalului de destinație",
+      "access_denied": "⌯ <b>Verificarea canalului a eșuat</b>\n\n✦ Canalul nu a putut fi accesat sau lipsesc permisiunile de administrator necesare",
+      "enabled": "⌯ <b>Canal de încărcare conectat</b>\n\n✦ Descărcările viitoare vor fi livrate către <b>{channel_title}</b> până când eliminați această destinație",
+      "disabled": "⌯ <b>Canalul de încărcare a fost dezactivat</b>\n\n✦ Botul a pierdut accesul de administrator la canalul selectat, astfel încât livrarea către canal a fost dezactivată automat",
+      "removed": "⌯ <b>Canalul de încărcare a fost eliminat</b>\n\n✦ Descărcările viitoare vor reveni la destinația implicită de livrare",
+      "not_set": "⌯ <b>ℹ Nu este configurat niciun canal de încărcare</b>\n\n✦ Profilul dumneavoastră nu are în prezent un canal de destinație"
+    },
+    "auto": {
+      "start_first": "⌯ <b>Termină conectarea canalului</b>\n\n✦ Ai adăugat botul în ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Apasă Start ca să te înregistrezi la bot și să termini conectarea\n✦ Fără răspuns în 24 de ore botul iese",
+      "premium_only": "⌯ <b>Conectarea canalului e pentru abonați</b>\n\n✦ Ai adăugat botul în ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Primirea descărcărilor într-un canal sau grup face parte din abonamentul botului\n✦ Botul a ieșit\n✦ Abonează-te cu butonul de mai jos apoi adaugă botul din nou",
+      "confirm": "⌯ <b>Confirmă canalul de încărcare</b>\n\n✦ Ai adăugat botul în ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Dacă confirmi descărcările noi și postările urmărite vor ajunge acolo\n✦ Dacă refuzi botul iese\n✦ Fără răspuns în 24 de ore botul iese singur",
+      "linked": "⌯ <b>Canal de încărcare conectat</b>\n\n✦ Canal ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Descărcările noi și postările urmărite vor ajunge acolo\n✦ Trimite /rmuploadch ca să îl scoți",
+      "no_rights": "⌯ <b>Botul nu poate posta acolo</b>\n\n✦ Canal ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Botul a ieșit pentru că nu e admin sau nu poate posta\n✦ Adaugă-l din nou ca admin cu drept de postare",
+      "user_not_admin": "⌯ <b>Trebuie să fii admin acolo</b>\n\n✦ Canal ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Canalul de încărcare trebuie să fie al tău sau să fii admin în el\n✦ Botul a ieșit",
+      "expired": "Această cerere a expirat"
+    }
+  },
+  "forcedownload": {
+    "details": "⌯ <b>Mod de descărcare forțată</b>\n\n✦ Când este activat, botul descarcă și încarcă fiecare element media în loc să îl copieze direct. Acest lucru este util pentru aplicarea unei miniaturi personalizate, reconstruirea fișierelor sau gestionarea restricțiilor de redirecționare\n\n✦ Stare curentă: {status}",
+    "premium_required": "⌯ <b>Este necesar un abonament</b>\n\n✦ Modul de descărcare forțată este disponibil abonaților deoarece consumă spațiu de stocare, lățime de bandă și resurse de procesare suplimentare",
+    "flag_removed": "⌯ <b>ℹ Opțiunea --fdl a fost eliminată</b>\n\n✦ Descărcarea forțată este acum un mod permanent al utilizatorului. Abonații îl pot gestiona folosind /forcedownload în loc să îl adauge la comenzi individuale",
+    "enabled": "⌯ <b>Modul de descărcare forțată a fost activat</b>\n\n✦ Sarcinile viitoare de descărcare, lot, clonare și monitorizare vor prelua și încărca fișierele originale în loc să copieze direct postările",
+    "disabled": "⌯ <b>Modul de descărcare forțată a fost dezactivat</b>\n\n✦ Botul poate copia din nou direct postările fără restricții, continuând să descarce conținutul protejat atunci când este necesar",
+    "status": {
+      "enabled": "Activat",
+      "disabled": "Dezactivat"
+    },
+    "buttons": {
+      "enable": "Activează descărcarea forțată",
+      "disable": "Dezactivează descărcarea forțată"
+    }
+  },
+  "thumbnail": {
+    "not_set": "⌯ <b>Nicio miniatură personalizată</b>\n\n✦ Trimiteți mai întâi o imagine botului, apoi confirmați-o pentru a o folosi drept copertă pentru fișierele încărcate compatibile",
+    "current": "⌯ <b>Miniatura personalizată curentă</b>\n\n✦ Aceasta este imaginea salvată pentru încărcările viitoare compatibile\n\n✦ Stare: {status}",
+    "confirm": "⌯ <b>Folosiți această imagine ca miniatură</b>\n\n✦ Confirmați pentru a salva această imagine drept copertă personalizată sau anulați pentru a șterge imaginea temporară",
+    "saved": "⌯ <b>Miniatură salvată</b>\n\n✦ Imaginea a fost salvată și activată pentru încărcările viitoare compatibile",
+    "download_failed": "⌯ <b>Descărcarea imaginii a eșuat</b>\n\n✦ Imaginea nu a putut fi salvată. Trimiteți-o din nou și asigurați-vă că Telegram a finalizat încărcarea",
+    "temp_missing": "⌯ <b>Imaginea temporară este indisponibilă</b>\n\n✦ Sesiunea de confirmare a expirat sau imaginea temporară a fost eliminată. Trimiteți din nou imaginea",
+    "not_set_popup": "Nu este disponibilă nicio miniatură salvată",
+    "status": {
+      "enabled": "Activată",
+      "disabled": "Dezactivată"
+    },
+    "buttons": {
+      "enable": "Activează miniatura",
+      "disable": "Dezactivează miniatura"
+    }
+  },
+  "captions": {
+    "settings": "⌯ <b>Procesarea descrierilor</b>\n\n✦ Alegeți modul în care trebuie gestionate descrierile atunci când conținutul media este copiat sau încărcat\n\n✦ Mod curent: {current}",
+    "modes": {
+      "keep_all": "Păstrează descrierea originală",
+      "remove_all": "Elimină descrierile conținutului media",
+      "remove_links_users": "Elimină linkurile și numele de utilizator"
+    },
+    "buttons": {
+      "keep_all": "Păstrează descrierile originale",
+      "remove_all": "Elimină toate descrierile",
+      "remove_links_users": "Elimină linkurile și numele de utilizator"
+    },
+    "already_selected_popup": "Acest mod pentru descrieri este deja activ",
+    "updated_popup": "Modul pentru descrieri a fost actualizat"
+  },
+  "profile": {
+    "unavailable": "⌯ <b>Profil indisponibil</b>\n\n✦ Înregistrarea de utilizator salvată nu a putut fi încărcată. Trimiteți /start și încercați din nou",
+    "details": "⌯ <b>Profilul dumneavoastră</b>\n\n✦ ID utilizator: <code>{user_id}</code>\n✦ Plan: {plan_status}\n✦ Expirarea planului: {expiry_date}\n✦ Puncte zilnice: {daily_points}/{daily_limit}\n✦ Resetare zilnică: {reset_time}\n✦ Puncte cadou: {gift_points}\n✦ Puncte din recomandări: {referral_points}\n✦ Recomandări: {referral_count}\n✦ Descărcare forțată: {force_download_status}\n\n✦ Link de recomandare:\n✦ <code>{referral_link}</code>"
+  },
+  "plans": {
+    "free": "Gratuit",
+    "premium": "Abonat",
+    "monthly": "Lunar",
+    "yearly": "Anual"
+  },
+  "premium": {
+    "details": "⌯ <b>Abonament</b>\n\n✦ Abonament\n✦ Poți avea cel mult 5 sarcini deschise\n✦ Așteaptă să termine una sau anuleaz-o cu /cancel\n✦ Abonamentul permite să sari coada comună\n✦ /clone\n✦ /monitor\n✦ /uploadch\n✦ /caption\n✦ /fdl\n✦ Abonamentul botului și Telegram Premium sunt separate",
+    "feature_required": "⌯ <b>Este necesar un abonament</b>\n\n✦ Această funcție este disponibilă abonaților. Deschideți meniul abonamentului pentru a vedea planurile disponibile",
+    "already_active": "⌯ <b>Abonamentul este activ</b>\n\n✦ Abonamentul dumneavoastră rămâne activ până la {expiry_date}",
+    "already_active_popup": "Abonamentul dumneavoastră este activ până la {expiry_date}",
+    "required_popup": "Această funcție necesită un abonament activ",
+    "granted": "⌯ <b>Abonament activat</b>\n\n✦ Contul dumneavoastră a fost actualizat cu succes. Abonamentul curent expiră la {expiry_date}",
+    "removed": "⌯ <b>ℹ Abonament eliminat</b>\n\n✦ Modurile disponibile numai abonaților și setările de destinație au fost dezactivate pentru contul dumneavoastră",
+    "buttons": {
+      "monthly": "Plan lunar",
+      "yearly": "Plan anual"
+    },
+    "granted_days": "⌯ <b>Abonament</b>\n\n✦ Zile adăugate: {days}\n✦ Expirare: {expiry_date}\n✦ Zilele se adaugă la timpul rămas dacă exista"
+  },
+  "language": {
+    "select": "⌯ <b>Alegeți limba</b>\n\n✦ Selectați limba utilizată pentru mesajele botului și meniul personal de comenzi Telegram",
+    "changed": "⌯ <b>Limba a fost schimbată</b>\n\n✦ Mesajele și comenzile Telegram vor fi afișate acum în {language_name}",
+    "unavailable_popup": "Limba selectată este indisponibilă"
+  },
+  "limits": {
+    "insufficient_points": "⌯ <b>Nu aveți suficiente puncte pentru descărcare</b>\n\n✦ Nu aveți suficiente puncte pentru această descărcare. Soldul zilnic se va reseta după {time_left} sau puteți câștiga mai multe puncte prin recomandări",
+    "insufficient_points_batch": "⌯ <b>Nu aveți suficiente puncte pentru acest lot</b>\n\n✦ Această operațiune necesită {required_points} puncte, iar soldul dumneavoastră disponibil în prezent este de {available_points}",
+    "reset_now": "Se resetează acum",
+    "cooldown": "⌯ <b>Așteptați înainte de a descărca din nou</b>\n\n✦ Puteți începe o altă descărcare gratuită după {remaining_time}"
+  },
+  "referrals": {
+    "share_text": "Folosește acest program Telegram de descărcare și câștigă puncte prin linkul meu de recomandare",
+    "new_referral": "⌯ <b>S-a alăturat o recomandare nouă</b>\n\n✦ {user_name} (<code>{user_id}</code>) s-a alăturat folosind linkul dumneavoastră. Ați primit {reward} puncte din recomandări",
+    "welcome_bonus": "⌯ <b>Bonus de recomandare primit</b>\n\n✦ Ați primit {bonus} puncte pentru că v-ați alăturat folosind linkul de recomandare al unui utilizator existent"
+  },
+  "gifts": {
+    "claim": {
+      "already_claimed": "⌯ <b>ℹ Cadoul a fost deja revendicat</b>\n\n✦ Acest cadou a fost adăugat anterior în contul dumneavoastră și nu poate fi revendicat de două ori",
+      "invalid": "⌯ <b>Cadoul nu a fost găsit</b>\n\n✦ Linkul cadoului este nevalid sau nu mai există",
+      "inactive": "⌯ <b>Cadoul este inactiv</b>\n\n✦ Acest cadou a fost dezactivat de administrator și nu mai poate fi revendicat",
+      "link_expired": "⌯ <b>Linkul cadoului a expirat</b>\n\n✦ Perioada permisă pentru revendicarea acestui cadou s-a încheiat",
+      "limit_reached": "⌯ <b>Limita cadoului a fost atinsă</b>\n\n✦ Numărul maxim permis de revendicări a fost deja utilizat",
+      "not_allowed": "⌯ <b>Cadoul nu este atribuit contului dumneavoastră</b>\n\n✦ Acest cadou poate fi revendicat numai de anumiți utilizatori, iar contul dumneavoastră nu este inclus",
+      "excluded": "⌯ <b>Cadoul este indisponibil pentru contul dumneavoastră</b>\n\n✦ Contul dumneavoastră este exclus de la revendicarea acestui cadou",
+      "completed": "⌯ <b>Cadou revendicat</b>\n\n✦ {value} puncte au fost adăugate cu succes în contul dumneavoastră",
+      "completed_with_expiry": "⌯ <b>Cadou revendicat</b>\n\n✦ {value} puncte au fost adăugate în contul dumneavoastră și vor rămâne disponibile până la {expiry_date}",
+      "failed": "⌯ <b>Revendicarea cadoului a eșuat</b>\n\n✦ Cadoul nu a putut fi aplicat contului dumneavoastră. Încercați din nou mai târziu"
+    }
+  },
+  "help": {
+    "menu": {
+      "title": "⌯ <b>Centru de ajutor</b>\n\n✦ Alegeți o funcție de mai jos pentru a-i vedea instrucțiunile și modul recomandat de utilizare"
+    },
+    "buttons": {
+      "single": "Descărcare individuală",
+      "batch": "Descărcare în lot",
+      "clone": "Transfer de canal",
+      "monitor": "Monitorizare canal",
+      "channel_upload": "Canal de încărcare",
+      "forcedownload": "Descărcare forțată",
+      "login": "Cont conectat",
+      "points": "Puncte",
+      "premium": "Abonament",
+      "other_uses": "Alte utilizări"
+    },
+    "features": {
+      "dl": "⌯ <b>Descărcați o postare</b>\n\n✦ /dl\n✦ Deschide postarea în Telegram și ține apăsat\n✦ Alege Copiază linkul și trimite-l aici\n✦ Pentru mai multe postări trimite întâi linkul primei\n✦ <code>https://t.me/example_channel/15</code>\n✦ Trimite linkul canalului sau numele de utilizator\n✦ Pentru un canal privat conectează prin /login un cont care este deja membru\n✦ Dimensiune:\n✦ Botul încarcă aproximativ 2 GB pe parte\n✦ Alege Descarcă și împarte sau Anulează\n✦ Pentru un fișier întreg de până la 4 GB conectează Telegram Premium cu /login și alege un canal cu /uploadch",
+      "bdl": "⌯ <b>Descărcați mai multe postări</b>\n\n✦ /bdl\n✦ Deschide postarea în Telegram și ține apăsat\n✦ Alege Copiază linkul și trimite-l aici\n✦ Pentru mai multe postări trimite întâi linkul primei\n✦ Trimite linkul ultimei postări din același canal\n✦ Se includ ambele postări și toate cele dintre ele\n✦ Apoi alegi tipurile de conținut\n✦ <code>/bdl https://t.me/example_channel/15 https://t.me/example_channel/30</code>\n✦ Trimite /cancel ca să alegi o sarcină sau /cancel urmat de numărul ei",
+      "clone": "⌯ <b>Transferați un canal complet</b>\n\n✦ Abonament\n✦ /clone\n✦ Trimite linkul canalului sau numele de utilizator\n✦ Pentru un canal privat conectează prin /login un cont care este deja membru\n✦ /uploadch\n✦ Trimite /cancel ca să alegi o sarcină sau /cancel urmat de numărul ei",
+      "monitor": "⌯ <b>Monitorizați postările noi dintr-un canal</b>\n\n✦ Abonament\n✦ /monitor\n✦ Trimite linkul canalului sau numele de utilizator\n✦ Pentru un canal privat conectează prin /login un cont care este deja membru\n✦ Canal:\n✦ Filtre:\n✦ Canalele publice folosesc un cont de descărcare\n✦ Cele private sunt verificate la fiecare oră cu un singur cont pe rând care se închide după verificare\n✦ Postările noi intră într-o coadă salvată și sunt livrate în ordine\n✦ Oprește monitorizarea",
+      "channel_upload": "⌯ <b>Livrați conținut către alt canal</b>\n\n✦ Abonament\n✦ /uploadch\n✦ Abonamentul botului și Telegram Premium sunt separate\n✦ Botul încarcă aproximativ 2 GB pe parte\n✦ Un cont Telegram Premium conectat poate încărca până la 4 GB într-un singur fișier\n✦ Conectează contul cu /login\n✦ Adaugă botul și contul ca administratori în canalul destinație și alege-l cu /uploadch\n✦ Fără canal poți alege mesajele salvate\n✦ Părțile trimise ca documente trebuie reunite în ordinea numerelor\n✦ /rmuploadch\n✦ Cel mai simplu ↣ adaugă botul ca admin în canalul sau grupul tău și îți cere aici confirmarea",
+      "forcedownload": "⌯ <b>Mod de descărcare forțată</b>\n\n✦ Folosiți /forcedownload pentru ca botul să preia și să încarce fiecare fișier în loc să copieze postările fără restricții. Acest mod este util pentru miniaturi personalizate și reconstruirea conținutului",
+      "login": "⌯ <b>Conectați un cont Telegram</b>\n\n✦ Folosiți /login și alegeți contul curent sau un cont alternativ. Contul conectat trebuie să fie deja membru al canalelor private pe care doriți să le accesați. Codurile de autorizare sunt introduse numai prin tastatura securizată\n✦ Introdu codul Telegram numai cu butoanele numerice\n✦ Șterge elimină ultima cifră iar Confirmă trimite codul\n✦ Trimite linkul canalului sau numele de utilizator\n✦ Pentru un canal privat conectează prin /login un cont care este deja membru\n✦ /logout",
+      "points": "⌯ <b>Puncte pentru descărcări</b>\n\n✦ Descărcările gratuite folosesc puncte zilnice, puncte cadou și puncte din recomandări. Distribuiți linkul personal pentru a câștiga mai multe puncte:\n\n✦ <code>{referral_link}</code>",
+      "premium": "⌯ <b>Beneficiile abonamentului</b>\n\n✦ /premium\n✦ Abonament\n✦ Poți avea cel mult 5 sarcini deschise\n✦ Așteaptă să termine una sau anuleaz-o cu /cancel\n✦ Abonamentul permite să sari coada comună\n✦ /clone\n✦ /monitor\n✦ /uploadch\n✦ /caption\n✦ /fdl\n✦ Abonamentul botului și Telegram Premium sunt separate",
+      "other_uses": "⌯ <b>Alte moduri de utilizare a botului</b>\n\n✦ <b>Transferați un canal în altul:</b> Configurați o destinație folosind /uploadch, apoi executați /clone pentru canalul sursă. Conținutul selectat va fi transferat conform filtrelor dumneavoastră\n\n✦ <b>Înlocuiți coperțile unui serial complet:</b> Trimiteți noua imagine de copertă botului și confirmați-o, activați modul de descărcare forțată, apoi executați /bdl folosind linkurile primului și ultimului episod. Fișierele vor fi descărcate și încărcate folosind coperta selectată acolo unde aceasta este acceptată"
+    }
+  },
+  "monitor": {
+    "login_required": "⌯ <b>Conectați un cont Telegram</b>\n\n✦ Trimite linkul canalului sau numele de utilizator\n✦ Pentru un canal privat conectează prin /login un cont care este deja membru",
+    "usage": "⌯ <b>Monitorizați postările noi dintr-un canal</b>\n\n✦ {current_status}\n✦ /monitor\n✦ Trimite linkul canalului sau numele de utilizator\n✦ Pentru un canal privat conectează prin /login un cont care este deja membru\n✦ Canal:\n✦ Filtre:\n✦ Canalele publice folosesc un cont de descărcare\n✦ Cele private sunt verificate la fiecare oră cu un singur cont pe rând care se închide după verificare\n✦ Postările noi intră într-o coadă salvată și sunt livrate în ordine\n✦ Oprește monitorizarea",
+    "invalid_channel_id": "⌯ <b>Identificator de canal nevalid</b>\n\n✦ Folosiți un ID numeric de canal Telegram, care începe de obicei cu <code>-100</code>",
+    "invalid_action": "⌯ <b>Acțiune de monitorizare nevalidă</b>\n\n✦ Folosiți <code>on</code> pentru a porni monitorizarea sau <code>off</code> pentru a o opri",
+    "not_active": "⌯ <b>ℹ Monitorizarea nu este activă</b>\n\n✦ Canalul specificat nu este monitorizat în prezent de contul dumneavoastră",
+    "already_active": "⌯ <b>ℹ O monitorizare este deja activă</b>\n\n✦ Opriți canalul monitorizat în prezent înainte de a selecta altul",
+    "access_denied": "⌯ <b>Acces refuzat la canal</b>\n\n✦ Contul conectat nu poate deschide canalul specificat sau identificatorul este incorect",
+    "start_failed": "⌯ <b>Pornește sarcina din nou</b>\n\n✦ Trimite linkul canalului sau numele de utilizator\n✦ Pentru un canal privat conectează prin /login un cont care este deja membru",
+    "started": "⌯ <b>Monitorizați postările noi dintr-un canal</b>\n\n✦ Canal: {channel_title}\n✦ Filtre: {filter_status}\n✦ Canalele publice folosesc un cont de descărcare\n✦ Cele private sunt verificate la fiecare oră cu un singur cont pe rând care se închide după verificare\n✦ Postările noi intră într-o coadă salvată și sunt livrate în ordine",
+    "stopped": "⌯ <b>Monitorizarea canalului a fost oprită</b>\n\n✦ Postările noi din canalul selectat nu vor mai fi procesate automat",
+    "session_stopped": "⌯ <b>Monitorizarea a fost oprită</b>\n\n✦ Sesiunea Telegram conectată a expirat sau a fost revocată, astfel încât monitorizarea automată a fost dezactivată",
+    "status": {
+      "active": "Activă pentru canalul <code>{channel_id}</code>",
+      "inactive": "Inactivă"
+    },
+    "stop_button": "Oprește monitorizarea",
+    "source_lost": "⌯ <b>Urmărirea canalului oprită</b>\n\n✦ Canal ↣ {channel_title}\n✦ ID ↣ <code>{channel_id}</code>\n✦ Contul tău conectat nu l-a putut deschide o zi întreagă\n✦ Poate a fost șters sau făcut privat sau contul a ieșit din el\n✦ Ca să îl urmărești din nou verifică dacă acel cont e membru și trimite /monitor"
+  },
+  "stats": {
+    "system": "⌯ <b>Statistici de sistem</b>\n\n✦ Timp de funcționare: {uptime}\n✦ Disc: {disk_usage} / {disk_total} ({disk_percent}%)\n✦ Memorie: {ram_percent}%\n✦ Procesor: {cpu_percent}%\n✦ Date trimise prin rețea: {sent}\n✦ Date primite prin rețea: {received}",
+    "admin": "⌯ <b>Statistici despre utilizatori</b>\n\n✦ Total utilizatori: {total_users}\n✦ Abonați: {total_premium}\n✦ Adăugați de administrator: {premium_by_admin}\n✦ Plătite cu Stars: {premium_by_stars}",
+    "public": "⌯ <b>Statisticile botului</b>\n\n✦ Timp de funcționare: {uptime}\n✦ Total descărcări: {total_downloads}"
+  },
+  "payments": {
+    "monthly": {
+      "title": "Abonament lunar",
+      "description": "Activează funcțiile pentru abonați timp de 30 de zile"
+    },
+    "yearly": {
+      "title": "Abonament anual",
+      "description": "Activează funcțiile pentru abonați timp de 365 de zile"
+    },
+    "total_label": "Total abonament",
+    "invalid_plan_popup": "Planul de abonament selectat este nevalid",
+    "invoice_failed_popup": "Factura pentru plată nu a putut fi creată",
+    "unrecognized": "⌯ <b>Planul plății nu a fost recunoscut</b>\n\n✦ Plata a fost primită, dar planul său de abonament nu a putut fi identificat. Contactați asistența și furnizați informațiile plății",
+    "activation_failed": "⌯ <b>Activarea abonamentului a eșuat</b>\n\n✦ Plata a fost primită, dar baza de date nu a putut activa abonamentul. Contactați asistența pentru ajutor manual",
+    "completed": "⌯ <b>Abonament activat</b>\n\n✦ Planul {plan_name} este acum activ și va expira la {expiry_date}"
+  },
+  "broadcast": {
+    "json": {
+      "file_required": "⌯ <b>Este necesar fișierul JSON pentru difuzare</b>\n\n✦ Răspundeți la un fișier JSON multilingv și folosiți <code>/bc .</code>",
+      "invalid_file": "⌯ <b>Fișier de difuzare nevalid</b>\n\n✦ Documentul la care ați răspuns trebuie să fie un fișier JSON",
+      "validation_failed": "⌯ <b>Validarea fișierului de difuzare a eșuat</b>\n\n✦ Fișierul nu a putut fi acceptat: <code>{error}</code>",
+      "confirm": "⌯ <b>Confirmați difuzarea multilingvă</b>\n\n✦ Fișierul conține {language_count} limbi utilizabile. Utilizatorii vor primi limba salvată, apoi limba de bază, iar în final limba engleză ca opțiune de rezervă\n\n✦ Filtre: {filters}",
+      "how_to": "⌯ <b>Difuzare multilingvă</b>\n\n✦ Atingeți butonul de mai jos pentru a primi un șablon JSON care conține toate limbile disponibile. Completați valoarea <code>text</code> pentru fiecare limbă dorită, apoi încărcați fișierul și răspundeți-i cu <code>/bc .</code> — limbile lăsate goale vor reveni la engleză",
+      "template_sent": "⌯ <b>Șablon de difuzare</b>\n\n✦ Fișierul conține {language_count} limbi și a fost generat din fișierele de limbă curente"
+    },
+    "usage": "⌯ <b>Difuzați un mesaj</b>\n\n✦ Răspundeți la mesajul pe care doriți să îl trimiteți, apoi folosiți /bc. Filtrele opționale includ <code>-only ID_UTILIZATOR</code> și <code>-rm ID_UTILIZATOR --prem</code>",
+    "invalid_message": "⌯ <b>Mesajul pentru difuzare este indisponibil</b>\n\n✦ Mesajul la care ați răspuns nu are un identificator Telegram valid",
+    "confirm": "⌯ <b>Confirmați difuzarea</b>\n\n✦ ID mesaj: <code>{message_id}</code>\n✦ Filtre: {filters}\n\n✦ Alegeți dacă doriți să trimiteți normal sau să trimiteți și să fixați mesajul",
+    "starting": "⌯ <b>Difuzarea a început</b>\n\n✦ Mesajul este trimis utilizatorilor selectați",
+    "progress": "⌯ <b>Difuzarea este în desfășurare</b>\n\n✦ Procesați: {processed}/{total}\n✦ Reușite: {successful}\n✦ Eșuate: {failed}",
+    "completed": "⌯ <b>Difuzare finalizată</b>\n\n✦ Utilizatori vizați: {total}\n✦ Reușite: {successful}\n✦ Eșuate: {failed}",
+    "cancelled": "⌯ <b>Difuzare anulată</b>\n\n✦ Operațiunea a fost oprită după procesarea a {processed} utilizatori",
+    "buttons": {
+      "normal": "Trimite normal",
+      "pin": "Trimite și fixează",
+      "get_template": "Obține șablonul JSON"
+    },
+    "filters": {
+      "none": "Fără filtre",
+      "summary": "Numai utilizatori: {only_count}, utilizatori excluși: {excluded_count}, exclude abonații: {exclude_premium}"
+    }
+  },
+  "admin": {
+    "users": {
+      "new_language": "⌯ <b>A fost detectată o limbă indisponibilă</b>\n\n✦ Utilizator: {first_name}\n✦ ID utilizator: <code>{user_id}</code>\n✦ Cod detectat: <code>{language_code}</code>",
+      "new_user": "⌯ <b>S-a alăturat un utilizator nou</b>\n\n✦ Nume: {first_name} {last_name}\n✦ ID utilizator: <code>{user_id}</code>\n✦ Nume de utilizator: {username}\n✦ Total utilizatori: {total_users}",
+      "exported": "⌯ <b>Exportul utilizatorilor a fost finalizat</b>\n\n✦ Fișierul atașat conține {count} înregistrări de utilizatori"
+    },
+    "payments": {
+      "new_subscription": "⌯ <b>Abonament plătit nou</b>\n\n✦ Utilizator: {user_name}\n✦ ID utilizator: <code>{user_id}</code>\n✦ Plan: {plan_name}\n✦ Sumă: {amount} Stars"
+    },
+    "pool": {
+      "insufficient": "⌯ <b>Grupul de conturi pentru descărcare este incomplet</b>\n\n✦ Încărcate în prezent: {current}\n✦ Conturi suplimentare necesare: {missing}"
+    },
+    "gifts": {
+      "create_usage": "⌯ <b>Creați un cadou</b>\n\n✦ Folosiți <code>/create -gift --value PUNCTE</code>. Setările opționale includ <code>--linkexpiry DDHHMM</code>, <code>--giftexpiry DDHHMM</code>, <code>--onlyuser [ID-URI]</code>, <code>--exceptionuser [ID-URI]</code> și <code>--limit NUMĂR</code>",
+      "value_required": "⌯ <b>Este necesară valoarea cadoului</b>\n\n✦ Furnizați un număr pozitiv după <code>--value</code>",
+      "user_filter_conflict": "⌯ <b>Filtre de utilizatori incompatibile</b>\n\n✦ Un cadou nu poate folosi în același timp filtre pentru utilizatori permiși și utilizatori excluși",
+      "invalid_duration": "⌯ <b>Durată nevalidă</b>\n\n✦ Folosiți formatul de șase cifre <code>DDHHMM</code> pentru duratele cadourilor",
+      "invalid_values": "⌯ <b>Setări nevalide pentru cadou</b>\n\n✦ Verificați identificatorii utilizatorilor, limita de revendicări și toate valorile furnizate",
+      "created": "⌯ <b>Cadou creat</b>\n\n✦ Linkul cadoului este pregătit:\n✦ <code>{gift_link}</code>",
+      "empty": "⌯ <b>ℹ Nu există cadouri active</b>\n\n✦ În prezent, nu există linkuri cadou active",
+      "list_title": "⌯ <b>Cadouri active</b>\n\n✦ Următoarele linkuri cadou sunt disponibile în prezent",
+      "list_item": "<b>Cadou:</b> <code>{gift_pid}</code>\nValoare: {value}\nRevendicări: {usage_count}/{usage_limit}\nExpirarea linkului: {expiry}\nCreat: {created_at}\nLink: <code>{gift_link}</code>",
+      "remove_usage": "⌯ <b>Eliminați un cadou</b>\n\n✦ Folosiți <code>/rm -gift --pid ID_CADOU</code>",
+      "not_found": "⌯ <b>Cadoul nu a fost găsit</b>\n\n✦ Nu există niciun cadou activ cu identificatorul furnizat",
+      "remove_confirm": "⌯ <b>Dezactivați cadoul</b>\n\n✦ Cadou: <code>{gift_pid}</code>\n✦ Valoare: {value}\n✦ Revendicări: {usage_count}\n\n✦ Confirmați pentru a împiedica orice revendicări viitoare",
+      "deactivated": "⌯ <b>Cadou dezactivat</b>\n\n✦ Cadoul <code>{gift_pid}</code> nu mai poate fi revendicat"
+    },
+    "add": {
+      "usage": "⌯ <b>Adăugați setări administrative</b>\n\n✦ Folosiți /add cu <code>-premium</code>, <code>-lang</code> sau <code>-frcch</code>"
+    },
+    "remove": {
+      "usage": "⌯ <b>Eliminați setări administrative</b>\n\n✦ Folosiți /rm cu <code>-premium</code>, <code>-gift</code> sau <code>-frcch</code>"
+    },
+    "premium": {
+      "add_usage": "⌯ <b>Abonament</b>\n\n✦ /admin\n✦ Alege utilizatorii sau trimite identificatorii lor numerici\n✦ Zile\n✦ <code>/add -premium --user [123456789] --days 30</code>",
+      "added": "⌯ <b>Actualizarea abonamentelor a fost finalizată</b>\n\n✦ Utilizatori actualizați: {users}\n✦ Utilizatori inexistenți: {missing}",
+      "remove_usage": "⌯ <b>Eliminați un abonament</b>\n\n✦ Folosiți <code>/rm -premium --user [ID-URI_UTILIZATORI]</code>",
+      "removed": "⌯ <b>Eliminarea abonamentelor a fost finalizată</b>\n\n✦ Utilizatori actualizați: {users}\n✦ Utilizatori inexistenți sau inactivi: {missing}"
+    },
+    "languages": {
+      "reply_to_json": "⌯ <b>Este necesar un fișier de limbă</b>\n\n✦ Răspundeți la un fișier JSON de limbă valid atunci când folosiți <code>/add -lang</code>",
+      "json_required": "⌯ <b>Este necesar un fișier JSON</b>\n\n✦ Documentul la care ați răspuns trebuie să folosească extensia <code>.json</code>",
+      "already_exists": "⌯ <b>ℹ Limba există deja</b>\n\n✦ Limba <code>{language_code}</code> este deja instalată. Adăugați <code>--update</code> pentru a o înlocui",
+      "invalid_json": "⌯ <b>Fișier de limbă nevalid</b>\n\n✦ Fișierul JSON nu a putut fi încărcat: <code>{error}</code>",
+      "added": "⌯ <b>Limba a fost adăugată</b>\n\n✦ Limba <code>{language_code}</code> este acum disponibilă",
+      "updated": "⌯ <b>Limba a fost actualizată</b>\n\n✦ Limba <code>{language_code}</code> a fost reîncărcată cu succes"
+    },
+    "force_subscription": {
+      "empty": "⌯ <b>ℹ Nu există canale obligatorii</b>\n\n✦ În prezent, nu este configurat niciun canal cu abonare obligatorie",
+      "list_title": "⌯ <b>Canale obligatorii</b>\n\n✦ Următoarele canale sunt impuse în prezent",
+      "list_item": "Link: {link}\nID canal: <code>{channel_id}</code>\nUtilizatori alăturați: {joined}\nLimită: {limit}",
+      "add_usage": "⌯ <b>Adăugați un canal obligatoriu</b>\n\n✦ Folosiți <code>/add -frcch --link LINK_CANAL --id ID_CANAL --limit NUMĂR</code>",
+      "permission_required": "⌯ <b>Este necesară permisiunea de administrator</b>\n\n✦ Botul trebuie să fie administrator cu permisiunea de a invita utilizatori",
+      "added": "⌯ <b>Canal obligatoriu adăugat</b>\n\n✦ Canal: {channel_title}\n✦ Limită de alăturări: {limit}",
+      "add_failed": "⌯ <b>Canalul nu a putut fi adăugat</b>\n\n✦ Verificați identificatorul canalului, linkul și permisiunile de administrator ale botului",
+      "remove_usage": "⌯ <b>Eliminați un canal obligatoriu</b>\n\n✦ Folosiți <code>/rm -frcch ID_CANAL</code> sau furnizați linkul salvat al acestuia",
+      "removed": "⌯ <b>Canal obligatoriu eliminat</b>\n\n✦ Canalul nu mai este impus",
+      "not_found": "⌯ <b>Canalul obligatoriu nu a fost găsit</b>\n\n✦ Niciun canal salvat nu corespunde identificatorului sau linkului furnizat"
+    },
+    "logs": {
+      "not_found": "⌯ <b>Directorul jurnalelor este indisponibil</b>\n\n✦ Directorul jurnalelor botului nu există",
+      "empty": "⌯ <b>Nu există jurnale disponibile</b>\n\n✦ Nu au fost găsite fișiere de jurnal ale botului care să nu fie goale",
+      "file_caption": "⌯ <b>Jurnalul botului</b>\n\n✦ Fișier: <code>{filename}</code>",
+      "upload_failed": "⌯ <b>Încărcarea jurnalului a eșuat</b>\n\n✦ Fișier: <code>{filename}</code>\n✦ Eroare: <code>{error}</code>"
+    }
+  },
+  "queue": {
+    "accepted": "⌯ <b>Sarcina ta a fost salvată</b>\n\n✦ Sarcină ↣ {task_id}\n✦ Trimite /cancel ca să alegi o sarcină sau /cancel urmat de numărul ei\n✦ <code>/cancel {task_id}</code>",
+    "waiting_free": "⌯ <b>În așteptare</b>\n\n✦ Persoane înaintea ta: {ahead}\n✦ Descărcarea începe când se eliberează un loc\n✦ Abonamentul permite să sari coada comună",
+    "waiting_premium": "⌯ <b>În așteptare</b>\n\n✦ Sarcinile tale anterioare: {ahead}\n✦ Sarcinile se execută una după alta",
+    "limit_free": "⌯ <b>Sarcină</b>\n\n✦ Ai deja o sarcină deschisă\n✦ Așteaptă să termine sau anuleaz-o cu /cancel\n✦ Poți avea cel mult 5 sarcini deschise\n✦ Așteaptă să termine una sau anuleaz-o cu /cancel",
+    "limit_premium": "⌯ <b>Sarcină</b>\n\n✦ Poți avea cel mult {limit} sarcini deschise\n✦ Așteaptă să termine una sau anuleaz-o cu /cancel",
+    "lost_after_restart": "⌯ <b>Pornește sarcina din nou</b>\n\n✦ Sarcină ↣ {task_id}\n✦ Deschide postarea în Telegram și ține apăsat\n✦ Alege Copiază linkul și trimite-l aici\n✦ Pentru mai multe postări trimite întâi linkul primei",
+    "cancel_usage": "Trimite /cancel ca să alegi o sarcină sau /cancel urmat de numărul ei\n<code>/cancel 123</code>",
+    "cancelled_one": "Sarcina {task_id} a fost anulată",
+    "not_found": "Sarcina {task_id} s-a terminat deja sau nu îți aparține",
+    "choose_to_cancel": "⌯ <b>Anulează Sarcină</b>\n\n✦ Trimite /cancel ca să alegi o sarcină sau /cancel urmat de numărul ei",
+    "cancelled_popup": "Anulează",
+    "not_found_popup": "Pornește sarcina din nou",
+    "buttons": {
+      "cancel": "Anulează Sarcină",
+      "upgrade": "Abonament",
+      "cancel_task": "Sarcină {task_id} {kind} {status}",
+      "cancel_all": "Anulează Sarcină /cancel"
+    },
+    "kinds": {
+      "dl": "Descărcați o postare",
+      "bdl": "Descărcați mai multe postări",
+      "clone": "Transferați un canal complet",
+      "task": "Sarcină",
+      "monitor": "Monitorizați postările noi dintr-un canal"
+    },
+    "status": {
+      "queued": "În așteptare",
+      "running": "În desfășurare"
+    },
+    "task_number": "Sarcină {task_id}"
+  },
+  "spam": {
+    "per_second": "Nu trimite mai mult de un mesaj pe secundă",
+    "per_minute": "Nu trimite mai mult de 20 de mesaje pe minut\nAcest bot primește linkuri de descărcare\nAșteaptă să se termine minutul",
+    "buttons": "Ai apăsat peste 20 de butoane într-un minut\nAșteaptă înainte să continui\nÎncălcările repetate dublează timpul de așteptare"
+  },
+  "flow": {
+    "first_link": "⌯ <b>Descărcați o postare</b>\n\n✦ Deschide postarea în Telegram și ține apăsat\n✦ Alege Copiază linkul și trimite-l aici\n✦ Pentru mai multe postări trimite întâi linkul primei\n✦ <code>https://t.me/example_channel/15</code>",
+    "last_link": "⌯ <b>Descărcați mai multe postări</b>\n\n✦ Trimite linkul ultimei postări din același canal\n✦ Se includ ambele postări și toate cele dintre ele\n✦ Apoi alegi tipurile de conținut",
+    "channel": "⌯ <b>Alege canalul</b>\n\n✦ Trimite linkul canalului sau numele de utilizator\n✦ Pentru un canal privat conectează prin /login un cont care este deja membru\n✦ <code>https://t.me/example_channel</code>",
+    "pick_channel": "Alege canalul",
+    "invalid_channel": "Trimite linkul canalului sau numele de utilizator\nPentru un canal privat conectează prin /login un cont care este deja membru",
+    "upload_channel": "⌯ <b>Alege un canal de încărcare</b>\n\n✦ Cel mai simplu ↣ adaugă botul ca admin cu drept de postare în canalul sau grupul tău\n✦ Botul îți trimite aici o confirmare și apeși Confirmă\n✦ Sau apasă mai jos butonul de alegere a canalului\n✦ Sau trimite linkul canalului, numele de utilizator sau ID-ul care începe cu <code>-100</code>\n✦ Această funcție cere abonament la bot"
+  },
+  "panel": {
+    "title": "⌯ <b>Administrare</b>\n\n✦ Abonament / Cadou / Canale obligatorii / Mesaj colectiv",
+    "premium": "Abonament",
+    "gift": "Cadou",
+    "fsub": "Canale obligatorii",
+    "broadcast": "Mesaj colectiv",
+    "users": "Exportă utilizatori",
+    "language": "Fișiere de limbă",
+    "gifts": "Cadouri active",
+    "choose_user": "Alege utilizatorii sau trimite identificatorii lor numerici",
+    "selected_users": "Toți utilizatorii ↣ {users}",
+    "selected_channel": "Alege canalul ↣ {channel_id}",
+    "custom": "Alt număr",
+    "remove_premium": "Anulează Abonament",
+    "days": "Zile ↣ {days}",
+    "value": "Punctele cadoului",
+    "link_days": "Valabilitatea linkului în zile / La valabilitatea cadoului zero înseamnă fără expirare",
+    "point_days": "Valabilitatea punctelor în zile / La valabilitatea cadoului zero înseamnă fără expirare",
+    "limit": "Număr maxim de revendicări",
+    "only_users": "Permite anumiți utilizatori",
+    "exclude_users": "Exclude utilizatori",
+    "send_broadcast": "Trimite mesajul colectiv aici\nVerifică copia și alege destinatarii\nApoi apasă Confirmă",
+    "send_language": "Trimite un fișier JSON numit după codul limbii de exemplu ar.json\nFișierul existent se înlocuiește numai când cel nou este valid",
+    "enter_value": "Trimite un număr sau identificatori separați prin virgulă\nRăspunsul tău se șterge și meniul se actualizează",
+    "invalid_value": "Trimite un număr valid\nLa valabilitatea cadoului zero înseamnă fără expirare",
+    "audience_all": "Toți utilizatorii",
+    "audience_premium": "Abonați",
+    "audience_free": "Utilizatori gratuiți",
+    "admins": "Administratori",
+    "send_admin": "Trimite ID-ul numeric al utilizatorului sau redirecționează un mesaj al lui\nApasă pe un administrator de mai jos pentru a-l elimina",
+    "admin_added": "Administrator adăugat: {user_id}",
+    "admin_removed": "Administrator eliminat: {user_id}",
+    "admin_exists": "Acest utilizator este deja administrator",
+    "no_admins": "Încă nu există administratori",
+    "owner_only": "Doar proprietarii gestionează administratorii"
+  },
+  "large": {
+    "saved": "Trimite în mesajele mele salvate",
+    "split": "Descarcă și împarte",
+    "help_button": "Explică",
+    "split_notice": "⌯ <b>Descarcă și împarte</b>\n\n✦ Dimensiune: {size}\n✦ Botul încarcă aproximativ 2 GB pe parte\n✦ Alege Descarcă și împarte sau Anulează\n✦ Pentru un fișier întreg de până la 4 GB conectează Telegram Premium cu /login și alege un canal cu /uploadch",
+    "premium_notice": "⌯ <b>Trimite în mesajele mele salvate</b>\n\n✦ Dimensiune: {size}\n✦ Contul Telegram Premium conectat poate încărca fișierul întreg în mesajele salvate\n✦ Poți alege un canal destinație cu /uploadch\n✦ Poți și împărți fișierul",
+    "help": "⌯ <b>Explică</b>\n\n✦ Abonamentul botului și Telegram Premium sunt separate\n✦ Botul încarcă aproximativ 2 GB pe parte\n✦ Un cont Telegram Premium conectat poate încărca până la 4 GB într-un singur fișier\n✦ Conectează contul cu /login\n✦ Adaugă botul și contul ca administratori în canalul destinație și alege-l cu /uploadch\n✦ Fără canal poți alege mesajele salvate\n✦ Părțile trimise ca documente trebuie reunite în ordinea numerelor"
+  },
+  "referral_check": {
+    "question": "⌯ <b>Verificare rapidă</b>\n\n✦ Rezolvă acest exercițiu pentru a confirma că ești o persoană reală și a păstra invitația\n\n✦ {a} + {b} = ?",
+    "wrong": "⌯ <b>Răspuns greșit</b>\n\n✦ Încearcă din nou. Încercări rămase: {left}",
+    "failed": "⌯ <b>Invitația nu a fost numărată</b>\n\n✦ Invitația ta nu a fost numărată deoarece verificarea nu a fost rezolvată. Poți folosi botul în continuare normal"
+  },
+  "units": {
+    "b": "{n} B",
+    "kb": "{n} KB",
+    "mb": "{n} MB",
+    "gb": "{n} GB",
+    "tb": "{n} TB",
+    "pb": "{n} PB",
+    "day": "{n}d",
+    "hour": "{n}h",
+    "minute": "{n}m",
+    "second": "{n}s"
+  }
+}
