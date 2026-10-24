@@ -15,7 +15,7 @@ clap = { version = "4.6.7", features = ["derive", "env"] }
 dotenvy = "0.15.7"
 grammers-client = { version = "0.10", default-features = false, features = ["fs", "html", "parse_invite_link"] }
 grammers-mtsender = "0.10"
-grammers-session = { version = "0.10", default-features = false }
+grammers-session = { version = "0.11", default-features = false }
 grammers-tl-types = "0.10"
 mime_guess = "2.0.5"
 rand = "0.10.3"
