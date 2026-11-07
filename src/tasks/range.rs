@@ -354,6 +354,8 @@ pub async fn run(ctx: &Arc<TaskCtx>, range: Range) -> Outcome {
     let mut downloaded = 0usize;
     let mut skipped = 0usize;
     let mut failed = 0usize;
+    // Failures past MAX_TRACKED_FAILED are never retried, so they are refunded with the final failures.
+    let mut untracked = 0usize;
     let mut groups: HashSet<i64> = HashSet::new();
     let mut last_sent: Option<Message> = None;
     let mut mode = None;
@@ -418,6 +420,7 @@ pub async fn run(ctx: &Arc<TaskCtx>, range: Range) -> Outcome {
                             notices::login_required(ctx).await;
                         }
                         active::clear(&bot.pg, task_id).await;
+                        give_back(ctx, kind, pending.len() - index + failed + untracked).await;
                         return Outcome::Failed;
                     }
                     Err(error) if access::Dead::is_dead(&error) => {
@@ -426,6 +429,7 @@ pub async fn run(ctx: &Arc<TaskCtx>, range: Range) -> Outcome {
                             notices::session_expired(ctx).await;
                         }
                         active::clear(&bot.pg, task_id).await;
+                        give_back(ctx, kind, pending.len() - index + failed + untracked).await;
                         return Outcome::Failed;
                     }
                     Err(grammers_client::InvocationError::Rpc(rpc))
@@ -565,6 +569,7 @@ pub async fn run(ctx: &Arc<TaskCtx>, range: Range) -> Outcome {
             break;
         }
         retrying = true;
+        untracked += failed.saturating_sub(failed_tracked.len());
         failed = 0;
         pending = failed_tracked.clone();
         active::progress(&bot.pg, task_id, end_id, Some(&pending), Some(true)).await;
@@ -588,6 +593,7 @@ pub async fn run(ctx: &Arc<TaskCtx>, range: Range) -> Outcome {
         ],
     );
     active::clear(&bot.pg, task_id).await;
+    give_back(ctx, kind, failed + untracked).await;
     let mut final_text = summary;
     if downloaded > 0 {
         let delivery_mode = match mode {
@@ -610,6 +616,16 @@ pub async fn run(ctx: &Arc<TaskCtx>, range: Range) -> Outcome {
     }
     ctx.report(&final_text, None).await;
     Outcome::Done
+}
+
+/// A batch pays for its whole range up front, so posts that never arrived are paid back.
+async fn give_back(ctx: &Arc<TaskCtx>, kind: Kind, posts: usize) {
+    if kind != Kind::Bdl || posts == 0 {
+        return;
+    }
+    if let Err(error) = account::refund_points(&ctx.bot.pg, ctx.user_id, posts as i64).await {
+        tracing::error!(user = ctx.user_id, posts, %error, "could not refund batch points");
+    }
 }
 
 fn record(failed: &mut usize, tracked: &mut Vec<i64>, retrying: bool, id: i64) {

@@ -189,3 +189,19 @@ pub async fn spend_points(pg: &PgPool, user_id: i64, cost: i64) -> sqlx::Result<
     tx.commit().await?;
     Ok(true)
 }
+
+/// Gives back points a batch charged for posts it could not deliver. Premium users were never charged.
+pub async fn refund_points(pg: &PgPool, user_id: i64, points: i64) -> sqlx::Result<()> {
+    if points <= 0 {
+        return Ok(());
+    }
+    sqlx::query(
+        "UPDATE users SET daily_downloads_left = COALESCE(daily_downloads_left, 0) + $2 \
+         WHERE user_id = $1 AND NOT COALESCE(is_premium, FALSE)",
+    )
+    .bind(user_id)
+    .bind(i32::try_from(points).unwrap_or(i32::MAX))
+    .execute(pg)
+    .await?;
+    Ok(())
+}
