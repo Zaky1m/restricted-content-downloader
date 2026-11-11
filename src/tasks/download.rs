@@ -202,6 +202,13 @@ async fn record(ctx: &TaskCtx, message: &tl::types::Message, chat_id: i64, file_
     }
 }
 
+/// The post an item came from, to read it again when its file reference expires.
+#[derive(Clone, Copy)]
+struct Source<'a> {
+    message: &'a Message,
+    paid_index: Option<usize>,
+}
+
 pub struct Delivered {
     pub ok: bool,
     pub mode: Option<Mode>,
@@ -470,8 +477,12 @@ impl Job<'_> {
             &info::file_name(raw.id, &item),
             &format!("download_{}.bin", self.ctx.user_id),
         );
+        let source = Source {
+            message,
+            paid_index: None,
+        };
         self.deliver_item(
-            &item, &name, &caption, &raw, chat_id, &dest, &settings, None,
+            &item, &name, &caption, &raw, chat_id, &dest, &settings, None, source,
         )
         .await
     }
@@ -487,6 +498,7 @@ impl Job<'_> {
         dest: &Destination,
         settings: &Settings,
         part_label: Option<String>,
+        source: Source<'_>,
     ) -> Result<Delivered> {
         let ctx = self.ctx;
         let single_message = part_label.is_none();
@@ -522,7 +534,7 @@ impl Job<'_> {
             return Ok(Delivered::failed(Some(dest.mode)));
         }
         let fetched = self
-            .fetch_with_retries(item, &path, progress.as_ref())
+            .fetch_with_retries(item, source, &path, progress.as_ref())
             .await;
         drop(progress);
         if fetched.is_none() {
@@ -569,9 +581,12 @@ impl Job<'_> {
     async fn fetch_with_retries(
         &self,
         item: &Item,
+        source: Source<'_>,
         path: &std::path::Path,
         progress: Option<&progress::Progress>,
     ) -> Option<u64> {
+        let mut item = item.clone();
+        let item = &mut item;
         let mut attempt = 1;
         let mut flood_total = 0u64;
         while attempt <= 3 {
@@ -619,6 +634,17 @@ impl Job<'_> {
                             .ok();
                     }
                     return None;
+                }
+                Err(Failure::FileReferenceExpired) => {
+                    // A batch fetches posts ahead of time, so a slow queue outlives their file references.
+                    match self.fresh_item(source).await {
+                        Some(fresh) => *item = fresh,
+                        None => tracing::warn!(
+                            user = self.ctx.user_id,
+                            attempt,
+                            "file reference expired and the post could not be read again"
+                        ),
+                    }
                 }
                 Err(failure) => {
                     tracing::warn!(user = self.ctx.user_id, attempt, %failure, "download attempt failed");
@@ -896,6 +922,24 @@ impl Job<'_> {
         Ok(last)
     }
 
+    /// The item of the post read again, with a new file reference.
+    async fn fresh_item(&self, source: Source<'_>) -> Option<Item> {
+        let peer = source.message.peer_ref().await.ok().flatten()?;
+        let client = self.account.client().await;
+        let message = super::access::get_message(&client, peer, i64::from(source.message.id()))
+            .await
+            .ok()
+            .flatten()?;
+        let raw = raw_message(&message)?;
+        match source.paid_index {
+            Some(index) => info::paid_items(raw)
+                .into_iter()
+                .find(|(i, _)| *i == index)
+                .map(|(_, item)| item),
+            None => info::downloadable(raw),
+        }
+    }
+
     /// Copy through the user's own account when the source allows saving; `None` means download instead.
     async fn try_copy(
         &self,
@@ -1011,7 +1055,20 @@ impl Job<'_> {
                 )
             });
             let result = self
-                .deliver_item(item, &name, &caption, raw, chat_id, dest, settings, label)
+                .deliver_item(
+                    item,
+                    &name,
+                    &caption,
+                    raw,
+                    chat_id,
+                    dest,
+                    settings,
+                    label,
+                    Source {
+                        message,
+                        paid_index: Some(*index),
+                    },
+                )
                 .await?;
             if result.ok {
                 delivered += 1;
