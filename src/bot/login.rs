@@ -134,12 +134,14 @@ fn share_phone_keyboard(label: &str) -> ReplyMarkup {
             single_use: true,
             selective: false,
             persistent: false,
+            force_reply: false,
             rows: vec![
                 tl::types::KeyboardButtonRow {
                     buttons: vec![
-                        tl::types::KeyboardButtonRequestPhone {
+                        tl::types::KeyboardButton {
                             style: None,
                             text: label.to_string(),
+                            r#type: tl::types::ButtonTypeRequestPhone {}.into(),
                         }
                         .into(),
                     ],

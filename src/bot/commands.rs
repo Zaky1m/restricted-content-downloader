@@ -35,6 +35,7 @@ fn list(bot: &Bot, lang: &str, staff: bool) -> Vec<tl::enums::BotCommand> {
         .into_iter()
         .map(|name| {
             tl::types::BotCommand {
+                ephemeral: false,
                 command: name.to_string(),
                 description: bot.t(lang, &format!("commands.{name}.description"), &[]),
             }

@@ -302,7 +302,9 @@ async fn copy_one(
         .user_ref(chat)
         .await
         .or(bot.user_ref(admin_id).await)
-        .ok_or(InvocationError::Dropped)?;
+        .ok_or(InvocationError::Dropped(
+            "the admin is not known to the bot",
+        ))?;
     let random_id: i64 = rand::random();
     let request = tl::functions::messages::ForwardMessages {
         silent: false,
@@ -322,6 +324,7 @@ async fn copy_one(
         noforwards: false,
         quick_reply_shortcut: None,
         allow_paid_floodskip: false,
+        from_ephemeral: false,
         effect: None,
         video_timestamp: None,
         allow_paid_stars: None,

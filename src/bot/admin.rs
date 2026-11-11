@@ -320,17 +320,7 @@ async fn render_with(
 }
 
 fn request_users_keyboard(label: &str) -> ReplyMarkup {
-    let button: tl::enums::KeyboardButton = tl::types::KeyboardButtonRequestPeer {
-        style: Some(
-            tl::types::KeyboardButtonStyle {
-                bg_primary: true,
-                bg_danger: false,
-                bg_success: false,
-                icon: None,
-            }
-            .into(),
-        ),
-        text: label.to_string(),
+    let kind = tl::types::ButtonTypeRequestPeer {
         button_id: PICK_USERS_BUTTON,
         peer_type: tl::types::RequestPeerTypeUser {
             bot: Some(false),
@@ -338,23 +328,12 @@ fn request_users_keyboard(label: &str) -> ReplyMarkup {
         }
         .into(),
         max_quantity: 10,
-    }
-    .into();
-    one_button(button)
+    };
+    one_button(request_peer_button(label, kind))
 }
 
 fn request_channel_keyboard(label: &str) -> ReplyMarkup {
-    let button: tl::enums::KeyboardButton = tl::types::KeyboardButtonRequestPeer {
-        style: Some(
-            tl::types::KeyboardButtonStyle {
-                bg_primary: true,
-                bg_danger: false,
-                bg_success: false,
-                icon: None,
-            }
-            .into(),
-        ),
-        text: label.to_string(),
+    let kind = tl::types::ButtonTypeRequestPeer {
         button_id: PICK_FSUB_BUTTON,
         peer_type: tl::types::RequestPeerTypeBroadcast {
             creator: false,
@@ -364,9 +343,28 @@ fn request_channel_keyboard(label: &str) -> ReplyMarkup {
         }
         .into(),
         max_quantity: 1,
+    };
+    one_button(request_peer_button(label, kind))
+}
+
+fn request_peer_button(
+    label: &str,
+    kind: tl::types::ButtonTypeRequestPeer,
+) -> tl::enums::KeyboardButton {
+    tl::types::KeyboardButton {
+        style: Some(
+            tl::types::KeyboardButtonStyle {
+                bg_primary: true,
+                bg_danger: false,
+                bg_success: false,
+                icon: None,
+            }
+            .into(),
+        ),
+        text: label.to_string(),
+        r#type: kind.into(),
     }
-    .into();
-    one_button(button)
+    .into()
 }
 
 fn one_button(button: tl::enums::KeyboardButton) -> ReplyMarkup {
@@ -376,6 +374,7 @@ fn one_button(button: tl::enums::KeyboardButton) -> ReplyMarkup {
             single_use: true,
             selective: false,
             persistent: false,
+            force_reply: false,
             rows: vec![
                 tl::types::KeyboardButtonRow {
                     buttons: vec![button],

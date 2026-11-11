@@ -127,10 +127,9 @@ impl Session for PgSession {
         })
     }
 
-    fn cache_peer(&self, peer: &PeerInfo) -> BoxFuture<'_, Result<(), Err>> {
-        let peer = peer.clone();
+    fn cache_peer(&self, peer: PeerInfo) -> BoxFuture<'_, Result<(), Err>> {
         Box::pin(async move {
-            self.inner.cache_peer(&peer).await.map_err(wrap)?;
+            self.inner.cache_peer(peer.clone()).await.map_err(wrap)?;
             if let PeerInfo::User {
                 is_self: Some(true),
                 ..

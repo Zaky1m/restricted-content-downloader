@@ -26,7 +26,7 @@ use anyhow::{Context, Result};
 use grammers_client::session::SessionData;
 use grammers_client::{
     Client,
-    client::UpdatesConfiguration,
+    sender::UpdatesConfiguration,
     session::{Session, types::PeerId},
     update::Update,
 };
@@ -147,7 +147,7 @@ impl Bot {
                 };
                 for chat in chats {
                     if let tl::enums::Chat::Channel(channel) = chat {
-                        let _ = self.session.cache_peer(&PeerInfo::from(&channel)).await;
+                        let _ = self.session.cache_peer(PeerInfo::from(&channel)).await;
                     }
                 }
                 self.session.peer_ref_of(id).await
@@ -165,7 +165,7 @@ impl Bot {
                 if let Ok(users) = self.client.invoke(&request).await {
                     for user in users {
                         if let tl::enums::User::User(user) = user {
-                            let _ = self.session.cache_peer(&PeerInfo::from(&user)).await;
+                            let _ = self.session.cache_peer(PeerInfo::from(&user)).await;
                         }
                     }
                 }
@@ -295,13 +295,7 @@ pub async fn serve(config: Config, logs: Arc<crate::logging::Logs>) -> Result<()
     tokio::spawn(range::resume_all(bot.clone(), leftovers));
     crate::monitor::spawn(bot.clone(), events_rx);
     let mut stream = client
-        .stream_updates(
-            connection.updates,
-            UpdatesConfiguration {
-                catch_up: false,
-                update_queue_limit: Some(10_000),
-            },
-        )
+        .stream_updates(connection.updates, UpdatesConfiguration { catch_up: false })
         .await
         .map_err(|e| anyhow::anyhow!("{e}"))?;
 

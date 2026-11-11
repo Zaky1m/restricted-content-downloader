@@ -36,6 +36,9 @@ fn connection_params() -> grammers_mtsender::ConnectionParams {
         app_version: format!("RCD {}", env!("CARGO_PKG_VERSION")),
         system_lang_code: "en-US".to_string(),
         lang_code: "en".to_string(),
+        // Updates past this backlog are dropped by grammers; the bot drains its stream quickly, so this is headroom.
+        updates_channel_capacity: std::num::NonZeroUsize::new(10_000)
+            .unwrap_or(std::num::NonZeroUsize::MIN),
         ..Default::default()
     }
 }
@@ -43,7 +46,7 @@ fn connection_params() -> grammers_mtsender::ConnectionParams {
 /// A running client with its update stream, which only a bot consumes.
 pub struct Connection {
     pub client: Client,
-    pub updates: tokio::sync::mpsc::UnboundedReceiver<grammers_session::updates::UpdatesLike>,
+    pub updates: tokio::sync::mpsc::Receiver<grammers_session::updates::UpdatesLike>,
 }
 
 pub fn connect_with<S>(session: Arc<S>, api_id: u32) -> Connection

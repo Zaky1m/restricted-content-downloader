@@ -161,7 +161,7 @@ impl Accounts {
         if let grammers_client::tl::enums::User::User(user) = &me.raw {
             use grammers_session::Session;
             if let Err(error) = session
-                .cache_peer(&grammers_session::types::PeerInfo::from(user))
+                .cache_peer(grammers_session::types::PeerInfo::from(user))
                 .await
             {
                 tracing::warn!(account = %label, %error, "could not remember the account itself");
@@ -386,16 +386,13 @@ impl Accounts {
 
 fn spawn_event_stream(
     client: Client,
-    updates: tokio::sync::mpsc::UnboundedReceiver<grammers_client::session::updates::UpdatesLike>,
+    updates: tokio::sync::mpsc::Receiver<grammers_client::session::updates::UpdatesLike>,
     events: tokio::sync::mpsc::UnboundedSender<(i64, i32)>,
     label: String,
 ) {
-    use grammers_client::{client::UpdatesConfiguration, session::types::PeerKind, update::Update};
+    use grammers_client::{sender::UpdatesConfiguration, session::types::PeerKind, update::Update};
     tokio::spawn(async move {
-        let config = UpdatesConfiguration {
-            catch_up: false,
-            update_queue_limit: Some(2000),
-        };
+        let config = UpdatesConfiguration { catch_up: false };
         let mut stream = match client.stream_updates(updates, config).await {
             Ok(stream) => {
                 tracing::debug!(pool = %label, "pool update stream started");

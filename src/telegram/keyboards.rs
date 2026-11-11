@@ -100,22 +100,29 @@ impl Button {
         }
     }
 
-    fn raw(&self) -> tl::enums::KeyboardButton {
-        match self {
-            Button::Callback { text, data, color } => tl::types::KeyboardButtonCallback {
-                requires_password: false,
-                style: style(*color),
-                text: text.clone(),
-                data: data.clone().into_bytes(),
-            }
-            .into(),
-            Button::Url { text, url, color } => tl::types::KeyboardButtonUrl {
-                style: style(*color),
-                text: text.clone(),
-                url: url.clone(),
-            }
-            .into(),
+    fn raw(&self) -> tl::enums::KeyboardInlineButton {
+        let (text, color, kind): (_, _, tl::enums::InlineButtonType) = match self {
+            Button::Callback { text, data, color } => (
+                text,
+                color,
+                tl::types::InlineButtonTypeCallback {
+                    requires_password: false,
+                    data: data.clone().into_bytes(),
+                }
+                .into(),
+            ),
+            Button::Url { text, url, color } => (
+                text,
+                color,
+                tl::types::InlineButtonTypeUrl { url: url.clone() }.into(),
+            ),
+        };
+        tl::types::KeyboardInlineButton {
+            style: style(*color),
+            text: text.clone(),
+            r#type: kind,
         }
+        .into()
     }
 }
 
@@ -144,10 +151,11 @@ pub fn keyboard(rows: &[Vec<Button>]) -> ReplyMarkup {
     }
     ReplyMarkup {
         raw: tl::enums::ReplyMarkup::ReplyInlineMarkup(tl::types::ReplyInlineMarkup {
+            force_reply: false,
             rows: rows
                 .iter()
                 .map(|row| {
-                    tl::types::KeyboardButtonRow {
+                    tl::types::KeyboardInlineButtonRow {
                         buttons: row.iter().map(Button::raw).collect(),
                     }
                     .into()
@@ -227,14 +235,15 @@ mod tests {
         else {
             panic!("not inline");
         };
-        let tl::enums::KeyboardButtonRow::Row(row) = &m.rows[0];
-        let tl::enums::KeyboardButton::Callback(b) = &row.buttons[0] else {
+        let tl::enums::KeyboardInlineButtonRow::Row(row) = &m.rows[0];
+        let tl::enums::KeyboardInlineButton::Button(b) = &row.buttons[0];
+        let tl::enums::InlineButtonType::Callback(callback) = &b.r#type else {
             panic!("not callback")
         };
         let Some(tl::enums::KeyboardButtonStyle::Style(s)) = &b.style else {
             panic!("no style")
         };
         assert!(s.bg_success && !s.bg_danger && !s.bg_primary);
-        assert_eq!(b.data, b"d");
+        assert_eq!(callback.data, b"d");
     }
 }
