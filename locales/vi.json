@@ -221,6 +221,7 @@
   "tasks": {
     "already_running": "⌯ <b>Một tác vụ khác đang chạy</b>\n\n✦ Hãy chờ tác vụ đang hoạt động hoàn tất hoặc hủy tác vụ đó trước khi bắt đầu một thao tác khác",
     "resumed": "⌯ <b>Đã tiếp tục tác vụ</b>\n\n✦ Đã tìm thấy một tác vụ bị gián đoạn và tác vụ đó sẽ tiếp tục từ vị trí được lưu gần nhất",
+    "abandoned": "⌯ <b>Đã dừng tác vụ</b>\n\n✦ Tác vụ không thể tiếp tục sau khi bot khởi động lại\n✦ Các bài chưa được gửi không bị trừ vào điểm của bạn\n✦ Gửi lại lệnh để bắt đầu lại từ đầu",
     "cancel_requested": "⌯ <b>Đã yêu cầu hủy</b>\n\n✦ Thao tác đang hoạt động đang được dừng và các tệp tạm thời sẽ được dọn dẹp",
     "input_cancelled": "⌯ <b>Đã hủy phiên nhập liệu</b>\n\n✦ Trạng thái đăng nhập, bộ lọc hoặc xác nhận đang chờ đã được xóa",
     "none_to_cancel": "⌯ <b>ℹ Không có thao tác nào đang hoạt động</b>\n\n✦ Không có tác vụ đang chạy hoặc phiên nhập liệu đang chờ nào để hủy",

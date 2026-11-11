@@ -47,3 +47,10 @@ pool accounts wait (one second, doubling up to thirty) and read the same stream
 again. Only a closed sender or a logged-out account ends it. Exiting on every
 error turned a few minutes of bad network into a restart loop, and every
 restart told each batch owner again that their task had resumed.
+
+## A batch is resumed with one notice and given up after three idle restarts
+The "task resumed" notice is sent once per task. A restart that finds a task
+with no progress since the previous restart counts as a failed attempt;
+progress resets the count. After three, the task is dropped, its owner is told,
+and the posts that were paid for and not sent are paid back in the same
+transaction that deletes the task.

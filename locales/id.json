@@ -221,6 +221,7 @@
   "tasks": {
     "already_running": "⌯ <b>Tugas lain sudah berjalan</b>\n\n✦ Tunggu hingga tugas aktif selesai atau batalkan tugas tersebut sebelum memulai operasi lain",
     "resumed": "⌯ <b>Tugas dilanjutkan</b>\n\n✦ Tugas yang terhenti ditemukan dan akan dilanjutkan dari posisi terakhir yang disimpan",
+    "abandoned": "⌯ <b>Tugas dihentikan</b>\n\n✦ Tugas tidak dapat dilanjutkan setelah bot dimulai ulang\n✦ Postingan yang tidak terkirim tidak dipotong dari poin kamu\n✦ Kirim perintahnya lagi untuk memulai dari awal",
     "cancel_requested": "⌯ <b>Pembatalan diminta</b>\n\n✦ Operasi aktif sedang dihentikan dan berkas sementara akan dibersihkan",
     "input_cancelled": "⌯ <b>Sesi input dibatalkan</b>\n\n✦ Status masuk, filter, atau konfirmasi yang tertunda telah dihapus",
     "none_to_cancel": "⌯ <b>ℹ Tidak ada operasi aktif</b>\n\n✦ Tidak ada tugas yang sedang berjalan atau sesi input tertunda untuk dibatalkan",

@@ -221,6 +221,7 @@
   "tasks": {
     "already_running": "⌯ <b>May iba pang task na kasalukuyang tumatakbo</b>\n\n✦ Hintaying matapos ang aktibong task o kanselahin ito bago magsimula ng ibang operasyon",
     "resumed": "⌯ <b>Ipinagpatuloy ang task</b>\n\n✦ May nakitang naputol na task at magpapatuloy ito mula sa huling naka-save na posisyon",
+    "abandoned": "⌯ <b>Itinigil ang task</b>\n\n✦ Hindi na ito naituloy matapos mag-restart ang bot\n✦ Hindi ibinawas sa iyong points ang mga post na hindi naipadala\n✦ Ipadala muli ang command para magsimula ulit",
     "cancel_requested": "⌯ <b>Hiniling ang pagkansela</b>\n\n✦ Ihihinto ang aktibong operasyon at lilinisin ang mga pansamantalang file",
     "input_cancelled": "⌯ <b>Kinansela ang input session</b>\n\n✦ Inalis ang nakabinbing login, filter, o confirmation state",
     "none_to_cancel": "⌯ <b>ℹ Walang aktibong operasyon</b>\n\n✦ Walang tumatakbong task o nakabinbing input session na maaaring kanselahin",

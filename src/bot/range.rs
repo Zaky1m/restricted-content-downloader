@@ -491,6 +491,40 @@ impl Leftovers {
     }
 }
 
+/// Restarts in a row that found a task with no progress since the previous one before it is given up.
+const MAX_RESUMES_WITHOUT_PROGRESS: i32 = 3;
+
+/// Gives up a task that keeps stopping before it gets anywhere: its owner is told and its unsent posts are paid back.
+async fn abandon(bot: &Arc<Bot>, task: &active::Active, queue_id: Option<i64>) {
+    let refund = if task.kind == "bdl" {
+        task.unsent_posts()
+    } else {
+        0
+    };
+    tracing::warn!(
+        task = task.id,
+        user = task.user_id,
+        attempts = task.attempts,
+        refund,
+        "dropping a task after failed resume attempts"
+    );
+    match active::abandon(&bot.pg, task, refund).await {
+        Ok(true) => {}
+        Ok(false) => return,
+        Err(error) => {
+            tracing::error!(task = task.id, %error, "could not drop a task");
+            return;
+        }
+    }
+    if let Some(queue_id) = queue_id {
+        queue::finish(&bot.pg, queue_id, "failed").await.ok();
+    }
+    let lang = bot.lang(task.user_id).await;
+    bot.send_to(task.user_id, &bot.t(&lang, "tasks.abandoned", &[]), None)
+        .await
+        .ok();
+}
+
 /// After a restart: every task that was queued or running is waiting again, in its old order.
 pub async fn resume_all(bot: Arc<Bot>, leftovers: Leftovers) {
     tokio::time::sleep(std::time::Duration::from_secs(15)).await;
@@ -574,13 +608,11 @@ async fn resume(bot: &Arc<Bot>, leftovers: &Leftovers) -> Result<()> {
         if !leftovers.active_ids.contains(&task.id) {
             continue;
         }
-        if task.attempts >= 3 {
-            tracing::warn!(
-                task = task.id,
-                attempts = task.attempts,
-                "dropping a task after failed resume attempts"
-            );
-            active::clear(&bot.pg, task.id).await;
+        if task.attempts >= MAX_RESUMES_WITHOUT_PROGRESS {
+            abandon(bot, &task, by_active.get(&task.id).copied()).await;
+            if let Some(id) = by_active.get(&task.id) {
+                resumed.insert(*id);
+            }
             continue;
         }
         active::bump_attempts(&bot.pg, task.id).await;
@@ -593,14 +625,17 @@ async fn resume(bot: &Arc<Bot>, leftovers: &Leftovers) -> Result<()> {
             active::clear(&bot.pg, task.id).await;
             continue;
         }
-        let lang = bot.lang(task.user_id).await;
-        if bot
-            .send_to(task.user_id, &bot.t(&lang, "tasks.resumed", &[]), None)
-            .await
-            .is_err()
-        {
-            active::clear(&bot.pg, task.id).await;
-            continue;
+        if !task.resume_noticed {
+            let lang = bot.lang(task.user_id).await;
+            if bot
+                .send_to(task.user_id, &bot.t(&lang, "tasks.resumed", &[]), None)
+                .await
+                .is_err()
+            {
+                active::clear(&bot.pg, task.id).await;
+                continue;
+            }
+            active::mark_resume_noticed(&bot.pg, task.id).await;
         }
         let kind = match task.kind.as_str() {
             "bdl" => Kind::Bdl,

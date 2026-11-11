@@ -221,6 +221,7 @@
   "tasks": {
     "already_running": "⌯ <b>Une autre tâche est déjà en cours</b>\n\n✦ Attendez la fin de la tâche active ou annulez-la avant de démarrer une autre opération",
     "resumed": "⌯ <b>Tâche reprise</b>\n\n✦ Une tâche interrompue a été trouvée et reprendra depuis la dernière position enregistrée",
+    "abandoned": "⌯ <b>Tâche arrêtée</b>\n\n✦ Elle n'a pas pu continuer après le redémarrage du bot\n✦ Les publications non envoyées n'ont pas été déduites de vos points\n✦ Renvoyez la commande pour recommencer",
     "cancel_requested": "⌯ <b>Annulation demandée</b>\n\n✦ L’opération active est en cours d’arrêt et les fichiers temporaires seront nettoyés",
     "input_cancelled": "⌯ <b>Session de saisie annulée</b>\n\n✦ La connexion, le filtre ou l’état de confirmation en attente a été supprimé",
     "none_to_cancel": "⌯ <b>ℹ Aucune opération active</b>\n\n✦ Aucune tâche en cours ni session de saisie en attente ne peut être annulée",

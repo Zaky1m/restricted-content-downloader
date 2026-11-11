@@ -221,6 +221,7 @@
   "tasks": {
     "already_running": "⌯ <b>O altă sarcină este deja în desfășurare</b>\n\n✦ Așteptați finalizarea sarcinii active sau anulați-o înainte de a începe altă operațiune",
     "resumed": "⌯ <b>Sarcină reluată</b>\n\n✦ A fost găsită o sarcină întreruptă, care va continua de la ultima poziție salvată",
+    "abandoned": "⌯ <b>Sarcină oprită</b>\n\n✦ Nu a putut continua după repornirea botului\n✦ Postările care nu au fost trimise nu au fost scăzute din punctele tale\n✦ Trimite din nou comanda ca să începi de la capăt",
     "cancel_requested": "⌯ <b>Anulare solicitată</b>\n\n✦ Operațiunea activă este oprită, iar fișierele temporare vor fi șterse",
     "input_cancelled": "⌯ <b>Sesiunea de introducere a fost anulată</b>\n\n✦ Starea de conectare, filtrare sau confirmare în așteptare a fost eliminată",
     "none_to_cancel": "⌯ <b>ℹ Nicio operațiune activă</b>\n\n✦ Nu există nicio sarcină în desfășurare sau sesiune de introducere în așteptare care să poată fi anulată",

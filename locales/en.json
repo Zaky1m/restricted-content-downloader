@@ -221,6 +221,7 @@
   "tasks": {
     "already_running": "⌯ <b>Another task is already running</b>\n\n✦ Wait for the active task to finish or cancel it before starting another operation",
     "resumed": "⌯ <b>Task resumed</b>\n\n✦ An interrupted task was found and will continue from its last saved position",
+    "abandoned": "⌯ <b>Task stopped</b>\n\n✦ It could not continue after the bot restarted\n✦ Posts that were not sent were not taken from your points\n✦ Send the command again to start over",
     "cancel_requested": "⌯ <b>Cancellation requested</b>\n\n✦ The active operation is being stopped and temporary files will be cleaned",
     "input_cancelled": "⌯ <b>Input session cancelled</b>\n\n✦ The pending login, filter, or confirmation state was removed",
     "none_to_cancel": "⌯ <b>ℹ No active operation</b>\n\n✦ There is no running task or pending input session to cancel",

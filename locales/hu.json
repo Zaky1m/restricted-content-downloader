@@ -221,6 +221,7 @@
   "tasks": {
     "already_running": "⌯ <b>Már fut egy másik feladat</b>\n\n✦ Várja meg az aktív feladat befejezését, vagy szakítsa meg, mielőtt másik műveletet indítana",
     "resumed": "⌯ <b>Feladat folytatva</b>\n\n✦ A rendszer megszakított feladatot talált, amely a legutóbbi mentett pozíciótól folytatódik",
+    "abandoned": "⌯ <b>Feladat leállítva</b>\n\n✦ A bot újraindítása után nem tudott folytatódni\n✦ A el nem küldött bejegyzéseket nem vontuk le a pontjaidból\n✦ Küldd el újra a parancsot az újrakezdéshez",
     "cancel_requested": "⌯ <b>Megszakítás kérve</b>\n\n✦ Az aktív művelet leáll, és az ideiglenes fájlokat megtisztítjuk",
     "input_cancelled": "⌯ <b>Beviteli munkamenet megszakítva</b>\n\n✦ A függőben lévő bejelentkezési, szűrési vagy megerősítési állapotot eltávolítottuk",
     "none_to_cancel": "⌯ <b>ℹ Nincs aktív művelet</b>\n\n✦ Nincs megszakítható futó feladat vagy függőben lévő beviteli munkamenet",

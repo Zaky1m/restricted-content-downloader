@@ -221,6 +221,7 @@
   "tasks": {
     "already_running": "⌯ <b>Ya hay otra tarea en ejecución</b>\n\n✦ Espera a que finalice la tarea activa o cancélala antes de iniciar otra operación",
     "resumed": "⌯ <b>Tarea reanudada</b>\n\n✦ Se encontró una tarea interrumpida y continuará desde la última posición guardada",
+    "abandoned": "⌯ <b>Tarea detenida</b>\n\n✦ No pudo continuar después de que el bot se reiniciara\n✦ Las publicaciones que no se enviaron no se descontaron de tus puntos\n✦ Envía el comando de nuevo para empezar otra vez",
     "cancel_requested": "⌯ <b>Cancelación solicitada</b>\n\n✦ La operación activa se está deteniendo y los archivos temporales se eliminarán",
     "input_cancelled": "⌯ <b>Sesión de entrada cancelada</b>\n\n✦ Se eliminó el estado pendiente de acceso, filtro o confirmación",
     "none_to_cancel": "⌯ <b>ℹ No hay ninguna operación activa</b>\n\n✦ No hay ninguna tarea en ejecución ni una sesión de entrada pendiente que cancelar",

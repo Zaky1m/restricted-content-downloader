@@ -221,6 +221,7 @@
   "tasks": {
     "already_running": "⌯ <b>Inne zadanie jest już uruchomione</b>\n\n✦ Poczekaj na zakończenie aktywnego zadania lub anuluj je przed rozpoczęciem kolejnej operacji",
     "resumed": "⌯ <b>Wznowiono zadanie</b>\n\n✦ Znaleziono przerwane zadanie, które będzie kontynuowane od ostatniej zapisanej pozycji",
+    "abandoned": "⌯ <b>Zadanie zatrzymane</b>\n\n✦ Nie mogło być kontynuowane po ponownym uruchomieniu bota\n✦ Posty, które nie zostały wysłane, nie zostały odjęte od twoich punktów\n✦ Wyślij polecenie ponownie, aby zacząć od nowa",
     "cancel_requested": "⌯ <b>Zażądano anulowania</b>\n\n✦ Aktywna operacja jest zatrzymywana, a pliki tymczasowe zostaną usunięte",
     "input_cancelled": "⌯ <b>Anulowano sesję wprowadzania danych</b>\n\n✦ Oczekujący stan logowania, filtra lub potwierdzenia został usunięty",
     "none_to_cancel": "⌯ <b>ℹ Brak aktywnej operacji</b>\n\n✦ Nie ma uruchomionego zadania ani oczekującej sesji wprowadzania danych do anulowania",

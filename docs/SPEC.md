@@ -82,7 +82,9 @@ ignored.
 
 Every task is a stored row with a number, its data and progress. One status
 message per task shows queue position, progress and the result, and is reused
-after a restart. Open tasks resume from the last saved progress. A download
+after a restart. Open tasks resume from the last saved progress; the owner is told once per
+task. A batch that makes no progress over three restarts in a row is dropped,
+its owner is told, and its unsent posts are paid back. A download
 that stops progressing for 90 seconds is restarted. Before a download the
 disk space is checked with a 5 GiB reserve left for the rest of the server.
 A file above the bot's upload limit asks the user to download and split it, or

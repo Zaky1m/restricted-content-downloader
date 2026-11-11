@@ -191,7 +191,11 @@ pub async fn spend_points(pg: &PgPool, user_id: i64, cost: i64) -> sqlx::Result<
 }
 
 /// Gives back points a batch charged for posts it could not deliver. Premium users were never charged.
-pub async fn refund_points(pg: &PgPool, user_id: i64, points: i64) -> sqlx::Result<()> {
+pub async fn refund_points<'e, E: sqlx::PgExecutor<'e>>(
+    pg: E,
+    user_id: i64,
+    points: i64,
+) -> sqlx::Result<()> {
     if points <= 0 {
         return Ok(());
     }

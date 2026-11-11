@@ -221,6 +221,7 @@
   "tasks": {
     "already_running": "⌯ <b>Başka bir görev zaten çalışıyor</b>\n\n✦ Başka bir işlem başlatmadan önce etkin görevin tamamlanmasını bekleyin veya görevi iptal edin",
     "resumed": "⌯ <b>Görev devam ettirildi</b>\n\n✦ Yarıda kesilmiş bir görev bulundu ve son kaydedilen konumdan devam edecek",
+    "abandoned": "⌯ <b>Görev durduruldu</b>\n\n✦ Bot yeniden başlatıldıktan sonra devam edemedi\n✦ Gönderilmeyen gönderiler puanlarından düşülmedi\n✦ Baştan başlamak için komutu yeniden gönder",
     "cancel_requested": "⌯ <b>İptal istendi</b>\n\n✦ Etkin işlem durduruluyor ve geçici dosyalar temizlenecek",
     "input_cancelled": "⌯ <b>Giriş oturumu iptal edildi</b>\n\n✦ Bekleyen giriş, filtre veya onay durumu kaldırıldı",
     "none_to_cancel": "⌯ <b>ℹ Etkin işlem yok</b>\n\n✦ İptal edilecek çalışan bir görev veya bekleyen giriş oturumu bulunmuyor",

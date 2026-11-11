@@ -61,7 +61,7 @@ fn every_language_has_the_keys_of_english() {
     let all = load_all();
     assert_eq!(all.len(), 30, "language files");
     let english = &all["en"];
-    assert_eq!(english.len(), 451);
+    assert_eq!(english.len(), 452);
     for (code, texts) in &all {
         let missing: Vec<_> = english.keys().filter(|k| !texts.contains_key(*k)).collect();
         let extra: Vec<_> = texts.keys().filter(|k| !english.contains_key(*k)).collect();

@@ -28,7 +28,8 @@ Try it: [@Z1MRestrictedContentDLbot](https://t.me/Z1MRestrictedContentDLbot)
 - Splits files larger than the bot's 2 GB upload limit into parts, or uploads
   them whole to the user's channel through their own Premium account
 - Keeps every task in a queue that survives restarts and resumes from the last
-  saved post
+  saved post, telling its owner once. A batch that makes no progress over three
+  restarts in a row is dropped, its owner is told, and its unsent posts are paid back
 - Lets the user choose the caption (keep, remove, or remove links and
   mentions) and a custom thumbnail
 - Gives owners and admins a panel for subscriptions, gifts, required channels,

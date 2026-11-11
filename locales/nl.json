@@ -221,6 +221,7 @@
   "tasks": {
     "already_running": "⌯ <b>Er wordt al een andere taak uitgevoerd</b>\n\n✦ Wacht tot de actieve taak is voltooid of annuleer deze voordat je een andere bewerking start",
     "resumed": "⌯ <b>Taak hervat</b>\n\n✦ Er is een onderbroken taak gevonden. Deze wordt vanaf de laatst opgeslagen positie voortgezet",
+    "abandoned": "⌯ <b>Taak gestopt</b>\n\n✦ Deze kon na het herstarten van de bot niet verder\n✦ Berichten die niet zijn verzonden, zijn niet van je punten afgetrokken\n✦ Stuur de opdracht opnieuw om opnieuw te beginnen",
     "cancel_requested": "⌯ <b>Annulering aangevraagd</b>\n\n✦ De actieve bewerking wordt gestopt en tijdelijke bestanden worden opgeruimd",
     "input_cancelled": "⌯ <b>Invoersessie geannuleerd</b>\n\n✦ De openstaande aanmeld-, filter- of bevestigingsstatus is verwijderd",
     "none_to_cancel": "⌯ <b>ℹ Geen actieve bewerking</b>\n\n✦ Er is geen actieve taak of openstaande invoersessie om te annuleren",

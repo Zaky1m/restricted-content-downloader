@@ -221,6 +221,7 @@
   "tasks": {
     "already_running": "⌯ <b>En annan uppgift körs redan</b>\n\n✦ Vänta tills den aktiva uppgiften är klar eller avbryt den innan du startar en annan åtgärd",
     "resumed": "⌯ <b>Uppgiften har återupptagits</b>\n\n✦ En avbruten uppgift hittades och kommer att fortsätta från den senast sparade positionen",
+    "abandoned": "⌯ <b>Uppgiften stoppades</b>\n\n✦ Den kunde inte fortsätta efter att boten startats om\n✦ Inlägg som inte skickades har inte dragits från dina poäng\n✦ Skicka kommandot igen för att börja om",
     "cancel_requested": "⌯ <b>Avbrott har begärts</b>\n\n✦ Den aktiva åtgärden stoppas och tillfälliga filer kommer att rensas",
     "input_cancelled": "⌯ <b>Inmatningssessionen avbröts</b>\n\n✦ Det väntande inloggnings-, filter- eller bekräftelsetillståndet har tagits bort",
     "none_to_cancel": "⌯ <b>ℹ Ingen aktiv åtgärd</b>\n\n✦ Det finns ingen pågående uppgift eller väntande inmatningssession att avbryta",

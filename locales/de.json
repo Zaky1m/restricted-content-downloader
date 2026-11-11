@@ -221,6 +221,7 @@
   "tasks": {
     "already_running": "⌯ <b>Eine andere Aufgabe läuft bereits</b>\n\n✦ Warte, bis die aktive Aufgabe abgeschlossen ist, oder brich sie ab, bevor du einen anderen Vorgang startest",
     "resumed": "⌯ <b>Aufgabe fortgesetzt</b>\n\n✦ Eine unterbrochene Aufgabe wurde gefunden und wird ab der zuletzt gespeicherten Position fortgesetzt",
+    "abandoned": "⌯ <b>Aufgabe gestoppt</b>\n\n✦ Sie konnte nach dem Neustart des Bots nicht fortgesetzt werden\n✦ Nicht gesendete Beiträge wurden nicht von deinen Punkten abgezogen\n✦ Sende den Befehl erneut, um neu zu beginnen",
     "cancel_requested": "⌯ <b>Abbruch angefordert</b>\n\n✦ Der aktive Vorgang wird gestoppt und temporäre Dateien werden bereinigt",
     "input_cancelled": "⌯ <b>Eingabesitzung abgebrochen</b>\n\n✦ Der ausstehende Anmelde-, Filter- oder Bestätigungsstatus wurde entfernt",
     "none_to_cancel": "⌯ <b>ℹ Kein aktiver Vorgang</b>\n\n✦ Es gibt keine laufende Aufgabe und keine ausstehende Eingabesitzung, die abgebrochen werden könnte",

@@ -221,6 +221,7 @@
   "tasks": {
     "already_running": "⌯ <b>È già in esecuzione un'altra attività</b>\n\n✦ Attendi che l'attività in corso termini oppure annullala prima di avviare un'altra operazione",
     "resumed": "⌯ <b>Attività ripresa</b>\n\n✦ È stata trovata un'attività interrotta che continuerà dall'ultima posizione salvata",
+    "abandoned": "⌯ <b>Attività interrotta</b>\n\n✦ Non è riuscita a continuare dopo il riavvio del bot\n✦ I post non inviati non sono stati scalati dai tuoi punti\n✦ Invia di nuovo il comando per ricominciare",
     "cancel_requested": "⌯ <b>Annullamento richiesto</b>\n\n✦ L'operazione in corso verrà interrotta e i file temporanei verranno eliminati",
     "input_cancelled": "⌯ <b>Sessione di inserimento annullata</b>\n\n✦ Lo stato in attesa relativo all'accesso, al filtro o alla conferma è stato rimosso",
     "none_to_cancel": "⌯ <b>ℹ Nessuna operazione attiva</b>\n\n✦ Non è presente alcuna attività in esecuzione o sessione di inserimento in attesa da annullare",

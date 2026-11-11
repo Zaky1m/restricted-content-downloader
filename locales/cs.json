@@ -221,6 +221,7 @@
   "tasks": {
     "already_running": "⌯ <b>Již probíhá jiná úloha</b>\n\n✦ Počkejte na dokončení aktivní úlohy nebo ji zrušte, než spustíte další operaci",
     "resumed": "⌯ <b>Úloha byla obnovena</b>\n\n✦ Byla nalezena přerušená úloha, která bude pokračovat od poslední uložené pozice",
+    "abandoned": "⌯ <b>Úloha byla zastavena</b>\n\n✦ Po restartu bota nemohla pokračovat\n✦ Příspěvky, které nebyly odeslány, se ti z bodů neodečetly\n✦ Pošli příkaz znovu a začni od začátku",
     "cancel_requested": "⌯ <b>Bylo požádáno o zrušení</b>\n\n✦ Aktivní operace se zastavuje a dočasné soubory budou odstraněny",
     "input_cancelled": "⌯ <b>Vstupní relace byla zrušena</b>\n\n✦ Čekající přihlašovací relace, relace filtru nebo potvrzení byla odstraněna",
     "none_to_cancel": "⌯ <b>ℹ Žádná aktivní operace</b>\n\n✦ Není spuštěna žádná úloha ani nečeká žádná vstupní relace, kterou by bylo možné zrušit",

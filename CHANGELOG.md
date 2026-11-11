@@ -8,6 +8,7 @@ All notable changes to this project are documented here. The format follows
 ### Changed
 - grammers 0.12 (Telegram layer 233): posts that use newer Telegram objects are read instead of failing a whole batch chunk
 - A dropped Telegram connection is retried on the same update stream instead of restarting the bot; pool accounts keep watching their channels
+- The "task resumed" notice is sent once per task, and a batch dropped after repeated restarts tells its owner and pays back its unsent posts
 
 ### Added
 - Download a single post, a range of posts, or clone a whole channel, with progress, resume after a restart and per-user queues
