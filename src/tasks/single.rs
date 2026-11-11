@@ -118,6 +118,14 @@ pub async fn download_link(ctx: &Arc<TaskCtx>, link: &str, force: bool) -> Outco
         return album(ctx, &job, &client, peer, &message).await;
     }
     match job.deliver(&message).await {
+        Ok(delivered) if delivered.skip == Some(download::Skip::Empty) => {
+            ctx.report(
+                &bot.t(&ctx.lang, "downloads.nothing_to_download", &[]),
+                None,
+            )
+            .await;
+            Outcome::Skipped
+        }
         Ok(delivered) => download::outcome(&delivered),
         Err(error) => {
             tracing::error!(user = ctx.user_id, %error, "delivery failed");

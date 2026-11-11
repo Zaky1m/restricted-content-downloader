@@ -531,7 +531,8 @@ pub async fn run(ctx: &Arc<TaskCtx>, range: Range) -> Outcome {
                     continue;
                 }
                 match job.deliver(&source_message).await {
-                    Ok(d) => (usize::from(d.ok), d.mode, d.last, true),
+                    // A delivery that failed without a reason to skip it is retried and paid back like any failure.
+                    Ok(d) => (usize::from(d.ok), d.mode, d.last, d.ok || d.skip.is_some()),
                     Err(error) => {
                         tracing::warn!(user = ctx.user_id, message_id, %error, "could not process a post");
                         (0, None, None, false)
@@ -569,6 +570,8 @@ pub async fn run(ctx: &Arc<TaskCtx>, range: Range) -> Outcome {
             break;
         }
         retrying = true;
+        // An album that failed is retried from its first post, which the main pass already marked as seen.
+        groups.clear();
         untracked += failed.saturating_sub(failed_tracked.len());
         failed = 0;
         pending = failed_tracked.clone();
@@ -667,20 +670,37 @@ async fn deliver_album(
         }
     };
     let mut done = 0;
+    let mut failures = 0;
     let mut mode = None;
     let mut last = None;
     for member in group {
         if passes(&member, settings).is_some() {
             continue;
         }
-        if let Ok(result) = job.deliver(&member).await
-            && result.ok
-        {
-            done += 1;
-            mode = result.mode.or(mode);
-            last = result.last.or(last);
+        match job.deliver(&member).await {
+            Ok(result) if result.ok => {
+                done += 1;
+                mode = result.mode.or(mode);
+                last = result.last.or(last);
+            }
+            Ok(result) if result.skip.is_some() => {}
+            Ok(_) => failures += 1,
+            Err(error) => {
+                tracing::warn!(user = job.ctx.user_id, message_id = member.id(), %error, "could not process an album item");
+                failures += 1;
+            }
         }
         tokio::time::sleep(Duration::from_secs(1)).await;
     }
-    (done, mode, last, true)
+    if done > 0 && failures > 0 {
+        tracing::warn!(
+            user = job.ctx.user_id,
+            message_id = first.id(),
+            done,
+            failures,
+            "album was delivered in part"
+        );
+    }
+    // Retrying a partly delivered album would send its delivered items twice, so only a wholly failed one is retried.
+    (done, mode, last, done > 0 || failures == 0)
 }

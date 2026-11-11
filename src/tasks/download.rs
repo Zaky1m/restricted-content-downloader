@@ -223,6 +223,8 @@ pub enum Skip {
     Cancelled,
     /// The user has not answered the large file question yet.
     Unanswered,
+    /// The post has neither a file nor text (a poll, a location, a dice).
+    Empty,
 }
 
 impl Delivered {
@@ -444,7 +446,7 @@ impl Job<'_> {
             // Plain text and web-page posts are sent as text.
             let text = html_caption(false);
             if text.is_empty() {
-                return Ok(Delivered::failed(Some(dest.mode)));
+                return Ok(Delivered::skipped(Skip::Empty));
             }
             let sender = if dest.by_account {
                 self.account.client().await
