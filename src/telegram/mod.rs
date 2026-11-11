@@ -4,6 +4,7 @@
 pub mod accounts;
 pub mod keyboards;
 pub mod pgsession;
+pub mod update_stream;
 
 use std::sync::Arc;
 

@@ -40,3 +40,10 @@ Resolving a username is rate-limited hard. Each account remembers the usernames
 it resolved for eight hours, so a range or a monitor does not resolve the same
 source again for every post.
 
+## A dropped connection does not end the process
+grammers reports a dropped connection as an error from the update stream, but
+it reconnects on the next request and fetches what was missed. The bot and the
+pool accounts wait (one second, doubling up to thirty) and read the same stream
+again. Only a closed sender or a logged-out account ends it. Exiting on every
+error turned a few minutes of bad network into a restart loop, and every
+restart told each batch owner again that their task had resumed.

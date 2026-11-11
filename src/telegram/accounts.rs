@@ -403,8 +403,13 @@ fn spawn_event_stream(
                 return;
             }
         };
+        let mut backoff = super::update_stream::Backoff::default();
         loop {
-            match stream.next().await {
+            let next = stream.next().await;
+            if next.is_ok() {
+                backoff.reset();
+            }
+            match next {
                 // Outgoing ones count too, as in the Python bot: in a channel the account administers every
                 // post arrives marked outgoing.
                 Ok(Update::NewMessage(message)) => {
@@ -417,9 +422,17 @@ fn spawn_event_stream(
                     }
                 }
                 Ok(_) => {}
-                Err(error) => {
+                Err(error)
+                    if super::update_stream::fault(&error)
+                        == super::update_stream::Fault::Fatal =>
+                {
                     tracing::warn!(pool = %label, %error, "pool update stream ended");
                     return;
+                }
+                Err(error) => {
+                    let wait = backoff.delay();
+                    tracing::debug!(pool = %label, %error, wait_secs = wait.as_secs(), "pool update stream interrupted");
+                    tokio::time::sleep(wait).await;
                 }
             }
         }

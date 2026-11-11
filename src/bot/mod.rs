@@ -299,18 +299,38 @@ pub async fn serve(config: Config, logs: Arc<crate::logging::Logs>) -> Result<()
         .await
         .map_err(|e| anyhow::anyhow!("{e}"))?;
 
+    let stop = shutdown_signal();
+    tokio::pin!(stop);
+    let mut backoff = crate::telegram::update_stream::Backoff::default();
     loop {
         tokio::select! {
-            update = stream.next() => {
-                let update = update.context("update stream ended")?;
-                let bot = bot.clone();
-                tokio::spawn(async move {
-                    if let Err(error) = dispatch(&bot, update).await {
-                        tracing::error!(%error, "update handler failed");
+            update = stream.next() => match update {
+                Ok(update) => {
+                    backoff.reset();
+                    let bot = bot.clone();
+                    tokio::spawn(async move {
+                        if let Err(error) = dispatch(&bot, update).await {
+                            tracing::error!(%error, "update handler failed");
+                        }
+                    });
+                }
+                Err(error) if crate::telegram::update_stream::fault(&error) == crate::telegram::update_stream::Fault::Fatal => {
+                    shutdown(&bot).await;
+                    return Err(anyhow::Error::new(error).context("update stream ended"));
+                }
+                Err(error) => {
+                    let wait = backoff.delay();
+                    tracing::warn!(%error, failures = backoff.failures(), wait_secs = wait.as_secs(), "update stream interrupted, retrying");
+                    tokio::select! {
+                        _ = tokio::time::sleep(wait) => {}
+                        _ = &mut stop => {
+                            tracing::info!("stopping");
+                            break;
+                        }
                     }
-                });
-            }
-            _ = shutdown_signal() => {
+                }
+            },
+            _ = &mut stop => {
                 tracing::info!("stopping");
                 break;
             }
