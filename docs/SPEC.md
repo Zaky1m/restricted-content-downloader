@@ -88,7 +88,9 @@ its owner is told, and its unsent posts are paid back. A download
 that stops progressing for 90 seconds is restarted. Before a download the
 disk space is checked with a 5 GiB reserve left for the rest of the server.
 A file above the bot's upload limit asks the user to download and split it, or
-cancel; the choice is stored for 24 hours.
+cancel; the choice is stored for 24 hours. A question nobody answers in that
+time ends the album or batch it belongs to (the rest of a batch is paid back);
+a cancel skips only that file. A `?single` link takes one item of an album.
 
 ## Monitoring
 
