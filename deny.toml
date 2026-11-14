@@ -1,5 +1,11 @@
 [advisories]
 version = 2
+ignore = [
+    # SQLite before 3.54 can leak page-cache memory when it opens a crafted database and -wal pair.
+    # SQLite is only used by `rcd import` to read the operator's own Pyrogram `.session` files, and
+    # sqlx (0.8 and 0.9) pins a libsqlite3-sys older than the fixed 0.39, so it cannot be upgraded yet.
+    { id = "RUSTSEC-2026-0459", reason = "SQLite only reads the operator's own session files during import; sqlx pins the older bundled SQLite" },
+]
 
 [licenses]
 version = 2
