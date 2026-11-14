@@ -88,6 +88,18 @@ pub async fn download_link(ctx: &Arc<TaskCtx>, link: &str, force: bool) -> Outco
             Err(error) if access::is_private_access_error(&error) => {
                 return not_accessible(ctx, &account, link).await;
             }
+            // Retrying cannot bring a revoked session back; say so instead of a bare failure.
+            Err(error) if access::Dead::is_dead(&error) => {
+                tracing::warn!(user = ctx.user_id, %error, "the account's session is no longer valid");
+                if account.is_linked() {
+                    bot.accounts.forget_linked(ctx.user_id).await.ok();
+                    super::notices::session_expired(ctx).await;
+                } else {
+                    ctx.report(&bot.t(&ctx.lang, "downloads.client_unavailable", &[]), None)
+                        .await;
+                }
+                return Outcome::Failed;
+            }
             Err(error) => {
                 tracing::warn!(user = ctx.user_id, attempt, %error, "could not fetch the post");
                 tokio::time::sleep(std::time::Duration::from_secs(2 + attempt)).await;

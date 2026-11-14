@@ -11,6 +11,9 @@ All notable changes to this project are documented here. The format follows
 - The "task resumed" notice is sent once per task, and a batch dropped after repeated restarts tells its owner and pays back its unsent posts
 - A download whose file reference expired reads the post again and continues
 - A batch post that could not be delivered counts as failed, not skipped, so it is retried and paid back; a post with nothing to send is skipped
+- A `?single` link downloads that one album item, not the whole album
+- A large file question left unanswered for a day ends the album or batch instead of asking again for the next file; the rest of a batch is paid back
+- A single download whose linked account was logged out says so and unlinks it, instead of retrying and failing without a reason
 
 ### Added
 - Download a single post, a range of posts, or clone a whole channel, with progress, resume after a restart and per-user queues
