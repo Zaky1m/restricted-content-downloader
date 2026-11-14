@@ -1451,18 +1451,24 @@ async fn bc_json(
         rand::random::<u32>()
     ));
     tokio::fs::create_dir_all(&bot.cfg.data_dir).await?;
-    let parsed: Result<std::collections::BTreeMap<String, String>> = async {
+    let parsed: Result<(
+        std::collections::BTreeMap<String, String>,
+        Option<broadcast::LinkButton>,
+    )> = async {
         anyhow::ensure!(
             reply.download_media(&temp).await?,
             "the file could not be downloaded"
         );
         let value: Value = serde_json::from_str(&tokio::fs::read_to_string(&temp).await?)?;
-        broadcast::normalize_payload(&value)
+        Ok((
+            broadcast::normalize_payload(&value)?,
+            broadcast::parse_button(&value)?,
+        ))
     }
     .await;
     tokio::fs::remove_file(&temp).await.ok();
-    let messages = match parsed {
-        Ok(m) => m,
+    let (messages, button) = match parsed {
+        Ok(parsed) => parsed,
         Err(error) => {
             bot.reply(
                 message,
@@ -1481,7 +1487,7 @@ async fn bc_json(
     all.extend_from_slice(args);
     let filters = broadcast::parse_filters(&all);
     let state = json!({
-        "mode": "localized_json", "messages": messages, "source_message_id": reply.id(),
+        "mode": "localized_json", "messages": messages, "button": button, "source_message_id": reply.id(),
         "only_users": filters.only_users, "exclude_users": filters.exclude_users, "exclude_prem": filters.exclude_premium,
     });
     states::set(&bot.pg, who.id, "broadcast", &state, 10 * 60).await?;
@@ -1573,7 +1579,9 @@ pub async fn broadcast_callback(
     let payload = if data.starts_with("bcjson_send_") {
         let messages: std::collections::BTreeMap<String, String> =
             serde_json::from_value(state["messages"].clone()).unwrap_or_default();
-        Payload::Localized(messages)
+        let button: Option<broadcast::LinkButton> =
+            serde_json::from_value(state["button"].clone()).unwrap_or_default();
+        Payload::Localized(messages, button)
     } else {
         Payload::Copy {
             chat: state["chat_id"].as_i64().unwrap_or(who.id),
@@ -1611,7 +1619,8 @@ pub async fn send_template(bot: &Arc<Bot>, user_id: i64, lang: &str) -> Result<(
             "A language left empty is skipped and falls back to English.",
             "HTML is allowed: <b> <i> <u> <s> <code> <pre> <a href>.",
             "The en entry is required and must not be empty.",
-            "Maximum 4096 characters per language."
+            "Maximum 4096 characters per language.",
+            "Optional _button adds a link button: url, text (one text or one per language, en required, 64 characters at most) and color (red, green or blue)."
         ]),
     );
     let names: std::collections::HashMap<String, String> =

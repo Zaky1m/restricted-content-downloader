@@ -16,6 +16,7 @@ All notable changes to this project are documented here. The format follows
 - A single download whose linked account was logged out says so and unlinks it, instead of retrying and failing without a reason
 
 ### Added
+- A localized JSON broadcast can carry a `_button`: a link button with a label per language and a color
 - Download a single post, a range of posts, or clone a whole channel, with progress, resume after a restart and per-user queues
 - Linked user accounts and a pool of download accounts, stored encrypted in PostgreSQL
 - Premium plans paid with Telegram Stars, gifts, referral points and a referral check for new users

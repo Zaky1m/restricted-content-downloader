@@ -61,7 +61,9 @@ Owners are listed in the environment (`OWNER_IDS`). Owners add and remove
 admins from `/admin`; admins cannot appoint admins. The `/admin` panel covers
 premium grants, gifts, forced-subscription channels, broadcast, logs, user
 export and locale upload. Older admin commands remain only where the panel
-does not do the same job.
+does not do the same job. A broadcast is a copy of one message, or a JSON file with a text per
+language and an optional `_button` (a link with a label per language and a
+color) under it.
 
 ## Links
 

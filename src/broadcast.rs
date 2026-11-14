@@ -11,7 +11,11 @@ use grammers_client::{InvocationError, message::InputMessage};
 use serde_json::Value;
 use tokio_util::sync::CancellationToken;
 
-use crate::{bot::Bot, tasks::status::Status};
+use crate::{
+    bot::Bot,
+    tasks::status::Status,
+    telegram::keyboards::{Button, Color, keyboard},
+};
 
 #[derive(Debug, Default, Clone, PartialEq, Eq)]
 pub struct Filters {
@@ -81,6 +85,77 @@ pub fn normalize_payload(payload: &Value) -> Result<BTreeMap<String, String>> {
     };
     out.insert("en".into(), english);
     Ok(out)
+}
+
+/// An optional link button under a localized broadcast, from the file's `_button` entry:
+/// `{"url": "https://t.me/x", "text": "Start" | {"en": "Start", "ar": "..."}, "color": "red"}`.
+#[derive(Debug, Clone, PartialEq, Eq, serde::Serialize, serde::Deserialize)]
+pub struct LinkButton {
+    pub url: String,
+    pub labels: BTreeMap<String, String>,
+    pub color: String,
+}
+
+/// Telegram refuses longer button labels.
+const MAX_LABEL: usize = 64;
+
+pub fn parse_button(payload: &Value) -> Result<Option<LinkButton>> {
+    let Some(button) = payload.get("_button").filter(|b| !b.is_null()) else {
+        return Ok(None);
+    };
+    let Some(url) = button.get("url").and_then(Value::as_str).map(str::trim) else {
+        bail!("_button needs a url")
+    };
+    if !(url.starts_with("https://") || url.starts_with("http://") || url.starts_with("tg://")) {
+        bail!("_button url must start with https://, http:// or tg://");
+    }
+    let mut labels = BTreeMap::new();
+    match button.get("text") {
+        Some(Value::String(text)) => {
+            labels.insert("en".to_string(), text.trim().to_string());
+        }
+        Some(Value::Object(map)) => {
+            for (code, text) in map {
+                if let Some(text) = text.as_str().map(str::trim).filter(|t| !t.is_empty()) {
+                    labels.insert(code.trim().replace('_', "-"), text.to_string());
+                }
+            }
+        }
+        _ => bail!("_button needs a text"),
+    }
+    match labels.get("en") {
+        Some(text) if !text.is_empty() => {}
+        _ => bail!("_button needs an English text"),
+    }
+    if let Some((code, _)) = labels.iter().find(|(_, t)| t.chars().count() > MAX_LABEL) {
+        bail!("_button text for {code} is longer than {MAX_LABEL} characters");
+    }
+    let color = button
+        .get("color")
+        .and_then(Value::as_str)
+        .unwrap_or("")
+        .to_lowercase();
+    if !matches!(color.as_str(), "" | "red" | "green" | "blue") {
+        bail!("_button color must be red, green or blue");
+    }
+    Ok(Some(LinkButton {
+        url: url.to_string(),
+        labels,
+        color,
+    }))
+}
+
+impl LinkButton {
+    fn markup(&self, language: Option<&str>) -> grammers_client::message::ReplyMarkup {
+        let color = match self.color.as_str() {
+            "red" => Color::Red,
+            "green" => Color::Green,
+            "blue" => Color::Blue,
+            _ => Color::Plain,
+        };
+        let label = select_text(language, &self.labels);
+        keyboard(&[vec![Button::url(label, &self.url, color)]])
+    }
 }
 
 /// The user's language, else its base language, else English.
@@ -178,8 +253,8 @@ pub enum Payload {
         message_id: i32,
         pin: bool,
     },
-    /// Send each user the text for their language.
-    Localized(BTreeMap<String, String>),
+    /// Send each user the text for their language, with an optional link button.
+    Localized(BTreeMap<String, String>, Option<LinkButton>),
 }
 
 /// Runs the broadcast, reporting on `status` every twenty users. Returns when finished or cancelled.
@@ -228,12 +303,15 @@ pub async fn run(
                     message_id,
                     pin,
                 } => copy_one(bot, admin_id, *chat, *message_id, peer, *pin).await,
-                Payload::Localized(messages) => {
-                    let text = select_text(target.language.as_deref(), messages);
-                    bot.client
-                        .send_message(peer, InputMessage::new().html(text).link_preview(false))
-                        .await
-                        .map(|_| ())
+                Payload::Localized(messages, button) => {
+                    let language = target.language.as_deref();
+                    let mut message = InputMessage::new()
+                        .html(select_text(language, messages))
+                        .link_preview(false);
+                    if let Some(button) = button {
+                        message = message.reply_markup(button.markup(language));
+                    }
+                    bot.client.send_message(peer, message).await.map(|_| ())
                 }
             };
             match sent {
@@ -395,5 +473,38 @@ mod tests {
         assert_eq!(select_text(Some("ar"), &messages), "A");
         assert_eq!(select_text(Some("xx"), &messages), "E");
         assert_eq!(select_text(None, &messages), "E");
+    }
+
+    #[test]
+    fn link_button_from_the_file() {
+        let none = parse_button(&serde_json::json!({"en": "x"})).unwrap();
+        assert_eq!(none, None);
+        let button = parse_button(&serde_json::json!({"_button": {
+            "url": "https://t.me/example", "text": {"en": "Start now", "ar_x": " ابدأ "}, "color": "Red"
+        }}))
+        .unwrap()
+        .unwrap();
+        assert_eq!(button.url, "https://t.me/example");
+        assert_eq!(button.color, "red");
+        assert_eq!(select_text(Some("ar-x"), &button.labels), "ابدأ");
+        assert_eq!(select_text(Some("fr"), &button.labels), "Start now");
+        let plain =
+            parse_button(&serde_json::json!({"_button": {"url": "https://a.b", "text": "Go"}}))
+                .unwrap()
+                .unwrap();
+        assert_eq!(plain.labels.get("en").map(String::as_str), Some("Go"));
+    }
+
+    #[test]
+    fn link_button_rejects_bad_entries() {
+        for bad in [
+            serde_json::json!({"_button": {"text": "Go"}}),
+            serde_json::json!({"_button": {"url": "javascript:x", "text": "Go"}}),
+            serde_json::json!({"_button": {"url": "https://a.b", "text": {"ar": "x"}}}),
+            serde_json::json!({"_button": {"url": "https://a.b", "text": "Go", "color": "pink"}}),
+            serde_json::json!({"_button": {"url": "https://a.b", "text": "x".repeat(65)}}),
+        ] {
+            assert!(parse_button(&bad).is_err(), "{bad}");
+        }
     }
 }
