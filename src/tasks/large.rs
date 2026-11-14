@@ -32,6 +32,8 @@ pub enum Asked {
     Chosen(Policy, Option<i64>),
     Pending,
     Cancelled,
+    /// Nobody answered before the question expired (24 hours).
+    Expired,
 }
 
 fn parse(choice: &str) -> Option<Policy> {
@@ -160,7 +162,7 @@ pub async fn ask(
             .flatten()
             .map(|(_, data)| data);
         let Some(data) = data else {
-            return Asked::Cancelled;
+            return Asked::Expired;
         };
         match data.get("choice").and_then(|v| v.as_str()) {
             Some("cancel") => {

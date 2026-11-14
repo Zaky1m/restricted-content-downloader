@@ -225,6 +225,8 @@ pub enum Skip {
     Unanswered,
     /// The post has neither a file nor text (a poll, a location, a dice).
     Empty,
+    /// The large file question went unanswered for a day.
+    Expired,
 }
 
 impl Delivered {
@@ -369,6 +371,7 @@ impl Job<'_> {
             .await
             {
                 Asked::Cancelled => return Ok(Delivered::skipped(Skip::Cancelled)),
+                Asked::Expired => return Ok(Delivered::skipped(Skip::Expired)),
                 Asked::Pending => return Ok(Delivered::skipped(Skip::Unanswered)),
                 Asked::Chosen(policy, id) => {
                     action_id = id;

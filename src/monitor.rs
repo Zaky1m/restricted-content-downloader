@@ -400,7 +400,11 @@ async fn deliver_one(
                 .await;
                 return Ok(());
             }
-            Some(crate::tasks::download::Skip::Cancelled | crate::tasks::download::Skip::Empty) => {
+            Some(
+                crate::tasks::download::Skip::Cancelled
+                | crate::tasks::download::Skip::Empty
+                | crate::tasks::download::Skip::Expired,
+            ) => {
                 set_status(&bot.pg, job_id, "done").await;
                 return Ok(());
             }

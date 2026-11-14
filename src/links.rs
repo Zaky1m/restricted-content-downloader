@@ -21,6 +21,8 @@ pub struct MessageLink {
     pub chat: Chat,
     pub message_id: i64,
     pub comment_id: Option<i64>,
+    /// `?single`: Telegram's link to one item of an album, not the whole album.
+    pub single: bool,
 }
 
 #[derive(Debug, PartialEq, Eq, thiserror::Error)]
@@ -57,6 +59,13 @@ pub fn is_supported_link(value: &str) -> bool {
     pattern.is_match(value.trim())
 }
 
+fn is_single(link: &str) -> bool {
+    static CELL: OnceLock<Regex> = OnceLock::new();
+    let pattern =
+        CELL.get_or_init(|| Regex::new(r"(?i)[?&]single(?:[=&#]|$)").expect("static pattern"));
+    pattern.is_match(link)
+}
+
 fn comment_id(link: &str) -> Option<i64> {
     static CELL: OnceLock<Regex> = OnceLock::new();
     let pattern =
@@ -72,6 +81,7 @@ pub fn parse_message_link(link: &str) -> Result<MessageLink, LinkError> {
 
     let link = link.trim();
     let comment_id = comment_id(link);
+    let single = is_single(link);
     let clean = strip_query(link);
 
     let private = |caps: &regex::Captures, message_group: usize| {
@@ -83,6 +93,7 @@ pub fn parse_message_link(link: &str) -> Result<MessageLink, LinkError> {
             chat: Chat::Id(channel_dialog_id(channel)),
             message_id,
             comment_id,
+            single,
         })
     };
     let public = |caps: &regex::Captures, message_group: usize| {
@@ -96,6 +107,7 @@ pub fn parse_message_link(link: &str) -> Result<MessageLink, LinkError> {
             chat: Chat::Username(caps[1].to_string()),
             message_id,
             comment_id,
+            single,
         })
     };
 
@@ -162,6 +174,7 @@ mod tests {
             chat,
             message_id,
             comment_id,
+            single: false,
         })
     }
     fn user(name: &str) -> Chat {
@@ -180,10 +193,6 @@ mod tests {
                 msg(Chat::Id(-1_000_001_234_567), 89, None),
             ),
             ("https://t.me/durov/12", msg(user("durov"), 12, None)),
-            (
-                "https://telegram.me/s/durov/12?single",
-                msg(user("durov"), 12, None),
-            ),
             ("http://www.t.me/durov/12/", msg(user("durov"), 12, None)),
             (
                 "https://t.me/durov/3/12?comment=77",
@@ -250,5 +259,19 @@ mod tests {
         for (value, expected) in cases {
             assert_eq!(is_supported_link(value), expected, "{value:?}");
         }
+    }
+
+    #[test]
+    fn single_marks_one_album_item() {
+        let link = parse_message_link("https://telegram.me/s/durov/12?single").unwrap();
+        assert_eq!((link.message_id, link.single), (12, true));
+        let link = parse_message_link("https://t.me/durov/749?single&comment=8635").unwrap();
+        assert_eq!((link.comment_id, link.single), (Some(8635), true));
+        assert!(!parse_message_link("https://t.me/durov/12").unwrap().single);
+        assert!(
+            !parse_message_link("https://t.me/singles/12")
+                .unwrap()
+                .single
+        );
     }
 }

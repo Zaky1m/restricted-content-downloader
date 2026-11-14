@@ -113,8 +113,8 @@ pub async fn download_link(ctx: &Arc<TaskCtx>, link: &str, force: bool) -> Outco
         return Outcome::Skipped;
     }
 
-    // An album arrives as a whole, in order.
-    if message.grouped_id().is_some() && peer.id.kind() != PeerKind::Chat {
+    // An album arrives as a whole, in order, unless the link names one item of it.
+    if message.grouped_id().is_some() && peer.id.kind() != PeerKind::Chat && !parsed.single {
         return album(ctx, &job, &client, peer, &message).await;
     }
     match job.deliver(&message).await {
@@ -165,6 +165,7 @@ async fn album(
     ))
     .await;
     let mut done = 0usize;
+    let mut stopped = false;
     let mut last = None;
     let mut mode = None;
     let total = group.len();
@@ -178,7 +179,7 @@ async fn album(
             ],
         ))
         .await;
-        if let Ok(result) = (Job {
+        let delivered = (Job {
             ctx,
             account: job.account.clone(),
             force_download: job.force_download,
@@ -187,16 +188,30 @@ async fn album(
             policy: Default::default(),
         })
         .deliver(item)
-        .await
-            && result.ok
-        {
-            done += 1;
-            mode = result.mode.or(mode);
-            last = result.last.or(last);
+        .await;
+        match delivered {
+            Ok(result) if result.ok => {
+                done += 1;
+                mode = result.mode.or(mode);
+                last = result.last.or(last);
+            }
+            // A large-file question that was cancelled or left unanswered for a day ends the album: asking
+            // again for every other item kept one task waiting for days.
+            Ok(result)
+                if matches!(
+                    result.skip,
+                    Some(download::Skip::Cancelled | download::Skip::Expired)
+                ) =>
+            {
+                stopped = true;
+                break;
+            }
+            _ => {}
         }
         tokio::time::sleep(std::time::Duration::from_secs(1)).await;
     }
     match (done, mode) {
+        (0, _) if stopped => Outcome::Skipped,
         (0, _) => Outcome::Failed,
         (count, Some(mode)) => {
             let text = download::completion_text(ctx, "batch", mode, count, last.as_ref()).await;

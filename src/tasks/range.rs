@@ -359,6 +359,8 @@ pub async fn run(ctx: &Arc<TaskCtx>, range: Range) -> Outcome {
     let mut groups: HashSet<i64> = HashSet::new();
     let mut last_sent: Option<Message> = None;
     let mut mode = None;
+    // Posts left when a large file question went unanswered: the batch stops there instead of asking again a day later.
+    let mut unanswered_left = 0usize;
     let job = Job {
         ctx,
         account: account.clone(),
@@ -515,7 +517,13 @@ pub async fn run(ctx: &Arc<TaskCtx>, range: Range) -> Outcome {
             }
 
             let delivered = if source_message.grouped_id().is_some() {
-                deliver_album(&job, &client, source.peer, &source_message, &settings).await
+                let (count, mode, last, ok, expired) =
+                    deliver_album(&job, &client, source.peer, &source_message, &settings).await;
+                if expired {
+                    unanswered_left = pending.len() - index;
+                    break;
+                }
+                (count, mode, last, ok)
             } else {
                 if passes(&source_message, &settings).is_some() {
                     skipped += 1;
@@ -531,6 +539,10 @@ pub async fn run(ctx: &Arc<TaskCtx>, range: Range) -> Outcome {
                     continue;
                 }
                 match job.deliver(&source_message).await {
+                    Ok(d) if d.skip == Some(download::Skip::Expired) => {
+                        unanswered_left = pending.len() - index;
+                        break;
+                    }
                     // A delivery that failed without a reason to skip it is retried and paid back like any failure.
                     Ok(d) => (usize::from(d.ok), d.mode, d.last, d.ok || d.skip.is_some()),
                     Err(error) => {
@@ -566,7 +578,7 @@ pub async fn run(ctx: &Arc<TaskCtx>, range: Range) -> Outcome {
             .await;
         }
 
-        if retrying || kind == Kind::Clone || failed_tracked.is_empty() {
+        if unanswered_left > 0 || retrying || kind == Kind::Clone || failed_tracked.is_empty() {
             break;
         }
         retrying = true;
@@ -591,12 +603,12 @@ pub async fn run(ctx: &Arc<TaskCtx>, range: Range) -> Outcome {
         kind.key("downloads.batch.completed", "clone.completed"),
         &[
             ("downloaded", &downloaded.to_string()),
-            ("skipped", &skipped.to_string()),
+            ("skipped", &(skipped + unanswered_left).to_string()),
             ("failed", &failed.to_string()),
         ],
     );
     active::clear(&bot.pg, task_id).await;
-    give_back(ctx, kind, failed + untracked).await;
+    give_back(ctx, kind, failed + untracked + unanswered_left).await;
     let mut final_text = summary;
     if downloaded > 0 {
         let delivery_mode = match mode {
@@ -661,12 +673,12 @@ async fn deliver_album(
     peer: PeerRef,
     first: &Message,
     settings: &FilterSettings,
-) -> (usize, Option<download::Mode>, Option<Message>, bool) {
+) -> (usize, Option<download::Mode>, Option<Message>, bool, bool) {
     let group = match access::media_group(client, peer, first).await {
         Ok(group) => group,
         Err(error) => {
             tracing::warn!(user = job.ctx.user_id, %error, "could not load an album");
-            return (0, None, None, false);
+            return (0, None, None, false, false);
         }
     };
     let mut done = 0;
@@ -682,6 +694,9 @@ async fn deliver_album(
                 done += 1;
                 mode = result.mode.or(mode);
                 last = result.last.or(last);
+            }
+            Ok(result) if result.skip == Some(download::Skip::Expired) => {
+                return (done, mode, last, true, true);
             }
             Ok(result) if result.skip.is_some() => {}
             Ok(_) => failures += 1,
@@ -702,5 +717,5 @@ async fn deliver_album(
         );
     }
     // Retrying a partly delivered album would send its delivered items twice, so only a wholly failed one is retried.
-    (done, mode, last, done > 0 || failures == 0)
+    (done, mode, last, done > 0 || failures == 0, false)
 }
